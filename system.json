@@ -484,6 +484,8 @@
     "id": "warcraftrpg2e",
     "socket": true,
     "url": "https://github.com/ksablin99/WC-2e",
+    "manifest": "https://github.com/ksablin99/WC-2e/releases/latest/download/system.json",
+    "download": "https://github.com/ksablin99/WC-2e/releases/download/v3.1.0/warcraftrpg2e-v3.1.0.zip",
     "title": "Warcraft RPG 2e",
     "primaryTokenAttribute": "attributes.hp",
     "compatibility": {

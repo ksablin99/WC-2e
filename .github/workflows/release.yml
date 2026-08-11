@@ -1,0 +1,92 @@
+name: Release Foundry system
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Verify tag matches system version
+        shell: bash
+        run: |
+          SYSTEM_VERSION=$(node -p "require('./system.json').version")
+          if [[ "v${SYSTEM_VERSION}" != "${GITHUB_REF_NAME}" ]]; then
+            echo "Tag ${GITHUB_REF_NAME} does not match system version ${SYSTEM_VERSION}." >&2
+            exit 1
+          fi
+          EXPECTED_DOWNLOAD="https://github.com/ksablin99/WC-2e/releases/download/${GITHUB_REF_NAME}/warcraftrpg2e-${GITHUB_REF_NAME}.zip"
+          ACTUAL_DOWNLOAD=$(node -p "require('./system.json').download")
+          if [[ "${ACTUAL_DOWNLOAD}" != "${EXPECTED_DOWNLOAD}" ]]; then
+            echo "Manifest download URL does not match release tag." >&2
+            exit 1
+          fi
+
+      - name: Install dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Build compendium packs
+        run: npm run sources:repack
+
+      - name: Restore D35E runtime icons
+        shell: bash
+        run: |
+          ICON_ARCHIVE="${RUNNER_TEMP}/d35e-3.1.0.zip"
+          ICON_STAGE="${RUNNER_TEMP}/d35e-icons"
+          curl --fail --location --silent --show-error \
+            --output "${ICON_ARCHIVE}" \
+            https://www.legaciesofthedragon.com/D35E/tags/3.1.0/dnd35e.zip
+          echo "40d141ff568f0098cd60776484b471fa27228438d5d1d74bc18e76bb13a699a7  ${ICON_ARCHIVE}" \
+            | sha256sum --check --strict
+          mkdir -p "${ICON_STAGE}"
+          unzip -q "${ICON_ARCHIVE}" 'D35E/icons/*' -d "${ICON_STAGE}"
+          mv "${ICON_STAGE}/D35E/icons" ./icons
+
+      - name: Run unit tests
+        run: npm test -- --runInBand
+
+      - name: Build release archive
+        run: npm run pack:system -- --name "warcraftrpg2e-${GITHUB_REF_NAME}.zip"
+
+      - name: Validate release assets
+        shell: bash
+        run: |
+          test -f system.json
+          ARCHIVE="warcraftrpg2e-${GITHUB_REF_NAME}.zip"
+          test -s "${ARCHIVE}"
+          unzip -tq "${ARCHIVE}"
+          zipinfo -1 "${ARCHIVE}" > "${RUNNER_TEMP}/release-entries.txt"
+          grep -Fxq 'warcraftrpg2e/system.json' "${RUNNER_TEMP}/release-entries.txt"
+          if grep -Eqi '(^|/)(docs|source|test|node_modules|\.git)(/|$)|\.pdf$' "${RUNNER_TEMP}/release-entries.txt"; then
+            echo "Release archive contains private or development files." >&2
+            exit 1
+          fi
+
+      - name: Publish GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          ARCHIVE="warcraftrpg2e-${GITHUB_REF_NAME}.zip"
+          if gh release view "${GITHUB_REF_NAME}" >/dev/null 2>&1; then
+            gh release upload "${GITHUB_REF_NAME}" system.json "${ARCHIVE}" --clobber
+          else
+            gh release create "${GITHUB_REF_NAME}" system.json "${ARCHIVE}" \
+              --title "Warcraft RPG 2e ${GITHUB_REF_NAME}" \
+              --generate-notes
+          fi
