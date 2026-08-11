@@ -1,0 +1,5 @@
+packs/** binary
+* text=auto
+
+# Source JSON files are always LF — prevents CRLF pollution from core.autocrlf=true
+source/**/*.json text eol=lf

@@ -1,0 +1,18 @@
+<i class="fas {{#if icon}}{{icon}}{{else}}fa-info-circle{{/if}} tooltip">
+  <div class="tooltipcontent hint-tooltip">
+    {{#if header}}<strong>{{localize header}}</strong><br>{{/if}}
+    {{#if @partial-block}}
+      {{> @partial-block}}
+    {{else if key}}
+      {{#if html}}<div class="hint-tooltip-body">{{{localize key}}}</div>{{else}}<p>{{localize key}}</p>{{/if}}
+    {{/if}}
+    {{#if referencedField}}
+      <p>{{itemFormulaRef referencedField}}</p>
+    {{/if}}
+    {{#if parentHint}}
+      {{#if (and isEnhancement isDancingSummonWeapon)}}
+        <p>{{localize "D35E.CanUseAtParent"}}</p>
+      {{/if}}
+    {{/if}}
+  </div>
+</i>

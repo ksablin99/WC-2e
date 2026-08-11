@@ -1,0 +1,55 @@
+{
+  "_id": "wcShortbow000001",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "pages": "183, 186",
+        "section": "Table 9-2 and weapon description"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/bow-and-arrow.svg",
+  "name": "Shortbow",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "baseWeaponType": "Shortbow",
+    "carried": true,
+    "description": {
+      "value": "<p>A two-handed martial bow usable while mounted.</p>"
+    },
+    "equipped": true,
+    "hardness": 5,
+    "hp": {
+      "max": 5,
+      "value": 5
+    },
+    "identified": true,
+    "identifiedName": "Shortbow",
+    "index": {
+      "subType": "martial",
+      "uniqueId": ""
+    },
+    "masterwork": false,
+    "price": 30,
+    "properties": {},
+    "quantity": 1,
+    "weaponData": {
+      "critMult": "3",
+      "critRange": "20",
+      "damageRoll": "1d6",
+      "damageType": "P",
+      "range": 60,
+      "size": "med"
+    },
+    "weaponSubtype": "ranged",
+    "weaponType": "martial",
+    "weight": 2
+  },
+  "type": "weapon"
+}

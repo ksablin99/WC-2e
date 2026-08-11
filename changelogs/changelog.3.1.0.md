@@ -1,0 +1,16 @@
+# Issues fixed
+- [#1706](https://gitlab.com/dragonshorn/D35E/-/issues/1706) - [v14,3.0.2] Spells with map area effect templates do not work
+- [#1705](https://gitlab.com/dragonshorn/D35E/-/issues/1705) - Bug Report: v14/v3.0.2 Use Background Skills bug.
+- [#1703](https://gitlab.com/dragonshorn/D35E/-/issues/1703) - Disable hooks debug by default in release
+- [#1702](https://gitlab.com/dragonshorn/D35E/-/issues/1702) - Create migration script for legacy alignment
+- [#1701](https://gitlab.com/dragonshorn/D35E/-/issues/1701) - Text isnt't displayed on "bio" or "notes" editing in character sheet
+- [#1695](https://gitlab.com/dragonshorn/D35E/-/issues/1695) - "Apply Special Action only with first attack" option for feats in Configuration > Changes > Combat Changes not working correctly.
+- [#1694](https://gitlab.com/dragonshorn/D35E/-/issues/1694) - Party HUD not appearing
+- [#1690](https://gitlab.com/dragonshorn/D35E/-/issues/1690) - Attaks with measurement template (v14)
+- [#1688](https://gitlab.com/dragonshorn/D35E/-/issues/1688) - Arcane Spell Failure isn't working for all spells
+- [#1685](https://gitlab.com/dragonshorn/D35E/-/issues/1685) - Missing keys in en.json resulting in wrong texts in interface (v14)
+- [#1683](https://gitlab.com/dragonshorn/D35E/-/issues/1683) - Weapon Finesse bug.
+- [#1682](https://gitlab.com/dragonshorn/D35E/-/issues/1682) - Bug: Button beside currency in loot sheet dont work
+- [#1679](https://gitlab.com/dragonshorn/D35E/-/issues/1679) - [Bug] Cannot use ">" in formulas
+- [#1678](https://gitlab.com/dragonshorn/D35E/-/issues/1678) - Bug: Fly Speed does not update with buffs (e.g. Haste)
+- [#1677](https://gitlab.com/dragonshorn/D35E/-/issues/1677) - Bug: “Fly Maneuverability dropdown menu does not open correctly on click

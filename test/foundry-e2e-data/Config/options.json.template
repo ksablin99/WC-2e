@@ -1,0 +1,13 @@
+{
+  "dataPath": "{{DATA_PATH}}",
+  "hostname": "localhost",
+  "language": "en.core",
+  "port": {{PORT}},
+  "proxyPort": null,
+  "proxySSL": false,
+  "routePrefix": null,
+  "updateChannel": "stable",
+  "upnp": false,
+  "fullscreen": false,
+  "world": "test-world"
+}

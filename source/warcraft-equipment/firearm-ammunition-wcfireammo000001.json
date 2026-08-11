@@ -1,0 +1,42 @@
+{
+  "_id": "wcFireAmmo000001",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "rules": {
+        "shots": 10,
+        "variantPricing": "Pistol balls 5 gp; rifle bullets 6 gp."
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "pages": "181, 184",
+        "section": "Firearm ammunition"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/item-bag.svg",
+  "name": "Firearm Ammunition (10)",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "carried": true,
+    "description": {
+      "value": "<p>Ten lead pistol balls or rifle bullets. The listed price is for pistol balls; rifle bullets cost 6 gp per ten. Track the chosen type manually.</p>"
+    },
+    "hardness": 10,
+    "hp": {
+      "max": 1,
+      "value": 1
+    },
+    "identified": true,
+    "identifiedName": "Firearm Ammunition (10)",
+    "price": 5,
+    "quantity": 1,
+    "subType": "ammo",
+    "weight": 3
+  },
+  "type": "loot"
+}

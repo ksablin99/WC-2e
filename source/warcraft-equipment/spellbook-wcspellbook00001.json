@@ -1,0 +1,38 @@
+{
+  "_id": "wcSpellbook00001",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "pages": "198-200",
+        "section": "Adventuring gear"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/book.svg",
+  "name": "Spellbook",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "carried": true,
+    "description": {
+      "value": "<p>A leather-bound, 100-page reference used to record arcane spells.</p>"
+    },
+    "hardness": 0,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "identified": true,
+    "identifiedName": "Spellbook",
+    "price": 15,
+    "quantity": 1,
+    "subType": "gear",
+    "weight": 3
+  },
+  "type": "loot"
+}

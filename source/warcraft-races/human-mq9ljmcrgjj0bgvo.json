@@ -1,0 +1,178 @@
+{
+  "_embedded": {},
+  "_id": "mq9ljMCrgJj0bGVO",
+  "_stats": {
+    "compendiumSource": null,
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "lastModifiedBy": null,
+    "modifiedTime": null,
+    "systemId": null,
+    "systemVersion": null
+  },
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          46
+        ],
+        "printedPages": [
+          44
+        ],
+        "section": "Human racial traits",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "name": "Human",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "addedAbilities": [],
+    "addedLevel": 0,
+    "changeFlags": {
+      "heavyArmorFullSpeed": false,
+      "loseDexToAC": false,
+      "mediumArmorFullSpeed": false,
+      "multiAttack": false,
+      "multiweaponAttack": false,
+      "noCon": false,
+      "noDex": false,
+      "noEncumbrance": false,
+      "noInt": false,
+      "noStr": false,
+      "oneCha": false,
+      "oneInt": false,
+      "oneWis": false,
+      "uncannyDodge": false
+    },
+    "changes": [
+      [
+        "30",
+        "speed",
+        "landSpeed",
+        "base-replace"
+      ],
+      [
+        "2",
+        "skill",
+        "skill.dip",
+        "racial"
+      ],
+      [
+        "2",
+        "skill",
+        "skill.gif",
+        "racial"
+      ],
+      [
+        "2",
+        "skill",
+        "skill.kno",
+        "racial"
+      ]
+    ],
+    "classSource": "",
+    "combatChangeCustomDisplayName": "",
+    "combatChangeCustomReferenceName": "",
+    "combatChanges": [],
+    "combatChangesAdditionalRanges": {
+      "hasAdditionalRanges": false,
+      "slider1": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      },
+      "slider2": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      },
+      "slider3": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      }
+    },
+    "combatChangesApplySpecialActionsOnce": true,
+    "combatChangesRange": {
+      "max": 0,
+      "maxFormula": ""
+    },
+    "combatChangesUsesCost": "chargesPerUse",
+    "conditionFlags": {
+      "dazzled": false,
+      "polymorphed": false,
+      "wildshaped": false
+    },
+    "contextNotes": [
+      [
+        "[[+2]] racial bonus against fear effects",
+        "savingThrows",
+        "allSavingThrows"
+      ],
+      [
+        "[[+1]] racial bonus against orcs",
+        "attacks",
+        "attack"
+      ]
+    ],
+    "counterName": "feat.human; bonusSkillPoints",
+    "createdBy": "",
+    "creationChanges": [],
+    "creatureType": "humanoid",
+    "customAttributes": {},
+    "customAttributesLocked": false,
+    "customTag": "",
+    "damage": {
+      "parts": []
+    },
+    "damageReduction": [],
+    "deathRule": "warcraft",
+    "description": {
+      "chat": "",
+      "unidentified": "",
+      "value": "<p>Adaptable Alliance humans.</p><ul><li>Medium; land speed 30 feet.</li><li>One bonus feat at 1st level.</li><li>Four bonus skill points at 1st level and one at every later level.</li><li>+2 racial bonus against fear.</li><li>+2 Diplomacy, Gather Information, and Knowledge (nobility and royalty); these are class skills.</li><li>+2 Craft involving mithril and +1 attack rolls against orcs (contextual/manual).</li><li>Common; any unrestricted bonus language; any favored class.</li></ul>"
+    },
+    "disabledAbilities": [],
+    "epic": "",
+    "identifiedName": "Human",
+    "index": {
+      "subType": null,
+      "uniqueId": ""
+    },
+    "la": null,
+    "linkId": "",
+    "linkImported": false,
+    "links": {
+      "children": []
+    },
+    "linkSourceId": "",
+    "linkSourceName": "",
+    "nameFormula": "",
+    "nameFromFormula": false,
+    "originId": "",
+    "originPack": "",
+    "originVersion": 99,
+    "possibleUpdate": false,
+    "psionic": "",
+    "requirements": [],
+    "resistances": [],
+    "sizeOverride": "",
+    "source": "World of Warcraft RPG, 2nd Edition, p. 44",
+    "subTypes": [],
+    "tags": [],
+    "uniqueId": "",
+    "userNonRemovable": false
+  },
+  "type": "race"
+}

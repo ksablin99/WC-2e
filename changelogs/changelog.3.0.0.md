@@ -1,0 +1,108 @@
+# Issues fixed
+- [#1662](https://gitlab.com/dragonshorn/D35E/-/issues/1662) - Auras can recurse, desync, or miss updates on movement
+- [#1661](https://gitlab.com/dragonshorn/D35E/-/issues/1661) - Feature: Formula Creator popup for item formula fields
+- [#1658](https://gitlab.com/dragonshorn/D35E/-/issues/1658) - Add e2e test: rolling initiative from char sheet adds token to combat
+- [#1656](https://gitlab.com/dragonshorn/D35E/-/issues/1656) - Cant Roll Initiative from sheet
+- [#1655](https://gitlab.com/dragonshorn/D35E/-/issues/1655) - Psionic focus may stay active after expending it on item use
+- [#1652](https://gitlab.com/dragonshorn/D35E/-/issues/1652) - Summoning spell casting dialog shows blank monster names
+- [#1650](https://gitlab.com/dragonshorn/D35E/-/issues/1650) - Can't link animal companions or familiars
+- [#1644](https://gitlab.com/dragonshorn/D35E/-/issues/1644) - [Beta3] new skills cannot be created off of Craft, Perform and Profession
+- [#1641](https://gitlab.com/dragonshorn/D35E/-/issues/1641) - Updating the spellbook attribute doesn't change the card deck
+- [#1637](https://gitlab.com/dragonshorn/D35E/-/issues/1637) - Combat Display
+- [#1635](https://gitlab.com/dragonshorn/D35E/-/issues/1635) - Point Buy System Doesn't Save Ability Scores
+- [#1634](https://gitlab.com/dragonshorn/D35E/-/issues/1634) - Custom Skin Buttons Incorrect Width
+- [#1633](https://gitlab.com/dragonshorn/D35E/-/issues/1633) - Welcome Screen Always Opens despite ticking check box not to
+- [#1632](https://gitlab.com/dragonshorn/D35E/-/issues/1632) - E2e treasure generator fails when bestiary token icons are absent
+- [#1631](https://gitlab.com/dragonshorn/D35E/-/issues/1631) - Tech debt: v13 document id cleanup deferred from #1566
+- [#1630](https://gitlab.com/dragonshorn/D35E/-/issues/1630) - Rolling with bardic inspiration crashes when special action condition uses comparison operators
+- [#1628](https://gitlab.com/dragonshorn/D35E/-/issues/1628) - Max uses formula always evaluates to 0
+- [#1626](https://gitlab.com/dragonshorn/D35E/-/issues/1626) - Need translation keys for bonus and damage typess
+- [#1625](https://gitlab.com/dragonshorn/D35E/-/issues/1625) - Damage reduction/energy resistance dialog does not persist changes
+- [#1624](https://gitlab.com/dragonshorn/D35E/-/issues/1624) - Combat change range max wrong after rest restores daily uses
+- [#1623](https://gitlab.com/dragonshorn/D35E/-/issues/1623) - Turn Undead breaks when rolling from the character sheet
+- [#1622](https://gitlab.com/dragonshorn/D35E/-/issues/1622) - Grapple roll breaks when clicking Grapple on the character sheet
+- [#1620](https://gitlab.com/dragonshorn/D35E/-/issues/1620) - Rings in Hand-of-Glory-provided slots lose indented style when Hand of Glory is itself in a feat-granted neck slot
+- [#1619](https://gitlab.com/dragonshorn/D35E/-/issues/1619) - Localization strings for equipment slot capacity
+- [#1618](https://gitlab.com/dragonshorn/D35E/-/issues/1618) - Enforce slot capacity when equipping items
+- [#1617](https://gitlab.com/dragonshorn/D35E/-/issues/1617) - Changes system support for equipment slot capacities
+- [#1616](https://gitlab.com/dragonshorn/D35E/-/issues/1616) - Default slot capacities in config and actor template
+- [#1615](https://gitlab.com/dragonshorn/D35E/-/issues/1615) - Configurable equipment slots per creature
+- [#1613](https://gitlab.com/dragonshorn/D35E/-/issues/1613) - TypeError: Converting circular structure to JSON in actorUpdater when linked token is on canvas
+- [#1612](https://gitlab.com/dragonshorn/D35E/-/issues/1612) - Treasure generator crashes when applying item overrides to generated items
+- [#1611](https://gitlab.com/dragonshorn/D35E/-/issues/1611) - Bane weapon item sheet crashes and attack has no damage or conditionals
+- [#1610](https://gitlab.com/dragonshorn/D35E/-/issues/1610) - NPC spell charge sheet crashes when spellbook is undefined
+- [#1609](https://gitlab.com/dragonshorn/D35E/-/issues/1609) - Item converters crash when creating consumables, attacks, and traits from spells
+- [#1608](https://gitlab.com/dragonshorn/D35E/-/issues/1608) - Add NPC Treasure data
+- [#1607](https://gitlab.com/dragonshorn/D35E/-/issues/1607) - Fix treasure and item generators and broken logger output
+- [#1606](https://gitlab.com/dragonshorn/D35E/-/issues/1606) - Add git worktree e2e support + Windows dev environment setup
+- [#1605](https://gitlab.com/dragonshorn/D35E/-/issues/1605) - Fix two flaky test failures with deterministic root causes
+- [#1604](https://gitlab.com/dragonshorn/D35E/-/issues/1604) - v13 Replace remaining Document#data access patterns across the codebase
+- [#1603](https://gitlab.com/dragonshorn/D35E/-/issues/1603) - Convert to Loot and Generate Loot (Token) tools crash on load and use v12 actorId API
+- [#1602](https://gitlab.com/dragonshorn/D35E/-/issues/1602) - TypeError: o.light is undefined in updateTokenLight when actor has token on map
+- [#1601](https://gitlab.com/dragonshorn/D35E/-/issues/1601) - v13 Replace deprecated updateOwnedItem / createOwnedItem / deleteOwnedItem with embedded document API
+- [#1600](https://gitlab.com/dragonshorn/D35E/-/issues/1600) - v13 Replace removed this.object.data in FormApplication subclasses
+- [#1599](https://gitlab.com/dragonshorn/D35E/-/issues/1599) - v13 Bug: linkData silently fails to migrate data. keys to system.
+- [#1598](https://gitlab.com/dragonshorn/D35E/-/issues/1598) - v13: high prio runtime errors
+- [#1597](https://gitlab.com/dragonshorn/D35E/-/issues/1597) - Can't edit/open class items. V13 3.0.0beta2
+- [#1596](https://gitlab.com/dragonshorn/D35E/-/issues/1596) - Combat character sheet appears on the left side of sidebar
+- [#1595](https://gitlab.com/dragonshorn/D35E/-/issues/1595) - v13: removed API pattern token.data.*
+- [#1594](https://gitlab.com/dragonshorn/D35E/-/issues/1594) - v13: removed API pattern CONST.DOCUMENT_PERMISSION_LEVELS
+- [#1593](https://gitlab.com/dragonshorn/D35E/-/issues/1593) - v13: Actor#getOwnedItem() has been removed
+- [#1592](https://gitlab.com/dragonshorn/D35E/-/issues/1592) - Ticking Fractional Base Bonuses break the scaling of automatic scaling of attacks based on Base Attack Bonus.
+- [#1591](https://gitlab.com/dragonshorn/D35E/-/issues/1591) - Vigor and wounds alternative rules won't display properly in PC character sheets
+- [#1590](https://gitlab.com/dragonshorn/D35E/-/issues/1590) - Rolling Initiative doesn't work
+- [#1589](https://gitlab.com/dragonshorn/D35E/-/issues/1589) - Search Bar doesn't work
+- [#1588](https://gitlab.com/dragonshorn/D35E/-/issues/1588) - Attributes are Broken
+- [#1587](https://gitlab.com/dragonshorn/D35E/-/issues/1587) - Remove custom attribute command is not working
+- [#1585](https://gitlab.com/dragonshorn/D35E/-/issues/1585) - Localization issue on chat attack card
+- [#1583](https://gitlab.com/dragonshorn/D35E/-/issues/1583) - [FR] Remove buffs with no timeline from initiative
+- [#1581](https://gitlab.com/dragonshorn/D35E/-/issues/1581) - [BUG] Equipment Slot text shows up wrong
+- [#1579](https://gitlab.com/dragonshorn/D35E/-/issues/1579) - When dragging a weapon onto a Large Character, the weight doubles even if Autosize Weapons option is not ticked.
+- [#1573](https://gitlab.com/dragonshorn/D35E/-/issues/1573) - v12 beta BUG: Encounter Generator fails to start.
+- [#1567](https://gitlab.com/dragonshorn/D35E/-/issues/1567) - Custom skills duplicate when adding actor to the actors tab (world)
+- [#1566](https://gitlab.com/dragonshorn/D35E/-/issues/1566) - FR/Bug(?) Combat changes do not apply to items
+- [#1563](https://gitlab.com/dragonshorn/D35E/-/issues/1563) - Disabled class features not removed from description page
+- [#1562](https://gitlab.com/dragonshorn/D35E/-/issues/1562) - Arcane Spell Failure not rolling
+- [#1561](https://gitlab.com/dragonshorn/D35E/-/issues/1561) - powerPointsTotal seems to be rounding incorrectly
+- [#1559](https://gitlab.com/dragonshorn/D35E/-/issues/1559) - Update roll() calls to be either awaited or call evaluateSync
+- [#1558](https://gitlab.com/dragonshorn/D35E/-/issues/1558) - Add support for Ternaries and other complex functions for dice rolling
+- [#1555](https://gitlab.com/dragonshorn/D35E/-/issues/1555) - skill check: situational bonus gets doubled on second check
+- [#1554](https://gitlab.com/dragonshorn/D35E/-/issues/1554) - Natural armor adjustment on custom monsters is appending and not adding to existing natural armor when advancing monster
+- [#1552](https://gitlab.com/dragonshorn/D35E/-/issues/1552) - Enhancement Price Not Updating for FLAT priced modifiers
+- [#1548](https://gitlab.com/dragonshorn/D35E/-/issues/1548) - Automate restoration
+- [#1546](https://gitlab.com/dragonshorn/D35E/-/issues/1546) - Magic Weapon buffs do not apply correctly to incorporeal enemies
+- [#1545](https://gitlab.com/dragonshorn/D35E/-/issues/1545) - Ternary Operators don't function in the damage formula field
+- [#1543](https://gitlab.com/dragonshorn/D35E/-/issues/1543) - Ammunition Notes are not shown in Attack Chat Cards
+- [#1541](https://gitlab.com/dragonshorn/D35E/-/issues/1541) - "Armor Class Penalty" s/b "Armor Check Penalty" in attack chat card details
+- [#1538](https://gitlab.com/dragonshorn/D35E/-/issues/1538) - Produce Flame not adding buff (WAS Produce Flame not linking attack)
+- [#1537](https://gitlab.com/dragonshorn/D35E/-/issues/1537) - Bug: Energy resistence and energy vulnerability don´t work together
+- [#1535](https://gitlab.com/dragonshorn/D35E/-/issues/1535) - Feature Request : Feats can grant senses
+- [#1534](https://gitlab.com/dragonshorn/D35E/-/issues/1534) - Feature request: Ranged weapons with unlimited ammo (no ammo)
+- [#1531](https://gitlab.com/dragonshorn/D35E/-/issues/1531) - Bug: Linking buff special actions to attacks cause problems with the standard formular, @cl doesn't seem to work
+- [#1528](https://gitlab.com/dragonshorn/D35E/-/issues/1528) - Weapons placed in Containers can not be used for attacks
+- [#1527](https://gitlab.com/dragonshorn/D35E/-/issues/1527) - Enhancing ability checks also effects saves
+- [#1526](https://gitlab.com/dragonshorn/D35E/-/issues/1526) - combat changes (all) are applied twice
+- [#1525](https://gitlab.com/dragonshorn/D35E/-/issues/1525) - [FR] add combat changes for "All" & "All (optional)"
+- [#1524](https://gitlab.com/dragonshorn/D35E/-/issues/1524) - Spell Focus (Conjuration) stops healing spells from working
+- [#1523](https://gitlab.com/dragonshorn/D35E/-/issues/1523) - Attributes Hp Max not filled
+- [#1515](https://gitlab.com/dragonshorn/D35E/-/issues/1515) - Leaving "None" in the 'Custom' field of the 'DC Offset' of a spell item, then switching the dropdown to any other entry will stop Foundry from showing the calculated DC
+- [#1513](https://gitlab.com/dragonshorn/D35E/-/issues/1513) - Replace all instances of "featSpellDCBonus" within system with "&featSpellDCBonus".
+- [#1510](https://gitlab.com/dragonshorn/D35E/-/issues/1510) - Add automation for threatening and flanking
+- [#1509](https://gitlab.com/dragonshorn/D35E/-/issues/1509) - Draw threaten squares when selecting tokens
+- [#1508](https://gitlab.com/dragonshorn/D35E/-/issues/1508) - Dex bonus to AC does not apply when Wild-Shaping into a Hawk.
+- [#1506](https://gitlab.com/dragonshorn/D35E/-/issues/1506) - Jump Skill Check Speed Bonus inconsistent between PC/NPCs
+- [#1505](https://gitlab.com/dragonshorn/D35E/-/issues/1505) - paralyzed condition removes dex score instead of setting it to 0
+- [#1493](https://gitlab.com/dragonshorn/D35E/-/issues/1493) - Spell cards cannot be added to secondary deck
+- [#1491](https://gitlab.com/dragonshorn/D35E/-/issues/1491) - broken links in fighter class description
+- [#1488](https://gitlab.com/dragonshorn/D35E/-/issues/1488) - Strength Multipliers while Multi-Weapon Fighting Linger for One Attack
+- [#1478](https://gitlab.com/dragonshorn/D35E/-/issues/1478) - "NaN" Skill Points Used appears for NPCs that don't use Class Progression
+- [#1467](https://gitlab.com/dragonshorn/D35E/-/issues/1467) - Changes to BAB does not reflect in Full Attack sequence
+- [#1454](https://gitlab.com/dragonshorn/D35E/-/issues/1454) - Valuable  items in inventory on npc do not show when tranforming into loot sheet
+- [#1437](https://gitlab.com/dragonshorn/D35E/-/issues/1437) - "Bane of Humanoids" is broken due to unchecked checkbox
+- [#1431](https://gitlab.com/dragonshorn/D35E/-/issues/1431) - [V11 2.3.2] The problems due to weight do not change on the character's speed
+- [#1424](https://gitlab.com/dragonshorn/D35E/-/issues/1424) - Adding a situational modifier to saving throws doesn't change end value
+- [#1422](https://gitlab.com/dragonshorn/D35E/-/issues/1422) - Timed Recharge mechanic not working
+- [#1385](https://gitlab.com/dragonshorn/D35E/-/issues/1385) - FR: Unit Testing
+- [#1285](https://gitlab.com/dragonshorn/D35E/-/issues/1285) - Removed skills make skillpoints unalterable
+- [#1273](https://gitlab.com/dragonshorn/D35E/-/issues/1273) - FR: Option to disable advanced combat tracking features
+- [#895](https://gitlab.com/dragonshorn/D35E/-/issues/895) - FR: A button to put the Spells back into alphabetical order

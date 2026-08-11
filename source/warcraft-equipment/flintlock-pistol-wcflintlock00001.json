@@ -1,0 +1,59 @@
+{
+  "_id": "wcFlintlock00001",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "rules": {
+        "malfunctionRating": 1,
+        "reload": "standard"
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "pages": "181, 184-185",
+        "section": "Firearms"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/target.svg",
+  "name": "Flintlock Pistol",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "baseWeaponType": "Flintlock Pistol",
+    "carried": true,
+    "description": {
+      "value": "<p>Single-shot exotic firearm. Reloading is a standard action that provokes attacks of opportunity. A natural attack roll of 1 causes a malfunction; clearing a normal jam is a full-round action.</p>"
+    },
+    "equipped": true,
+    "hardness": 10,
+    "hp": {
+      "max": 5,
+      "value": 5
+    },
+    "identified": true,
+    "identifiedName": "Flintlock Pistol",
+    "index": {
+      "subType": "exotic",
+      "uniqueId": ""
+    },
+    "masterwork": false,
+    "price": 400,
+    "properties": {},
+    "quantity": 1,
+    "weaponData": {
+      "critMult": "3",
+      "critRange": "20",
+      "damageRoll": "3d6",
+      "damageType": "P",
+      "range": 20,
+      "size": "med"
+    },
+    "weaponSubtype": "ranged",
+    "weaponType": "exotic",
+    "weight": 5
+  },
+  "type": "weapon"
+}

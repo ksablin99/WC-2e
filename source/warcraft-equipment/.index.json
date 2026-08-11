@@ -1,0 +1,62 @@
+[
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "longsword-wclongsword00001.json",
+    "key": "!items!wcLongsword00001"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "shortbow-wcshortbow000001.json",
+    "key": "!items!wcShortbow000001"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "flintlock-pistol-wcflintlock00001.json",
+    "key": "!items!wcFlintlock00001"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "long-rifle-wclongrifle00001.json",
+    "key": "!items!wcLongRifle00001"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "firearm-ammunition-wcfireammo000001.json",
+    "key": "!items!wcFireAmmo000001"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "gunpowder-horn-wcgunpowder00001.json",
+    "key": "!items!wcGunpowder00001"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "chain-shirt-wcchainshirt0001.json",
+    "key": "!items!wcChainShirt0001"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "light-steel-shield-wclightshield001.json",
+    "key": "!items!wcLightShield001"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "spellbook-wcspellbook00001.json",
+    "key": "!items!wcSpellbook00001"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "spell-component-pouch-wcspellpouch0001.json",
+    "key": "!items!wcSpellPouch0001"
+  }
+]

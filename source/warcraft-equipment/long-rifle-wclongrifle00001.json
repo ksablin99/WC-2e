@@ -1,0 +1,59 @@
+{
+  "_id": "wcLongRifle00001",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "rules": {
+        "malfunctionRating": 1,
+        "reload": "manual"
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "pages": "181, 184",
+        "section": "Firearms"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/target.svg",
+  "name": "Long Rifle",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "baseWeaponType": "Long Rifle",
+    "carried": true,
+    "description": {
+      "value": "<p>Two-handed exotic firearm. This starter entry records its attack profile; malfunction and reloading remain manual.</p>"
+    },
+    "equipped": true,
+    "hardness": 10,
+    "hp": {
+      "max": 10,
+      "value": 10
+    },
+    "identified": true,
+    "identifiedName": "Long Rifle",
+    "index": {
+      "subType": "exotic",
+      "uniqueId": ""
+    },
+    "masterwork": false,
+    "price": 700,
+    "properties": {},
+    "quantity": 1,
+    "weaponData": {
+      "critMult": "3",
+      "critRange": "20",
+      "damageRoll": "3d6",
+      "damageType": "P",
+      "range": 200,
+      "size": "med"
+    },
+    "weaponSubtype": "ranged",
+    "weaponType": "exotic",
+    "weight": 20
+  },
+  "type": "weapon"
+}

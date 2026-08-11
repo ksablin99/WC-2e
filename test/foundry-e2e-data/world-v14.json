@@ -1,0 +1,14 @@
+{
+  "id": "test-world",
+  "title": "E2E Test World",
+  "system": "warcraftrpg2e",
+  "coreVersion": "14.359",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "systemVersion": "3.0.0-beta.2",
+  "description": "Minimal world for automated e2e testing.",
+  "joinTheme": "default",
+  "playtime": 0
+}

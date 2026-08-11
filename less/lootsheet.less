@@ -1,0 +1,266 @@
+
+.loot-sheet-npc .gm-section {
+  /* height: 48px; */
+  color: #000;
+  /* font-weight: 700; */
+  font-size: 20px;
+  margin-top: 0.5rem;
+  text-align: center;
+  border-top: 1px solid #CCC;
+  border-bottom: 1px solid #CCC;
+  font-family: "Nodesto", "Signika", "Palatino Linotype", serif;
+  font-size: 20px;
+  color: #4b4a44;
+  font-size: 18px;
+}
+
+.loot-sheet-npc .gm-header {
+  margin-top: 0.5rem;
+}
+
+.loot-sheet-npc .gm-settings .permissions-list,
+.loot-sheet-npc .gm-settings .coin-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.loot-sheet-npc .warn {
+  color: darkred !important;
+}
+
+.loot-sheet-npc .gm-settings .sheet-types,
+.loot-sheet-npc .gm-settings .merchant-settings {
+  margin-right: 10px;
+}
+
+.loot-sheet-npc .gm-settings .merchant-settings .flexrow {
+  border-bottom: 1px solid #CCC;
+  margin-bottom: 5px;
+}
+
+.loot-sheet-npc .gm-settings .merchant-settings .flexrow h4 {
+  margin: 2px 0 0 0;
+}
+
+.loot-sheet-npc .gm-settings .merchant-settings {
+  margin-left: 24px;
+}
+
+.loot-sheet-npc .gm-settings .coins-list {
+  padding-left: 24px;
+}
+
+.loot-sheet-npc .gm-settings h4.sheet-name {
+  flex: 1;
+  margin: 0 0 0 24px;
+  line-height: 22px;
+}
+
+.loot-sheet-npc .gm-settings .permission,
+.loot-sheet-npc .gm-settings .denomination {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: 21px;
+  line-height: 21px;
+  border-bottom: 1px solid #CCC;
+  font-size: 13px;
+}
+
+.loot-sheet-npc .gm-settings .sheet-type-info,
+.loot-sheet-npc .gm-settings .permission-info,
+.loot-sheet-npc .gm-settings .merchant-settings-info  {
+  color: #7a7971;
+  margin: 6px 6px 6px 24px;
+  display: none;
+}
+
+.loot-sheet-npc .gm-settings .help {
+  color: #7a7971;
+  font-size: 13px;
+}
+
+.loot-sheet-npc .gm-settings .permission,
+.loot-sheet-npc .gm-settings .denomination>* {
+  flex: 1;
+  flex-wrap: inherit;
+  height: auto;
+}
+
+.loot-sheet-npc .gm-settings .permission .permission-name {
+  margin: 0;
+}
+
+.loot-sheet-npc .gm-settings .permission .permission-proficiency {
+  text-align: center;
+  flex: 0 0 24px;
+}
+
+.loot-sheet-npc .gm-settings .permission .permission-proficiency i.fa-circle {
+  font-size: 10px;
+}
+
+.loot-sheet-npc .gm-settings .split-coins {
+  width: 95%;
+}
+
+.loot-sheet-npc .gm-settings .update-inventory {
+  width: 95%;
+}
+
+.loot-sheet-npc img.sheet-profile {
+  border: none;
+  max-width: 220px;
+  max-height: 220px;
+}
+
+.loot-sheet-npc img.sheet-profile-small {
+  border: none;
+  max-width: 120px;
+  max-height: 120px;
+}
+
+section.sheet-sidebar.sidebar {
+  flex: 0 0 250px;
+  border-bottom: 2px groove #eeede0;
+  border-right: 2px groove #eeede0;
+}
+
+section.sheet-lower {
+  height: calc(100% - 72px);
+}
+
+.d35ecustom section.sheet-sidebar.sidebar {
+  background: url(/systems/warcraftrpg2e/icons/ui/parchment-2.png) repeat;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  padding: 8px;
+  margin-right: 4px;
+  border: none;
+  border-radius: 3px;
+}
+
+.sheet-content.content {
+  height: 100%;
+}
+
+.sheet-content.content div:not(.item-image) {
+  height: 100%;
+}
+
+.sheet-profile-img {
+  text-align: center;
+}
+
+section.sheet-content.content {
+  /* border-bottom: 2px groove #eeede0; */
+}
+
+.loot-sheet-npc.sheet.actor .inventory-list .item .item-price,
+.loot-sheet-npc.sheet.actor .inventory-list .item .item-quantity {
+  flex: 0 0 100px;
+  color: #666;
+  font-size: 10px;
+}
+
+.loot-sheet-npc.sheet.actor .inventory-list .item-controls {
+  flex: 0 0 100px !important;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  justify-content: flex-end;
+}
+
+.loot-sheet-npc.sheet .sheet-header .charbutton {
+  flex: 0 0 150px;
+  margin: auto;
+  text-align: right;
+  cursor: pointer;
+}
+
+button.price-modifier, button.convert-loot, button.identify-all, button.group-items, button.unidentify-all {
+  width: auto;
+  padding: 1px 10px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.loot-sheet-npc.sheet .sheet-navigation {
+  margin-bottom: 15px;
+}
+
+input#price-modifier-percent-display, input#price-modifier-percent-display-buy {
+  background: none;
+  border: 1px solid transparent;
+  width: 50px;
+}
+
+input#quantity {
+  background: none;
+  border: 1px solid #111;
+}
+
+input#price-modifier-percent-display:hover,
+input#price-modifier-percent-display:focus,
+input#price-modifier-percent-display-buy:hover,
+input#price-modifier-percent-display-buy:focus,
+input#quantity:hover,
+input#quantity:focus {
+  border: 1px solid #111;
+  box-shadow: 0 0 8px rgb(27, 109, 148);
+}
+
+.loot-sheet-npc .sheet-profile-img {
+  padding: 10px;
+}
+
+.loot-sheet-npc.sheet.actor .editor {
+  height: 600px;
+}
+
+.loot-sheet-npc.sheet .sheet-header h1 input {
+  margin: 0px;
+}
+
+.loot-sheet-npc .currency-controls a {
+  flex: 0 0 16px;
+  font-size: 10px;
+  text-align: center;
+  color: #666;
+}
+
+.loot-sheet-npc .totals {
+  margin-left: 20px;
+  padding: 10px 0 2px 0;
+}
+
+.loot-sheet-npc .features {
+  height: 530px;
+  overflow-y: scroll;
+}
+
+.loot-sheet-npc .batch-update {
+  padding: 5px;
+}
+
+.loot-sheet-npc .batch-update a {
+  margin-left: 10px;
+}
+
+.loot-sheet-npc .fa-eye-slash:not(.default) {
+  color: darkred;
+}
+
+.loot-sheet-npc a.grayed {
+  color: black !important;
+  opacity: 0.6 !important;
+}
+
+
+.loot-sheet-npc a.grayed i {
+  color: black !important;
+  opacity: 0.6 !important;
+}

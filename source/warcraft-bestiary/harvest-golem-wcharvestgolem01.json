@@ -1,0 +1,263 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "wcHvgClass000001",
+        "effects": [],
+        "flags": {},
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Construct Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "med",
+          "changeFlags": {
+            "noCon": true,
+            "noInt": true
+          },
+          "changes": [
+            [
+              "20",
+              "misc",
+              "mhp",
+              "untyped"
+            ],
+            [
+              "100",
+              "misc",
+              "fortification",
+              "untyped"
+            ],
+            [
+              "8",
+              "ac",
+              "nac",
+              "racial"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "construct",
+          "hd": 10,
+          "hp": 38,
+          "levels": 7,
+          "maxLevel": 15,
+          "savingThrows": {
+            "fort": {
+              "value": "low"
+            },
+            "ref": {
+              "value": "low"
+            },
+            "will": {
+              "value": "low"
+            }
+          },
+          "source": "Monster Guide pp. 85-86"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "wcHvgClaw0000001",
+        "effects": [],
+        "flags": {},
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Keen Claw",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "str",
+            "critMult": 2,
+            "critRange": 17,
+            "damage": "str",
+            "damageMult": 1
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "1",
+          "attackType": "natural",
+          "baseWeaponType": "Claw",
+          "damage": {
+            "parts": [
+              [
+                "1d4",
+                null,
+                "damage-slashing"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p>A +1 keen claw. The golem's full attack makes two claw attacks at the same bonus.</p>"
+          },
+          "favorite": true,
+          "primaryAttack": true,
+          "proficient": true,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "wcHvgTraits00001",
+        "effects": [],
+        "flags": {},
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Harvest Golem Special Abilities",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "description": {
+            "value": "<p><strong>Backstab (Ex):</strong> +2d6 as the rogue ability, but never nonlethal.</p><p><strong>Immunity to Magic (Su):</strong> Immune to spells and spell-like abilities that allow spell resistance; fire spells affect it normally.</p><p><strong>Lifeless Mien (Ex):</strong> A creature within 30 feet may notice that the apparent scarecrow is animate with a DC 20 Spot check.</p><p>Construct traits, darkvision 60 feet, low-light vision, and +8 racial bonus on Stealth. Backstab, immunity, and Lifeless Mien require manual resolution; destruction at 0 hp is automated.</p>"
+          },
+          "featType": "trait",
+          "source": "Monster Guide pp. 85-86"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "wcHarvestGolem01",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "pages": "85-86",
+        "section": "Harvest Golem"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "wcHvgClass000001",
+    "wcHvgClaw0000001",
+    "wcHvgTraits00001"
+  ],
+  "name": "Harvest Golem",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "total": 1,
+        "value": 1
+      },
+      "con": {
+        "isZero": true,
+        "total": 0,
+        "value": 0
+      },
+      "dex": {
+        "total": 14,
+        "value": 14
+      },
+      "int": {
+        "isZero": true,
+        "total": 0,
+        "value": 0
+      },
+      "str": {
+        "total": 23,
+        "value": 23
+      },
+      "wis": {
+        "total": 12,
+        "value": 12
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 18
+        },
+        "normal": {
+          "total": 20
+        },
+        "touch": {
+          "total": 12
+        }
+      },
+      "bab": {
+        "base": 5,
+        "total": 5
+      },
+      "cmb": {
+        "total": 11
+      },
+      "cmd": {
+        "total": 23
+      },
+      "creatureType": "construct",
+      "deathRule": "warcraft-construct",
+      "fortification": {
+        "total": 100
+      },
+      "hd": {
+        "racialClass": 7,
+        "total": 7
+      },
+      "hp": {
+        "max": 58,
+        "min": 0,
+        "value": 58
+      },
+      "init": {
+        "total": 2
+      },
+      "naturalACTotal": 8,
+      "savingThrows": {
+        "fort": {
+          "total": 2
+        },
+        "ref": {
+          "total": 4
+        },
+        "will": {
+          "total": 3
+        }
+      },
+      "senses": {
+        "darkvision": 60,
+        "lowLight": true
+      },
+      "speed": {
+        "land": {
+          "base": 40,
+          "total": 40
+        }
+      }
+    },
+    "details": {
+      "alignment": "Always neutral",
+      "cr": 5,
+      "environment": "Any",
+      "notes": {
+        "value": "<p>Medium construct. Two claws +12 melee (1d4+7/17-20); backstab +2d6. The Warcraft construct death rule automatically destroys it at 0 hp.</p>"
+      },
+      "totalCr": 5,
+      "type": "Construct"
+    },
+    "traits": {
+      "actualSize": "med",
+      "senses": "Darkvision 60 ft., low-light vision",
+      "size": "med",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

@@ -1,0 +1,300 @@
+form, .compendium-browser-window {
+  
+  .form-group.stacked {
+    label {
+      flex: 0 0 100%;
+    }
+    label.checkbox {
+      flex: auto;
+      text-align: left;
+      line-height: 20px;
+      font-size: 13px;
+
+      input[type="checkbox"] {
+        height: unset;
+        margin: unset;
+      }
+    }
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    &.stylized {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+  }
+  .checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    border: #782e22 2px solid;
+    background-color: #eee;
+    border-radius: 2px;
+  }
+  input ~ .checkmark {
+    background-color: #ccc;
+  }
+  input:checked ~ .checkmark {
+    background-color: #782e22;
+  }
+
+  input:disabled ~ .checkmark {
+    filter: grayscale(1);
+
+    cursor: initial;
+  }
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .checkmark:after {
+    left: 4px;
+    top: -1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+.dialog-content {
+  margin-bottom: 8px;
+}
+
+/* Tooltip text */
+.tooltip .tooltipcontent {
+  font-family: sans-serif;
+  font-size: 11px;
+  font-weight: normal;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  line-height: 13px;
+  min-width: 128px;
+  width: 240px;
+
+  /* Position the tooltip text */
+  position: fixed;
+  z-index: 1;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+
+  code {
+    font-family: "Courier New", monospace;
+    font-size: inherit;
+    font-weight: inherit;
+    background: none;
+    padding: 0;
+  }
+
+  &.hint-tooltip {
+    width: auto;
+    max-width: 360px;
+    min-width: 180px;
+    text-align: center;
+    line-height: 1.35;
+    white-space: normal;
+    overflow-wrap: anywhere;
+
+    p,
+    .hint-tooltip-body {
+      margin: 0 0 4px 0;
+      white-space: normal;
+      text-wrap: wrap;
+      overflow-wrap: anywhere;
+      text-align: center;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    strong {
+      display: inline-block;
+      margin-bottom: 2px;
+    }
+  }
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltipcontent {
+  visibility: visible;
+  pointer-events: none;
+  opacity: 1;
+}
+
+
+input[type=range]:disabled {
+  filter: grayscale(1);
+}
+
+.welcome-content {
+  img {
+    border: none !important;
+  }
+}
+
+.resistance {
+  color: #006400;
+}
+
+.vulnerability {
+  color: #8b0000;
+}
+
+.lethal {
+  color: #d04702;
+}
+
+.nonlethal {
+  color: #007b49;
+}
+
+.welcome-screen {
+  &.window-app {
+    border: 8px solid #55493B;
+    border-image: url("icons/ui/dialog-frame.png") 30 round;
+    background: url("icons/ui/sidebar-bg.png");
+    border-radius: 0;
+  }
+  .window-content {
+    overflow: hidden;
+  }
+}
+
+.scrolling-header {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background: url(../ui/denim075.png) repeat;
+  z-index: 10;
+}
+
+.rolled-attack {
+  background: url("icons/damage-type/badges/gladius.svg") no-repeat !important;
+  border: none !important;
+  height: 60px !important;
+  line-height: 60px !important;
+  background-position: center !important;
+  box-shadow: none !important;
+  font-family: "Nodesto", serif!important;
+  font-size: 44px!important;
+}
+
+.rolled-defense {
+  background: url("icons/damage-type/badges/shield.svg") no-repeat !important;
+  border: none !important;
+  height: 60px !important;
+  line-height: 60px !important;
+  background-position: center !important;
+  box-shadow: none !important;
+  font-family: "Nodesto", serif!important;
+  font-size: 44px!important;
+}
+
+.rolled-fortify-value {
+  background: url("icons/damage-type/badges/chest-armor.svg") no-repeat !important;
+  border: none !important;
+  height: 50px !important;
+  line-height: 50px !important;
+  background-position: center !important;
+  box-shadow: none !important;
+  font-family: "Nodesto", serif!important;
+  font-size: 34px!important;
+}
+
+.rolled-roll {
+  background: url("icons/damage-type/badges/rolling-dices.svg") no-repeat !important;
+  border: none !important;
+  height: 50px !important;
+  line-height: 50px !important;
+  background-position: center !important;
+  box-shadow: none !important;
+  font-family: "Nodesto", serif!important;
+  font-size: 34px!important;
+}
+
+.rolled-versus {
+  background: url("icons/damage-type/badges/shield-impact.svg") no-repeat !important;
+  border: none !important;
+  height: 50px !important;
+  line-height: 50px !important;
+  background-position: center !important;
+  box-shadow: none !important;
+  font-family: "Nodesto", serif!important;
+  font-size: 34px!important;
+}
+
+span.bold {
+  font-weight: 900;
+}
+
+.game:not(.d35gm) {
+  .gm-sensitive {
+    display: none;
+  }
+}
+.game.hide-special-action:not(.d35gm) {
+  .special-action-button {
+    display: none;
+  }
+}
+.custom-dialog.wide {
+  width: 600px !important;
+}
+
+.disabled-action {
+  pointer-events: none;
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.disabled-action-button {
+    filter: grayscale(1) !important;
+    cursor: not-allowed !important;
+  pointer-events: none;
+}
+
+/* ---- D35E Combat Tracker action icons ---- */
+.d35e-action-icon {
+  opacity: 0.35;
+  color: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  transition: opacity 0.15s, color 0.15s;
+
+  &[data-action] {
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.65;
+    }
+  }
+
+  &.active {
+    opacity: 1;
+    color: #4fc04f;
+    text-shadow: 0 0 6px rgba(79, 192, 79, 0.6);
+  }
+}

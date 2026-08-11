@@ -1,0 +1,414 @@
+@import "variables.less";
+
+/* ----------------------------------------- */
+/*  Chat Cards
+/* ----------------------------------------- */
+
+.D35E.chat-card {
+  font-style: normal;
+  font-size: 12px;
+
+  &.item-card {
+    h2 {
+      padding: 3px 0;
+      border: none;
+      flex: 1;
+      margin: 0;
+      line-height: 36px;
+      font-family: "Nodesto", "Signika", "Palatino Linotype", serif;
+      font-size: 20px;
+      color: black;
+      opacity: 0.9;
+      margin-bottom: 4px;
+    }
+  }
+
+  .card-header {
+    padding: 3px 0;
+    border-top: 2px groove #FFF;
+    border-bottom: 2px groove #FFF;
+
+    img {
+      flex: 0 0 36px;
+      margin-right: 5px;
+    }
+
+    h3 {
+      flex: 1;
+      margin: 0;
+      line-height: 36px;
+      .nodesto();
+      color: @colorOlive;
+    }
+  }
+
+  .card-content {
+    margin: 5px 0;
+
+    h3 {
+      font-size: 12px;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    > * {
+      -webkit-user-select: text;
+      -moz-user-select: text;
+      -ms-user-select: text;
+      user-select: text;
+    }
+  }
+
+  .card-buttons {
+    margin: 5px 0;
+    img {
+      height: 24px;
+      float: left;
+      vertical-align: middle;
+      margin-right: -32px;
+      margin-top: 4px;
+      margin-left: 8px;
+    }
+    span {
+      display: block;
+      line-height: 28px;
+      text-align: center;
+      border: 1px solid @borderLight;
+    }
+
+    button {
+      font-size: 12px;
+      height: 24px;
+      line-height: 24px;
+      margin: 2px 0;
+
+      &[disabled] {
+        img {
+          filter: grayscale(1);
+        }
+      }
+      img.target {
+        display: none;
+      }
+      &:hover {
+        img.target {
+          display: block;
+        }
+      }
+    }
+
+
+  }
+
+  .card-footer {
+    padding: 3px 0 0;
+    border-top: 2px groove #FFF;
+
+    .spell-failure {
+      padding: 4px;
+      margin-bottom: 4px;
+      border: 1px solid #999;
+      border-radius: 3px;
+
+      h3 {
+        color: #782e22;;
+        font-size: 16px;
+        text-align: center;
+      }
+
+      .dice-roll, .dice-total {
+        padding: 0;
+      }
+    }
+
+    .spell-failure.spell-failure-boxed {
+      border: none;
+      padding: 0;
+      margin-bottom: 0;
+    }
+
+    span {
+      border-right: 2px groove #FFF;
+      padding: 0 5px 0 0;
+      font-size: 10px;
+
+      &:last-child {
+        border-right: none;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+#chat-log .message {
+  .chat-attack {
+    padding: 4px;
+    margin-bottom: 8px;
+    border: 1px solid #999;
+    border-radius: 3px;
+
+    &:not(.compact) {
+      .dice-roll:nth-child(n+2) .dice-flavor {
+        margin-top: 12px;
+      }
+
+      .dice-roll:first-child > .dice-flavor {
+        font-family: "Nodesto", "Signika", "Palatino Linotype", serif;
+        color: #782e22;;
+        font-size: 22px;
+        text-align: center;
+      }
+    }
+  }
+
+  .property-group {
+    flex: 0 0 24px;
+
+    /* Tags */
+    .tag {
+      display: inline-block;
+      margin: 0 2px 0 0;
+      padding: 1px 3px;
+      font-size: 10px;
+      line-height: 16px;
+      border: 1px solid #999;
+      border-radius: 3px;
+      background: rgba(0, 0, 0, 0.05);
+      flex: 0 0 24px;
+      white-space: nowrap;
+    }
+  
+    input[type="text"] {
+      height: 24px;
+      margin: 2px;
+    }
+    
+    label {
+      flex: 2;
+      color: @colorOlive;
+      font-weight: bold;
+    }
+  }
+
+  .extra-text {
+    margin-top: 8px;
+    flex: 0 0 100%;
+    white-space: pre-wrap;
+    
+    label {
+      flex: 2;
+      color: @colorOlive;
+      font-weight: bold;
+    }
+  }
+
+  .extra-effect:not(:last-child),
+  .extra-misc:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  .extra-effect {
+    position: relative;
+    margin: 0;
+    line-height: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid #999;
+    border-radius: 3px;
+    box-shadow: 0 0 2px #FFF inset;
+  }
+
+  .extra-misc {
+    position: relative;
+    margin: 0;
+    line-height: 20px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.05);
+    border: 1px solid #999;
+    border-radius: 3px;
+    box-shadow: 0 0 2px #FFF inset;
+  }
+
+  .extra-roll-label {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .toggle-header {
+    margin-bottom: -3px;
+  }
+
+  .table-container {
+    position: relative;
+    margin: 0;
+    line-height: 24px;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid #999;
+    border-radius: 3px;
+    box-shadow: 0 0 2px #FFF inset;
+    word-break: break-all;
+  }
+
+  table {
+    border: 0;
+    margin: 0;
+  }
+
+  .dice-tooltips {
+    padding: 0px 4px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    flex: 0;
+    background: rgba(255,255,255,0.2);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: 0;
+
+    .dice-formula {
+      position: relative;
+      margin: 0;
+      line-height: 24px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.1);
+      border: 1px solid #999;
+      border-radius: 3px;
+      box-shadow: 0 0 2px #FFF inset;
+      word-break: break-all;
+    }
+  }
+
+  div.defense {
+    table {
+      width: 100%;
+      table-layout: fixed;
+
+      td, th {
+        text-align: center;
+      }
+    }
+  }
+
+  .special-action-info {
+    line-height: 24px;
+  }
+
+  .special-action-sublabel {
+    display: block;
+    border: none;
+    font-family: "Signika";
+    font-size: 10px;
+    line-height: 10px;
+    margin-top: -2px;
+  }
+}
+&.target-hidden, .target-hidden {
+  opacity: 0.8;
+}
+.dice-result.box {
+  border: none !important;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 0px 0px 2px 0px rgb(0 0 0 / 75%);
+  -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 2px 0px rgb(0 0 0 / 75%);
+  font-family: "Nodesto", "Signika", "Palatino Linotype", serif;
+  font-size: 20px;
+  text-align: center;
+
+
+
+  .box-title {
+    line-height: 16px;
+    margin: 4px 8px 2px;
+    font-size: 18px;
+    border-bottom: 1px solid #b5b3a4;
+    padding-left: 16px;
+  }
+
+  .roll-display-toggle {
+    font-size: 14px;
+  }
+}
+
+.dice-result-row {
+  margin-bottom: 4px;
+}
+
+.chat-card.defense-card {
+  .saving-throws {
+    margin-top: 4px;
+  }
+}
+
+.dmg-type-icon {
+  display: inline;
+    width: 14px;
+    border: none;
+    vertical-align: middle;
+    margin-bottom: 2px;
+}
+
+.damage-divider {
+  font-size: 20px;
+  text-align: center;
+  align-self: flex-end;
+  flex: 0 30px;
+}
+
+/* ----------------------------------------- */
+/*  AoO Notification Card
+/* ----------------------------------------- */
+
+.aoo-token-img {
+  object-fit: cover;
+  border-radius: 2px;
+  flex: 0 0 auto;
+}
+
+.aoo-subtitle {
+  line-height: 16px;
+  font-size: 13px;
+  opacity: 0.7;
+  margin: 0;
+}
+
+.aoo-may-make {
+  margin: 4px 0 6px;
+  font-size: 13px;
+}
+
+.aoo-threatener {
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  padding: 3px 2px;
+  border-radius: 3px;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.05);
+  }
+
+  .aoo-name {
+    flex: 1;
+  }
+
+  .aoo-count {
+    font-size: 11px;
+    font-weight: bold;
+    padding: 1px 5px;
+    border-radius: 3px;
+    white-space: nowrap;
+
+    &.aoo-count-available {
+      color: #2a7a2a;
+      background: rgba(79, 192, 79, 0.15);
+      border: 1px solid rgba(79, 192, 79, 0.4);
+    }
+
+    &.aoo-count-exhausted {
+      color: #888;
+      background: rgba(0, 0, 0, 0.06);
+      border: 1px solid rgba(0, 0, 0, 0.15);
+    }
+  }
+}

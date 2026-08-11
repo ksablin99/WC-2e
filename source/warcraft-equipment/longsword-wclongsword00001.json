@@ -1,0 +1,55 @@
+{
+  "_id": "wcLongsword00001",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "pages": "182",
+        "section": "Table 9-2: Weapons"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/sword.svg",
+  "name": "Longsword",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "baseWeaponType": "Longsword",
+    "carried": true,
+    "description": {
+      "value": "<p>A standard one-handed martial sword.</p>"
+    },
+    "equipped": true,
+    "hardness": 10,
+    "hp": {
+      "max": 5,
+      "value": 5
+    },
+    "identified": true,
+    "identifiedName": "Longsword",
+    "index": {
+      "subType": "martial",
+      "uniqueId": ""
+    },
+    "masterwork": false,
+    "price": 15,
+    "properties": {},
+    "quantity": 1,
+    "weaponData": {
+      "critMult": "2",
+      "critRange": "19",
+      "damageRoll": "1d8",
+      "damageType": "S",
+      "range": null,
+      "size": "med"
+    },
+    "weaponSubtype": "1h",
+    "weaponType": "martial",
+    "weight": 4
+  },
+  "type": "weapon"
+}

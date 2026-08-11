@@ -1,0 +1,130 @@
+<section class="d35e-migration-dialog">
+  <header class="migration-summary">
+    <div>
+      <label>{{localize "D35E.MigrationCurrentVersion"}}</label>
+      <strong>{{currentVersion}}</strong>
+    </div>
+    <div>
+      <label>{{localize "D35E.MigrationBaselineVersion"}}</label>
+      <strong>{{baselineVersion}}</strong>
+    </div>
+  </header>
+
+  {{#if readOnly}}
+  <p class="migration-warning">{{localize "D35E.MigrationTextUser"}}</p>
+  {{else}}
+  <p class="migration-warning">{{localize "D35E.MigrationText"}}</p>
+  {{/if}}
+
+  {{#if error}}
+  <p class="migration-error">{{error}}</p>
+  {{/if}}
+  {{#if complete}}
+  <p class="migration-complete">{{localize "D35E.MigrationCompleteText"}}</p>
+  {{/if}}
+
+  <section class="migration-section">
+    <label class="block-header migration-section-title">{{localize "D35E.MigrationPending"}}</label>
+    {{#if hasPending}}
+    <ol class="migration-list">
+      {{#each pendingRows}}
+      <li class="migration-row migration-status-{{status}}">
+        <span class="migration-status-icon" aria-hidden="true">
+          <label class="checkbox migration-checkbox">
+            <input type="checkbox" class="stylized" data-action="toggle-migration" data-migration-id="{{id}}" {{#if selected}}checked{{/if}} {{#unless optional}}disabled{{/unless}} {{#if ../running}}disabled{{/if}}>
+            <span class="checkmark"></span>
+          </label>
+        </span>
+        <div class="migration-row-main">
+          <strong>{{title}}{{#if optional}} <span class="migration-tag">{{localize "D35E.MigrationOptional"}}</span>{{/if}}</strong>
+          <p>{{description}}</p>
+        </div>
+        <span class="migration-version">{{version}}</span>
+        <span class="migration-status">{{statusLabel}}</span>
+      </li>
+      {{/each}}
+    </ol>
+    {{else}}
+    <p class="migration-empty">{{localize "D35E.MigrationNonePending"}}</p>
+    {{/if}}
+  </section>
+
+  <section class="migration-section">
+    <label class="block-header migration-section-title">{{localize "D35E.MigrationCompleted"}}</label>
+    {{#if hasCompleted}}
+    <ol class="migration-list">
+      {{#each completedRows}}
+      <li class="migration-row migration-status-success">
+        <span class="migration-status-icon" aria-hidden="true">
+          <i class="fas fa-check-circle migration-history-icon migration-history-success"></i>
+        </span>
+        <div class="migration-row-main">
+          <strong>{{title}}</strong>
+          <p>{{completedAt}}</p>
+          {{#if hasAffected}}
+          <p class="migration-affected">
+            {{localize "D35E.MigrationAffected"}}: {{affectedTotal}}
+            {{#each affectedRows}}
+            <span>{{this}}</span>
+            {{/each}}
+          </p>
+          {{/if}}
+        </div>
+        <span class="migration-version">{{version}}</span>
+        <span class="migration-status">{{localize "D35E.MigrationStatus.success"}}</span>
+      </li>
+      {{/each}}
+    </ol>
+    {{else}}
+    <p class="migration-empty">{{localize "D35E.MigrationNoneCompleted"}}</p>
+    {{/if}}
+  </section>
+
+  <section class="migration-section">
+    <label class="block-header migration-section-title">{{localize "D35E.MigrationSkipped"}}</label>
+    {{#if hasSkipped}}
+    <ol class="migration-list">
+      {{#each skippedRows}}
+      <li class="migration-row migration-status-skipped">
+        <span class="migration-status-icon" aria-hidden="true">
+          <i class="fas fa-minus-circle migration-history-icon migration-history-skipped"></i>
+        </span>
+        <div class="migration-row-main">
+          <strong>{{title}}</strong>
+          <p>{{skippedAt}}</p>
+        </div>
+        <span class="migration-version">{{version}}</span>
+        <span class="migration-status">{{localize "D35E.MigrationStatus.skipped"}}</span>
+      </li>
+      {{/each}}
+    </ol>
+    {{else}}
+    <p class="migration-empty">{{localize "D35E.MigrationNoneSkipped"}}</p>
+    {{/if}}
+  </section>
+
+  <footer class="migration-actions">
+    {{#if readOnly}}
+    <button type="button" data-action="logout">
+      <i class="fas fa-sign-out-alt"></i> {{localize "D35E.MigrationLogOut"}}
+    </button>
+    {{else}}
+    {{#if complete}}
+    <button type="button" data-action="confirm-complete">
+      <i class="fas fa-check"></i> {{localize "D35E.MigrationOK"}}
+    </button>
+    {{else}}
+    <button type="button" data-action="run-migrations" {{#if running}}disabled{{/if}}>
+      {{#if running}}
+      <i class="fas fa-spinner fa-spin"></i> {{localize "D35E.MigrationWorking"}}
+      {{else}}
+      <i class="fas fa-database"></i> {{localize "D35E.MigrationIMadeBackup"}}
+      {{/if}}
+    </button>
+    <button type="button" data-action="shutdown" {{#if running}}disabled{{/if}}>
+      <i class="fas fa-power-off"></i> {{localize "D35E.MigrationShutDown"}}
+    </button>
+    {{/if}}
+    {{/if}}
+  </footer>
+</section>

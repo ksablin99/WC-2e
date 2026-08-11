@@ -1,0 +1,144 @@
+<div class="formula-creator-dialog">
+
+  {{!-- ── Header: field label + toolbar + editor + test row ── --}}
+  <div class="fc-header">
+    <div class="fc-field-label">{{label}}</div>
+
+    {{!-- Toolbar: dropdown groups + operator pills --}}
+    <div class="fc-toolbar">
+      {{#each toolbarGroups}}
+      <div class="fc-toolbar-group" data-group-id="{{id}}">
+        <button type="button" class="fc-toolbar-btn">
+          {{label}} <i class="fas fa-caret-down"></i>
+        </button>
+        <div class="fc-dropdown-panel">
+          {{#each sections}}
+          <div class="fc-dropdown-section">
+            {{#if title}}<div class="fc-dropdown-section-title">{{title}}</div>{{/if}}
+            {{#each items}}
+            <button type="button" class="fc-dropdown-item"
+                    data-insert-ref="{{ref}}"
+                    {{#if cursorOffset}}data-cursor-offset="{{cursorOffset}}"{{/if}}>
+              <span class="fc-item-label">{{label}}</span>
+              {{#if displayValue}}<span class="fc-item-value">{{displayValue}}</span>{{/if}}
+            </button>
+            {{/each}}
+          </div>
+          {{/each}}
+        </div>
+      </div>
+      {{/each}}
+
+      {{!-- Operator pills: always visible --}}
+      <div class="fc-toolbar-ops">
+        <button type="button" class="fc-op-btn" data-insert-ref="+">+</button>
+        <button type="button" class="fc-op-btn" data-insert-ref="-">−</button>
+        <button type="button" class="fc-op-btn" data-insert-ref="*">×</button>
+        <button type="button" class="fc-op-btn" data-insert-ref="/">/</button>
+        <button type="button" class="fc-op-btn" data-insert-ref="(">(</button>
+        <button type="button" class="fc-op-btn" data-insert-ref=")">)</button>
+      </div>
+    </div>
+
+    {{!-- Multiline formula editor --}}
+    <textarea class="fc-formula-editor"
+              placeholder="{{localize "D35E.FC.FormulaPlaceholder"}}"
+              autocomplete="off"
+              spellcheck="false">{{formula}}</textarea>
+
+    {{!-- Test button + feedback below the editor --}}
+    <div class="fc-test-row flexcol">
+      <button type="button" class="fc-test-btn blue-button">
+        <i class="fas fa-flask"></i> {{localize "D35E.FC.TestButton"}}
+      </button>
+      <div class="fc-feedback">
+        <span class="fc-test-result {{#unless testResult}}hidden{{/unless}}">
+          <i class="fas fa-check-circle"></i> {{testResult}}
+        </span>
+        <span class="fc-test-error {{#unless testError}}hidden{{/unless}}">
+          <i class="fas fa-times-circle"></i> {{testError}}
+        </span>
+        <span class="fc-test-hint {{#if hasResult}}hidden{{/if}}">
+          {{testHint}}  
+        </span>
+      </div>
+    </div>
+  </div>
+
+  {{!-- ── Body: reference tree ── --}}
+  <div class="fc-body">
+
+    {{!-- Reference tree --}}
+    <div class="fc-reference">
+      <div class="fc-panel-title">{{localize "D35E.FC.RollDataReference"}}</div>
+      <div class="fc-search-row">
+        <i class="fas fa-search"></i>
+        <input type="text" class="fc-search" placeholder="{{localize "D35E.FC.SearchPlaceholder"}}" autocomplete="off" />
+      </div>
+
+      <div class="fc-tree">
+        {{#unless sections}}
+        <p class="fc-no-data">{{localize "D35E.FC.NoRollData"}}</p>
+        {{/unless}}
+
+        {{#each sections}}
+        {{!-- L1 section --}}
+        <details class="fc-l1"
+                 {{#if defaultOpen}}open{{/if}}
+                 {{#if defaultOpen}}data-default-open{{/if}}
+                 data-section-id="{{id}}">
+          <summary class="fc-l1-summary">
+            <span class="fc-node-label">{{label}}</span>
+            <span class="fc-node-count">{{count}}</span>
+          </summary>
+
+          {{!-- Direct scalars at L1 (e.g. @size) --}}
+          {{#if vars}}
+          <ul class="fc-leaf-list">
+            {{#each vars}}
+            <li class="fc-leaf" data-ref="{{ref}}" {{#if desc}}data-desc="{{desc}}"{{/if}}>
+              <button type="button" class="fc-ref-insert" data-insert-ref="{{ref}}">+</button>
+              <code class="fc-ref-code" {{#if desc}}title="{{desc}}"{{/if}}>{{ref}}</code>
+              {{#if desc}}<span class="fc-ref-desc">{{desc}}</span>{{/if}}
+              <span class="fc-ref-value">{{value}}</span>
+            </li>
+            {{/each}}
+          </ul>
+          {{/if}}
+
+          {{!-- L2 groups --}}
+          {{#each groups}}
+          <details class="fc-l2">
+            <summary class="fc-l2-summary">
+              <span class="fc-node-label">{{key}}</span>
+              <span class="fc-node-count">{{count}}</span>
+            </summary>
+            <ul class="fc-leaf-list">
+              {{#each vars}}
+              <li class="fc-leaf" data-ref="{{ref}}" {{#if desc}}data-desc="{{desc}}"{{/if}}>
+                <button type="button" class="fc-ref-insert" data-insert-ref="{{ref}}">+</button>
+                <code class="fc-ref-code" {{#if desc}}title="{{desc}}"{{/if}}>{{ref}}</code>
+                {{#if desc}}<span class="fc-ref-desc">{{desc}}</span>{{/if}}
+                <span class="fc-ref-value">{{value}}</span>
+              </li>
+              {{/each}}
+            </ul>
+          </details>
+          {{/each}}
+
+        </details>
+        {{/each}}
+      </div>
+    </div>
+
+  </div>
+
+  {{!-- ── Footer ── --}}
+  <div class="fc-footer">
+    <button type="button" class="fc-cancel-btn">{{localize "D35E.FC.CancelButton"}}</button>
+    <button type="button" class="fc-apply-btn">
+      <i class="fas fa-check"></i> {{localize "D35E.FC.ApplyButton"}}
+    </button>
+  </div>
+
+</div>

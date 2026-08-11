@@ -1,0 +1,39 @@
+---
+description: When to use .claude/commands, Playwright skill, and Task subagents (no slash commands in Cursor)
+alwaysApply: true
+---
+
+# Claude workflows in Cursor
+
+Cursor does **not** run `.claude/commands/` as slash commands. When the user asks for these (or the intent matches), **read the file** and execute the steps it lists.
+
+| User intent | Read and follow |
+|-------------|-----------------|
+| Full e2e sync + run, “sync-test”, stop Foundry then test | `.claude/commands/sync-test.md` |
+| Find remaining v12 API usage, “v13-scan” | `.claude/commands/v13-scan.md` |
+| Query LevelDB / compendium by name, type, or field | `.claude/commands/query-pack.md` |
+| Check out & summarize a GitLab MR | `.claude/commands/mr-checkout.md` |
+
+## Commits and bug issues (always use repo skills)
+
+Do **not** improvise these workflows from memory.
+
+| User intent | Read and follow |
+|-------------|-----------------|
+| Commit, commit message, stage and commit | **`.claude/skills/commit/SKILL.md`** |
+| File/write/create a bug issue, bug report | **`.claude/skills/write-issue/SKILL.md`** |
+
+After reading the skill, follow its process (e.g. confirm before `git commit`; observational issue style; `glab`/`gh` per remote).
+
+## Playwright / live UI
+
+For **Foundry UI bugs** (sheet won’t open, buttons dead, dialogs missing) or **browser automation** against the dev game: read **`.claude/skills/playwright-cli/SKILL.md`** and use port from `npm run wt:list` or `.dev-env` (see **CLAUDE.md**).
+
+## Task subagents (Foundry API work)
+
+Per **CLAUDE.md**: before implementing anything that touches Foundry APIs, use **foundry-api-researcher**; after code changes in the system, use **foundry-code-reviewer**; for new e2e coverage after a fix/feature, use **foundry-test-writer**.
+
+## Don’t confuse with
+
+- **Pack content changes**: edit `source/`, run `npm run sources:repack` — `query-pack` is read-only inspection.
+- **AGENTS.md / CLAUDE.md**: stack, migration table, and commands reference — already workspace rules; this file only wires **when** to open the command/skill files above.

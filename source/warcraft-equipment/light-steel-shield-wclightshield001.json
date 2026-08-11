@@ -1,0 +1,48 @@
+{
+  "_id": "wcLightShield001",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "pages": "182, 189-190",
+        "section": "Shields"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/shield.svg",
+  "name": "Light Steel Shield",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "armor": {
+      "acp": 1,
+      "dex": "",
+      "enh": 0,
+      "value": 1
+    },
+    "carried": true,
+    "description": {
+      "value": "<p>A light shield strapped to the forearm. Shield-bash handling remains manual.</p>"
+    },
+    "equipmentSubtype": "lightShield",
+    "equipmentType": "shield",
+    "equipped": true,
+    "hardness": 10,
+    "hp": {
+      "max": 10,
+      "value": 10
+    },
+    "identified": true,
+    "identifiedName": "Light Steel Shield",
+    "price": 9,
+    "quantity": 1,
+    "slot": "shield",
+    "spellFailure": 5,
+    "weight": 6
+  },
+  "type": "equipment"
+}

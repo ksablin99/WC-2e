@@ -1,0 +1,251 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "wcFelClass000001",
+        "effects": [],
+        "flags": {},
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Fel Orc Barbarian Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "high",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "3",
+              "ac",
+              "nac",
+              "racial"
+            ]
+          ],
+          "classType": "base",
+          "creatureType": "humanoid",
+          "hd": 12,
+          "hp": 26,
+          "levels": 4,
+          "maxLevel": 20,
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "low"
+            },
+            "will": {
+              "value": "low"
+            }
+          },
+          "source": "Monster Guide pp. 19-20"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "wcFelAxe00000001",
+        "effects": [],
+        "flags": {},
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Fel Greataxe",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "str",
+            "critMult": 3,
+            "critRange": 20,
+            "damage": "str",
+            "damageMult": 1.5,
+            "twoHandedOnly": true
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "",
+          "attackType": "weapon",
+          "baseWeaponType": "Greataxe",
+          "damage": {
+            "parts": [
+              [
+                "1d12",
+                null,
+                "damage-slashing"
+              ],
+              [
+                "1d6",
+                null,
+                "damage-untyped-energy"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p>A greataxe strike with additional fel damage.</p>"
+          },
+          "favorite": true,
+          "primaryAttack": true,
+          "proficient": true,
+          "weaponSubtype": "2h"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "wcFelTraits00001",
+        "effects": [],
+        "flags": {},
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Fel Orc Special Abilities",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "description": {
+            "value": "<p><strong>Ferocity (Ex):</strong> Continues acting without penalty while disabled or dying.</p><p><strong>Rage (Ex), 3/day:</strong> Lasts 7 rounds. Raging profile: 46 hp; AC 12, touch 9, flat-footed 11; greataxe +11 (1d12+10/x3 plus 1d6 fel); Fortitude +9, Will +3; Strength 24, Stamina 20. Toggle manually.</p><p>Also has fast movement, trap sense +1, uncanny dodge, low-light vision, and +1 to attacks against humans.</p>"
+          },
+          "featType": "trait",
+          "source": "Monster Guide pp. 19-20"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "wcFelOrc00000001",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "pages": "19-20",
+        "section": "Sample Corrupted Creature: Fel Orc"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "wcFelClass000001",
+    "wcFelAxe00000001",
+    "wcFelTraits00001"
+  ],
+  "name": "Fel Orc",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "total": 6,
+        "value": 6
+      },
+      "con": {
+        "total": 16,
+        "value": 16
+      },
+      "dex": {
+        "total": 13,
+        "value": 13
+      },
+      "int": {
+        "total": 6,
+        "value": 6
+      },
+      "str": {
+        "total": 20,
+        "value": 20
+      },
+      "wis": {
+        "total": 10,
+        "value": 10
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 13
+        },
+        "normal": {
+          "total": 14
+        },
+        "touch": {
+          "total": 11
+        }
+      },
+      "bab": {
+        "base": 4,
+        "total": 4
+      },
+      "cmb": {
+        "total": 9
+      },
+      "cmd": {
+        "total": 20
+      },
+      "creatureType": "humanoid",
+      "deathRule": "warcraft",
+      "hd": {
+        "racialClass": 0,
+        "total": 4
+      },
+      "hp": {
+        "max": 38,
+        "min": -16,
+        "value": 38
+      },
+      "init": {
+        "total": 1
+      },
+      "naturalACTotal": 3,
+      "savingThrows": {
+        "fort": {
+          "total": 7
+        },
+        "ref": {
+          "total": 2
+        },
+        "will": {
+          "total": 1
+        }
+      },
+      "senses": {
+        "lowLight": true
+      },
+      "speed": {
+        "land": {
+          "base": 40,
+          "total": 40
+        }
+      }
+    },
+    "details": {
+      "alignment": "Always chaotic evil",
+      "cr": 5,
+      "environment": "Any land",
+      "notes": {
+        "value": "<p>Medium orc, 4th-level barbarian. Greataxe +9 melee (1d12+7/x3 plus 1d6 fel). Rage and secondary class abilities are manual in this starter slice.</p>"
+      },
+      "totalCr": 5,
+      "type": "Humanoid (Orc)"
+    },
+    "traits": {
+      "actualSize": "med",
+      "senses": "Low-light vision",
+      "size": "med",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

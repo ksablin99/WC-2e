@@ -1,0 +1,14 @@
+---
+description: Prefer PowerShell for CLI/MR steps; use temp files for glab multiline
+alwaysApply: true
+globs: ["**/*"]
+---
+
+When running shell/CLI commands in this project:
+
+1. Prefer PowerShell-native syntax (PowerShell here-strings, variables, and temp files) over bash heredocs.
+2. For `glab` commands that take multiline text (for example `glab mr create --description`):
+   - In PowerShell, write the multiline description/body to a temp file first (using `[System.IO.Path]::GetTempFileName()` and `Set-Content -NoNewline`).
+   - Then pass the value to `glab` using `--description (Get-Content $tmp -Raw)` (or `--description-file` if supported by your `glab` version).
+   - Delete the temp file afterwards.
+

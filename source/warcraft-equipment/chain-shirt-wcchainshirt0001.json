@@ -1,0 +1,48 @@
+{
+  "_id": "wcChainShirt0001",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "pages": "189-190",
+        "section": "Armor"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/shield.svg",
+  "name": "Chain Shirt",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "armor": {
+      "acp": 2,
+      "dex": "4",
+      "enh": 0,
+      "value": 4
+    },
+    "carried": true,
+    "description": {
+      "value": "<p>Light armor protecting the torso while leaving the limbs mobile.</p>"
+    },
+    "equipmentSubtype": "lightArmor",
+    "equipmentType": "armor",
+    "equipped": true,
+    "hardness": 10,
+    "hp": {
+      "max": 20,
+      "value": 20
+    },
+    "identified": true,
+    "identifiedName": "Chain Shirt",
+    "price": 100,
+    "quantity": 1,
+    "slot": "slotless",
+    "spellFailure": 20,
+    "weight": 25
+  },
+  "type": "equipment"
+}

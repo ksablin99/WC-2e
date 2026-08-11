@@ -1,0 +1,234 @@
+{
+  "_embedded": {},
+  "_id": "1f71c78f1f6eccd2",
+  "_stats": {
+    "compendiumSource": null,
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "lastModifiedBy": null,
+    "modifiedTime": null,
+    "systemId": null,
+    "systemVersion": null
+  },
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "automation": {
+        "damageInterception": "manual"
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          320,
+          321
+        ],
+        "printedPages": [
+          318,
+          319
+        ],
+        "section": "Mana Shield effect",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/shield.svg",
+  "name": "Mana Shield (Effect)",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "activateActions": [],
+    "activation": {
+      "cost": 1,
+      "type": ""
+    },
+    "active": false,
+    "addedLevel": 0,
+    "attackParts": [],
+    "buffType": "temp",
+    "changeFlags": {
+      "firstChangeTargetSelectableOnDescription": false,
+      "hasted": false,
+      "heavyArmorFullSpeed": false,
+      "loseDexToAC": false,
+      "mediumArmorFullSpeed": false,
+      "multiAttack": false,
+      "multiweaponAttack": false,
+      "noCon": false,
+      "noDex": false,
+      "noEncumbrance": false,
+      "noInt": false,
+      "noStr": false,
+      "oneCha": false,
+      "oneInt": false,
+      "oneWis": false,
+      "uncannyDodge": false
+    },
+    "changes": [],
+    "classSource": "",
+    "combatChangeCustomDisplayName": "",
+    "combatChangeCustomReferenceName": "",
+    "combatChanges": [],
+    "combatChangesAdditionalRanges": {
+      "hasAdditionalRanges": false,
+      "slider1": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      },
+      "slider2": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      },
+      "slider3": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      }
+    },
+    "combatChangesApplySpecialActionsOnce": true,
+    "combatChangesRange": {
+      "max": 0,
+      "maxFormula": ""
+    },
+    "combatChangesUsesCost": "chargesPerUse",
+    "conditionals": [],
+    "conditionFlags": {
+      "dazzled": false,
+      "polymorphed": false,
+      "wildshaped": false
+    },
+    "container": "None",
+    "containerWeightless": false,
+    "contextNotes": [],
+    "counterName": "",
+    "createdBy": "",
+    "creationChanges": [],
+    "customAttributes": {},
+    "customAttributesLocked": false,
+    "customTag": "",
+    "damage": {
+      "alternativeParts": [],
+      "parts": []
+    },
+    "damagePool": {
+      "current": 0,
+      "deleteOnDamagePoolEmpty": false,
+      "enabled": false,
+      "formula": "",
+      "max": 0
+    },
+    "damageReduction": [],
+    "deactivateActions": [],
+    "description": {
+      "chat": "",
+      "unidentified": "",
+      "value": "<p>On hit-point damage, optionally spend spell slots to prevent 2 damage per slot level (1 for a cantrip). Track slot choice manually.</p>"
+    },
+    "duration": {
+      "units": "",
+      "value": null
+    },
+    "epic": "",
+    "hideFromToken": false,
+    "identifiedName": "Mana Shield (Effect)",
+    "index": {
+      "subType": null,
+      "uniqueId": ""
+    },
+    "level": "20",
+    "light": {
+      "alpha": 0.5,
+      "animationIntensity": "",
+      "animationSpeed": "",
+      "color": "",
+      "dimRadius": "",
+      "emitLight": false,
+      "lightAngle": 360,
+      "opacity": 0,
+      "radius": 0,
+      "type": ""
+    },
+    "linkedChargeItem": {
+      "id": null,
+      "img": null,
+      "name": null
+    },
+    "linkId": "",
+    "linkImported": false,
+    "linkSourceId": "",
+    "linkSourceName": "",
+    "nameFormula": "",
+    "nameFromFormula": false,
+    "originId": "",
+    "originPack": "",
+    "originVersion": 100,
+    "perRoundActions": [],
+    "possibleUpdate": false,
+    "psionic": "",
+    "range": {
+      "units": "",
+      "value": null
+    },
+    "recharge": {
+      "current": 0,
+      "enabled": false,
+      "formula": ""
+    },
+    "requirements": [],
+    "requiresPsionicFocus": false,
+    "resistances": [],
+    "senses": {
+      "blindsight": null,
+      "darkvision": null,
+      "lowLight": false,
+      "lowLightMultiplier": null,
+      "tremorsense": null,
+      "truesight": null
+    },
+    "shapechange": {
+      "source": {},
+      "type": "polymorph"
+    },
+    "shortDescription": "<p>On hit-point damage, optionally spend spell slots to prevent 2 damage per slot level (1 for a cantrip). Track slot choice manually.</p>",
+    "sizeOverride": "",
+    "snip": "On hit-point damage, optionally spend spell slots to prevent 2 damage per slot level (1 for a cantrip). Track slot choice manually.",
+    "source": "World of Warcraft RPG, 2nd Edition, pp. 318–319",
+    "specialActions": [],
+    "tags": [],
+    "target": {
+      "value": ""
+    },
+    "timeline": {
+      "deleteOnExpiry": true,
+      "elapsed": 0,
+      "enabled": true,
+      "formula": "max(1,@item.level)*600",
+      "tickOnEnd": false,
+      "total": 600
+    },
+    "uniqueId": "",
+    "userNonRemovable": false,
+    "uses": {
+      "allowMultipleUses": false,
+      "autoDeductCharges": true,
+      "canBeLinked": false,
+      "chargesPerUse": 1,
+      "isResource": false,
+      "max": 0,
+      "maxFormula": "",
+      "maxPerUse": null,
+      "maxPerUseFormula": "",
+      "per": null,
+      "rechargeFormula": null,
+      "value": 0
+    }
+  },
+  "type": "buff"
+}

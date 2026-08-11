@@ -1,0 +1,357 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "wcDIRace00000001",
+        "effects": [],
+        "flags": {},
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Dark Iron Dwarf Racial Levels",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "med",
+          "changeFlags": {
+            "heavyArmorFullSpeed": true,
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "10",
+              "ac",
+              "nac",
+              "racial"
+            ],
+            [
+              "246",
+              "misc",
+              "mhp",
+              "untyped"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "humanoid",
+          "hd": 8,
+          "hp": 14,
+          "levels": 3,
+          "maxLevel": 3,
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "low"
+            },
+            "will": {
+              "value": "low"
+            }
+          },
+          "source": "Monster Guide pp. 51-53, 66"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "wcDIWarrior00001",
+        "effects": [],
+        "flags": {},
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Warrior Levels",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "high",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [],
+          "classType": "base",
+          "creatureType": "humanoid",
+          "hd": 10,
+          "hp": 38,
+          "levels": 7,
+          "maxLevel": 20,
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "low"
+            },
+            "will": {
+              "value": "low"
+            }
+          },
+          "source": "Monster Guide p. 66"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "wcDIRifle0000001",
+        "effects": [],
+        "flags": {},
+        "folder": null,
+        "img": "icons/svg/target.svg",
+        "name": "Improved +2 Flaming Long Rifle",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "dex",
+            "critMult": 3,
+            "critRange": 19,
+            "damage": null,
+            "damageMult": 1,
+            "twoHandedOnly": true
+          },
+          "actionType": "rwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "3",
+          "attackType": "weapon",
+          "baseWeaponType": "Long Rifle",
+          "damage": {
+            "parts": [
+              [
+                "5d6+4",
+                null,
+                "damage-piercing"
+              ],
+              [
+                "1d6",
+                null,
+                "energy-fire"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p>Primary ranged attack at +16. Rapid Shot full attack is +13/+13/+8; use the full-attack control or resolve manually.</p>"
+          },
+          "favorite": true,
+          "primaryAttack": true,
+          "proficient": true,
+          "range": {
+            "units": "ft",
+            "value": 200
+          },
+          "weaponSubtype": "ranged"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "wcDIGreatsword01",
+        "effects": [],
+        "flags": {},
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Masterwork Greatsword",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "str",
+            "critMult": 2,
+            "critRange": 19,
+            "damage": "str",
+            "damageMult": 1,
+            "twoHandedOnly": true
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "1",
+          "attackType": "weapon",
+          "baseWeaponType": "Greatsword",
+          "damage": {
+            "parts": [
+              [
+                "2d6",
+                null,
+                "damage-slashing"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p>Secondary melee attack at +11.</p>"
+          },
+          "favorite": false,
+          "primaryAttack": false,
+          "proficient": true,
+          "weaponSubtype": "2h"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "wcDITraits000001",
+        "effects": [],
+        "flags": {},
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Elite Dark Iron Rifleman Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "description": {
+            "value": "<p><strong>Elite:</strong> The 328 hp total includes the elite template's x4 multiplier. Elite feat and Concentration bonuses are already reflected in the printed totals but not individually automated.</p><p>Darkvision 60 feet, fire resistance 9, fire magic affinity, and +1 on attacks and damage against Ironforge and Wildhammer dwarves. Firearm reload, malfunction, Rapid Shot, and racial enemy bonuses require manual handling.</p>"
+          },
+          "featType": "trait",
+          "source": "Monster Guide pp. 51-53, 66"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "wcDarkIronRifle1",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "pages": "51-53, 66",
+        "section": "Sample Elite Creature: Dark Iron Rifleman"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "wcDIRace00000001",
+    "wcDIWarrior00001",
+    "wcDIRifle0000001",
+    "wcDIGreatsword01",
+    "wcDITraits000001"
+  ],
+  "name": "Elite Dark Iron Rifleman",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "total": 6,
+        "value": 6
+      },
+      "con": {
+        "total": 16,
+        "value": 16
+      },
+      "dex": {
+        "total": 18,
+        "value": 18
+      },
+      "int": {
+        "total": 10,
+        "value": 10
+      },
+      "str": {
+        "total": 12,
+        "value": 12
+      },
+      "wis": {
+        "total": 14,
+        "value": 14
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 20
+        },
+        "normal": {
+          "total": 21
+        },
+        "touch": {
+          "total": 11
+        }
+      },
+      "bab": {
+        "base": 9,
+        "total": 9
+      },
+      "cmb": {
+        "total": 10
+      },
+      "cmd": {
+        "total": 24
+      },
+      "creatureType": "humanoid",
+      "deathRule": "warcraft",
+      "energyResistance": [
+        [
+          "fire",
+          9
+        ]
+      ],
+      "hd": {
+        "racialClass": 3,
+        "total": 10
+      },
+      "hp": {
+        "max": 328,
+        "min": -16,
+        "value": 328
+      },
+      "init": {
+        "total": 4
+      },
+      "naturalACTotal": 10,
+      "savingThrows": {
+        "fort": {
+          "total": 13
+        },
+        "ref": {
+          "total": 9
+        },
+        "will": {
+          "total": 7
+        }
+      },
+      "senses": {
+        "darkvision": 60
+      },
+      "speed": {
+        "land": {
+          "base": 20,
+          "total": 20
+        }
+      }
+    },
+    "details": {
+      "alignment": "Always chaotic evil",
+      "cr": 13,
+      "environment": "Dry land and underground",
+      "notes": {
+        "value": "<p>Medium humanoid (Dark Iron dwarf), Dark Iron dwarf 3/warrior 7 with the elite template. Rifle +16 ranged (5d6+4/19-20/x3 plus 1d6 fire); greatsword +11 melee (2d6+1/19-20). Printed skill totals: Concentration +7, Listen +7, Search +6, Spot +10, Stealth +7.</p>"
+      },
+      "totalCr": 13,
+      "type": "Humanoid (Dark Iron Dwarf)"
+    },
+    "traits": {
+      "actualSize": "med",
+      "senses": "Darkvision 60 ft.",
+      "size": "med",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

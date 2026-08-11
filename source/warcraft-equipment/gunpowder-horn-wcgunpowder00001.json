@@ -1,0 +1,41 @@
+{
+  "_id": "wcGunpowder00001",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "rules": {
+        "malfunctionRating": 1
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "pages": "184",
+        "section": "Table 9-3: Explosives and Gunpowder"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/explosion.svg",
+  "name": "Gunpowder Horn (2 lb.)",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "carried": true,
+    "description": {
+      "value": "<p>A two-pound horn of ordinary gunpowder. Its technological malfunction rating is 1; accidental ignition and repair consequences are resolved manually.</p>"
+    },
+    "hardness": 5,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "identified": true,
+    "identifiedName": "Gunpowder Horn (2 lb.)",
+    "price": 35,
+    "quantity": 1,
+    "subType": "gear",
+    "weight": 2
+  },
+  "type": "loot"
+}

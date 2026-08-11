@@ -1,0 +1,164 @@
+@import "./variables.less";
+
+/* ----------------------------------------- */
+/*  Basic Structure                          */
+/* ----------------------------------------- */
+.D35E.sheet.actor.character {
+  min-width: 736px;
+  min-height: 736px;
+
+  /* ----------------------------------------- */
+  /*  Sheet Header                             */
+  /* ----------------------------------------- */
+
+  .sheet-header {
+
+    // Character level and experience bar
+    .charlevel {
+      flex: 0 0 240px;
+      padding: 0 5px 2px;
+
+      .level {
+        height: 28px;
+        line-height: 16px;
+      }
+
+      .experience {
+        input[type="text"] {
+          width: 80px;
+        }
+      }
+
+      .xpbar {
+        width: calc(100% - 100px);
+        flex: 0 0 8px;
+        background: #666;
+        border: 1px solid #000;
+        border-radius: 3px;
+        float: right;
+
+        .bar {
+          height: 4px;
+          margin: 1px;
+          display: block;
+          background: #afebff;
+          border: 1px solid #000;
+          border-radius: 2px;
+        }
+      }
+    }
+
+    .race-container {
+
+      flex: 1;
+      padding: 0 0 0 4px;
+      .item-controls {
+        align-items: flex-start;
+        a {
+          flex: 0 0 16px;
+          font-size: 10px;
+          text-align: center;
+          color: #666;
+        }
+      }
+      &.norace {
+        padding: 0 0 0 6px;
+      }
+      .race {
+        flex: 0 0 22px;
+        background-size: contain;
+        line-height: 24px;
+        text-align: center;
+        vertical-align: baseline;
+        margin-right: 4px;
+        height: 22px;
+        &.rollable:hover {
+          background-image: url("../../icons/svg/d20-black.svg") !important;
+        }
+      }
+    }
+
+
+
+    // Character Summary
+    .summary {
+
+
+      li:nth-last-child(1), li:nth-last-child(2) {
+        border-bottom: none;
+      }
+    }
+  }
+
+  /* ----------------------------------------- */
+  /*  Sheet Body                               */
+  /* ----------------------------------------- */
+
+  .attributes {
+    .resource {
+      .attribute-name {
+        margin: 0 8px;
+        input[type="text"] {
+          height: 20px;
+          margin: 2px 0 -2px;
+          line-height: 24px;
+        }
+      }
+      label.checkbox {
+        margin: 0 3px;
+        input[type="checkbox"] {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  div.skill-rank {
+    label {
+      flex: 0;
+      white-space: nowrap;
+      margin-right: 10px;
+    }
+
+    li.skill-rank-formula {
+      input[type="text"] {
+        flex: 3 1 0;
+      }
+    }
+  }
+
+  .counters {
+    .death-saves {
+      flex: 2;
+      .counter-value {
+        flex: 0 0 90px;
+      }
+    }
+  }
+
+  .item-detail.player-class {
+    flex: 0 0 180px;
+    text-align: right;
+    padding-right: 10px;
+  }
+
+  /* ----------------------------------------- */
+  /*  Spellbook                                */
+  /* ----------------------------------------- */
+
+  .spellbook {
+    .item-controls {
+      flex: 0 0 68px;
+
+      .toggle-prepared {
+        color: @colorBeige;
+        &.prepared {
+          color: @colorOlive;
+        }
+      }
+    }
+  }
+
+
+
+}

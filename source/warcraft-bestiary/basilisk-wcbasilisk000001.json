@@ -1,0 +1,246 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "wcBasClass000001",
+        "effects": [],
+        "flags": {},
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Magical Beast Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "high",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "10",
+              "ac",
+              "nac",
+              "racial"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "magicalBeast",
+          "hd": 10,
+          "hp": 33,
+          "levels": 6,
+          "maxLevel": 18,
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "low"
+            }
+          },
+          "source": "Monster Guide pp. 11-12"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "wcBasBite0000001",
+        "effects": [],
+        "flags": {},
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Bite",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "str",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "str",
+            "damageMult": 1
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "",
+          "attackType": "natural",
+          "baseWeaponType": "Bite",
+          "damage": {
+            "parts": [
+              [
+                "1d8",
+                null,
+                "damage-piercing-or-bludgeoning"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p>Primary bite. The full attack also includes two claws at +8 melee for 1d6+2 each; resolve those manually.</p>"
+          },
+          "favorite": true,
+          "primaryAttack": true,
+          "proficient": true,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "wcBasTraits00001",
+        "effects": [],
+        "flags": {},
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Basilisk Special Abilities",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "description": {
+            "value": "<p><strong>Petrifying Gaze (Su):</strong> Permanent petrification, 30 feet; Fortitude DC 15 negates.</p><p><strong>Sleep (Sp):</strong> As the sleep spell without an HD limit; save DC 13. Both abilities require manual resolution.</p><p>Basilisks gain a +5 racial bonus on Search checks.</p>"
+          },
+          "featType": "trait",
+          "source": "Monster Guide pp. 11-12"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "wcBasilisk000001",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "pages": "11-12",
+        "section": "Basilisk"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "wcBasClass000001",
+    "wcBasBite0000001",
+    "wcBasTraits00001"
+  ],
+  "name": "Basilisk",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "total": 11,
+        "value": 11
+      },
+      "con": {
+        "total": 15,
+        "value": 15
+      },
+      "dex": {
+        "total": 10,
+        "value": 10
+      },
+      "int": {
+        "total": 4,
+        "value": 4
+      },
+      "str": {
+        "total": 20,
+        "value": 20
+      },
+      "wis": {
+        "total": 12,
+        "value": 12
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 19
+        },
+        "normal": {
+          "total": 19
+        },
+        "touch": {
+          "total": 9
+        }
+      },
+      "bab": {
+        "base": 6,
+        "total": 6
+      },
+      "cmb": {
+        "total": 15
+      },
+      "cmd": {
+        "total": 20
+      },
+      "creatureType": "magicalBeast",
+      "deathRule": "warcraft",
+      "hd": {
+        "racialClass": 6,
+        "total": 6
+      },
+      "hp": {
+        "max": 45,
+        "min": -15,
+        "value": 45
+      },
+      "init": {
+        "total": 0
+      },
+      "naturalACTotal": 10,
+      "savingThrows": {
+        "fort": {
+          "total": 7
+        },
+        "ref": {
+          "total": 5
+        },
+        "will": {
+          "total": 3
+        }
+      },
+      "senses": {
+        "darkvision": 60,
+        "lowLight": true
+      },
+      "speed": {
+        "land": {
+          "base": 20,
+          "total": 20
+        }
+      }
+    },
+    "details": {
+      "alignment": "Always neutral",
+      "cr": 6,
+      "environment": "Temperate forest",
+      "notes": {
+        "value": "<p>Large magical beast. Full attack: bite +10 (1d8+5) and two claws +8 (1d6+2). Special abilities are documented on the embedded trait and are manual in this starter slice.</p>"
+      },
+      "totalCr": 6,
+      "type": "Magical Beast"
+    },
+    "traits": {
+      "actualSize": "lg",
+      "senses": "Darkvision 60 ft., low-light vision",
+      "size": "lg",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

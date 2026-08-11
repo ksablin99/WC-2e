@@ -1,0 +1,62 @@
+[
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "mage-arcana-enhanced-counterspell-0e08ae99f956cb07.json",
+    "key": "!items!0e08ae99f956cb07"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "mage-arcana-arcane-adept-439da0e23c06127b.json",
+    "key": "!items!439da0e23c06127b"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "mage-arcana-call-elemental-f80d812cbf7b5f67.json",
+    "key": "!items!f80d812cbf7b5f67"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "mage-arcana-fire-and-frost-fec5676435072430.json",
+    "key": "!items!fec5676435072430"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "scribe-scroll-jxvwpuxbhlolwuq4.json",
+    "key": "!items!JxVwpUXBHlOlwuQ4"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "warrior-sgwzt7dg1zhxqlrw.json",
+    "key": "!items!sgwZt7dg1ZHXQlrW"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "warrior-bonus-feat-uyhwjrfcckzfgwo6.json",
+    "key": "!items!uyHwjrFcCkZFgWo6"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "arcanist-vwvlbnyqdgmbiwhq.json",
+    "key": "!items!VwVlbNYqDgMBIWhQ"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "mage-arcana-summon-familiar-yhkshc8qwlmu5x2r.json",
+    "key": "!items!yhkShc8qWLMu5x2R"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "arcanist-bonus-feat-zpwya8tltkcsn0l4.json",
+    "key": "!items!zPwYa8tltKCSN0L4"
+  }
+]

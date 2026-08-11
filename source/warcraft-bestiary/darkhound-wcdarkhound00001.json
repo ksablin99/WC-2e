@@ -1,0 +1,252 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "wcDhkClass000001",
+        "effects": [],
+        "flags": {},
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Outsider Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "high",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "1",
+              "ac",
+              "nac",
+              "racial"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "outsider",
+          "hd": 8,
+          "hp": 13,
+          "levels": 3,
+          "maxLevel": 8,
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "high"
+            }
+          },
+          "source": "Monster Guide pp. 24-25"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "wcDhkBite0000001",
+        "effects": [],
+        "flags": {},
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Bite",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "str",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "str",
+            "damageMult": 1
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "",
+          "attackType": "natural",
+          "baseWeaponType": "Bite",
+          "damage": {
+            "parts": [
+              [
+                "1d6",
+                null,
+                "damage-piercing-or-bludgeoning"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p>Primary bite attack.</p>"
+          },
+          "favorite": true,
+          "primaryAttack": true,
+          "proficient": true,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "wcDhkTraits00001",
+        "effects": [],
+        "flags": {},
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Darkhound Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "description": {
+            "value": "<p>Demon traits, darkvision 60 feet, fire resistance 5, and scent. A darkhound has a +4 racial bonus on Jump checks and a +4 racial bonus on Survival checks made to track by scent.</p>"
+          },
+          "featType": "trait",
+          "source": "Monster Guide pp. 24-25"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "wcDarkhound00001",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "pages": "24-25",
+        "section": "Darkhound"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "wcDhkClass000001",
+    "wcDhkBite0000001",
+    "wcDhkTraits00001"
+  ],
+  "name": "Darkhound",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "total": 6,
+        "value": 6
+      },
+      "con": {
+        "total": 15,
+        "value": 15
+      },
+      "dex": {
+        "total": 17,
+        "value": 17
+      },
+      "int": {
+        "total": 3,
+        "value": 3
+      },
+      "str": {
+        "total": 13,
+        "value": 13
+      },
+      "wis": {
+        "total": 12,
+        "value": 12
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 12
+        },
+        "normal": {
+          "total": 15
+        },
+        "touch": {
+          "total": 14
+        }
+      },
+      "bab": {
+        "base": 3,
+        "total": 3
+      },
+      "cmb": {
+        "total": 0
+      },
+      "cmd": {
+        "total": 13
+      },
+      "creatureType": "outsider",
+      "deathRule": "warcraft",
+      "energyResistance": [
+        [
+          "fire",
+          5
+        ]
+      ],
+      "hd": {
+        "racialClass": 3,
+        "total": 3
+      },
+      "hp": {
+        "max": 19,
+        "min": -15,
+        "value": 19
+      },
+      "init": {
+        "total": 3
+      },
+      "naturalACTotal": 1,
+      "savingThrows": {
+        "fort": {
+          "total": 5
+        },
+        "ref": {
+          "total": 6
+        },
+        "will": {
+          "total": 4
+        }
+      },
+      "senses": {
+        "darkvision": 60,
+        "special": "Scent"
+      },
+      "speed": {
+        "land": {
+          "base": 40,
+          "total": 40
+        }
+      }
+    },
+    "details": {
+      "alignment": "Always chaotic evil",
+      "cr": 1,
+      "environment": "Temperate forest",
+      "notes": {
+        "value": "<p>Small outsider (chaotic, demon, evil, extraplanar). Bite +5 melee (1d6+1). Skill totals: Jump +9, Listen +8, Spot +8, Stealth +8 (+12 hiding), Survival +6.</p>"
+      },
+      "totalCr": 1,
+      "type": "Chaotic, Demon, Evil, Extraplanar"
+    },
+    "traits": {
+      "actualSize": "sm",
+      "senses": "Darkvision 60 ft., scent",
+      "size": "sm",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

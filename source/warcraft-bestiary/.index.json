@@ -1,0 +1,74 @@
+[
+  {
+    "childKeyByCollection": {
+      "items": {
+        "wcBasBite0000001": "!actors.items!wcBasilisk000001.wcBasBite0000001",
+        "wcBasClass000001": "!actors.items!wcBasilisk000001.wcBasClass000001",
+        "wcBasTraits00001": "!actors.items!wcBasilisk000001.wcBasTraits00001"
+      }
+    },
+    "embeddedCollections": [
+      "items"
+    ],
+    "file": "basilisk-wcbasilisk000001.json",
+    "key": "!actors!wcBasilisk000001"
+  },
+  {
+    "childKeyByCollection": {
+      "items": {
+        "wcFelAxe00000001": "!actors.items!wcFelOrc00000001.wcFelAxe00000001",
+        "wcFelClass000001": "!actors.items!wcFelOrc00000001.wcFelClass000001",
+        "wcFelTraits00001": "!actors.items!wcFelOrc00000001.wcFelTraits00001"
+      }
+    },
+    "embeddedCollections": [
+      "items"
+    ],
+    "file": "fel-orc-wcfelorc00000001.json",
+    "key": "!actors!wcFelOrc00000001"
+  },
+  {
+    "childKeyByCollection": {
+      "items": {
+        "wcDhkBite0000001": "!actors.items!wcDarkhound00001.wcDhkBite0000001",
+        "wcDhkClass000001": "!actors.items!wcDarkhound00001.wcDhkClass000001",
+        "wcDhkTraits00001": "!actors.items!wcDarkhound00001.wcDhkTraits00001"
+      }
+    },
+    "embeddedCollections": [
+      "items"
+    ],
+    "file": "darkhound-wcdarkhound00001.json",
+    "key": "!actors!wcDarkhound00001"
+  },
+  {
+    "childKeyByCollection": {
+      "items": {
+        "wcDIGreatsword01": "!actors.items!wcDarkIronRifle1.wcDIGreatsword01",
+        "wcDIRace00000001": "!actors.items!wcDarkIronRifle1.wcDIRace00000001",
+        "wcDIRifle0000001": "!actors.items!wcDarkIronRifle1.wcDIRifle0000001",
+        "wcDITraits000001": "!actors.items!wcDarkIronRifle1.wcDITraits000001",
+        "wcDIWarrior00001": "!actors.items!wcDarkIronRifle1.wcDIWarrior00001"
+      }
+    },
+    "embeddedCollections": [
+      "items"
+    ],
+    "file": "elite-dark-iron-rifleman-wcdarkironrifle1.json",
+    "key": "!actors!wcDarkIronRifle1"
+  },
+  {
+    "childKeyByCollection": {
+      "items": {
+        "wcHvgClass000001": "!actors.items!wcHarvestGolem01.wcHvgClass000001",
+        "wcHvgClaw0000001": "!actors.items!wcHarvestGolem01.wcHvgClaw0000001",
+        "wcHvgTraits00001": "!actors.items!wcHarvestGolem01.wcHvgTraits00001"
+      }
+    },
+    "embeddedCollections": [
+      "items"
+    ],
+    "file": "harvest-golem-wcharvestgolem01.json",
+    "key": "!actors!wcHarvestGolem01"
+  }
+]

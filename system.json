@@ -1,0 +1,493 @@
+{
+    "initiative": "1d20 + @attributes.init.total + (@attributes.init.total / 100)",
+    "grid": {
+        "distance": 5,
+        "units": "ft"
+    },
+    "templateVersion": 2,
+    "authors": [
+        {
+            "name": "Antoni 'Rughalt' Sobkowicz"
+        }
+    ],
+    "media": [],
+    "languages": [
+        {
+            "lang": "en",
+            "path": "lang/en.json",
+            "name": "English"
+        }
+    ],
+    "version": "3.1.0",
+    "esmodules": [
+        "D35E.js"
+    ],
+    "styles": [
+        "D35E.css"
+    ],
+    "description": "Private-use Warcraft RPG 2nd Edition system built on the D35E Foundry VTT engine.",
+    "packFolders": [
+        {
+            "name": "Warcraft RPG 2e",
+            "sorting": "a",
+            "packs": [
+                "warcraft-races",
+                "warcraft-classes",
+                "warcraft-spells",
+                "warcraft-equipment",
+                "warcraft-bestiary"
+            ],
+            "folders": []
+        },
+        {
+            "name": "3.5e SRD",
+            "sorting": "a",
+            "packs": [],
+            "folders": [
+                {
+                    "name": "Characters and NPCs",
+                    "sorting": "a",
+                    "packs": [
+                        "sample-chars",
+                        "classes",
+                        "feats"
+                    ],
+                    "folders": [
+                        {
+                            "name": "Abilities",
+                            "sorting": "a",
+                            "packs": [
+                                "class-abilities",
+                                "racial-abilities",
+                                "spell-schools-domains",
+                                "spelllike"
+                            ],
+                            "folders": []
+                        },
+                        {
+                            "name": "Minions",
+                            "sorting": "a",
+                            "packs": [
+                                "minion-classes",
+                                "minion"
+                            ],
+                            "folders": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Equipment",
+                    "sorting": "a",
+                    "packs": [
+                        "magicitems",
+                        "items",
+                        "armors-and-shields",
+                        "weapons-and-ammo"
+                    ],
+                    "folders": [
+                        {
+                            "name": "Item Abilities",
+                            "sorting": "a",
+                            "packs": [
+                                "item-buffs",
+                                "item-roll-tables"
+                            ],
+                            "folders": []
+                        },
+                        {
+                            "name": "Item Creation",
+                            "sorting": "a",
+                            "packs": [
+                                "enhancements",
+                                "materials"
+                            ],
+                            "folders": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Magic",
+                    "sorting": "a",
+                    "packs": [
+                        "spells",
+                        "powers"
+                    ],
+                    "folders": [
+                        {
+                            "name": "Spell Components",
+                            "sorting": "a",
+                            "packs": [
+                                "common-auras",
+                                "commonbuffs",
+                                "spell-items",
+                                "summoning-roll-tables"
+                            ],
+                            "folders": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Miscellaneous",
+                    "sorting": "a",
+                    "packs": [
+                        "damage-types",
+                        "roll-tables",
+                        "sample-macros"
+                    ],
+                    "folders": []
+                },
+                {
+                    "name": "Monsters",
+                    "sorting": "a",
+                    "packs": [
+                        "bestiary",
+                        "summon"
+                    ],
+                    "folders": [
+                        {
+                            "name": "Monster Creation",
+                            "sorting": "a",
+                            "packs": [
+                                "natural-attacks",
+                                "racialfeatures",
+                                "racialhd",
+                                "templates"
+                            ],
+                            "folders": []
+                        }
+                    ]
+                },
+                {
+                    "name": "Traps and Obstacles",
+                    "sorting": "a",
+                    "packs": [
+                        "traps"
+                    ],
+                    "folders": []
+                }
+            ]
+        }
+    ],
+    "packs": [
+        {
+            "path": "./packs/warcraft-races",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "warcraft-races",
+            "label": "Warcraft Races"
+        },
+        {
+            "path": "./packs/warcraft-classes",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "warcraft-classes",
+            "label": "Warcraft Classes"
+        },
+        {
+            "path": "./packs/warcraft-spells",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "warcraft-spells",
+            "label": "Warcraft Spells"
+        },
+        {
+            "path": "./packs/warcraft-equipment",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "warcraft-equipment",
+            "label": "Warcraft Equipment"
+        },
+        {
+            "path": "./packs/warcraft-bestiary",
+            "type": "Actor",
+            "system": "warcraftrpg2e",
+            "name": "warcraft-bestiary",
+            "label": "Warcraft Bestiary"
+        },
+        {
+            "path": "./packs/classes",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "classes",
+            "label": "Classes"
+        },
+        {
+            "path": "./packs/minion-classes",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "minion-classes",
+            "label": "Minion Classes"
+        },
+        {
+            "path": "./packs/commonbuffs",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "commonbuffs",
+            "label": "Common Buffs"
+        },
+        {
+            "path": "./packs/spellItems",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "spell-items",
+            "label": "Spell Items"
+        },
+        {
+            "path": "./packs/commonauras",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "common-auras",
+            "label": "Common Auras"
+        },
+        {
+            "path": "./packs/itembuffs",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "item-buffs",
+            "label": "Item Buffs"
+        },
+        {
+            "path": "./packs/magic-items",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "magicitems",
+            "label": "Magic Items"
+        },
+        {
+            "path": "./packs/racialfeatures",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "racialfeatures",
+            "label": "Races"
+        },
+        {
+            "path": "./packs/racial-abilities",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "racial-abilities",
+            "label": "Racial Abilities"
+        },
+        {
+            "path": "./packs/natural-attacks",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "natural-attacks",
+            "label": "Natural Attacks"
+        },
+        {
+            "path": "./packs/class-abilities",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "class-abilities",
+            "label": "Class Abilities"
+        },
+        {
+            "path": "./packs/spell-like-abilities",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "spelllike",
+            "label": "Spell-Like Abilities"
+        },
+        {
+            "path": "./packs/spells",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "spells",
+            "label": "Spells"
+        },
+        {
+            "path": "./packs/spell-school-domain",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "spell-schools-domains",
+            "label": "Spell Schools and Domains"
+        },
+        {
+            "path": "./packs/templates",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "templates",
+            "label": "Templates"
+        },
+        {
+            "path": "./packs/powers",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "powers",
+            "label": "Powers"
+        },
+        {
+            "path": "./packs/feats",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "feats",
+            "label": "Feats"
+        },
+        {
+            "path": "./packs/items",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "items",
+            "label": "Items"
+        },
+        {
+            "path": "./packs/armors-and-shields",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "armors-and-shields",
+            "label": "Armor and Shields"
+        },
+        {
+            "path": "./packs/enhancements",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "enhancements",
+            "label": "Enhancements"
+        },
+        {
+            "path": "./packs/weapons-and-ammo",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "weapons-and-ammo",
+            "label": "Weapons and Ammo"
+        },
+        {
+            "path": "./packs/racial-hd",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "racialhd",
+            "label": "Racial HD"
+        },
+        {
+            "path": "./packs/materials",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "materials",
+            "label": "Materials"
+        },
+        {
+            "path": "./packs/damage-types",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "damage-types",
+            "label": "Damage Types"
+        },
+        {
+            "path": "./packs/srd-rules",
+            "type": "JournalEntry",
+            "system": "warcraftrpg2e",
+            "name": "srd-rules",
+            "label": "SRD Rules Extended Descriptions"
+        },
+        {
+            "path": "./packs/sample-macros",
+            "type": "Macro",
+            "system": "warcraftrpg2e",
+            "name": "sample-macros",
+            "label": "Sample Macros"
+        },
+        {
+            "path": "./packs/roll-tables",
+            "type": "RollTable",
+            "system": "warcraftrpg2e",
+            "name": "roll-tables",
+            "label": "Roll Tables"
+        },
+        {
+            "path": "./packs/item-roll-tables",
+            "type": "RollTable",
+            "system": "warcraftrpg2e",
+            "name": "item-roll-tables",
+            "label": "Item Roll Tables"
+        },
+        {
+            "path": "./packs/summoning-roll-tables",
+            "type": "RollTable",
+            "system": "warcraftrpg2e",
+            "name": "summoning-roll-tables",
+            "label": "Summoning Roll Tables"
+        },
+        {
+            "path": "./packs/intelligent-item-tables",
+            "type": "RollTable",
+            "system": "warcraftrpg2e",
+            "name": "intelligent-item-tables",
+            "label": "Intelligent Item Tables"
+        },
+        {
+            "path": "./packs/intelligent-item-powers",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "intelligent-item-powers",
+            "label": "Intelligent Item Powers"
+        },
+        {
+            "path": "./packs/bestiary",
+            "type": "Actor",
+            "system": "warcraftrpg2e",
+            "name": "bestiary",
+            "label": "Bestiary"
+        },
+        {
+            "path": "./packs/minions",
+            "type": "Actor",
+            "system": "warcraftrpg2e",
+            "name": "minion",
+            "label": "Minions (Familiars, Animal Companions)"
+        },
+        {
+            "path": "./packs/sample-chars",
+            "type": "Actor",
+            "system": "warcraftrpg2e",
+            "name": "sample-chars",
+            "label": "Sample Characters"
+        },
+        {
+            "path": "./packs/summon",
+            "type": "Actor",
+            "system": "warcraftrpg2e",
+            "name": "summon",
+            "label": "Summoned Bestiary"
+        },
+        {
+            "path": "./packs/traps",
+            "type": "Actor",
+            "system": "warcraftrpg2e",
+            "name": "traps",
+            "label": "Traps"
+        },
+        {
+            "path": "./packs/conditions",
+            "type": "JournalEntry",
+            "system": "warcraftrpg2e",
+            "name": "conditions",
+            "label": "Conditions"
+        },
+        {
+            "path": "./packs/documentation",
+            "type": "JournalEntry",
+            "system": "warcraftrpg2e",
+            "name": "docs",
+            "label": "Documentation"
+        },
+        {
+            "path": "./packs/scenes",
+            "type": "Scene",
+            "system": "warcraftrpg2e",
+            "name": "scenes",
+            "label": "Scenes"
+        }
+    ],
+    "scripts": [],
+    "secondaryTokenAttribute": null,
+    "name": "warcraftrpg2e",
+    "id": "warcraftrpg2e",
+    "socket": true,
+    "url": "https://github.com/ksablin99/WC-2e",
+    "title": "Warcraft RPG 2e",
+    "primaryTokenAttribute": "attributes.hp",
+    "compatibility": {
+        "minimum": "13",
+        "verified": "14"
+    }
+}

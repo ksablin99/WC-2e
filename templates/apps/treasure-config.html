@@ -1,0 +1,36 @@
+<form autocomplete="off">
+    <p class="notes">{{localize "D35E.TreasureConfigHint"}}</p>
+
+    <div class="form-group">
+        <label>{{localize "D35E.TreasurePreset"}}</label>
+        <div class="flexrow" style="gap: 4px;">
+            <button type="button" class="treasure-preset" data-coins="0" data-goods="0" data-items="0">
+                {{localize "D35E.TreasureNone"}}
+            </button>
+            <button type="button" class="treasure-preset" data-coins="100" data-goods="100" data-items="100">
+                {{localize "D35E.TreasureStandard"}}
+            </button>
+            <button type="button" class="treasure-preset" data-coins="200" data-goods="200" data-items="200">
+                {{localize "D35E.TreasureDouble"}}
+            </button>
+            <button type="button" class="treasure-preset" data-coins="300" data-goods="300" data-items="300">
+                {{localize "D35E.TreasureTriple"}}
+            </button>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>{{localize "D35E.TreasureCoins"}} (%)</label>
+        <input name="system.details.treasure.coins" type="number" min="0" max="9999" step="1" value="{{coins}}"/>
+    </div>
+    <div class="form-group">
+        <label>{{localize "D35E.TreasureGoods"}} (%)</label>
+        <input name="system.details.treasure.goods" type="number" min="0" max="9999" step="1" value="{{goods}}"/>
+    </div>
+    <div class="form-group">
+        <label>{{localize "D35E.TreasureItems"}} (%)</label>
+        <input name="system.details.treasure.items" type="number" min="0" max="9999" step="1" value="{{items}}"/>
+    </div>
+
+    <button type="submit" name="submit" value="1"><i class="far fa-save"></i> {{ localize "Submit"}}</button>
+</form>

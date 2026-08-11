@@ -1,0 +1,38 @@
+{
+  "_id": "wcSpellPouch0001",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "pages": "198-200",
+        "section": "Adventuring gear"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/item-bag.svg",
+  "name": "Spell Component Pouch",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "carried": true,
+    "description": {
+      "value": "<p>A compartmented, watertight belt pouch holding ordinary spell components and small focuses. Costly components are not included.</p>"
+    },
+    "hardness": 0,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "identified": true,
+    "identifiedName": "Spell Component Pouch",
+    "price": 5,
+    "quantity": 1,
+    "subType": "container",
+    "weight": 2
+  },
+  "type": "loot"
+}

@@ -1,0 +1,62 @@
+.compendium-browser-tabs {
+  border: 1px #782e22 solid;
+  border-radius: 4px;
+  padding: 2px;
+  position: relative;
+}
+
+.compendium-browser-tabs a.item {
+  line-height: 26px;
+  padding: 4px 4px 5px;
+  border-radius: 2px;
+}
+
+.compendium-browser-tabs a.item.active {
+  background-color: #782e22;
+}
+
+#d35e-compendium-browser {
+  .loader-div {
+    position: absolute;
+    right: -13px;
+    width: 200px;
+    top: 2px;
+  }
+  .loader {
+    flex: 0 0 26px;
+    background: @colorTan;
+    margin: 1px 15px 0 1px;
+    border: 1px solid @colorDark;
+    border-radius: 3px;
+    position: relative;
+
+    .loader-bar {
+      position: absolute;
+      top: 1px;
+      left: 1px;
+      background: #77504a;
+      height: 22px;
+      border: 1px solid #2f2220;
+      border-radius: 2px;
+    }
+
+    .loader-label {
+      height: 24px;
+      padding: 0 5px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 13px;
+      line-height: 24px;
+      text-align: right;
+      color: #EEE;
+      text-shadow: 0 0 5px #000;
+    }
+
+    .loader-breakpoint {
+      position: absolute;
+      left: 66%;
+    }
+  }
+}
+

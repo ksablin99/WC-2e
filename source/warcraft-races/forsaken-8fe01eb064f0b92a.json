@@ -1,0 +1,182 @@
+{
+  "_embedded": {},
+  "_id": "8fe01eb064f0b92a",
+  "_stats": {
+    "compendiumSource": null,
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "lastModifiedBy": null,
+    "modifiedTime": null,
+    "systemId": null,
+    "systemVersion": null
+  },
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          54,
+          55
+        ],
+        "printedPages": [
+          52,
+          53
+        ],
+        "section": "Forsaken racial traits",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "name": "Forsaken",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "addedAbilities": [],
+    "addedLevel": 0,
+    "changeFlags": {
+      "heavyArmorFullSpeed": false,
+      "loseDexToAC": false,
+      "mediumArmorFullSpeed": false,
+      "multiAttack": false,
+      "multiweaponAttack": false,
+      "noCon": true,
+      "noDex": false,
+      "noEncumbrance": false,
+      "noInt": false,
+      "noStr": false,
+      "oneCha": false,
+      "oneInt": false,
+      "oneWis": false,
+      "uncannyDodge": false
+    },
+    "changes": [
+      [
+        "30",
+        "speed",
+        "landSpeed",
+        "base-replace"
+      ],
+      [
+        "2",
+        "ability",
+        "str",
+        "racial"
+      ],
+      [
+        "-2",
+        "ability",
+        "dex",
+        "racial"
+      ],
+      [
+        "100",
+        "misc",
+        "fortification",
+        "untyped"
+      ],
+      [
+        "(@abilities.cha.mod)-(@abilities.con.mod)",
+        "skill",
+        "skill.coc",
+        "untyped"
+      ]
+    ],
+    "classSource": "",
+    "combatChangeCustomDisplayName": "",
+    "combatChangeCustomReferenceName": "",
+    "combatChanges": [],
+    "combatChangesAdditionalRanges": {
+      "hasAdditionalRanges": false,
+      "slider1": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      },
+      "slider2": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      },
+      "slider3": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      }
+    },
+    "combatChangesApplySpecialActionsOnce": true,
+    "combatChangesRange": {
+      "max": 0,
+      "maxFormula": ""
+    },
+    "combatChangesUsesCost": "chargesPerUse",
+    "conditionFlags": {
+      "dazzled": false,
+      "polymorphed": false,
+      "wildshaped": false
+    },
+    "contextNotes": [],
+    "counterName": "",
+    "createdBy": "",
+    "creationChanges": [],
+    "creatureType": "undead",
+    "customAttributes": {},
+    "customAttributesLocked": false,
+    "customTag": "",
+    "damage": {
+      "parts": []
+    },
+    "damageReduction": [],
+    "deathRule": "forsaken",
+    "description": {
+      "chat": "",
+      "unidentified": "",
+      "value": "<p>Free-willed undead with a distinct damage-and-death track.</p><ul><li>+2 Strength, -2 Agility; Medium; land speed 30 feet; darkvision 60 feet.</li><li>No Stamina score; Charisma modifies Concentration.</li><li>Undead immunities, no natural healing, negative energy heals, positive energy harms.</li><li>Disabled at 0 hit points, down from -1 through -9, destroyed at -10.</li><li>Common plus Goblin, Low Common, Orc, or Thalassian; favored class Warrior.</li><li>May take up to three Forsaken racial levels; advanced undead interactions remain descriptive in this slice.</li></ul>"
+    },
+    "disabledAbilities": [],
+    "epic": "",
+    "identifiedName": "Forsaken",
+    "index": {
+      "subType": null,
+      "uniqueId": ""
+    },
+    "la": null,
+    "linkId": "",
+    "linkImported": false,
+    "links": {
+      "children": []
+    },
+    "linkSourceId": "",
+    "linkSourceName": "",
+    "nameFormula": "",
+    "nameFromFormula": false,
+    "originId": "",
+    "originPack": "",
+    "originVersion": 99,
+    "possibleUpdate": false,
+    "psionic": "",
+    "requirements": [],
+    "resistances": [],
+    "senses": {
+      "blindsight": null,
+      "darkvision": 60,
+      "lowLight": false,
+      "tremorsense": null,
+      "truesight": null
+    },
+    "sizeOverride": "",
+    "source": "World of Warcraft RPG, 2nd Edition, pp. 52–53",
+    "subTypes": [],
+    "tags": [],
+    "uniqueId": "",
+    "userNonRemovable": false
+  },
+  "type": "race"
+}
