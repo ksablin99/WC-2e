@@ -37,6 +37,12 @@
               "ac",
               "nac",
               "racial"
+            ],
+            [
+              "8",
+              "skill",
+              "skill.hid",
+              "racial"
             ]
           ],
           "classType": "racial",
@@ -56,7 +62,8 @@
               "value": "low"
             }
           },
-          "source": "Monster Guide pp. 85-86"
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, pp. 85-86"
         },
         "type": "class"
       },
@@ -84,27 +91,207 @@
             "cost": 1,
             "type": "standard"
           },
-          "attackBonus": "1",
+          "attackBonus": "",
           "attackType": "natural",
+          "autoScaleOption": "never",
           "baseWeaponType": "Claw",
           "damage": {
             "parts": [
               [
                 "1d4",
-                null,
-                "damage-slashing"
+                "Piercing or Slashing",
+                "damage-piercing-or-slashing"
               ]
             ]
           },
           "description": {
-            "value": "<p>A +1 keen claw. The golem's full attack makes two claw attacks at the same bonus.</p>"
+            "value": "<p><strong>Attack:</strong> +12 melee; <strong>damage:</strong> 1d4+7 piercing or slashing; <strong>critical:</strong> 17-20/x2.</p><p>The claw is a primary natural weapon and functions as a +1 keen dagger. Its +1 enhancement is included in both the attack and damage calculations.</p>"
           },
+          "enh": 1,
           "favorite": true,
+          "magic": true,
           "primaryAttack": true,
           "proficient": true,
-          "weaponSubtype": "natural"
+          "source": "World of Warcraft: Monster Guide, pp. 85-86",
+          "threatRangeExtended": true,
+          "weaponSubtype": "light"
         },
         "type": "attack"
+      },
+      {
+        "_id": "wcHvgFullAtk0001",
+        "effects": [],
+        "flags": {},
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack — Two Keen Claws",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 2,
+              "id": "wcHvgClaw0000001",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Keen Claw",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p>Make two primary keen claw attacks. Each attack is +12 melee and deals 1d4+7 piercing or slashing damage with a 17-20/x2 critical. Apply Backstab to each qualifying hit through the attack-options dialog.</p>"
+          },
+          "source": "World of Warcraft: Monster Guide, p. 85"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "wcHvgBackstab001",
+        "effects": [],
+        "flags": {},
+        "folder": null,
+        "img": "icons/svg/blood.svg",
+        "name": "Backstab (Ex)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "ex",
+          "combatChanges": [
+            [
+              "attackOptional",
+              "mwak",
+              "",
+              "&featDamage.precision",
+              "2d6"
+            ]
+          ],
+          "combatChangesApplySpecialActionsOnce": false,
+          "description": {
+            "value": "<p>The golem deals +2d6 precision damage when its target would be denied its Agility bonus to AC, or when the golem flanks the target. The extra damage is not multiplied on a critical hit.</p><p>A target immune to critical hits is also immune to Backstab. The golem must be able to see and reach a vital spot and cannot use Backstab against concealment. The golem cannot choose to make its Backstab damage nonlethal.</p><p><strong>Foundry:</strong> select Backstab in the claw attack-options dialog when these conditions are met.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 86; World of Warcraft: The Roleplaying Game, p. 81",
+          "uniqueId": "wc-harvest-golem-backstab"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "wcHvgKeenClaw001",
+        "effects": [],
+        "flags": {},
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Keen Claws (Ex)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "ex",
+          "description": {
+            "value": "<p>The golem's claws function as +1 keen daggers, producing the listed 17-20 threat range. The golem's full attack uses two claws.</p><p>When the golem is destroyed, the claws lose their magical qualities but remain usable as eight masterwork daggers. They are awkward for other creatures: another wielder takes a -2 attack penalty with them (a net -1 after the masterwork bonus). They normally sell for no more than 100 gp each.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 86",
+          "uniqueId": "wc-harvest-golem-keen-claws"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "wcHvgMagicImmune",
+        "effects": [],
+        "flags": {},
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Immunity to Magic (Su)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "su",
+          "description": {
+            "value": "<p>The harvest golem is immune to any spell or spell-like ability that allows spell resistance. A spell with the fire descriptor is the exception and affects the golem normally.</p><p><strong>Foundry:</strong> resolve this rule when a spell targets the golem. A blanket spell-immunity flag is deliberately not used because it would incorrectly block the fire exception.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 86",
+          "uniqueId": "wc-harvest-golem-magic-immunity"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "wcHvgLifeless001",
+        "effects": [],
+        "flags": {},
+        "folder": null,
+        "img": "icons/svg/mystery-man.svg",
+        "name": "Lifeless Mien (Ex)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "ex",
+          "description": {
+            "value": "<p>While motionless, the golem resembles an ordinary, lifeless scarecrow. A creature that passes within 30 feet can attempt a DC 20 Spot check to recognize that it is animate.</p>"
+          },
+          "featType": "trait",
+          "range": {
+            "long": null,
+            "units": "ft",
+            "value": 30
+          },
+          "source": "World of Warcraft: Monster Guide, p. 86",
+          "uniqueId": "wc-harvest-golem-lifeless-mien"
+        },
+        "type": "feat"
       },
       {
         "_id": "wcHvgTraits00001",
@@ -112,17 +299,24 @@
         "flags": {},
         "folder": null,
         "img": "icons/svg/aura.svg",
-        "name": "Harvest Golem Special Abilities",
+        "name": "Construct Traits",
         "ownership": {
           "default": 0
         },
         "sort": 0,
         "system": {
+          "abilityType": "nat",
           "description": {
-            "value": "<p><strong>Backstab (Ex):</strong> +2d6 as the rogue ability, but never nonlethal.</p><p><strong>Immunity to Magic (Su):</strong> Immune to spells and spell-like abilities that allow spell resistance; fire spells affect it normally.</p><p><strong>Lifeless Mien (Ex):</strong> A creature within 30 feet may notice that the apparent scarecrow is animate with a DC 20 Spot check.</p><p>Construct traits, darkvision 60 feet, low-light vision, and +8 racial bonus on Stealth. Backstab, immunity, and Lifeless Mien require manual resolution; destruction at 0 hp is automated.</p>"
+            "value": "<p>The harvest golem is a mindless construct with d10 Hit Dice, three-quarter base attack progression, no good saves, no skill points or feats, and no Stamina or Intellect score. It has darkvision 60 feet and low-light vision. It is proficient with its natural weapons; a humanoid-shaped construct is also proficient with weapons named in its entry. It is not proficient with armor.</p><p>It is immune to mind-affecting effects, poison, sleep, paralysis, stunning, disease, death effects, necromancy effects, fatigue, exhaustion, energy drain, ability damage, and ability drain. It is not subject to critical hits or nonlethal damage and is immune to effects requiring a Fortitude save unless they also affect objects or are harmless.</p><p>It is destroyed at 0 hit points, cannot heal damage naturally, and cannot be raised or resurrected. It can be repaired by suitable magic or the Craft Construct feat, and fast healing still functions if it gains that quality. It is not subject to massive damage and does not eat, sleep, or breathe. A Medium construct gains 20 bonus hit points.</p><p><strong>Foundry:</strong> the absent abilities, +20 hit points, common condition immunities, 100% fortification, and destruction at 0 hit points are represented in the actor data. Adjudicate the Fortitude-save and object-affecting exceptions from this feature.</p>"
           },
           "featType": "trait",
-          "source": "Monster Guide pp. 85-86"
+          "senses": {
+            "darkvision": 60,
+            "lowLight": true,
+            "lowLightMultiplier": 2
+          },
+          "source": "World of Warcraft: Monster Guide, p. 187",
+          "uniqueId": "wc-harvest-golem-construct-traits"
         },
         "type": "feat"
       }
@@ -144,6 +338,11 @@
   "items": [
     "wcHvgClass000001",
     "wcHvgClaw0000001",
+    "wcHvgFullAtk0001",
+    "wcHvgBackstab001",
+    "wcHvgKeenClaw001",
+    "wcHvgMagicImmune",
+    "wcHvgLifeless001",
     "wcHvgTraits00001"
   ],
   "name": "Harvest Golem",
@@ -154,86 +353,173 @@
   "system": {
     "abilities": {
       "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -5,
+        "origMod": -5,
+        "origTotal": 1,
+        "penalty": 0,
         "total": 1,
+        "userPenalty": 0,
         "value": 1
       },
       "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
         "isZero": true,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 0,
+        "penalty": 0,
         "total": 0,
+        "userPenalty": 0,
         "value": 0
       },
       "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 2,
+        "origMod": 2,
+        "origTotal": 14,
+        "penalty": 0,
         "total": 14,
+        "userPenalty": 0,
         "value": 14
       },
       "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
         "isZero": true,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 0,
+        "penalty": 0,
         "total": 0,
+        "userPenalty": 0,
         "value": 0
       },
       "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 6,
+        "origMod": 6,
+        "origTotal": 23,
+        "penalty": 0,
         "total": 23,
+        "userPenalty": 0,
         "value": 23
       },
       "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 12,
+        "penalty": 0,
         "total": 12,
+        "userPenalty": 0,
         "value": 12
       }
     },
     "attributes": {
       "ac": {
         "flatFooted": {
-          "total": 18
+          "total": 18,
+          "value": 0
         },
         "normal": {
-          "total": 20
+          "total": 20,
+          "value": 0
         },
         "touch": {
-          "total": 12
+          "total": 12,
+          "value": 0
         }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
       },
       "bab": {
         "base": 5,
-        "total": 5
+        "nonepic": 5,
+        "total": 5,
+        "value": 0
       },
       "cmb": {
-        "total": 11
+        "total": 11,
+        "value": 0
       },
       "cmd": {
-        "total": 23
+        "flatFootedTotal": 21,
+        "total": 23,
+        "value": 0
       },
       "creatureType": "construct",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
       "deathRule": "warcraft-construct",
+      "energyDrain": 0,
       "fortification": {
-        "total": 100
+        "total": 100,
+        "value": 0
       },
       "hd": {
         "racialClass": 7,
         "total": 7
       },
       "hp": {
+        "base": 38,
         "max": 58,
         "min": 0,
+        "nonlethal": 0,
+        "temp": 0,
         "value": 58
       },
       "init": {
-        "total": 2
+        "bonus": 0,
+        "total": 2,
+        "value": 0
       },
+      "maxAoO": 1,
+      "naturalAC": 0,
       "naturalACTotal": 8,
       "savingThrows": {
         "fort": {
+          "base": 2,
           "total": 2
         },
         "ref": {
+          "base": 2,
           "total": 4
         },
         "will": {
+          "base": 2,
           "total": 3
         }
       },
       "senses": {
         "darkvision": 60,
-        "lowLight": true
+        "lowLight": true,
+        "lowLightMultiplier": 2
       },
       "speed": {
         "land": {
@@ -243,17 +529,76 @@
       }
     },
     "details": {
+      "advancement": {
+        "byClass": false,
+        "hd": [
+          {
+            "lower": 8,
+            "size": "med",
+            "upper": 15
+          }
+        ],
+        "none": false,
+        "originalHD": 7
+      },
       "alignment": "Always neutral",
+      "biography": {
+        "public": "",
+        "value": "<h2>Harvest Golem</h2><p>A harvest golem looks like a common field scarecrow until its hidden face and long dagger-fingers reveal it as an unnaturally swift guardian. Goblin tinkers first built these constructs to patrol Westfall, and their brutal efficiency allowed the design to spread far beyond those fields.</p><p>The golem is mindless but possesses enough innate cunning to vary its tactics. It never retreats.</p>"
+      },
       "cr": 5,
       "environment": "Any",
+      "level": {
+        "available": 0,
+        "max": 15,
+        "min": 7,
+        "value": 7
+      },
       "notes": {
-        "value": "<p>Medium construct. Two claws +12 melee (1d4+7/17-20); backstab +2d6. The Warcraft construct death rule automatically destroys it at 0 hp.</p>"
+        "public": "",
+        "value": "<h2>Profile</h2><p><strong>Area:</strong> Westfall. <strong>Organization:</strong> solitary. <strong>Treasure:</strong> special. <strong>Advancement:</strong> 8-15 HD (Medium). <strong>Level adjustment:</strong> none.</p><h2>Combat</h2><p>The golem remains still and relies on Lifeless Mien until creatures enter its 20-foot partial-charge range. It then charges the nearest suitable target and uses Backstab. It can make one keen claw attack as a standard action or two keen claw attacks as a full attack. Though mindless, it can vary its tactics somewhat and never retreats.</p><h2>Treasure</h2><p>A destroyed harvest golem yields eight claw blades. They lose their +1 keen magic but remain masterwork daggers. Other creatures take a -2 attack penalty when using them, resulting in a net -1 after the masterwork bonus. Each usually sells for no more than 100 gp.</p><h2>Construction</h2><p>The body requires 500 gp of special powders and herbs plus powdered arcanite ink for its runes. Construction costs 2,500 gp per Hit Die and requires a DC 15 Craft (tailoring) check.</p><p><strong>Requirements:</strong> caster level 6th; Craft Construct; <em>bladestorm</em>, <em>geas/quest</em>, and <em>limited wish</em>. <strong>Price:</strong> 18,000 gp. <strong>Cost:</strong> 9,250 gp plus 1,000 XP.</p><p><strong>Source:</strong> <em>World of Warcraft: Monster Guide</em>, printed pages 85-86.</p>"
       },
       "totalCr": 5,
       "type": "Construct"
     },
+    "skills": {
+      "hid": {
+        "ability": "dex",
+        "abilityModifier": 2,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 8,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 10,
+        "notes": "+8 racial bonus",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
     "traits": {
       "actualSize": "med",
+      "ci": {
+        "custom": "death effects; necromancy effects; ability damage and drain; exhaustion",
+        "value": [
+          "disease",
+          "energyDrain",
+          "fatigue",
+          "mindAffecting",
+          "paralyze",
+          "poison",
+          "sleep",
+          "stun"
+        ]
+      },
+      "di": {
+        "custom": "Nonlethal damage",
+        "value": []
+      },
       "senses": "Darkvision 60 ft., low-light vision",
       "size": "med",
       "tokensize": "actor"

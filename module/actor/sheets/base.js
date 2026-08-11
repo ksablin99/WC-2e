@@ -388,9 +388,12 @@ export class ActorSheetPF extends foundry.appv1.sheets.ActorSheet {
     let itemBonusSkillPointRanks = finiteSkillNum(this.actor.system?.counters?.bonusSkillPoints?.value);
     let classCount = 0;
     const intMod = finiteSkillNum(this.actor.system.abilities.int.mod);
+    const hasNoIntellect = this.actor.items.some(
+      (item) => foundry.utils.getProperty(item.system, "changeFlags.noInt") === true
+    );
     this.actor.items
       .filter((obj) => {
-        return obj.type === "class";
+        return obj.type === "class" && !hasNoIntellect;
       })
       .forEach((cls) => {
         const clsLevel = finiteSkillNum(cls.system.levels);
@@ -413,7 +416,7 @@ export class ActorSheetPF extends foundry.appv1.sheets.ActorSheet {
         }
         if (sheetData.useBGSkills) skillRanks.bgAllowed = finiteSkillNum(this.actor.system.details.level?.value) * 2;
       });
-    if (this.actor.system.details.bonusSkillRankFormula !== "") {
+    if (!hasNoIntellect && this.actor.system.details.bonusSkillRankFormula !== "") {
       try {
         let roll = new Roll35e(this.actor.system.details.bonusSkillRankFormula, foundry.utils.duplicate(this.actor.system)).evaluateSync();
         skillRanks.allowed += finiteSkillNum(roll.total);

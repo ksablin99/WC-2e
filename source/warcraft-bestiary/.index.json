@@ -60,8 +60,13 @@
   {
     "childKeyByCollection": {
       "items": {
+        "wcHvgBackstab001": "!actors.items!wcHarvestGolem01.wcHvgBackstab001",
         "wcHvgClass000001": "!actors.items!wcHarvestGolem01.wcHvgClass000001",
         "wcHvgClaw0000001": "!actors.items!wcHarvestGolem01.wcHvgClaw0000001",
+        "wcHvgFullAtk0001": "!actors.items!wcHarvestGolem01.wcHvgFullAtk0001",
+        "wcHvgKeenClaw001": "!actors.items!wcHarvestGolem01.wcHvgKeenClaw001",
+        "wcHvgLifeless001": "!actors.items!wcHarvestGolem01.wcHvgLifeless001",
+        "wcHvgMagicImmune": "!actors.items!wcHarvestGolem01.wcHvgMagicImmune",
         "wcHvgTraits00001": "!actors.items!wcHarvestGolem01.wcHvgTraits00001"
       }
     },
