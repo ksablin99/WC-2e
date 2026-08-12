@@ -843,14 +843,28 @@ export class ActorSheetPF extends foundry.appv1.sheets.ActorSheet {
     super.activateListeners(html);
 
     const root = html?.nodeType === 1 ? html : html?.[0] ?? html;
-    this.createTabs(html);
+
+    // Core sheet controls must remain usable even if an optional tab group
+    // fails to initialize. Use the sheet's canonical editability accessor.
+    root?.querySelectorAll?.(".ability-name").forEach((el) =>
+      el.addEventListener("click", this._onRollAbilityTest.bind(this)));
+    if (this.isEditable) {
+      root?.querySelectorAll?.(".point-buy").forEach((el) =>
+        el.addEventListener("click", this._onPointBuy.bind(this)));
+    }
+
+    try {
+      this.createTabs(html);
+    } catch (error) {
+      console.error("D35E | Actor sheet tab initialization failed", error);
+    }
 
     // Tooltips
     if (root?.addEventListener) root.addEventListener("mousemove", (ev) => this._moveTooltips(ev));
 
     // Activate Item Filters
     const filterLists = root?.querySelectorAll?.(".filter-list") ?? [];
-    filterLists.forEach(this._initializeFilterItemList.bind(this));
+    filterLists.forEach((list) => this._initializeFilterItemList(list));
     if (root?.addEventListener) {
       root.addEventListener("click", (ev) => {
         const target = ev.target.closest(".filter-list .filter-item");
@@ -887,7 +901,7 @@ export class ActorSheetPF extends foundry.appv1.sheets.ActorSheet {
     });
 
     // Everything below here is only needed if the sheet is editable
-    if (!this.options.editable) return;
+    if (!this.isEditable) return;
 
     // Alignment selector button
     root?.querySelectorAll?.(".alignment-selector-btn").forEach((el) => {
@@ -900,9 +914,6 @@ export class ActorSheetPF extends foundry.appv1.sheets.ActorSheet {
     /* -------------------------------------------- */
     /*  Abilities, Skills, Defenses and Traits
     /* -------------------------------------------- */
-
-    // Ability Checks
-    root?.querySelectorAll?.(".ability-name").forEach((el) => el.addEventListener("click", this._onRollAbilityTest.bind(this)));
 
     // BAB Check
     root?.querySelectorAll?.(".attribute.bab .attribute-name").forEach((el) => el.addEventListener("click", this._onRollBAB.bind(this)));
@@ -968,7 +979,6 @@ export class ActorSheetPF extends foundry.appv1.sheets.ActorSheet {
 
     // Level up
     root?.querySelectorAll?.(".level-up").forEach((el) => el.addEventListener("click", this._onLevelUp.bind(this)));
-    root?.querySelectorAll?.(".point-buy").forEach((el) => el.addEventListener("click", this._onPointBuy.bind(this)));
 
     root?.querySelectorAll?.(".note-editor").forEach((el) => el.addEventListener("click", this._onNoteEditor.bind(this)));
     root?.querySelectorAll?.(".configure-ability").forEach((el) => el.addEventListener("click", this._onAbilityConfig.bind(this)));
@@ -1259,7 +1269,7 @@ export class ActorSheetPF extends foundry.appv1.sheets.ActorSheet {
    * Initialize Item list filters by activating the set of filters which are currently applied
    * @private
    */
-  _initializeFilterItemList(i, ul) {
+  _initializeFilterItemList(ul) {
     const set = this._filters[ul.dataset.filter];
     const filters = ul.querySelectorAll(".filter-item");
     for (let li of filters) {

@@ -62,7 +62,7 @@ export class ActorSheetPFCharacter extends ActorSheetPF {
 	activateListeners(html) {
     super.activateListeners(html);
     const root = html?.nodeType === 1 ? html : html?.[0] ?? html;
-    if ( !this.options.editable ) return;
+    if ( !this.isEditable ) return;
 
     root.querySelectorAll(".currency-convert").forEach(el => el.addEventListener("click", this._onConvertCurrency.bind(this)));
 

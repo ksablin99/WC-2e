@@ -18,7 +18,7 @@
             "name": "English"
         }
     ],
-    "version": "3.2.1",
+    "version": "3.2.2",
     "esmodules": [
         "D35E.js"
     ],
@@ -544,7 +544,7 @@
     "socket": true,
     "url": "https://github.com/ksablin99/WC-2e",
     "manifest": "https://github.com/ksablin99/WC-2e/releases/latest/download/system.json",
-    "download": "https://github.com/ksablin99/WC-2e/releases/download/v3.2.1/warcraftrpg2e-v3.2.1.zip",
+    "download": "https://github.com/ksablin99/WC-2e/releases/download/v3.2.2/warcraftrpg2e-v3.2.2.zip",
     "title": "Warcraft RPG 2e",
     "primaryTokenAttribute": "attributes.hp",
     "compatibility": {

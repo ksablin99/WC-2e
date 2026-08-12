@@ -19,6 +19,7 @@
 
 const { test, expect } = require('@playwright/test');
 const { gotoGame, clearWorld, dismissOverlays, dismissSystemDialogs } = require('./helpers');
+const { openSheet } = require('./helpers/actor-sheet');
 
 test.beforeEach(async ({ page }) => {
   await gotoGame(page);
@@ -146,4 +147,18 @@ test('WIS 10 ability check total is in range [1, 20]', async ({ page }) => {
   expect(total).not.toBeNull();
   expect(total).toBeGreaterThanOrEqual(1 + mods.wis); // 1
   expect(total).toBeLessThanOrEqual(20 + mods.wis);   // 20
+});
+
+test('clicking an ability name on the character sheet posts the ability check', async ({ page }) => {
+  const { actorId, mods } = await createActorWithAbilities(page, { str: 16 }, 'Sheet Ability Click Test');
+  const sheetId = await openSheet(page, actorId);
+  const messagesBefore = await page.evaluate(() => game.messages.size);
+
+  await page.locator(`#${sheetId} [data-ability="str"] .ability-name`).first().click();
+  await page.waitForFunction((count) => game.messages.size > count, messagesBefore, { timeout: 8_000 });
+
+  const total = await page.evaluate(() => game.messages.contents.at(-1)?.rolls?.[0]?.total ?? null);
+  expect(total).not.toBeNull();
+  expect(total).toBeGreaterThanOrEqual(1 + mods.str);
+  expect(total).toBeLessThanOrEqual(20 + mods.str);
 });

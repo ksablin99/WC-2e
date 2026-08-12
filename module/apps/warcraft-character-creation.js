@@ -1,6 +1,7 @@
 import {
   WARCRAFT_CREATION_STEPS,
   firstLevelSkillPoints,
+  normalizeCompendiumIndexEntries,
   pointBuySpent,
   skillPointCost,
   summarizeCharacterCreation,
@@ -146,7 +147,7 @@ async function packIndex(packId) {
   const pack = game.packs.get(packId);
   if (!pack) throw new Error(game.i18n.format("D35E.WarcraftCreationMissingPack", { pack: packId }));
   const index = await pack.getIndex({ fields: INDEX_FIELDS });
-  return Array.from(index?.values?.() ?? index ?? []);
+  return normalizeCompendiumIndexEntries(index?.values?.() ?? index ?? []);
 }
 
 function toImportData(document, packId) {

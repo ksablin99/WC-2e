@@ -1,5 +1,6 @@
 import {
   firstLevelSkillPoints,
+  normalizeCompendiumIndexEntries,
   pointBuySpent,
   skillPointCost,
   validateCharacterCreationPlan,
@@ -7,6 +8,15 @@ import {
 } from "../../module/actor/helpers/warcraftCharacterCreation.js";
 
 describe("guided Warcraft character creation", () => {
+  test("normalizes Foundry compendium _id values for form controls", () => {
+    const entries = normalizeCompendiumIndexEntries(new Map([
+      ["race", { _id: "wcHumanRace0001", name: "Human" }],
+      ["class", { _id: "wcWarriorClass01", name: "Warrior" }],
+    ]).values());
+
+    expect(entries.map((entry) => entry.id)).toEqual(["wcHumanRace0001", "wcWarriorClass01"]);
+  });
+
   test("uses the 3.5 point-buy progression", () => {
     expect(pointBuySpent({ str: 15, dex: 14, con: 13, int: 12, wis: 10, cha: 8 })).toBe(8 + 6 + 5 + 4 + 2);
   });

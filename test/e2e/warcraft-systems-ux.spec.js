@@ -201,6 +201,8 @@ test("new character sheet opens the guided builder and advances after race and c
   await expect(builder).toBeVisible();
   await expect.poll(() => builder.locator('select[name="raceId"] option').count()).toBeGreaterThan(1);
   await expect.poll(() => builder.locator('select[name="classId"] option').count()).toBeGreaterThan(1);
+  await expect.poll(() => builder.locator('select[name="raceId"] option:not([value=""])').count()).toBeGreaterThan(1);
+  await expect.poll(() => builder.locator('select[name="classId"] option:not([value=""])').count()).toBeGreaterThan(1);
 
   // Use non-default choices so a rerender reset cannot look like success.
   const raceId = await builder.locator('select[name="raceId"] option:not([value=""])').last().getAttribute("value");

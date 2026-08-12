@@ -6,6 +6,13 @@ function integer(value, fallback = 0) {
   return Number.isFinite(number) ? Math.trunc(number) : fallback;
 }
 
+export function normalizeCompendiumIndexEntries(entries = []) {
+  return Array.from(entries).map((entry) => ({
+    ...entry,
+    id: entry?.id ?? entry?._id ?? "",
+  }));
+}
+
 export function pointBuySpent(abilities = {}) {
   return Object.values(abilities).reduce((total, value) => total + (WARCRAFT_POINT_BUY_COST[integer(value)] ?? Infinity), 0);
 }
