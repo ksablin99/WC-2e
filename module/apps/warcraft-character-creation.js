@@ -407,7 +407,7 @@ export class WarcraftCharacterCreation extends FormApplication {
   }
 
   _capture(root) {
-    const form = root?.querySelector?.("form");
+    const form = this.form ?? (root?.matches?.("form") ? root : root?.querySelector?.("form"));
     if (!form) return;
     const data = new FormData(form);
     for (const key of ["raceId", "classId", "classPath", "gender", "deity", "affiliation"]) {

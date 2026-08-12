@@ -202,14 +202,39 @@ test("new character sheet opens the guided builder and advances after race and c
   await expect.poll(() => builder.locator('select[name="raceId"] option').count()).toBeGreaterThan(1);
   await expect.poll(() => builder.locator('select[name="classId"] option').count()).toBeGreaterThan(1);
 
-  const raceId = await builder.locator('select[name="raceId"] option:not([value=""])').first().getAttribute("value");
+  // Use non-default choices so a rerender reset cannot look like success.
+  const raceId = await builder.locator('select[name="raceId"] option:not([value=""])').last().getAttribute("value");
   await builder.locator('select[name="raceId"]').selectOption(raceId);
+  await expect.poll(() => page.evaluate(() => {
+    const applications = [
+      ...Object.values(ui.windows ?? {}),
+      ...Array.from(foundry.applications.instances?.values?.() ?? []),
+    ];
+    return applications.find((app) => app.id === "warcraft-character-creation")?.plan?.raceId ?? null;
+  })).toBe(raceId);
   await expect(builder.locator('select[name="raceId"]')).toHaveValue(raceId);
-  const classId = await builder.locator('select[name="classId"] option:not([value=""])').first().getAttribute("value");
+  await expect(builder.locator('select[name="classId"]')).toHaveValue("");
+  const classId = await builder.locator('select[name="classId"] option:not([value=""])').last().getAttribute("value");
   await builder.locator('select[name="classId"]').selectOption(classId);
+  await expect.poll(() => page.evaluate(() => {
+    const applications = [
+      ...Object.values(ui.windows ?? {}),
+      ...Array.from(foundry.applications.instances?.values?.() ?? []),
+    ];
+    const plan = applications.find((app) => app.id === "warcraft-character-creation")?.plan;
+    return plan ? { raceId: plan.raceId, classId: plan.classId } : null;
+  })).toEqual({ raceId, classId });
   await expect(builder.locator('select[name="classId"]')).toHaveValue(classId);
+  await expect(builder.locator('select[name="raceId"]')).toHaveValue(raceId);
   await builder.locator('[data-warcraft-creation-action="next"]').click({ force: true });
   await expect(builder.locator('input[name="abilities.str"]')).toHaveValue("10");
   await builder.locator('[data-warcraft-creation-action="ability"][data-ability="str"][data-delta="1"]').click({ force: true });
+  await expect.poll(() => page.evaluate(() => {
+    const applications = [
+      ...Object.values(ui.windows ?? {}),
+      ...Array.from(foundry.applications.instances?.values?.() ?? []),
+    ];
+    return applications.find((app) => app.id === "warcraft-character-creation")?.plan?.abilities?.str ?? null;
+  })).toBe(11);
   await expect(builder.locator('input[name="abilities.str"]')).toHaveValue("11");
 });
