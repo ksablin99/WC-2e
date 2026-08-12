@@ -1,0 +1,1083 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "c32170a4dac0b160",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 1,
+                "die": 8,
+                "expression": "1d8",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Elemental Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "med",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "4",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "0",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "20",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "16",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "16",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "0",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "6",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "0",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "40",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "40",
+              "speed",
+              "flySpeed",
+              "base-replace"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "elemental",
+          "damageReduction": [],
+          "hd": 8,
+          "hp": 0,
+          "levels": 1,
+          "maxLevel": 50,
+          "resistances": [
+            [
+              "",
+              "energy-electric",
+              true,
+              false,
+              false
+            ]
+          ],
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "low"
+            },
+            "will": {
+              "value": "low"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 101"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "bda944162c79f98f",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                6
+              ],
+              "printedDamage": "1d3 plus 1d6 electricity and spell drain"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Touch",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "4",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Touch",
+          "damage": {
+            "parts": [
+              [
+                "1d3",
+                "Bludgeoning",
+                "damage-bludg"
+              ],
+              [
+                "1d6",
+                "Electricity",
+                "energy-electric"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Touch +6 melee (1d3 plus 1d6 electricity and spell drain).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "9a082bbce16ca76f",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "bda944162c79f98f",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Touch",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> Touch +6 melee (1d3 plus 1d6 electricity and spell drain).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "5b7b5f5d18490bca",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Special Attack",
+              "raw": "Spell drain"
+            },
+            "reference": {
+              "id": "a2af9f319e850676",
+              "name": "Monster Spellcasting Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                101
+              ],
+              "section": "Mana Surge"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Spell drain",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Spell drain.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.a2af9f319e850676]{Monster Spellcasting Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 101",
+          "uniqueId": "wc-monster-mana-surge-spell-drain"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "10843ddf23fea7b0",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Special Attack",
+              "raw": "spell surge (DC 10)"
+            },
+            "reference": {
+              "id": "a2af9f319e850676",
+              "name": "Monster Spellcasting Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                101
+              ],
+              "section": "Mana Surge"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "spell surge",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> spell surge (DC 10).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.a2af9f319e850676]{Monster Spellcasting Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 101",
+          "uniqueId": "wc-monster-mana-surge-spell-surge"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "2bafec445239ef3c",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Darkvision 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                101
+              ],
+              "section": "Mana Surge"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Darkvision 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Darkvision 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 101",
+          "uniqueId": "wc-monster-mana-surge-darkvision-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "ebe8b31773871728",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "damage resistance 5/arcanite"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                101
+              ],
+              "section": "Mana Surge"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "damage resistance 5/arcanite",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> damage resistance 5/arcanite.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 101",
+          "uniqueId": "wc-monster-mana-surge-damage-resistance-5-arcanite"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "ec595ca0d0e365df",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "immunity to electricity"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                101
+              ],
+              "section": "Mana Surge"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "immunity to electricity",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> immunity to electricity.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 101",
+          "uniqueId": "wc-monster-mana-surge-immunity-to-electricity"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "174dbd3ea03af87a",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "immunity to magic"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                101
+              ],
+              "section": "Mana Surge"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "immunity to magic",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> immunity to magic.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 101",
+          "uniqueId": "wc-monster-mana-surge-immunity-to-magic"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "992673b982218c0e",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "sense magic"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                101
+              ],
+              "section": "Mana Surge"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "sense magic",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> sense magic.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 101",
+          "uniqueId": "wc-monster-mana-surge-sense-magic"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "9a3c647f48f1ac5e",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "elemental traits"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                101
+              ],
+              "section": "Mana Surge"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "elemental traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> elemental traits.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 101",
+          "uniqueId": "wc-monster-mana-surge-elemental-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "75bd7bd4b112dc0b",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Dodge"
+            },
+            "reference": {
+              "id": "7d08b8436a8b4167",
+              "name": "Dodge",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                101
+              ],
+              "section": "Mana Surge"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Dodge",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Dodge.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.7d08b8436a8b4167]{Dodge}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 101",
+          "uniqueId": "wc-monster-mana-surge-dodge"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "62a3a8568a5ac305",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Weapon Finesse"
+            },
+            "reference": {
+              "id": "09eb70cdcda3c32d",
+              "name": "Weapon Finesse",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                101
+              ],
+              "section": "Mana Surge"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Weapon Finesse",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Weapon Finesse.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.09eb70cdcda3c32d]{Weapon Finesse}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 101",
+          "uniqueId": "wc-monster-mana-surge-weapon-finesse"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "34ec5d7f05c34470",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Tiny Elemental (Air); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "80222760db02f7a1",
+              "name": "Elemental Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                101
+              ],
+              "section": "Mana Surge"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Elemental Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Tiny Elemental (Air); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.80222760db02f7a1]{Elemental Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 101",
+          "uniqueId": "wc-monster-mana-surge-elemental-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "dcaf6a36830c864d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Air subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "268922696b9a153b",
+              "name": "Air Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                101
+              ],
+              "section": "Mana Surge"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Air Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Air subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.268922696b9a153b]{Air Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 101",
+          "uniqueId": "wc-monster-mana-surge-air-subtype-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "ca78133602d635f0",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 10, Agy 18, Sta 11, Int 2, Spt 11, Cha 10",
+          "Advancement": "2-3 HD (Tiny); 4-7 HD (Small)",
+          "Alignment": "Always neutral",
+          "Area": "Dustwallow Marsh",
+          "Armor Class": "20 (+2 size, +4 Agy, +4 natural), touch 16, flat-footed 16",
+          "Attack": "Touch +6 melee (1d3 plus 1d6 electricity and spell drain)",
+          "Base Attack/Grapple": "+0/-8",
+          "Challenge Rating": "2",
+          "Environment": "Any",
+          "Feats": "Dodge, Weapon Finesse B",
+          "Full Attack": "Touch +6 melee (1d3 plus 1d6 electricity and spell drain)",
+          "Hit Dice": "1d8 (4 hp)",
+          "Initiative": "+4",
+          "Level Adjustment": "-",
+          "Organization": "Solitary, pair, group (3-7), or swarm (8-24)",
+          "Saves": "Fort +0, Ref +6, Will +0",
+          "Skills": "Listen +4",
+          "Space/Reach": "2-1/2 ft./0 ft.",
+          "Special Attacks": "Spell drain, spell surge (DC 10)",
+          "Special Qualities": "Darkvision 60 ft., damage resistance 5/arcanite, immunity to electricity, immunity to magic, sense magic, elemental traits",
+          "Speed": "Fly 40 ft. (8 squares) (perfect)",
+          "Treasure": "None"
+        },
+        "rulesCoverage": {
+          "actor-defense": 3,
+          "linked-reference": 6,
+          "manual": 3
+        },
+        "subtypes": [
+          "Air"
+        ]
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          102
+        ],
+        "printedPages": [
+          101
+        ],
+        "section": "Mana Surge",
+        "verification": "native-text-table"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "c32170a4dac0b160",
+    "bda944162c79f98f",
+    "9a082bbce16ca76f",
+    "5b7b5f5d18490bca",
+    "10843ddf23fea7b0",
+    "2bafec445239ef3c",
+    "ebe8b31773871728",
+    "ec595ca0d0e365df",
+    "174dbd3ea03af87a",
+    "992673b982218c0e",
+    "9a3c647f48f1ac5e",
+    "75bd7bd4b112dc0b",
+    "62a3a8568a5ac305",
+    "34ec5d7f05c34470",
+    "dcaf6a36830c864d"
+  ],
+  "name": "Mana Surge",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 11,
+        "penalty": 0,
+        "total": 11,
+        "userPenalty": 0,
+        "value": 11
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 4,
+        "origMod": 4,
+        "origTotal": 18,
+        "penalty": 0,
+        "total": 18,
+        "userPenalty": 0,
+        "value": 18
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -4,
+        "origMod": -4,
+        "origTotal": 2,
+        "penalty": 0,
+        "total": 2,
+        "userPenalty": 0,
+        "value": 2
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 11,
+        "penalty": 0,
+        "total": 11,
+        "userPenalty": 0,
+        "value": 11
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 16,
+          "value": 0
+        },
+        "normal": {
+          "total": 20,
+          "value": 0
+        },
+        "touch": {
+          "total": 16,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 0,
+        "nonepic": 0,
+        "total": 0,
+        "value": 0
+      },
+      "cmb": {
+        "total": -8,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "elemental",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 100,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 1,
+        "total": 1
+      },
+      "hp": {
+        "base": 4,
+        "max": 4,
+        "min": -11,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 4
+      },
+      "init": {
+        "bonus": 0,
+        "total": 4,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 4,
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "total": 0
+        },
+        "ref": {
+          "base": 6,
+          "total": 6
+        },
+        "will": {
+          "base": 0,
+          "total": 0
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": null,
+        "darkvision": 60,
+        "lowLight": false,
+        "lowLightMultiplier": null,
+        "tremorsense": null
+      },
+      "speed": {
+        "fly": {
+          "base": 40,
+          "total": 40
+        },
+        "land": {
+          "base": 40,
+          "total": 40
+        }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "Always neutral",
+      "biography": {
+        "public": "",
+        "value": "<p>Mana Surge is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 2,
+      "environment": "Any",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 1,
+        "value": 1
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 1d8 (4 hp)</p><p><strong>Initiative:</strong> +4</p><p><strong>Speed:</strong> Fly 40 ft. (8 squares) (perfect)</p><p><strong>Armor Class:</strong> 20 (+2 size, +4 Agy, +4 natural), touch 16, flat-footed 16</p><p><strong>Base Attack/Grapple:</strong> +0/-8</p><p><strong>Attack:</strong> Touch +6 melee (1d3 plus 1d6 electricity and spell drain)</p><p><strong>Full Attack:</strong> Touch +6 melee (1d3 plus 1d6 electricity and spell drain)</p><p><strong>Space/Reach:</strong> 2-1/2 ft./0 ft.</p><p><strong>Special Attacks:</strong> Spell drain, spell surge (DC 10)</p><p><strong>Special Qualities:</strong> Darkvision 60 ft., damage resistance 5/arcanite, immunity to electricity, immunity to magic, sense magic, elemental traits</p><p><strong>Saves:</strong> Fort +0, Ref +6, Will +0</p><p><strong>Abilities:</strong> Str 10, Agy 18, Sta 11, Int 2, Spt 11, Cha 10</p><p><strong>Skills:</strong> Listen +4</p><p><strong>Feats:</strong> Dodge, Weapon Finesse B</p><p><strong>Area:</strong> Dustwallow Marsh</p><p><strong>Organization:</strong> Solitary, pair, group (3-7), or swarm (8-24)</p><p><strong>Treasure:</strong> None</p><p><strong>Advancement:</strong> 2-3 HD (Tiny); 4-7 HD (Small)</p><p><strong>Level Adjustment:</strong> -</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 2,
+      "type": "Elemental"
+    },
+    "skills": {
+      "lis": {
+        "ability": "wis",
+        "abilityModifier": 0,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 4,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 4,
+        "notes": "Printed total +4",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "tiny",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Darkvision 60 ft., damage resistance 5/arcanite, immunity to electricity, immunity to magic, sense magic, elemental traits",
+      "size": "tiny",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

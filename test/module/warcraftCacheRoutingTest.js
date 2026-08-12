@@ -20,6 +20,7 @@ describe("Warcraft class feature cache routing", () => {
   it("recognizes the Warcraft class compendium as a class-ability source", () => {
     expect(isClassAbilityPack("warcraftrpg2e.class-abilities")).toBe(true);
     expect(isClassAbilityPack("warcraftrpg2e.warcraft-classes")).toBe(true);
+    expect(isClassAbilityPack("warcraftrpg2e.warcraft-races")).toBe(true);
     expect(isClassAbilityPack("module.custom-features", "custom-features")).toBe(true);
     expect(isClassAbilityPack("warcraftrpg2e.warcraft-spells")).toBe(false);
   });

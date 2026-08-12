@@ -2,19 +2,295 @@
   {
     "childKeyByCollection": {},
     "embeddedCollections": [],
+    "file": "night-elf-arcane-resistance-4de950eb311b4b68.json",
+    "key": "!items!4de950eb311b4b68"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "ironforge-dwarf-attacks-against-giants-a6b8cbe185030d46.json",
+    "key": "!items!a6b8cbe185030d46"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "orc-battle-rage-ac3458d367d4bcdb.json",
+    "key": "!items!ac3458d367d4bcdb"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "ironforge-dwarf-dodge-giants-6710c2640f178837.json",
+    "key": "!items!6710c2640f178837"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "ironforge-dwarf-dwarven-spell-resistance-422380b9ae99cee0.json",
+    "key": "!items!422380b9ae99cee0"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "ironforge-dwarf-dwarven-strength-3b5f6d6ce557c980.json",
+    "key": "!items!3b5f6d6ce557c980"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "ironforge-dwarf-dwarven-weapon-proficiency-0e97f2963c71bad2.json",
+    "key": "!items!0e97f2963c71bad2"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "high-elf-empower-magic-3fbebb21bb0af984.json",
+    "key": "!items!3fbebb21bb0af984"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "jungle-troll-fast-healing-1-718d1ec291304060.json",
+    "key": "!items!718d1ec291304060"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
     "file": "forsaken-8fe01eb064f0b92a.json",
     "key": "!items!8fe01eb064f0b92a"
   },
   {
     "childKeyByCollection": {},
     "embeddedCollections": [],
-    "file": "forsaken-racial-levels-bf7d227129ad9caf.json",
-    "key": "!items!bf7d227129ad9caf"
+    "file": "forsaken-forsaken-racial-advancement-460fe76a0f0789af.json",
+    "key": "!items!460fe76a0f0789af"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "forsaken-racial-levels-3a54f44864ccdcbd.json",
+    "key": "!items!3a54f44864ccdcbd"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "forsaken-forsaken-slam-14ca618db2b46519.json",
+    "key": "!items!14ca618db2b46519"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "gnome-44bd275ded77f109.json",
+    "key": "!items!44bd275ded77f109"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "goblin-e0434b96c5f85729.json",
+    "key": "!items!e0434b96c5f85729"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "high-elf-2d568ffa1c60a385.json",
+    "key": "!items!2d568ffa1c60a385"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "high-elf-high-elf-agility-a05f8a9b6d2af81d.json",
+    "key": "!items!a05f8a9b6d2af81d"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "high-elf-racial-levels-7efc437b0d771c2c.json",
+    "key": "!items!7efc437b0d771c2c"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "high-elf-high-elf-spell-like-abilities-64048ff36c640262.json",
+    "key": "!items!64048ff36c640262"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "tauren-horns-d8d8798a9110ffbd.json",
+    "key": "!items!d8d8798a9110ffbd"
   },
   {
     "childKeyByCollection": {},
     "embeddedCollections": [],
     "file": "human-mq9ljmcrgjj0bgvo.json",
     "key": "!items!mq9ljMCrgJj0bGVO"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "jungle-troll-improved-rapid-healing-616ea4be504045f5.json",
+    "key": "!items!616ea4be504045f5"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "tauren-improved-tauren-charge-56843406cfb92537.json",
+    "key": "!items!56843406cfb92537"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "high-elf-increased-caster-level-07925fa1ca40c416.json",
+    "key": "!items!07925fa1ca40c416"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "forsaken-increased-hit-die-2b70f00967889c7b.json",
+    "key": "!items!2b70f00967889c7b"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "ironforge-dwarf-37aea5239ede9a11.json",
+    "key": "!items!37aea5239ede9a11"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "ironforge-dwarf-racial-levels-a7bf16115c738e7b.json",
+    "key": "!items!a7bf16115c738e7b"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "jungle-troll-73e32a1c7cb87996.json",
+    "key": "!items!73e32a1c7cb87996"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "jungle-troll-jungle-troll-agility-09e714a33f229ad4.json",
+    "key": "!items!09e714a33f229ad4"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "jungle-troll-racial-levels-96bd18f79f8cf891.json",
+    "key": "!items!96bd18f79f8cf891"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "jungle-troll-jungle-troll-stamina-048feb78694950ec.json",
+    "key": "!items!048feb78694950ec"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "high-elf-magic-addiction-f750d51a247ce7a3.json",
+    "key": "!items!f750d51a247ce7a3"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "night-elf-1aaa2bd45f26bf96.json",
+    "key": "!items!1aaa2bd45f26bf96"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "night-elf-night-elf-acrobatics-b840b79d99f65eb4.json",
+    "key": "!items!b840b79d99f65eb4"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "night-elf-night-elf-agility-ee471aab85a99779.json",
+    "key": "!items!ee471aab85a99779"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "night-elf-racial-levels-c25f5c3736a47654.json",
+    "key": "!items!c25f5c3736a47654"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "night-elf-night-elf-resistances-b4f728fc38d65a6e.json",
+    "key": "!items!b4f728fc38d65a6e"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "night-elf-night-elf-weapon-proficiency-60dbb7f4de9266b4.json",
+    "key": "!items!60dbb7f4de9266b4"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "orc-fee80536c1d19abf.json",
+    "key": "!items!fee80536c1d19abf"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "night-elf-shadowmeld-25db921cfb8ee725.json",
+    "key": "!items!25db921cfb8ee725"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "ironforge-dwarf-stoneflesh-6a6d974b124cb2dc.json",
+    "key": "!items!6a6d974b124cb2dc"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "tauren-703790f9a284239e.json",
+    "key": "!items!703790f9a284239e"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "tauren-tauren-charge-8e16be441fc9f2fc.json",
+    "key": "!items!8e16be441fc9f2fc"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "tauren-tauren-courage-3fc75e9cd866d501.json",
+    "key": "!items!3fc75e9cd866d501"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "tauren-racial-levels-fc76960b4e2aace3.json",
+    "key": "!items!fc76960b4e2aace3"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "tauren-tauren-spirit-f0d060b7dda0b630.json",
+    "key": "!items!f0d060b7dda0b630"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "tauren-tauren-strength-414c30737cadee98.json",
+    "key": "!items!414c30737cadee98"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "tauren-tauren-weapon-proficiency-e8c35f573d8fa214.json",
+    "key": "!items!e8c35f573d8fa214"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "jungle-troll-troll-healing-a9024a0776739da5.json",
+    "key": "!items!a9024a0776739da5"
   }
 ]

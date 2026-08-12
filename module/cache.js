@@ -75,6 +75,7 @@ const _CheckSettingsForPackName = (packName, settingData) => {
 export const isClassAbilityPack = (packName, settingData = "") =>
     packName.endsWith('class-abilities') ||
     packName.endsWith('warcraft-classes') ||
+    packName.endsWith('warcraft-races') ||
     _CheckSettingsForPackName(packName, settingData);
 
 export const buildCache = async function() {

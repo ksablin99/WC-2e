@@ -1,0 +1,53 @@
+{
+  "_id": "476d0af766f98d65",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "catalog": {
+        "category": "buildings",
+        "completeTableEntry": true,
+        "generated": true,
+        "status": "structured-table-data",
+        "tableValue": "100,000 gp"
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          204
+        ],
+        "printedPages": [
+          202
+        ],
+        "section": "Mansion",
+        "verification": "table-extraction"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/item-bag.svg",
+  "name": "Mansion",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "carried": true,
+    "description": {
+      "value": "<p><strong>Printed table value:</strong> 100,000 gp.</p>"
+    },
+    "hardness": 0,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "identified": true,
+    "identifiedName": "Mansion",
+    "price": 100000,
+    "quantity": 1,
+    "source": "World of Warcraft RPG, 2nd Edition, p. 202",
+    "subType": "gear",
+    "weight": 0
+  },
+  "type": "loot"
+}

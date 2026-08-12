@@ -1,0 +1,53 @@
+{
+  "_id": "903af4505876aa99",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "catalog": {
+        "category": "mounts",
+        "completeTableEntry": true,
+        "generated": true,
+        "status": "structured-table-data",
+        "tableValue": "20 gp; 300 lb."
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          203
+        ],
+        "printedPages": [
+          201
+        ],
+        "section": "Sled",
+        "verification": "table-extraction"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/item-bag.svg",
+  "name": "Sled",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "carried": true,
+    "description": {
+      "value": "<p><strong>Printed table value:</strong> 20 gp; 300 lb..</p>"
+    },
+    "hardness": 0,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "identified": true,
+    "identifiedName": "Sled",
+    "price": 20,
+    "quantity": 1,
+    "source": "World of Warcraft RPG, 2nd Edition, p. 201",
+    "subType": "gear",
+    "weight": 300
+  },
+  "type": "loot"
+}

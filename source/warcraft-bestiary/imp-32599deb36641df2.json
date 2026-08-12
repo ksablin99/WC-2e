@@ -1,0 +1,1173 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "d6ebba4958f3eff2",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 1,
+                "die": 8,
+                "expression": "1d8",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Outsider Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "high",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "7",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "1",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "17",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "14",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "15",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "2",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "4",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "0",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "20",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "4",
+              "misc",
+              "init",
+              "untyped"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "outsider",
+          "damageReduction": [],
+          "hd": 8,
+          "hp": 0,
+          "levels": 1,
+          "maxLevel": 50,
+          "resistances": [
+            [
+              "",
+              "energy-fire",
+              true,
+              false,
+              false
+            ]
+          ],
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "high"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 91"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "44558b8cc6086fc8",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                2
+              ],
+              "printedDamage": "1d3-1"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Claws",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "-1",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Claws",
+          "damage": {
+            "parts": [
+              [
+                "1d3-1",
+                "Piercing or Slashing",
+                "damage-piercing-or-slashing"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Claws +2 melee (1d3-1).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "63116fe62cae59ae",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "44558b8cc6086fc8",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Claws",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> Claws +2 melee (1d3-1).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "49bc6ed1f84d5ea2",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "Lesser firebolt (DC 13)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                91
+              ],
+              "section": "Imp"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Lesser firebolt",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Lesser firebolt (DC 13).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 91",
+          "uniqueId": "wc-monster-imp-lesser-firebolt"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "09c1869de1fe7dae",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Blindsight 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                91
+              ],
+              "section": "Imp"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Blindsight 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Blindsight 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 91",
+          "uniqueId": "wc-monster-imp-blindsight-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "cb481176f7f534b3",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "darkvision 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                91
+              ],
+              "section": "Imp"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "darkvision 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> darkvision 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 91",
+          "uniqueId": "wc-monster-imp-darkvision-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "f0dc1c77525a23ef",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "immunity to fire"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                91
+              ],
+              "section": "Imp"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "immunity to fire",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> immunity to fire.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 91",
+          "uniqueId": "wc-monster-imp-immunity-to-fire"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "a253190c5f8f3bba",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "spell resistance 11"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                91
+              ],
+              "section": "Imp"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "spell resistance 11",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> spell resistance 11.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 91",
+          "uniqueId": "wc-monster-imp-spell-resistance-11"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "49657a311b6ffead",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "demon traits"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                91
+              ],
+              "section": "Imp"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "demon traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> demon traits.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 91",
+          "uniqueId": "wc-monster-imp-demon-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "c6a5922ebbc58b2e",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Initiative"
+            },
+            "reference": {
+              "id": "3232602c102e0494",
+              "name": "Improved Initiative",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                91
+              ],
+              "section": "Imp"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Initiative",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Initiative.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.3232602c102e0494]{Improved Initiative}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 91",
+          "uniqueId": "wc-monster-imp-improved-initiative"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "2b43ad5406295be8",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Toughness"
+            },
+            "reference": {
+              "id": "9a692fe6b110d94b",
+              "name": "Toughness",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                91
+              ],
+              "section": "Imp"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Toughness",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Toughness.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.9a692fe6b110d94b]{Toughness}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 91",
+          "uniqueId": "wc-monster-imp-toughness"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e678680c0e7e2178",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Tiny Outsider (Demon, Evil, Extraplanar); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "dd750e0d27b12249",
+              "name": "Outsider Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                91
+              ],
+              "section": "Imp"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Outsider Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Tiny Outsider (Demon, Evil, Extraplanar); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.dd750e0d27b12249]{Outsider Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 91",
+          "uniqueId": "wc-monster-imp-outsider-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "43d6ccf36ee04780",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Demon subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "29bc818a8721f188",
+              "name": "Demon Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                91
+              ],
+              "section": "Imp"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Demon Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Demon subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.29bc818a8721f188]{Demon Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 91",
+          "uniqueId": "wc-monster-imp-demon-subtype-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "20940c7db0dafa27",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Evil subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "ad80f8e8725dc664",
+              "name": "Evil Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                91
+              ],
+              "section": "Imp"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Evil Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Evil subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.ad80f8e8725dc664]{Evil Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 91",
+          "uniqueId": "wc-monster-imp-evil-subtype-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "51b1551701a3066d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Extraplanar subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "f56ea12b09ac91fc",
+              "name": "Extraplanar Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                91
+              ],
+              "section": "Imp"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Extraplanar Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Extraplanar subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.f56ea12b09ac91fc]{Extraplanar Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 91",
+          "uniqueId": "wc-monster-imp-extraplanar-subtype-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "32599deb36641df2",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 8, Agy 14, Sta 11, Int 8, Spt 7, Cha 15",
+          "Advancement": "2-4 HD (Small); or by character class",
+          "Alignment": "Always neutral evil",
+          "Area": "The Twisting Nether",
+          "Armor Class": "17 (+2 size, +2 Agy, +3 natural), touch 14, flat- footed 15",
+          "Attack": "Claws +2 melee (1d3-1) Claws +2 melee (1d3-1)",
+          "Base Attack/Grapple": "+1/-8",
+          "Challenge Rating": "1",
+          "Environment": "The Twisting Nether",
+          "Feats": "Improved Initiative B , Toughness",
+          "Full Attack": "Claws +2 melee (1d3-1)",
+          "Hit Dice": "1d8+3 (7 hp)",
+          "Initiative": "+6",
+          "Level Adjustment": "-",
+          "Organization": "Solitary, pair, or gang (3-5)",
+          "Saves": "Fort +2, Ref +4, Will +0",
+          "Skills": "Climb +3, Concentration +4, Knowledge (the planes) +3, Listen +2, Spot +2, Stealth +6 (+14 to hide), Use Magic Device +6",
+          "Space/Reach": "2-1/2 ft./0 ft.",
+          "Special Attacks": "Lesser firebolt (DC 13)",
+          "Special Qualities": "Blindsight 60 ft., darkvision 60 ft., immunity to fire, spell resistance 11, demon traits",
+          "Speed": "20 ft. (4 squares)",
+          "Treasure": "Standard"
+        },
+        "rulesCoverage": {
+          "actor-defense": 2,
+          "linked-reference": 6,
+          "manual": 4
+        },
+        "subtypes": [
+          "Demon",
+          "Evil",
+          "Extraplanar"
+        ]
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          92
+        ],
+        "printedPages": [
+          91
+        ],
+        "section": "Imp",
+        "verification": "native-text-table+review-override"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "d6ebba4958f3eff2",
+    "44558b8cc6086fc8",
+    "63116fe62cae59ae",
+    "49bc6ed1f84d5ea2",
+    "09c1869de1fe7dae",
+    "cb481176f7f534b3",
+    "f0dc1c77525a23ef",
+    "a253190c5f8f3bba",
+    "49657a311b6ffead",
+    "c6a5922ebbc58b2e",
+    "2b43ad5406295be8",
+    "e678680c0e7e2178",
+    "43d6ccf36ee04780",
+    "20940c7db0dafa27",
+    "51b1551701a3066d"
+  ],
+  "name": "Imp",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 2,
+        "origMod": 2,
+        "origTotal": 15,
+        "penalty": 0,
+        "total": 15,
+        "userPenalty": 0,
+        "value": 15
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 11,
+        "penalty": 0,
+        "total": 11,
+        "userPenalty": 0,
+        "value": 11
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 2,
+        "origMod": 2,
+        "origTotal": 14,
+        "penalty": 0,
+        "total": 14,
+        "userPenalty": 0,
+        "value": 14
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -1,
+        "origMod": -1,
+        "origTotal": 8,
+        "penalty": 0,
+        "total": 8,
+        "userPenalty": 0,
+        "value": 8
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -1,
+        "origMod": -1,
+        "origTotal": 8,
+        "penalty": 0,
+        "total": 8,
+        "userPenalty": 0,
+        "value": 8
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -2,
+        "origMod": -2,
+        "origTotal": 7,
+        "penalty": 0,
+        "total": 7,
+        "userPenalty": 0,
+        "value": 7
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 15,
+          "value": 0
+        },
+        "normal": {
+          "total": 17,
+          "value": 0
+        },
+        "touch": {
+          "total": 14,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 1,
+        "nonepic": 1,
+        "total": 1,
+        "value": 0
+      },
+      "cmb": {
+        "total": -8,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "outsider",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 0,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 1,
+        "total": 1
+      },
+      "hp": {
+        "base": 7,
+        "max": 7,
+        "min": -11,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 7
+      },
+      "init": {
+        "bonus": 0,
+        "total": 6,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 3,
+      "savingThrows": {
+        "fort": {
+          "base": 2,
+          "total": 2
+        },
+        "ref": {
+          "base": 4,
+          "total": 4
+        },
+        "will": {
+          "base": 0,
+          "total": 0
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": 60,
+        "darkvision": 60,
+        "lowLight": false,
+        "lowLightMultiplier": null,
+        "tremorsense": null
+      },
+      "speed": {
+        "land": {
+          "base": 20,
+          "total": 20
+        }
+      },
+      "sr": {
+        "formula": "11",
+        "total": 11
+      }
+    },
+    "details": {
+      "alignment": "Always neutral evil",
+      "biography": {
+        "public": "",
+        "value": "<p>Imp is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 1,
+      "environment": "The Twisting Nether",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 1,
+        "value": 1
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 1d8+3 (7 hp)</p><p><strong>Initiative:</strong> +6</p><p><strong>Speed:</strong> 20 ft. (4 squares)</p><p><strong>Armor Class:</strong> 17 (+2 size, +2 Agy, +3 natural), touch 14, flat- footed 15</p><p><strong>Base Attack/Grapple:</strong> +1/-8</p><p><strong>Attack:</strong> Claws +2 melee (1d3-1) Claws +2 melee (1d3-1)</p><p><strong>Full Attack:</strong> Claws +2 melee (1d3-1)</p><p><strong>Space/Reach:</strong> 2-1/2 ft./0 ft.</p><p><strong>Special Attacks:</strong> Lesser firebolt (DC 13)</p><p><strong>Special Qualities:</strong> Blindsight 60 ft., darkvision 60 ft., immunity to fire, spell resistance 11, demon traits</p><p><strong>Saves:</strong> Fort +2, Ref +4, Will +0</p><p><strong>Abilities:</strong> Str 8, Agy 14, Sta 11, Int 8, Spt 7, Cha 15</p><p><strong>Skills:</strong> Climb +3, Concentration +4, Knowledge (the planes) +3, Listen +2, Spot +2, Stealth +6 (+14 to hide), Use Magic Device +6</p><p><strong>Feats:</strong> Improved Initiative B , Toughness</p><p><strong>Area:</strong> The Twisting Nether</p><p><strong>Organization:</strong> Solitary, pair, or gang (3-5)</p><p><strong>Treasure:</strong> Standard</p><p><strong>Advancement:</strong> 2-4 HD (Small); or by character class</p><p><strong>Level Adjustment:</strong> -</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 1,
+      "type": "Outsider"
+    },
+    "skills": {
+      "clm": {
+        "ability": "str",
+        "abilityModifier": -1,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 4,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 3,
+        "notes": "Printed total +3",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "coc": {
+        "ability": "con",
+        "abilityModifier": 0,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 4,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 4,
+        "notes": "Printed total +4",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "hid": {
+        "ability": "dex",
+        "abilityModifier": 2,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 4,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 6,
+        "notes": "Printed total +6 (+14 to hide)",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "kpl": {
+        "ability": "int",
+        "abilityModifier": -1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 4,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 3,
+        "notes": "Printed total +3",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "lis": {
+        "ability": "wis",
+        "abilityModifier": -2,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 4,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 2,
+        "notes": "Printed total +2",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spt": {
+        "ability": "wis",
+        "abilityModifier": -2,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 4,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 2,
+        "notes": "Printed total +2",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "umd": {
+        "ability": "cha",
+        "abilityModifier": 2,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 4,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 6,
+        "notes": "Printed total +6",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "tiny",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Blindsight 60 ft., darkvision 60 ft., immunity to fire, spell resistance 11, demon traits",
+      "size": "tiny",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

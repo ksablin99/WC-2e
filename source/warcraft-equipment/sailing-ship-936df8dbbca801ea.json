@@ -1,0 +1,55 @@
+{
+  "_id": "936df8dbbca801ea",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "catalog": {
+        "category": "transport",
+        "completeTableEntry": true,
+        "generated": true,
+        "status": "structured-table-data",
+        "tableValue": "10,000 gp"
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          203,
+          204
+        ],
+        "printedPages": [
+          201,
+          202
+        ],
+        "section": "Sailing Ship",
+        "verification": "table-extraction"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/item-bag.svg",
+  "name": "Sailing Ship",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "carried": true,
+    "description": {
+      "value": "<p><strong>Printed table value:</strong> 10,000 gp.</p>"
+    },
+    "hardness": 0,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "identified": true,
+    "identifiedName": "Sailing Ship",
+    "price": 10000,
+    "quantity": 1,
+    "source": "World of Warcraft RPG, 2nd Edition, p. 201-202",
+    "subType": "gear",
+    "weight": 0
+  },
+  "type": "loot"
+}

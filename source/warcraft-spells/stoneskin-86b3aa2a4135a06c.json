@@ -1,0 +1,277 @@
+{
+  "_embedded": {},
+  "_id": "86b3aa2a4135a06c",
+  "_stats": {
+    "compendiumSource": null,
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "lastModifiedBy": null,
+    "modifiedTime": null,
+    "systemId": null,
+    "systemVersion": null
+  },
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "catalog": {
+        "completeListEntry": true,
+        "generated": true,
+        "status": "srd-mechanics-with-warcraft-header"
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          266,
+          342
+        ],
+        "printedPages": [
+          264,
+          340
+        ],
+        "section": "Stoneskin",
+        "verification": "text-extracted-header"
+      }
+    }
+  },
+  "folder": null,
+  "img": "systems/warcraftrpg2e/icons/spells/named-spells/stoneskin.png",
+  "name": "Stoneskin",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "ability": {
+      "attack": "",
+      "critMult": 2,
+      "critRange": 20,
+      "damage": "",
+      "damageMult": 1,
+      "twoHandedOnly": false,
+      "vsTouchAc": false
+    },
+    "actionType": "other",
+    "activateActions": [],
+    "activation": {
+      "cost": 1,
+      "type": "standard"
+    },
+    "addedLevel": 0,
+    "attack": {
+      "parts": []
+    },
+    "attackBonus": "",
+    "attackCountFormula": "",
+    "attackNotes": "",
+    "attackParts": [],
+    "atWill": false,
+    "autoscaleAttackParts": "",
+    "baseCl": "0",
+    "castTime": "1 standard action",
+    "changes": [],
+    "classSource": "",
+    "clOffset": 0,
+    "combatChanges": [],
+    "components": {
+      "divineFocus": 0,
+      "focus": false,
+      "material": true,
+      "somatic": true,
+      "value": "V, S, M",
+      "verbal": true
+    },
+    "conditionals": [],
+    "container": "None",
+    "containerWeightless": false,
+    "contextNotes": [],
+    "createdBy": "",
+    "creationChanges": [],
+    "critConfirmBonus": "",
+    "customAttributes": {},
+    "customAttributesLocked": false,
+    "customTag": "",
+    "damage": {
+      "alternativeParts": [],
+      "parts": []
+    },
+    "damageReduction": [],
+    "deactivateActions": [],
+    "description": {
+      "chat": "",
+      "unidentified": "",
+      "value": "<p>Subject gains DR 10/adamantine.</p>"
+    },
+    "display": "Touch",
+    "duration": {
+      "units": "",
+      "value": null
+    },
+    "effectNotes": "",
+    "epic": "",
+    "favorite": false,
+    "formula": "",
+    "identifiedName": "Stoneskin",
+    "index": {
+      "subType": null,
+      "uniqueId": ""
+    },
+    "isDomainSpell": false,
+    "isPower": false,
+    "isSpellSpontaneousReplacement": false,
+    "learnedAt": {
+      "bloodline": [],
+      "class": [
+        [
+          "Arcanist",
+          4
+        ]
+      ],
+      "domain": [],
+      "elementalSchool": [],
+      "subDomain": []
+    },
+    "level": 4,
+    "linkedChargeItem": {
+      "id": null,
+      "img": null,
+      "name": null
+    },
+    "linkId": "",
+    "linkImported": false,
+    "linkSourceId": "",
+    "linkSourceName": "",
+    "materials": {
+      "consumed": {
+        "_deprecated": true,
+        "value": false
+      },
+      "focus": "",
+      "value": "granite and 250 gp worth of diamond dust sprinkled on the target’s skin"
+    },
+    "maxDamageDice": 0,
+    "maxDamageDiceFormula": "",
+    "measureTemplate": {
+      "customColor": "",
+      "customTexture": "",
+      "overrideColor": false,
+      "overrideTexture": false,
+      "size": 0,
+      "type": ""
+    },
+    "metamagicFeats": {
+      "empowered": false,
+      "enhanced": false,
+      "enhancedHalf": false,
+      "enlarged": false,
+      "intensified": false,
+      "maximized": false,
+      "widened": false
+    },
+    "nameFormula": "",
+    "nameFromFormula": false,
+    "originId": "86b3aa2a4135a06c",
+    "originPack": "warcraftrpg2e.warcraft-spells",
+    "originVersion": 109,
+    "perRoundActions": [],
+    "possibleUpdate": false,
+    "powerPointsCost": 0,
+    "pr": false,
+    "preparation": {
+      "autoDeductCharges": true,
+      "maxAmount": 0,
+      "mode": "prepared",
+      "preparedAmount": 0
+    },
+    "psionic": "",
+    "range": {
+      "long": null,
+      "units": "touch",
+      "value": null
+    },
+    "recharge": {
+      "current": 0,
+      "enabled": false,
+      "formula": ""
+    },
+    "requirements": [],
+    "requiresPsionicFocus": false,
+    "resistances": [],
+    "rollTableDraw": {
+      "formula": "",
+      "id": "",
+      "name": "",
+      "pack": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": "0",
+      "dcAutoAbility": "",
+      "dcAutoType": "",
+      "description": "Will negates (harmless)",
+      "originVersion": 97,
+      "type": ""
+    },
+    "school": "abj",
+    "shortDescription": "<p>Subject gains DR 10/adamantine.</p>",
+    "showInQuickbar": false,
+    "slOffset": 0,
+    "snip": "Subject gains DR 10/adamantine.",
+    "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 264-264",
+    "specialActions": [
+      {
+        "action": "Create unique \"Stoneskin\" from \"warcraftrpg2e.commonbuffs\" on target;Set buff \"Stoneskin\" field data.level to max(1,(@cl)) on target;Activate buff \"Stoneskin\" on target",
+        "condition": "",
+        "img": "icons/svg/item-bag.svg",
+        "name": "Stoneskin",
+        "range": ""
+      }
+    ],
+    "specialId": null,
+    "specialPrepared": false,
+    "spellArea": "",
+    "spellbook": "primary",
+    "spellDuration": "10 min./level or until discharged",
+    "spellDurationData": {
+      "dismissable": false,
+      "units": "spec",
+      "value": "10 min./level or until discharged"
+    },
+    "spellEffect": "",
+    "spellType": {
+      "_deprecated": true,
+      "value": ""
+    },
+    "sr": true,
+    "subschool": "",
+    "summon": [],
+    "tags": [],
+    "target": {
+      "value": "Creature touched"
+    },
+    "types": "",
+    "uniqueId": "",
+    "userNonRemovable": false,
+    "uses": {
+      "allowMultipleUses": false,
+      "autoDeductCharges": true,
+      "canBeLinked": false,
+      "chargesPerUse": 1,
+      "isResource": false,
+      "max": 0,
+      "maxFormula": "",
+      "maxPerUse": null,
+      "maxPerUseFormula": "",
+      "per": "",
+      "rechargeFormula": null,
+      "value": 0
+    },
+    "warcraftManualPolicy": {
+      "mode": "srd-baseline",
+      "reason": "The inherited SRD implementation is used with the Warcraft list assignment and spell level."
+    }
+  },
+  "type": "spell"
+}

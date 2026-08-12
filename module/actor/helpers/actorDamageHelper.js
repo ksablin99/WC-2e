@@ -3,6 +3,8 @@ import { ActorPF } from "../entity.js";
 import { createCustomChatMessage } from "../../chat.js";
 import { Roll35e } from "../../roll.js";
 import { CHAT_MESSAGE_STYLE_KEY, CHAT_MESSAGE_STYLE_OTHER } from "../../lib.js";
+import { resolveWarcraftCreatureProfile, signedWarcraftEnergyDamage } from "./warcraftCreatureRules.js";
+import { resolveDeathRule } from "./warcraftDeathRules.js";
 
 export class ActorDamageHelper {
     /**
@@ -142,6 +144,18 @@ export class ActorDamageHelper {
                 natural20Crit = hitHooksValues.natural20Crit;
                 let damageData = null;
                 let noPrecision = false;
+                const creatureProfile = resolveWarcraftCreatureProfile({
+                    creatureType: a.system.attributes?.creatureType,
+                    deathRule: resolveDeathRule(
+                        a.system.attributes?.deathRule,
+                        a.race?.system?.deathRule,
+                        a.system.attributes?.creatureType,
+                    ),
+                });
+                if (creatureProfile.criticalAndPrecisionImmune) {
+                    crit = false;
+                    noPrecision = true;
+                }
                 // Fortitifcation / crit resistance
                 let fortifyRolled = false;
                 let fortifySuccessfull = false;
@@ -641,6 +655,14 @@ export class ActorDamageHelper {
         //Checks for slashing/piercing/bludgeonign damage and typeless damage
         let hasAnyTypeDamage = false;
         let baseIsNonLethal = nonLethal || false;
+        const creatureProfile = resolveWarcraftCreatureProfile({
+            creatureType: actor.system.attributes?.creatureType,
+            deathRule: resolveDeathRule(
+                actor.system.attributes?.deathRule,
+                actor.race?.system?.deathRule,
+                actor.system.attributes?.creatureType,
+            ),
+        });
 
         let preHookValues = {damage:damage,hasRegeneration:hasRegeneration,dr:dr,er:er,nonLethalDamage:nonLethalDamage,applyHalf:applyHalf,hasAnyTypeDamage:hasAnyTypeDamage,baseIsNonLethal:baseIsNonLethal,damageBeforeDr:damageBeforeDr,bypassedDr:bypassedDr, noPrecision:noPrecision}
         Hooks.call("D35E.DamageRoll.preCalculateDamage", actor, preHookValues);
@@ -655,6 +677,7 @@ export class ActorDamageHelper {
         damageBeforeDr = preHookValues.damageBeforeDr;
         bypassedDr = preHookValues.bypassedDr;
         noPrecision = preHookValues.noPrecision;
+        if (creatureProfile.criticalAndPrecisionImmune) noPrecision = true;
 
         // Sum the damage for each damageTypeUid in the damage array, and remove duplicates from the damage array
         damage = this.mergeDamageTypes(damage);
@@ -705,7 +728,10 @@ export class ActorDamageHelper {
         let damageDifference = realDamage - damageAfterDr;
         if (damageDifference && appliedDr.providedBy && appliedDr.isPool)
             damagePoolPossibleReductionsUpdate.push({id:appliedDr.providedBy,value:damageDifference})
-        if (baseIsNonLethal) {
+        if ((creatureProfile.construct || creatureProfile.undead) && baseIsNonLethal) {
+            damageAfterDr = 0;
+            nonLethalDamage = 0;
+        } else if (baseIsNonLethal) {
             nonLethalDamage += damageAfterDr;
             damageAfterDr = 0;
         }
@@ -722,12 +748,24 @@ export class ActorDamageHelper {
                     let realDamage = (applyHalf ? Math.floor(d.roll.total/2.0) : d.roll.total);
                     let damageAfterEr = Math.max(realDamage - (erValue?.value || 0),0)
 
-                    if (d.damageTypeUid === 'damage-healing')
-                        damageAfterEr =- damageAfterEr;
-                    else if (actor.system.attributes?.creatureType === "undead" && d.damageTypeUid === "energy-negative")
-                        damageAfterEr =- damageAfterEr;
-                    else if (actor.system.attributes?.creatureType !== "undead" && d.damageTypeUid === "energy-positive")
-                        damageAfterEr =- damageAfterEr;
+                    const warcraftDamageType = {
+                        "damage-healing": "healing",
+                        "damage-repair": "damage-repair",
+                        "energy-negative": "negative",
+                        "energy-positive": "positive",
+                    }[d.damageTypeUid];
+                    if (warcraftDamageType) {
+                        damageAfterEr = signedWarcraftEnergyDamage({
+                            amount: damageAfterEr,
+                            damageType: warcraftDamageType,
+                            creatureType: actor.system.attributes?.creatureType,
+                            deathRule: resolveDeathRule(
+                                actor.system.attributes?.deathRule,
+                                actor.race?.system?.deathRule,
+                                actor.system.attributes?.creatureType,
+                            ),
+                        });
+                    }
                     
                     let value = erValue?.value
                     if (erValue?.immunity) {

@@ -11,8 +11,17 @@ import { ActorPF } from "../entity.js";
 import {
   classifyWarcraftHealth,
   DEATH_RULE_D35E,
+  DEATH_RULE_WARCRAFT,
   resolveDeathRule,
 } from "../helpers/warcraftDeathRules.js";
+import { deriveShoutUses } from "../helpers/warcraftResources.js";
+import { constructSizeHitPoints, resolveWarcraftCreatureProfile } from "../helpers/warcraftCreatureRules.js";
+import { deriveDirectClassPathState } from "../helpers/classPathProgressionHelper.js";
+import {
+  allocateWarcraftPrestigeCasterLevels,
+  calculateWarcraftSlotPools,
+  getWarcraftFeatureProgression,
+} from "../helpers/warcraftSpellcastingHelper.js";
 
 export class ActorUpdater {
   /**
@@ -143,30 +152,44 @@ export class ActorUpdater {
     const updatedHpValue = updated[`system.attributes.hp.value`];
     const hpWasUpdated = updatedHpValue !== undefined && updatedHpValue !== null;
     const deathRuleWasUpdated = Object.prototype.hasOwnProperty.call(updated, `system.attributes.deathRule`);
+    const creatureTypeWasUpdated = Object.prototype.hasOwnProperty.call(updated, `system.attributes.creatureType`);
     const staminaWasUpdated = Object.prototype.hasOwnProperty.call(updated, `system.abilities.con.value`);
+    const stableWasUpdated = Object.prototype.hasOwnProperty.call(updated, `system.attributes.conditions.stable`);
     const hpValue = hpWasUpdated ? updatedHpValue : this.actor.system.attributes.hp.value;
     const deathRule = resolveDeathRule(
       deathRuleWasUpdated ? updated[`system.attributes.deathRule`] : this.actor.system.attributes.deathRule,
-      this.actor.race?.system?.deathRule
+      this.actor.race?.system?.deathRule,
+      creatureTypeWasUpdated ? updated[`system.attributes.creatureType`] : this.actor.system.attributes.creatureType,
     );
-    if ((hpWasUpdated || deathRuleWasUpdated || staminaWasUpdated) && deathRule !== DEATH_RULE_D35E) {
+    if ((hpWasUpdated || deathRuleWasUpdated || creatureTypeWasUpdated || staminaWasUpdated) && deathRule !== DEATH_RULE_D35E) {
       const stamina = this.actor.system.abilities?.con ?? {};
       const incomingStamina = updated[`system.abilities.con.value`];
       const hasNumericIncomingStamina = incomingStamina !== null && incomingStamina !== "" && Number.isFinite(Number(incomingStamina));
       const staminaScore = hasNumericIncomingStamina
         ? Number(stamina.total ?? stamina.value ?? 0) + Number(incomingStamina) - Number(stamina.value ?? 0)
         : Number(stamina.total ?? stamina.value ?? 0);
-      const healthState = classifyWarcraftHealth({ hitPoints: hpValue, staminaScore, deathRule });
+      const oldHpValue = Number(this.actor.system.attributes.hp.value ?? hpValue);
+      let stable = stableWasUpdated
+        ? Boolean(updated[`system.attributes.conditions.stable`])
+        : Boolean(this.actor.system.attributes.conditions?.stable);
+      if (deathRule === DEATH_RULE_WARCRAFT && hpWasUpdated) {
+        if (Number(hpValue) > oldHpValue && Number(hpValue) < 0) stable = true;
+        if (Number(hpValue) < oldHpValue) stable = false;
+      }
+      let healthState = classifyWarcraftHealth({ hitPoints: hpValue, staminaScore, deathRule, stable });
+      if (healthState.disabled || healthState.dead || deathRule !== DEATH_RULE_WARCRAFT) stable = false;
+      if (!stable && healthState.dying === false && deathRule === DEATH_RULE_WARCRAFT) {
+        healthState = classifyWarcraftHealth({ hitPoints: hpValue, staminaScore, deathRule, stable: false });
+      }
       updated[`system.attributes.conditions.disabled`] = healthState.disabled;
       updated[`system.attributes.conditions.dying`] = healthState.dying;
+      updated[`system.attributes.conditions.down`] = healthState.down;
       updated[`system.attributes.conditions.dead`] = healthState.dead;
-      if (
-        !healthState.dying &&
-        !healthState.dead &&
-        (this.actor.system.attributes.conditions.dying || this.actor.system.attributes.conditions.dead)
-      ) {
-        updated[`system.attributes.conditions.unconscious`] = false;
-        updated[`system.attributes.conditions.helpless`] = false;
+      updated[`system.attributes.conditions.stable`] = stable;
+      updated[`system.attributes.conditions.unconscious`] = healthState.unconscious;
+      updated[`system.attributes.conditions.helpless`] = healthState.unconscious;
+      if (deathRule === DEATH_RULE_WARCRAFT && healthState.disabled && hpWasUpdated && Number(hpValue) < oldHpValue) {
+        ui.notifications.warn(game.i18n.localize("D35E.WarcraftDisabledStrenuousReminder"));
       }
     } else if (hpWasUpdated && hpValue <= -10) {
       updated[`system.attributes.conditions.dying`] = false;
@@ -609,7 +632,7 @@ export class ActorUpdater {
                 sourceInfo["system.attributes.ac.touch.total"].negative,
                 sourceInfo["system.attributes.cmd.total"].negative,
               ];
-              value = "Lose Dex to AC";
+              value = "Lose Agility to AC";
               break;
             case "noInt":
               sourceInfo["system.abilities.int.total"] = sourceInfo["system.abilities.int.total"] || {
@@ -625,7 +648,7 @@ export class ActorUpdater {
                 negative: [],
               };
               targets = [sourceInfo["system.abilities.con.total"].negative];
-              value = "No Constitution";
+              value = "No Stamina";
               break;
             case "noDex":
               sourceInfo["system.abilities.dex.total"] = sourceInfo["system.abilities.dex.total"] || {
@@ -633,7 +656,7 @@ export class ActorUpdater {
                 negative: [],
               };
               targets = [sourceInfo["system.abilities.dex.total"].negative];
-              value = "No Dexterity";
+              value = "No Agility";
               break;
             case "noStr":
               sourceInfo["system.abilities.str.total"] = sourceInfo["system.abilities.str.total"] || {
@@ -649,7 +672,7 @@ export class ActorUpdater {
                 negative: [],
               };
               targets = [sourceInfo["system.abilities.dex.total"].negative];
-              value = "0 Dex";
+              value = "0 Agy";
               break;
             case "zeroStr":
               sourceInfo["system.abilities.str.total"] = sourceInfo["system.abilities.str.total"] || {
@@ -673,7 +696,7 @@ export class ActorUpdater {
                 negative: [],
               };
               targets = [sourceInfo["system.abilities.wis.total"].negative];
-              value = "1 Wis";
+              value = "1 Spt";
               break;
             case "oneCha":
               sourceInfo["system.abilities.cha.total"] = sourceInfo["system.abilities.cha.total"] || {
@@ -691,6 +714,16 @@ export class ActorUpdater {
         }
       }
     }
+
+    const initialCreatureProfile = resolveWarcraftCreatureProfile({
+      creatureType: source.system.attributes?.creatureType,
+      deathRule: resolveDeathRule(
+        source.system.attributes?.deathRule,
+        this.actor.race?.system?.deathRule,
+        source.system.attributes?.creatureType,
+      ),
+    });
+    if (initialCreatureProfile.construct || initialCreatureProfile.undead) flags.noCon = true;
 
     // Initialize data
     await this.#resetData(updateData, source, flags, sourceInfo, allChanges, fullConditions);
@@ -903,6 +936,9 @@ export class ActorUpdater {
     }
 
     // Reset spell slots
+    const warcraftCasterAdvancement = allocateWarcraftPrestigeCasterLevels(
+      source.items.filter((item) => item.type === "class")
+    );
     for (let spellbookKey of Object.keys(foundry.utils.getProperty(source, "system.attributes.spells.spellbooks"))) {
       const spellbookAbilityKey = foundry.utils.getProperty(source, `system.attributes.spells.spellbooks.${spellbookKey}.ability`);
       const spellslotAbilityKey =
@@ -912,9 +948,12 @@ export class ActorUpdater {
       let spellslotAbilityMod = foundry.utils.getProperty(source, `system.abilities.${spellslotAbilityKey}.mod`);
       const spellbookClass = foundry.utils.getProperty(source, `system.attributes.spells.spellbooks.${spellbookKey}.class`);
       const autoSetup = foundry.utils.getProperty(source, `system.attributes.spells.spellbooks.${spellbookKey}.autoSetup`);
+      const manualPrestigeCasterLevels =
+        parseInt(foundry.utils.getProperty(source, `system.attributes.spells.spellbooks.${spellbookKey}.bonusPrestigeCl`)) || 0;
+      const automaticCasterLevels = warcraftCasterAdvancement.slotByClass[spellbookClass] || 0;
       let classLevel =
-        foundry.utils.getProperty(source, `system.classes.${spellbookClass}.level`) +
-        parseInt(foundry.utils.getProperty(source, `system.attributes.spells.spellbooks.${spellbookKey}.bonusPrestigeCl`));
+        (foundry.utils.getProperty(source, `system.classes.${spellbookClass}.level`) || 0) +
+        (automaticCasterLevels > 0 ? automaticCasterLevels : manualPrestigeCasterLevels);
       if (classLevel > foundry.utils.getProperty(source, `system.classes.${spellbookClass}.maxLevel`))
         classLevel = foundry.utils.getProperty(source, `system.classes.${spellbookClass}.maxLevel`);
       const classProgression = foundry.utils.getProperty(source, `system.classes.${spellbookClass}.spellPerLevel${classLevel}`);
@@ -930,6 +969,11 @@ export class ActorUpdater {
           ["spontaneous", "isSpellcastingSpontaneus"],
           ["preparationMode", "spellcastingPreparationMode"],
           ["repertoireSkill", "repertoireSkill"],
+          ["usesWarcraftSlotPool", "usesWarcraftSlotPool"],
+          ["warcraftPoolKey", "warcraftPoolKey"],
+          ["warcraftParentClass", "warcraftParentClass"],
+          ["warcraftPathBonusSlot", "warcraftPathBonusSlot"],
+          ["specialSlotLevel0", "specialSlotLevel0"],
         ])
           linkData(
             source,
@@ -955,6 +999,12 @@ export class ActorUpdater {
           updateData,
           `system.attributes.spells.spellbooks.${spellbookKey}.hasSpecialSlot`,
           foundry.utils.getProperty(source, `system.classes.${spellbookClass}.hasSpecialSlot`)
+        );
+        linkData(
+          source,
+          updateData,
+          `system.attributes.spells.spellbooks.${spellbookKey}.warcraftCurrentPath`,
+          foundry.utils.getProperty(source, `system.classes.${spellbookClass}.currentPath`) || ""
         );
 
         autoSpellLevels = true;
@@ -1030,6 +1080,42 @@ export class ActorUpdater {
             linkData(source, updateData, `system.attributes.spells.spellbooks.${spellbookKey}.spells.spell${a}.max`, 0);
           }
         }
+      }
+    }
+
+    const calculatedSpellbooks = foundry.utils.duplicate(
+      foundry.utils.getProperty(source, "system.attributes.spells.spellbooks") || {}
+    );
+    for (const [spellbookKey, spellbook] of Object.entries(calculatedSpellbooks)) {
+      for (let level = 0; level <= 9; level += 1) {
+        const updatedMax = updateData[
+          `system.attributes.spells.spellbooks.${spellbookKey}.spells.spell${level}.max`
+        ];
+        if (updatedMax !== undefined) {
+          spellbook.spells ||= {};
+          spellbook.spells[`spell${level}`] ||= {};
+          spellbook.spells[`spell${level}`].max = updatedMax;
+        }
+      }
+      for (const key of ["usesWarcraftSlotPool", "warcraftPoolKey"]) {
+        const updatedValue = updateData[`system.attributes.spells.spellbooks.${spellbookKey}.${key}`];
+        if (updatedValue !== undefined) spellbook[key] = updatedValue;
+      }
+    }
+    const warcraftPools = calculateWarcraftSlotPools(
+      calculatedSpellbooks,
+      foundry.utils.getProperty(source, "system.attributes.spells.warcraftPools") || {}
+    );
+    for (const [poolKey, pool] of Object.entries(warcraftPools)) {
+      linkData(source, updateData, `system.attributes.spells.warcraftPools.${poolKey}.key`, pool.key);
+      linkData(source, updateData, `system.attributes.spells.warcraftPools.${poolKey}.spellbooks`, pool.spellbooks);
+      for (let level = 0; level <= 9; level += 1) {
+        linkData(
+          source,
+          updateData,
+          `system.attributes.spells.warcraftPools.${poolKey}.spells.spell${level}`,
+          pool.spells[`spell${level}`]
+        );
       }
     }
 
@@ -1277,6 +1363,33 @@ export class ActorUpdater {
 
     this.#updateAbilityRelatedFields(source, updateData, sourceInfo);
 
+    // Embedded race and class edits also run updateChanges. Reconcile the HP
+    // state here so adding/removing Forsaken or construct rules cannot leave
+    // conditions from the actor's previous health model behind.
+    const preparedDeathRule = resolveDeathRule(
+      source.system.attributes?.deathRule,
+      this.actor.race?.system?.deathRule,
+      source.system.attributes?.creatureType,
+    );
+    if (preparedDeathRule !== DEATH_RULE_D35E) {
+      const hitPoints = Number(source.system.attributes.hp.value ?? 0);
+      const staminaScore = Number(source.system.abilities.con?.total ?? source.system.abilities.con?.value ?? 0);
+      let stable = preparedDeathRule === DEATH_RULE_WARCRAFT
+        && Boolean(source.system.attributes.conditions?.stable);
+      let healthState = classifyWarcraftHealth({ hitPoints, staminaScore, deathRule: preparedDeathRule, stable });
+      if (healthState.disabled || healthState.dead || preparedDeathRule !== DEATH_RULE_WARCRAFT) stable = false;
+      if (!stable && preparedDeathRule === DEATH_RULE_WARCRAFT) {
+        healthState = classifyWarcraftHealth({ hitPoints, staminaScore, deathRule: preparedDeathRule });
+      }
+      linkData(source, updateData, "system.attributes.conditions.disabled", healthState.disabled);
+      linkData(source, updateData, "system.attributes.conditions.dying", healthState.dying);
+      linkData(source, updateData, "system.attributes.conditions.down", healthState.down);
+      linkData(source, updateData, "system.attributes.conditions.dead", healthState.dead);
+      linkData(source, updateData, "system.attributes.conditions.stable", stable);
+      linkData(source, updateData, "system.attributes.conditions.unconscious", healthState.unconscious);
+      linkData(source, updateData, "system.attributes.conditions.helpless", healthState.unconscious);
+    }
+
     this.actor.sourceDetails = ActorPrepareSourceHelper.setSourceDetails(
       foundry.utils.mergeObject(this.actor.toObject(false), source),
       sourceInfo,
@@ -1294,6 +1407,13 @@ export class ActorUpdater {
   }
 
   #updateAbilityRelatedFields(source, updateData, sourceInfo) {
+    {
+      const currentValue = foundry.utils.getProperty(source, "system.attributes.shoutUses.value") ?? 0;
+      const shoutUses = deriveShoutUses(source.items, currentValue);
+      linkData(source, updateData, "system.attributes.shoutUses.max", shoutUses.max);
+      linkData(source, updateData, "system.attributes.shoutUses.value", shoutUses.value);
+    }
+
     {
       const k = "system.attributes.turnUndeadUsesTotal";
       let chaMod = foundry.utils.getProperty(source, `system.abilities.cha.mod`);
@@ -1571,11 +1691,13 @@ export class ActorUpdater {
     linkData(source, updateData, "system.attributes.attack.melee", 0);
     linkData(source, updateData, "system.attributes.attack.ranged", 0);
     linkData(source, updateData, "system.attributes.damage.general", 0);
+    linkData(source, updateData, "system.attributes.damage.melee", 0);
     linkData(source, updateData, "system.attributes.damage.weapon", 0);
     linkData(source, updateData, "system.attributes.damage.spell", 0);
 
     linkData(source, updateData, "system.attributes.naturalACTotal", 0);
     linkData(source, updateData, "system.attributes.turnUndeadUsesTotal", 0);
+    linkData(source, updateData, "system.attributes.shoutUses.max", 0);
     linkData(source, updateData, "system.attributes.powerPointsTotal", 0);
     linkData(source, updateData, "system.attributes.arcaneSpellFailure", 0);
     linkData(source, updateData, "system.traits.regenTotal", data1.traits.regen);
@@ -1997,9 +2119,12 @@ export class ActorUpdater {
     // Reset spell slots
     for (let spellbookKey of Object.keys(foundry.utils.getProperty(source, "system.attributes.spells.spellbooks"))) {
       const spellbookClass = foundry.utils.getProperty(source, `system.attributes.spells.spellbooks.${spellbookKey}.class`);
+      const automaticCasterLevels = warcraftCasterAdvancement.slotByClass[spellbookClass] || 0;
+      const manualPrestigeCasterLevels =
+        parseInt(foundry.utils.getProperty(source, `system.attributes.spells.spellbooks.${spellbookKey}.bonusPrestigeCl`)) || 0;
       let classLevel =
-        foundry.utils.getProperty(source, `system.classes.${spellbookClass}.level`) +
-        parseInt(foundry.utils.getProperty(source, `system.attributes.spells.spellbooks.${spellbookKey}.bonusPrestigeCl`));
+        (foundry.utils.getProperty(source, `system.classes.${spellbookClass}.level`) || 0) +
+        (automaticCasterLevels > 0 ? automaticCasterLevels : manualPrestigeCasterLevels);
       if (classLevel > foundry.utils.getProperty(source, `system.classes.${spellbookClass}.maxLevel`))
         classLevel = foundry.utils.getProperty(source, `system.classes.${spellbookClass}.maxLevel`);
       const classProgression = foundry.utils.getProperty(source, `system.classes.${spellbookClass}.spellPerLevel${classLevel}`);
@@ -2076,7 +2201,10 @@ export class ActorUpdater {
       //LogHelper.log(`Setting attributes hd total | ${level}`)
       linkData(source, updateData, "system.attributes.hd.total", level);
 
-      linkData(source, updateData, "system.attributes.hd.racialClass", level);
+      const racialClassLevels = classes
+        .filter((item) => item.system.classType === "racial")
+        .reduce((sum, item) => sum + Number(item.system.levels || 0), 0);
+      linkData(source, updateData, "system.attributes.hd.racialClass", racialClassLevels);
 
       let templateClassesToUpdate = [];
       for (const templateClass of classes.filter((o) => foundry.utils.getProperty(o.system, "classType") === "template")) {
@@ -2094,7 +2222,7 @@ export class ActorUpdater {
 
       level += raceLA;
       let existingAbilities = new Set();
-      let classNames = new Set();
+      let classInfos = [];
       let addedAbilities = new Set();
       let itemsWithUid = new Map();
       let itemsToAdd = [];
@@ -2112,29 +2240,40 @@ export class ActorUpdater {
       if (true) {
         linkData(source, updateData, "system.details.level.value", level);
         let classes = this.actor.items
-          .filter((o) => o.type === "class" && foundry.utils.getProperty(o, "classType") !== "racial" && o.system.automaticFeatures)
+          .filter((o) => o.type === "class" && o.system.classType !== "template" && o.system.automaticFeatures)
           .sort((a, b) => {
             return a.sort - b.sort;
           });
 
         for (let i of classes) {
-          classNames.add([
-            i.name,
-            i.system.levels,
-            i.system.addedAbilities || [],
-            i.system.disabledAbilities || [],
-            i.system.customTag,
-          ]);
+          // Class items created or edited outside the level-up dialog may not
+          // have row history yet. Use the same deterministic default-path repair
+          // as actor preparation so threshold features cannot lag behind the
+          // prepared parent/path state.
+          const classPathState = deriveDirectClassPathState(i.system);
+          classInfos.push({
+            name: i.name,
+            levels: i.system.levels,
+            addedAbilities: i.system.addedAbilities || [],
+            disabledAbilities: i.system.disabledAbilities || [],
+            customTag: i.system.customTag,
+            system: {
+              ...i.system,
+              classPaths: classPathState.classPaths,
+              pathLevels: classPathState.pathLevels,
+              currentPath: classPathState.currentPath,
+            },
+          });
         }
 
         let itemPack = game.packs.get("warcraftrpg2e.class-abilities");
         let items = [];
         await itemPack.getIndex().then((index) => (items = index));
 
-        for (const classInfo of classNames) {
+        for (const classInfo of classInfos) {
           //LogHelper.log('Adding Features', classInfo)
           let added = false;
-          for (let feature of classInfo[2]) {
+          for (let feature of classInfo.addedAbilities) {
             LogHelper.log("Adding Features", feature);
             let e = CACHE.AllAbilities.get(feature.uid);
             const level = parseInt(feature.level);
@@ -2144,7 +2283,8 @@ export class ActorUpdater {
               continue;
             }
             if (uniqueId.endsWith("*")) {
-              uniqueId = uniqueId.replace("*", `${classInfo[0]}-${level}`);
+              const progression = getWarcraftFeatureProgression(e.system, classInfo.system, classInfo.name);
+              uniqueId = uniqueId.replace("*", `${classInfo.name}-${progression.path || "class"}-${level}`);
             }
             await this.#addClassFeatureToActorIfPossible(
               addedAbilities,
@@ -2159,17 +2299,18 @@ export class ActorUpdater {
               added
             );
           }
-          for (let e of CACHE.ClassFeatures.get(classInfo[0]) || []) {
+          for (let e of CACHE.ClassFeatures.get(classInfo.name) || []) {
             //LogHelper.log('Adding Features', e)
             if (e.system.associations === undefined || e.system.associations.classes === undefined) continue;
-            let levels = e.system.associations.classes.filter((el) => el[0] === classInfo[0]);
+            let levels = e.system.associations.classes.filter((el) => el[0] === classInfo.name);
             for (let _level of levels) {
               const level = _level[1];
               let uniqueId = e.system.uniqueId;
               if (uniqueId.endsWith("*")) {
-                uniqueId = uniqueId.replace("*", `${classInfo[0]}-${level}`);
+                const progression = getWarcraftFeatureProgression(e.system, classInfo.system, classInfo.name);
+                uniqueId = uniqueId.replace("*", `${classInfo.name}-${progression.path || "class"}-${level}`);
               }
-              if ((classInfo[3] || []).some((a) => a.uid === uniqueId && parseInt(level) === parseInt(a.level)))
+              if ((classInfo.disabledAbilities || []).some((a) => a.uid === uniqueId && parseInt(level) === parseInt(a.level)))
                 continue;
               await this.#addClassFeatureToActorIfPossible(
                 addedAbilities,
@@ -2242,7 +2383,7 @@ export class ActorUpdater {
           for (let e of CACHE.RacialFeatures.get(raceObject.name) || []) {
             let uniqueId = e.system.uniqueId;
             if (uniqueId.endsWith("*")) {
-              uniqueId = uniqueId.replace("*", `${classInfo[0]}-${level}`);
+              uniqueId = uniqueId.replace("*", `${raceObject.name}-race-1`);
             }
 
             if (!uniqueId || uniqueId === "") {
@@ -2288,10 +2429,8 @@ export class ActorUpdater {
       for (let abilityUid of existingAbilities) {
         if (!addedAbilities.has(abilityUid)) {
           //LogHelper.log(`Removing existing ability ${abilityUid}`, changes)
-          changes.splice(
-            changes.findIndex((change) => change.source.item.uniqueId === abilityUid),
-            1
-          );
+          const changeIndex = changes.findIndex((change) => change.source?.item?.uniqueId === abilityUid);
+          if (changeIndex >= 0) changes.splice(changeIndex, 1);
           itemsToRemove.push(abilityUid);
         }
       }
@@ -2321,13 +2460,14 @@ export class ActorUpdater {
     //LogHelper.log('Adding Features', addedAbilities)
     let canAdd = !addedAbilities.has(uniqueId);
     if (canAdd) {
-      if (level <= classInfo[1]) {
+      const progression = getWarcraftFeatureProgression(e.system, classInfo.system, classInfo.name);
+      if (!progression.incompatible && level <= progression.level) {
         if (!existingAbilities.has(uniqueId)) {
           let eItem = e.toObject();
           await Item35E.setMaxUses(eItem, this.actor.getRollData());
           eItem.system.uniqueId = uniqueId;
           delete eItem._id;
-          eItem.system.source = `${classInfo[0]} ${level}`;
+          eItem.system.source = `${classInfo.name}${progression.path ? ` (${progression.path})` : ""} ${level}`;
           eItem.system.addedLevel = level;
           eItem.system.userNonRemovable = true;
           if (e.type === "spell") {
@@ -2841,11 +2981,11 @@ export class ActorUpdater {
     // Add Constitution to HP
     changes.push({
       raw: ["@abilities.con.origMod * @attributes.hd.racialClass", "misc", "mhp", "untyped", 0],
-      source: { name: "Constitution" },
+      source: { name: "Stamina" },
     });
     changes.push({
       raw: ["2 * (@abilities.con.origTotal + @abilities.con.drain)", "misc", "wounds", "base", 0],
-      source: { name: "Constitution" },
+      source: { name: "Stamina" },
     });
 
     // Natural armor
@@ -2950,6 +3090,28 @@ export class ActorUpdater {
       tokenSizeKey = sizeKey;
     }
     linkData(source, updateData, "system.traits.actualSize", sizeKey);
+
+    const creatureProfile = resolveWarcraftCreatureProfile({
+      creatureType: source.system.attributes?.creatureType,
+      deathRule: resolveDeathRule(
+        source.system.attributes?.deathRule,
+        this.actor.race?.system?.deathRule,
+        source.system.attributes?.creatureType,
+      ),
+    });
+    if (creatureProfile.construct) {
+      flags.noCon = true;
+      const constructHp = constructSizeHitPoints(sizeKey);
+      const alreadyProvided = changes.some((change) =>
+        change.raw?.[2] === "mhp" && Number(change.raw?.[0]) === constructHp
+      );
+      if (constructHp && !alreadyProvided) {
+        changes.push({
+          raw: [String(constructHp), "misc", "mhp", "racial", 0],
+          source: { name: game.i18n.localize("D35E.ConstructSizeHitPoints") },
+        });
+      }
+    }
 
     // Compute actualAlignmentAxes = base axes overridden by active items (never mutates alignmentAxes)
     {
@@ -3215,16 +3377,16 @@ export class ActorUpdater {
           };
           sourceInfo["system.attributes.ac.normal.total"].negative.push({
             name: "Blind",
-            value: "Lose Dex to AC",
+            value: "Lose Agility to AC",
           });
           sourceInfo["system.attributes.ac.touch.total"].negative.push({
             name: "Blind",
-            value: "Lose Dex to AC",
+            value: "Lose Agility to AC",
           });
-          sourceInfo["system.attributes.cmd.total"].negative.push({ name: "Blind", value: "Lose Dex to AC" });
+          sourceInfo["system.attributes.cmd.total"].negative.push({ name: "Blind", value: "Lose Agility to AC" });
           sourceInfo["system.attributes.cmd.flatFootedTotal"].negative.push({
             name: "Blind",
-            value: "Lose Dex to AC",
+            value: "Lose Agility to AC",
           });
           break;
         case "dazzled":
@@ -3269,7 +3431,7 @@ export class ActorUpdater {
             positive: [],
             negative: [],
           };
-          sourceInfo["system.abilities.dex.total"].negative.push({ name: "Helpless", value: "0 Dex" });
+          sourceInfo["system.abilities.dex.total"].negative.push({ name: "Helpless", value: "0 Agy" });
           break;
         case "paralyzed":
           flags["zeroDex"] = true;
@@ -3278,7 +3440,7 @@ export class ActorUpdater {
             positive: [],
             negative: [],
           };
-          sourceInfo["system.abilities.dex.total"].negative.push({ name: "Paralyzed", value: "0 Dex" });
+          sourceInfo["system.abilities.dex.total"].negative.push({ name: "Paralyzed", value: "0 Agy" });
           sourceInfo["system.abilities.str.total"] = sourceInfo["system.abilities.str.total"] || {
             positive: [],
             negative: [],
@@ -3301,13 +3463,13 @@ export class ActorUpdater {
           };
           sourceInfo["system.attributes.ac.normal.total"].negative.push({
             name: "Pinned",
-            value: "Lose Dex to AC",
+            value: "Lose Agility to AC",
           });
           sourceInfo["system.attributes.ac.touch.total"].negative.push({
             name: "Pinned",
-            value: "Lose Dex to AC",
+            value: "Lose Agility to AC",
           });
-          sourceInfo["system.attributes.cmd.total"].negative.push({ name: "Pinned", value: "Lose Dex to AC" });
+          sourceInfo["system.attributes.cmd.total"].negative.push({ name: "Pinned", value: "Lose Agility to AC" });
           break;
         case "fear":
           changes.push({
@@ -3369,13 +3531,13 @@ export class ActorUpdater {
           };
           sourceInfo["system.attributes.ac.normal.total"].negative.push({
             name: "Stunned",
-            value: "Lose Dex to AC",
+            value: "Lose Agility to AC",
           });
           sourceInfo["system.attributes.ac.touch.total"].negative.push({
             name: "Stunned",
-            value: "Lose Dex to AC",
+            value: "Lose Agility to AC",
           });
-          sourceInfo["system.attributes.cmd.total"].negative.push({ name: "Stunned", value: "Lose Dex to AC" });
+          sourceInfo["system.attributes.cmd.total"].negative.push({ name: "Stunned", value: "Lose Agility to AC" });
           break;
         case "wildshaped":
           sourceInfo["system.attributes.ac.normal.total"] = sourceInfo["system.attributes.ac.normal.total"] || {
@@ -3484,8 +3646,49 @@ export class ActorUpdater {
 
     if (source.system.attributes?.conditions?.disabled) {
       changes.push({
-        raw: ["0.5", "speed", "speedMult", "penalty", 0],
-        source: { name: "Exhausted" },
+        raw: ["-2", "attack", "attack", "penalty", 0],
+        source: { name: "Disabled" },
+      });
+      changes.push({
+        raw: ["-2", "damage", "wdamage", "penalty", 0],
+        source: { name: "Disabled" },
+      });
+      changes.push({
+        raw: ["-2", "savingThrows", "allSavingThrows", "penalty", 0],
+        source: { name: "Disabled" },
+      });
+      changes.push({
+        raw: ["-2", "skills", "skills", "penalty", 0],
+        source: { name: "Disabled" },
+      });
+      changes.push({
+        raw: ["-2", "abilityChecks", "allChecks", "penalty", 0],
+        source: { name: "Disabled" },
+      });
+    }
+
+    if (source.system.attributes?.conditions?.chilled) {
+      changes.push({
+        raw: ["-2", "ac", "ac", "penalty", 0],
+        source: { name: "Chilled" },
+      });
+      changes.push({
+        raw: ["-2", "attack", "mattack", "penalty", 0],
+        source: { name: "Chilled" },
+      });
+      changes.push({
+        raw: ["-2", "damage", "mdamage", "penalty", 0],
+        source: { name: "Chilled" },
+      });
+      changes.push({
+        raw: ["-2", "savingThrows", "ref", "penalty", 0],
+        source: { name: "Chilled" },
+      });
+      changes.push({
+        // Prepared rank, ability modifier, and persistent change bonus are all
+        // available here; negate half their combined pre-Chilled total.
+        raw: ["-ceil((@skills.jmp.rank + @skills.jmp.abilityModifier + @skills.jmp.changeBonus) / 2)", "skill", "skill.jmp", "penalty", 0],
+        source: { name: "Chilled" },
       });
     }
   }
@@ -3689,6 +3892,7 @@ export class ActorUpdater {
         result.attributes.bab = null;
         break;
       case "damage":
+      case "mdamage":
       case "wdamage":
       case "sdamage":
         result.attributes.damage = null;
@@ -3790,6 +3994,7 @@ export class ActorUpdater {
         "rattack",
         "babattack",
         "damage",
+        "mdamage",
         "wdamage",
         "sdamage",
         "allSavingThrows",

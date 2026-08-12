@@ -1,0 +1,42 @@
+{
+  "_embedded": {},
+  "_id": "6c0304b7fc3424a3",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "creatureRule": {
+        "kind": "subtype",
+        "reusable": true
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          187
+        ],
+        "printedPages": [
+          186
+        ],
+        "section": "Aquatic Subtype",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/aura.svg",
+  "name": "Aquatic Subtype Traits",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilityType": "nat",
+    "description": {
+      "value": "<p>Always has a swim speed and moves through water without Swim checks. It normally breathes water and cannot breathe air unless it also has the amphibious quality.</p><p>This reusable record defines shared conversion behavior. Individual actors carry exact printed exceptions and totals.</p>"
+    },
+    "featType": "trait",
+    "source": "World of Warcraft: Monster Guide, pp. 186",
+    "uniqueId": "wc-creature-rule-aquatic-subtype"
+  },
+  "type": "feat"
+}

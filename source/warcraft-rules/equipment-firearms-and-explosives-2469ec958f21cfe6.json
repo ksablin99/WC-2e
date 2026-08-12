@@ -1,0 +1,84 @@
+{
+  "_embedded": {
+    "pages": [
+      {
+        "_id": "c80f35a6f821b78d",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "category": null,
+        "flags": {
+          "warcraftrpg2e": {
+            "source": {
+              "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+              "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+              "section": "Private-use implementation policy",
+              "verification": "implementation-summary"
+            }
+          }
+        },
+        "image": {},
+        "name": "Equipment, Firearms, and Explosives",
+        "ownership": {
+          "default": -1
+        },
+        "sort": 0,
+        "src": null,
+        "system": {},
+        "text": {
+          "content": "<p>The Warcraft Equipment compendium contains the core weapon, armor, gear, tool, service, mount, vehicle, building, explosive, and material tables. Structured combat items may be used normally. Records marked manual-noncombat-details preserve discoverability and source pages but require the printed price or capacity table. Firearm malfunction and explosive scatter remain manual.</p>",
+          "format": 1
+        },
+        "title": {
+          "level": 1,
+          "show": false
+        },
+        "type": "text",
+        "video": {
+          "controls": true,
+          "volume": 0.5
+        }
+      }
+    ]
+  },
+  "_id": "2469ec958f21cfe6",
+  "_stats": {
+    "compendiumSource": null,
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "lastModifiedBy": null,
+    "modifiedTime": null,
+    "systemId": null,
+    "systemVersion": null
+  },
+  "categories": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "section": "Private-use implementation policy",
+        "verification": "implementation-summary"
+      }
+    }
+  },
+  "folder": null,
+  "name": "Equipment, Firearms, and Explosives",
+  "ownership": {
+    "default": 0
+  },
+  "pages": [
+    "c80f35a6f821b78d"
+  ],
+  "sort": 0
+}

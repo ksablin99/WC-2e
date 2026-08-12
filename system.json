@@ -18,7 +18,7 @@
             "name": "English"
         }
     ],
-    "version": "3.1.2",
+    "version": "3.2.0",
     "esmodules": [
         "D35E.js"
     ],
@@ -30,14 +30,52 @@
         {
             "name": "Warcraft RPG 2e",
             "sorting": "a",
-            "packs": [
-                "warcraft-races",
-                "warcraft-classes",
-                "warcraft-spells",
-                "warcraft-equipment",
-                "warcraft-bestiary"
-            ],
-            "folders": []
+            "packs": [],
+            "folders": [
+                {
+                    "name": "Characters",
+                    "sorting": "a",
+                    "packs": [
+                        "warcraft-races",
+                        "warcraft-classes",
+                        "warcraft-feats"
+                    ],
+                    "folders": []
+                },
+                {
+                    "name": "Magic",
+                    "sorting": "a",
+                    "packs": [
+                        "warcraft-spells"
+                    ],
+                    "folders": []
+                },
+                {
+                    "name": "Equipment",
+                    "sorting": "a",
+                    "packs": [
+                        "warcraft-equipment"
+                    ],
+                    "folders": []
+                },
+                {
+                    "name": "Rules Reference",
+                    "sorting": "a",
+                    "packs": [
+                        "warcraft-rules"
+                    ],
+                    "folders": []
+                },
+                {
+                    "name": "Bestiary (Final Phase)",
+                    "sorting": "a",
+                    "packs": [
+                        "warcraft-creature-rules",
+                        "warcraft-bestiary"
+                    ],
+                    "folders": []
+                }
+            ]
         },
         {
             "name": "3.5e SRD",
@@ -191,11 +229,32 @@
             "label": "Warcraft Spells"
         },
         {
+            "path": "./packs/warcraft-feats",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "warcraft-feats",
+            "label": "Warcraft Feats"
+        },
+        {
             "path": "./packs/warcraft-equipment",
             "type": "Item",
             "system": "warcraftrpg2e",
             "name": "warcraft-equipment",
             "label": "Warcraft Equipment"
+        },
+        {
+            "path": "./packs/warcraft-rules",
+            "type": "JournalEntry",
+            "system": "warcraftrpg2e",
+            "name": "warcraft-rules",
+            "label": "Warcraft Rules Reference"
+        },
+        {
+            "path": "./packs/warcraft-creature-rules",
+            "type": "Item",
+            "system": "warcraftrpg2e",
+            "name": "warcraft-creature-rules",
+            "label": "Warcraft Creature Rules"
         },
         {
             "path": "./packs/warcraft-bestiary",
@@ -485,7 +544,7 @@
     "socket": true,
     "url": "https://github.com/ksablin99/WC-2e",
     "manifest": "https://github.com/ksablin99/WC-2e/releases/latest/download/system.json",
-    "download": "https://github.com/ksablin99/WC-2e/releases/download/v3.1.2/warcraftrpg2e-v3.1.2.zip",
+    "download": "https://github.com/ksablin99/WC-2e/releases/download/v3.2.0/warcraftrpg2e-v3.2.0.zip",
     "title": "Warcraft RPG 2e",
     "primaryTokenAttribute": "attributes.hp",
     "compatibility": {

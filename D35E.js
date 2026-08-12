@@ -80,6 +80,7 @@ import {
 import { darkvision } from './module/canvas/vision-modes.js';
 import { EquipmentSheet35E } from './module/item/sheets/equipment.js';
 import { WeaponSheet35E } from './module/item/sheets/weapon.js';
+import { TechnologySheet35E } from './module/item/sheets/technology.js';
 import { FeatSheet35E } from './module/item/sheets/feat.js';
 import { Weapon35E } from './module/item/weapon.js';
 import { Equipment35E } from './module/item/equipment.js';
@@ -96,6 +97,11 @@ import { DistanceHelper } from './module/canvas/distance-helper.js';
 import { ItemContainerHook } from './module/item/hooks/itemContainerHook.js';
 import { ItemEquipHook } from './module/item/hooks/itemEquipHook.js';
 import { IntelligentItemEquipHook } from './module/item/hooks/intelligentItemEquipHook.js';
+import { WarcraftFeatHook } from './module/item/hooks/warcraftFeatHook.js';
+import { WarcraftClassPrerequisiteHook } from './module/item/hooks/warcraftClassPrerequisiteHook.js';
+import { WarcraftHeroPointHook } from './module/actor/hooks/warcraftHeroPointHook.js';
+import { WarcraftEquipmentHook } from './module/item/hooks/warcraftEquipmentHook.js';
+import { WarcraftCharacterCreationHook } from './module/actor/hooks/warcraftCharacterCreationHook.js';
 import { AlignmentSelectorDialog } from './module/apps/alignment-selector.js';
 import { MigrationDialog } from './module/apps/migration-dialog.js';
 import { ConjuredManager } from './module/conjuration/conjuredManager.js';
@@ -254,6 +260,7 @@ Hooks.once("init", async function () {
   foundry.documents.collections.Items.registerSheet("warcraftrpg2e", EquipmentSheet35E, { types: ["equipment"], makeDefault: true });
   foundry.documents.collections.Items.registerSheet("warcraftrpg2e", WeaponSheet35E, { types: ["weapon"], makeDefault: true });
   foundry.documents.collections.Items.registerSheet("warcraftrpg2e", FeatSheet35E, { types: ["feat"], makeDefault: true });
+  foundry.documents.collections.Items.registerSheet("warcraftrpg2e", TechnologySheet35E, { types: ["technology"], makeDefault: true });
 
   // Register System Settings
   registerSystemSettings();
@@ -1650,3 +1657,8 @@ EnrichersHelper.setupHooks();
 ItemContainerHook.register();
 ItemEquipHook.register();
 IntelligentItemEquipHook.register();
+WarcraftFeatHook.register();
+WarcraftClassPrerequisiteHook.register();
+WarcraftHeroPointHook.register();
+WarcraftEquipmentHook.register();
+WarcraftCharacterCreationHook.register();

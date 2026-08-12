@@ -453,6 +453,22 @@ export class ItemRolls {
         });
     }
     // Add melee or spell damage
+    if (rollData.attributes.damage.melee !== 0 && itemData.actionType === "mwak") {
+      if (rollData.critMult !== 1)
+        parts.push({
+          base: "@attributes.damage.melee * @critMult",
+          extra: [],
+          damageType: "Melee",
+          damageTypeUid: parts[0].damageTypeUid,
+        });
+      else
+        parts.push({
+          base: "@attributes.damage.melee",
+          extra: [],
+          damageType: "Melee",
+          damageTypeUid: parts[0].damageTypeUid,
+        });
+    }
     if (rollData.attributes.damage.weapon !== 0 && ["mwak", "rwak"].includes(itemData.actionType)) {
       if (rollData.critMult !== 1)
         parts.push({

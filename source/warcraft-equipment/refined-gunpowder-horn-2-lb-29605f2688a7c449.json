@@ -1,0 +1,58 @@
+{
+  "_id": "29605f2688a7c449",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "catalog": {
+        "category": "explosive",
+        "completeTableEntry": true,
+        "generated": true,
+        "status": "structured-table-data",
+        "tableValue": "100 gp; 2 lb."
+      },
+      "rules": {
+        "gunpowderOuncesPerPackage": 32,
+        "malfunctionRating": 1
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          186
+        ],
+        "printedPages": [
+          184
+        ],
+        "section": "Refined Gunpowder Horn (2 lb.)",
+        "verification": "table-extraction"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/item-bag.svg",
+  "name": "Refined Gunpowder Horn (2 lb.)",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "carried": true,
+    "description": {
+      "value": "<p><strong>Printed table value:</strong> 100 gp; 2 lb..</p>"
+    },
+    "hardness": 0,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "identified": true,
+    "identifiedName": "Refined Gunpowder Horn (2 lb.)",
+    "price": 100,
+    "properties": {},
+    "quantity": 1,
+    "source": "World of Warcraft RPG, 2nd Edition, p. 184",
+    "subType": "gear",
+    "weight": 2
+  },
+  "type": "loot"
+}

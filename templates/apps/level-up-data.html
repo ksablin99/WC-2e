@@ -13,7 +13,7 @@
                     <option data-hd="0" data-skill="0" value="">{{localize "D35E.SelectClass"}}</option>
                     {{#select levelUpData.classId}}
                     {{#each classes as |cls a|}}
-                    <option data-hd="{{cls.system.hd}}" data-skill="{{cls.system.skillsPerLevel}}" value="{{cls.id}}">{{cls.name}}</option>
+                    <option data-hd="{{cls.warcraftHitDie.die}}" data-hd-flat="{{cls.warcraftHitDie.flat}}" data-skill="{{cls.system.skillsPerLevel}}" value="{{cls.id}}">{{cls.name}}</option>
                     {{/each}}
                     {{/select}}
                 </select>
@@ -98,14 +98,17 @@
     <input type="hidden" id="spl-base">
     <input type="hidden" id="usedSkillpoints">
     <input type="hidden" id="hd">
+    <input type="hidden" id="hd-flat">
   <button type="submit" name="submit" value="1"><i class="far fa-save"></i> {{localize "D35E.SetLevelData"}}</button>
 
     <script>
         function selectedClassData(select, force = false) {
             var hd = parseInt($('option:selected', select).attr('data-hd'));
+            var hdFlat = parseInt($('option:selected', select).attr('data-hd-flat') || 0);
             var skills = parseInt($('option:selected', select).attr('data-skill'));
             $('#spl-base').val(skills)
             $('#hd').val(hd)
+            $('#hd-flat').val(hdFlat)
             let classId = $('option:selected', select).val();
             let intSkills = {{actor.system.abilities.int.mod}};
             let bonusSkillPoints = '{{bonusSkillPoints}}';
@@ -165,6 +168,7 @@
             let spl = parseInt($('#spl').val() || 0)
             let splBase = parseInt($('#spl-base').val() || 0)
             let hd = parseInt($('#hd').val() || 0)
+            let hdFlat = parseInt($('#hd-flat').val() || 0)
             $('.skill').each(function( index ) {
                 let val = parseInt($(this).find('.skill-value').val() || 0)
                 let baseRank = parseInt($(this).find('.original-skill-value').val() || 0)
@@ -203,7 +207,7 @@
             $('#skill-per-level-bonus').text(bonusSkillPoints)
             $('#skill-per-level').text(spl)
             $('#skill-used').text(`${usedSkillpoints} / ${spl}`)
-            $('#class-hd').text(`${hd}`)
+            $('#class-hd').text(`d${hd}${hdFlat ? `+${hdFlat}` : ''}`)
         }
 
         function addRemoveSkill(id, value, classSkill) {
@@ -226,12 +230,13 @@
 
         function rollHP() {
             let hd = parseInt($('#hd').val() || 0)
+            let hdFlat = parseInt($('#hd-flat').val() || 0)
             let level = {{level}};
             let isCharacter = '{{actor.type}}' === "character";
             if (level === 1 && isCharacter)
-                $('#hp-input').val(hd)
+                $('#hp-input').val(hd + hdFlat)
             else {
-                $('#hp-input').val(getRandomInt(1, hd))
+                $('#hp-input').val(getRandomInt(1, hd) + hdFlat)
             }
             createChatDataForHPRoll()
         }
@@ -240,6 +245,7 @@
             const chatTemplate = "systems/warcraftrpg2e/templates/chat/roll-ext.html";
 
             let hd = parseInt($('#hd').val() || 0)
+            let hdFlat = parseInt($('#hd-flat').val() || 0)
             let hp = $('#hp-input').val() || 0
             let chatData = {
                 user: game.user.id,
@@ -261,7 +267,7 @@
                 chatData["blind"] = true;
                 break;
             }
-            let chatTemplateData = {flavor: 'HP Roll', formula: `1d${hd}`, total: hp, title: '{{actor.name}} rolls for HP'}
+            let chatTemplateData = {flavor: 'HP Roll', formula: `1d${hd}${hdFlat ? `+${hdFlat}` : ''}`, total: hp, title: '{{actor.name}} rolls for HP'}
             chatData.content = await renderTemplate(chatTemplate, chatTemplateData);
             ChatMessage.create(chatData)
         }

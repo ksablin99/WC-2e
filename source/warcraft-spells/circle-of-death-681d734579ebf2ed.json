@@ -1,0 +1,269 @@
+{
+  "_embedded": {},
+  "_id": "681d734579ebf2ed",
+  "_stats": {
+    "compendiumSource": null,
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "lastModifiedBy": null,
+    "modifiedTime": null,
+    "systemId": null,
+    "systemVersion": null
+  },
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "catalog": {
+        "completeListEntry": true,
+        "generated": true,
+        "status": "srd-mechanics-with-warcraft-header"
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          273,
+          288
+        ],
+        "printedPages": [
+          271,
+          286
+        ],
+        "section": "Circle of Death",
+        "verification": "text-extracted-header"
+      }
+    }
+  },
+  "folder": null,
+  "img": "systems/warcraftrpg2e/icons/spells/named-spells/circle-of-death.png",
+  "name": "Circle of Death",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "ability": {
+      "attack": "",
+      "critMult": 2,
+      "critRange": 20,
+      "damage": "",
+      "damageMult": 1,
+      "twoHandedOnly": false,
+      "vsTouchAc": false
+    },
+    "actionType": "spellsave",
+    "activateActions": [],
+    "activation": {
+      "cost": 1,
+      "type": "standard"
+    },
+    "addedLevel": 0,
+    "attack": {
+      "parts": []
+    },
+    "attackBonus": "",
+    "attackCountFormula": "",
+    "attackNotes": "",
+    "attackParts": [],
+    "atWill": false,
+    "autoscaleAttackParts": "",
+    "baseCl": "0",
+    "castTime": "1 standard action",
+    "changes": [],
+    "classSource": "",
+    "clOffset": 0,
+    "combatChanges": [],
+    "components": {
+      "divineFocus": 0,
+      "focus": false,
+      "material": true,
+      "somatic": true,
+      "value": "V, S, M",
+      "verbal": true
+    },
+    "conditionals": [],
+    "container": "None",
+    "containerWeightless": false,
+    "contextNotes": [],
+    "createdBy": "",
+    "creationChanges": [],
+    "critConfirmBonus": "",
+    "customAttributes": {},
+    "customAttributesLocked": false,
+    "customReferenceId": "",
+    "customTag": "",
+    "damage": {
+      "alternativeParts": [],
+      "parts": []
+    },
+    "damageReduction": [],
+    "deactivateActions": [],
+    "description": {
+      "chat": "",
+      "unidentified": "",
+      "value": "<p>Kills 1d4 HD/level of living</p>"
+    },
+    "display": "Medium (100 ft. + 10 ft./level)",
+    "duration": {
+      "units": "",
+      "value": null
+    },
+    "effectNotes": "Slays [[min(20,@cl)d4]] Hit Dice of Creatures, but none of 9 or more HD can be affected",
+    "epic": "",
+    "favorite": false,
+    "formula": "",
+    "identifiedName": "Circle of Death",
+    "index": {
+      "subType": null,
+      "uniqueId": ""
+    },
+    "isDomainSpell": false,
+    "isPower": false,
+    "isSpellSpontaneousReplacement": false,
+    "learnedAt": {
+      "bloodline": [],
+      "class": [],
+      "domain": [
+        [
+          "Death",
+          6
+        ]
+      ],
+      "elementalSchool": [],
+      "subDomain": []
+    },
+    "level": 6,
+    "linkedChargeItem": {
+      "id": null,
+      "img": null,
+      "name": null
+    },
+    "linkId": "",
+    "linkImported": false,
+    "linkSourceId": "",
+    "linkSourceName": "",
+    "materials": {
+      "consumed": {
+        "_deprecated": true,
+        "value": false
+      },
+      "focus": "",
+      "value": "the powder of a crushed black pearl with a minimum value of 500 gp"
+    },
+    "maxDamageDice": 0,
+    "maxDamageDiceFormula": "",
+    "measureTemplate": {
+      "customColor": "",
+      "customTexture": "",
+      "overrideColor": false,
+      "overrideTexture": false,
+      "size": "40",
+      "type": "circle"
+    },
+    "metamagicFeats": {
+      "empowered": false,
+      "enhanced": false,
+      "enhancedHalf": false,
+      "enlarged": false,
+      "intensified": false,
+      "maximized": false,
+      "widened": false
+    },
+    "nameFormula": "",
+    "nameFromFormula": false,
+    "originId": "681d734579ebf2ed",
+    "originPack": "warcraftrpg2e.warcraft-spells",
+    "originVersion": 109,
+    "perRoundActions": [],
+    "possibleUpdate": false,
+    "powerPointsCost": 11,
+    "pr": false,
+    "preparation": {
+      "autoDeductCharges": true,
+      "maxAmount": 0,
+      "mode": "prepared",
+      "preparedAmount": 0
+    },
+    "psionic": "",
+    "range": {
+      "long": null,
+      "units": "medium",
+      "value": null
+    },
+    "recharge": {
+      "current": 0,
+      "enabled": false,
+      "formula": ""
+    },
+    "requirements": [],
+    "requiresPsionicFocus": false,
+    "resistances": [],
+    "rollTableDraw": {
+      "formula": "",
+      "id": "",
+      "name": "",
+      "pack": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": "0",
+      "dcAutoAbility": "",
+      "dcAutoType": "",
+      "description": "Fortitude negates",
+      "originVersion": 97,
+      "type": "fortitudenegates"
+    },
+    "school": "nec",
+    "shortDescription": "<p>Kills 1d4 HD/level of living</p>",
+    "showInQuickbar": false,
+    "slOffset": 0,
+    "snip": "Kills 1d4 HD/level of living",
+    "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 271-271",
+    "specialActions": [],
+    "specialId": null,
+    "specialPrepared": false,
+    "spellArea": "Several living creatures within a 40-ft.-radius burst",
+    "spellbook": "primary",
+    "spellDuration": "Instantaneous",
+    "spellDurationData": {
+      "units": "inst",
+      "value": null
+    },
+    "spellEffect": "",
+    "spellType": {
+      "_deprecated": true,
+      "value": ""
+    },
+    "sr": true,
+    "subschool": "",
+    "summon": [],
+    "tags": [],
+    "target": {
+      "value": "Several living creatures within a 40-ft.-radius burst"
+    },
+    "types": "death",
+    "uniqueId": "",
+    "userNonRemovable": false,
+    "uses": {
+      "allowMultipleUses": false,
+      "autoDeductCharges": true,
+      "canBeLinked": false,
+      "chargesPerUse": 1,
+      "isResource": false,
+      "max": 0,
+      "maxFormula": "",
+      "maxPerUse": null,
+      "maxPerUseFormula": "",
+      "per": "",
+      "rechargeFormula": null,
+      "value": 0
+    },
+    "warcraftManualPolicy": {
+      "mode": "srd-baseline",
+      "reason": "The inherited SRD implementation is used with the Warcraft list assignment and spell level."
+    }
+  },
+  "type": "spell"
+}

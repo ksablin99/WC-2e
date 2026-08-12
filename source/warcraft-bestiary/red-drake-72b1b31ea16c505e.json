@@ -1,0 +1,3959 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "6d4e7972dc605bc1",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 24,
+                "die": 12,
+                "expression": "24d12",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Dragon Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "high",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "324",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "24",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "31",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "8",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "31",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "21",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "14",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "19",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "40",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "60",
+              "speed",
+              "swimSpeed",
+              "base-replace"
+            ],
+            [
+              "150",
+              "speed",
+              "flySpeed",
+              "base-replace"
+            ],
+            [
+              "4",
+              "misc",
+              "init",
+              "untyped"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "dragon",
+          "damageReduction": [
+            [
+              "10",
+              "magic",
+              false
+            ]
+          ],
+          "hd": 12,
+          "hp": 0,
+          "levels": 24,
+          "maxLevel": 50,
+          "resistances": [
+            [
+              "",
+              "energy-fire",
+              true,
+              false,
+              false
+            ],
+            [
+              "",
+              "energy-cold",
+              false,
+              true,
+              false
+            ]
+          ],
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "high"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 46"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "1612111ca651cb3f",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                31
+              ],
+              "printedDamage": "2d8+9/19-20/x2"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Bite",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 19,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "9",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Bite",
+          "damage": {
+            "parts": [
+              [
+                "2d8+9",
+                "Piercing or Bludgeoning",
+                "damage-piercing-bludgeoning"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Bite +31 melee (2d8+9/19-20/x2).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": true,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "ac5c8425e98b79c3",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                29
+              ],
+              "printedDamage": "2d6+4"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Claws",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "7",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "claws",
+          "damage": {
+            "parts": [
+              [
+                "2d6+4",
+                "Piercing or Slashing",
+                "damage-piercing-or-slashing"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> claws +29 melee (2d6+4).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "9658fc43bcd0b9ce",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                29
+              ],
+              "printedDamage": "1d8+4"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Wings",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "7",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "wings",
+          "damage": {
+            "parts": [
+              [
+                "1d8+4",
+                "Bludgeoning",
+                "damage-bludg"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> wings +29 melee (1d8+4).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "1da3d12a1839a8a4",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "1612111ca651cb3f",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Bite",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 2,
+              "id": "ac5c8425e98b79c3",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Claws",
+              "primary": true
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 2,
+              "id": "9658fc43bcd0b9ce",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Wings",
+              "primary": true
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> Bite +31 melee (2d8+9/19-20) and 2 claws +29 melee (2d6+4) and 2 wings +29 melee (1d8+4).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_embedded": {},
+        "_id": "7cf01275e5ca332a",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "catalog": {
+              "completeListEntry": true,
+              "generated": true,
+              "status": "srd-mechanics-with-warcraft-header"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 24,
+              "frequency": "day",
+              "kind": "sla",
+              "saveDC": 16,
+              "sourceSpell": {
+                "id": "6c9e77be95d1b0da",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    269,
+                    274,
+                    276,
+                    292
+                  ],
+                  "printedPages": [
+                    267,
+                    272,
+                    274,
+                    290
+                  ],
+                  "section": "Cure Light Wounds",
+                  "verification": "text-extracted-header"
+                }
+              },
+              "uses": 3
+            },
+            "reference": {
+              "id": "6c9e77be95d1b0da",
+              "name": "Cure Light Wounds",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                47
+              ],
+              "printedPages": [
+                46
+              ],
+              "section": "Red Drake",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Cure Light Wounds (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "heal",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": false,
+          "autoscaleAttackParts": "",
+          "baseCl": "24",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "combatChanges": [],
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": [
+              [
+                "1d8+min(5,@cl)",
+                "positive energy"
+              ]
+            ]
+          },
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>Cures 1d8 damage +1/</p><hr><p><strong>Red Drake spell-like ability:</strong> 3/day; caster level 24; save DC 16 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "Touch",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Cure Light Wounds (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Healer",
+                1
+              ],
+              [
+                "Paladin",
+                1
+              ]
+            ],
+            "domain": [
+              [
+                "Healing",
+                1
+              ]
+            ],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 1,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": ""
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 0,
+            "type": ""
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "6c9e77be95d1b0da",
+          "originPack": "warcraftrpg2e.warcraft-spells",
+          "originVersion": 108,
+          "possibleUpdate": false,
+          "powerPointsCost": 0,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 3,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 3
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "touch",
+            "value": null
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requiresPsionicFocus": false,
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "16",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "Will half (harmless); see text",
+            "originVersion": 97,
+            "type": "willhalf"
+          },
+          "school": "con",
+          "shortDescription": "<p>Cures 1d8 damage +1/</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "Cures 1d8 damage +1/",
+          "source": "World of Warcraft: Monster Guide, p. 46",
+          "specialActions": [],
+          "specialId": null,
+          "specialPrepared": true,
+          "spellArea": "",
+          "spellbook": "spelllike",
+          "spellDuration": "Instantaneous",
+          "spellDurationData": {
+            "units": "inst",
+            "value": null
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": true,
+          "subschool": "healing",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "Creature touched"
+          },
+          "types": "",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 3,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "day",
+            "rechargeFormula": null,
+            "value": 3
+          },
+          "warcraftManualPolicy": {
+            "mode": "srd-baseline",
+            "reason": "The inherited SRD implementation is used with the Warcraft list assignment and spell level."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_id": "39d697e2bec172b5",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Spell-Like Ability",
+              "raw": "Firebolt"
+            },
+            "monsterMagic": {
+              "automation": "manual-missing-spell",
+              "casterLevel": 24,
+              "frequency": "day",
+              "kind": "sla",
+              "saveDC": 19,
+              "uses": 3
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                47
+              ],
+              "printedPages": [
+                46
+              ],
+              "section": "Red Drake",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Firebolt (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "sp",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "description": {
+            "value": "<p><strong>Spell-like ability:</strong> 3/day; caster level 24; save DC 19 where applicable.</p><p><strong>Resolution:</strong> The source spell is not present in the available core or system spell catalogues. Track the listed uses here; its effect remains GM-adjudicated from the cited private source, and no substitute effect has been invented.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 46",
+          "uniqueId": "wc-monster-red-drake-firebolt-sla",
+          "uses": {
+            "autoDeductCharges": true,
+            "chargesPerUse": 1,
+            "max": 3,
+            "per": "day",
+            "value": 3
+          }
+        },
+        "type": "feat"
+      },
+      {
+        "_embedded": {},
+        "_id": "5b27ce60414d37c0",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "catalog": {
+              "completeListEntry": true,
+              "generated": true,
+              "status": "srd-mechanics-with-warcraft-header"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 24,
+              "frequency": "day",
+              "kind": "sla",
+              "saveDC": 18,
+              "sourceSpell": {
+                "id": "72eba041e12961b8",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    265,
+                    270,
+                    353
+                  ],
+                  "printedPages": [
+                    263,
+                    268,
+                    351
+                  ],
+                  "section": "Tongues",
+                  "verification": "text-extracted-header"
+                }
+              },
+              "uses": 3
+            },
+            "reference": {
+              "id": "72eba041e12961b8",
+              "name": "Tongues",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                47
+              ],
+              "printedPages": [
+                46
+              ],
+              "section": "Red Drake",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Tongues (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "other",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": false,
+          "autoscaleAttackParts": "",
+          "baseCl": "24",
+          "castTime": "1 standard action",
+          "classSource": "",
+          "clOffset": 0,
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "createdBy": "",
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": []
+          },
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>You may speak any language.</p><hr><p><strong>Red Drake spell-like ability:</strong> 3/day; caster level 24; save DC 18 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "Touch",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Tongues (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Arcanist",
+                3
+              ],
+              [
+                "Healer",
+                4
+              ]
+            ],
+            "domain": [],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 3,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": "a small clay model of a ziggurat, which shatters when the verbal component is pronounced"
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 0,
+            "type": ""
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "72eba041e12961b8",
+          "originPack": "warcraftrpg2e.warcraft-spells",
+          "originVersion": 108,
+          "possibleUpdate": false,
+          "powerPointsCost": 5,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 3,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 3
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "touch",
+            "value": null
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requiresPsionicFocus": false,
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "18",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "Will negates (harmless)",
+            "originVersion": 97,
+            "type": "willnegates"
+          },
+          "school": "div",
+          "shortDescription": "<p>You may speak any language.</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "You may speak any language.",
+          "source": "World of Warcraft: Monster Guide, p. 46",
+          "specialActions": [
+            {
+              "action": "Create unique \"Tongues\" from \"warcraftrpg2e.commonbuffs\" on target;Set buff \"Tongues\" field data.level to max(1,(@cl)) on target;Activate buff \"Tongues\" on target",
+              "condition": "",
+              "img": "icons/svg/item-bag.svg",
+              "name": "Tongues",
+              "range": ""
+            }
+          ],
+          "specialId": null,
+          "specialPrepared": true,
+          "spellArea": "",
+          "spellbook": "spelllike",
+          "spellDuration": "10 min./level",
+          "spellDurationData": {
+            "units": "minutePerLevel",
+            "value": 10
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": false,
+          "subschool": "",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "Creature touched"
+          },
+          "types": "",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 3,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "day",
+            "rechargeFormula": null,
+            "value": 3
+          },
+          "warcraftManualPolicy": {
+            "mode": "srd-baseline",
+            "reason": "The inherited SRD implementation is used with the Warcraft list assignment and spell level."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_embedded": {},
+        "_id": "51ca86426702cd7e",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "catalog": {
+              "completeListEntry": true,
+              "generated": true,
+              "status": "srd-mechanics-with-warcraft-header"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 24,
+              "frequency": "day",
+              "kind": "sla",
+              "saveDC": 16,
+              "sourceSpell": {
+                "id": "557329645f63da96",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    270,
+                    340
+                  ],
+                  "printedPages": [
+                    268,
+                    338
+                  ],
+                  "section": "Speak with Animals",
+                  "verification": "text-extracted-header"
+                }
+              },
+              "uses": 2
+            },
+            "reference": {
+              "id": "557329645f63da96",
+              "name": "Speak with Animals",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                47
+              ],
+              "printedPages": [
+                46
+              ],
+              "section": "Red Drake",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Speak with Animals (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "other",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": false,
+          "autoscaleAttackParts": "",
+          "baseCl": "24",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "combatChanges": [],
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "creationChanges": [],
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": []
+          },
+          "damageReduction": [],
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>You can communicate with</p><hr><p><strong>Red Drake spell-like ability:</strong> 2/day; caster level 24; save DC 16 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "Personal",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Speak with Animals (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Druid",
+                1
+              ]
+            ],
+            "domain": [],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 1,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": ""
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 0,
+            "type": ""
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "557329645f63da96",
+          "originPack": "warcraftrpg2e.warcraft-spells",
+          "originVersion": 109,
+          "perRoundActions": [],
+          "possibleUpdate": false,
+          "powerPointsCost": 0,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 2,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 2
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "personal",
+            "value": null
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requirements": [],
+          "requiresPsionicFocus": false,
+          "resistances": [],
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "16",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "",
+            "originVersion": 97,
+            "type": ""
+          },
+          "school": "div",
+          "shortDescription": "<p>You can communicate with</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "You can communicate with",
+          "source": "World of Warcraft: Monster Guide, p. 46",
+          "specialActions": [],
+          "specialId": null,
+          "specialPrepared": true,
+          "spellArea": "",
+          "spellbook": "spelllike",
+          "spellDuration": "1 min./level",
+          "spellDurationData": {
+            "units": "minutePerLevel",
+            "value": 1
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": false,
+          "subschool": "",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "You"
+          },
+          "types": "",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 2,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "day",
+            "rechargeFormula": null,
+            "value": 2
+          },
+          "warcraftManualPolicy": {
+            "mode": "srd-baseline",
+            "reason": "The inherited SRD implementation is used with the Warcraft list assignment and spell level."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_embedded": {},
+        "_id": "a77adca97e8a84d0",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "catalog": {
+              "completeListEntry": true,
+              "generated": true,
+              "status": "srd-mechanics-with-warcraft-header"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 24,
+              "frequency": "day",
+              "kind": "sla",
+              "saveDC": 18,
+              "sourceSpell": {
+                "id": "278ba8d6d93d8461",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    265,
+                    270,
+                    276,
+                    299
+                  ],
+                  "printedPages": [
+                    263,
+                    268,
+                    274,
+                    297
+                  ],
+                  "section": "Dispel Magic",
+                  "verification": "text-extracted-header"
+                }
+              },
+              "uses": 2
+            },
+            "reference": {
+              "id": "278ba8d6d93d8461",
+              "name": "Dispel Magic",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                47
+              ],
+              "printedPages": [
+                46
+              ],
+              "section": "Red Drake",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Dispel Magic (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "other",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "",
+          "attackNotes": "Target creature or everyone in area are affected by the dispel magic effect. Each active magical effect are subjected to a dispel. Effect notes will contain some prerolled checks.",
+          "attackParts": [],
+          "atWill": false,
+          "autoscaleAttackParts": "",
+          "baseCl": "24",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "combatChanges": [],
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "creationChanges": [],
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": []
+          },
+          "damageReduction": [],
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>Cancels magical spells and effects.</p><hr><p><strong>Red Drake spell-like ability:</strong> 2/day; caster level 24; save DC 18 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "Medium (100 ft. + 10 ft./level)",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "Dispel prerolled: [[1d20+min(10,@cl)]] [[1d20+min(10,@cl)]] [[1d20+min(10,@cl)]] [[1d20+min(10,@cl)]] [[1d20+min(10,@cl)]]\nNeed to be equal or higher than 11 + caster level of target.",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Dispel Magic (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Arcanist",
+                3
+              ],
+              [
+                "Healer",
+                3
+              ],
+              [
+                "Paladin",
+                3
+              ]
+            ],
+            "domain": [],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 3,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": ""
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "20",
+            "type": "circle"
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "278ba8d6d93d8461",
+          "originPack": "warcraftrpg2e.warcraft-spells",
+          "originVersion": 109,
+          "perRoundActions": [],
+          "possibleUpdate": false,
+          "powerPointsCost": 0,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 2,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 2
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "medium",
+            "value": null
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requirements": [],
+          "requiresPsionicFocus": false,
+          "resistances": [],
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "18",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "None",
+            "originVersion": 97,
+            "type": ""
+          },
+          "school": "abj",
+          "shortDescription": "<p>Cancels magical spells and effects.</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "Cancels magical spells and effects.",
+          "source": "World of Warcraft: Monster Guide, p. 46",
+          "specialActions": [],
+          "specialId": null,
+          "specialPrepared": true,
+          "spellArea": "one spellcaster, creature, or object; or 20-ft.-radius burst",
+          "spellbook": "spelllike",
+          "spellDuration": "Instantaneous",
+          "spellDurationData": {
+            "units": "inst",
+            "value": null
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": false,
+          "subschool": "",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "one spellcaster, creature, or object; or 20-ft.-radius burst"
+          },
+          "types": "",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 2,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "day",
+            "rechargeFormula": null,
+            "value": 2
+          },
+          "warcraftManualPolicy": {
+            "mode": "srd-baseline-with-manual-boundary",
+            "reason": "SRD mechanics are retained, but Warcraft-specific creatures, forms, slot manipulation, or persistent cross-actor state require GM adjudication."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_embedded": {},
+        "_id": "00999a0bb3f62141",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "catalog": {
+              "completeListEntry": true,
+              "generated": true,
+              "status": "srd-mechanics-with-warcraft-header"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 24,
+              "frequency": "day",
+              "kind": "sla",
+              "saveDC": 21,
+              "sourceSpell": {
+                "id": "63c55254c2adcc07",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    272,
+                    274,
+                    310
+                  ],
+                  "printedPages": [
+                    270,
+                    272,
+                    308
+                  ],
+                  "section": "Heal",
+                  "verification": "text-extracted-header"
+                }
+              },
+              "uses": 2
+            },
+            "reference": {
+              "id": "63c55254c2adcc07",
+              "name": "Heal",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                47
+              ],
+              "printedPages": [
+                46
+              ],
+              "section": "Red Drake",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Heal (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "heal",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": false,
+          "autoscaleAttackParts": "",
+          "baseCl": "24",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "combatChanges": [],
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "creationChanges": [],
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": [
+              [
+                "(min(15, @cl))*10*@critMult",
+                null,
+                "energy-positive"
+              ]
+            ]
+          },
+          "damageReduction": [],
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>Cures 10 points/level of damage, all</p><hr><p><strong>Red Drake spell-like ability:</strong> 2/day; caster level 24; save DC 21 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "Touch",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Heal (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Priest",
+                6
+              ]
+            ],
+            "domain": [
+              [
+                "Healing",
+                6
+              ]
+            ],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 6,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": ""
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 0,
+            "type": ""
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "63c55254c2adcc07",
+          "originPack": "warcraftrpg2e.warcraft-spells",
+          "originVersion": 108,
+          "perRoundActions": [],
+          "possibleUpdate": false,
+          "powerPointsCost": 11,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 2,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 2
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "touch",
+            "value": null
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requirements": [],
+          "requiresPsionicFocus": false,
+          "resistances": [],
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "21",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "Will negates (harmless)",
+            "originVersion": 97,
+            "type": "willnegates"
+          },
+          "school": "con",
+          "shortDescription": "<p>Cures 10 points/level of damage, all</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "Cures 10 points/level of damage, all",
+          "source": "World of Warcraft: Monster Guide, p. 46",
+          "specialActions": [
+            {
+              "action": "Condition set blinded to false on target; Condition set dazzled to false on target; Condition set dazed to false on target; Condition set deaf to false on target; Condition set fatigued to false on target; Condition set exhausted to false on target; Condition set sickened to false on target; Condition set stunned to false on target; Condition set dazzled to false on target; Remove buff confused from target; Remove buff feeblemind from target; Remove buff insanity from target; Remove buff contagion from target; Remove buff disease from target; AbilityDamage str -99 on target; AbilityDamage dex -99 on target; AbilityDamage con -99 on target; AbilityDamage int -99 on target; AbilityDamage wis -99 on target; AbilityDamage cha -99 on target;",
+              "condition": "",
+              "img": "",
+              "name": "Heal"
+            }
+          ],
+          "specialId": null,
+          "specialPrepared": true,
+          "spellArea": "",
+          "spellbook": "spelllike",
+          "spellDuration": "Instantaneous",
+          "spellDurationData": {
+            "units": "inst",
+            "value": null
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": true,
+          "subschool": "healing",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "Creature touched"
+          },
+          "types": "",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 2,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "day",
+            "rechargeFormula": null,
+            "value": 2
+          },
+          "warcraftManualPolicy": {
+            "mode": "srd-baseline",
+            "reason": "The inherited SRD implementation is used with the Warcraft list assignment and spell level."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_embedded": {},
+        "_id": "102d7fe07a4aa88a",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "catalog": {
+              "completeListEntry": true,
+              "generated": true,
+              "status": "srd-mechanics-with-warcraft-header"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 24,
+              "frequency": "day",
+              "kind": "sla",
+              "saveDC": 17,
+              "sourceSpell": {
+                "id": "849c0af1a9986970",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    265,
+                    297
+                  ],
+                  "printedPages": [
+                    263,
+                    295
+                  ],
+                  "section": "Detect Thoughts",
+                  "verification": "text-extracted-header"
+                }
+              },
+              "uses": 1
+            },
+            "reference": {
+              "id": "849c0af1a9986970",
+              "name": "Detect Thoughts",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                47
+              ],
+              "printedPages": [
+                46
+              ],
+              "section": "Red Drake",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Detect Thoughts (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "other",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": false,
+          "autoscaleAttackParts": "",
+          "baseCl": "24",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "combatChanges": [],
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": []
+          },
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>Allows \"listening\" to surface</p><hr><p><strong>Red Drake spell-like ability:</strong> 1/day; caster level 24; save DC 17 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "60 ft.",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Detect Thoughts (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Arcanist",
+                2
+              ]
+            ],
+            "domain": [],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 2,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "a copper piece",
+            "value": ""
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 60,
+            "type": "cone"
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "849c0af1a9986970",
+          "originPack": "warcraftrpg2e.warcraft-spells",
+          "originVersion": 108,
+          "possibleUpdate": false,
+          "powerPointsCost": 3,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 1,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 1
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "ft",
+            "value": 60
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requiresPsionicFocus": false,
+          "resistances": [],
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "17",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "Will negates; see text",
+            "originVersion": 97,
+            "type": "willnegates"
+          },
+          "school": "div",
+          "shortDescription": "<p>Allows \"listening\" to surface</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "Allows \"listening\" to surface",
+          "source": "World of Warcraft: Monster Guide, p. 46",
+          "specialActions": [
+            {
+              "action": "Create unique \"Detect Thoughts\" from \"warcraftrpg2e.commonbuffs\" on target;Set buff \"Detect Thoughts\" field data.level to max(1,(@cl)) on target;Activate buff \"Detect Thoughts\" on target",
+              "condition": "",
+              "img": "icons/svg/item-bag.svg",
+              "name": "Detect Thoughts",
+              "range": ""
+            }
+          ],
+          "specialId": null,
+          "specialPrepared": true,
+          "spellArea": "Cone-shaped emanation",
+          "spellbook": "spelllike",
+          "spellDuration": "Concentration, up to 1 min./level (D)",
+          "spellDurationData": {
+            "units": "minutePerLevel",
+            "value": 1
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": false,
+          "subschool": "",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "Cone-shaped emanation"
+          },
+          "types": "mind-affecting",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 1,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "day",
+            "rechargeFormula": null,
+            "value": 1
+          },
+          "warcraftManualPolicy": {
+            "mode": "srd-baseline",
+            "reason": "The inherited SRD implementation is used with the Warcraft list assignment and spell level."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_id": "56b3ad55dcc0b5f1",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "Breath weapon 12d10 fire (DC 29 Reflex)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                46
+              ],
+              "section": "Red Drake"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Breath weapon 12d10 fire",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Breath weapon 12d10 fire (DC 29 Reflex).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 46",
+          "uniqueId": "wc-monster-red-drake-breath-weapon-12d10-fire"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "90c40b6a2d959f14",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "crush 2d8+13 (DC 29)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                46
+              ],
+              "section": "Red Drake"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "crush 2d8+13",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> crush 2d8+13 (DC 29).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 46",
+          "uniqueId": "wc-monster-red-drake-crush-2d8-13"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "1b2b509fd2d48884",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "frightful presence (180 ft., DC 27)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                46
+              ],
+              "section": "Red Drake"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "frightful presence",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> frightful presence (180 ft., DC 27).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 46",
+          "uniqueId": "wc-monster-red-drake-frightful-presence"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "d0287aa67f97d5ce",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Special Attack",
+              "raw": "spell-like abilities"
+            },
+            "reference": {
+              "id": "9072eee87e2208d9",
+              "name": "Spell-Like Abilities Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                46
+              ],
+              "section": "Red Drake"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "spell-like abilities",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> spell-like abilities.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.9072eee87e2208d9]{Spell-Like Abilities Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 46",
+          "uniqueId": "wc-monster-red-drake-spell-like-abilities"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "3e113093fccee82a",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Blindsense 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                46
+              ],
+              "section": "Red Drake"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Blindsense 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Blindsense 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 46",
+          "uniqueId": "wc-monster-red-drake-blindsense-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "3b41b97cb00aa589",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "darkvision 120 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                46
+              ],
+              "section": "Red Drake"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "darkvision 120 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> darkvision 120 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 46",
+          "uniqueId": "wc-monster-red-drake-darkvision-120-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "0f9bd26810bc50c5",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "low-light vision"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                46
+              ],
+              "section": "Red Drake"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "low-light vision",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> low-light vision.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 46",
+          "uniqueId": "wc-monster-red-drake-low-light-vision"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "b70398a24671a063",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "boundless mind"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                46
+              ],
+              "section": "Red Drake"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "boundless mind",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> boundless mind.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 46",
+          "uniqueId": "wc-monster-red-drake-boundless-mind"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "5edcfeb8eb4828ba",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "damage reduction 10/magic"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                46
+              ],
+              "section": "Red Drake"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "damage reduction 10/magic",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> damage reduction 10/magic.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 46",
+          "uniqueId": "wc-monster-red-drake-damage-reduction-10-magic"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "c53b69787b479173",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "fire subtype"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                46
+              ],
+              "section": "Red Drake"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "fire subtype",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> fire subtype.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 46",
+          "uniqueId": "wc-monster-red-drake-fire-subtype"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "1cf4c987a2934d04",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "immunity to paralysis and sleep"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                46
+              ],
+              "section": "Red Drake"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "immunity to paralysis and sleep",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> immunity to paralysis and sleep.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 46",
+          "uniqueId": "wc-monster-red-drake-immunity-to-paralysis-and-sleep"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "f8ce945bac11c70d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "spell resistance 25"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                46
+              ],
+              "section": "Red Drake"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "spell resistance 25",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> spell resistance 25.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 46",
+          "uniqueId": "wc-monster-red-drake-spell-resistance-25"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "73e47046782e838a",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Blind-Fight"
+            },
+            "reference": {
+              "id": "5f81db4e1389ce23",
+              "name": "Blind-Fight",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                46
+              ],
+              "section": "Red Drake"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Blind-Fight",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Blind-Fight.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.5f81db4e1389ce23]{Blind-Fight}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 46",
+          "uniqueId": "wc-monster-red-drake-blind-fight"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "8479aea14c0326f5",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Initiative"
+            },
+            "reference": {
+              "id": "3232602c102e0494",
+              "name": "Improved Initiative",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                46
+              ],
+              "section": "Red Drake"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Initiative",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Initiative.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.3232602c102e0494]{Improved Initiative}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 46",
+          "uniqueId": "wc-monster-red-drake-improved-initiative"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "6e15f89eaad1d32e",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Multiattack"
+            },
+            "reference": {
+              "id": "4b2ed70fb66b7ceb",
+              "name": "Multiattack",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                46
+              ],
+              "section": "Red Drake"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Multiattack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Multiattack.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.4b2ed70fb66b7ceb]{Multiattack}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 46",
+          "uniqueId": "wc-monster-red-drake-multiattack"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "1933ec8271783caf",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Flyby Attack"
+            },
+            "reference": {
+              "id": "SsqHUJ1AqujhZKeA",
+              "name": "Flyby Attack",
+              "pack": "warcraftrpg2e.feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                46
+              ],
+              "section": "Red Drake"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Flyby Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Flyby Attack.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.feats.Item.SsqHUJ1AqujhZKeA]{Flyby Attack}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 46",
+          "uniqueId": "wc-monster-red-drake-flyby-attack"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "eb4a001de3b535ef",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Hover"
+            },
+            "reference": {
+              "id": "TtrDaEvIWHFY72BE",
+              "name": "Hover",
+              "pack": "warcraftrpg2e.feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                46
+              ],
+              "section": "Red Drake"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Hover",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Hover.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.feats.Item.TtrDaEvIWHFY72BE]{Hover}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 46",
+          "uniqueId": "wc-monster-red-drake-hover"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "9beb27a7e0e9d0c3",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Critical (bite)"
+            },
+            "reference": {
+              "id": "67beb7aa2473045e",
+              "name": "Improved Critical",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                46
+              ],
+              "section": "Red Drake"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Critical (bite)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Critical (bite).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.67beb7aa2473045e]{Improved Critical}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 46",
+          "uniqueId": "wc-monster-red-drake-improved-critical-bite"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "34dd40b83fcbb13a",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Power Attack"
+            },
+            "reference": {
+              "id": "95e094ad6c35e24e",
+              "name": "Power Attack",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                46
+              ],
+              "section": "Red Drake"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Power Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Power Attack.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.95e094ad6c35e24e]{Power Attack}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 46",
+          "uniqueId": "wc-monster-red-drake-power-attack"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "dbb2b81b2ca36c5b",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Skilled (Listen and Spot)"
+            },
+            "reference": {
+              "id": "63e93d7c15badc3f",
+              "name": "Skilled",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                46
+              ],
+              "section": "Red Drake"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Skilled (Listen and Spot)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Skilled (Listen and Spot).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.63e93d7c15badc3f]{Skilled}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 46",
+          "uniqueId": "wc-monster-red-drake-skilled-listen-and-spot"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "6d1fc41fd48fe217",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Huge Dragon (Fire); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "b7f193113dd68652",
+              "name": "Dragon Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                46
+              ],
+              "section": "Red Drake"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Dragon Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Huge Dragon (Fire); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.b7f193113dd68652]{Dragon Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 46",
+          "uniqueId": "wc-monster-red-drake-dragon-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "a3f2f142e668c342",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Fire subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "2d6bdc174cc71ee5",
+              "name": "Fire Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                46
+              ],
+              "section": "Red Drake"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Fire Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Fire subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.2d6bdc174cc71ee5]{Fire Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 46",
+          "uniqueId": "wc-monster-red-drake-fire-subtype-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "72b1b31ea16c505e",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": {
+          "regularSpells": 0,
+          "slaExecutable": 6,
+          "slaManual": 1
+        },
+        "rawFields": {
+          "Abilities": "Str 29, Agy 10, Sta 25, Int 16, Spt 21, Cha 20",
+          "Advancement": "25-40 HD (Huge) or by character class",
+          "Alignment": "Usually good (any)",
+          "Area": "Any",
+          "Armor Class": "31 (-2 size, +23 natural), touch 8, flat-footed 31",
+          "Attack": "Bite +31 melee (2d8+9/19-20/x2)",
+          "Base Attack/Grapple": "+24/+41",
+          "Challenge Rating": "15",
+          "Environment": "Temperate land",
+          "Feats": "Blind-Fight, Improved Initiative, Multiattack, Flyby Attack*, Hover*, Improved Critical (bite), Power Attack, Skilled (Listen and Spot),",
+          "Full Attack": "Bite +31 melee (2d8+9/19-20) and 2 claws +29 melee (2d6+4) and 2 wings +29 melee (1d8+4)",
+          "Hit Dice": "24d12+168 (324 hp)",
+          "Initiative": "+4",
+          "Level Adjustment": "-",
+          "Organization": "Solitary, pair, or family (1-2 and 2-5 offspring)",
+          "Saves": "Fort +21, Ref +14, Will +19",
+          "Skills": "Appraise +15, Concentration +34, Craft (alchemy) +18, Decipher Script +12, Diplomacy +15, Gather Information +17, Heal +19, Intimidate +32, Jump +22, Knowledge (arcana) +18, Knowledge (nature) +18, Listen +18, Search +30, Spellcraft +20, Spot +19, Swim +22",
+          "Space/Reach": "15 ft./10 ft. (15 ft. with bite)",
+          "Special Attacks": "Breath weapon 12d10 fire (DC 29 Reflex), crush 2d8+13 (DC 29), frightful presence (180 ft., DC 27), spell-like abilities",
+          "Special Qualities": "Blindsense 60 ft., darkvision 120 ft., low-light vision, boundless mind, damage reduction 10/magic, fire subtype, immunity to paralysis and sleep, spell resistance 25",
+          "Speed": "40 ft. (8 squares), fly 150 ft. (poor), swim 60 ft.",
+          "Treasure": "Double standard"
+        },
+        "rulesCoverage": {
+          "actor-defense": 4,
+          "linked-reference": 11,
+          "manual": 8
+        },
+        "subtypes": [
+          "Fire"
+        ]
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          47
+        ],
+        "printedPages": [
+          46
+        ],
+        "section": "Red Drake",
+        "verification": "native-text-table"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "6d4e7972dc605bc1",
+    "1612111ca651cb3f",
+    "ac5c8425e98b79c3",
+    "9658fc43bcd0b9ce",
+    "1da3d12a1839a8a4",
+    "7cf01275e5ca332a",
+    "39d697e2bec172b5",
+    "5b27ce60414d37c0",
+    "51ca86426702cd7e",
+    "a77adca97e8a84d0",
+    "00999a0bb3f62141",
+    "102d7fe07a4aa88a",
+    "56b3ad55dcc0b5f1",
+    "90c40b6a2d959f14",
+    "1b2b509fd2d48884",
+    "d0287aa67f97d5ce",
+    "3e113093fccee82a",
+    "3b41b97cb00aa589",
+    "0f9bd26810bc50c5",
+    "b70398a24671a063",
+    "5edcfeb8eb4828ba",
+    "c53b69787b479173",
+    "1cf4c987a2934d04",
+    "f8ce945bac11c70d",
+    "73e47046782e838a",
+    "8479aea14c0326f5",
+    "6e15f89eaad1d32e",
+    "1933ec8271783caf",
+    "eb4a001de3b535ef",
+    "9beb27a7e0e9d0c3",
+    "34dd40b83fcbb13a",
+    "dbb2b81b2ca36c5b",
+    "6d1fc41fd48fe217",
+    "a3f2f142e668c342"
+  ],
+  "name": "Red Drake",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 5,
+        "origMod": 5,
+        "origTotal": 20,
+        "penalty": 0,
+        "total": 20,
+        "userPenalty": 0,
+        "value": 20
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 7,
+        "origMod": 7,
+        "origTotal": 25,
+        "penalty": 0,
+        "total": 25,
+        "userPenalty": 0,
+        "value": 25
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 3,
+        "origMod": 3,
+        "origTotal": 16,
+        "penalty": 0,
+        "total": 16,
+        "userPenalty": 0,
+        "value": 16
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 9,
+        "origMod": 9,
+        "origTotal": 29,
+        "penalty": 0,
+        "total": 29,
+        "userPenalty": 0,
+        "value": 29
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 5,
+        "origMod": 5,
+        "origTotal": 21,
+        "penalty": 0,
+        "total": 21,
+        "userPenalty": 0,
+        "value": 21
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 31,
+          "value": 0
+        },
+        "normal": {
+          "total": 31,
+          "value": 0
+        },
+        "touch": {
+          "total": 8,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 24,
+        "nonepic": 24,
+        "total": 24,
+        "value": 0
+      },
+      "cmb": {
+        "total": 41,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "dragon",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 0,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 24,
+        "total": 24
+      },
+      "hp": {
+        "base": 324,
+        "max": 324,
+        "min": -25,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 324
+      },
+      "init": {
+        "bonus": 0,
+        "total": 4,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 23,
+      "savingThrows": {
+        "fort": {
+          "base": 21,
+          "total": 21
+        },
+        "ref": {
+          "base": 14,
+          "total": 14
+        },
+        "will": {
+          "base": 19,
+          "total": 19
+        }
+      },
+      "senses": {
+        "blindsense": 60,
+        "blindsight": null,
+        "darkvision": 120,
+        "lowLight": true,
+        "lowLightMultiplier": 2,
+        "tremorsense": null
+      },
+      "speed": {
+        "fly": {
+          "base": 150,
+          "total": 150
+        },
+        "land": {
+          "base": 40,
+          "total": 40
+        },
+        "swim": {
+          "base": 60,
+          "total": 60
+        }
+      },
+      "spells": {
+        "spellbooks": {
+          "spelllike": {
+            "ability": "cha",
+            "arcaneSpellFailure": false,
+            "autoSetup": false,
+            "autoSpellLevels": false,
+            "baseDCFormula": "0",
+            "bonusPrestigeCl": 0,
+            "cl": {
+              "base": 24,
+              "formula": "0",
+              "total": 24,
+              "value": 0
+            },
+            "class": "",
+            "clNotes": "",
+            "concentration": 0,
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "dailyPowerPointsFormula": "",
+            "hasSpecialSlot": false,
+            "maximumPowerPointLimit": "@cl",
+            "name": "Spell-like Abilities",
+            "powerPoints": 0,
+            "powerPointsFormula": "",
+            "powerPointsTotal": 0,
+            "preparationMode": "prepared",
+            "repertoireLimitOverride": 0,
+            "repertoireSkill": "spl",
+            "showOnlyPrepared": false,
+            "specialSlotLevel0": false,
+            "specialSlots": {
+              "level0": null,
+              "level1": null,
+              "level2": null,
+              "level3": null,
+              "level4": null,
+              "level5": null,
+              "level6": null,
+              "level7": null,
+              "level8": null,
+              "level9": null
+            },
+            "spellcastingType": "arcane",
+            "spells": {
+              "spell0": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell1": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell2": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell3": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell4": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell5": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell6": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell7": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell8": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell9": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              }
+            },
+            "spellslotAbility": "cha",
+            "spontaneous": false,
+            "usePowerPoints": false,
+            "usesWarcraftSlotPool": false,
+            "warcraftCurrentPath": "",
+            "warcraftParentClass": "",
+            "warcraftPathBonusSlot": false,
+            "warcraftPoolKey": ""
+          }
+        },
+        "warcraftPools": {}
+      },
+      "sr": {
+        "formula": "25",
+        "total": 25
+      }
+    },
+    "details": {
+      "alignment": "Usually good (any)",
+      "biography": {
+        "public": "",
+        "value": "<p>Red Drake is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 15,
+      "environment": "Temperate land",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 24,
+        "value": 24
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 24d12+168 (324 hp)</p><p><strong>Initiative:</strong> +4</p><p><strong>Speed:</strong> 40 ft. (8 squares), fly 150 ft. (poor), swim 60 ft.</p><p><strong>Armor Class:</strong> 31 (-2 size, +23 natural), touch 8, flat-footed 31</p><p><strong>Base Attack/Grapple:</strong> +24/+41</p><p><strong>Attack:</strong> Bite +31 melee (2d8+9/19-20/x2)</p><p><strong>Full Attack:</strong> Bite +31 melee (2d8+9/19-20) and 2 claws +29 melee (2d6+4) and 2 wings +29 melee (1d8+4)</p><p><strong>Space/Reach:</strong> 15 ft./10 ft. (15 ft. with bite)</p><p><strong>Special Attacks:</strong> Breath weapon 12d10 fire (DC 29 Reflex), crush 2d8+13 (DC 29), frightful presence (180 ft., DC 27), spell-like abilities</p><p><strong>Special Qualities:</strong> Blindsense 60 ft., darkvision 120 ft., low-light vision, boundless mind, damage reduction 10/magic, fire subtype, immunity to paralysis and sleep, spell resistance 25</p><p><strong>Saves:</strong> Fort +21, Ref +14, Will +19</p><p><strong>Abilities:</strong> Str 29, Agy 10, Sta 25, Int 16, Spt 21, Cha 20</p><p><strong>Skills:</strong> Appraise +15, Concentration +34, Craft (alchemy) +18, Decipher Script +12, Diplomacy +15, Gather Information +17, Heal +19, Intimidate +32, Jump +22, Knowledge (arcana) +18, Knowledge (nature) +18, Listen +18, Search +30, Spellcraft +20, Spot +19, Swim +22</p><p><strong>Feats:</strong> Blind-Fight, Improved Initiative, Multiattack, Flyby Attack*, Hover*, Improved Critical (bite), Power Attack, Skilled (Listen and Spot),</p><p><strong>Area:</strong> Any</p><p><strong>Organization:</strong> Solitary, pair, or family (1-2 and 2-5 offspring)</p><p><strong>Treasure:</strong> Double standard</p><p><strong>Advancement:</strong> 25-40 HD (Huge) or by character class</p><p><strong>Level Adjustment:</strong> -</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 15,
+      "type": "Dragon"
+    },
+    "skills": {
+      "apr": {
+        "ability": "int",
+        "abilityModifier": 3,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 12,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 15,
+        "notes": "Printed total +15",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "coc": {
+        "ability": "con",
+        "abilityModifier": 7,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 27,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 34,
+        "notes": "Printed total +34",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "crf": {
+        "ability": "int",
+        "abilityModifier": 3,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": -3,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 0,
+        "notes": "",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "subSkills": {
+          "wc9539a222": {
+            "ability": "int",
+            "abilityModifier": 3,
+            "acp": false,
+            "acpPenalty": 0,
+            "background": false,
+            "changeBonus": 15,
+            "cs": false,
+            "energyDrainPenalty": 0,
+            "mod": 18,
+            "name": "alchemy",
+            "notes": "Printed total +18",
+            "points": 0,
+            "rank": 0,
+            "rt": false,
+            "value": 0,
+            "visibility": "default"
+          }
+        },
+        "value": 0,
+        "visibility": "default"
+      },
+      "dip": {
+        "ability": "cha",
+        "abilityModifier": 5,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 10,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 15,
+        "notes": "Printed total +15",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "dsc": {
+        "ability": "int",
+        "abilityModifier": 3,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 9,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 12,
+        "notes": "Printed total +12",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "gif": {
+        "ability": "cha",
+        "abilityModifier": 5,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 12,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 17,
+        "notes": "Printed total +17",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "hea": {
+        "ability": "wis",
+        "abilityModifier": 5,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 14,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 19,
+        "notes": "Printed total +19",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "int": {
+        "ability": "cha",
+        "abilityModifier": 5,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 27,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 32,
+        "notes": "Printed total +32",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "jmp": {
+        "ability": "str",
+        "abilityModifier": 9,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 13,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 22,
+        "notes": "Printed total +22",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "kar": {
+        "ability": "int",
+        "abilityModifier": 3,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 15,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 18,
+        "notes": "Printed total +18",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "kna": {
+        "ability": "int",
+        "abilityModifier": 3,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 15,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 18,
+        "notes": "Printed total +18",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "lis": {
+        "ability": "wis",
+        "abilityModifier": 5,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 13,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 18,
+        "notes": "Printed total +18",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spl": {
+        "ability": "int",
+        "abilityModifier": 3,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 17,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 20,
+        "notes": "Printed total +20",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spt": {
+        "ability": "wis",
+        "abilityModifier": 5,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 14,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 19,
+        "notes": "Printed total +19",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "src": {
+        "ability": "int",
+        "abilityModifier": 3,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 27,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 30,
+        "notes": "Printed total +30",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "swm": {
+        "ability": "str",
+        "abilityModifier": 9,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 13,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 22,
+        "notes": "Printed total +22",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "huge",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Blindsense 60 ft., darkvision 120 ft., low-light vision, boundless mind, damage reduction 10/magic, fire subtype, immunity to paralysis and sleep, spell resistance 25",
+      "size": "huge",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

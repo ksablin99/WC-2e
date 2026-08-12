@@ -1,0 +1,44 @@
+{
+  "_embedded": {},
+  "_id": "80222760db02f7a1",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "creatureRule": {
+        "kind": "type",
+        "reusable": true
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          186,
+          201
+        ],
+        "printedPages": [
+          185,
+          200
+        ],
+        "section": "Elemental",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/aura.svg",
+  "name": "Elemental Traits",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilityType": "nat",
+    "description": {
+      "value": "<p>d8 Hit Dice; three-quarter base attack; good save varies by element. Darkvision 60 feet. Immune to poison, sleep, paralysis, stunning, critical hits, flanking, and resurrection; does not eat, sleep, or breathe.</p><p>This reusable record defines shared conversion behavior. Individual actors carry exact printed exceptions and totals.</p>"
+    },
+    "featType": "trait",
+    "source": "World of Warcraft: Monster Guide, pp. 185-200",
+    "uniqueId": "wc-creature-rule-elemental"
+  },
+  "type": "feat"
+}

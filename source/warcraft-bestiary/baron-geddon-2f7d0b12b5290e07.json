@@ -1,0 +1,1976 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "70acdf400a4c6d82",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 40,
+                "die": 8,
+                "expression": "40d8",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Elemental Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "med",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "503",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "30",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "36",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "23",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "24",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "23",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "37",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "16",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "60",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "4",
+              "misc",
+              "init",
+              "untyped"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "elemental",
+          "damageReduction": [
+            [
+              "25",
+              "epic",
+              false
+            ],
+            [
+              "20",
+              "any",
+              false
+            ]
+          ],
+          "hd": 8,
+          "hp": 0,
+          "levels": 40,
+          "maxLevel": 50,
+          "resistances": [
+            [
+              "",
+              "energy-fire",
+              true,
+              false,
+              false
+            ],
+            [
+              "",
+              "energy-cold",
+              false,
+              true,
+              false
+            ]
+          ],
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "low"
+            },
+            "will": {
+              "value": "low"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 155"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "1dc23a7ead719b41",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                44
+              ],
+              "printedDamage": "3d8+8 plus 3d6 fire"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Slam",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "16",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Slam",
+          "damage": {
+            "parts": [
+              [
+                "3d8+8",
+                "Bludgeoning",
+                "damage-bludg"
+              ],
+              [
+                "3d6",
+                "Fire",
+                "energy-fire"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Slam +44 melee (3d8+8 plus 3d6 fire).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "6dd9f68d707985cf",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 2,
+              "id": "1dc23a7ead719b41",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Slam",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> 2 slams +44 melee (3d8+8 plus 3d6 fire).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "30dab0854fdbee58",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "Burn (DC 38)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Burn",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Burn (DC 38).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-burn"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "b3b13a4f477634ab",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "ignite mana (DC 32)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "ignite mana",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> ignite mana (DC 32).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-ignite-mana"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "8163570b4d902913",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "inferno"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "inferno",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> inferno.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-inferno"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "9d6662f9e317f7c6",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "living bomb (DC 32)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "living bomb",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> living bomb (DC 32).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-living-bomb"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "da9e3cce58e5aef8",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Darkvision 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Darkvision 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Darkvision 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-darkvision-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "9d26af7ca566bdc9",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "damage reduction 25/epic"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "damage reduction 25/epic",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> damage reduction 25/epic.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-damage-reduction-25-epic"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e2f91a7c9c401ca1",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "damage reduction 20/-"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "damage reduction 20/-",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> damage reduction 20/-.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-damage-reduction-20"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "650c76f45ffc42ce",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "fire subtype"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "fire subtype",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> fire subtype.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-fire-subtype"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "b53877a60138b873",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "spell resistance 40"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "spell resistance 40",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> spell resistance 40.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-spell-resistance-40"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "d31353e8b4776093",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "elemental traits"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "elemental traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> elemental traits.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-elemental-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "b27916aa0b5d5484",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Bash"
+            },
+            "reference": {
+              "id": "60ca15d6f0332f77",
+              "name": "Bash",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Bash",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Bash.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.60ca15d6f0332f77]{Bash}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-bash"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "451dcdd1b55b058c",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Blind-Fight"
+            },
+            "reference": {
+              "id": "5f81db4e1389ce23",
+              "name": "Blind-Fight",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Blind-Fight",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Blind-Fight.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.5f81db4e1389ce23]{Blind-Fight}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-blind-fight"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "6d473afa36999302",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Cleave"
+            },
+            "reference": {
+              "id": "34b794d403b119d7",
+              "name": "Cleave",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Cleave",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Cleave.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.34b794d403b119d7]{Cleave}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-cleave"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "6860d171bf43abc9",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Combat Reflexes"
+            },
+            "reference": {
+              "id": "4c36b32171550210",
+              "name": "Combat Reflexes",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Combat Reflexes",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Combat Reflexes.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.4c36b32171550210]{Combat Reflexes}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-combat-reflexes"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "6054ad3876ca6f8a",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Dodge"
+            },
+            "reference": {
+              "id": "7d08b8436a8b4167",
+              "name": "Dodge",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Dodge",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Dodge.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.7d08b8436a8b4167]{Dodge}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-dodge"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "8dbc91369d4e1fd9",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Great Cleave"
+            },
+            "reference": {
+              "id": "8ea93af3cfb52873",
+              "name": "Great Cleave",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Great Cleave",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Great Cleave.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.8ea93af3cfb52873]{Great Cleave}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-great-cleave"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "9035b12de7ad1ce5",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Great Fortitude"
+            },
+            "reference": {
+              "id": "66a59a40dae0fed6",
+              "name": "Great Fortitude",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Great Fortitude",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Great Fortitude.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.66a59a40dae0fed6]{Great Fortitude}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-great-fortitude"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "bcdd877c373a160e",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Initiative"
+            },
+            "reference": {
+              "id": "3232602c102e0494",
+              "name": "Improved Initiative",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Initiative",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Initiative.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.3232602c102e0494]{Improved Initiative}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-improved-initiative"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e8024a7a3bb7b286",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Sunder"
+            },
+            "reference": {
+              "id": "f3184e001d989d4b",
+              "name": "Improved Sunder",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Sunder",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Sunder.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.f3184e001d989d4b]{Improved Sunder}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-improved-sunder"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e81a0b40f15716e8",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Iron Will"
+            },
+            "reference": {
+              "id": "bf55b7e5d7d1a388",
+              "name": "Iron Will",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Iron Will",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Iron Will.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.bf55b7e5d7d1a388]{Iron Will}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-iron-will"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e065a2888eb69422",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Mobility"
+            },
+            "reference": {
+              "id": "62fbe110ddcb2b39",
+              "name": "Mobility",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Mobility",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Mobility.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.62fbe110ddcb2b39]{Mobility}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-mobility"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "a88148060eb08418",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Power Attack"
+            },
+            "reference": {
+              "id": "95e094ad6c35e24e",
+              "name": "Power Attack",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Power Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Power Attack.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.95e094ad6c35e24e]{Power Attack}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-power-attack"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "5db3e63d40d829dd",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Skilled (Listen and Spot)"
+            },
+            "reference": {
+              "id": "63e93d7c15badc3f",
+              "name": "Skilled",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Skilled (Listen and Spot)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Skilled (Listen and Spot).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.63e93d7c15badc3f]{Skilled}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-skilled-listen-and-spot"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "bb2e1a5794c6a8f0",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Spring Attack"
+            },
+            "reference": {
+              "id": "7745cccb3e31fbfb",
+              "name": "Spring Attack",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Spring Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Spring Attack.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.7745cccb3e31fbfb]{Spring Attack}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-spring-attack"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "c7064ed484e4d604",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Weapon Finesse"
+            },
+            "reference": {
+              "id": "09eb70cdcda3c32d",
+              "name": "Weapon Finesse",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Weapon Finesse",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Weapon Finesse.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.09eb70cdcda3c32d]{Weapon Finesse}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-weapon-finesse"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "50e39b59da6f1f78",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Weapon Focus (slam)"
+            },
+            "reference": {
+              "id": "fdea42738398197e",
+              "name": "Weapon Focus",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Weapon Focus (slam)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Weapon Focus (slam).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.fdea42738398197e]{Weapon Focus}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-weapon-focus-slam"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "7541c84c89081eb2",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Huge Elemental (Chaotic, Evil, Extraplanar, Fire); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "80222760db02f7a1",
+              "name": "Elemental Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Elemental Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Huge Elemental (Chaotic, Evil, Extraplanar, Fire); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.80222760db02f7a1]{Elemental Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-elemental-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "531ba795ba25f9a2",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Chaotic subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "4af67d5314947ffd",
+              "name": "Chaotic Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Chaotic Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Chaotic subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.4af67d5314947ffd]{Chaotic Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-chaotic-subtype-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "365ff19dfa7b3970",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Evil subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "ad80f8e8725dc664",
+              "name": "Evil Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Evil Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Evil subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.ad80f8e8725dc664]{Evil Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-evil-subtype-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "66075604238f02aa",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Extraplanar subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "f56ea12b09ac91fc",
+              "name": "Extraplanar Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Extraplanar Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Extraplanar subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.f56ea12b09ac91fc]{Extraplanar Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-extraplanar-subtype-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "ec76daccc39ef5a6",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Fire subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "2d6bdc174cc71ee5",
+              "name": "Fire Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                155
+              ],
+              "section": "Baron Geddon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Fire Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Fire subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.2d6bdc174cc71ee5]{Fire Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 155",
+          "uniqueId": "wc-monster-baron-geddon-fire-subtype-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "2f7d0b12b5290e07",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "villain",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 26, Agy 40, Sta 27, Int 10, Spt 12, Cha 14",
+          "Alignment": "Chaotic evil",
+          "Armor Class": "36 (-2 size, +15 Agy, +16 natural), touch 23, flat-footed 24",
+          "Attack": "Slam +44 melee (3d8+8 plus 3d6 fire)",
+          "Base Attack/Grapple": "+30/+46",
+          "Challenge Rating": "25",
+          "Feats": "Bash, Blind-Fight, Cleave, Combat Reflexes, Dodge, Great Cleave, Great Fortitude, Improved Initiative, Improved Sunder, Iron Will, Mobility, Power Attack, Skilled (Listen and Spot), Spring Attack, Weapon Finesse, Weapon Focus (slam)",
+          "Full Attack": "2 slams +44 melee (3d8+8 plus 3d6 fire)",
+          "Hit Dice": "40d8+320 (503 hp)",
+          "Initiative": "+19",
+          "Saves": "Fort +23, Ref +37, Will +16",
+          "Skills": "Concentration +18, Diplomacy +14, Intimidate +12, Listen +26, Sense Motive +11, Spot +26",
+          "Space/Reach": "15 ft./15 ft.",
+          "Special Attacks": "Burn (DC 38), ignite mana (DC 32), inferno, living bomb (DC 32)",
+          "Special Qualities": "Darkvision 60 ft., damage reduction 25/epic, damage reduction 20/-, fire subtype, spell resistance 40, elemental traits",
+          "Speed": "60 ft. (12 squares)"
+        },
+        "rulesCoverage": {
+          "actor-defense": 4,
+          "linked-reference": 21,
+          "manual": 6
+        },
+        "subtypes": [
+          "Chaotic",
+          "Evil",
+          "Extraplanar",
+          "Fire"
+        ]
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          156
+        ],
+        "printedPages": [
+          155
+        ],
+        "section": "Baron Geddon",
+        "verification": "native-text-table+review-override"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "70acdf400a4c6d82",
+    "1dc23a7ead719b41",
+    "6dd9f68d707985cf",
+    "30dab0854fdbee58",
+    "b3b13a4f477634ab",
+    "8163570b4d902913",
+    "9d6662f9e317f7c6",
+    "da9e3cce58e5aef8",
+    "9d26af7ca566bdc9",
+    "e2f91a7c9c401ca1",
+    "650c76f45ffc42ce",
+    "b53877a60138b873",
+    "d31353e8b4776093",
+    "b27916aa0b5d5484",
+    "451dcdd1b55b058c",
+    "6d473afa36999302",
+    "6860d171bf43abc9",
+    "6054ad3876ca6f8a",
+    "8dbc91369d4e1fd9",
+    "9035b12de7ad1ce5",
+    "bcdd877c373a160e",
+    "e8024a7a3bb7b286",
+    "e81a0b40f15716e8",
+    "e065a2888eb69422",
+    "a88148060eb08418",
+    "5db3e63d40d829dd",
+    "bb2e1a5794c6a8f0",
+    "c7064ed484e4d604",
+    "50e39b59da6f1f78",
+    "7541c84c89081eb2",
+    "531ba795ba25f9a2",
+    "365ff19dfa7b3970",
+    "66075604238f02aa",
+    "ec76daccc39ef5a6"
+  ],
+  "name": "Baron Geddon",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 2,
+        "origMod": 2,
+        "origTotal": 14,
+        "penalty": 0,
+        "total": 14,
+        "userPenalty": 0,
+        "value": 14
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 8,
+        "origMod": 8,
+        "origTotal": 27,
+        "penalty": 0,
+        "total": 27,
+        "userPenalty": 0,
+        "value": 27
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 15,
+        "origMod": 15,
+        "origTotal": 40,
+        "penalty": 0,
+        "total": 40,
+        "userPenalty": 0,
+        "value": 40
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 8,
+        "origMod": 8,
+        "origTotal": 26,
+        "penalty": 0,
+        "total": 26,
+        "userPenalty": 0,
+        "value": 26
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 12,
+        "penalty": 0,
+        "total": 12,
+        "userPenalty": 0,
+        "value": 12
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 24,
+          "value": 0
+        },
+        "normal": {
+          "total": 36,
+          "value": 0
+        },
+        "touch": {
+          "total": 23,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 30,
+        "nonepic": 30,
+        "total": 30,
+        "value": 0
+      },
+      "cmb": {
+        "total": 46,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "elemental",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 100,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 40,
+        "total": 40
+      },
+      "hp": {
+        "base": 503,
+        "max": 503,
+        "min": -27,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 503
+      },
+      "init": {
+        "bonus": 0,
+        "total": 19,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 16,
+      "savingThrows": {
+        "fort": {
+          "base": 23,
+          "total": 23
+        },
+        "ref": {
+          "base": 37,
+          "total": 37
+        },
+        "will": {
+          "base": 16,
+          "total": 16
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": null,
+        "darkvision": 60,
+        "lowLight": false,
+        "lowLightMultiplier": null,
+        "tremorsense": null
+      },
+      "speed": {
+        "land": {
+          "base": 60,
+          "total": 60
+        }
+      },
+      "sr": {
+        "formula": "40",
+        "total": 40
+      }
+    },
+    "details": {
+      "alignment": "Chaotic evil",
+      "biography": {
+        "public": "",
+        "value": "<p>Baron Geddon is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 25,
+      "environment": "",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 40,
+        "value": 40
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 40d8+320 (503 hp)</p><p><strong>Initiative:</strong> +19</p><p><strong>Speed:</strong> 60 ft. (12 squares)</p><p><strong>Armor Class:</strong> 36 (-2 size, +15 Agy, +16 natural), touch 23, flat-footed 24</p><p><strong>Base Attack/Grapple:</strong> +30/+46</p><p><strong>Attack:</strong> Slam +44 melee (3d8+8 plus 3d6 fire)</p><p><strong>Full Attack:</strong> 2 slams +44 melee (3d8+8 plus 3d6 fire)</p><p><strong>Space/Reach:</strong> 15 ft./15 ft.</p><p><strong>Special Attacks:</strong> Burn (DC 38), ignite mana (DC 32), inferno, living bomb (DC 32)</p><p><strong>Special Qualities:</strong> Darkvision 60 ft., damage reduction 25/epic, damage reduction 20/-, fire subtype, spell resistance 40, elemental traits</p><p><strong>Saves:</strong> Fort +23, Ref +37, Will +16</p><p><strong>Abilities:</strong> Str 26, Agy 40, Sta 27, Int 10, Spt 12, Cha 14</p><p><strong>Skills:</strong> Concentration +18, Diplomacy +14, Intimidate +12, Listen +26, Sense Motive +11, Spot +26</p><p><strong>Feats:</strong> Bash, Blind-Fight, Cleave, Combat Reflexes, Dodge, Great Cleave, Great Fortitude, Improved Initiative, Improved Sunder, Iron Will, Mobility, Power Attack, Skilled (Listen and Spot), Spring Attack, Weapon Finesse, Weapon Focus (slam)</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 25,
+      "type": "Elemental"
+    },
+    "skills": {
+      "coc": {
+        "ability": "con",
+        "abilityModifier": 8,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 10,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 18,
+        "notes": "Printed total +18",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "dip": {
+        "ability": "cha",
+        "abilityModifier": 2,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 12,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 14,
+        "notes": "Printed total +14",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "int": {
+        "ability": "cha",
+        "abilityModifier": 2,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 10,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 12,
+        "notes": "Printed total +12",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "lis": {
+        "ability": "wis",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 25,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 26,
+        "notes": "Printed total +26",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "sen": {
+        "ability": "wis",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 10,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 11,
+        "notes": "Printed total +11",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spt": {
+        "ability": "wis",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 25,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 26,
+        "notes": "Printed total +26",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "huge",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Darkvision 60 ft., damage reduction 25/epic, damage reduction 20/-, fire subtype, spell resistance 40, elemental traits",
+      "size": "huge",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

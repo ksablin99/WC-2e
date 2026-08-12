@@ -107,17 +107,44 @@ test("Forsaken race marker ignores Stamina and uses fixed destroyed threshold", 
       states[hp] = {
         disabled: conditions.disabled,
         dying: conditions.dying,
+        down: conditions.down,
         dead: conditions.dead,
+        unconscious: conditions.unconscious,
       };
     }
 
     return { states };
   });
 
-  expect(result.states["0"]).toEqual({ disabled: true, dying: false, dead: false });
-  expect(result.states["-1"]).toEqual({ disabled: false, dying: true, dead: false });
-  expect(result.states["-9"]).toEqual({ disabled: false, dying: true, dead: false });
-  expect(result.states["-10"]).toEqual({ disabled: false, dying: false, dead: true });
+  expect(result.states["0"]).toEqual({ disabled: true, dying: false, down: false, dead: false, unconscious: false });
+  expect(result.states["-1"]).toEqual({ disabled: false, dying: false, down: true, dead: false, unconscious: true });
+  expect(result.states["-9"]).toEqual({ disabled: false, dying: false, down: true, dead: false, unconscious: true });
+  expect(result.states["-10"]).toEqual({ disabled: false, dying: false, down: false, dead: true, unconscious: true });
+});
+
+test("healing a dying Warcraft creature stabilizes it and later damage clears stable", async ({ page }) => {
+  const result = await page.evaluate(async () => {
+    const actor = await Actor.create({
+      name: "Warcraft Healing Stabilization Actor",
+      type: "character",
+      system: {
+        abilities: { con: { value: 14 } },
+        attributes: { deathRule: "warcraft", hp: { value: 10, max: 10 } },
+      },
+    });
+    await actor.update({ "system.attributes.hp.value": -5 });
+    await actor.update({ "system.attributes.hp.value": -4 });
+    const afterHealing = foundry.utils.deepClone(actor.system.attributes.conditions);
+    await actor.update({ "system.attributes.hp.value": -5 });
+    const afterDamage = actor.system.attributes.conditions;
+    return {
+      afterHealing: { stable: afterHealing.stable, dying: afterHealing.dying, unconscious: afterHealing.unconscious },
+      afterDamage: { stable: afterDamage.stable, dying: afterDamage.dying, unconscious: afterDamage.unconscious },
+    };
+  });
+
+  expect(result.afterHealing).toEqual({ stable: true, dying: false, unconscious: true });
+  expect(result.afterDamage).toEqual({ stable: false, dying: true, unconscious: true });
 });
 
 test("unmarked actors retain the legacy fixed -10 threshold", async ({ page }) => {
@@ -191,4 +218,68 @@ test("Warcraft constructs are destroyed at 0 HP and do not heal from rest", asyn
     dying: false,
     dead: true,
   });
+});
+
+test("construct creature type applies Warcraft destruction and size HP without an actor marker", async ({ page }) => {
+  const result = await page.evaluate(async () => {
+    const actor = await Actor.create({
+      name: "Generic Construct Rules Actor",
+      type: "npc",
+      system: {
+        traits: { size: "med" },
+        attributes: {
+          creatureType: "construct",
+          hd: { total: 2 },
+          hp: { value: 1, base: 9, max: 9 },
+        },
+      },
+    });
+    await actor.update({ "system.attributes.creatureType": "construct" });
+    await actor.update({ "system.attributes.hp.value": 0 });
+    return {
+      hpMax: actor.system.attributes.hp.max,
+      stamina: actor.system.abilities.con.total,
+      dead: actor.system.attributes.conditions.dead,
+      dying: actor.system.attributes.conditions.dying,
+      immunities: actor.system.traits.ci.custom,
+    };
+  });
+
+  expect(result.hpMax).toBeGreaterThanOrEqual(29);
+  expect(result.stamina).toBe(0);
+  expect(result).toMatchObject({ dead: true, dying: false });
+  expect(result.immunities).toContain("critical hits");
+  expect(result.immunities).toContain("necromancy effects");
+});
+
+test("generic undead creature type is destroyed at 0 and cannot recover naturally", async ({ page }) => {
+  const result = await page.evaluate(async () => {
+    const actor = await Actor.create({
+      name: "Generic Warcraft Undead Actor",
+      type: "npc",
+      system: {
+        attributes: {
+          creatureType: "undead",
+          deathRule: "warcraft",
+          hd: { total: 4 },
+          hp: { value: 1, base: 20, max: 20 },
+        },
+      },
+    });
+    await actor.update({ "system.attributes.creatureType": "undead" });
+    await actor.rest(true, false, false);
+    const hitPointsAfterRest = actor.system.attributes.hp.value;
+    await actor.update({ "system.attributes.hp.value": 0 });
+    return {
+      hitPointsAfterRest,
+      stamina: actor.system.abilities.con.total,
+      dead: actor.system.attributes.conditions.dead,
+      dying: actor.system.attributes.conditions.dying,
+      immunities: actor.system.traits.ci.custom,
+    };
+  });
+
+  expect(result).toMatchObject({ hitPointsAfterRest: 1, stamina: 0, dead: true, dying: false });
+  expect(result.immunities).toContain("ability drain");
+  expect(result.immunities).toContain("critical hits");
 });

@@ -1,0 +1,53 @@
+{
+  "_id": "a5a0f5235f38a16c",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "catalog": {
+        "category": "foodAndLodging",
+        "completeTableEntry": true,
+        "generated": true,
+        "status": "structured-table-data",
+        "tableValue": "2 cp; 1/2 lb."
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          202
+        ],
+        "printedPages": [
+          200
+        ],
+        "section": "Bread",
+        "verification": "table-extraction"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/item-bag.svg",
+  "name": "Bread",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "carried": true,
+    "description": {
+      "value": "<p><strong>Printed table value:</strong> 2 cp; 1/2 lb..</p>"
+    },
+    "hardness": 0,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "identified": true,
+    "identifiedName": "Bread",
+    "price": 0.02,
+    "quantity": 1,
+    "source": "World of Warcraft RPG, 2nd Edition, p. 200",
+    "subType": "gear",
+    "weight": 0.5
+  },
+  "type": "loot"
+}

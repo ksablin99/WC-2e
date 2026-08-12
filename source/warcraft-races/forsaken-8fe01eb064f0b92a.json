@@ -15,6 +15,36 @@
   "effects": [],
   "flags": {
     "warcraftrpg2e": {
+      "race": {
+        "automaticLanguages": [
+          "Common"
+        ],
+        "bonusLanguages": [
+          "Goblin",
+          "Low Common",
+          "Orcish",
+          "Thalassian"
+        ],
+        "proficiencies": [],
+        "favoredClass": [
+          "Warrior"
+        ],
+        "racialLevel": {
+          "available": true,
+          "name": "Forsaken",
+          "max": 3
+        },
+        "category": "player-race",
+        "size": "med",
+        "searchableTraits": [
+          "Common",
+          "Goblin",
+          "Low Common",
+          "Orcish",
+          "Thalassian",
+          "Favored class: Warrior"
+        ]
+      },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
         "file": "docs/World_of_Warcraft_2nd_Edition.pdf",

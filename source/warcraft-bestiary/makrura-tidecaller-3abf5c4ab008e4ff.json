@@ -1,0 +1,1302 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "df64869a21e427d1",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 1,
+                "die": 8,
+                "expression": "1d8",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Monstrous Humanoid Hit Dice (1d8 pool)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "high",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "22",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "2",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "14",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "9",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "14",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "8",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "-1",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "4",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "20",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "40",
+              "speed",
+              "swimSpeed",
+              "base-replace"
+            ],
+            [
+              "1",
+              "misc",
+              "init",
+              "untyped"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "monstrousHumanoid",
+          "damageReduction": [],
+          "hd": 8,
+          "hp": 0,
+          "levels": 1,
+          "maxLevel": 50,
+          "resistances": [],
+          "savingThrows": {
+            "fort": {
+              "value": "low"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "high"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 98"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "43a7e3768135e256",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 2,
+                "die": 8,
+                "expression": "2d8",
+                "index": 1
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Monstrous Humanoid Hit Dice (2d8 pool)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "high",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [],
+          "classType": "racial",
+          "creatureType": "monstrousHumanoid",
+          "damageReduction": [],
+          "hd": 8,
+          "hp": 0,
+          "levels": 2,
+          "maxLevel": 50,
+          "resistances": [],
+          "savingThrows": {
+            "fort": {
+              "value": "low"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "high"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 98"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "83f2817944b79b3d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                3
+              ],
+              "printedDamage": "1d6"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Claw",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "1",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Claw",
+          "damage": {
+            "parts": [
+              [
+                "1d6",
+                "Piercing or Slashing",
+                "damage-piercing-or-slashing"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Claw +3 melee (1d6).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "7e4064a9c87d0e5a",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 2,
+              "id": "83f2817944b79b3d",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Claw",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> 2 claws +3 melee (1d6).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "40f69f83f3d17778",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "Improved grab"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                98
+              ],
+              "section": "Makrura Tidecaller"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved grab",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Improved grab.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 98",
+          "uniqueId": "wc-monster-makrura-tidecaller-improved-grab"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "ac509eafd6e61da1",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "rebuke/command water elementals"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                98
+              ],
+              "section": "Makrura Tidecaller"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "rebuke/command water elementals",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> rebuke/command water elementals.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 98",
+          "uniqueId": "wc-monster-makrura-tidecaller-rebuke-command-water-elementals"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "36dc0bb5dfd99ed0",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Augur"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                98
+              ],
+              "section": "Makrura Tidecaller"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Augur",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Augur.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 98",
+          "uniqueId": "wc-monster-makrura-tidecaller-augur"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "bec0759358b2962e",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "channel positive energy"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                98
+              ],
+              "section": "Makrura Tidecaller"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "channel positive energy",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> channel positive energy.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 98",
+          "uniqueId": "wc-monster-makrura-tidecaller-channel-positive-energy"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "56d3bbc51d3779dc",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "darkvision 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                98
+              ],
+              "section": "Makrura Tidecaller"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "darkvision 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> darkvision 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 98",
+          "uniqueId": "wc-monster-makrura-tidecaller-darkvision-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "547e98189a3d3dcc",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Special Quality",
+              "raw": "Elements domain (lesser)"
+            },
+            "reference": {
+              "id": "fba6c967b5bf196b",
+              "name": "Elements Domain",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                98
+              ],
+              "section": "Makrura Tidecaller"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Elements domain (lesser)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Elements domain (lesser).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-spells.Item.fba6c967b5bf196b]{Elements Domain}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 98",
+          "uniqueId": "wc-monster-makrura-tidecaller-elements-domain-lesser"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "766955c28ed519c3",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "partially amphibious"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                98
+              ],
+              "section": "Makrura Tidecaller"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "partially amphibious",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> partially amphibious.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 98",
+          "uniqueId": "wc-monster-makrura-tidecaller-partially-amphibious"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "b71cb5ac47deff08",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "stability"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                98
+              ],
+              "section": "Makrura Tidecaller"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "stability",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> stability.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 98",
+          "uniqueId": "wc-monster-makrura-tidecaller-stability"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "ac01689e0e25e93c",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "unusual"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                98
+              ],
+              "section": "Makrura Tidecaller"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "unusual",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> unusual.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 98",
+          "uniqueId": "wc-monster-makrura-tidecaller-unusual"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "95ea1559d132353e",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Brew Potion"
+            },
+            "reference": {
+              "id": "6d5b9349090ff508",
+              "name": "Brew Potion",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                98
+              ],
+              "section": "Makrura Tidecaller"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Brew Potion",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Brew Potion.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.6d5b9349090ff508]{Brew Potion}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 98",
+          "uniqueId": "wc-monster-makrura-tidecaller-brew-potion"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "ba74cceae68c2d60",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Combat Casting"
+            },
+            "reference": {
+              "id": "03847eb6fa10c8be",
+              "name": "Combat Casting",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                98
+              ],
+              "section": "Makrura Tidecaller"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Combat Casting",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Combat Casting.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.03847eb6fa10c8be]{Combat Casting}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 98",
+          "uniqueId": "wc-monster-makrura-tidecaller-combat-casting"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "1f8cf075780e739d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Weapon Focus (claw)"
+            },
+            "reference": {
+              "id": "fdea42738398197e",
+              "name": "Weapon Focus",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                98
+              ],
+              "section": "Makrura Tidecaller"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Weapon Focus (claw)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Weapon Focus (claw).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.fdea42738398197e]{Weapon Focus}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 98",
+          "uniqueId": "wc-monster-makrura-tidecaller-weapon-focus-claw"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "747c86fc20ba48df",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Medium Monstrous Humanoid (Aquatic, Makrura); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "ad1ebed5dc963301",
+              "name": "Monstrous Humanoid Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                98
+              ],
+              "section": "Makrura Tidecaller"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Monstrous Humanoid Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Medium Monstrous Humanoid (Aquatic, Makrura); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.ad1ebed5dc963301]{Monstrous Humanoid Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 98",
+          "uniqueId": "wc-monster-makrura-tidecaller-monstrous-humanoid-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "3a72c5ac2033e0e8",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Aquatic subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "6c0304b7fc3424a3",
+              "name": "Aquatic Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                98
+              ],
+              "section": "Makrura Tidecaller"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Aquatic Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Aquatic subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.6c0304b7fc3424a3]{Aquatic Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 98",
+          "uniqueId": "wc-monster-makrura-tidecaller-aquatic-subtype-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "cd989499b0d2f2b0",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Makrura subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "de1b4ad4a49b70d2",
+              "name": "Makrura Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                98
+              ],
+              "section": "Makrura Tidecaller"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Makrura Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Makrura subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.de1b4ad4a49b70d2]{Makrura Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 98",
+          "uniqueId": "wc-monster-makrura-tidecaller-makrura-subtype-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "3abf5c4ab008e4ff",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 11, Agy 8, Sta 16, Int 11, Spt 15, Cha 10",
+          "Advancement": "By character class",
+          "Alignment": "Usually chaotic neutral",
+          "Area": "Any",
+          "Armor Class": "14 (-1 Agy, +5 natural), touch 9, flat-footed 14",
+          "Attack": "Claw +3 melee (1d6)",
+          "Base Attack/Grapple": "+2/+2",
+          "Challenge Rating": "3",
+          "Environment": "Warm aquatic",
+          "Feats": "Brew Potion B , Combat Casting, Weapon Focus (claw)",
+          "Full Attack": "2 claws +3 melee (1d6)",
+          "Hit Dice": "1d8+3 plus 2d8+6 (22 hp)",
+          "Initiative": "+0",
+          "Level Adjustment": "Use racial levels",
+          "Organization": "Solitary, pair, or patrol (1 and 3-7 makrura)",
+          "Saves": "Fort +8, Ref -1, Will +4",
+          "Skills": "Balance +3, Concentration +7, Listen +6, Spellcraft +4,",
+          "Space/Reach": "5 ft./5 ft.",
+          "Special Attacks": "Improved grab, rebuke/command water elementals,",
+          "Special Qualities": "Augur, channel positive energy, darkvision 60 ft., Elements domain (lesser), partially amphibious, stability, unusual",
+          "Speed": "20 ft. (4 squares), swim 40 ft.",
+          "Treasure": "Standard"
+        },
+        "rulesCoverage": {
+          "actor-defense": 0,
+          "linked-reference": 7,
+          "manual": 8
+        },
+        "subtypes": [
+          "Aquatic",
+          "Makrura"
+        ]
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          99
+        ],
+        "printedPages": [
+          98
+        ],
+        "section": "Makrura Tidecaller",
+        "verification": "native-text-table+review-override"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "df64869a21e427d1",
+    "43a7e3768135e256",
+    "83f2817944b79b3d",
+    "7e4064a9c87d0e5a",
+    "40f69f83f3d17778",
+    "ac509eafd6e61da1",
+    "36dc0bb5dfd99ed0",
+    "bec0759358b2962e",
+    "56d3bbc51d3779dc",
+    "547e98189a3d3dcc",
+    "766955c28ed519c3",
+    "b71cb5ac47deff08",
+    "ac01689e0e25e93c",
+    "95ea1559d132353e",
+    "ba74cceae68c2d60",
+    "1f8cf075780e739d",
+    "747c86fc20ba48df",
+    "3a72c5ac2033e0e8",
+    "cd989499b0d2f2b0"
+  ],
+  "name": "Makrura Tidecaller",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 3,
+        "origMod": 3,
+        "origTotal": 16,
+        "penalty": 0,
+        "total": 16,
+        "userPenalty": 0,
+        "value": 16
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -1,
+        "origMod": -1,
+        "origTotal": 8,
+        "penalty": 0,
+        "total": 8,
+        "userPenalty": 0,
+        "value": 8
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 11,
+        "penalty": 0,
+        "total": 11,
+        "userPenalty": 0,
+        "value": 11
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 11,
+        "penalty": 0,
+        "total": 11,
+        "userPenalty": 0,
+        "value": 11
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 2,
+        "origMod": 2,
+        "origTotal": 15,
+        "penalty": 0,
+        "total": 15,
+        "userPenalty": 0,
+        "value": 15
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 14,
+          "value": 0
+        },
+        "normal": {
+          "total": 14,
+          "value": 0
+        },
+        "touch": {
+          "total": 9,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 2,
+        "nonepic": 2,
+        "total": 2,
+        "value": 0
+      },
+      "cmb": {
+        "total": 2,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "monstrousHumanoid",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 0,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 3,
+        "total": 3
+      },
+      "hp": {
+        "base": 22,
+        "max": 22,
+        "min": -16,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 22
+      },
+      "init": {
+        "bonus": 0,
+        "total": 0,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 5,
+      "savingThrows": {
+        "fort": {
+          "base": 8,
+          "total": 8
+        },
+        "ref": {
+          "base": -1,
+          "total": -1
+        },
+        "will": {
+          "base": 4,
+          "total": 4
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": null,
+        "darkvision": 60,
+        "lowLight": false,
+        "lowLightMultiplier": null,
+        "tremorsense": null
+      },
+      "speed": {
+        "land": {
+          "base": 20,
+          "total": 20
+        },
+        "swim": {
+          "base": 40,
+          "total": 40
+        }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "Usually chaotic neutral",
+      "biography": {
+        "public": "",
+        "value": "<p>Makrura Tidecaller is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 3,
+      "environment": "Warm aquatic",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 3,
+        "value": 3
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 1d8+3 plus 2d8+6 (22 hp)</p><p><strong>Initiative:</strong> +0</p><p><strong>Speed:</strong> 20 ft. (4 squares), swim 40 ft.</p><p><strong>Armor Class:</strong> 14 (-1 Agy, +5 natural), touch 9, flat-footed 14</p><p><strong>Base Attack/Grapple:</strong> +2/+2</p><p><strong>Attack:</strong> Claw +3 melee (1d6)</p><p><strong>Full Attack:</strong> 2 claws +3 melee (1d6)</p><p><strong>Space/Reach:</strong> 5 ft./5 ft.</p><p><strong>Special Attacks:</strong> Improved grab, rebuke/command water elementals,</p><p><strong>Special Qualities:</strong> Augur, channel positive energy, darkvision 60 ft., Elements domain (lesser), partially amphibious, stability, unusual</p><p><strong>Saves:</strong> Fort +8, Ref -1, Will +4</p><p><strong>Abilities:</strong> Str 11, Agy 8, Sta 16, Int 11, Spt 15, Cha 10</p><p><strong>Skills:</strong> Balance +3, Concentration +7, Listen +6, Spellcraft +4,</p><p><strong>Feats:</strong> Brew Potion B , Combat Casting, Weapon Focus (claw)</p><p><strong>Area:</strong> Any</p><p><strong>Organization:</strong> Solitary, pair, or patrol (1 and 3-7 makrura)</p><p><strong>Treasure:</strong> Standard</p><p><strong>Advancement:</strong> By character class</p><p><strong>Level Adjustment:</strong> Use racial levels</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 3,
+      "type": "Monstrous Humanoid"
+    },
+    "skills": {
+      "blc": {
+        "ability": "dex",
+        "abilityModifier": -1,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 4,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 3,
+        "notes": "Printed total +3",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "coc": {
+        "ability": "con",
+        "abilityModifier": 3,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 4,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 7,
+        "notes": "Printed total +7",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "lis": {
+        "ability": "wis",
+        "abilityModifier": 2,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 4,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 6,
+        "notes": "Printed total +6",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spl": {
+        "ability": "int",
+        "abilityModifier": 0,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 4,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 4,
+        "notes": "Printed total +4",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "med",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Augur, channel positive energy, darkvision 60 ft., Elements domain (lesser), partially amphibious, stability, unusual",
+      "size": "med",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

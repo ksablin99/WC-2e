@@ -1,0 +1,1156 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "591abbb2076c08fe",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 1,
+                "die": 8,
+                "expression": "1d8",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Outsider Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "high",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "4",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "0",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "16",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "13",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "13",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "0",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "5",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "-2",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "30",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "outsider",
+          "damageReduction": [],
+          "hd": 8,
+          "hp": 0,
+          "levels": 1,
+          "maxLevel": 50,
+          "resistances": [],
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "high"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 117"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "6b06675aec9d82f0",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                3
+              ],
+              "printedDamage": "1d6+2/19-20"
+            },
+            "reference": {
+              "id": "0354daa0f3df7faf",
+              "name": "Short Sword",
+              "pack": "warcraftrpg2e.warcraft-equipment"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Short Sword",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 19,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "3",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Short sword",
+          "damage": {
+            "parts": [
+              [
+                "1d6+2",
+                "Piercing or Slashing",
+                "damage-piercing-or-slashing"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Short sword +3 melee (1d6+2/19-20).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": true,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "1858c7f4a2563694",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                3
+              ],
+              "printedDamage": "1d4+2"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Claws",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "3",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "claws",
+          "damage": {
+            "parts": [
+              [
+                "1d4+2",
+                "Piercing or Slashing",
+                "damage-piercing-or-slashing"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> claws +3 melee (1d4+2).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "97235a13ab122d29",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack - Short sword",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "6b06675aec9d82f0",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Short Sword",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> Short sword +3 melee (1d6+2/19-20).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "c4a873cec1ca1580",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack - 2 claws",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 2,
+              "id": "1858c7f4a2563694",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Claws",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> 2 claws +3 melee (1d4+2).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "c08c48aa26164771",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "Backstab +1d6"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                117
+              ],
+              "section": "Satyr"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Backstab +1d6",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Backstab +1d6.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 117",
+          "uniqueId": "wc-monster-satyr-backstab-1d6"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "092670bfef64ae77",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Darkvision 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                117
+              ],
+              "section": "Satyr"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Darkvision 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Darkvision 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 117",
+          "uniqueId": "wc-monster-satyr-darkvision-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "79b448a8853de91d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "satyr traits"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                117
+              ],
+              "section": "Satyr"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "satyr traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> satyr traits.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 117",
+          "uniqueId": "wc-monster-satyr-satyr-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "a15c739136f5dade",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Feat",
+              "raw": "W eapon Finesse"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                117
+              ],
+              "section": "Satyr"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "W eapon Finesse",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> W eapon Finesse.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 117",
+          "uniqueId": "wc-monster-satyr-w-eapon-finesse"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "d77d73f7680efda7",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Medium Outsider (Chaotic, Demon, Evil, Native); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "dd750e0d27b12249",
+              "name": "Outsider Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                117
+              ],
+              "section": "Satyr"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Outsider Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Medium Outsider (Chaotic, Demon, Evil, Native); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.dd750e0d27b12249]{Outsider Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 117",
+          "uniqueId": "wc-monster-satyr-outsider-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "185139d75bc87a12",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Chaotic subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "4af67d5314947ffd",
+              "name": "Chaotic Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                117
+              ],
+              "section": "Satyr"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Chaotic Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Chaotic subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.4af67d5314947ffd]{Chaotic Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 117",
+          "uniqueId": "wc-monster-satyr-chaotic-subtype-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "a12024fd5b726310",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Demon subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "29bc818a8721f188",
+              "name": "Demon Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                117
+              ],
+              "section": "Satyr"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Demon Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Demon subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.29bc818a8721f188]{Demon Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 117",
+          "uniqueId": "wc-monster-satyr-demon-subtype-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "a026e1898782151d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Evil subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "ad80f8e8725dc664",
+              "name": "Evil Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                117
+              ],
+              "section": "Satyr"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Evil Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Evil subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.ad80f8e8725dc664]{Evil Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 117",
+          "uniqueId": "wc-monster-satyr-evil-subtype-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "a92d8e6a2924881e",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Native subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "3f859feb0e33d4d0",
+              "name": "Native Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                117
+              ],
+              "section": "Satyr"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Native Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Native subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.3f859feb0e33d4d0]{Native Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 117",
+          "uniqueId": "wc-monster-satyr-native-subtype-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "a886314dc436b33e",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 14, Agy 17, Sta 10, Int 12, Spt 6, Cha 11",
+          "Advancement": "By character class",
+          "Alignment": "Usually chaotic evil",
+          "Area": "Ashenvale, Azshara, Darkshore, Desolace, Felwood",
+          "Armor Class": "16 (+3 Agy, +3 studded leather), touch 13, flat- footed 13",
+          "Attack": "Short sword +3 melee (1d6+2/19-20)",
+          "Base Attack/Grapple": "+0/+2",
+          "Challenge Rating": "1",
+          "Environment": "Temperate forest",
+          "Feats": "W eapon Finesse",
+          "Full Attack": "Short sword +3 melee (1d6+2/19-20) or 2 claws +3 melee (1d4+2)",
+          "Hit Dice": "1d8 (4 hp)",
+          "Initiative": "+3",
+          "Level Adjustment": "Use racial levels",
+          "Organization": "Solitary, pair, gang (4-7), or war party (9-16 satyrs, four 5th-level rogues, three 6th-level spellcasters, and one 10th-level assassin leader)",
+          "Saves": "Fort +0, Ref +5, Will -2",
+          "Skills": "Bluff +4, Knowledge (nature) +7, Stealth +11, Survival +4, Tumble +7",
+          "Space/Reach": "5 ft./5 ft.",
+          "Special Attacks": "Backstab +1d6",
+          "Special Qualities": "Darkvision 60 ft., satyr traits",
+          "Speed": "30 ft. (6 squares)",
+          "Treasure": "Standard"
+        },
+        "rulesCoverage": {
+          "actor-defense": 0,
+          "linked-reference": 5,
+          "manual": 4
+        },
+        "subtypes": [
+          "Chaotic",
+          "Demon",
+          "Evil",
+          "Native"
+        ]
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          118
+        ],
+        "printedPages": [
+          117
+        ],
+        "section": "Satyr",
+        "verification": "native-text-table"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "591abbb2076c08fe",
+    "6b06675aec9d82f0",
+    "1858c7f4a2563694",
+    "97235a13ab122d29",
+    "c4a873cec1ca1580",
+    "c08c48aa26164771",
+    "092670bfef64ae77",
+    "79b448a8853de91d",
+    "a15c739136f5dade",
+    "d77d73f7680efda7",
+    "185139d75bc87a12",
+    "a12024fd5b726310",
+    "a026e1898782151d",
+    "a92d8e6a2924881e"
+  ],
+  "name": "Satyr",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 11,
+        "penalty": 0,
+        "total": 11,
+        "userPenalty": 0,
+        "value": 11
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 3,
+        "origMod": 3,
+        "origTotal": 17,
+        "penalty": 0,
+        "total": 17,
+        "userPenalty": 0,
+        "value": 17
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 12,
+        "penalty": 0,
+        "total": 12,
+        "userPenalty": 0,
+        "value": 12
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 2,
+        "origMod": 2,
+        "origTotal": 14,
+        "penalty": 0,
+        "total": 14,
+        "userPenalty": 0,
+        "value": 14
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -2,
+        "origMod": -2,
+        "origTotal": 6,
+        "penalty": 0,
+        "total": 6,
+        "userPenalty": 0,
+        "value": 6
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 13,
+          "value": 0
+        },
+        "normal": {
+          "total": 16,
+          "value": 0
+        },
+        "touch": {
+          "total": 13,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 0,
+        "nonepic": 0,
+        "total": 0,
+        "value": 0
+      },
+      "cmb": {
+        "total": 2,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "outsider",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 0,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 1,
+        "total": 1
+      },
+      "hp": {
+        "base": 4,
+        "max": 4,
+        "min": -10,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 4
+      },
+      "init": {
+        "bonus": 0,
+        "total": 3,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 0,
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "total": 0
+        },
+        "ref": {
+          "base": 5,
+          "total": 5
+        },
+        "will": {
+          "base": -2,
+          "total": -2
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": null,
+        "darkvision": 60,
+        "lowLight": false,
+        "lowLightMultiplier": null,
+        "tremorsense": null
+      },
+      "speed": {
+        "land": {
+          "base": 30,
+          "total": 30
+        }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "Usually chaotic evil",
+      "biography": {
+        "public": "",
+        "value": "<p>Satyr is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 1,
+      "environment": "Temperate forest",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 1,
+        "value": 1
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 1d8 (4 hp)</p><p><strong>Initiative:</strong> +3</p><p><strong>Speed:</strong> 30 ft. (6 squares)</p><p><strong>Armor Class:</strong> 16 (+3 Agy, +3 studded leather), touch 13, flat- footed 13</p><p><strong>Base Attack/Grapple:</strong> +0/+2</p><p><strong>Attack:</strong> Short sword +3 melee (1d6+2/19-20)</p><p><strong>Full Attack:</strong> Short sword +3 melee (1d6+2/19-20) or 2 claws +3 melee (1d4+2)</p><p><strong>Space/Reach:</strong> 5 ft./5 ft.</p><p><strong>Special Attacks:</strong> Backstab +1d6</p><p><strong>Special Qualities:</strong> Darkvision 60 ft., satyr traits</p><p><strong>Saves:</strong> Fort +0, Ref +5, Will -2</p><p><strong>Abilities:</strong> Str 14, Agy 17, Sta 10, Int 12, Spt 6, Cha 11</p><p><strong>Skills:</strong> Bluff +4, Knowledge (nature) +7, Stealth +11, Survival +4, Tumble +7</p><p><strong>Feats:</strong> W eapon Finesse</p><p><strong>Area:</strong> Ashenvale, Azshara, Darkshore, Desolace, Felwood</p><p><strong>Organization:</strong> Solitary, pair, gang (4-7), or war party (9-16 satyrs, four 5th-level rogues, three 6th-level spellcasters, and one 10th-level assassin leader)</p><p><strong>Treasure:</strong> Standard</p><p><strong>Advancement:</strong> By character class</p><p><strong>Level Adjustment:</strong> Use racial levels</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 1,
+      "type": "Outsider"
+    },
+    "skills": {
+      "blf": {
+        "ability": "cha",
+        "abilityModifier": 0,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 4,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 4,
+        "notes": "Printed total +4",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "hid": {
+        "ability": "dex",
+        "abilityModifier": 3,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 8,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 11,
+        "notes": "Printed total +11",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "kna": {
+        "ability": "int",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 6,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 7,
+        "notes": "Printed total +7",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "sur": {
+        "ability": "wis",
+        "abilityModifier": -2,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 6,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 4,
+        "notes": "Printed total +4",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "tmb": {
+        "ability": "dex",
+        "abilityModifier": 3,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 4,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 7,
+        "notes": "Printed total +7",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "med",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Darkvision 60 ft., satyr traits",
+      "size": "med",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

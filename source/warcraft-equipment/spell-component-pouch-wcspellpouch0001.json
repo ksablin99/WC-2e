@@ -3,6 +3,11 @@
   "effects": [],
   "flags": {
     "warcraftrpg2e": {
+      "catalog": {
+        "category": "tools",
+        "completeTableEntry": true,
+        "generated": false
+      },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
         "pages": "198-200",

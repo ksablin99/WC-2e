@@ -1,0 +1,1002 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "4b364ff4c0f7759a",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 6,
+                "die": 8,
+                "expression": "6d8",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Animal Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "med",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "54",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "4",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "16",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "12",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "13",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "11",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "8",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "3",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "20",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "40",
+              "speed",
+              "swimSpeed",
+              "base-replace"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "animal",
+          "damageReduction": [],
+          "hd": 8,
+          "hp": 0,
+          "levels": 6,
+          "maxLevel": 50,
+          "resistances": [],
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "low"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 30"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "f3e274d354d92fac",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                7
+              ],
+              "printedDamage": "1d10+6"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Bite",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "4",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Bite",
+          "damage": {
+            "parts": [
+              [
+                "1d10+6",
+                "Piercing or Bludgeoning",
+                "damage-piercing-bludgeoning"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Bite +7 melee (1d10+6).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "118f68865d198c22",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "f3e274d354d92fac",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Bite",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> Bite +7 melee (1d10+6).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "19ef48015688fb38",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Low-light vision"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                30
+              ],
+              "section": "Threshadon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Low-light vision",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Low-light vision.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 30",
+          "uniqueId": "wc-monster-threshadon-low-light-vision"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "48c1900d23914269",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "scent Fort +11"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                30
+              ],
+              "section": "Threshadon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "scent Fort +11",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> scent Fort +11.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 30",
+          "uniqueId": "wc-monster-threshadon-scent-fort-11"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "6fff15248042f0ca",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Ref +8"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                30
+              ],
+              "section": "Threshadon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Ref +8",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Ref +8.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 30",
+          "uniqueId": "wc-monster-threshadon-ref-8"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "09e83aa2a3b51866",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Will +3"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                30
+              ],
+              "section": "Threshadon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Will +3",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Will +3.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 30",
+          "uniqueId": "wc-monster-threshadon-will-3"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "2ab4ae961227669b",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Dodge"
+            },
+            "reference": {
+              "id": "7d08b8436a8b4167",
+              "name": "Dodge",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                30
+              ],
+              "section": "Threshadon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Dodge",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Dodge.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.7d08b8436a8b4167]{Dodge}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 30",
+          "uniqueId": "wc-monster-threshadon-dodge"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "ea18cc4259f4ff31",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Great Fortitude"
+            },
+            "reference": {
+              "id": "66a59a40dae0fed6",
+              "name": "Great Fortitude",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                30
+              ],
+              "section": "Threshadon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Great Fortitude",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Great Fortitude.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.66a59a40dae0fed6]{Great Fortitude}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 30",
+          "uniqueId": "wc-monster-threshadon-great-fortitude"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "c14937ab4b96d5f1",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Toughness"
+            },
+            "reference": {
+              "id": "9a692fe6b110d94b",
+              "name": "Toughness",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                30
+              ],
+              "section": "Threshadon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Toughness",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Toughness.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.9a692fe6b110d94b]{Toughness}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 30",
+          "uniqueId": "wc-monster-threshadon-toughness"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "17fd577efd1a56fc",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Large Animal (Aquatic); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "d0b085906e7933d3",
+              "name": "Animal Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                30
+              ],
+              "section": "Threshadon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Animal Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Large Animal (Aquatic); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.d0b085906e7933d3]{Animal Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 30",
+          "uniqueId": "wc-monster-threshadon-animal-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "d489befaa90550cc",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Aquatic subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "6c0304b7fc3424a3",
+              "name": "Aquatic Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                30
+              ],
+              "section": "Threshadon"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Aquatic Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Aquatic subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.6c0304b7fc3424a3]{Aquatic Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 30",
+          "uniqueId": "wc-monster-threshadon-aquatic-subtype-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "90afbd2d2c22354c",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 18, Agy 17, Sta 18, Int 2, Spt 13, Cha 9",
+          "Advancement": "7-9 HD (Large); 10-22 HD (Huge); 23-30 HD (Gargantuan)",
+          "Alignment": "Always neutral",
+          "Area": "Darkshore, Loch Modan",
+          "Armor Class": "16 (-1 size, +3 Agy, +4 natural), touch 12, flat- footed 13",
+          "Attack": "Bite +7 melee (1d10+6)",
+          "Base Attack/Grapple": "+4/+12",
+          "Challenge Rating": "4",
+          "Environment": "Warm aquatic",
+          "Feats": "Dodge, Great Fortitude, Toughness",
+          "Full Attack": "Bite +7 melee (1d10+6)",
+          "Hit Dice": "6d8+24+3 (54 hp)",
+          "Initiative": "+3",
+          "Level Adjustment": "-",
+          "Organization": "Solitary, pair, or school (5-8)",
+          "Saves": "Fort +11, Ref +8, Will +3",
+          "Skills": "Listen +5, Spot +5, Stealth +4 (+0 hiding)*, Swim +12",
+          "Space/Reach": "10 ft./10 ft.",
+          "Special Attacks": "-",
+          "Special Qualities": "Low-light vision, scent Fort +11, Ref +8, Will +3",
+          "Speed": "20 ft. (4 squares), swim 40 ft.",
+          "Treasure": "None"
+        },
+        "rulesCoverage": {
+          "actor-defense": 0,
+          "linked-reference": 5,
+          "manual": 4
+        },
+        "subtypes": [
+          "Aquatic"
+        ]
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          31
+        ],
+        "printedPages": [
+          30
+        ],
+        "section": "Threshadon",
+        "verification": "native-text-table+review-override"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "4b364ff4c0f7759a",
+    "f3e274d354d92fac",
+    "118f68865d198c22",
+    "19ef48015688fb38",
+    "48c1900d23914269",
+    "6fff15248042f0ca",
+    "09e83aa2a3b51866",
+    "2ab4ae961227669b",
+    "ea18cc4259f4ff31",
+    "c14937ab4b96d5f1",
+    "17fd577efd1a56fc",
+    "d489befaa90550cc"
+  ],
+  "name": "Threshadon",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -1,
+        "origMod": -1,
+        "origTotal": 9,
+        "penalty": 0,
+        "total": 9,
+        "userPenalty": 0,
+        "value": 9
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 4,
+        "origMod": 4,
+        "origTotal": 18,
+        "penalty": 0,
+        "total": 18,
+        "userPenalty": 0,
+        "value": 18
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 3,
+        "origMod": 3,
+        "origTotal": 17,
+        "penalty": 0,
+        "total": 17,
+        "userPenalty": 0,
+        "value": 17
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -4,
+        "origMod": -4,
+        "origTotal": 2,
+        "penalty": 0,
+        "total": 2,
+        "userPenalty": 0,
+        "value": 2
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 4,
+        "origMod": 4,
+        "origTotal": 18,
+        "penalty": 0,
+        "total": 18,
+        "userPenalty": 0,
+        "value": 18
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 13,
+        "penalty": 0,
+        "total": 13,
+        "userPenalty": 0,
+        "value": 13
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 13,
+          "value": 0
+        },
+        "normal": {
+          "total": 16,
+          "value": 0
+        },
+        "touch": {
+          "total": 12,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 4,
+        "nonepic": 4,
+        "total": 4,
+        "value": 0
+      },
+      "cmb": {
+        "total": 12,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "animal",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 0,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 6,
+        "total": 6
+      },
+      "hp": {
+        "base": 54,
+        "max": 54,
+        "min": -18,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 54
+      },
+      "init": {
+        "bonus": 0,
+        "total": 3,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 4,
+      "savingThrows": {
+        "fort": {
+          "base": 11,
+          "total": 11
+        },
+        "ref": {
+          "base": 8,
+          "total": 8
+        },
+        "will": {
+          "base": 3,
+          "total": 3
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": null,
+        "darkvision": null,
+        "lowLight": true,
+        "lowLightMultiplier": 2,
+        "tremorsense": null
+      },
+      "speed": {
+        "land": {
+          "base": 20,
+          "total": 20
+        },
+        "swim": {
+          "base": 40,
+          "total": 40
+        }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "Always neutral",
+      "biography": {
+        "public": "",
+        "value": "<p>Threshadon is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 4,
+      "environment": "Warm aquatic",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 6,
+        "value": 6
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 6d8+24+3 (54 hp)</p><p><strong>Initiative:</strong> +3</p><p><strong>Speed:</strong> 20 ft. (4 squares), swim 40 ft.</p><p><strong>Armor Class:</strong> 16 (-1 size, +3 Agy, +4 natural), touch 12, flat- footed 13</p><p><strong>Base Attack/Grapple:</strong> +4/+12</p><p><strong>Attack:</strong> Bite +7 melee (1d10+6)</p><p><strong>Full Attack:</strong> Bite +7 melee (1d10+6)</p><p><strong>Space/Reach:</strong> 10 ft./10 ft.</p><p><strong>Special Attacks:</strong> -</p><p><strong>Special Qualities:</strong> Low-light vision, scent Fort +11, Ref +8, Will +3</p><p><strong>Saves:</strong> Fort +11, Ref +8, Will +3</p><p><strong>Abilities:</strong> Str 18, Agy 17, Sta 18, Int 2, Spt 13, Cha 9</p><p><strong>Skills:</strong> Listen +5, Spot +5, Stealth +4 (+0 hiding)*, Swim +12</p><p><strong>Feats:</strong> Dodge, Great Fortitude, Toughness</p><p><strong>Area:</strong> Darkshore, Loch Modan</p><p><strong>Organization:</strong> Solitary, pair, or school (5-8)</p><p><strong>Treasure:</strong> None</p><p><strong>Advancement:</strong> 7-9 HD (Large); 10-22 HD (Huge); 23-30 HD (Gargantuan)</p><p><strong>Level Adjustment:</strong> -</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 4,
+      "type": "Animal"
+    },
+    "skills": {
+      "hid": {
+        "ability": "dex",
+        "abilityModifier": 3,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 1,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 4,
+        "notes": "Printed total +4 (+0 hiding)*",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "lis": {
+        "ability": "wis",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 4,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 5,
+        "notes": "Printed total +5",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spt": {
+        "ability": "wis",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 4,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 5,
+        "notes": "Printed total +5",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "swm": {
+        "ability": "str",
+        "abilityModifier": 4,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 8,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 12,
+        "notes": "Printed total +12",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "lg",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Low-light vision, scent Fort +11, Ref +8, Will +3",
+      "size": "lg",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

@@ -1,0 +1,46 @@
+{
+  "_embedded": {},
+  "_id": "bad386a60fc50a7d",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "creatureRule": {
+        "kind": "template",
+        "reusable": true
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          96,
+          97,
+          98
+        ],
+        "printedPages": [
+          95,
+          96,
+          97
+        ],
+        "section": "Lich Template",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/aura.svg",
+  "name": "Lich Template",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilityType": "nat",
+    "description": {
+      "value": "<p>Acquired undead spellcaster template. Apply undead traits, natural armor, touch attack, fear, paralyzing touch, spellcasting retention, phylactery, and challenge adjustment from printed pages 95-97.</p><p>This reusable record defines shared conversion behavior. Individual actors carry exact printed exceptions and totals.</p>"
+    },
+    "featType": "trait",
+    "source": "World of Warcraft: Monster Guide, pp. 95-96-97",
+    "uniqueId": "wc-creature-rule-lich-template"
+  },
+  "type": "feat"
+}

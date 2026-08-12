@@ -1,0 +1,1694 @@
+[
+  {
+    "name": "Armor Proficiency (Heavy)",
+    "category": "General",
+    "prerequisite": "Armor Profi ciency (light), Armor Proficiency (medium).",
+    "summarySource": "See Armor Proficiency (light).",
+    "pdfPages": [
+      144
+    ],
+    "printedPages": [
+      142
+    ]
+  },
+  {
+    "name": "Armor Proficiency (Light)",
+    "category": "General",
+    "prerequisite": "",
+    "summarySource": "When you wear a type of armor with which you are profi cient, the armor check penalty for that armor applies only on Balance, Climb, Escape Artist, Jump, Sleight of Hand, Stealth and Tumble checks.",
+    "pdfPages": [
+      144
+    ],
+    "printedPages": [
+      142
+    ]
+  },
+  {
+    "name": "Armor Proficiency (Medium)",
+    "category": "General",
+    "prerequisite": "Armor Proficiency (light).",
+    "summarySource": "See Armor Proficiency (light).",
+    "pdfPages": [
+      144
+    ],
+    "printedPages": [
+      142
+    ]
+  },
+  {
+    "name": "Augment Summoning",
+    "category": "General",
+    "prerequisite": "Spell Focus (conjuration).",
+    "summarySource": "Each creature you conjure with any summon spell gains a +4 enhancement bonus to Strength and Stamina for the duration of the spell that summoned it.",
+    "pdfPages": [
+      144
+    ],
+    "printedPages": [
+      142
+    ]
+  },
+  {
+    "name": "Bash",
+    "category": "General",
+    "prerequisite": "Str 13, Power Attack, base attack bonus +4.",
+    "summarySource": "Y ou may attempt a Bash as a full attack action with a bludgeoning weapon.",
+    "pdfPages": [
+      144
+    ],
+    "printedPages": [
+      142
+    ]
+  },
+  {
+    "name": "Battle Language",
+    "category": "General",
+    "prerequisite": "Bluff 3 ranks.",
+    "summarySource": "Y ou may use the aid another action at a distance of up to 30 feet.",
+    "pdfPages": [
+      144
+    ],
+    "printedPages": [
+      142
+    ]
+  },
+  {
+    "name": "Battle Shout",
+    "category": "Shout",
+    "prerequisite": "",
+    "summarySource": "When you deliver a Battle Shout, you and all allies within 30 feet gain a +2 morale bonus on damage rolls.",
+    "pdfPages": [
+      144
+    ],
+    "printedPages": [
+      142
+    ]
+  },
+  {
+    "name": "Blind-Fight",
+    "category": "General",
+    "prerequisite": "",
+    "summarySource": "In melee, every time you miss because of concealment, you can reroll your miss chance one time to see if you actually hit.",
+    "pdfPages": [
+      144
+    ],
+    "printedPages": [
+      142
+    ]
+  },
+  {
+    "name": "Block Spell",
+    "category": "Metamagic",
+    "prerequisite": "Iron Will, Magic Energy Control, caster level 5th.",
+    "summarySource": "When you are the target of a spell, you may disrupt the casting and counter its effects.",
+    "pdfPages": [
+      145
+    ],
+    "printedPages": [
+      143
+    ]
+  },
+  {
+    "name": "Bloodletter",
+    "category": "General",
+    "prerequisite": "Base attack bonus +3.",
+    "summarySource": "When you score a critical hit against an opponent in melee, you also cause a bleeding wound.",
+    "pdfPages": [
+      145
+    ],
+    "printedPages": [
+      143
+    ]
+  },
+  {
+    "name": "Brew Potion",
+    "category": "Item Creation",
+    "prerequisite": "Caster level 3rd.",
+    "summarySource": "Y ou can create a potion of any 3rd-level or lower spell that you know and that targets one or more creatures.",
+    "pdfPages": [
+      145
+    ],
+    "printedPages": [
+      143
+    ]
+  },
+  {
+    "name": "Brilliant Leadership",
+    "category": "Metamagic",
+    "prerequisite": "Leadership, able to cast 3rd-level spells.",
+    "summarySource": "",
+    "pdfPages": [
+      145
+    ],
+    "printedPages": [
+      143
+    ]
+  },
+  {
+    "name": "Careful Strike",
+    "category": "General",
+    "prerequisite": "Spt 13",
+    "summarySource": "Y ou can spend a move action studying your target, which can be no more than 30 feet away.",
+    "pdfPages": [
+      146
+    ],
+    "printedPages": [
+      144
+    ]
+  },
+  {
+    "name": "Challenging Shout",
+    "category": "Shout",
+    "prerequisite": "",
+    "summarySource": "All opponents adjacent to you must attempt Will saves (DC 10 + half your character level + your Charisma modifier).",
+    "pdfPages": [
+      146
+    ],
+    "printedPages": [
+      144
+    ]
+  },
+  {
+    "name": "Cleave",
+    "category": "General",
+    "prerequisite": "Str 13, Power Attack.",
+    "summarySource": "If you deal a creature enough damage to make it drop (typically by dropping it below a number of negative hit points equal to its Stamina modifier, or by killing it), you get an immediate, extra melee attack against another creature within reach.",
+    "pdfPages": [
+      146
+    ],
+    "printedPages": [
+      144
+    ]
+  },
+  {
+    "name": "Close Shot",
+    "category": "General",
+    "prerequisite": "Agy 13, Dodge, Point Blank Shot, Precise Shot, base attack bonus +4.",
+    "summarySource": "While in melee combat you may fi re a ranged weapon without provoking an attack of opportunity.",
+    "pdfPages": [
+      146
+    ],
+    "printedPages": [
+      144
+    ]
+  },
+  {
+    "name": "Collective Fury",
+    "category": "Shout",
+    "prerequisite": "Cha 13, ability to rage, Intimidating Shout, Leadership.",
+    "summarySource": "When you enter a rage, all other characters within 30 feet gain the Intimidating Shout feat until you exit your rage, but they can only use the feat if they are raging.",
+    "pdfPages": [
+      146
+    ],
+    "printedPages": [
+      144
+    ]
+  },
+  {
+    "name": "Combat Casting",
+    "category": "General",
+    "prerequisite": "",
+    "summarySource": "Y ou receive a +4 bonus on Concentration checks made to cast spells or use spell-like abilities while on the defensive or while you are grappling or pinned.",
+    "pdfPages": [
+      146
+    ],
+    "printedPages": [
+      144
+    ]
+  },
+  {
+    "name": "Combat Expertise",
+    "category": "General",
+    "prerequisite": "Int 13.",
+    "summarySource": "When you use the attack or full attack action in melee, you can take a penalty of as much as -5 on your attack roll and the same number (+5 or less) as a dodge bonus to your AC.",
+    "pdfPages": [
+      146
+    ],
+    "printedPages": [
+      144
+    ]
+  },
+  {
+    "name": "Combat Reflexes",
+    "category": "General",
+    "prerequisite": "",
+    "summarySource": "Y ou may make a number of additional attacks of opportunity equal to you Agility bonus.",
+    "pdfPages": [
+      146
+    ],
+    "printedPages": [
+      144
+    ]
+  },
+  {
+    "name": "Counterattack",
+    "category": "General",
+    "prerequisite": "Agy 13, Dodge.",
+    "summarySource": "Once per round, if the opponent you have designated as your Dodge target (see the Dodge feat)",
+    "pdfPages": [
+      146
+    ],
+    "printedPages": [
+      144
+    ]
+  },
+  {
+    "name": "Craft Magic Arms and Armor",
+    "category": "Item Creation",
+    "prerequisite": "Caster level 5th.",
+    "summarySource": "Y ou can create any magic weapon, armor or shield for which you meet the prerequisites.",
+    "pdfPages": [
+      147
+    ],
+    "printedPages": [
+      145
+    ]
+  },
+  {
+    "name": "Craft Rod",
+    "category": "Item Creation",
+    "prerequisite": "Caster level 9th.",
+    "summarySource": "Y ou can create any rod for which you meet the prerequisites.",
+    "pdfPages": [
+      147
+    ],
+    "printedPages": [
+      145
+    ]
+  },
+  {
+    "name": "Craft Staff",
+    "category": "Item Creation",
+    "prerequisite": "Caster level 12th.",
+    "summarySource": "Y ou can create any staff for which you meet the prerequisites.",
+    "pdfPages": [
+      147
+    ],
+    "printedPages": [
+      145
+    ]
+  },
+  {
+    "name": "Craft Wand",
+    "category": "Item Creation",
+    "prerequisite": "Caster level 5th.",
+    "summarySource": "Y ou can create a wand of any 4th-level or lower spell that you know.",
+    "pdfPages": [
+      148
+    ],
+    "printedPages": [
+      146
+    ]
+  },
+  {
+    "name": "Craft Wondrous Item",
+    "category": "Item Creation",
+    "prerequisite": "Caster level 3rd.",
+    "summarySource": "Y ou can create any wondrous item for which you meet the prerequisites.",
+    "pdfPages": [
+      148
+    ],
+    "printedPages": [
+      146
+    ]
+  },
+  {
+    "name": "Crafty Leader",
+    "category": "Technology",
+    "prerequisite": "Craft (any) 6 ranks.",
+    "summarySource": "When you are assisted in a Craft check by at least three other people who each have at least 1 rank in the same Craft skill, each assistant who succeeds at her check to assist you grants you a +4 bonus instead of the normal +2.",
+    "pdfPages": [
+      148
+    ],
+    "printedPages": [
+      146
+    ]
+  },
+  {
+    "name": "Defend",
+    "category": "General",
+    "prerequisite": "Shield Proficiency, base attack bonus +2.",
+    "summarySource": "When you use a shield larger than a buckler, any ally within 5 feet who is not using a shield gains a +1 shield bonus to his AC.",
+    "pdfPages": [
+      148
+    ],
+    "printedPages": [
+      146
+    ]
+  },
+  {
+    "name": "Deflect Arrows",
+    "category": "General",
+    "prerequisite": "Agy 13, Improved Unarmed Strike.",
+    "summarySource": "Y ou must have at least one hand free (holding nothing) to use this feat.",
+    "pdfPages": [
+      148
+    ],
+    "printedPages": [
+      146
+    ]
+  },
+  {
+    "name": "Deflect Spell",
+    "category": "Metamagic",
+    "prerequisite": "Block Spell, Iron Will, Magic Energy Control, Mirror Spell, Reflect Spell, caster level 9th.",
+    "summarySource": "When you successfully counter a spell, instead of dismissing it entirely, you may choose a new target for the spell.",
+    "pdfPages": [
+      148
+    ],
+    "printedPages": [
+      146
+    ]
+  },
+  {
+    "name": "Delay Malfunction",
+    "category": "Technology",
+    "prerequisite": "",
+    "summarySource": "When a device malfunctions, you may attempt a Craft (technological device) check (DC = 15 + the device's MR).",
+    "pdfPages": [
+      148
+    ],
+    "printedPages": [
+      146
+    ]
+  },
+  {
+    "name": "Demoralizing Shout",
+    "category": "Shout",
+    "prerequisite": "",
+    "summarySource": "When you make a Demoralizing Shout, each opponent within 30 feet takes a <2 morale penalty on damage rolls.",
+    "pdfPages": [
+      149
+    ],
+    "printedPages": [
+      147
+    ]
+  },
+  {
+    "name": "Devoted Leadership",
+    "category": "General",
+    "prerequisite": "Cha 13, Spt 13, Leadership.",
+    "summarySource": "Y our followers who are within 30 feet of you gain a +1 morale bonus on all saving throws.",
+    "pdfPages": [
+      149
+    ],
+    "printedPages": [
+      147
+    ]
+  },
+  {
+    "name": "Dodge",
+    "category": "General",
+    "prerequisite": "Agy 13.",
+    "summarySource": "During your action, you designate an opponent and receive a +1 dodge bonus to AC against attacks from that opponent.",
+    "pdfPages": [
+      149
+    ],
+    "printedPages": [
+      147
+    ]
+  },
+  {
+    "name": "Drums of Courage",
+    "category": "General",
+    "prerequisite": "Perform (percussion instruments) 5 ranks.",
+    "summarySource": "With a good set of drums, you can inspire courage in your allies.",
+    "pdfPages": [
+      149
+    ],
+    "printedPages": [
+      147
+    ]
+  },
+  {
+    "name": "Emergency Repair",
+    "category": "Technology",
+    "prerequisite": "Spt 13, Delay Malfunction.",
+    "summarySource": "As a full-round action, you may make a Craft (technological device) check to repair a malfunctioning or broken technological device.",
+    "pdfPages": [
+      149
+    ],
+    "printedPages": [
+      147
+    ]
+  },
+  {
+    "name": "Empower Spell",
+    "category": "Metamagic",
+    "prerequisite": "",
+    "summarySource": "All variable, numeric effects of an empowered spell are increased by half.",
+    "pdfPages": [
+      149
+    ],
+    "printedPages": [
+      147
+    ]
+  },
+  {
+    "name": "Endurance",
+    "category": "General",
+    "prerequisite": "",
+    "summarySource": "Y ou gain a +4 bonus on the following checks and saves: Swim checks made to resist nonlethal damage; Stamina checks made to continue running; Stamina checks made to avoid nonlethal damage from a forced march; Stamina checks made to hold your breath; Stamina checks made to avoid nonlethal damage from starvation or thirst; Fortitude saves made to avoid nonlethal damage from hot or cold environments; Fortitude saves mad",
+    "pdfPages": [
+      149
+    ],
+    "printedPages": [
+      147
+    ]
+  },
+  {
+    "name": "Enduring Leadership",
+    "category": "General",
+    "prerequisite": "Endurance, Leadership.",
+    "summarySource": "Once per day as a free action, you may inspire your followers to exceptional efforts.",
+    "pdfPages": [
+      149
+    ],
+    "printedPages": [
+      147
+    ]
+  },
+  {
+    "name": "Enlarge Spell",
+    "category": "Metamagic",
+    "prerequisite": "",
+    "summarySource": "Y ou can alter a spell with a range of close, medium or long to increase its range by 100%.",
+    "pdfPages": [
+      149
+    ],
+    "printedPages": [
+      147
+    ]
+  },
+  {
+    "name": "Eschew Materials",
+    "category": "General",
+    "prerequisite": "",
+    "summarySource": "Y ou can cast any spell that has a material component costing 1 gp or less without needing that component.",
+    "pdfPages": [
+      150
+    ],
+    "printedPages": [
+      148
+    ]
+  },
+  {
+    "name": "Exotic Weapon Proficiency",
+    "category": "General",
+    "prerequisite": "Base attack bonus +1.",
+    "summarySource": "Y ou make attack rolls with the weapon normally.",
+    "pdfPages": [
+      150
+    ],
+    "printedPages": [
+      148
+    ]
+  },
+  {
+    "name": "Expert Rider",
+    "category": "General",
+    "prerequisite": "Agy 13, Ride 4 ranks.",
+    "summarySource": "Y ou receive a +2 bonus on all Ride checks, and you can take 10 on Ride checks for mounted combat maneuvers.",
+    "pdfPages": [
+      150
+    ],
+    "printedPages": [
+      148
+    ]
+  },
+  {
+    "name": "Extend Spell",
+    "category": "Metamagic",
+    "prerequisite": "",
+    "summarySource": "An extended spell lasts twice as long as normal.",
+    "pdfPages": [
+      150
+    ],
+    "printedPages": [
+      148
+    ]
+  },
+  {
+    "name": "Far Shot",
+    "category": "General",
+    "prerequisite": "Point Blank Shot.",
+    "summarySource": "When you use a projectile weapon, such as a bow, its range increment increases by half (multiply by 1-1/2).",
+    "pdfPages": [
+      150
+    ],
+    "printedPages": [
+      148
+    ]
+  },
+  {
+    "name": "Firearm Knack",
+    "category": "Technology",
+    "prerequisite": "",
+    "summarySource": "Y ou receive a +2 bonus on Craft (technological device) checks when crafting fi rearms.",
+    "pdfPages": [
+      150
+    ],
+    "printedPages": [
+      148
+    ]
+  },
+  {
+    "name": "Follower of the Totem",
+    "category": "General",
+    "prerequisite": "Spt 13, orc or tauren or character level 8+.",
+    "summarySource": "Once per day as a free action, you may gain a +2 sacred bonus to any one ability.",
+    "pdfPages": [
+      150
+    ],
+    "printedPages": [
+      148
+    ]
+  },
+  {
+    "name": "Forge Ring",
+    "category": "Item Creation",
+    "prerequisite": "Caster level 12th.",
+    "summarySource": "Y ou can create any ring for which you meet the prerequisites.",
+    "pdfPages": [
+      150
+    ],
+    "printedPages": [
+      148
+    ]
+  },
+  {
+    "name": "Furious Charge",
+    "category": "General",
+    "prerequisite": "",
+    "summarySource": "When you use the charge action, you gain a +2 bonus on damage rolls; and, when you reach your opponent, you can use one of your shout feats without using up one of your shouts per day.",
+    "pdfPages": [
+      151
+    ],
+    "printedPages": [
+      149
+    ]
+  },
+  {
+    "name": "Great Cleave",
+    "category": "General",
+    "prerequisite": "Str 13, Cleave, Power Attack, base attack bonus +4.",
+    "summarySource": "This feat works like Cleave, except that there is no limit to the number times you can use it per round.",
+    "pdfPages": [
+      151
+    ],
+    "printedPages": [
+      149
+    ]
+  },
+  {
+    "name": "Great Fortitude",
+    "category": "General",
+    "prerequisite": "",
+    "summarySource": "Y ou receive a +2 bonus on all Fortitude saving throws.",
+    "pdfPages": [
+      151
+    ],
+    "printedPages": [
+      149
+    ]
+  },
+  {
+    "name": "Greater Spell Focus",
+    "category": "General",
+    "prerequisite": "",
+    "summarySource": "Add +1 to the DC for all saving throws against spells from the school of magic you select.",
+    "pdfPages": [
+      151
+    ],
+    "printedPages": [
+      149
+    ]
+  },
+  {
+    "name": "Greater Spell Penetration",
+    "category": "General",
+    "prerequisite": "Spell Penetration.",
+    "summarySource": "Y ou receive a +2 bonus on caster level checks (1d20 + caster level) made to overcome a creature's spell resistance.",
+    "pdfPages": [
+      151
+    ],
+    "printedPages": [
+      149
+    ]
+  },
+  {
+    "name": "Greater Two-Weapon Fighting",
+    "category": "General",
+    "prerequisite": "Agy 19, Improved Two-Weapon Fighting, Two-Weapon Fighting, base attack bonus +1.",
+    "summarySource": "Y ou get a third attack with your off-hand weapon, but at a -10 penalty.",
+    "pdfPages": [
+      151
+    ],
+    "printedPages": [
+      149
+    ]
+  },
+  {
+    "name": "Greater Weapon Focus",
+    "category": "General",
+    "prerequisite": "Profi ciency with selected weapon, Weapon Focus with selected weapon, warrior level 8th.",
+    "summarySource": "Y ou gain a +1 bonus on all attack rolls with the selected weapon.",
+    "pdfPages": [
+      151
+    ],
+    "printedPages": [
+      149
+    ]
+  },
+  {
+    "name": "Greater Weapon Specialization",
+    "category": "General",
+    "prerequisite": "Profi ciency with selected weapon, Greater Weapon Focus with selected weapon, Weapon Focus with selected weapon, Weapon Specialization with selected weapon, warrior level 12th.",
+    "summarySource": "Y ou gain a +2 bonus on all damage rolls with the selected weapon.",
+    "pdfPages": [
+      151
+    ],
+    "printedPages": [
+      149
+    ]
+  },
+  {
+    "name": "Heighten Spell",
+    "category": "Metamagic",
+    "prerequisite": "",
+    "summarySource": "A heightened spell has a higher spell level than normal (up to a maximum of 9th level).",
+    "pdfPages": [
+      151
+    ],
+    "printedPages": [
+      149
+    ]
+  },
+  {
+    "name": "Improved Bull Rush",
+    "category": "General",
+    "prerequisite": "Str 13, Power Attack.",
+    "summarySource": "When you perform a bull rush, you do not provoke an attack of opportunity from the defender.",
+    "pdfPages": [
+      152
+    ],
+    "printedPages": [
+      150
+    ]
+  },
+  {
+    "name": "Improved Counterspell",
+    "category": "General",
+    "prerequisite": "",
+    "summarySource": "When counterspelling, you may use a spell of the same school that is 1 or more spell levels higher than the target spell.",
+    "pdfPages": [
+      152
+    ],
+    "printedPages": [
+      150
+    ]
+  },
+  {
+    "name": "Improved Critical",
+    "category": "General",
+    "prerequisite": "Proficient with weapon, base attack bonus +8.",
+    "summarySource": "When using the selected weapon, your threat range is doubled.",
+    "pdfPages": [
+      152
+    ],
+    "printedPages": [
+      150
+    ]
+  },
+  {
+    "name": "Improved Disarm",
+    "category": "General",
+    "prerequisite": "Int 13, Combat Expertise.",
+    "summarySource": "Y ou do not provoke attacks of opportunity when you attempt to disarm opponents, nor do opponents have a chance to disarm you.",
+    "pdfPages": [
+      152
+    ],
+    "printedPages": [
+      150
+    ]
+  },
+  {
+    "name": "Improved Feint",
+    "category": "General",
+    "prerequisite": "Int 13, Combat Expertise.",
+    "summarySource": "Y ou can make a Bluff check to feint in combat as a move action.",
+    "pdfPages": [
+      152
+    ],
+    "printedPages": [
+      150
+    ]
+  },
+  {
+    "name": "Improved Grapple",
+    "category": "General",
+    "prerequisite": "Agy 13, Improved Unarmed Strike.",
+    "summarySource": "",
+    "pdfPages": [
+      152
+    ],
+    "printedPages": [
+      150
+    ]
+  },
+  {
+    "name": "Improved Initiative",
+    "category": "General",
+    "prerequisite": "",
+    "summarySource": "Y ou receive a +4 bonus on initiative checks.",
+    "pdfPages": [
+      153
+    ],
+    "printedPages": [
+      151
+    ]
+  },
+  {
+    "name": "Improved Overrun",
+    "category": "General",
+    "prerequisite": "Str 13, Power Attack.",
+    "summarySource": "When you attempt to overrun opponents, they cannot choose to avoid you.",
+    "pdfPages": [
+      153
+    ],
+    "printedPages": [
+      151
+    ]
+  },
+  {
+    "name": "Improved Precise Shot",
+    "category": "General",
+    "prerequisite": "Agy 19, Point Blank Shot, Precise Shot, base attack bonus +11.",
+    "summarySource": "Y our ranged attacks ignore the AC bonus granted to targets by anything less than total cover and the miss chance granted to targets by anything less than total concealment.",
+    "pdfPages": [
+      153
+    ],
+    "printedPages": [
+      151
+    ]
+  },
+  {
+    "name": "Improved Shield Bash",
+    "category": "General",
+    "prerequisite": "Shield Proficiency.",
+    "summarySource": "When you perform a shield bash, you may still apply the shield's shield bonus to your AC.",
+    "pdfPages": [
+      153
+    ],
+    "printedPages": [
+      151
+    ]
+  },
+  {
+    "name": "Improved Sunder",
+    "category": "General",
+    "prerequisite": "Str 13, Power Attack.",
+    "summarySource": "When you strike at an object held or carried by an opponent (such as a weapon or shield), you do not provoke an attack of opportunity.",
+    "pdfPages": [
+      153
+    ],
+    "printedPages": [
+      151
+    ]
+  },
+  {
+    "name": "Improved Trip",
+    "category": "General",
+    "prerequisite": "Int 13, Combat Expertise.",
+    "summarySource": "Y ou do not provoke an attack of opportunity when you attempt to trip an opponent while you are unarmed.",
+    "pdfPages": [
+      153
+    ],
+    "printedPages": [
+      151
+    ]
+  },
+  {
+    "name": "Improved Two-Weapon Fighting",
+    "category": "General",
+    "prerequisite": "Agy 17, Two-Weapon Fighting, base attack bonus +6.",
+    "summarySource": "In addition to the standard single attack you get with an off-hand weapon, you get a second attack with that weapon, but at a -5 penalty.",
+    "pdfPages": [
+      153
+    ],
+    "printedPages": [
+      151
+    ]
+  },
+  {
+    "name": "Improved Unarmed Strike",
+    "category": "General",
+    "prerequisite": "",
+    "summarySource": "Y ou are considered to be armed even when unarmed; thus, you do not provoke attacks of opportunity from armed opponents when you attack them while unarmed.",
+    "pdfPages": [
+      153
+    ],
+    "printedPages": [
+      151
+    ]
+  },
+  {
+    "name": "Inner Rage",
+    "category": "Shout",
+    "prerequisite": "Ability to rage, one shout feat.",
+    "summarySource": "When you enter a rage, you can use a shout feat without using up one of your shouts per day.",
+    "pdfPages": [
+      154
+    ],
+    "printedPages": [
+      152
+    ]
+  },
+  {
+    "name": "Intimidating Shout",
+    "category": "Shout",
+    "prerequisite": "",
+    "summarySource": "When you make an Intimidating Shout, opponents within 30 feet must attempt Will saves (DC 10 + half your character level + your Charisma bonus).",
+    "pdfPages": [
+      154
+    ],
+    "printedPages": [
+      152
+    ]
+  },
+  {
+    "name": "Iron Will",
+    "category": "General",
+    "prerequisite": "",
+    "summarySource": "Y ou receive a +2 bonus on all Will saves.",
+    "pdfPages": [
+      154
+    ],
+    "printedPages": [
+      152
+    ]
+  },
+  {
+    "name": "Leadership",
+    "category": "General",
+    "prerequisite": "Character level 6th.",
+    "summarySource": "",
+    "pdfPages": [
+      154
+    ],
+    "printedPages": [
+      152
+    ]
+  },
+  {
+    "name": "Lightning Reflexes",
+    "category": "General",
+    "prerequisite": "",
+    "summarySource": "Y ou receive a +2 bonus on all Reflex saves.",
+    "pdfPages": [
+      154
+    ],
+    "printedPages": [
+      152
+    ]
+  },
+  {
+    "name": "Lightning Reload",
+    "category": "General",
+    "prerequisite": "Agy 13, Exotic Weapon Profi ciency (fi rearms).",
+    "summarySource": "Y ou can reload fi rearms much faster than normal.",
+    "pdfPages": [
+      154
+    ],
+    "printedPages": [
+      152
+    ]
+  },
+  {
+    "name": "Magic Energy Control",
+    "category": "General",
+    "prerequisite": "",
+    "summarySource": "Y ou prepare spells in half the normal time.",
+    "pdfPages": [
+      154
+    ],
+    "printedPages": [
+      152
+    ]
+  },
+  {
+    "name": "Manyshot",
+    "category": "General",
+    "prerequisite": "Agy 17, Point Blank Shot, Rapid Shot, base attack bonus +6.",
+    "summarySource": "As a standard action, you may fi re two arrows at a single opponent within 30 feet.",
+    "pdfPages": [
+      154
+    ],
+    "printedPages": [
+      152
+    ]
+  },
+  {
+    "name": "Martial Weapon Proficiency",
+    "category": "General",
+    "prerequisite": "",
+    "summarySource": "Y ou make attack rolls with the selected weapon normally.",
+    "pdfPages": [
+      155
+    ],
+    "printedPages": [
+      153
+    ]
+  },
+  {
+    "name": "Maximize Spell",
+    "category": "Metamagic",
+    "prerequisite": "",
+    "summarySource": "All variable, numeric effects of a spell modified by this feat are maximized.",
+    "pdfPages": [
+      155
+    ],
+    "printedPages": [
+      153
+    ]
+  },
+  {
+    "name": "Mighty Lungs",
+    "category": "General",
+    "prerequisite": "One shout feat.",
+    "summarySource": "Y ou can shout two additional times per day.",
+    "pdfPages": [
+      155
+    ],
+    "printedPages": [
+      153
+    ]
+  },
+  {
+    "name": "Mirror Spell",
+    "category": "Metamagic",
+    "prerequisite": "Iron Will, Magic Energy Control, caster level 3rd.",
+    "summarySource": "A mirrored spell creates two copies of the same spell.",
+    "pdfPages": [
+      155
+    ],
+    "printedPages": [
+      153
+    ]
+  },
+  {
+    "name": "Mobility",
+    "category": "General",
+    "prerequisite": "Agy 13, Dodge.",
+    "summarySource": "Y ou receive a +4 dodge bonus to AC against attacks of opportunity caused when you move out of or within a threatened area.",
+    "pdfPages": [
+      155
+    ],
+    "printedPages": [
+      153
+    ]
+  },
+  {
+    "name": "Mounted Archery",
+    "category": "General",
+    "prerequisite": "Ride 1 rank, Mounted Combat.",
+    "summarySource": "The penalty you take when using a ranged weapon while mounted is halved: -2 instead of -4 if your mount is taking a double move; -4 instead of -8 if your mount is running.",
+    "pdfPages": [
+      155
+    ],
+    "printedPages": [
+      153
+    ]
+  },
+  {
+    "name": "Mounted Combat",
+    "category": "General",
+    "prerequisite": "Ride 1 rank.",
+    "summarySource": "Once per round when your mount is hit in combat, you may attempt a Ride check (as a reaction) to negate the hit.",
+    "pdfPages": [
+      155
+    ],
+    "printedPages": [
+      153
+    ]
+  },
+  {
+    "name": "Multiattack",
+    "category": "General",
+    "prerequisite": "Three or more natural attacks.",
+    "summarySource": "The creature's secondary attacks with natural weapons take only a -2 penalty.",
+    "pdfPages": [
+      164
+    ],
+    "printedPages": [
+      162
+    ]
+  },
+  {
+    "name": "Natural Spell",
+    "category": "General",
+    "prerequisite": "Spt 13, wild shape ability.",
+    "summarySource": "Y ou can complete verbal and somatic components of spells while in a wild shape.",
+    "pdfPages": [
+      155
+    ],
+    "printedPages": [
+      153
+    ]
+  },
+  {
+    "name": "Pistol Whip",
+    "category": "General",
+    "prerequisite": "",
+    "summarySource": "Y ou are proficient at using a fi rearm as a melee weapon and can do so without damaging it.",
+    "pdfPages": [
+      156
+    ],
+    "printedPages": [
+      154
+    ]
+  },
+  {
+    "name": "Point Blank Shot",
+    "category": "General",
+    "prerequisite": "",
+    "summarySource": "Y ou receive a +1 bonus on attack and damage rolls with ranged weapons at ranges of up to 30 feet.",
+    "pdfPages": [
+      156
+    ],
+    "printedPages": [
+      154
+    ]
+  },
+  {
+    "name": "Power Attack",
+    "category": "General",
+    "prerequisite": "Str 13.",
+    "summarySource": "On your action, before making attack rolls for the round, you can choose to subtract a number from all melee attack rolls and add it to all melee damage rolls.",
+    "pdfPages": [
+      156
+    ],
+    "printedPages": [
+      154
+    ]
+  },
+  {
+    "name": "Precise Shot",
+    "category": "General",
+    "prerequisite": "Point Blank Shot.",
+    "summarySource": "Y ou can shoot or throw ranged weapons at an opponent engaged in melee without taking the standard -4 penalty on your attack roll.",
+    "pdfPages": [
+      156
+    ],
+    "printedPages": [
+      154
+    ]
+  },
+  {
+    "name": "Precision Leadership",
+    "category": "General",
+    "prerequisite": "Leadership, Point Blank Shot.",
+    "summarySource": "If a number of your followers make ranged attacks against the same target at the same time (by delaying or readying actions, for instance), each follower receives a +1 bonus on his damage roll for each other follower attacking at the same time.",
+    "pdfPages": [
+      156
+    ],
+    "printedPages": [
+      154
+    ]
+  },
+  {
+    "name": "Pulverize",
+    "category": "General",
+    "prerequisite": "Str 15, Spt 13, Exotic Weapon Proficiency (tauren totem), Follower of the Totem, base attack bonus +6.",
+    "summarySource": "When you score a critical hit with a tauren totem, all creatures adjacent to the creature you strike take bludgeoning damage equal to 1d6 + half your Strength bonus.",
+    "pdfPages": [
+      156
+    ],
+    "printedPages": [
+      154
+    ]
+  },
+  {
+    "name": "Punishing Blow",
+    "category": "General",
+    "prerequisite": "Proficient with weapon, base attack bonus +4.",
+    "summarySource": "Select a type of melee weapon with which you are proficient.",
+    "pdfPages": [
+      156
+    ],
+    "printedPages": [
+      154
+    ]
+  },
+  {
+    "name": "Quick Draw",
+    "category": "General",
+    "prerequisite": "",
+    "summarySource": "",
+    "pdfPages": [
+      156
+    ],
+    "printedPages": [
+      154
+    ]
+  },
+  {
+    "name": "Quicken Spell",
+    "category": "Metamagic",
+    "prerequisite": "",
+    "summarySource": "Casting a quickened spell is a free action.",
+    "pdfPages": [
+      157
+    ],
+    "printedPages": [
+      155
+    ]
+  },
+  {
+    "name": "Rapid Reload",
+    "category": "General",
+    "prerequisite": "Weapon Profi ciency (crossbow type chosen).",
+    "summarySource": "The time required for you to reload your chosen type of crossbow is reduced to a free action (for a hand or light crossbow) or a move action (for a heavy crossbow).",
+    "pdfPages": [
+      157
+    ],
+    "printedPages": [
+      155
+    ]
+  },
+  {
+    "name": "Rapid Shot",
+    "category": "General",
+    "prerequisite": "Agy 13, Point Blank Shot.",
+    "summarySource": "Y ou can get one extra attack per round with a ranged weapon.",
+    "pdfPages": [
+      157
+    ],
+    "printedPages": [
+      155
+    ]
+  },
+  {
+    "name": "Reckless Attack",
+    "category": "General",
+    "prerequisite": "Str 13.",
+    "summarySource": "On your action, before making attack rolls for the round, you may choose to subtract a number from your AC and add the same number to all melee damage rolls.",
+    "pdfPages": [
+      158
+    ],
+    "printedPages": [
+      156
+    ]
+  },
+  {
+    "name": "Reflect Spell",
+    "category": "Metamagic",
+    "prerequisite": "Block Spell, Iron Will, Magic Energy Control, Mirror Spell, caster level 7th.",
+    "summarySource": "When you successfully counter a spell, instead of dismissing it entirely you may choose to retarget it upon its caster.",
+    "pdfPages": [
+      158
+    ],
+    "printedPages": [
+      156
+    ]
+  },
+  {
+    "name": "Ride Bareback",
+    "category": "General",
+    "prerequisite": "Ride 1 rank.",
+    "summarySource": "Y ou do not take a penalty on Ride checks when riding bareback.",
+    "pdfPages": [
+      158
+    ],
+    "printedPages": [
+      156
+    ]
+  },
+  {
+    "name": "Ride-By Attack",
+    "category": "General",
+    "prerequisite": "Ride 1 rank, Mounted Combat.",
+    "summarySource": "When you are mounted and use the charge action, you may move and attack as if with a standard charge and then move again (continuing the straight line of the charge).",
+    "pdfPages": [
+      158
+    ],
+    "printedPages": [
+      156
+    ]
+  },
+  {
+    "name": "Run",
+    "category": "General",
+    "prerequisite": "",
+    "summarySource": "When running, you move fi ve times your normal speed (if wearing medium, light or no armor and carrying no more than a medium load) or four times your speed (if wearing heavy armor or carrying a heavy load).",
+    "pdfPages": [
+      158
+    ],
+    "printedPages": [
+      156
+    ]
+  },
+  {
+    "name": "Scavenge Materials",
+    "category": "Technology",
+    "prerequisite": "Craft 8 ranks.",
+    "summarySource": "Y ou may build an item using raw materials equivalent to only 1/10 the item's market value.",
+    "pdfPages": [
+      158
+    ],
+    "printedPages": [
+      156
+    ]
+  },
+  {
+    "name": "Scribe Scroll",
+    "category": "Item Creation",
+    "prerequisite": "Caster level 1st.",
+    "summarySource": "Y ou can create a scroll of any spell that you know.",
+    "pdfPages": [
+      158
+    ],
+    "printedPages": [
+      156
+    ]
+  },
+  {
+    "name": "Shield Proficiency",
+    "category": "General",
+    "prerequisite": "",
+    "summarySource": "Y ou can use a shield and take only the standard penalties.",
+    "pdfPages": [
+      159
+    ],
+    "printedPages": [
+      157
+    ]
+  },
+  {
+    "name": "Shot on the Run",
+    "category": "General",
+    "prerequisite": "Agy 13, Dodge, Mobility, Point Blank Shot, base attack bonus +4.",
+    "summarySource": "When using the attack action with a ranged weapon, you can move both before and after the attack, provided that the total distance moved is not greater than your speed.",
+    "pdfPages": [
+      159
+    ],
+    "printedPages": [
+      157
+    ]
+  },
+  {
+    "name": "Siege Weapon Knack",
+    "category": "Technology",
+    "prerequisite": "",
+    "summarySource": "Y ou receive a +2 bonus on Craft (technological device) checks when building catapults, cannons, mortars and other siege weapons, and a +2 bonus on Disable Device checks when sabotaging such weapons.",
+    "pdfPages": [
+      159
+    ],
+    "printedPages": [
+      157
+    ]
+  },
+  {
+    "name": "Silent Spell",
+    "category": "Metamagic",
+    "prerequisite": "",
+    "summarySource": "A silent spell can be cast with no verbal components.",
+    "pdfPages": [
+      159
+    ],
+    "printedPages": [
+      157
+    ]
+  },
+  {
+    "name": "Simple Weapon Proficiency",
+    "category": "General",
+    "prerequisite": "",
+    "summarySource": "Y ou make attack rolls with simple weapons normally.",
+    "pdfPages": [
+      159
+    ],
+    "printedPages": [
+      157
+    ]
+  },
+  {
+    "name": "Skill Focus",
+    "category": "General",
+    "prerequisite": "",
+    "summarySource": "Y ou get a +3 bonus on all checks involving that skill.",
+    "pdfPages": [
+      159
+    ],
+    "printedPages": [
+      157
+    ]
+  },
+  {
+    "name": "Skilled",
+    "category": "General",
+    "prerequisite": "",
+    "summarySource": "Choose two skills in which you have at least 1 rank.",
+    "pdfPages": [
+      159
+    ],
+    "printedPages": [
+      157
+    ]
+  },
+  {
+    "name": "Small Device Knack",
+    "category": "Technology",
+    "prerequisite": "Agy 13.",
+    "summarySource": "Y ou get a +2 bonus on Craft (technological device) checks when building a device of Tiny, Diminutive or Fine size.",
+    "pdfPages": [
+      159
+    ],
+    "printedPages": [
+      157
+    ]
+  },
+  {
+    "name": "Snatch Arrows",
+    "category": "General",
+    "prerequisite": "Agy 15, Defl ect Arrows, Improved Unarmed Strike.",
+    "summarySource": "When using this feat, you may catch the weapon instead of just defl ecting it.",
+    "pdfPages": [
+      159
+    ],
+    "printedPages": [
+      157
+    ]
+  },
+  {
+    "name": "Sniper Shot",
+    "category": "General",
+    "prerequisite": "Point Blank Shot, base attack bonus +4.",
+    "summarySource": "Y ou can make a Sniper Shot as a full-round action with any ranged weapon.",
+    "pdfPages": [
+      160
+    ],
+    "printedPages": [
+      158
+    ]
+  },
+  {
+    "name": "Spell Focus",
+    "category": "General",
+    "prerequisite": "",
+    "summarySource": "Add +1 to the DC for all saving throws against spells from the school of magic you select.",
+    "pdfPages": [
+      160
+    ],
+    "printedPages": [
+      158
+    ]
+  },
+  {
+    "name": "Spell Mastery",
+    "category": "Special",
+    "prerequisite": "Arcanist level 1st.",
+    "summarySource": "Each time you take this feat, choose a number of spells equal to your Intellect modifier that you already know.",
+    "pdfPages": [
+      160
+    ],
+    "printedPages": [
+      158
+    ]
+  },
+  {
+    "name": "Spell Penetration",
+    "category": "General",
+    "prerequisite": "",
+    "summarySource": "Y ou receive a +2 bonus on caster level checks (1d20 + caster level) made to overcome a creature's spell resistance.",
+    "pdfPages": [
+      160
+    ],
+    "printedPages": [
+      158
+    ]
+  },
+  {
+    "name": "Spirited Charge",
+    "category": "General",
+    "prerequisite": "Ride 1 rank, Mounted Combat, Ride- By Attack.",
+    "summarySource": "When mounted and using the charge action, you deal double damage with a melee weapon (or triple damage with a lance).",
+    "pdfPages": [
+      160
+    ],
+    "printedPages": [
+      158
+    ]
+  },
+  {
+    "name": "Spring Attack",
+    "category": "General",
+    "prerequisite": "Agy 13, Dodge, Mobility, base attack bonus +4.",
+    "summarySource": "When using the attack action with a melee weapon, you can move both before and after the attack if your total distance moved is not greater than your speed.",
+    "pdfPages": [
+      160
+    ],
+    "printedPages": [
+      158
+    ]
+  },
+  {
+    "name": "Still Spell",
+    "category": "Metamagic",
+    "prerequisite": "",
+    "summarySource": "A stilled spell can be cast without somatic components.",
+    "pdfPages": [
+      160
+    ],
+    "printedPages": [
+      158
+    ]
+  },
+  {
+    "name": "Storm Bolt",
+    "category": "General",
+    "prerequisite": "Str 13, Bash, Power Attack, base attack bonus +4.",
+    "summarySource": "Y ou can use the Bash feat with a ranged bludgeoning weapon.",
+    "pdfPages": [
+      160
+    ],
+    "printedPages": [
+      158
+    ]
+  },
+  {
+    "name": "Stunning Fist",
+    "category": "General",
+    "prerequisite": "Agy 13, Spt 13, Improved Unarmed Strike, base attack bonus +8.",
+    "summarySource": "Y ou must declare that you are using this feat before making your attack roll (thus, a failed attack ruins the attempt).",
+    "pdfPages": [
+      160
+    ],
+    "printedPages": [
+      158
+    ]
+  },
+  {
+    "name": "Thunderous Blow",
+    "category": "General",
+    "prerequisite": "",
+    "summarySource": "",
+    "pdfPages": [
+      160
+    ],
+    "printedPages": [
+      158
+    ]
+  },
+  {
+    "name": "Toughness",
+    "category": "General",
+    "prerequisite": "",
+    "summarySource": "Y ou gain +3 hit points.",
+    "pdfPages": [
+      161
+    ],
+    "printedPages": [
+      159
+    ]
+  },
+  {
+    "name": "Tower Shield Proficiency",
+    "category": "General",
+    "prerequisite": "Shield Proficiency.",
+    "summarySource": "Y ou can use a tower shield and suffer only the standard penalties.",
+    "pdfPages": [
+      161
+    ],
+    "printedPages": [
+      159
+    ]
+  },
+  {
+    "name": "Track",
+    "category": "General",
+    "prerequisite": "",
+    "summarySource": "Finding tracks or following them for 1 mile requires a successful Survival check.",
+    "pdfPages": [
+      161
+    ],
+    "printedPages": [
+      159
+    ]
+  },
+  {
+    "name": "Trick Shot",
+    "category": "General",
+    "prerequisite": "Point Blank Shot, Precise Shot.",
+    "summarySource": "If you have a solid, relatively smooth surface on which to skip a ranged weapon (such as the ground or a masonry wall), and a target within 10 feet of that surface, you may ignore cover between you and the target.",
+    "pdfPages": [
+      162
+    ],
+    "printedPages": [
+      160
+    ]
+  },
+  {
+    "name": "Triumphant Yell",
+    "category": "Shout",
+    "prerequisite": "One shout feat, character level 6.",
+    "summarySource": "When you drop a foe (typically by dropping it below a number of negative hit points equal to its Stamina modifier, or by killing it) in melee combat, you may immediately use one of your shout feats without using up one of your shouts per day.",
+    "pdfPages": [
+      162
+    ],
+    "printedPages": [
+      160
+    ]
+  },
+  {
+    "name": "Two-Weapon Defense",
+    "category": "General",
+    "prerequisite": "Agy 15, Two-Weapon Fighting.",
+    "summarySource": "Y ou gain a +1 shield bonus to your AC when wielding a double weapon or two weapons (not including natural weapons or unarmed strikes).",
+    "pdfPages": [
+      162
+    ],
+    "printedPages": [
+      160
+    ]
+  },
+  {
+    "name": "Two-Weapon Fighting",
+    "category": "General",
+    "prerequisite": "Agy 15. Firm Ground: Most normal outdoor surfaces (such as lawns, woods and the like) or exceptionally soft or dirty indoor surfaces (such as thick rugs and very dirty or dusty fl oors) are considered as fi rm ground. Creatures might leave some traces (broken branches or tufts of hair), but they leave only occasional or partial footprints. Hard Ground: Any surface that doesn't hold footprints at all (such as bare rock or an indoor fl oor) is considered as hard ground. Most streambeds fall into this category, since any footprints left behind are obscured or washed away. Creatures leave only traces (scuff marks or displaced pebbles) of their passing. Several modifiers may apply to the Survival check, as given on the following table. Table 6-2: Tracking ModifiersTable 6-2: Tracking Modifiers Survival DC Condition Modifi er Every 3 creatures in the group being tracked -1 Size of creature or creatures being tracked Variable* Every 24 hours since the trail was made +1 Every hour of rain since the trail was made +1 Fresh snow cover since the trail was made +10 Poor visibility Variable** Tracked party hides trail +5 (and moves at half speed) * Fine +8, Diminutive +4, Tiny +2, Small +1, Medium +0, Large -1, Huge -2, Gargantuan -4, Colossal -8. For a group of mixed sizes, apply only the modifi er for the largest size category. ** Overcast or moonless night +6; moonlight +3; fog or precipitation +3. Apply only the largest modifi er from this category. If you fail a Survival check, you can retry after 1 hour (outdoors) or 10 minutes (indoors) of searching.",
+    "summarySource": "When you attempt to overrun an opponent while mounted, your target may not choose to avoid you.",
+    "pdfPages": [
+      162
+    ],
+    "printedPages": [
+      160
+    ]
+  },
+  {
+    "name": "Vehicle Knack",
+    "category": "Technology",
+    "prerequisite": "",
+    "summarySource": "Y ou receive a +2 bonus on Craft (technological device) and Use Technological Device checks when building or using a vehicle.",
+    "pdfPages": [
+      163
+    ],
+    "printedPages": [
+      161
+    ]
+  },
+  {
+    "name": "Vehicle Proficiency",
+    "category": "Technology",
+    "prerequisite": "",
+    "summarySource": "Choose a specialty: land vehicles, water vehicles or air vehicles.",
+    "pdfPages": [
+      163
+    ],
+    "printedPages": [
+      161
+    ]
+  },
+  {
+    "name": "Wand Specialization",
+    "category": "General",
+    "prerequisite": "Caster level 1.",
+    "summarySource": "When you use a wand to cast a spell that deals damage, the spell deals +1 point of damage per damage die.",
+    "pdfPages": [
+      163
+    ],
+    "printedPages": [
+      161
+    ]
+  },
+  {
+    "name": "War Stomp",
+    "category": "General",
+    "prerequisite": "Str 19, tauren or size Large.",
+    "summarySource": "",
+    "pdfPages": [
+      163
+    ],
+    "printedPages": [
+      161
+    ]
+  },
+  {
+    "name": "Weapon Finesse",
+    "category": "General",
+    "prerequisite": "Base attack bonus +1.",
+    "summarySource": "With a light weapon, rapier, whip or spiked chain made for a creature of your size category, you can use your Agility modifi er instead of your Strength modifier on attack rolls.",
+    "pdfPages": [
+      163
+    ],
+    "printedPages": [
+      161
+    ]
+  },
+  {
+    "name": "Weapon Focus",
+    "category": "General",
+    "prerequisite": "Proficiency with selected weapon, base attack bonus +1.",
+    "summarySource": "Y ou gain a +1 bonus on all attack rolls you make using the selected weapon.",
+    "pdfPages": [
+      163
+    ],
+    "printedPages": [
+      161
+    ]
+  },
+  {
+    "name": "Weapon Specialization",
+    "category": "General",
+    "prerequisite": "Profi ciency with selected weapon, Weapon Focus with selected weapon, warrior level 4th.",
+    "summarySource": "Y ou gain a +2 bonus on all damage rolls made using the selected weapon.",
+    "pdfPages": [
+      163
+    ],
+    "printedPages": [
+      161
+    ]
+  },
+  {
+    "name": "Whirlwind Attack",
+    "category": "General",
+    "prerequisite": "Agy 13, Int 13, Combat Expertise, Dodge, Mobility, Spring Attack, base attack bonus +4.",
+    "summarySource": "",
+    "pdfPages": [
+      163
+    ],
+    "printedPages": [
+      161
+    ]
+  },
+  {
+    "name": "Widen Spell",
+    "category": "Metamagic",
+    "prerequisite": "",
+    "summarySource": "Y ou can alter a burst-, emanation-, line- or spread-shaped spell to increase its area.",
+    "pdfPages": [
+      164
+    ],
+    "printedPages": [
+      162
+    ]
+  }
+]

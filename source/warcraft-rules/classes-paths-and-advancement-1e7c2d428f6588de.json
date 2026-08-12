@@ -1,0 +1,84 @@
+{
+  "_embedded": {
+    "pages": [
+      {
+        "_id": "2cb09530fd763567",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "category": null,
+        "flags": {
+          "warcraftrpg2e": {
+            "source": {
+              "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+              "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+              "section": "Private-use implementation policy",
+              "verification": "implementation-summary"
+            }
+          }
+        },
+        "image": {},
+        "name": "Classes, Paths, and Advancement",
+        "ownership": {
+          "default": -1
+        },
+        "sort": 0,
+        "src": null,
+        "system": {},
+        "text": {
+          "content": "<p>The Warcraft Classes compendium contains all nine base classes, ten prestige classes, and their table-granted features. Arcanist currently supports the Mage path and repertoire casting. Other paths, racial advancement, prerequisite enforcement, and prestige spellcasting advancement are marked manual pending their dedicated progression work.</p>",
+          "format": 1
+        },
+        "title": {
+          "level": 1,
+          "show": false
+        },
+        "type": "text",
+        "video": {
+          "controls": true,
+          "volume": 0.5
+        }
+      }
+    ]
+  },
+  "_id": "1e7c2d428f6588de",
+  "_stats": {
+    "compendiumSource": null,
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "lastModifiedBy": null,
+    "modifiedTime": null,
+    "systemId": null,
+    "systemVersion": null
+  },
+  "categories": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "section": "Private-use implementation policy",
+        "verification": "implementation-summary"
+      }
+    }
+  },
+  "folder": null,
+  "name": "Classes, Paths, and Advancement",
+  "ownership": {
+    "default": 0
+  },
+  "pages": [
+    "2cb09530fd763567"
+  ],
+  "sort": 0
+}

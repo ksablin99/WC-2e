@@ -1,0 +1,223 @@
+{
+  "_embedded": {},
+  "_id": "44bd275ded77f109",
+  "_stats": {
+    "compendiumSource": null,
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "lastModifiedBy": null,
+    "modifiedTime": null,
+    "systemId": null,
+    "systemVersion": null
+  },
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "race": {
+        "automaticLanguages": [
+          "Common",
+          "Gnome"
+        ],
+        "bonusLanguages": [
+          "Dwarven",
+          "Goblin",
+          "Thalassian"
+        ],
+        "category": "player-race",
+        "favoredClass": [
+          "Tinker"
+        ],
+        "proficiencies": [],
+        "racialLevel": {
+          "available": false,
+          "max": 0,
+          "name": ""
+        },
+        "searchableTraits": [
+          "Common",
+          "Gnome",
+          "Dwarven",
+          "Goblin",
+          "Thalassian",
+          "Favored class: Tinker"
+        ],
+        "size": "sm"
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          43
+        ],
+        "printedPages": [
+          41
+        ],
+        "section": "Gnome racial traits",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "name": "Gnome",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "addedAbilities": [],
+    "addedLevel": 0,
+    "changeFlags": {
+      "heavyArmorFullSpeed": false,
+      "loseDexToAC": false,
+      "mediumArmorFullSpeed": false,
+      "multiAttack": false,
+      "multiweaponAttack": false,
+      "noCon": false,
+      "noDex": false,
+      "noEncumbrance": false,
+      "noInt": false,
+      "noStr": false,
+      "oneCha": false,
+      "oneInt": false,
+      "oneWis": false,
+      "uncannyDodge": false
+    },
+    "changes": [
+      [
+        "20",
+        "speed",
+        "landSpeed",
+        "base-replace"
+      ],
+      [
+        "2",
+        "ability",
+        "int",
+        "racial"
+      ],
+      [
+        "2",
+        "ability",
+        "cha",
+        "racial"
+      ],
+      [
+        "-2",
+        "ability",
+        "str",
+        "racial"
+      ],
+      [
+        "2",
+        "skill",
+        "skill.crf",
+        "racial"
+      ],
+      [
+        "2",
+        "skill",
+        "skill.lis",
+        "racial"
+      ],
+      [
+        "1",
+        "savingThrows",
+        "allSavingThrows",
+        "racial"
+      ]
+    ],
+    "classSource": "",
+    "combatChangeCustomDisplayName": "",
+    "combatChangeCustomReferenceName": "",
+    "combatChanges": [],
+    "combatChangesAdditionalRanges": {
+      "hasAdditionalRanges": false,
+      "slider1": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      },
+      "slider2": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      },
+      "slider3": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      }
+    },
+    "combatChangesApplySpecialActionsOnce": true,
+    "combatChangesRange": {
+      "max": 0,
+      "maxFormula": ""
+    },
+    "combatChangesUsesCost": "chargesPerUse",
+    "conditionFlags": {
+      "dazzled": false,
+      "polymorphed": false,
+      "wildshaped": false
+    },
+    "contextNotes": [],
+    "counterName": "feat.tinker",
+    "createdBy": "",
+    "creationChanges": [],
+    "creatureType": "humanoid",
+    "customAttributes": {},
+    "customAttributesLocked": false,
+    "customTag": "",
+    "damage": {
+      "parts": []
+    },
+    "damageReduction": [],
+    "deathRule": "warcraft",
+    "description": {
+      "chat": "",
+      "unidentified": "",
+      "value": "<p>Gnome racial traits.</p><ul><li>+2 Intellect, +2 Charisma, -2 Strength; Small; land speed 20 feet; low-light vision.</li><li>+2 all Craft checks and Listen; +1 all saving throws.</li><li>Begins with one tinker bonus feat for which the character meets the prerequisites.</li><li>Automatic Common and Gnome; bonus Dwarven, Goblin, and Thalassian.</li><li>Favored class Tinker.</li></ul>"
+    },
+    "disabledAbilities": [],
+    "epic": "",
+    "identifiedName": "Gnome",
+    "index": {
+      "subType": null,
+      "uniqueId": ""
+    },
+    "la": null,
+    "linkId": "",
+    "linkImported": false,
+    "links": {
+      "children": []
+    },
+    "linkSourceId": "",
+    "linkSourceName": "",
+    "nameFormula": "",
+    "nameFromFormula": false,
+    "originId": "",
+    "originPack": "",
+    "originVersion": 99,
+    "possibleUpdate": false,
+    "psionic": "",
+    "requirements": [],
+    "resistances": [],
+    "senses": {
+      "blindsight": null,
+      "darkvision": null,
+      "lowLight": true,
+      "lowLightMultiplier": 2,
+      "tremorsense": null,
+      "truesight": null
+    },
+    "sizeOverride": "sm",
+    "source": "World of Warcraft RPG, 2nd Edition, p. 41",
+    "subTypes": [],
+    "tags": [],
+    "uniqueId": "",
+    "userNonRemovable": false
+  },
+  "type": "race"
+}

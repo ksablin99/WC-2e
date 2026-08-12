@@ -1,0 +1,109 @@
+<form class="{{cssClass}} flexcol warcraft-technology-sheet" autocomplete="off">
+  <div class="flexrow" style="flex: 0">
+    <div class="sheet-header-profile"><img class="profile" src="{{item.img}}" title="{{item.name}}" data-edit="img"/></div>
+    <header class="sheet-header flexrow">
+      <div class="header-details flexrow">
+        <h1 class="charname"><input name="name" type="text" value="{{item.name}}" placeholder="{{localize 'D35E.ItemName'}}"/></h1>
+        <div class="item-subtitle"><h4 class="item-type">{{localize "D35E.WarcraftTechnologyDevice"}}</h4><span class="item-status">{{itemStatus}}</span></div>
+        <ul class="summary">
+          <li>TS {{technology.technologyScore}}</li><li>FD {{technology.functionDifficulty}}</li><li>MR {{technology.malfunctionRating}}</li><li>{{technology.marketValue}} gp</li>
+        </ul>
+      </div>
+    </header>
+  </div>
+
+  <section class="sheet-content flexcol">
+    <nav class="sheet-navigation tabs" data-group="primary">
+      <a class="item active" data-tab="description">{{localize "D35E.Description"}}</a>
+      <a class="item" data-tab="design">{{localize "D35E.WarcraftTechDesign"}}</a>
+      <a class="item" data-tab="operation">{{localize "D35E.WarcraftTechOperation"}}</a>
+      <a class="item" data-tab="construction">{{localize "D35E.WarcraftTechConstruction"}}</a>
+      <a class="item" data-tab="improvements">{{localize "D35E.WarcraftTechImprovements"}}</a>
+    </nav>
+
+    <section class="primary-body">
+      {{> "systems/warcraftrpg2e/templates/items/parts/item-description.html"}}
+
+      <div class="tab design" data-group="primary" data-tab="design">
+        <h3 class="form-header">{{localize "D35E.WarcraftTechDesign"}}</h3>
+        <div class="form-group"><label>{{localize "D35E.WarcraftTechPrimaryFunction"}}</label><input type="text" name="system.design.primaryFunction" value="{{data.system.design.primaryFunction}}"/></div>
+        <div class="form-group"><label>{{localize "D35E.WarcraftTechFunctionDifficulty"}}</label><input type="number" min="0" name="system.design.functionDifficulty" value="{{data.system.design.functionDifficulty}}"/></div>
+        <div class="form-group"><label>{{localize "D35E.WarcraftTechTime"}}</label><div class="flexrow"><input type="number" min="1" max="10" name="system.design.timeFactor" value="{{data.system.design.timeFactor}}"/><select name="system.design.timeUnit">{{#select data.system.design.timeUnit}}{{#each timeUnits as |unit|}}<option value="{{unit}}">{{unit}}</option>{{/each}}{{/select}}</select></div></div>
+        <div class="form-group"><label>{{localize "D35E.Size"}}</label><select name="system.design.size">{{#select data.system.design.size}}<option value="fine">Fine</option><option value="dim">Diminutive</option><option value="tiny">Tiny</option><option value="sm">Small</option><option value="med">Medium</option><option value="lg">Large</option><option value="huge">Huge</option><option value="grg">Gargantuan</option><option value="col">Colossal</option>{{/select}}</select></div>
+        <div class="form-group"><label>{{localize "D35E.WarcraftTechMaterial"}}</label><select name="system.design.material">{{#select data.system.design.material}}{{#each technologyMaterials as |material|}}<option value="{{material.key}}">{{material.label}}</option>{{/each}}{{/select}}</select><span class="notes">{{localize "D35E.WarcraftTechMaterialHint"}}</span></div>
+        <div class="form-group"><label>{{localize "D35E.WarcraftTechCollaborators"}}</label><input type="text" name="system.design.collaboratorLevels" value="{{data.system.design.collaboratorLevels}}" placeholder="6, 6, 4"/><span class="notes">{{localize "D35E.WarcraftTechCollaboratorsHint"}}</span></div>
+        <div class="form-group"><label>{{localize "D35E.Weight"}}</label><input type="number" min="0" step="0.01" name="system.weight" value="{{data.system.weight}}"/><span>lb.</span></div>
+
+        <h3 class="form-header flexrow"><span>{{localize "D35E.WarcraftTechFeatures"}}</span><button type="button" data-warcraft-tech-action="add-feature" aria-label="{{localize 'D35E.WarcraftTechAddFeature'}}"><i class="fas fa-plus"></i></button></h3>
+        <ol class="item-list warcraft-tech-features">
+          {{#each data.system.design.features as |feature index|}}
+          <li class="item flexrow">
+            <select name="system.design.features.{{index}}.type">{{#select feature.type}}{{#each ../technologyFeatures as |definition|}}<option value="{{definition.key}}">{{definition.label}}</option>{{/each}}<option value="custom">Custom</option>{{/select}}</select>
+            <input type="text" name="system.design.features.{{index}}.name" value="{{feature.name}}" placeholder="{{localize 'D35E.Name'}}"/>
+            <label>TS <input type="number" min="0" name="system.design.features.{{index}}.ts" value="{{feature.ts}}"/></label>
+            <input type="text" name="system.design.features.{{index}}.value" value="{{feature.value}}" placeholder="{{localize 'D35E.Value'}}"/>
+            <input type="text" name="system.design.features.{{index}}.unit" value="{{feature.unit}}" placeholder="{{localize 'D35E.Units'}}"/>
+            <button type="button" data-warcraft-tech-action="remove-feature" data-index="{{index}}" aria-label="{{localize 'D35E.Delete'}}"><i class="fas fa-trash"></i></button>
+          </li>
+          {{/each}}
+        </ol>
+        <div class="form-group"><button type="button" data-warcraft-tech-action="recalculate"><i class="fas fa-calculator"></i> {{localize "D35E.WarcraftTechRecalculate"}}</button></div>
+        <div class="warcraft-tech-derived grid-3col">
+          <div><strong>TS</strong> {{technology.technologyScore}}{{#if technologyLimit}} / <strong>TL</strong> {{technologyLimit}}{{/if}}</div><div><strong>{{localize "D35E.WarcraftTechComplexity"}}</strong> {{technology.complexity}}</div><div><strong>{{localize "D35E.Price"}}</strong> {{technology.marketValue}} gp</div>
+          <div><strong>{{localize "D35E.HP"}}</strong> {{technology.hp}}</div><div><strong>{{localize "D35E.Hardness"}}</strong> {{technology.hardness}}</div><div><strong>{{localize "D35E.WarcraftTechRawMaterials"}}</strong> {{effectiveRawMaterialCost}} gp</div>
+        </div>
+        {{#if overTechnologyLimit}}<p class="notification error" role="alert">{{localize "D35E.WarcraftTechLimitExceededSheet"}}</p>{{/if}}
+        <p class="notes">{{localize "D35E.WarcraftTechCanonicalUnits"}}</p>
+      </div>
+
+      <div class="tab operation" data-group="primary" data-tab="operation">
+        <h3 class="form-header">{{localize "D35E.WarcraftTechOperation"}}</h3>
+        <div class="form-group"><label>{{localize "D35E.WarcraftTechOperationCheck"}}</label><select name="system.operation.checkType">{{#select data.system.operation.checkType}}<option value="utd">{{localize "D35E.SkillUTD"}}</option><option value="attack">{{localize "D35E.Attack"}}</option><option value="none">{{localize "D35E.WarcraftTechNoCheck"}}</option>{{/select}}</select><label>{{localize "D35E.WarcraftTechAttackBonus"}}</label><input type="number" name="system.operation.attackBonus" value="{{data.system.operation.attackBonus}}"/></div>
+        <div class="form-group"><label>{{localize "D35E.DC"}}</label><input type="number" min="0" name="system.operation.dc" value="{{data.system.operation.dc}}"/></div>
+        <div class="form-group"><label>{{localize "D35E.WarcraftTechRequiredProficiency"}}</label><input type="text" name="system.operation.requiredProficiency" value="{{data.system.operation.requiredProficiency}}"/></div>
+        <div class="form-group"><label>{{localize "D35E.WarcraftTechMalfunctionRating"}}</label><input type="number" min="0" max="5" name="system.malfunction.rating" value="{{data.system.malfunction.rating}}"/><label class="checkbox"><input type="checkbox" name="system.malfunction.random" {{checked data.system.malfunction.random}}/> {{localize "D35E.WarcraftTechRandomMalfunction"}}</label></div>
+        <div class="form-group"><label>{{localize "D35E.WarcraftTechChosenMalfunction"}}</label><select name="system.malfunction.effect">{{#select data.system.malfunction.effect}}<option value="">{{localize "D35E.WarcraftTechStopped"}}</option>{{#each malfunctionEffects as |effect|}}<option value="{{effect}}">{{effect}}</option>{{/each}}{{/select}}</select></div>
+        <div class="form-group stacked"><label>{{localize "D35E.Notes"}}</label><textarea name="system.operation.notes">{{data.system.operation.notes}}</textarea></div>
+        <div class="form-group"><label>{{localize "D35E.WarcraftTechFuel"}}</label><input type="text" name="system.supplies.fuel.name" value="{{data.system.supplies.fuel.name}}"/><input type="number" min="0" name="system.supplies.fuel.value" value="{{data.system.supplies.fuel.value}}"/><span>/</span><input type="number" min="0" name="system.supplies.fuel.capacity" value="{{data.system.supplies.fuel.capacity}}"/><label>{{localize "D35E.WarcraftTechPerUse"}} <input type="number" min="0" name="system.supplies.fuel.perUse" value="{{data.system.supplies.fuel.perUse}}"/></label><button type="button" data-warcraft-tech-action="fuel-remove">−</button><button type="button" data-warcraft-tech-action="fuel-add">+</button></div>
+        <div class="form-group"><label>{{localize "D35E.WarcraftTechAmmunition"}}</label><input type="text" name="system.supplies.ammunition.name" value="{{data.system.supplies.ammunition.name}}"/><input type="number" min="0" name="system.supplies.ammunition.value" value="{{data.system.supplies.ammunition.value}}"/><span>/</span><input type="number" min="0" name="system.supplies.ammunition.capacity" value="{{data.system.supplies.ammunition.capacity}}"/><label>{{localize "D35E.WarcraftTechPerUse"}} <input type="number" min="0" name="system.supplies.ammunition.perUse" value="{{data.system.supplies.ammunition.perUse}}"/></label><button type="button" data-warcraft-tech-action="ammo-remove">−</button><button type="button" data-warcraft-tech-action="ammo-add">+</button></div>
+        {{#if data.system.state.malfunctioned}}<p class="notification error"><strong>{{localize "D35E.WarcraftTechMalfunction"}}:</strong> {{data.system.state.lastMalfunction}}</p>{{/if}}
+        {{#if destroyed}}<p class="notification error"><strong>{{localize "D35E.WarcraftTechDestroyed"}}</strong></p>{{/if}}
+        {{#if permanentMalfunctions.length}}<div class="notification warning"><strong>{{localize "D35E.WarcraftTechPermanentEffects"}}:</strong><ol class="item-list">{{#each permanentMalfunctions as |entry|}}<li class="item flexrow"><span>{{entry.effect}}</span>{{#if entry.repairable}}<button type="button" data-warcraft-tech-action="repair-permanent" data-index="{{entry.index}}">{{localize "D35E.WarcraftTechRepairPermanent"}}</button>{{/if}}</li>{{/each}}</ol><p class="notes">{{localize "D35E.WarcraftTechRepairPermanentHint"}}</p></div>{{/if}}
+        {{#if data.system.state.upgrading}}<p class="notification warning">{{localize "D35E.WarcraftTechBeingUpgraded"}}</p>{{/if}}
+        <button type="button" data-warcraft-tech-action="operate" {{#unless canOperate}}disabled{{/unless}}><i class="fas fa-gears"></i> {{localize "D35E.WarcraftTechOperate"}}</button>
+        <button type="button" data-warcraft-tech-action="repair"><i class="fas fa-screwdriver-wrench"></i> {{localize "D35E.WarcraftTechRepair"}}</button>
+
+        <h3 class="form-header">{{localize "D35E.WarcraftTechVehicleSupport"}}</h3>
+        <div class="form-group"><label class="checkbox"><input type="checkbox" name="system.vehicle.enabled" {{checked data.system.vehicle.enabled}}/> {{localize "D35E.WarcraftTechIsVehicle"}}</label></div>
+        <div class="form-group"><label>{{localize "D35E.WarcraftTechCurrentSpeed"}}</label><input type="number" min="0" name="system.vehicle.currentSpeedMph" value="{{data.system.vehicle.currentSpeedMph}}"/><span>mph</span><label>{{localize "D35E.WarcraftTechManeuverability"}}</label><input type="number" min="1" max="5" name="system.vehicle.maneuverability" value="{{data.system.vehicle.maneuverability}}"/></div>
+        <div class="form-group"><label>{{localize "D35E.WarcraftTechExtraSpeedChanges"}}</label><input type="number" min="0" name="system.vehicle.extraSpeedChanges" value="{{data.system.vehicle.extraSpeedChanges}}"/><label>{{localize "D35E.WarcraftTechTurnIncrements"}}</label><input type="number" min="0" name="system.vehicle.turnIncrements" value="{{data.system.vehicle.turnIncrements}}"/><label>{{localize "D35E.WarcraftTechDriftWidths"}}</label><input type="number" min="0" name="system.vehicle.driftWidths" value="{{data.system.vehicle.driftWidths}}"/></div>
+        <button type="button" data-warcraft-tech-action="maneuver" {{#unless data.system.vehicle.enabled}}disabled{{/unless}}>{{localize "D35E.WarcraftTechManeuver"}}</button>
+      </div>
+
+      <div class="tab construction" data-group="primary" data-tab="construction">
+        <h3 class="form-header">{{localize "D35E.WarcraftTechConstruction"}}</h3>
+        <div class="warcraft-tech-derived grid-3col"><div><strong>{{localize "D35E.DC"}}</strong> {{technology.craftDc}}</div><div><strong>{{localize "D35E.WarcraftTechRawMaterials"}}</strong> {{effectiveRawMaterialCost}} gp</div><div><strong>{{localize "D35E.WarcraftTechRepairCost"}}</strong> {{technology.repairCost}} gp</div></div>
+        <div class="form-group"><label>{{localize "D35E.WarcraftTechProgress"}}</label><input type="number" min="0" name="system.construction.progressSp" value="{{data.system.construction.progressSp}}"/><span>/ {{constructionTargetSp}} sp ({{constructionPercent}}%)</span></div>
+        {{#if data.system.construction.ruinedMaterialsOwed}}<p class="notification warning">{{localize "D35E.WarcraftTechReplacementMaterials"}}: {{data.system.construction.ruinedMaterialsOwed}} gp</p>{{/if}}
+        <div class="form-group"><label class="checkbox"><input type="checkbox" name="system.construction.materialsPaid" {{checked data.system.construction.materialsPaid}}/> {{localize "D35E.WarcraftTechMaterialsPaid"}}</label><label class="checkbox"><input type="checkbox" name="system.construction.complete" {{checked data.system.construction.complete}}/> {{localize "D35E.WarcraftTechComplete"}}</label></div>
+        <button type="button" data-warcraft-tech-action="craft"><i class="fas fa-hammer"></i> {{localize "D35E.WarcraftTechCraftWeek"}}</button>
+      </div>
+
+      <div class="tab improvements" data-group="primary" data-tab="improvements">
+        <h3 class="form-header">{{localize "D35E.WarcraftTechMasterwork"}}</h3>
+        <div class="form-group"><label class="checkbox"><input type="checkbox" disabled {{checked data.system.improvements.masterwork}}/> {{localize "D35E.WarcraftTechMasterwork"}}</label><span>{{masterwork.componentPrice}} gp; {{localize "D35E.WarcraftTechRawMaterials"}} {{effectiveMasterworkRawMaterialCost}} gp; DC {{masterwork.craftDc}}</span></div>
+        <div class="form-group"><label>{{localize "D35E.WarcraftTechProgress"}}</label><span>{{data.system.improvements.masterworkProgressSp}} / {{masterworkTargetSp}} sp ({{masterworkPercent}}%)</span><button type="button" data-warcraft-tech-action="craft-masterwork" {{#if data.system.improvements.masterwork}}disabled{{/if}}>{{localize "D35E.WarcraftTechCraftMasterwork"}}</button></div>
+        {{#if data.system.improvements.masterworkRuinedMaterialsOwed}}<p class="notification warning">{{localize "D35E.WarcraftTechReplacementMaterials"}}: {{data.system.improvements.masterworkRuinedMaterialsOwed}} gp</p>{{/if}}
+        <h3 class="form-header">{{localize "D35E.WarcraftTechUpgrade"}}</h3>
+        <div class="form-group"><label>{{localize "D35E.WarcraftTechPreviousMarket"}}</label><input type="number" min="0" name="system.improvements.previousMarketValue" value="{{data.system.improvements.previousMarketValue}}"/><span>gp</span></div>
+        <button type="button" data-warcraft-tech-action="begin-upgrade">{{localize "D35E.WarcraftTechBeginUpgrade"}}</button>
+        <h3 class="form-header flexrow"><span>{{localize "D35E.WarcraftTechAddOns"}}</span><button type="button" data-warcraft-tech-action="add-addon" aria-label="{{localize 'D35E.WarcraftTechAddOn'}}"><i class="fas fa-plus"></i></button></h3>
+        <ol class="item-list">
+          {{#each data.system.improvements.addOns as |addon index|}}
+          <li class="item flexrow"><input type="text" name="system.improvements.addOns.{{index}}.name" value="{{addon.name}}"/><label>FD <input type="number" min="0" name="system.improvements.addOns.{{index}}.functionDifficulty" value="{{addon.functionDifficulty}}"/></label><label>TS <input type="number" min="0" name="system.improvements.addOns.{{index}}.technologyScore" value="{{addon.technologyScore}}"/></label><label>{{localize "D35E.Price"}} <input type="number" min="0" name="system.improvements.addOns.{{index}}.independentMarketValue" value="{{addon.independentMarketValue}}"/></label><span>{{#if addon.malfunctioned}}{{localize "D35E.WarcraftTechMalfunction"}}{{else}}{{#if addon.integrated}}{{localize "D35E.WarcraftTechIntegrated"}}{{else}}{{localize "D35E.WarcraftTechNotIntegrated"}}{{/if}}{{/if}}</span>{{#if addon.malfunctioned}}<button type="button" data-warcraft-tech-action="repair-addon" data-index="{{index}}">{{localize "D35E.WarcraftTechRepairAddOn"}}</button>{{else}}<button type="button" data-warcraft-tech-action="integrate-addon" data-index="{{index}}">{{localize "D35E.WarcraftTechIntegrate"}}</button>{{/if}}<button type="button" data-warcraft-tech-action="remove-addon" data-index="{{index}}" aria-label="{{localize 'D35E.Delete'}}"><i class="fas fa-trash"></i></button></li>
+          {{/each}}
+        </ol>
+      </div>
+    </section>
+  </section>
+</form>

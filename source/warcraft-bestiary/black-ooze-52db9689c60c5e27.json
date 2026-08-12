@@ -1,0 +1,798 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "bac914a2cff729f0",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 12,
+                "die": 10,
+                "expression": "12d10",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Ooze Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "med",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": true
+          },
+          "changes": [
+            [
+              "138",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "9",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "3",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "3",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "3",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "10",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "-1",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "-1",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "20",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "ooze",
+          "damageReduction": [
+            [
+              "5",
+              "any",
+              false
+            ]
+          ],
+          "hd": 10,
+          "hp": 0,
+          "levels": 12,
+          "maxLevel": 50,
+          "resistances": [],
+          "savingThrows": {
+            "fort": {
+              "value": "low"
+            },
+            "ref": {
+              "value": "low"
+            },
+            "will": {
+              "value": "low"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 12"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "8b5167e78541233d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                14
+              ],
+              "printedDamage": "1d8+10 plus 2d6 acid"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Slam",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "7",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Slam",
+          "damage": {
+            "parts": [
+              [
+                "1d8+10",
+                "Bludgeoning",
+                "damage-bludg"
+              ],
+              [
+                "2d6",
+                "Acid",
+                "energy-acid"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Slam +14 melee (1d8+10 plus 2d6 acid).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "2d766444d9ed2002",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "8b5167e78541233d",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Slam",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> Slam +14 melee (1d8+10 plus 2d6 acid).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "12a77d2b2722aa36",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "grab"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                12
+              ],
+              "section": "Black Ooze"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "grab",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> grab.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 12",
+          "uniqueId": "wc-monster-black-ooze-grab"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "c3ba673de5ca6a14",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Blindsight 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                12
+              ],
+              "section": "Black Ooze"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Blindsight 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Blindsight 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 12",
+          "uniqueId": "wc-monster-black-ooze-blindsight-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "398e3586fa7c1e04",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "damage reduction 5/-"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                12
+              ],
+              "section": "Black Ooze"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "damage reduction 5/-",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> damage reduction 5/-.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 12",
+          "uniqueId": "wc-monster-black-ooze-damage-reduction-5"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "030af2368ba81ada",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "split"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                12
+              ],
+              "section": "Black Ooze"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "split",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> split.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 12",
+          "uniqueId": "wc-monster-black-ooze-split"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "4ac7426e6f3ec6b1",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "ooze traits"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                12
+              ],
+              "section": "Black Ooze"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "ooze traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> ooze traits.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 12",
+          "uniqueId": "wc-monster-black-ooze-ooze-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "a2d0e1670ffbc3f8",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Huge Ooze; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "015d5b0c96b94cfb",
+              "name": "Ooze Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                12
+              ],
+              "section": "Black Ooze"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Ooze Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Huge Ooze; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.015d5b0c96b94cfb]{Ooze Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 12",
+          "uniqueId": "wc-monster-black-ooze-ooze-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "52db9689c60c5e27",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 24, Agy 1, Sta 22, Int -, Spt 1, Cha 1",
+          "Advancement": "13-15 HD (Huge); 16-30 HD (Gargantuan)",
+          "Alignment": "",
+          "Area": "Venture Company mines",
+          "Armor Class": "3 (-2 size, -5 Agy), touch 3, flat-footed 3",
+          "Attack": "Slam +14 melee (1d8+10 plus 2d6 acid)",
+          "Base Attack/Grapple": "+9/+24",
+          "Challenge Rating": "8",
+          "Environment": "Any mountains and underground",
+          "Feats": "-",
+          "Full Attack": "Slam +14 melee (1d8+10 plus 2d6 acid)",
+          "Hit Dice": "12d10+72 (138 hp)",
+          "Initiative": "-5",
+          "Level Adjustment": "-",
+          "Organization": "Solitary",
+          "Saves": "Fort +10, Ref -1, Will -1",
+          "Skills": "-",
+          "Space/Reach": "15 ft./10 ft.",
+          "Special Attacks": "grab",
+          "Special Qualities": "Blindsight 60 ft., damage reduction 5/-, split, ooze traits",
+          "Speed": "20 ft. (4 squares)",
+          "Treasure": "None"
+        },
+        "rulesCoverage": {
+          "actor-defense": 1,
+          "linked-reference": 1,
+          "manual": 4
+        },
+        "subtypes": []
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          13
+        ],
+        "printedPages": [
+          12
+        ],
+        "section": "Black Ooze",
+        "verification": "native-text-table+review-override"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "bac914a2cff729f0",
+    "8b5167e78541233d",
+    "2d766444d9ed2002",
+    "12a77d2b2722aa36",
+    "c3ba673de5ca6a14",
+    "398e3586fa7c1e04",
+    "030af2368ba81ada",
+    "4ac7426e6f3ec6b1",
+    "a2d0e1670ffbc3f8"
+  ],
+  "name": "Black Ooze",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -5,
+        "origMod": -5,
+        "origTotal": 1,
+        "penalty": 0,
+        "total": 1,
+        "userPenalty": 0,
+        "value": 1
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 6,
+        "origMod": 6,
+        "origTotal": 22,
+        "penalty": 0,
+        "total": 22,
+        "userPenalty": 0,
+        "value": 22
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -5,
+        "origMod": -5,
+        "origTotal": 1,
+        "penalty": 0,
+        "total": 1,
+        "userPenalty": 0,
+        "value": 1
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": true,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 0,
+        "penalty": 0,
+        "total": 0,
+        "userPenalty": 0,
+        "value": 0
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 7,
+        "origMod": 7,
+        "origTotal": 24,
+        "penalty": 0,
+        "total": 24,
+        "userPenalty": 0,
+        "value": 24
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -5,
+        "origMod": -5,
+        "origTotal": 1,
+        "penalty": 0,
+        "total": 1,
+        "userPenalty": 0,
+        "value": 1
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 3,
+          "value": 0
+        },
+        "normal": {
+          "total": 3,
+          "value": 0
+        },
+        "touch": {
+          "total": 3,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 9,
+        "nonepic": 9,
+        "total": 9,
+        "value": 0
+      },
+      "cmb": {
+        "total": 24,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "ooze",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 100,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 12,
+        "total": 12
+      },
+      "hp": {
+        "base": 138,
+        "max": 138,
+        "min": -22,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 138
+      },
+      "init": {
+        "bonus": 0,
+        "total": -5,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 0,
+      "savingThrows": {
+        "fort": {
+          "base": 10,
+          "total": 10
+        },
+        "ref": {
+          "base": -1,
+          "total": -1
+        },
+        "will": {
+          "base": -1,
+          "total": -1
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": 60,
+        "darkvision": null,
+        "lowLight": false,
+        "lowLightMultiplier": null,
+        "tremorsense": null
+      },
+      "speed": {
+        "land": {
+          "base": 20,
+          "total": 20
+        }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "",
+      "biography": {
+        "public": "",
+        "value": "<p>Black Ooze is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 8,
+      "environment": "Any mountains and underground",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 12,
+        "value": 12
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 12d10+72 (138 hp)</p><p><strong>Initiative:</strong> -5</p><p><strong>Speed:</strong> 20 ft. (4 squares)</p><p><strong>Armor Class:</strong> 3 (-2 size, -5 Agy), touch 3, flat-footed 3</p><p><strong>Base Attack/Grapple:</strong> +9/+24</p><p><strong>Attack:</strong> Slam +14 melee (1d8+10 plus 2d6 acid)</p><p><strong>Full Attack:</strong> Slam +14 melee (1d8+10 plus 2d6 acid)</p><p><strong>Space/Reach:</strong> 15 ft./10 ft.</p><p><strong>Special Attacks:</strong> grab</p><p><strong>Special Qualities:</strong> Blindsight 60 ft., damage reduction 5/-, split, ooze traits</p><p><strong>Saves:</strong> Fort +10, Ref -1, Will -1</p><p><strong>Abilities:</strong> Str 24, Agy 1, Sta 22, Int -, Spt 1, Cha 1</p><p><strong>Skills:</strong> -</p><p><strong>Feats:</strong> -</p><p><strong>Area:</strong> Venture Company mines</p><p><strong>Organization:</strong> Solitary</p><p><strong>Treasure:</strong> None</p><p><strong>Advancement:</strong> 13-15 HD (Huge); 16-30 HD (Gargantuan)</p><p><strong>Level Adjustment:</strong> -</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 8,
+      "type": "Ooze"
+    },
+    "skills": {},
+    "traits": {
+      "actualSize": "huge",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Blindsight 60 ft., damage reduction 5/-, split, ooze traits",
+      "size": "huge",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

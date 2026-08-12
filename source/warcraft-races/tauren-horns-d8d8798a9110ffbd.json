@@ -1,0 +1,72 @@
+{
+  "_id": "d8d8798a9110ffbd",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "baselineRacialFeature": true,
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          50
+        ],
+        "printedPages": [
+          48
+        ],
+        "section": "Tauren racial traits: horns",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/sword.svg",
+  "name": "Horns",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "ability": {
+      "attack": "str",
+      "critMult": 2,
+      "critRange": 20,
+      "damage": "str",
+      "damageMult": 1
+    },
+    "actionType": "mwak",
+    "activation": {
+      "cost": 1,
+      "type": "standard"
+    },
+    "attackBonus": "",
+    "attackType": "natural",
+    "autoScaleOption": "never",
+    "baseWeaponType": "Horns",
+    "damage": {
+      "parts": [
+        [
+          "1d8",
+          "Piercing",
+          "damage-piercing"
+        ]
+      ]
+    },
+    "description": {
+      "value": "<p>Primary natural weapon. Make a proficient melee attack dealing 1d8 piercing damage plus the tauren's Strength modifier.</p>"
+    },
+    "enh": 0,
+    "favorite": true,
+    "identifiedName": "Horns",
+    "index": {
+      "uniqueId": "wc-race-fa2b32b5fc"
+    },
+    "magic": false,
+    "primaryAttack": true,
+    "proficient": true,
+    "source": "World of Warcraft RPG, 2nd Edition, p. 48",
+    "threatRangeExtended": false,
+    "uniqueId": "wc-race-fa2b32b5fc",
+    "weaponSubtype": "light"
+  },
+  "type": "attack"
+}

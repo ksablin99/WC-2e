@@ -1,0 +1,848 @@
+[
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "armor-proficiency-heavy-08dc9feee2d7a700.json",
+    "key": "!items!08dc9feee2d7a700"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "armor-proficiency-light-ba398c21feaa53b7.json",
+    "key": "!items!ba398c21feaa53b7"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "armor-proficiency-medium-4b0a005677da17c9.json",
+    "key": "!items!4b0a005677da17c9"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "augment-summoning-cea20a7ca7808c87.json",
+    "key": "!items!cea20a7ca7808c87"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "bash-60ca15d6f0332f77.json",
+    "key": "!items!60ca15d6f0332f77"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "battle-language-5b035024cac5e678.json",
+    "key": "!items!5b035024cac5e678"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "battle-shout-5eb3c80c7ac38961.json",
+    "key": "!items!5eb3c80c7ac38961"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "blind-fight-5f81db4e1389ce23.json",
+    "key": "!items!5f81db4e1389ce23"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "block-spell-828a74ebddbc1aec.json",
+    "key": "!items!828a74ebddbc1aec"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "bloodletter-068521f3063b8c6a.json",
+    "key": "!items!068521f3063b8c6a"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "brew-potion-6d5b9349090ff508.json",
+    "key": "!items!6d5b9349090ff508"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "brilliant-leadership-a58cc2ac5c1ce369.json",
+    "key": "!items!a58cc2ac5c1ce369"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "careful-strike-1567d264817f5940.json",
+    "key": "!items!1567d264817f5940"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "challenging-shout-74c2780536dca7e6.json",
+    "key": "!items!74c2780536dca7e6"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "cleave-34b794d403b119d7.json",
+    "key": "!items!34b794d403b119d7"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "close-shot-1ebe0661283e76f8.json",
+    "key": "!items!1ebe0661283e76f8"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "collective-fury-80ff02233d8a8b1c.json",
+    "key": "!items!80ff02233d8a8b1c"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "combat-casting-03847eb6fa10c8be.json",
+    "key": "!items!03847eb6fa10c8be"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "combat-expertise-b2f7cc07a58ebf71.json",
+    "key": "!items!b2f7cc07a58ebf71"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "combat-reflexes-4c36b32171550210.json",
+    "key": "!items!4c36b32171550210"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "counterattack-17cd9607f78b033b.json",
+    "key": "!items!17cd9607f78b033b"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "craft-magic-arms-and-armor-79707c2e5d90f16c.json",
+    "key": "!items!79707c2e5d90f16c"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "craft-rod-04d1a43db9a64d1b.json",
+    "key": "!items!04d1a43db9a64d1b"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "craft-staff-c69c8d069ba88afc.json",
+    "key": "!items!c69c8d069ba88afc"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "craft-wand-be7540262c8e2617.json",
+    "key": "!items!be7540262c8e2617"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "craft-wondrous-item-7562acd55a867da2.json",
+    "key": "!items!7562acd55a867da2"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "crafty-leader-194a7730cf2d05e9.json",
+    "key": "!items!194a7730cf2d05e9"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "defend-5d6f925b37ea1370.json",
+    "key": "!items!5d6f925b37ea1370"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "deflect-arrows-12d6ef888779ce65.json",
+    "key": "!items!12d6ef888779ce65"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "deflect-spell-bb343061873c75f0.json",
+    "key": "!items!bb343061873c75f0"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "delay-malfunction-48e7352b0a7b304b.json",
+    "key": "!items!48e7352b0a7b304b"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "demoralizing-shout-0662ea8194ff23da.json",
+    "key": "!items!0662ea8194ff23da"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "devoted-leadership-f95905f068afc6b1.json",
+    "key": "!items!f95905f068afc6b1"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "dodge-7d08b8436a8b4167.json",
+    "key": "!items!7d08b8436a8b4167"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "drums-of-courage-ba196565a37ec8b6.json",
+    "key": "!items!ba196565a37ec8b6"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "emergency-repair-75c26fcff19109c3.json",
+    "key": "!items!75c26fcff19109c3"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "empower-spell-5999ccb03c7a7bb7.json",
+    "key": "!items!5999ccb03c7a7bb7"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "endurance-22e43a07c05a0574.json",
+    "key": "!items!22e43a07c05a0574"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "enduring-leadership-6e5ca3a5060cfb21.json",
+    "key": "!items!6e5ca3a5060cfb21"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "enlarge-spell-eb0b6b72b9ddc002.json",
+    "key": "!items!eb0b6b72b9ddc002"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "eschew-materials-74496a40963c2854.json",
+    "key": "!items!74496a40963c2854"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "exotic-weapon-proficiency-c1119e53d201a639.json",
+    "key": "!items!c1119e53d201a639"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "expert-rider-8a32db4e6482a3da.json",
+    "key": "!items!8a32db4e6482a3da"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "extend-spell-65028ad08eec2e86.json",
+    "key": "!items!65028ad08eec2e86"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "far-shot-5608035705872a51.json",
+    "key": "!items!5608035705872a51"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "firearm-knack-2b597620ddbfbf9c.json",
+    "key": "!items!2b597620ddbfbf9c"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "follower-of-the-totem-1b11502d0a5c040b.json",
+    "key": "!items!1b11502d0a5c040b"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "forge-ring-5b8f2aa2533160d7.json",
+    "key": "!items!5b8f2aa2533160d7"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "furious-charge-ff2d48c2fec51f05.json",
+    "key": "!items!ff2d48c2fec51f05"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "great-cleave-8ea93af3cfb52873.json",
+    "key": "!items!8ea93af3cfb52873"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "great-fortitude-66a59a40dae0fed6.json",
+    "key": "!items!66a59a40dae0fed6"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "greater-spell-focus-0f7ec5aa79f51716.json",
+    "key": "!items!0f7ec5aa79f51716"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "greater-spell-penetration-d5446c214ad679f0.json",
+    "key": "!items!d5446c214ad679f0"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "greater-two-weapon-fighting-748fb2c44a1ff7eb.json",
+    "key": "!items!748fb2c44a1ff7eb"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "greater-weapon-focus-5f27142755ab0f19.json",
+    "key": "!items!5f27142755ab0f19"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "greater-weapon-specialization-695f1a45a545cf5c.json",
+    "key": "!items!695f1a45a545cf5c"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "heighten-spell-d2f7309e796a9f33.json",
+    "key": "!items!d2f7309e796a9f33"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "improved-bull-rush-549e4a1ee28eb65b.json",
+    "key": "!items!549e4a1ee28eb65b"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "improved-counterspell-78810a171a0ec433.json",
+    "key": "!items!78810a171a0ec433"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "improved-critical-67beb7aa2473045e.json",
+    "key": "!items!67beb7aa2473045e"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "improved-disarm-0512021a83a0a0fe.json",
+    "key": "!items!0512021a83a0a0fe"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "improved-feint-49283f56b4631d2c.json",
+    "key": "!items!49283f56b4631d2c"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "improved-grapple-2dd51e682227cf98.json",
+    "key": "!items!2dd51e682227cf98"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "improved-initiative-3232602c102e0494.json",
+    "key": "!items!3232602c102e0494"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "improved-overrun-682fc7477ca63892.json",
+    "key": "!items!682fc7477ca63892"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "improved-precise-shot-bd372954ffc0285a.json",
+    "key": "!items!bd372954ffc0285a"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "improved-shield-bash-9b7cda054c0fa0f5.json",
+    "key": "!items!9b7cda054c0fa0f5"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "improved-sunder-f3184e001d989d4b.json",
+    "key": "!items!f3184e001d989d4b"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "improved-trip-a7425fdb4a70fd7d.json",
+    "key": "!items!a7425fdb4a70fd7d"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "improved-two-weapon-fighting-efbf6538242877a7.json",
+    "key": "!items!efbf6538242877a7"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "improved-unarmed-strike-678da6b18eecd531.json",
+    "key": "!items!678da6b18eecd531"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "inner-rage-b45e2be8efcced8e.json",
+    "key": "!items!b45e2be8efcced8e"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "intimidating-shout-a828936b34512dca.json",
+    "key": "!items!a828936b34512dca"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "iron-will-bf55b7e5d7d1a388.json",
+    "key": "!items!bf55b7e5d7d1a388"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "leadership-26e990081f158fdb.json",
+    "key": "!items!26e990081f158fdb"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "lightning-reflexes-f501b369179d5112.json",
+    "key": "!items!f501b369179d5112"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "lightning-reload-b4d46756896c0cd6.json",
+    "key": "!items!b4d46756896c0cd6"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "magic-energy-control-02de90e0e3efa5b4.json",
+    "key": "!items!02de90e0e3efa5b4"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "manyshot-1346d40451a9fd07.json",
+    "key": "!items!1346d40451a9fd07"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "martial-weapon-proficiency-19d5d58099186464.json",
+    "key": "!items!19d5d58099186464"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "maximize-spell-c57a9aa668d04d16.json",
+    "key": "!items!c57a9aa668d04d16"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "mighty-lungs-33b931493f67ba20.json",
+    "key": "!items!33b931493f67ba20"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "mirror-spell-a666c7dfd1a5e2fd.json",
+    "key": "!items!a666c7dfd1a5e2fd"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "mobility-62fbe110ddcb2b39.json",
+    "key": "!items!62fbe110ddcb2b39"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "mounted-archery-c95b8e734c736c51.json",
+    "key": "!items!c95b8e734c736c51"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "mounted-combat-b29a91663b5df3c6.json",
+    "key": "!items!b29a91663b5df3c6"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "multiattack-4b2ed70fb66b7ceb.json",
+    "key": "!items!4b2ed70fb66b7ceb"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "natural-spell-54a86a589bb5f3f1.json",
+    "key": "!items!54a86a589bb5f3f1"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "pistol-whip-40a835b85ca075d7.json",
+    "key": "!items!40a835b85ca075d7"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "point-blank-shot-4eb23052f3379913.json",
+    "key": "!items!4eb23052f3379913"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "power-attack-95e094ad6c35e24e.json",
+    "key": "!items!95e094ad6c35e24e"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "precise-shot-e7cfa635cc694c62.json",
+    "key": "!items!e7cfa635cc694c62"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "precision-leadership-326f7f911b1af772.json",
+    "key": "!items!326f7f911b1af772"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "pulverize-61414b1ec7cfaf61.json",
+    "key": "!items!61414b1ec7cfaf61"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "punishing-blow-e6a87a19164984e6.json",
+    "key": "!items!e6a87a19164984e6"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "quick-draw-f8868df47d4448a6.json",
+    "key": "!items!f8868df47d4448a6"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "quicken-spell-9e0f392d227b5d7e.json",
+    "key": "!items!9e0f392d227b5d7e"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "rapid-reload-f4af966047cc7d21.json",
+    "key": "!items!f4af966047cc7d21"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "rapid-shot-fba8bca53f4deccc.json",
+    "key": "!items!fba8bca53f4deccc"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "reckless-attack-8712e67bdb0146dd.json",
+    "key": "!items!8712e67bdb0146dd"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "reflect-spell-e92885c7519ad231.json",
+    "key": "!items!e92885c7519ad231"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "ride-bareback-2a2b49be1539b9ae.json",
+    "key": "!items!2a2b49be1539b9ae"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "ride-by-attack-5ca76c3359cbcbfa.json",
+    "key": "!items!5ca76c3359cbcbfa"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "run-4c8b496bc7281048.json",
+    "key": "!items!4c8b496bc7281048"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "scavenge-materials-85f54dc5c8136274.json",
+    "key": "!items!85f54dc5c8136274"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "scribe-scroll-bedf55473d6ebd0a.json",
+    "key": "!items!bedf55473d6ebd0a"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "shield-proficiency-38388682538813ba.json",
+    "key": "!items!38388682538813ba"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "shot-on-the-run-72894fa2fc6d4239.json",
+    "key": "!items!72894fa2fc6d4239"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "siege-weapon-knack-ca324ac56f942323.json",
+    "key": "!items!ca324ac56f942323"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "silent-spell-89f55163b9eafea6.json",
+    "key": "!items!89f55163b9eafea6"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "simple-weapon-proficiency-fc7cd6ca138eb5bf.json",
+    "key": "!items!fc7cd6ca138eb5bf"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "skill-focus-8217a8f24b631891.json",
+    "key": "!items!8217a8f24b631891"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "skilled-63e93d7c15badc3f.json",
+    "key": "!items!63e93d7c15badc3f"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "small-device-knack-6e65c3d8e04c8b82.json",
+    "key": "!items!6e65c3d8e04c8b82"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "snatch-arrows-01762a7c40fcac55.json",
+    "key": "!items!01762a7c40fcac55"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "sniper-shot-ea5d7895445f6f37.json",
+    "key": "!items!ea5d7895445f6f37"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "spell-focus-bf75472172a79e78.json",
+    "key": "!items!bf75472172a79e78"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "spell-mastery-01560788867a8f23.json",
+    "key": "!items!01560788867a8f23"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "spell-penetration-00556c8a99c94523.json",
+    "key": "!items!00556c8a99c94523"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "spirited-charge-e5055357b9bd26f6.json",
+    "key": "!items!e5055357b9bd26f6"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "spring-attack-7745cccb3e31fbfb.json",
+    "key": "!items!7745cccb3e31fbfb"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "still-spell-7e733083699ef92d.json",
+    "key": "!items!7e733083699ef92d"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "storm-bolt-bd768b90f932973b.json",
+    "key": "!items!bd768b90f932973b"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "stunning-fist-a5f471e0dddceb1d.json",
+    "key": "!items!a5f471e0dddceb1d"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "thunderous-blow-8d90b82ef3ed4434.json",
+    "key": "!items!8d90b82ef3ed4434"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "toughness-9a692fe6b110d94b.json",
+    "key": "!items!9a692fe6b110d94b"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "tower-shield-proficiency-5874ee54cf250c0f.json",
+    "key": "!items!5874ee54cf250c0f"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "track-24251c982b9bb0bf.json",
+    "key": "!items!24251c982b9bb0bf"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "trick-shot-d096c099bd82ac29.json",
+    "key": "!items!d096c099bd82ac29"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "triumphant-yell-f6b824a4dff55d9f.json",
+    "key": "!items!f6b824a4dff55d9f"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "two-weapon-defense-0a9301200d82553b.json",
+    "key": "!items!0a9301200d82553b"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "two-weapon-fighting-ed8fdea96febb036.json",
+    "key": "!items!ed8fdea96febb036"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "vehicle-knack-a0729f0682756574.json",
+    "key": "!items!a0729f0682756574"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "vehicle-proficiency-fc5cc219f6f9583d.json",
+    "key": "!items!fc5cc219f6f9583d"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "wand-specialization-a20f308c3d8786e6.json",
+    "key": "!items!a20f308c3d8786e6"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "war-stomp-674d44d0db6a07d3.json",
+    "key": "!items!674d44d0db6a07d3"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "weapon-finesse-09eb70cdcda3c32d.json",
+    "key": "!items!09eb70cdcda3c32d"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "weapon-focus-fdea42738398197e.json",
+    "key": "!items!fdea42738398197e"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "weapon-specialization-37f879fb4a6e0db6.json",
+    "key": "!items!37f879fb4a6e0db6"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "whirlwind-attack-13d3aece4ade8d54.json",
+    "key": "!items!13d3aece4ade8d54"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "widen-spell-b798d4d362851ce6.json",
+    "key": "!items!b798d4d362851ce6"
+  }
+]

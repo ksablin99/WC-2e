@@ -1,0 +1,201 @@
+<form autocomplete="off" onsubmit="event.preventDefault();" class="warcraft-character-creation-form">
+  <header class="flexcol" style="gap: 0.35rem; margin-bottom: 0.5rem;">
+    <div class="flexrow" style="align-items: center;">
+      <h1 style="margin: 0;">{{localize "D35E.WarcraftCharacterBuilder"}}</h1>
+      <span style="flex: 0 0 auto;">{{localize "D35E.WarcraftCreationStep"}} {{stepNumber}} / {{stepCount}}</span>
+    </div>
+    <ol class="flexrow" aria-label="{{localize 'D35E.WarcraftCreationProgress'}}" style="list-style: none; padding: 0; margin: 0; gap: 0.25rem;">
+      <li class="{{#if steps.identity.active}}active{{/if}}">{{localize "D35E.WarcraftCreationIdentity"}}</li>
+      <li aria-hidden="true">&rsaquo;</li>
+      <li class="{{#if steps.abilities.active}}active{{/if}}">{{localize "D35E.Abilities"}}</li>
+      <li aria-hidden="true">&rsaquo;</li>
+      <li class="{{#if steps.skills.active}}active{{/if}}">{{localize "D35E.Skills"}}</li>
+      <li aria-hidden="true">&rsaquo;</li>
+      <li class="{{#if steps.feats.active}}active{{/if}}">{{localize "D35E.Feats"}}</li>
+      <li aria-hidden="true">&rsaquo;</li>
+      <li class="{{#if steps.spellsEquipment.active}}active{{/if}}">{{localize "D35E.WarcraftCreationLoadout"}}</li>
+      <li aria-hidden="true">&rsaquo;</li>
+      <li class="{{#if steps.review.active}}active{{/if}}">{{localize "D35E.WarcraftCreationReview"}}</li>
+    </ol>
+  </header>
+
+  {{#if existingFoundation}}
+  <p class="notification warning" role="alert"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i> {{localize "D35E.WarcraftCreationFreshActorOnly"}}</p>
+  {{/if}}
+
+  {{#if errors.length}}
+  <div class="notification error" role="alert">
+    <strong>{{localize "D35E.WarcraftCreationFixStep"}}</strong>
+    <ul>{{#each errors as |error|}}<li>{{error}}</li>{{/each}}</ul>
+  </div>
+  {{/if}}
+
+  <section style="height: 610px; overflow-y: auto; padding-right: 0.35rem;">
+    {{#if steps.identity.active}}
+    <fieldset>
+      <legend>{{localize "D35E.WarcraftCreationIdentity"}}</legend>
+      <div class="form-group">
+        <label for="warcraft-creation-race">{{localize "D35E.Race"}}</label>
+        <select id="warcraft-creation-race" name="raceId" required>
+          <option value="">{{localize "D35E.WarcraftCreationChooseRace"}}</option>
+          {{#select plan.raceId}}{{#each races as |race|}}<option value="{{race.id}}">{{race.name}}</option>{{/each}}{{/select}}
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="warcraft-creation-class">{{localize "D35E.Class"}}</label>
+        <select id="warcraft-creation-class" name="classId" required>
+          <option value="">{{localize "D35E.SelectClass"}}</option>
+          {{#select plan.classId}}{{#each classes as |class|}}<option value="{{class.id}}">{{class.name}}</option>{{/each}}{{/select}}
+        </select>
+      </div>
+      {{#if hasClassPaths}}
+      <div class="form-group">
+        <label for="warcraft-creation-path">{{localize "D35E.ClassPath"}}</label>
+        <select id="warcraft-creation-path" name="classPath" required>
+          {{#select plan.classPath}}{{#each classPaths as |path|}}<option value="{{path.id}}">{{path.name}}</option>{{/each}}{{/select}}
+        </select>
+      </div>
+      {{/if}}
+      <div class="form-group">
+        <label for="warcraft-creation-racial-levels">{{localize "D35E.WarcraftCreationRacialLevels"}}</label>
+        <input id="warcraft-creation-racial-levels" name="racialLevelsPlanned" type="number" min="0" value="{{plan.racialLevelsPlanned}}">
+        <p class="notes">{{localize "D35E.WarcraftCreationRacialLevelsHint"}}</p>
+      </div>
+      <hr>
+      <div class="form-group"><label>{{localize "D35E.Gender"}}</label><input name="gender" type="text" value="{{plan.gender}}"></div>
+      <div class="form-group"><label>{{localize "D35E.Deity"}}</label><input name="deity" type="text" value="{{plan.deity}}"></div>
+      <div class="form-group"><label>{{localize "D35E.Affiliation"}}</label><input name="affiliation" type="text" value="{{plan.affiliation}}"></div>
+      <div class="form-group"><label>{{localize "D35E.AffiliationRating"}}</label><input name="affiliationRating" type="number" value="{{plan.affiliationRating}}"></div>
+    </fieldset>
+    {{/if}}
+
+    {{#if steps.abilities.active}}
+    <fieldset>
+      <legend>{{localize "D35E.Abilities"}}</legend>
+      <div class="form-group">
+        <label for="warcraft-creation-budget">{{localize "D35E.WarcraftCreationPointBuyBudget"}}</label>
+        <input id="warcraft-creation-budget" name="pointBuyBudget" type="number" min="0" value="{{plan.pointBuyBudget}}">
+      </div>
+      <p><strong>{{localize "D35E.PointBuyCalculatorSpent"}}:</strong> {{pointBuySpent}} &nbsp; <strong>{{localize "D35E.WarcraftCreationRemaining"}}:</strong> {{pointBuyRemaining}}</p>
+      <ol class="item-list">
+        {{#each abilities as |ability|}}
+        <li class="item flexrow" data-ability="{{ability.key}}" style="align-items: center;">
+          <label for="warcraft-ability-{{ability.key}}" class="item-name">{{ability.label}}</label>
+          <button type="button" data-warcraft-creation-action="ability" data-ability="{{ability.key}}" data-delta="-1" aria-label="{{localize 'D35E.Subtract'}} {{ability.label}}"><i class="fa-solid fa-minus" aria-hidden="true"></i></button>
+          <input id="warcraft-ability-{{ability.key}}" name="abilities.{{ability.key}}" type="number" min="8" max="18" value="{{ability.value}}" style="flex: 0 0 4rem; text-align: center;">
+          <button type="button" data-warcraft-creation-action="ability" data-ability="{{ability.key}}" data-delta="1" aria-label="{{localize 'D35E.Add'}} {{ability.label}}"><i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+          <span style="flex: 0 0 6rem; text-align: right;">{{localize "D35E.Modifier"}} {{ability.modifier}}</span>
+        </li>
+        {{/each}}
+      </ol>
+      <p class="notes">{{localize "D35E.WarcraftCreationAbilityHint"}}</p>
+    </fieldset>
+    {{/if}}
+
+    {{#if steps.skills.active}}
+    <fieldset>
+      <legend>{{localize "D35E.Skills"}}</legend>
+      <p><strong>{{localize "D35E.WarcraftCreationSkillPoints"}}:</strong> {{skillPointsSpent}} / {{skillPoints}}</p>
+      <p class="notes">{{localize "D35E.WarcraftCreationSkillHint"}}</p>
+      <ol class="item-list" style="columns: 2; column-gap: 1rem;">
+        {{#each skills as |skill|}}
+        <li class="item flexrow" style="break-inside: avoid; align-items: center;">
+          <label for="warcraft-skill-{{skill.key}}" class="item-name {{#if skill.classSkill}}bold{{/if}}">{{skill.label}}</label>
+          <span title="{{localize 'D35E.WarcraftCreationCostPerRank'}}" style="flex: 0 0 4.5rem;">{{skill.cost}} / {{localize "D35E.WarcraftCreationRank"}}</span>
+          <input id="warcraft-skill-{{skill.key}}" name="skills.{{skill.key}}" type="number" min="0" max="{{skill.maximum}}" step="1" value="{{skill.value}}" style="flex: 0 0 4rem;">
+        </li>
+        {{/each}}
+      </ol>
+    </fieldset>
+    {{/if}}
+
+    {{#if steps.feats.active}}
+    <fieldset>
+      <legend>{{localize "D35E.Feats"}}</legend>
+      <p><strong>{{localize "D35E.WarcraftCreationFeatSlots"}}:</strong> {{plan.featIds.length}} / {{featSlots}}</p>
+      <input type="search" data-warcraft-filter="feat-list" placeholder="{{localize 'D35E.Search'}}" aria-label="{{localize 'D35E.Search'}}">
+      <ol id="feat-list" class="item-list" style="max-height: 500px; overflow-y: auto;">
+        {{#each feats as |feat|}}
+        <li class="item" data-warcraft-filter-text="{{feat.name}} {{feat.prerequisite}}">
+          <label class="flexrow" style="align-items: center;">
+            <input name="featIds" type="checkbox" value="{{feat.id}}" {{#if feat.checked}}checked{{/if}} style="flex: 0 0 auto;">
+            <img src="{{feat.img}}" width="32" height="32" alt="">
+            <span class="item-name"><strong>{{feat.name}}</strong>{{#if feat.prerequisite}}<br><small>{{localize "D35E.Prerequisite"}}: {{feat.prerequisite}}</small>{{/if}}</span>
+          </label>
+        </li>
+        {{/each}}
+      </ol>
+    </fieldset>
+    {{/if}}
+
+    {{#if steps.spellsEquipment.active}}
+    <div class="flexrow" style="align-items: flex-start; gap: 0.75rem;">
+      <fieldset style="min-width: 0;">
+        <legend>{{localize "D35E.Spells"}}</legend>
+        {{#if hasSpells}}
+        <p>{{localize "D35E.WarcraftCreationSpellLimits"}}: 0 &mdash; {{spellLimit0}}, 1 &mdash; {{spellLimit1}}</p>
+        <input type="search" data-warcraft-filter="spell-list" placeholder="{{localize 'D35E.Search'}}" aria-label="{{localize 'D35E.Search'}}">
+        <ol id="spell-list" class="item-list" style="max-height: 470px; overflow-y: auto;">
+          {{#each spells as |spell|}}
+          <li class="item" data-warcraft-filter-text="{{spell.name}}">
+            <label class="flexrow" style="align-items: center;">
+              <input name="spellIds" type="checkbox" value="{{spell.id}}" {{#if spell.checked}}checked{{/if}} style="flex: 0 0 auto;">
+              <img src="{{spell.img}}" width="32" height="32" alt="">
+              <span class="item-name">{{spell.name}}</span><span style="flex: 0 0 4rem;">{{localize "D35E._Level"}} {{spell.creationLevel}}</span>
+            </label>
+          </li>
+          {{/each}}
+        </ol>
+        {{else}}
+        <p>{{localize "D35E.WarcraftCreationNoStartingSpells"}}</p>
+        {{/if}}
+      </fieldset>
+      <fieldset style="min-width: 0;">
+        <legend>{{localize "D35E.Equipment"}}</legend>
+        <div class="form-group"><label>{{localize "D35E.WarcraftCreationStartingGold"}}</label><input name="startingGold" type="number" min="0" step="0.01" value="{{plan.startingGold}}"></div>
+        <p><strong>{{localize "D35E.WarcraftCreationEquipmentCost"}}:</strong> {{plan.equipmentCost}} gp &nbsp; <strong>{{localize "D35E.WarcraftCreationRemaining"}}:</strong> {{equipmentRemaining}} gp</p>
+        <input type="search" data-warcraft-filter="equipment-list" placeholder="{{localize 'D35E.Search'}}" aria-label="{{localize 'D35E.Search'}}">
+        <ol id="equipment-list" class="item-list" style="max-height: 420px; overflow-y: auto;">
+          {{#each equipment as |item|}}
+          <li class="item" data-warcraft-filter-text="{{item.name}}">
+            <label class="flexrow" style="align-items: center;">
+              <input name="equipmentIds" type="checkbox" value="{{item.id}}" {{#if item.checked}}checked{{/if}} style="flex: 0 0 auto;">
+              <img src="{{item.img}}" width="32" height="32" alt="">
+              <span class="item-name">{{item.name}}</span><span style="flex: 0 0 5rem; text-align: right;">{{item.displayPrice}} gp</span>
+            </label>
+          </li>
+          {{/each}}
+        </ol>
+      </fieldset>
+    </div>
+    {{/if}}
+
+    {{#if steps.review.active}}
+    <fieldset>
+      <legend>{{localize "D35E.WarcraftCreationReview"}}</legend>
+      <dl>
+        <dt>{{localize "D35E.Race"}}</dt><dd>{{summary.race}}</dd>
+        <dt>{{localize "D35E.Class"}}</dt><dd>{{summary.className}}{{#if hasClassPaths}} &mdash; {{summary.classPath}}{{/if}}</dd>
+        <dt>{{localize "D35E.Abilities"}}</dt><dd>{{summary.abilities}}</dd>
+        <dt>{{localize "D35E.Skills"}}</dt><dd>{{skillPointsSpent}} / {{skillPoints}} {{localize "D35E.WarcraftCreationSkillPointsUsed"}}</dd>
+        <dt>{{localize "D35E.Feats"}}</dt><dd>{{summary.featCount}}</dd>
+        <dt>{{localize "D35E.Spells"}}</dt><dd>{{summary.spellCount}}</dd>
+        <dt>{{localize "D35E.Equipment"}}</dt><dd>{{summary.equipmentCount}} ({{summary.equipmentCost}} / {{summary.startingGold}} gp)</dd>
+      </dl>
+      {{#if reviewErrors.length}}
+      <div class="notification error" role="alert"><strong>{{localize "D35E.WarcraftCreationCannotComplete"}}</strong><ul>{{#each reviewErrors as |error|}}<li>{{error}}</li>{{/each}}</ul></div>
+      {{/if}}
+      {{#if warnings.length}}
+      <div class="notification warning"><strong>{{localize "D35E.WarcraftCreationReviewWarnings"}}</strong><ul>{{#each warnings as |warning|}}<li>{{warning}}</li>{{/each}}</ul></div>
+      {{/if}}
+      <p class="notes">{{localize "D35E.WarcraftCreationWriteHint"}}</p>
+    </fieldset>
+    {{/if}}
+  </section>
+
+  <footer class="flexrow" style="gap: 0.5rem; margin-top: 0.5rem;">
+    <button type="button" data-warcraft-creation-action="back" {{#unless canBack}}disabled{{/unless}}><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> {{localize "D35E.Back"}}</button>
+    {{#if canNext}}<button type="button" data-warcraft-creation-action="next">{{localize "D35E.Next"}} <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>{{/if}}
+    {{#if steps.review.active}}<button type="button" data-warcraft-creation-action="complete" {{#unless canComplete}}disabled{{/unless}}><i class="fa-solid fa-check" aria-hidden="true"></i> {{localize "D35E.WarcraftCreationCreate"}}</button>{{/if}}
+  </footer>
+</form>

@@ -1,0 +1,44 @@
+{
+  "_embedded": {},
+  "_id": "5d00d0447ab3942a",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "creatureRule": {
+        "kind": "type",
+        "reusable": true
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          186,
+          201
+        ],
+        "printedPages": [
+          185,
+          200
+        ],
+        "section": "Construct",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/aura.svg",
+  "name": "Construct Traits",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilityType": "nat",
+    "description": {
+      "value": "<p>d10 Hit Dice; three-quarter base attack; no good saves. No Stamina score. Darkvision 60 feet and low-light vision. Immune to mind-affecting effects, poison, sleep, paralysis, stunning, disease, death and necromancy effects, critical hits, nonlethal damage, ability damage or drain, fatigue, exhaustion, and energy drain. Immune to Fortitude-save effects unless they affect objects or are harmless. Cannot heal naturally, but suitable repair and fast healing can work. Destroyed at 0 hit points; cannot be raised or resurrected; does not eat, sleep, or breathe. Size grants bonus hit points.</p><p>This reusable record defines shared conversion behavior. Individual actors carry exact printed exceptions and totals.</p>"
+    },
+    "featType": "trait",
+    "source": "World of Warcraft: Monster Guide, pp. 185-200",
+    "uniqueId": "wc-creature-rule-construct"
+  },
+  "type": "feat"
+}

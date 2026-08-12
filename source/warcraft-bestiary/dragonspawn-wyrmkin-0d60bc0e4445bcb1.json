@@ -1,0 +1,1126 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "011d852b6e131b86",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 3,
+                "die": 8,
+                "expression": "3d8",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Monstrous Humanoid Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "high",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "22",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "3",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "18",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "10",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "17",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "6",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "2",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "3",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "20",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "monstrousHumanoid",
+          "damageReduction": [],
+          "hd": 8,
+          "hp": 0,
+          "levels": 3,
+          "maxLevel": 50,
+          "resistances": [],
+          "savingThrows": {
+            "fort": {
+              "value": "low"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "high"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 48"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "1abac5e4b409a9a6",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                7
+              ],
+              "printedDamage": "2d6+5/19-20"
+            },
+            "reference": {
+              "id": "wcLongsword00001",
+              "name": "Longsword",
+              "pack": "warcraftrpg2e.warcraft-equipment"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "+1 Longsword",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 19,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "5",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "+1 longsword",
+          "damage": {
+            "parts": [
+              [
+                "2d6+5",
+                "Piercing or Slashing",
+                "damage-piercing-or-slashing"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> +1 longsword +7 melee (2d6+5/19-20).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": true,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": true,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "bf1006a2bd8c709c",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                7
+              ],
+              "printedDamage": "2d6+5/x3"
+            },
+            "reference": {
+              "id": "756a323ae62fcde2",
+              "name": "Spear",
+              "pack": "warcraftrpg2e.warcraft-equipment"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "+1 Spear",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 3,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "5",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "+1 spear",
+          "damage": {
+            "parts": [
+              [
+                "2d6+5",
+                "Piercing",
+                "damage-piercing"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> +1 spear +7 melee (2d6+5/x3).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": true,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "5c55d2044ed027fa",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                4
+              ],
+              "printedDamage": "2d6+5/x3"
+            },
+            "reference": {
+              "id": "756a323ae62fcde2",
+              "name": "Spear",
+              "pack": "warcraftrpg2e.warcraft-equipment"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "+1 Spear",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 3,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "rwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "2",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "+1 spear",
+          "damage": {
+            "parts": [
+              [
+                "2d6+5",
+                "Piercing",
+                "damage-piercing"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> +1 spear +4 ranged (2d6+5/x3).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": true,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "7a04d1fa08c86994",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack - +1 longsword",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "1abac5e4b409a9a6",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "+1 Longsword",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> +1 longsword +7 melee (2d6+5/19-20).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "1307a1139b5054a3",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack - +1 spear",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "bf1006a2bd8c709c",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "+1 Spear",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> +1 spear +7 melee (2d6+5/x3).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "5334603c33ac48db",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack - +1 spear",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "5c55d2044ed027fa",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "+1 Spear",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> +1 spear +4 ranged (2d6+5/x3).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "20c740d9d58607b3",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Darkvision 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                48
+              ],
+              "section": "Dragonspawn Wyrmkin"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Darkvision 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Darkvision 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 48",
+          "uniqueId": "wc-monster-dragonspawn-wyrmkin-darkvision-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "ad1aff83f4638fd0",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "heritage qualities"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                48
+              ],
+              "section": "Dragonspawn Wyrmkin"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "heritage qualities",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> heritage qualities.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 48",
+          "uniqueId": "wc-monster-dragonspawn-wyrmkin-heritage-qualities"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "921684761ec64634",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Cleave"
+            },
+            "reference": {
+              "id": "34b794d403b119d7",
+              "name": "Cleave",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                48
+              ],
+              "section": "Dragonspawn Wyrmkin"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Cleave",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Cleave.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.34b794d403b119d7]{Cleave}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 48",
+          "uniqueId": "wc-monster-dragonspawn-wyrmkin-cleave"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "b4cc38f36491863f",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Power Attack"
+            },
+            "reference": {
+              "id": "95e094ad6c35e24e",
+              "name": "Power Attack",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                48
+              ],
+              "section": "Dragonspawn Wyrmkin"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Power Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Power Attack.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.95e094ad6c35e24e]{Power Attack}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 48",
+          "uniqueId": "wc-monster-dragonspawn-wyrmkin-power-attack"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "66aa2733ef39345b",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Large Monstrous Humanoid; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "ad1ebed5dc963301",
+              "name": "Monstrous Humanoid Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                48
+              ],
+              "section": "Dragonspawn Wyrmkin"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Monstrous Humanoid Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Large Monstrous Humanoid; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.ad1ebed5dc963301]{Monstrous Humanoid Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 48",
+          "uniqueId": "wc-monster-dragonspawn-wyrmkin-monstrous-humanoid-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "0d60bc0e4445bcb1",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 19, Agy 12, Sta 16, Int 13, Spt 10, Cha 6",
+          "Advancement": "By racial levels or character class",
+          "Alignment": "Any",
+          "Area": "Any",
+          "Armor Class": "18 (-1 size, +1 Agy, +2 natural, +4 masterwork scale mail, +2 heavy shield), touch 10, flat-footed 17",
+          "Attack": "+1 longsword +7 melee (2d6+5/19-20)",
+          "Base Attack/Grapple": "+3/+11",
+          "Challenge Rating": "3",
+          "Environment": "As dragon type",
+          "Feats": "Cleave, Power Attack",
+          "Full Attack": "+1 longsword +7 melee (2d6+5/19-20) or +1 spear +7 melee (2d6+5/x3), or +1 spear +4 ranged (2d6+5/x3)",
+          "Hit Dice": "3d8+9 (22 hp)",
+          "Initiative": "+1",
+          "Level Adjustment": "Use racial levels",
+          "Organization": "Unit (10-100), squadron (40-400), or army (100-1000)",
+          "Saves": "Fort +6, Ref +2, Will +3",
+          "Skills": "Knowledge (arcana) +5, Knowledge (military tactics) +5, Spellcraft +8, Spot +6",
+          "Space/Reach": "10 ft./10 ft.",
+          "Special Attacks": "-",
+          "Special Qualities": "Darkvision 60 ft., heritage qualities",
+          "Speed": "20 ft. in masterwork scale mail (4 squares); base 30 ft.",
+          "Treasure": "Standard (weapons and armor)"
+        },
+        "rulesCoverage": {
+          "actor-defense": 0,
+          "linked-reference": 3,
+          "manual": 2
+        },
+        "subtypes": []
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          49
+        ],
+        "printedPages": [
+          48
+        ],
+        "section": "Dragonspawn Wyrmkin",
+        "verification": "native-text-table"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "011d852b6e131b86",
+    "1abac5e4b409a9a6",
+    "bf1006a2bd8c709c",
+    "5c55d2044ed027fa",
+    "7a04d1fa08c86994",
+    "1307a1139b5054a3",
+    "5334603c33ac48db",
+    "20c740d9d58607b3",
+    "ad1aff83f4638fd0",
+    "921684761ec64634",
+    "b4cc38f36491863f",
+    "66aa2733ef39345b"
+  ],
+  "name": "Dragonspawn Wyrmkin",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -2,
+        "origMod": -2,
+        "origTotal": 6,
+        "penalty": 0,
+        "total": 6,
+        "userPenalty": 0,
+        "value": 6
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 3,
+        "origMod": 3,
+        "origTotal": 16,
+        "penalty": 0,
+        "total": 16,
+        "userPenalty": 0,
+        "value": 16
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 12,
+        "penalty": 0,
+        "total": 12,
+        "userPenalty": 0,
+        "value": 12
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 13,
+        "penalty": 0,
+        "total": 13,
+        "userPenalty": 0,
+        "value": 13
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 4,
+        "origMod": 4,
+        "origTotal": 19,
+        "penalty": 0,
+        "total": 19,
+        "userPenalty": 0,
+        "value": 19
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 17,
+          "value": 0
+        },
+        "normal": {
+          "total": 18,
+          "value": 0
+        },
+        "touch": {
+          "total": 10,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 3,
+        "nonepic": 3,
+        "total": 3,
+        "value": 0
+      },
+      "cmb": {
+        "total": 11,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "monstrousHumanoid",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 0,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 3,
+        "total": 3
+      },
+      "hp": {
+        "base": 22,
+        "max": 22,
+        "min": -16,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 22
+      },
+      "init": {
+        "bonus": 0,
+        "total": 1,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 2,
+      "savingThrows": {
+        "fort": {
+          "base": 6,
+          "total": 6
+        },
+        "ref": {
+          "base": 2,
+          "total": 2
+        },
+        "will": {
+          "base": 3,
+          "total": 3
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": null,
+        "darkvision": 60,
+        "lowLight": false,
+        "lowLightMultiplier": null,
+        "tremorsense": null
+      },
+      "speed": {
+        "land": {
+          "base": 20,
+          "total": 20
+        }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "Any",
+      "biography": {
+        "public": "",
+        "value": "<p>Dragonspawn Wyrmkin is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 3,
+      "environment": "As dragon type",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 3,
+        "value": 3
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 3d8+9 (22 hp)</p><p><strong>Initiative:</strong> +1</p><p><strong>Speed:</strong> 20 ft. in masterwork scale mail (4 squares); base 30 ft.</p><p><strong>Armor Class:</strong> 18 (-1 size, +1 Agy, +2 natural, +4 masterwork scale mail, +2 heavy shield), touch 10, flat-footed 17</p><p><strong>Base Attack/Grapple:</strong> +3/+11</p><p><strong>Attack:</strong> +1 longsword +7 melee (2d6+5/19-20)</p><p><strong>Full Attack:</strong> +1 longsword +7 melee (2d6+5/19-20) or +1 spear +7 melee (2d6+5/x3), or +1 spear +4 ranged (2d6+5/x3)</p><p><strong>Space/Reach:</strong> 10 ft./10 ft.</p><p><strong>Special Attacks:</strong> -</p><p><strong>Special Qualities:</strong> Darkvision 60 ft., heritage qualities</p><p><strong>Saves:</strong> Fort +6, Ref +2, Will +3</p><p><strong>Abilities:</strong> Str 19, Agy 12, Sta 16, Int 13, Spt 10, Cha 6</p><p><strong>Skills:</strong> Knowledge (arcana) +5, Knowledge (military tactics) +5, Spellcraft +8, Spot +6</p><p><strong>Feats:</strong> Cleave, Power Attack</p><p><strong>Area:</strong> Any</p><p><strong>Organization:</strong> Unit (10-100), squadron (40-400), or army (100-1000)</p><p><strong>Treasure:</strong> Standard (weapons and armor)</p><p><strong>Advancement:</strong> By racial levels or character class</p><p><strong>Level Adjustment:</strong> Use racial levels</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 3,
+      "type": "Monstrous Humanoid"
+    },
+    "skills": {
+      "kar": {
+        "ability": "int",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 4,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 5,
+        "notes": "Printed total +5",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "kmt": {
+        "ability": "int",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 4,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 5,
+        "notes": "Printed total +5",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spl": {
+        "ability": "int",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 7,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 8,
+        "notes": "Printed total +8",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spt": {
+        "ability": "wis",
+        "abilityModifier": 0,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 6,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 6,
+        "notes": "Printed total +6",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "lg",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Darkvision 60 ft., heritage qualities",
+      "size": "lg",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

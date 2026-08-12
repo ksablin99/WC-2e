@@ -3,7 +3,13 @@
   "effects": [],
   "flags": {
     "warcraftrpg2e": {
+      "catalog": {
+        "category": "explosive",
+        "completeTableEntry": true,
+        "generated": false
+      },
       "rules": {
+        "gunpowderOuncesPerPackage": 32,
         "malfunctionRating": 1
       },
       "source": {
@@ -33,6 +39,7 @@
     "identified": true,
     "identifiedName": "Gunpowder Horn (2 lb.)",
     "price": 35,
+    "properties": {},
     "quantity": 1,
     "subType": "gear",
     "weight": 2

@@ -1,0 +1,1188 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "a067875d51f08cef",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 9,
+                "die": 8,
+                "expression": "9d8",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Monstrous Humanoid Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "high",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "67",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "9",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "20",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "10",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "19",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "11",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "4",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "6",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "30",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "4",
+              "misc",
+              "init",
+              "untyped"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "monstrousHumanoid",
+          "damageReduction": [],
+          "hd": 8,
+          "hp": 0,
+          "levels": 9,
+          "maxLevel": 50,
+          "resistances": [],
+          "savingThrows": {
+            "fort": {
+              "value": "low"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "high"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 48"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "223cb09cf2dcb29c",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                15
+              ],
+              "printedDamage": "3d6+9/19-20"
+            },
+            "reference": {
+              "id": "87af1443fa49b807",
+              "name": "Greatsword",
+              "pack": "warcraftrpg2e.warcraft-equipment"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "+3 Greatsword",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 19,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "7",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "+3 greatsword",
+          "damage": {
+            "parts": [
+              [
+                "3d6+9",
+                "Piercing or Slashing",
+                "damage-piercing-or-slashing"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> +3 greatsword +15 melee (3d6+9/19-20).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": true,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": true,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "665c3463c7e71689",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                12
+              ],
+              "printedDamage": "2d6+7/x3"
+            },
+            "reference": {
+              "id": "ArxgRTWPKAjJTkG9",
+              "name": "Composite Longbow (+4)",
+              "pack": "warcraftrpg2e.weapons-and-ammo"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "+3 Composite Longbow (+4)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 3,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "rwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "4",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "+3 composite longbow (+4)",
+          "damage": {
+            "parts": [
+              [
+                "2d6+7",
+                "Piercing",
+                "damage-piercing"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> +3 composite longbow (+4) +12 ranged (2d6+7/x3).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": true,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "7246945af5cf7e4f",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack - +3 greatsword",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "223cb09cf2dcb29c",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "+3 Greatsword",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> +3 greatsword +15/+10 melee (3d6+9/19-20).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "57e1175670a2bd1a",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack - +3 composite longbow (+4)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "665c3463c7e71689",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "+3 Composite Longbow (+4)",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> +3 composite longbow (+4) +12/+7 ranged (2d6+7/x3).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "a9b4473622206fe4",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Darkvision 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                48
+              ],
+              "section": "Dragonspawn Scalebane"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Darkvision 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Darkvision 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 48",
+          "uniqueId": "wc-monster-dragonspawn-scalebane-darkvision-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "fa53d2f3abf27161",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "heritage qualities"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                48
+              ],
+              "section": "Dragonspawn Scalebane"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "heritage qualities",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> heritage qualities.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 48",
+          "uniqueId": "wc-monster-dragonspawn-scalebane-heritage-qualities"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "953df6189b8d9855",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Cleave"
+            },
+            "reference": {
+              "id": "34b794d403b119d7",
+              "name": "Cleave",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                48
+              ],
+              "section": "Dragonspawn Scalebane"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Cleave",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Cleave.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.34b794d403b119d7]{Cleave}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 48",
+          "uniqueId": "wc-monster-dragonspawn-scalebane-cleave"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "b31ded4721548cb7",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Great Fortitude"
+            },
+            "reference": {
+              "id": "66a59a40dae0fed6",
+              "name": "Great Fortitude",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                48
+              ],
+              "section": "Dragonspawn Scalebane"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Great Fortitude",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Great Fortitude.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.66a59a40dae0fed6]{Great Fortitude}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 48",
+          "uniqueId": "wc-monster-dragonspawn-scalebane-great-fortitude"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "426165e15b089862",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Initiative"
+            },
+            "reference": {
+              "id": "3232602c102e0494",
+              "name": "Improved Initiative",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                48
+              ],
+              "section": "Dragonspawn Scalebane"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Initiative",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Initiative.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.3232602c102e0494]{Improved Initiative}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 48",
+          "uniqueId": "wc-monster-dragonspawn-scalebane-improved-initiative"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "673fb36d7b07c166",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Power Attack"
+            },
+            "reference": {
+              "id": "95e094ad6c35e24e",
+              "name": "Power Attack",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                48
+              ],
+              "section": "Dragonspawn Scalebane"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Power Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Power Attack.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.95e094ad6c35e24e]{Power Attack}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 48",
+          "uniqueId": "wc-monster-dragonspawn-scalebane-power-attack"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "4d55f93aff0f62d0",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Large Monstrous Humanoid; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "ad1ebed5dc963301",
+              "name": "Monstrous Humanoid Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                48
+              ],
+              "section": "Dragonspawn Scalebane"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Monstrous Humanoid Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Large Monstrous Humanoid; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.ad1ebed5dc963301]{Monstrous Humanoid Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 48",
+          "uniqueId": "wc-monster-dragonspawn-scalebane-monstrous-humanoid-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "7703dd8c0e1aba96",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 19, Agy 12, Sta 16, Int 13, Spt 10, Cha 8",
+          "Advancement": "10-18 HD (Large); 19-27 HD (Huge); or by character class",
+          "Alignment": "Any",
+          "Area": "Any",
+          "Armor Class": "20 (-1 size, +1 Agy, +4 natural, +6 +2 scale mail ), touch 10, flat-footed 19",
+          "Attack": "+3 greatsword +15 melee (3d6+9/19-20) or +3 composite longbow (+4) +12 ranged (2d6+7/x3)",
+          "Base Attack/Grapple": "+9/+17",
+          "Challenge Rating": "7",
+          "Environment": "As dragon type",
+          "Feats": "Cleave, Great Fortitude, Improved Initiative, Power Attack",
+          "Full Attack": "+3 greatsword +15/+10 melee (3d6+9/19-20) or +3 composite longbow (+4) +12/+7 ranged (2d6+7/x3)",
+          "Hit Dice": "9d8+27 (67 hp)",
+          "Initiative": "+5",
+          "Level Adjustment": "+3",
+          "Organization": "1 per 50-100 wyrmkin; or unit (10-100), squadron (40-400), or army (100-1000)",
+          "Saves": "Fort +11, Ref +4, Will +6",
+          "Skills": "Balance +0, Bluff +3, Concentration +8, Intimidate +13, Knowledge (arcana) +7, Knowledge (military tactics) +7, Listen +7, Spellcraft +13, Spot +5, Stealth +0 (-4 to hide), Survival +3",
+          "Space/Reach": "10 ft./10 ft.",
+          "Special Attacks": "-",
+          "Special Qualities": "Darkvision 60 ft., heritage qualities",
+          "Speed": "30 ft. in scale mail (4 squares); base 40 ft.",
+          "Treasure": "Standard (weapons and armor)"
+        },
+        "rulesCoverage": {
+          "actor-defense": 0,
+          "linked-reference": 5,
+          "manual": 2
+        },
+        "subtypes": []
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          49
+        ],
+        "printedPages": [
+          48
+        ],
+        "section": "Dragonspawn Scalebane",
+        "verification": "native-text-table"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "a067875d51f08cef",
+    "223cb09cf2dcb29c",
+    "665c3463c7e71689",
+    "7246945af5cf7e4f",
+    "57e1175670a2bd1a",
+    "a9b4473622206fe4",
+    "fa53d2f3abf27161",
+    "953df6189b8d9855",
+    "b31ded4721548cb7",
+    "426165e15b089862",
+    "673fb36d7b07c166",
+    "4d55f93aff0f62d0"
+  ],
+  "name": "Dragonspawn Scalebane",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -1,
+        "origMod": -1,
+        "origTotal": 8,
+        "penalty": 0,
+        "total": 8,
+        "userPenalty": 0,
+        "value": 8
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 3,
+        "origMod": 3,
+        "origTotal": 16,
+        "penalty": 0,
+        "total": 16,
+        "userPenalty": 0,
+        "value": 16
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 12,
+        "penalty": 0,
+        "total": 12,
+        "userPenalty": 0,
+        "value": 12
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 13,
+        "penalty": 0,
+        "total": 13,
+        "userPenalty": 0,
+        "value": 13
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 4,
+        "origMod": 4,
+        "origTotal": 19,
+        "penalty": 0,
+        "total": 19,
+        "userPenalty": 0,
+        "value": 19
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 19,
+          "value": 0
+        },
+        "normal": {
+          "total": 20,
+          "value": 0
+        },
+        "touch": {
+          "total": 10,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 9,
+        "nonepic": 9,
+        "total": 9,
+        "value": 0
+      },
+      "cmb": {
+        "total": 17,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "monstrousHumanoid",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 0,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 9,
+        "total": 9
+      },
+      "hp": {
+        "base": 67,
+        "max": 67,
+        "min": -16,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 67
+      },
+      "init": {
+        "bonus": 0,
+        "total": 5,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 4,
+      "savingThrows": {
+        "fort": {
+          "base": 11,
+          "total": 11
+        },
+        "ref": {
+          "base": 4,
+          "total": 4
+        },
+        "will": {
+          "base": 6,
+          "total": 6
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": null,
+        "darkvision": 60,
+        "lowLight": false,
+        "lowLightMultiplier": null,
+        "tremorsense": null
+      },
+      "speed": {
+        "land": {
+          "base": 30,
+          "total": 30
+        }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "Any",
+      "biography": {
+        "public": "",
+        "value": "<p>Dragonspawn Scalebane is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 7,
+      "environment": "As dragon type",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 9,
+        "value": 9
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 9d8+27 (67 hp)</p><p><strong>Initiative:</strong> +5</p><p><strong>Speed:</strong> 30 ft. in scale mail (4 squares); base 40 ft.</p><p><strong>Armor Class:</strong> 20 (-1 size, +1 Agy, +4 natural, +6 +2 scale mail ), touch 10, flat-footed 19</p><p><strong>Base Attack/Grapple:</strong> +9/+17</p><p><strong>Attack:</strong> +3 greatsword +15 melee (3d6+9/19-20) or +3 composite longbow (+4) +12 ranged (2d6+7/x3)</p><p><strong>Full Attack:</strong> +3 greatsword +15/+10 melee (3d6+9/19-20) or +3 composite longbow (+4) +12/+7 ranged (2d6+7/x3)</p><p><strong>Space/Reach:</strong> 10 ft./10 ft.</p><p><strong>Special Attacks:</strong> -</p><p><strong>Special Qualities:</strong> Darkvision 60 ft., heritage qualities</p><p><strong>Saves:</strong> Fort +11, Ref +4, Will +6</p><p><strong>Abilities:</strong> Str 19, Agy 12, Sta 16, Int 13, Spt 10, Cha 8</p><p><strong>Skills:</strong> Balance +0, Bluff +3, Concentration +8, Intimidate +13, Knowledge (arcana) +7, Knowledge (military tactics) +7, Listen +7, Spellcraft +13, Spot +5, Stealth +0 (-4 to hide), Survival +3</p><p><strong>Feats:</strong> Cleave, Great Fortitude, Improved Initiative, Power Attack</p><p><strong>Area:</strong> Any</p><p><strong>Organization:</strong> 1 per 50-100 wyrmkin; or unit (10-100), squadron (40-400), or army (100-1000)</p><p><strong>Treasure:</strong> Standard (weapons and armor)</p><p><strong>Advancement:</strong> 10-18 HD (Large); 19-27 HD (Huge); or by character class</p><p><strong>Level Adjustment:</strong> +3</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 7,
+      "type": "Monstrous Humanoid"
+    },
+    "skills": {
+      "blc": {
+        "ability": "dex",
+        "abilityModifier": 1,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": -1,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 0,
+        "notes": "Printed total +0",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "blf": {
+        "ability": "cha",
+        "abilityModifier": -1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 4,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 3,
+        "notes": "Printed total +3",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "coc": {
+        "ability": "con",
+        "abilityModifier": 3,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 5,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 8,
+        "notes": "Printed total +8",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "hid": {
+        "ability": "dex",
+        "abilityModifier": 1,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": -1,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 0,
+        "notes": "Printed total +0 (-4 to hide)",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "int": {
+        "ability": "cha",
+        "abilityModifier": -1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 14,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 13,
+        "notes": "Printed total +13",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "kar": {
+        "ability": "int",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 6,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 7,
+        "notes": "Printed total +7",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "kmt": {
+        "ability": "int",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 6,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 7,
+        "notes": "Printed total +7",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "lis": {
+        "ability": "wis",
+        "abilityModifier": 0,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 7,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 7,
+        "notes": "Printed total +7",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spl": {
+        "ability": "int",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 12,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 13,
+        "notes": "Printed total +13",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spt": {
+        "ability": "wis",
+        "abilityModifier": 0,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 5,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 5,
+        "notes": "Printed total +5",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "sur": {
+        "ability": "wis",
+        "abilityModifier": 0,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 3,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 3,
+        "notes": "Printed total +3",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "lg",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Darkvision 60 ft., heritage qualities",
+      "size": "lg",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

@@ -1,0 +1,2 @@
+pdfplumber==0.11.7
+pypdf==6.0.0

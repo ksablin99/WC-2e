@@ -106,3 +106,51 @@ test("Arcanist level defaults to Mage and exposes parent/path progression", asyn
   expect(progression.prepared.pathLevels.mage).toBe(1);
   expect(progression.prepared.currentPath).toBe("mage");
 });
+
+test("direct class edits repair missing path history and do not duplicate threshold features", async ({ page }) => {
+  const result = await page.evaluate(async () => {
+    const actor = await Actor.create({ name: "Direct Path Fallback", type: "character" });
+    const [arcanist] = await actor.createEmbeddedDocuments("Item", [{
+      name: "Arcanist",
+      type: "class",
+      system: {
+        classType: "base",
+        levels: 4,
+        automaticFeatures: true,
+        classPaths: {
+          enabled: true,
+          default: "mage",
+          choices: [
+            { id: "mage", name: "Mage" },
+            { id: "necromancer", name: "Necromancer" },
+            { id: "warlock", name: "Warlock" },
+          ],
+        },
+        pathLevels: {},
+        currentPath: "",
+      },
+    }]);
+
+    await actor.update({ "system.details.level.value": 4 });
+    await actor.update({ "system.details.level.value": 4 });
+    const prepared = actor.system.classes.arcanist;
+    const mageFeatures = actor.items.filter((item) => item.system?.warcraftPath?.id === "mage");
+    return {
+      prepared: {
+        level: prepared.level,
+        pathLevels: prepared.pathLevels,
+        currentPath: prepared.currentPath,
+      },
+      featureIds: mageFeatures.map((item) => item.system.uniqueId),
+      classItem: actor.items.get(arcanist.id).system,
+    };
+  });
+
+  expect(result.prepared).toEqual({
+    level: 4,
+    pathLevels: { mage: 4, necromancer: 0, warlock: 0 },
+    currentPath: "mage",
+  });
+  expect(new Set(result.featureIds).size).toBe(result.featureIds.length);
+  expect(result.classItem.levels).toBe(4);
+});

@@ -1,0 +1,44 @@
+{
+  "_embedded": {},
+  "_id": "1cc3bc4e500b70cf",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "creatureRule": {
+        "kind": "subtype",
+        "reusable": true
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          187,
+          188
+        ],
+        "printedPages": [
+          186,
+          187
+        ],
+        "section": "Lawful Subtype",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/aura.svg",
+  "name": "Lawful Subtype Traits",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilityType": "nat",
+    "description": {
+      "value": "<p>Alignment-dependent effects treat the creature as lawful as well as using its actual alignment. Its natural and wielded weapons count as lawful for overcoming damage reduction.</p><p>This reusable record defines shared conversion behavior. Individual actors carry exact printed exceptions and totals.</p>"
+    },
+    "featType": "trait",
+    "source": "World of Warcraft: Monster Guide, pp. 186-187",
+    "uniqueId": "wc-creature-rule-lawful-subtype"
+  },
+  "type": "feat"
+}

@@ -1,0 +1,84 @@
+{
+  "_embedded": {
+    "pages": [
+      {
+        "_id": "897478592d1e6fe8",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "category": null,
+        "flags": {
+          "warcraftrpg2e": {
+            "source": {
+              "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+              "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+              "section": "Private-use implementation policy",
+              "verification": "implementation-summary"
+            }
+          }
+        },
+        "image": {},
+        "name": "Hero Points and Shouts",
+        "ownership": {
+          "default": -1
+        },
+        "sort": 0,
+        "src": null,
+        "system": {},
+        "text": {
+          "content": "<p>Shouts are extraordinary sonic mind-affecting abilities, normally a 30-foot radius and half character level rounds. Daily shout uses equal the number of shout feats. Hero Points must be declared before success or failure is known; the general options appear in the character sheet, while feat-specific options are shown only when the feat explicitly grants one.</p>",
+          "format": 1
+        },
+        "title": {
+          "level": 1,
+          "show": false
+        },
+        "type": "text",
+        "video": {
+          "controls": true,
+          "volume": 0.5
+        }
+      }
+    ]
+  },
+  "_id": "61f4865557a71dad",
+  "_stats": {
+    "compendiumSource": null,
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "lastModifiedBy": null,
+    "modifiedTime": null,
+    "systemId": null,
+    "systemVersion": null
+  },
+  "categories": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "section": "Private-use implementation policy",
+        "verification": "implementation-summary"
+      }
+    }
+  },
+  "folder": null,
+  "name": "Hero Points and Shouts",
+  "ownership": {
+    "default": 0
+  },
+  "pages": [
+    "897478592d1e6fe8"
+  ],
+  "sort": 0
+}

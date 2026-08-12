@@ -1,0 +1,53 @@
+{
+  "_id": "e1eb1afbd6f10bb5",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "catalog": {
+        "category": "tools",
+        "completeTableEntry": true,
+        "generated": true,
+        "status": "structured-table-data",
+        "tableValue": "100 gp; 3 lb."
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          201
+        ],
+        "printedPages": [
+          199
+        ],
+        "section": "Masterwork Musical Instrument",
+        "verification": "table-extraction"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/item-bag.svg",
+  "name": "Masterwork Musical Instrument",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "carried": true,
+    "description": {
+      "value": "<p><strong>Printed table value:</strong> 100 gp; 3 lb..</p>"
+    },
+    "hardness": 0,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "identified": true,
+    "identifiedName": "Masterwork Musical Instrument",
+    "price": 100,
+    "quantity": 1,
+    "source": "World of Warcraft RPG, 2nd Edition, p. 199",
+    "subType": "gear",
+    "weight": 3
+  },
+  "type": "loot"
+}

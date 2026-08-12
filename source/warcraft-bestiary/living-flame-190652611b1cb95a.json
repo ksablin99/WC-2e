@@ -1,0 +1,1147 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "fb30905d793a13a6",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 4,
+                "die": 8,
+                "expression": "4d8",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Elemental Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "med",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "26",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "3",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "20",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "13",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "17",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "3",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "7",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "2",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "50",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "4",
+              "misc",
+              "init",
+              "untyped"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "elemental",
+          "damageReduction": [],
+          "hd": 8,
+          "hp": 0,
+          "levels": 4,
+          "maxLevel": 50,
+          "resistances": [
+            [
+              "",
+              "energy-fire",
+              true,
+              false,
+              false
+            ],
+            [
+              "",
+              "energy-cold",
+              false,
+              true,
+              false
+            ]
+          ],
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "low"
+            },
+            "will": {
+              "value": "low"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 58"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "9634f5d7874d2b72",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                6
+              ],
+              "printedDamage": "1d6+1 plus 1d6 fire"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Slam",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "3",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Slam",
+          "damage": {
+            "parts": [
+              [
+                "1d6+1",
+                "Bludgeoning",
+                "damage-bludg"
+              ],
+              [
+                "1d6",
+                "Fire",
+                "energy-fire"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Slam +6 melee (1d6+1 plus 1d6 fire).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "7835515ed6d12534",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "9634f5d7874d2b72",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Slam",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> Slam +6 melee (1d6+1 plus 1d6 fire).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "eac8ac7cbe7da4ea",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "Burn (DC 14)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                58
+              ],
+              "section": "Living Flame"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Burn",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Burn (DC 14).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 58",
+          "uniqueId": "wc-monster-living-flame-burn"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "0ccad18f1d0fd81f",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "suffocate (DC 14)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                58
+              ],
+              "section": "Living Flame"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "suffocate",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> suffocate (DC 14).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 58",
+          "uniqueId": "wc-monster-living-flame-suffocate"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "fca0cb53f0a81172",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Darkvision 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                58
+              ],
+              "section": "Living Flame"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Darkvision 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Darkvision 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 58",
+          "uniqueId": "wc-monster-living-flame-darkvision-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "59a57d64b6f87d04",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "bracers"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                58
+              ],
+              "section": "Living Flame"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "bracers",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> bracers.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 58",
+          "uniqueId": "wc-monster-living-flame-bracers"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e2d673db3b79b980",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "fire subtype"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                58
+              ],
+              "section": "Living Flame"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "fire subtype",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> fire subtype.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 58",
+          "uniqueId": "wc-monster-living-flame-fire-subtype"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "717dfd3c74e7d0c6",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "elemental traits"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                58
+              ],
+              "section": "Living Flame"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "elemental traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> elemental traits.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 58",
+          "uniqueId": "wc-monster-living-flame-elemental-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "d1c49833450c78bc",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Dodge"
+            },
+            "reference": {
+              "id": "7d08b8436a8b4167",
+              "name": "Dodge",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                58
+              ],
+              "section": "Living Flame"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Dodge",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Dodge.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.7d08b8436a8b4167]{Dodge}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 58",
+          "uniqueId": "wc-monster-living-flame-dodge"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "7eb5aaa88395f3cc",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Initiative"
+            },
+            "reference": {
+              "id": "3232602c102e0494",
+              "name": "Improved Initiative",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                58
+              ],
+              "section": "Living Flame"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Initiative",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Initiative.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.3232602c102e0494]{Improved Initiative}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 58",
+          "uniqueId": "wc-monster-living-flame-improved-initiative"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "261665bb823c7b03",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Skilled (Listen and Spot)"
+            },
+            "reference": {
+              "id": "63e93d7c15badc3f",
+              "name": "Skilled",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                58
+              ],
+              "section": "Living Flame"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Skilled (Listen and Spot)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Skilled (Listen and Spot).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.63e93d7c15badc3f]{Skilled}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 58",
+          "uniqueId": "wc-monster-living-flame-skilled-listen-and-spot"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "dfff8bc78d73fe62",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Weapon Finesse"
+            },
+            "reference": {
+              "id": "09eb70cdcda3c32d",
+              "name": "Weapon Finesse",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                58
+              ],
+              "section": "Living Flame"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Weapon Finesse",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Weapon Finesse.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.09eb70cdcda3c32d]{Weapon Finesse}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 58",
+          "uniqueId": "wc-monster-living-flame-weapon-finesse"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "b15edfdf02504fbe",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Medium Elemental (Fire, Extraplanar); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "80222760db02f7a1",
+              "name": "Elemental Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                58
+              ],
+              "section": "Living Flame"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Elemental Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Medium Elemental (Fire, Extraplanar); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.80222760db02f7a1]{Elemental Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 58",
+          "uniqueId": "wc-monster-living-flame-elemental-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "c0aee8b78b8d0780",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Fire subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "2d6bdc174cc71ee5",
+              "name": "Fire Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                58
+              ],
+              "section": "Living Flame"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Fire Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Fire subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.2d6bdc174cc71ee5]{Fire Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 58",
+          "uniqueId": "wc-monster-living-flame-fire-subtype-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "afeb5178a0a40887",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Extraplanar subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "f56ea12b09ac91fc",
+              "name": "Extraplanar Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                58
+              ],
+              "section": "Living Flame"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Extraplanar Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Extraplanar subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.f56ea12b09ac91fc]{Extraplanar Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 58",
+          "uniqueId": "wc-monster-living-flame-extraplanar-subtype-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "190652611b1cb95a",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 12, Agy 17, Sta 14, Int 8, Spt 13, Cha 10",
+          "Advancement": "5-7 HD (Medium)",
+          "Alignment": "Always chaotic neutral",
+          "Area": "Firelands (The Elemental Plane)",
+          "Armor Class": "20 (+3 Agy, +7 natural), touch 13, flat-footed 17",
+          "Attack": "Slam +6 melee (1d6+1 plus 1d6 fire)",
+          "Base Attack/Grapple": "+3/+4",
+          "Challenge Rating": "3",
+          "Environment": "Any land and underground",
+          "Feats": "Dodge, Improved Initiative B , Skilled (Listen and Spot), Weapon Finesse B",
+          "Full Attack": "Slam +6 melee (1d6+1 plus 1d6 fire)",
+          "Hit Dice": "4d8+8 (26 hp)",
+          "Initiative": "+7",
+          "Level Adjustment": "-",
+          "Organization": "Solitary",
+          "Saves": "Fort +3, Ref +7, Will +2",
+          "Skills": "Listen +7, Spot +6",
+          "Space/Reach": "5 ft./5 ft.",
+          "Special Attacks": "Burn (DC 14), suffocate (DC 14)",
+          "Special Qualities": "Darkvision 60 ft., bracers, fire subtype, elemental traits",
+          "Speed": "50 ft. (10 squares)",
+          "Treasure": "None"
+        },
+        "rulesCoverage": {
+          "actor-defense": 1,
+          "linked-reference": 7,
+          "manual": 5
+        },
+        "subtypes": [
+          "Fire",
+          "Extraplanar"
+        ]
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          59
+        ],
+        "printedPages": [
+          58
+        ],
+        "section": "Living Flame",
+        "verification": "native-text-table"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "fb30905d793a13a6",
+    "9634f5d7874d2b72",
+    "7835515ed6d12534",
+    "eac8ac7cbe7da4ea",
+    "0ccad18f1d0fd81f",
+    "fca0cb53f0a81172",
+    "59a57d64b6f87d04",
+    "e2d673db3b79b980",
+    "717dfd3c74e7d0c6",
+    "d1c49833450c78bc",
+    "7eb5aaa88395f3cc",
+    "261665bb823c7b03",
+    "dfff8bc78d73fe62",
+    "b15edfdf02504fbe",
+    "c0aee8b78b8d0780",
+    "afeb5178a0a40887"
+  ],
+  "name": "Living Flame",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 2,
+        "origMod": 2,
+        "origTotal": 14,
+        "penalty": 0,
+        "total": 14,
+        "userPenalty": 0,
+        "value": 14
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 3,
+        "origMod": 3,
+        "origTotal": 17,
+        "penalty": 0,
+        "total": 17,
+        "userPenalty": 0,
+        "value": 17
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -1,
+        "origMod": -1,
+        "origTotal": 8,
+        "penalty": 0,
+        "total": 8,
+        "userPenalty": 0,
+        "value": 8
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 12,
+        "penalty": 0,
+        "total": 12,
+        "userPenalty": 0,
+        "value": 12
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 13,
+        "penalty": 0,
+        "total": 13,
+        "userPenalty": 0,
+        "value": 13
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 17,
+          "value": 0
+        },
+        "normal": {
+          "total": 20,
+          "value": 0
+        },
+        "touch": {
+          "total": 13,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 3,
+        "nonepic": 3,
+        "total": 3,
+        "value": 0
+      },
+      "cmb": {
+        "total": 4,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "elemental",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 100,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 4,
+        "total": 4
+      },
+      "hp": {
+        "base": 26,
+        "max": 26,
+        "min": -14,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 26
+      },
+      "init": {
+        "bonus": 0,
+        "total": 7,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 7,
+      "savingThrows": {
+        "fort": {
+          "base": 3,
+          "total": 3
+        },
+        "ref": {
+          "base": 7,
+          "total": 7
+        },
+        "will": {
+          "base": 2,
+          "total": 2
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": null,
+        "darkvision": 60,
+        "lowLight": false,
+        "lowLightMultiplier": null,
+        "tremorsense": null
+      },
+      "speed": {
+        "land": {
+          "base": 50,
+          "total": 50
+        }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "Always chaotic neutral",
+      "biography": {
+        "public": "",
+        "value": "<p>Living Flame is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 3,
+      "environment": "Any land and underground",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 4,
+        "value": 4
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 4d8+8 (26 hp)</p><p><strong>Initiative:</strong> +7</p><p><strong>Speed:</strong> 50 ft. (10 squares)</p><p><strong>Armor Class:</strong> 20 (+3 Agy, +7 natural), touch 13, flat-footed 17</p><p><strong>Base Attack/Grapple:</strong> +3/+4</p><p><strong>Attack:</strong> Slam +6 melee (1d6+1 plus 1d6 fire)</p><p><strong>Full Attack:</strong> Slam +6 melee (1d6+1 plus 1d6 fire)</p><p><strong>Space/Reach:</strong> 5 ft./5 ft.</p><p><strong>Special Attacks:</strong> Burn (DC 14), suffocate (DC 14)</p><p><strong>Special Qualities:</strong> Darkvision 60 ft., bracers, fire subtype, elemental traits</p><p><strong>Saves:</strong> Fort +3, Ref +7, Will +2</p><p><strong>Abilities:</strong> Str 12, Agy 17, Sta 14, Int 8, Spt 13, Cha 10</p><p><strong>Skills:</strong> Listen +7, Spot +6</p><p><strong>Feats:</strong> Dodge, Improved Initiative B , Skilled (Listen and Spot), Weapon Finesse B</p><p><strong>Area:</strong> Firelands (The Elemental Plane)</p><p><strong>Organization:</strong> Solitary</p><p><strong>Treasure:</strong> None</p><p><strong>Advancement:</strong> 5-7 HD (Medium)</p><p><strong>Level Adjustment:</strong> -</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 3,
+      "type": "Elemental"
+    },
+    "skills": {
+      "lis": {
+        "ability": "wis",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 6,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 7,
+        "notes": "Printed total +7",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spt": {
+        "ability": "wis",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 5,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 6,
+        "notes": "Printed total +6",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "med",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Darkvision 60 ft., bracers, fire subtype, elemental traits",
+      "size": "med",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

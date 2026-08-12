@@ -1,0 +1,53 @@
+{
+  "_id": "6330e697179fcd94",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "catalog": {
+        "category": "adventuringGear",
+        "completeTableEntry": true,
+        "generated": true,
+        "status": "structured-table-data",
+        "tableValue": "20 gp; 1/4 lb."
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          199
+        ],
+        "printedPages": [
+          197
+        ],
+        "section": "Liquid Phlogiston Vial",
+        "verification": "table-extraction"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/item-bag.svg",
+  "name": "Liquid Phlogiston Vial",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "carried": true,
+    "description": {
+      "value": "<p><strong>Printed table value:</strong> 20 gp; 1/4 lb..</p>"
+    },
+    "hardness": 0,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "identified": true,
+    "identifiedName": "Liquid Phlogiston Vial",
+    "price": 20,
+    "quantity": 1,
+    "source": "World of Warcraft RPG, 2nd Edition, p. 197",
+    "subType": "gear",
+    "weight": 0.25
+  },
+  "type": "loot"
+}

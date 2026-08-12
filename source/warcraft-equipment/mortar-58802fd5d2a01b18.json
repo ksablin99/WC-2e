@@ -1,0 +1,90 @@
+{
+  "_id": "58802fd5d2a01b18",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "catalog": {
+        "category": "weapon",
+        "completeTableEntry": true,
+        "generated": true,
+        "status": "structured"
+      },
+      "rules": {
+        "ammunition": "Mortar Shell",
+        "ammunitionLink": {
+          "id": "e834a9f915485f64",
+          "pack": "warcraftrpg2e.warcraft-equipment"
+        },
+        "attackIgnoresCoverUnlessProtectedFromAbove": true,
+        "capacity": 1,
+        "clearMalfunction": "usually a full-round action",
+        "firingHands": 2,
+        "gunpowderPerShotOunces": 4,
+        "malfunctionRating": 1,
+        "minimumRangeIncrements": 1,
+        "reload": "full-round action",
+        "reloadProvokes": true
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          184,
+          185,
+          186
+        ],
+        "printedPages": [
+          182,
+          183,
+          184
+        ],
+        "section": "Mortar",
+        "verification": "table-extraction"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/sword.svg",
+  "name": "Mortar",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "baseWeaponType": "Mortar",
+    "carried": true,
+    "description": {
+      "value": "<p>A standard one-handed martial sword.</p>"
+    },
+    "effectNotes": "5-foot blast radius; cannot fire within one range increment; ignores cover that does not protect from above.",
+    "equipped": true,
+    "hardness": 10,
+    "hp": {
+      "max": 5,
+      "value": 5
+    },
+    "identified": true,
+    "identifiedName": "Mortar",
+    "index": {
+      "subType": "martial",
+      "uniqueId": ""
+    },
+    "masterwork": false,
+    "price": 75,
+    "properties": {},
+    "quantity": 1,
+    "source": "World of Warcraft RPG, 2nd Edition, p. 182-183-184",
+    "weaponData": {
+      "critMult": "2",
+      "critRange": "20",
+      "damageRoll": "3d6",
+      "damageType": "fire",
+      "range": 40,
+      "size": "med"
+    },
+    "weaponSubtype": "ranged",
+    "weaponType": "exotic",
+    "weight": 20
+  },
+  "type": "weapon"
+}

@@ -1,0 +1,46 @@
+{
+  "_embedded": {},
+  "_id": "b5fe9ab025e00552",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "creatureRule": {
+        "kind": "subtype",
+        "reusable": true
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          149,
+          150,
+          151
+        ],
+        "printedPages": [
+          148,
+          149,
+          150
+        ],
+        "section": "Zombie Subtype",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/aura.svg",
+  "name": "Zombie Subtype Traits",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilityType": "nat",
+    "description": {
+      "value": "<p>Marks a creature produced by the zombie template. Use the linked Zombie Template record for shared single-action, ability, defense, and undead changes; the actor retains its printed exceptions.</p><p>This reusable record defines shared conversion behavior. Individual actors carry exact printed exceptions and totals.</p>"
+    },
+    "featType": "trait",
+    "source": "World of Warcraft: Monster Guide, pp. 148-149-150",
+    "uniqueId": "wc-creature-rule-zombie-subtype"
+  },
+  "type": "feat"
+}

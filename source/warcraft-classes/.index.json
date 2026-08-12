@@ -2,32 +2,1166 @@
   {
     "childKeyByCollection": {},
     "embeddedCollections": [],
-    "file": "mage-arcana-enhanced-counterspell-0e08ae99f956cb07.json",
-    "key": "!items!0e08ae99f956cb07"
+    "file": "hunter-animal-empathy-c48c12c2434906b0.json",
+    "key": "!items!c48c12c2434906b0"
   },
   {
     "childKeyByCollection": {},
     "embeddedCollections": [],
-    "file": "mage-arcana-arcane-adept-439da0e23c06127b.json",
-    "key": "!items!439da0e23c06127b"
+    "file": "arcanist-vwvlbnyqdgmbiwhq.json",
+    "key": "!items!VwVlbNYqDgMBIWhQ"
   },
   {
     "childKeyByCollection": {},
     "embeddedCollections": [],
-    "file": "mage-arcana-call-elemental-f80d812cbf7b5f67.json",
-    "key": "!items!f80d812cbf7b5f67"
+    "file": "arcanist-bonus-feat-zpwya8tltkcsn0l4.json",
+    "key": "!items!zPwYa8tltKCSN0L4"
   },
   {
     "childKeyByCollection": {},
     "embeddedCollections": [],
-    "file": "mage-arcana-fire-and-frost-fec5676435072430.json",
-    "key": "!items!fec5676435072430"
+    "file": "archmage-of-kirin-tor-1b4e30deb0fa97f0.json",
+    "key": "!items!1b4e30deb0fa97f0"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "archmage-of-kirin-tor-high-arcana-1d8cbca7ccb48bb0.json",
+    "key": "!items!1d8cbca7ccb48bb0"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "hunter-aspect-of-the-beast-57daa3587c0b7f9d.json",
+    "key": "!items!57daa3587c0b7f9d"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "hunter-aspect-of-the-cheetah-8e2b8423ef3f1000.json",
+    "key": "!items!8e2b8423ef3f1000"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "hunter-aspect-of-the-hawk-2da6e096e5f307bc.json",
+    "key": "!items!2da6e096e5f307bc"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "hunter-aspect-of-the-monkey-4ad3d470b862361e.json",
+    "key": "!items!4ad3d470b862361e"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "hunter-aspect-of-the-pack-0b0089217c09f1a8.json",
+    "key": "!items!0b0089217c09f1a8"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "hunter-aspect-of-the-wilds-11dbbb16da60ab28.json",
+    "key": "!items!11dbbb16da60ab28"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "assassin-dca101f23fcf2cd3.json",
+    "key": "!items!dca101f23fcf2cd3"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "assassin-assassin-spells-db4851cce3d2dfc2.json",
+    "key": "!items!db4851cce3d2dfc2"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "assassin-backstab-b75595c2d14220a7.json",
+    "key": "!items!b75595c2d14220a7"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "assassin-death-attack-0317624bad12795a.json",
+    "key": "!items!0317624bad12795a"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "assassin-hide-in-plain-sight-39b4ec0403acf25f.json",
+    "key": "!items!39b4ec0403acf25f"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "assassin-improved-uncanny-dodge-25d7610a1a78fe7a.json",
+    "key": "!items!25d7610a1a78fe7a"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "assassin-poison-save-4c9b3f07f8b33431.json",
+    "key": "!items!4c9b3f07f8b33431"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "assassin-poison-use-99c608d92186f463.json",
+    "key": "!items!99c608d92186f463"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "assassin-uncanny-dodge-4b528bc19a93065b.json",
+    "key": "!items!4b528bc19a93065b"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "paladin-aura-of-good-a02b6b1b784a96e7.json",
+    "key": "!items!a02b6b1b784a96e7"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "rogue-backstab-043c0216ff239ae3.json",
+    "key": "!items!043c0216ff239ae3"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "barbarian-7846fa76929ccb2c.json",
+    "key": "!items!7846fa76929ccb2c"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "beastmaster-a7c512c95c700b2e.json",
+    "key": "!items!a7c512c95c700b2e"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "beastmaster-animal-companion-3f375a3684a4d727.json",
+    "key": "!items!3f375a3684a4d727"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "beastmaster-charm-animal-f32f91e7a6f955bd.json",
+    "key": "!items!f32f91e7a6f955bd"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "beastmaster-empathic-link-530e5b4f2a10709c.json",
+    "key": "!items!530e5b4f2a10709c"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "beastmaster-greater-magic-fang-be7c3fcdac40a797.json",
+    "key": "!items!be7c3fcdac40a797"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "beastmaster-magic-fang-c3cd003bea7edcdb.json",
+    "key": "!items!c3cd003bea7edcdb"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "beastmaster-natural-weaponry-ad6e572504e6132b.json",
+    "key": "!items!ad6e572504e6132b"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "beastmaster-scry-on-companion-0fbcf4959c7c6ec9.json",
+    "key": "!items!0fbcf4959c7c6ec9"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "beastmaster-speak-with-animals-3408751f5e803129.json",
+    "key": "!items!3408751f5e803129"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "beastmaster-wild-empathy-9ec8a3c7bd265214.json",
+    "key": "!items!9ec8a3c7bd265214"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "berserker-d7cc46bef8d48d77.json",
+    "key": "!items!d7cc46bef8d48d77"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "berserker-berserk-dd9d5d7607c782fe.json",
+    "key": "!items!dd9d5d7607c782fe"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "berserker-ferocity-314613c904f1e50e.json",
+    "key": "!items!314613c904f1e50e"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "berserker-greater-rage-77532801918bbf74.json",
+    "key": "!items!77532801918bbf74"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "berserker-rage-0fc074c91773d5f1.json",
+    "key": "!items!0fc074c91773d5f1"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "berserker-undying-rage-88838dd8aa3d33d3.json",
+    "key": "!items!88838dd8aa3d33d3"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "tinker-bomb-bouncing-467555d8122b669d.json",
+    "key": "!items!467555d8122b669d"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "healer-brew-potion-a27510d2d228bb4c.json",
+    "key": "!items!a27510d2d228bb4c"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "tinker-cobble-988f1b0b070a280b.json",
+    "key": "!items!988f1b0b070a280b"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "scout-commune-with-nature-8ca01326baeefc09.json",
+    "key": "!items!8ca01326baeefc09"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "tinker-coolness-under-fire-3b9b642f5757cbc7.json",
+    "key": "!items!3b9b642f5757cbc7"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "paladin-crusader-strike-862034263ac36075.json",
+    "key": "!items!862034263ac36075"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "barbarian-damage-reduction-ae2daeb142916500.json",
+    "key": "!items!ae2daeb142916500"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "paladin-detect-undead-ce1cc058f7fbe333.json",
+    "key": "!items!ce1cc058f7fbe333"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "paladin-divine-grace-55f24bd9ae0e448c.json",
+    "key": "!items!55f24bd9ae0e448c"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "paladin-divine-health-2c19cb3e8524bb04.json",
+    "key": "!items!2c19cb3e8524bb04"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "druid-dreamwalker-f960d6f5e10e2161.json",
+    "key": "!items!f960d6f5e10e2161"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "druid-greater-dreamwalk-and-timeless-body-0a9f55ce70752798.json",
+    "key": "!items!0a9f55ce70752798"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "druid-group-stride-7cae6648ba607f60.json",
+    "key": "!items!7cae6648ba607f60"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "druid-strider-and-animal-companion-5ac1bf274d5f19ac.json",
+    "key": "!items!5ac1bf274d5f19ac"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "druid-wild-shape-65b5d7c1aa532f0a.json",
+    "key": "!items!65b5d7c1aa532f0a"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "duelist-f92c32b3b5f6e5cb.json",
+    "key": "!items!f92c32b3b5f6e5cb"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "duelist-acrobatic-charge-d4a4d0b4c94293af.json",
+    "key": "!items!d4a4d0b4c94293af"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "duelist-canny-defense-efc350a99492c920.json",
+    "key": "!items!efc350a99492c920"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "duelist-deflect-arrows-4d49c2f29e88275a.json",
+    "key": "!items!4d49c2f29e88275a"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "duelist-elaborate-parry-40a709ce245c8c0c.json",
+    "key": "!items!40a709ce245c8c0c"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "duelist-enhanced-mobility-b6e9a15b1d6b48e2.json",
+    "key": "!items!b6e9a15b1d6b48e2"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "duelist-grace-adaa8510ef4813cb.json",
+    "key": "!items!adaa8510ef4813cb"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "duelist-improved-reaction-89b2f0e0001baa82.json",
+    "key": "!items!89b2f0e0001baa82"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "duelist-precise-strike-b8e981c604841318.json",
+    "key": "!items!b8e981c604841318"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "hunter-eagle-eye-7e5849eb624c6c8d.json",
+    "key": "!items!7e5849eb624c6c8d"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "elven-ranger-08cfd1411590b764.json",
+    "key": "!items!08cfd1411590b764"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "elven-ranger-anticipation-9d7564201ac16178.json",
+    "key": "!items!9d7564201ac16178"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "elven-ranger-archery-combat-style-8c5a4c1806b52590.json",
+    "key": "!items!8c5a4c1806b52590"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "elven-ranger-arrow-cleave-2bdf5e426469aa73.json",
+    "key": "!items!2bdf5e426469aa73"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "elven-ranger-bow-strike-c7598b1235a35b98.json",
+    "key": "!items!c7598b1235a35b98"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "elven-ranger-elven-ranger-spells-8354f91f1f615772.json",
+    "key": "!items!8354f91f1f615772"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "elven-ranger-extended-range-73e0bb0d2f10081b.json",
+    "key": "!items!73e0bb0d2f10081b"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "elven-ranger-favored-enemy-3b47020c0934f323.json",
+    "key": "!items!3b47020c0934f323"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "elven-ranger-heightened-perception-33388f390477e529.json",
+    "key": "!items!33388f390477e529"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "elven-ranger-keen-arrows-0c5325370baaccdb.json",
+    "key": "!items!0c5325370baaccdb"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "elven-ranger-swift-tracker-3f2804248bc0389d.json",
+    "key": "!items!3f2804248bc0389d"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "elven-ranger-woodland-stride-3ed768fbfedd1791.json",
+    "key": "!items!3ed768fbfedd1791"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "tinker-energy-resistance-699f1b39eadf3aa6.json",
+    "key": "!items!699f1b39eadf3aa6"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "rogue-evasion-8c275cd51b2e11a8.json",
+    "key": "!items!8c275cd51b2e11a8"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "scout-evasion-85f640d6c29a9841.json",
+    "key": "!items!85f640d6c29a9841"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "tinker-evasion-345980b9e4596b42.json",
+    "key": "!items!345980b9e4596b42"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "barbarian-fast-movement-d2374e5baecdffbd.json",
+    "key": "!items!d2374e5baecdffbd"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "fel-sworn-750a4f671c05f655.json",
+    "key": "!items!750a4f671c05f655"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "fel-sworn-fel-boon-6ac517ed7b69642e.json",
+    "key": "!items!6ac517ed7b69642e"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "fel-sworn-fel-corruption-30330e9a9045eb69.json",
+    "key": "!items!30330e9a9045eb69"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "fel-sworn-sworn-87153cdf0e9f12f6.json",
+    "key": "!items!87153cdf0e9f12f6"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "scout-find-the-path-8080332c92b5747a.json",
+    "key": "!items!8080332c92b5747a"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "paladin-fist-of-justice-fd6c1fd1b6cad922.json",
+    "key": "!items!fd6c1fd1b6cad922"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "gladiator-131a30a2090a3c20.json",
+    "key": "!items!131a30a2090a3c20"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "gladiator-command-0389ab7790e8c646.json",
+    "key": "!items!0389ab7790e8c646"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "gladiator-critical-strike-45c516d5207d7cfe.json",
+    "key": "!items!45c516d5207d7cfe"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "gladiator-maximize-blow-c8f12356df93b7c8.json",
+    "key": "!items!c8f12356df93b7c8"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "gladiator-mobility-20dbb1888b502936.json",
+    "key": "!items!20dbb1888b502936"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "gladiator-spring-attack-958b775a04cd6fae.json",
+    "key": "!items!958b775a04cd6fae"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "gladiator-supreme-cleave-7d828e08b90fe0f7.json",
+    "key": "!items!7d828e08b90fe0f7"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "gladiator-two-handed-mastery-549e2d21d72e2947.json",
+    "key": "!items!549e2d21d72e2947"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "gladiator-weapon-focus-e94ebe0b697466a6.json",
+    "key": "!items!e94ebe0b697466a6"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "gladiator-weapon-proficiency-7459821a5a623ed9.json",
+    "key": "!items!7459821a5a623ed9"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "gladiator-weapon-specialization-9c2308853645ebf5.json",
+    "key": "!items!9c2308853645ebf5"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "gladiator-whirlwind-attack-2b47cb4dea2f6d5a.json",
+    "key": "!items!2b47cb4dea2f6d5a"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "barbarian-greater-rage-11022ae7aa0a661e.json",
+    "key": "!items!11022ae7aa0a661e"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "healer-e68782223e1d4c94.json",
+    "key": "!items!e68782223e1d4c94"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "healer-healer-bonus-feat-aad67622032c62f9.json",
+    "key": "!items!aad67622032c62f9"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "healer-healer-domains-2abcad69f6d8f3a9.json",
+    "key": "!items!2abcad69f6d8f3a9"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "paladin-holy-strike-03cb4e7d28ada1f2.json",
+    "key": "!items!03cb4e7d28ada1f2"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "hunter-91e4053e0809174f.json",
+    "key": "!items!91e4053e0809174f"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "hunter-hunter-companion-3070859573be4cb4.json",
+    "key": "!items!3070859573be4cb4"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "barbarian-illiteracy-2b4be5507747176e.json",
+    "key": "!items!2b4be5507747176e"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "tinker-improved-evasion-50bf6ede02cfb8da.json",
+    "key": "!items!50bf6ede02cfb8da"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "barbarian-improved-uncanny-dodge-009272cb2c63729f.json",
+    "key": "!items!009272cb2c63729f"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "rogue-improved-uncanny-dodge-19fec0bc9f90c0f4.json",
+    "key": "!items!19fec0bc9f90c0f4"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "scout-improved-uncanny-dodge-8f48d0ffe24c8c20.json",
+    "key": "!items!8f48d0ffe24c8c20"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "barbarian-indomitable-will-423e1383c1462af1.json",
+    "key": "!items!423e1383c1462af1"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "infiltrator-cb4d4fbf93eb34bf.json",
+    "key": "!items!cb4d4fbf93eb34bf"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "infiltrator-canny-defense-0e3ef8970b7783ab.json",
+    "key": "!items!0e3ef8970b7783ab"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "infiltrator-connections-34da3160ae80ea55.json",
+    "key": "!items!34da3160ae80ea55"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "infiltrator-dominate-489631a191680442.json",
+    "key": "!items!489631a191680442"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "infiltrator-flawless-disguise-90f0508410774194.json",
+    "key": "!items!90f0508410774194"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "infiltrator-hide-in-plain-sight-83fdb37aafe2334d.json",
+    "key": "!items!83fdb37aafe2334d"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "infiltrator-improved-uncanny-dodge-098ae350ef29cd76.json",
+    "key": "!items!098ae350ef29cd76"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "infiltrator-improvisation-3d470be0ce7dc5bf.json",
+    "key": "!items!3d470be0ce7dc5bf"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "infiltrator-mass-suggestion-d6bae3cacc3fadad.json",
+    "key": "!items!d6bae3cacc3fadad"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "infiltrator-slippery-mind-05e940556621a7c9.json",
+    "key": "!items!05e940556621a7c9"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "infiltrator-smooth-talker-10958bb9970d9f73.json",
+    "key": "!items!10958bb9970d9f73"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "infiltrator-suggestion-3569552dbb6a2c2f.json",
+    "key": "!items!3569552dbb6a2c2f"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "infiltrator-uncanny-dodge-a73483fbb9de4299.json",
+    "key": "!items!a73483fbb9de4299"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "paladin-lay-on-hands-f26344d17cf6bacc.json",
+    "key": "!items!f26344d17cf6bacc"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "scout-locate-creature-5a3058d0d36dc00a.json",
+    "key": "!items!5a3058d0d36dc00a"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "scout-locate-object-54d81c6c8358e589.json",
+    "key": "!items!54d81c6c8358e589"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "mage-arcane-adept-4ee1775a4f3b1270.json",
+    "key": "!items!4ee1775a4f3b1270"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "mage-call-elemental-9b85aedb66bd4669.json",
+    "key": "!items!9b85aedb66bd4669"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "mage-enhanced-counterspell-7b4823237655b6d9.json",
+    "key": "!items!7b4823237655b6d9"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "mage-fire-and-frost-bbd350f34647dcf5.json",
+    "key": "!items!bbd350f34647dcf5"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "mage-summon-familiar-d9d3c35339e88200.json",
+    "key": "!items!d9d3c35339e88200"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "barbarian-mighty-rage-16089b57e6abaf72.json",
+    "key": "!items!16089b57e6abaf72"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "mounted-warrior-a739986583c8f390.json",
+    "key": "!items!a739986583c8f390"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "mounted-warrior-improved-mounted-combat-ecd1f76b75c18fce.json",
+    "key": "!items!ecd1f76b75c18fce"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "mounted-warrior-mounted-command-73c1dae229937462.json",
+    "key": "!items!73c1dae229937462"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "mounted-warrior-mounted-expertise-1fffac6ba3d292c0.json",
+    "key": "!items!1fffac6ba3d292c0"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "mounted-warrior-mounted-warrior-bonus-feat-a18a2824dc5c72c0.json",
+    "key": "!items!a18a2824dc5c72c0"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "mounted-warrior-shock-charge-2c85a6514b9fb141.json",
+    "key": "!items!2c85a6514b9fb141"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "mounted-warrior-superior-mount-b82b9573e99355fd.json",
+    "key": "!items!b82b9573e99355fd"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "mounted-warrior-woodland-ride-f1cd897b1acc93ab.json",
+    "key": "!items!f1cd897b1acc93ab"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "scout-nature-sense-8973eae5fcbd3e0d.json",
+    "key": "!items!8973eae5fcbd3e0d"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "necromancer-animate-dead-836dadcbc0489d6a.json",
+    "key": "!items!836dadcbc0489d6a"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "necromancer-create-undead-1dd05fa6f1fb2f9d.json",
+    "key": "!items!1dd05fa6f1fb2f9d"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "necromancer-dark-arts-53c822f239ad4ee7.json",
+    "key": "!items!53c822f239ad4ee7"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "necromancer-death-resistance-42b4deafe9fb84a7.json",
+    "key": "!items!42b4deafe9fb84a7"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "necromancer-death-touch-d0da82312d8e9b06.json",
+    "key": "!items!d0da82312d8e9b06"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "tinker-packrat-73393c748fd03a98.json",
+    "key": "!items!73393c748fd03a98"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "paladin-a3b7a8587b5d0f95.json",
+    "key": "!items!a3b7a8587b5d0f95"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "paladin-paladin-auras-33dbbac56f88f5b2.json",
+    "key": "!items!33dbbac56f88f5b2"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "priest-aegis-26e036ca1ee59456.json",
+    "key": "!items!26e036ca1ee59456"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "priest-compel-7d52fc03d958ec1f.json",
+    "key": "!items!7d52fc03d958ec1f"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "priest-greater-aegis-3c0cc0a29b1227f5.json",
+    "key": "!items!3c0cc0a29b1227f5"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "priest-greater-compulsion-e26e042c14e15704.json",
+    "key": "!items!e26e042c14e15704"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "priest-smite-0366882f41519577.json",
+    "key": "!items!0366882f41519577"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "barbarian-rage-7d7cde820a2b05af.json",
+    "key": "!items!7d7cde820a2b05af"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "rogue-6c8e03fd2c39f68a.json",
+    "key": "!items!6c8e03fd2c39f68a"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "rogue-rogue-special-ability-acadf6ba40b9335f.json",
+    "key": "!items!acadf6ba40b9335f"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "tinker-scavenge-374f0429bbcd8f24.json",
+    "key": "!items!374f0429bbcd8f24"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "hunter-scorpid-sting-702fe599ee4cbc15.json",
+    "key": "!items!702fe599ee4cbc15"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "scout-859ab2a7cf02b463.json",
+    "key": "!items!859ab2a7cf02b463"
   },
   {
     "childKeyByCollection": {},
     "embeddedCollections": [],
     "file": "scribe-scroll-jxvwpuxbhlolwuq4.json",
     "key": "!items!JxVwpUXBHlOlwuQ4"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "hunter-serpent-sting-819061877b5da7df.json",
+    "key": "!items!819061877b5da7df"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "shaman-augur-306b22da55f80d3e.json",
+    "key": "!items!306b22da55f80d3e"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "shaman-flametongue-or-frostbrand-20de530477a4f247.json",
+    "key": "!items!20de530477a4f247"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "shaman-ghostwolf-b75990de97dbc1a5.json",
+    "key": "!items!b75990de97dbc1a5"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "shaman-purge-0206b33481c48e8b.json",
+    "key": "!items!0206b33481c48e8b"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "shaman-rebirth-b6ebf4cd538b6585.json",
+    "key": "!items!b6ebf4cd538b6585"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "hunter-sting-3856030cb4dd1241.json",
+    "key": "!items!3856030cb4dd1241"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "scout-swift-tracker-34ae01beff7daf9d.json",
+    "key": "!items!34ae01beff7daf9d"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "hunter-tame-animal-cc873971f38d312f.json",
+    "key": "!items!cc873971f38d312f"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "hunter-tame-magical-beast-f610e55f998569c0.json",
+    "key": "!items!f610e55f998569c0"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "tinker-9364fce0b07367f6.json",
+    "key": "!items!9364fce0b07367f6"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "tinker-tinker-bonus-feat-71bf3db364f98551.json",
+    "key": "!items!71bf3db364f98551"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "barbarian-tireless-rage-09ddbc03f69cb21d.json",
+    "key": "!items!09ddbc03f69cb21d"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "scout-track-ae1a872df09a0ea5.json",
+    "key": "!items!ae1a872df09a0ea5"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "scout-trackless-step-df8fb74be02847ce.json",
+    "key": "!items!df8fb74be02847ce"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "barbarian-trap-sense-d01f03789b742d73.json",
+    "key": "!items!d01f03789b742d73"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "rogue-trap-sense-519dbd45f0f0ad67.json",
+    "key": "!items!519dbd45f0f0ad67"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "scout-trap-sense-26cf579ee6ffbb6f.json",
+    "key": "!items!26cf579ee6ffbb6f"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "rogue-trapfinding-0daf7a3677bf4ae8.json",
+    "key": "!items!0daf7a3677bf4ae8"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "healer-turn-or-rebuke-3874be33526f8a33.json",
+    "key": "!items!3874be33526f8a33"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "paladin-turn-undead-2c60858fbdf3780d.json",
+    "key": "!items!2c60858fbdf3780d"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "barbarian-uncanny-dodge-ebf02731ca34c604.json",
+    "key": "!items!ebf02731ca34c604"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "rogue-uncanny-dodge-3b6e4fa955205d1d.json",
+    "key": "!items!3b6e4fa955205d1d"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "scout-uncanny-dodge-bce1bc33b82c71b9.json",
+    "key": "!items!bce1bc33b82c71b9"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "scout-venom-immunity-03e747c67318c3ec.json",
+    "key": "!items!03e747c67318c3ec"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "hunter-viper-sting-4ae14506d18a6688.json",
+    "key": "!items!4ae14506d18a6688"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "warlock-demon-mastery-fe591e1d706f2ffd.json",
+    "key": "!items!fe591e1d706f2ffd"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "warlock-demonologist-c8a249753fc13021.json",
+    "key": "!items!c8a249753fc13021"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "warlock-enslave-outsider-a7e463a573927ab8.json",
+    "key": "!items!a7e463a573927ab8"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "warlock-fel-companion-50e0b0ff4abfb740.json",
+    "key": "!items!50e0b0ff4abfb740"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "warlock-summoner-59ae368302f67383.json",
+    "key": "!items!59ae368302f67383"
   },
   {
     "childKeyByCollection": {},
@@ -44,19 +1178,19 @@
   {
     "childKeyByCollection": {},
     "embeddedCollections": [],
-    "file": "arcanist-vwvlbnyqdgmbiwhq.json",
-    "key": "!items!VwVlbNYqDgMBIWhQ"
+    "file": "scout-wild-healing-d252554cd5553530.json",
+    "key": "!items!d252554cd5553530"
   },
   {
     "childKeyByCollection": {},
     "embeddedCollections": [],
-    "file": "mage-arcana-summon-familiar-yhkshc8qwlmu5x2r.json",
-    "key": "!items!yhkShc8qWLMu5x2R"
+    "file": "scout-wind-walk-46dd065ca73529b0.json",
+    "key": "!items!46dd065ca73529b0"
   },
   {
     "childKeyByCollection": {},
     "embeddedCollections": [],
-    "file": "arcanist-bonus-feat-zpwya8tltkcsn0l4.json",
-    "key": "!items!zPwYa8tltKCSN0L4"
+    "file": "scout-woodland-stride-d224d122ec43785e.json",
+    "key": "!items!d224d122ec43785e"
   }
 ]

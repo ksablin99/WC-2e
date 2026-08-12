@@ -1,0 +1,919 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "5b1b634ca4d1d7b5",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 2,
+                "die": 12,
+                "expression": "2d12",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Undead Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "low",
+          "changeFlags": {
+            "noCon": true,
+            "noInt": true
+          },
+          "changes": [
+            [
+              "16",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "1",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "14",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "9",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "14",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "0",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "-1",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "3",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "30",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "undead",
+          "damageReduction": [
+            [
+              "5",
+              "slashing",
+              false
+            ]
+          ],
+          "hd": 12,
+          "hp": 0,
+          "levels": 2,
+          "maxLevel": 50,
+          "resistances": [],
+          "savingThrows": {
+            "fort": {
+              "value": "low"
+            },
+            "ref": {
+              "value": "low"
+            },
+            "will": {
+              "value": "high"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 150"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "2a9b63aed43ad7fd",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                3
+              ],
+              "printedDamage": "1d6+3"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Slam",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "2",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Slam",
+          "damage": {
+            "parts": [
+              [
+                "1d6+3",
+                "Bludgeoning",
+                "damage-bludg"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Slam +3 melee (1d6+3).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "33dead6432e805a7",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "2a9b63aed43ad7fd",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Slam",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> Slam +3 melee (1d6+3).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "8365447bc30e886d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "- skills."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                150
+              ],
+              "section": "Human Zombie"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "- skills.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> - skills..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 150",
+          "uniqueId": "wc-monster-human-zombie-skills"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "7cce75670df9aa71",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Darkvision 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                150
+              ],
+              "section": "Human Zombie"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Darkvision 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Darkvision 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 150",
+          "uniqueId": "wc-monster-human-zombie-darkvision-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "b53bedf59c52d1ce",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "damage reduction 5/slashing"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                150
+              ],
+              "section": "Human Zombie"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "damage reduction 5/slashing",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> damage reduction 5/slashing.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 150",
+          "uniqueId": "wc-monster-human-zombie-damage-reduction-5-slashing"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "cc6184cb2d0152c6",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "single actions only"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                150
+              ],
+              "section": "Human Zombie"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "single actions only",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> single actions only.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 150",
+          "uniqueId": "wc-monster-human-zombie-single-actions-only"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "f64880561e12c357",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "undead traits"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                150
+              ],
+              "section": "Human Zombie"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "undead traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> undead traits.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 150",
+          "uniqueId": "wc-monster-human-zombie-undead-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e87b71e5211ace9a",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Feat",
+              "raw": "Toughness Zombies"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                150
+              ],
+              "section": "Human Zombie"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Toughness Zombies",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Toughness Zombies.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 150",
+          "uniqueId": "wc-monster-human-zombie-toughness-zombies"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "86fc7ed55900db0d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Medium Undead (Zombie); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "d92eb95c03dbf03c",
+              "name": "Undead Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                150
+              ],
+              "section": "Human Zombie"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Undead Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Medium Undead (Zombie); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.d92eb95c03dbf03c]{Undead Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 150",
+          "uniqueId": "wc-monster-human-zombie-undead-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "0363dc457d7516fc",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Zombie subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "b5fe9ab025e00552",
+              "name": "Zombie Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                150
+              ],
+              "section": "Human Zombie"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Zombie Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Zombie subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.b5fe9ab025e00552]{Zombie Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 150",
+          "uniqueId": "wc-monster-human-zombie-zombie-subtype-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "5bde813a5edc7792",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Applied Template",
+              "raw": "Zombie Template"
+            },
+            "reference": {
+              "id": "2a7bdc839b19b222",
+              "name": "Zombie Template",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                150
+              ],
+              "section": "Human Zombie"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Zombie Template",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Applied Template:</strong> Zombie Template.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.2a7bdc839b19b222]{Zombie Template}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 150",
+          "uniqueId": "wc-monster-human-zombie-zombie-template"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "a3e4be9057c085fd",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "example",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 15, Agy 9, Sta -, Int -, Spt 10, Cha 1",
+          "Advancement": "-",
+          "Alignment": "Always neutral evil",
+          "Area": "Eastern Plaguelands, Stranglethorn Vale, Tirisfal Glades, Western Plaguelands",
+          "Armor Class": "14 (-1 Agy, +2 natural, +3 studded leather), or touch 9, flat-footed 14",
+          "Attack": "Slam +3 melee (1d6+3)",
+          "Base Attack/Grapple": "+1/+3 onslaught",
+          "Challenge Rating": "1/2",
+          "Environment": "Any land and underground",
+          "Feats": "Toughness B Zombies",
+          "Full Attack": "Slam +3 melee (1d6+3)",
+          "Hit Dice": "2d12+3 (16 hp)",
+          "Initiative": "-1",
+          "Level Adjustment": "-",
+          "Organization": "Any",
+          "Saves": "Fort +0, Ref -1, Will +3",
+          "Skills": "- than",
+          "Space/Reach": "5 ft./5 ft.",
+          "Special Attacks": "- skills.",
+          "Special Qualities": "Darkvision 60 ft., damage reduction 5/slashing, single actions only, undead traits",
+          "Speed": "30 ft. (6 squares)",
+          "Treasure": "None"
+        },
+        "rulesCoverage": {
+          "actor-defense": 1,
+          "linked-reference": 3,
+          "manual": 5
+        },
+        "subtypes": [
+          "Zombie"
+        ]
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          151
+        ],
+        "printedPages": [
+          150
+        ],
+        "section": "Human Zombie",
+        "verification": "native-text-table+review-override"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "5b1b634ca4d1d7b5",
+    "2a9b63aed43ad7fd",
+    "33dead6432e805a7",
+    "8365447bc30e886d",
+    "7cce75670df9aa71",
+    "b53bedf59c52d1ce",
+    "cc6184cb2d0152c6",
+    "f64880561e12c357",
+    "e87b71e5211ace9a",
+    "86fc7ed55900db0d",
+    "0363dc457d7516fc",
+    "5bde813a5edc7792"
+  ],
+  "name": "Human Zombie",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -5,
+        "origMod": -5,
+        "origTotal": 1,
+        "penalty": 0,
+        "total": 1,
+        "userPenalty": 0,
+        "value": 1
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": true,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 0,
+        "penalty": 0,
+        "total": 0,
+        "userPenalty": 0,
+        "value": 0
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -1,
+        "origMod": -1,
+        "origTotal": 9,
+        "penalty": 0,
+        "total": 9,
+        "userPenalty": 0,
+        "value": 9
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": true,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 0,
+        "penalty": 0,
+        "total": 0,
+        "userPenalty": 0,
+        "value": 0
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 2,
+        "origMod": 2,
+        "origTotal": 15,
+        "penalty": 0,
+        "total": 15,
+        "userPenalty": 0,
+        "value": 15
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 14,
+          "value": 0
+        },
+        "normal": {
+          "total": 14,
+          "value": 0
+        },
+        "touch": {
+          "total": 9,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 1,
+        "nonepic": 1,
+        "total": 1,
+        "value": 0
+      },
+      "cmb": {
+        "total": 3,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "undead",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft-undead",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 100,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 2,
+        "total": 2
+      },
+      "hp": {
+        "base": 16,
+        "max": 16,
+        "min": 0,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 16
+      },
+      "init": {
+        "bonus": 0,
+        "total": -1,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 2,
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "total": 0
+        },
+        "ref": {
+          "base": -1,
+          "total": -1
+        },
+        "will": {
+          "base": 3,
+          "total": 3
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": null,
+        "darkvision": 60,
+        "lowLight": false,
+        "lowLightMultiplier": null,
+        "tremorsense": null
+      },
+      "speed": {
+        "land": {
+          "base": 30,
+          "total": 30
+        }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "Always neutral evil",
+      "biography": {
+        "public": "",
+        "value": "<p>Human Zombie is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 0.5,
+      "environment": "Any land and underground",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 2,
+        "value": 2
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 2d12+3 (16 hp)</p><p><strong>Initiative:</strong> -1</p><p><strong>Speed:</strong> 30 ft. (6 squares)</p><p><strong>Armor Class:</strong> 14 (-1 Agy, +2 natural, +3 studded leather), or touch 9, flat-footed 14</p><p><strong>Base Attack/Grapple:</strong> +1/+3 onslaught</p><p><strong>Attack:</strong> Slam +3 melee (1d6+3)</p><p><strong>Full Attack:</strong> Slam +3 melee (1d6+3)</p><p><strong>Space/Reach:</strong> 5 ft./5 ft.</p><p><strong>Special Attacks:</strong> - skills.</p><p><strong>Special Qualities:</strong> Darkvision 60 ft., damage reduction 5/slashing, single actions only, undead traits</p><p><strong>Saves:</strong> Fort +0, Ref -1, Will +3</p><p><strong>Abilities:</strong> Str 15, Agy 9, Sta -, Int -, Spt 10, Cha 1</p><p><strong>Skills:</strong> - than</p><p><strong>Feats:</strong> Toughness B Zombies</p><p><strong>Area:</strong> Eastern Plaguelands, Stranglethorn Vale, Tirisfal Glades, Western Plaguelands</p><p><strong>Organization:</strong> Any</p><p><strong>Treasure:</strong> None</p><p><strong>Advancement:</strong> -</p><p><strong>Level Adjustment:</strong> -</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 0.5,
+      "type": "Undead"
+    },
+    "skills": {},
+    "traits": {
+      "actualSize": "med",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Darkvision 60 ft., damage reduction 5/slashing, single actions only, undead traits",
+      "size": "med",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

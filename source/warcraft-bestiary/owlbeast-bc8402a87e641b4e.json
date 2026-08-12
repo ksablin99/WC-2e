@@ -1,0 +1,993 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "f9d2df8e12d3bc4c",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 14,
+                "die": 10,
+                "expression": "14d10",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Magical Beast Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "high",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "178",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "14",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "22",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "10",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "20",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "16",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "11",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "7",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "40",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "20",
+              "speed",
+              "climbSpeed",
+              "base-replace"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "magicalBeast",
+          "damageReduction": [],
+          "hd": 10,
+          "hp": 0,
+          "levels": 14,
+          "maxLevel": 50,
+          "resistances": [],
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "low"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 141"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "845ac749cbdd117c",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                22
+              ],
+              "printedDamage": "2d6+9"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Claw",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "10",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Claw",
+          "damage": {
+            "parts": [
+              [
+                "2d6+9",
+                "Piercing or Slashing",
+                "damage-piercing-or-slashing"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Claw +22 melee (2d6+9).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "97b4a329b93d6ca8",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                19
+              ],
+              "printedDamage": "1d8+4"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Bite",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "7",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "bite",
+          "damage": {
+            "parts": [
+              [
+                "1d8+4",
+                "Piercing or Bludgeoning",
+                "damage-piercing-bludgeoning"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> bite +19 melee (1d8+4).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "01b1d57c1598b266",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 2,
+              "id": "845ac749cbdd117c",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Claw",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "97b4a329b93d6ca8",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Bite",
+              "primary": true
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> 2 claws +22 melee (2d6+9) and bite +19 melee (1d8+4).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "2882f2932b5e9c7f",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "Improved grab"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                141
+              ],
+              "section": "Owlbeast"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved grab",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Improved grab.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 141",
+          "uniqueId": "wc-monster-owlbeast-improved-grab"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "b0c078348060e240",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Darkvision 120 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                141
+              ],
+              "section": "Owlbeast"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Darkvision 120 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Darkvision 120 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 141",
+          "uniqueId": "wc-monster-owlbeast-darkvision-120-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "0ec10dd2664b2e5d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "low-light vision"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                141
+              ],
+              "section": "Owlbeast"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "low-light vision",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> low-light vision.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 141",
+          "uniqueId": "wc-monster-owlbeast-low-light-vision"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "84ec24cd59a70909",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "berserk"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                141
+              ],
+              "section": "Owlbeast"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "berserk",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> berserk.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 141",
+          "uniqueId": "wc-monster-owlbeast-berserk"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "2c77431ef16ea85c",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "scent"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                141
+              ],
+              "section": "Owlbeast"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "scent",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> scent.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 141",
+          "uniqueId": "wc-monster-owlbeast-scent"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "00b4913c8b71bba5",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Feat",
+              "raw": "Improved Natural Attack (bite)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                141
+              ],
+              "section": "Owlbeast"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Natural Attack (bite)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Natural Attack (bite).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 141",
+          "uniqueId": "wc-monster-owlbeast-improved-natural-attack-bite"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "d524f76102951bf6",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Feat",
+              "raw": "Improved Natural Attack Focus (claw)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                141
+              ],
+              "section": "Owlbeast"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Natural Attack Focus (claw)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Natural Attack Focus (claw).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 141",
+          "uniqueId": "wc-monster-owlbeast-improved-natural-attack-focus-claw"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "dc6167b7488005b6",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Huge Magical Beast; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "4a5e271e2b371475",
+              "name": "Magical Beast Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                141
+              ],
+              "section": "Owlbeast"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Magical Beast Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Huge Magical Beast; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.4a5e271e2b371475]{Magical Beast Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 141",
+          "uniqueId": "wc-monster-owlbeast-magical-beast-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "bc8402a87e641b4e",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 29, Agy 15, Sta 24, Int 4, Spt 12, Cha 10",
+          "Advancement": "15-24 HD (Huge)",
+          "Alignment": "Often chaotic neutral",
+          "Area": "Darkshore, the Hinterlands, Winterspring",
+          "Armor Class": "22 (-2 size, +2 Agy, +12 natural), touch 10, flat-footed 20",
+          "Attack": "Claw +22 melee (2d6+9)",
+          "Base Attack/Grapple": "+14/+31",
+          "Challenge Rating": "8",
+          "Environment": "Temperate forests",
+          "Feats": "Improved Natural Attack* (bite) B , Improved Natural Attack* Focus (claw)",
+          "Full Attack": "2 claws +22 melee (2d6+9) and bite +19 melee (1d8+4)",
+          "Hit Dice": "14d10+98+3 (178 hp)",
+          "Initiative": "+2",
+          "Level Adjustment": "-",
+          "Organization": "Solitary, pair or clutch (3-10)",
+          "Saves": "Fort +16, Ref +11, Will +7",
+          "Skills": "Listen +6, Spot +8, Survival +8",
+          "Space/Reach": "15 ft./10 ft.",
+          "Special Attacks": "Improved grab",
+          "Special Qualities": "Darkvision 120 ft., low-light vision, berserk, scent",
+          "Speed": "40 ft. (8 squares), climb 20 ft.",
+          "Treasure": "None"
+        },
+        "rulesCoverage": {
+          "actor-defense": 0,
+          "linked-reference": 1,
+          "manual": 7
+        },
+        "subtypes": []
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          142
+        ],
+        "printedPages": [
+          141
+        ],
+        "section": "Owlbeast",
+        "verification": "native-text-table"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "f9d2df8e12d3bc4c",
+    "845ac749cbdd117c",
+    "97b4a329b93d6ca8",
+    "01b1d57c1598b266",
+    "2882f2932b5e9c7f",
+    "b0c078348060e240",
+    "0ec10dd2664b2e5d",
+    "84ec24cd59a70909",
+    "2c77431ef16ea85c",
+    "00b4913c8b71bba5",
+    "d524f76102951bf6",
+    "dc6167b7488005b6"
+  ],
+  "name": "Owlbeast",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 7,
+        "origMod": 7,
+        "origTotal": 24,
+        "penalty": 0,
+        "total": 24,
+        "userPenalty": 0,
+        "value": 24
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 2,
+        "origMod": 2,
+        "origTotal": 15,
+        "penalty": 0,
+        "total": 15,
+        "userPenalty": 0,
+        "value": 15
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -3,
+        "origMod": -3,
+        "origTotal": 4,
+        "penalty": 0,
+        "total": 4,
+        "userPenalty": 0,
+        "value": 4
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 9,
+        "origMod": 9,
+        "origTotal": 29,
+        "penalty": 0,
+        "total": 29,
+        "userPenalty": 0,
+        "value": 29
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 12,
+        "penalty": 0,
+        "total": 12,
+        "userPenalty": 0,
+        "value": 12
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 20,
+          "value": 0
+        },
+        "normal": {
+          "total": 22,
+          "value": 0
+        },
+        "touch": {
+          "total": 10,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 14,
+        "nonepic": 14,
+        "total": 14,
+        "value": 0
+      },
+      "cmb": {
+        "total": 31,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "magicalBeast",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 0,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 14,
+        "total": 14
+      },
+      "hp": {
+        "base": 178,
+        "max": 178,
+        "min": -24,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 178
+      },
+      "init": {
+        "bonus": 0,
+        "total": 2,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 12,
+      "savingThrows": {
+        "fort": {
+          "base": 16,
+          "total": 16
+        },
+        "ref": {
+          "base": 11,
+          "total": 11
+        },
+        "will": {
+          "base": 7,
+          "total": 7
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": null,
+        "darkvision": 120,
+        "lowLight": true,
+        "lowLightMultiplier": 2,
+        "tremorsense": null
+      },
+      "speed": {
+        "climb": {
+          "base": 20,
+          "total": 20
+        },
+        "land": {
+          "base": 40,
+          "total": 40
+        }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "Often chaotic neutral",
+      "biography": {
+        "public": "",
+        "value": "<p>Owlbeast is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 8,
+      "environment": "Temperate forests",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 14,
+        "value": 14
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 14d10+98+3 (178 hp)</p><p><strong>Initiative:</strong> +2</p><p><strong>Speed:</strong> 40 ft. (8 squares), climb 20 ft.</p><p><strong>Armor Class:</strong> 22 (-2 size, +2 Agy, +12 natural), touch 10, flat-footed 20</p><p><strong>Base Attack/Grapple:</strong> +14/+31</p><p><strong>Attack:</strong> Claw +22 melee (2d6+9)</p><p><strong>Full Attack:</strong> 2 claws +22 melee (2d6+9) and bite +19 melee (1d8+4)</p><p><strong>Space/Reach:</strong> 15 ft./10 ft.</p><p><strong>Special Attacks:</strong> Improved grab</p><p><strong>Special Qualities:</strong> Darkvision 120 ft., low-light vision, berserk, scent</p><p><strong>Saves:</strong> Fort +16, Ref +11, Will +7</p><p><strong>Abilities:</strong> Str 29, Agy 15, Sta 24, Int 4, Spt 12, Cha 10</p><p><strong>Skills:</strong> Listen +6, Spot +8, Survival +8</p><p><strong>Feats:</strong> Improved Natural Attack* (bite) B , Improved Natural Attack* Focus (claw)</p><p><strong>Area:</strong> Darkshore, the Hinterlands, Winterspring</p><p><strong>Organization:</strong> Solitary, pair or clutch (3-10)</p><p><strong>Treasure:</strong> None</p><p><strong>Advancement:</strong> 15-24 HD (Huge)</p><p><strong>Level Adjustment:</strong> -</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 8,
+      "type": "Magical Beast"
+    },
+    "skills": {
+      "lis": {
+        "ability": "wis",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 5,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 6,
+        "notes": "Printed total +6",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spt": {
+        "ability": "wis",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 7,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 8,
+        "notes": "Printed total +8",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "sur": {
+        "ability": "wis",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 7,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 8,
+        "notes": "Printed total +8",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "huge",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Darkvision 120 ft., low-light vision, berserk, scent",
+      "size": "huge",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

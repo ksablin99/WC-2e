@@ -1,0 +1,226 @@
+{
+  "_embedded": {},
+  "_id": "fee80536c1d19abf",
+  "_stats": {
+    "compendiumSource": null,
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "lastModifiedBy": null,
+    "modifiedTime": null,
+    "systemId": null,
+    "systemVersion": null
+  },
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "race": {
+        "automaticLanguages": [
+          "Common",
+          "Orcish"
+        ],
+        "bonusLanguages": [
+          "Goblin",
+          "Low Common",
+          "Taur-ahe"
+        ],
+        "category": "player-race",
+        "favoredClass": [
+          "Barbarian"
+        ],
+        "proficiencies": [
+          "Orc claws of attack (treated as martial)"
+        ],
+        "racialLevel": {
+          "available": false,
+          "max": 0,
+          "name": "Orc",
+          "sourceSupported": true,
+          "status": "source-omits-progression"
+        },
+        "searchableTraits": [
+          "Common",
+          "Orcish",
+          "Goblin",
+          "Low Common",
+          "Taur-ahe",
+          "Orc claws of attack (treated as martial)",
+          "Favored class: Barbarian"
+        ],
+        "size": "med"
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          48
+        ],
+        "printedPages": [
+          46
+        ],
+        "section": "Orc racial traits",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "name": "Orc",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "addedAbilities": [
+      {
+        "level": 1,
+        "uid": "wc-race-daebe67b93"
+      }
+    ],
+    "addedLevel": 0,
+    "changeFlags": {
+      "heavyArmorFullSpeed": false,
+      "loseDexToAC": false,
+      "mediumArmorFullSpeed": false,
+      "multiAttack": false,
+      "multiweaponAttack": false,
+      "noCon": false,
+      "noDex": false,
+      "noEncumbrance": false,
+      "noInt": false,
+      "noStr": false,
+      "oneCha": false,
+      "oneInt": false,
+      "oneWis": false,
+      "uncannyDodge": false
+    },
+    "changes": [
+      [
+        "30",
+        "speed",
+        "landSpeed",
+        "base-replace"
+      ],
+      [
+        "2",
+        "ability",
+        "con",
+        "racial"
+      ],
+      [
+        "-2",
+        "ability",
+        "int",
+        "racial"
+      ],
+      [
+        "2",
+        "skill",
+        "skill.int",
+        "racial"
+      ]
+    ],
+    "classSource": "",
+    "combatChangeCustomDisplayName": "",
+    "combatChangeCustomReferenceName": "",
+    "combatChanges": [],
+    "combatChangesAdditionalRanges": {
+      "hasAdditionalRanges": false,
+      "slider1": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      },
+      "slider2": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      },
+      "slider3": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      }
+    },
+    "combatChangesApplySpecialActionsOnce": true,
+    "combatChangesRange": {
+      "max": 0,
+      "maxFormula": ""
+    },
+    "combatChangesUsesCost": "chargesPerUse",
+    "conditionFlags": {
+      "dazzled": false,
+      "polymorphed": false,
+      "wildshaped": false
+    },
+    "contextNotes": [
+      [
+        "[[+1]] racial bonus against humans",
+        "attacks",
+        "attack"
+      ],
+      [
+        "[[+2]] racial bonus on Handle Animal checks involving wolves",
+        "skills",
+        "skill.han"
+      ]
+    ],
+    "counterName": "",
+    "createdBy": "",
+    "creationChanges": [],
+    "creatureType": "humanoid",
+    "customAttributes": {},
+    "customAttributesLocked": false,
+    "customTag": "",
+    "damage": {
+      "parts": []
+    },
+    "damageReduction": [],
+    "deathRule": "warcraft",
+    "description": {
+      "chat": "",
+      "unidentified": "",
+      "value": "<p>Orc racial traits.</p><ul><li>+2 Stamina, -2 Intellect; Medium; land speed 30 feet; low-light vision.</li><li>Battle rage once per day and no more than once per encounter; classes with rage gain one additional daily use.</li><li>+2 Handle Animal with wolves and Intimidate; Intimidate is always a class skill. +1 attacks against humans.</li><li>Treat orc claws of attack as martial weapons.</li><li>Automatic Common and Orcish; bonus Goblin, Low Common, and Taur-ahe.</li><li>Favored class Barbarian.</li></ul>"
+    },
+    "disabledAbilities": [],
+    "epic": "",
+    "identifiedName": "Orc",
+    "index": {
+      "subType": null,
+      "uniqueId": ""
+    },
+    "la": null,
+    "linkId": "",
+    "linkImported": false,
+    "links": {
+      "children": []
+    },
+    "linkSourceId": "",
+    "linkSourceName": "",
+    "nameFormula": "",
+    "nameFromFormula": false,
+    "originId": "",
+    "originPack": "",
+    "originVersion": 99,
+    "possibleUpdate": false,
+    "psionic": "",
+    "requirements": [],
+    "resistances": [],
+    "senses": {
+      "blindsight": null,
+      "darkvision": null,
+      "lowLight": true,
+      "lowLightMultiplier": 2,
+      "tremorsense": null,
+      "truesight": null
+    },
+    "sizeOverride": "med",
+    "source": "World of Warcraft RPG, 2nd Edition, p. 46",
+    "subTypes": [],
+    "tags": [],
+    "uniqueId": "",
+    "userNonRemovable": false
+  },
+  "type": "race"
+}

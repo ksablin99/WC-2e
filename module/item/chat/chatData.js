@@ -1,5 +1,9 @@
 import { Roll35e } from "../../roll.js";
 import { ItemCombatChangesHelper } from "../helpers/itemCombatChangesHelper.js";
+import {
+  enforceWarcraftCasterLevelMinimum,
+  getWarcraftSpellcastingAdjustments,
+} from "../../actor/helpers/warcraftSpellcastingHelper.js";
 
 export class ItemChatData {
   /**
@@ -36,17 +40,25 @@ export class ItemChatData {
     let spellbook = null;
     let cl = 0;
     let sl = 0;
+    let warcraftAdjustment = null;
     if (this.item.type === "spell") {
       spellbookIndex = itemChatData.spellbook;
       if (this.item.actor) {
         spellbook = foundry.utils.getProperty(this.item.actor.system, `attributes.spells.spellbooks.${spellbookIndex}`) || {};
+        const classSystem = this.item.actor.system?.classes?.[spellbook.class] || {};
+        warcraftAdjustment = getWarcraftSpellcastingAdjustments(itemChatData, classSystem, {
+          parentClass: classSystem.name,
+          learnedPath: itemChatData.warcraftLearnedPath,
+        });
         spellAbility = spellbook.ability;
         if (spellAbility !== "") ablMod = foundry.utils.getProperty(this.item.actor.system, `abilities.${spellAbility}.mod`);
         cl += foundry.utils.getProperty(spellbook, "cl.total") || 0;
+        cl += warcraftAdjustment.casterLevel;
         cl -= this.item.actor.system.attributes.energyDrain || 0;
       }
       cl += itemChatData.clOffset || 0;
       cl += rollData.featClBonus || 0;
+      cl = enforceWarcraftCasterLevelMinimum(cl, warcraftAdjustment);
 
       sl += itemChatData.level;
       sl += itemChatData.slOffset || 0;
@@ -203,6 +215,11 @@ export class ItemChatData {
           : itemChatData.save.description;
         if (this.item.type === "spell") {
           saveDC += new Roll35e(spellbook.baseDCFormula || "", rollData).evaluateSync().total;
+          const classSystem = this.item.actor?.system?.classes?.[spellbook.class] || {};
+          saveDC += getWarcraftSpellcastingAdjustments(itemChatData, classSystem, {
+            parentClass: classSystem.name,
+            learnedPath: itemChatData.warcraftLearnedPath,
+          }).saveDc;
         }
         saveDC += new Roll35e(rollData.featSpellDCBonus ? rollData.featSpellDCBonus.toString() : "0", rollData).evaluateSync().total || 0;
         if (saveDC > 0 && saveType) {

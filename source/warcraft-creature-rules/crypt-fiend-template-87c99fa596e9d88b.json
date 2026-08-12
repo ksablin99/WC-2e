@@ -1,0 +1,46 @@
+{
+  "_embedded": {},
+  "_id": "87c99fa596e9d88b",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "creatureRule": {
+        "kind": "template",
+        "reusable": true
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          23,
+          24,
+          25
+        ],
+        "printedPages": [
+          22,
+          23,
+          24
+        ],
+        "section": "Crypt Fiend Template",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/aura.svg",
+  "name": "Crypt Fiend Template",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilityType": "nat",
+    "description": {
+      "value": "<p>Acquired nerubian undead template. Recalculate type, Hit Dice, defenses, abilities, attacks, qualities, and challenge rating from the template on printed pages 22-24.</p><p>This reusable record defines shared conversion behavior. Individual actors carry exact printed exceptions and totals.</p>"
+    },
+    "featType": "trait",
+    "source": "World of Warcraft: Monster Guide, pp. 22-23-24",
+    "uniqueId": "wc-creature-rule-crypt-fiend-template"
+  },
+  "type": "feat"
+}

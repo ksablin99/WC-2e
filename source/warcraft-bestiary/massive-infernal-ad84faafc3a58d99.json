@@ -1,0 +1,1576 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "cb0028918d549766",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 32,
+                "die": 10,
+                "expression": "32d10",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Construct Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "med",
+          "changeFlags": {
+            "noCon": true,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "708",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "24",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "32",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "9",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "35",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "10",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "10",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "12",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "40",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "construct",
+          "damageReduction": [],
+          "hd": 10,
+          "hp": 0,
+          "levels": 32,
+          "maxLevel": 50,
+          "resistances": [
+            [
+              "40",
+              "energy-cold",
+              false,
+              false,
+              false
+            ],
+            [
+              "20",
+              "energy-electric",
+              false,
+              false,
+              false
+            ],
+            [
+              "",
+              "energy-fire",
+              true,
+              false,
+              false
+            ]
+          ],
+          "savingThrows": {
+            "fort": {
+              "value": "low"
+            },
+            "ref": {
+              "value": "low"
+            },
+            "will": {
+              "value": "low"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 92"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "11fe81c0cd4c2ecc",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                37
+              ],
+              "printedDamage": "3d12+16/19-20 plus 2d6 fire and 2d6 fel"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Slam",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 19,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "17",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Slam",
+          "damage": {
+            "parts": [
+              [
+                "3d12+16",
+                "Bludgeoning",
+                "damage-bludg"
+              ],
+              [
+                "2d6",
+                "Fire",
+                "energy-fire"
+              ],
+              [
+                "2d6",
+                "Fel",
+                "damage-untyped-energy"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Slam +37 melee (3d12+16/19-20 plus 2d6 fire and 2d6 fel).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": true,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "a0b8454ff6177940",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 2,
+              "id": "11fe81c0cd4c2ecc",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Slam",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> 2 slams +37 melee (3d12+16/19-20 plus 2d6 fire and 2d6 fel).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "70e1b018d8f43848",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "Blazing body"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                92
+              ],
+              "section": "Massive Infernal"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Blazing body",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Blazing body.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 92",
+          "uniqueId": "wc-monster-massive-infernal-blazing-body"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "c78b9ec9f9a8fa30",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "burn (DC 26)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                92
+              ],
+              "section": "Massive Infernal"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "burn",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> burn (DC 26).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 92",
+          "uniqueId": "wc-monster-massive-infernal-burn"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "3bb459204d362e0b",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "greater fel strike"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                92
+              ],
+              "section": "Massive Infernal"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "greater fel strike",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> greater fel strike.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 92",
+          "uniqueId": "wc-monster-massive-infernal-greater-fel-strike"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "cdf502425f8661c1",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "meteoric arrival (DC 26)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                92
+              ],
+              "section": "Massive Infernal"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "meteoric arrival",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> meteoric arrival (DC 26).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 92",
+          "uniqueId": "wc-monster-massive-infernal-meteoric-arrival"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "7a71c5bb496bb280",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Darkvision 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                92
+              ],
+              "section": "Massive Infernal"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Darkvision 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Darkvision 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 92",
+          "uniqueId": "wc-monster-massive-infernal-darkvision-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "989fe8087e81209c",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "damage reduction 20/epic and"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                92
+              ],
+              "section": "Massive Infernal"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "damage reduction 20/epic and",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> damage reduction 20/epic and.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 92",
+          "uniqueId": "wc-monster-massive-infernal-damage-reduction-20-epic-and"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "4dc6b1ec6d00bc31",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "demon construct"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                92
+              ],
+              "section": "Massive Infernal"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "demon construct",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> demon construct.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 92",
+          "uniqueId": "wc-monster-massive-infernal-demon-construct"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "32111c00e602fed0",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "improved demonic reinforcement"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                92
+              ],
+              "section": "Massive Infernal"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "improved demonic reinforcement",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> improved demonic reinforcement.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 92",
+          "uniqueId": "wc-monster-massive-infernal-improved-demonic-reinforcement"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "9f6f51512a7145cc",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "immunity to fire"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                92
+              ],
+              "section": "Massive Infernal"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "immunity to fire",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> immunity to fire.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 92",
+          "uniqueId": "wc-monster-massive-infernal-immunity-to-fire"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "daec957f72070526",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "resistance to cold 40 and electricity 20"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                92
+              ],
+              "section": "Massive Infernal"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "resistance to cold 40 and electricity 20",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> resistance to cold 40 and electricity 20.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 92",
+          "uniqueId": "wc-monster-massive-infernal-resistance-to-cold-40-and-electricity-20"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "606f3234f78d6ad4",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "spell resistance 34"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                92
+              ],
+              "section": "Massive Infernal"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "spell resistance 34",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> spell resistance 34.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 92",
+          "uniqueId": "wc-monster-massive-infernal-spell-resistance-34"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "add20640feba1309",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "construct traits"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                92
+              ],
+              "section": "Massive Infernal"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "construct traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> construct traits.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 92",
+          "uniqueId": "wc-monster-massive-infernal-construct-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "0b2c9b19c86e9fd8",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Bash"
+            },
+            "reference": {
+              "id": "60ca15d6f0332f77",
+              "name": "Bash",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                92
+              ],
+              "section": "Massive Infernal"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Bash",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Bash.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.60ca15d6f0332f77]{Bash}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 92",
+          "uniqueId": "wc-monster-massive-infernal-bash"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "32a3bd083a6bb3b2",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Cleave"
+            },
+            "reference": {
+              "id": "34b794d403b119d7",
+              "name": "Cleave",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                92
+              ],
+              "section": "Massive Infernal"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Cleave",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Cleave.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.34b794d403b119d7]{Cleave}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 92",
+          "uniqueId": "wc-monster-massive-infernal-cleave"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "ab72ad4019679caf",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Great Cleave"
+            },
+            "reference": {
+              "id": "8ea93af3cfb52873",
+              "name": "Great Cleave",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                92
+              ],
+              "section": "Massive Infernal"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Great Cleave",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Great Cleave.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.8ea93af3cfb52873]{Great Cleave}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 92",
+          "uniqueId": "wc-monster-massive-infernal-great-cleave"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "412956bfa3ae683e",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Great Fortitude"
+            },
+            "reference": {
+              "id": "66a59a40dae0fed6",
+              "name": "Great Fortitude",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                92
+              ],
+              "section": "Massive Infernal"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Great Fortitude",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Great Fortitude.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.66a59a40dae0fed6]{Great Fortitude}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 92",
+          "uniqueId": "wc-monster-massive-infernal-great-fortitude"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "bd782ecec3f76d31",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Bull Rush"
+            },
+            "reference": {
+              "id": "549e4a1ee28eb65b",
+              "name": "Improved Bull Rush",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                92
+              ],
+              "section": "Massive Infernal"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Bull Rush",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Bull Rush.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.549e4a1ee28eb65b]{Improved Bull Rush}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 92",
+          "uniqueId": "wc-monster-massive-infernal-improved-bull-rush"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e96e72c2fa911ed2",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Critical (slam)"
+            },
+            "reference": {
+              "id": "67beb7aa2473045e",
+              "name": "Improved Critical",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                92
+              ],
+              "section": "Massive Infernal"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Critical (slam)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Critical (slam).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.67beb7aa2473045e]{Improved Critical}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 92",
+          "uniqueId": "wc-monster-massive-infernal-improved-critical-slam"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "379b7c4092e70717",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Overrun"
+            },
+            "reference": {
+              "id": "682fc7477ca63892",
+              "name": "Improved Overrun",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                92
+              ],
+              "section": "Massive Infernal"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Overrun",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Overrun.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.682fc7477ca63892]{Improved Overrun}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 92",
+          "uniqueId": "wc-monster-massive-infernal-improved-overrun"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "50881876b8a11ab1",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Power Attack"
+            },
+            "reference": {
+              "id": "95e094ad6c35e24e",
+              "name": "Power Attack",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                92
+              ],
+              "section": "Massive Infernal"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Power Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Power Attack.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.95e094ad6c35e24e]{Power Attack}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 92",
+          "uniqueId": "wc-monster-massive-infernal-power-attack"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "b127f14f62406f75",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Reckless Attack"
+            },
+            "reference": {
+              "id": "8712e67bdb0146dd",
+              "name": "Reckless Attack",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                92
+              ],
+              "section": "Massive Infernal"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Reckless Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Reckless Attack.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.8712e67bdb0146dd]{Reckless Attack}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 92",
+          "uniqueId": "wc-monster-massive-infernal-reckless-attack"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "a84ba5e6f625c556",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Thunderous Blow"
+            },
+            "reference": {
+              "id": "8d90b82ef3ed4434",
+              "name": "Thunderous Blow",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                92
+              ],
+              "section": "Massive Infernal"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Thunderous Blow",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Thunderous Blow.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.8d90b82ef3ed4434]{Thunderous Blow}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 92",
+          "uniqueId": "wc-monster-massive-infernal-thunderous-blow"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "d2c8546c0d718a22",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Weapon Focus (slam)"
+            },
+            "reference": {
+              "id": "fdea42738398197e",
+              "name": "Weapon Focus",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                92
+              ],
+              "section": "Massive Infernal"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Weapon Focus (slam)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Weapon Focus (slam).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.fdea42738398197e]{Weapon Focus}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 92",
+          "uniqueId": "wc-monster-massive-infernal-weapon-focus-slam"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "825e0ca25dbee8de",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Gargantuan Construct; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "5d00d0447ab3942a",
+              "name": "Construct Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                92
+              ],
+              "section": "Massive Infernal"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Construct Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Gargantuan Construct; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.5d00d0447ab3942a]{Construct Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 92",
+          "uniqueId": "wc-monster-massive-infernal-construct-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "ad84faafc3a58d99",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 42, Agy 10, Sta -, Int 3, Spt 15, Cha 9",
+          "Advancement": "33-42 HD (Gargantuan)",
+          "Alignment": "Always chaotic evil",
+          "Area": "Blasted Lands, Twisting Nether",
+          "Armor Class": "32 (-4 size, +26 natural), touch 9, flat-footed 35",
+          "Attack": "Slam +37 melee (3d12+16/19-20 plus 2d6 fire and 2d6 fel)",
+          "Base Attack/Grapple": "+24/+52",
+          "Challenge Rating": "22",
+          "Environment": "Any",
+          "Feats": "Bash, Cleave, Great Cleave, Great Fortitude, Improved Bull Rush, Improved Critical (slam), Improved Overrun, Power Attack, Reckless Attack, Thunderous Blow, Weapon Focus (slam)",
+          "Full Attack": "2 slams +37 melee (3d12+16/19-20 plus 2d6 fire and 2d6 fel)",
+          "Hit Dice": "32d10+60 [x3] (708 hp)",
+          "Initiative": "+0",
+          "Level Adjustment": "-",
+          "Organization": "Solitary",
+          "Saves": "Fort +10, Ref +10, Will +12",
+          "Skills": "Jump +51",
+          "Space/Reach": "20 ft./20 ft.",
+          "Special Attacks": "Blazing body, burn (DC 26), greater fel strike, meteoric arrival (DC 26)",
+          "Special Qualities": "Darkvision 60 ft., damage reduction 20/epic and, demon construct, improved demonic reinforcement, immunity to fire, resistance to cold 40 and electricity 20, spell resistance 34, construct traits",
+          "Speed": "40 ft. (8 squares)",
+          "Treasure": "None"
+        },
+        "rulesCoverage": {
+          "actor-defense": 4,
+          "linked-reference": 12,
+          "manual": 8
+        },
+        "subtypes": []
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          93
+        ],
+        "printedPages": [
+          92
+        ],
+        "section": "Massive Infernal",
+        "verification": "native-text-table"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "cb0028918d549766",
+    "11fe81c0cd4c2ecc",
+    "a0b8454ff6177940",
+    "70e1b018d8f43848",
+    "c78b9ec9f9a8fa30",
+    "3bb459204d362e0b",
+    "cdf502425f8661c1",
+    "7a71c5bb496bb280",
+    "989fe8087e81209c",
+    "4dc6b1ec6d00bc31",
+    "32111c00e602fed0",
+    "9f6f51512a7145cc",
+    "daec957f72070526",
+    "606f3234f78d6ad4",
+    "add20640feba1309",
+    "0b2c9b19c86e9fd8",
+    "32a3bd083a6bb3b2",
+    "ab72ad4019679caf",
+    "412956bfa3ae683e",
+    "bd782ecec3f76d31",
+    "e96e72c2fa911ed2",
+    "379b7c4092e70717",
+    "50881876b8a11ab1",
+    "b127f14f62406f75",
+    "a84ba5e6f625c556",
+    "d2c8546c0d718a22",
+    "825e0ca25dbee8de"
+  ],
+  "name": "Massive Infernal",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -1,
+        "origMod": -1,
+        "origTotal": 9,
+        "penalty": 0,
+        "total": 9,
+        "userPenalty": 0,
+        "value": 9
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": true,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 0,
+        "penalty": 0,
+        "total": 0,
+        "userPenalty": 0,
+        "value": 0
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -4,
+        "origMod": -4,
+        "origTotal": 3,
+        "penalty": 0,
+        "total": 3,
+        "userPenalty": 0,
+        "value": 3
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 16,
+        "origMod": 16,
+        "origTotal": 42,
+        "penalty": 0,
+        "total": 42,
+        "userPenalty": 0,
+        "value": 42
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 2,
+        "origMod": 2,
+        "origTotal": 15,
+        "penalty": 0,
+        "total": 15,
+        "userPenalty": 0,
+        "value": 15
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 35,
+          "value": 0
+        },
+        "normal": {
+          "total": 32,
+          "value": 0
+        },
+        "touch": {
+          "total": 9,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 24,
+        "nonepic": 24,
+        "total": 24,
+        "value": 0
+      },
+      "cmb": {
+        "total": 52,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "construct",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft-construct",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 100,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 32,
+        "total": 32
+      },
+      "hp": {
+        "base": 708,
+        "max": 708,
+        "min": 0,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 708
+      },
+      "init": {
+        "bonus": 0,
+        "total": 0,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 26,
+      "savingThrows": {
+        "fort": {
+          "base": 10,
+          "total": 10
+        },
+        "ref": {
+          "base": 10,
+          "total": 10
+        },
+        "will": {
+          "base": 12,
+          "total": 12
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": null,
+        "darkvision": 60,
+        "lowLight": false,
+        "lowLightMultiplier": null,
+        "tremorsense": null
+      },
+      "speed": {
+        "land": {
+          "base": 40,
+          "total": 40
+        }
+      },
+      "sr": {
+        "formula": "34",
+        "total": 34
+      }
+    },
+    "details": {
+      "alignment": "Always chaotic evil",
+      "biography": {
+        "public": "",
+        "value": "<p>Massive Infernal is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 22,
+      "environment": "Any",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 32,
+        "value": 32
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 32d10+60 [x3] (708 hp)</p><p><strong>Initiative:</strong> +0</p><p><strong>Speed:</strong> 40 ft. (8 squares)</p><p><strong>Armor Class:</strong> 32 (-4 size, +26 natural), touch 9, flat-footed 35</p><p><strong>Base Attack/Grapple:</strong> +24/+52</p><p><strong>Attack:</strong> Slam +37 melee (3d12+16/19-20 plus 2d6 fire and 2d6 fel)</p><p><strong>Full Attack:</strong> 2 slams +37 melee (3d12+16/19-20 plus 2d6 fire and 2d6 fel)</p><p><strong>Space/Reach:</strong> 20 ft./20 ft.</p><p><strong>Special Attacks:</strong> Blazing body, burn (DC 26), greater fel strike, meteoric arrival (DC 26)</p><p><strong>Special Qualities:</strong> Darkvision 60 ft., damage reduction 20/epic and, demon construct, improved demonic reinforcement, immunity to fire, resistance to cold 40 and electricity 20, spell resistance 34, construct traits</p><p><strong>Saves:</strong> Fort +10, Ref +10, Will +12</p><p><strong>Abilities:</strong> Str 42, Agy 10, Sta -, Int 3, Spt 15, Cha 9</p><p><strong>Skills:</strong> Jump +51</p><p><strong>Feats:</strong> Bash, Cleave, Great Cleave, Great Fortitude, Improved Bull Rush, Improved Critical (slam), Improved Overrun, Power Attack, Reckless Attack, Thunderous Blow, Weapon Focus (slam)</p><p><strong>Area:</strong> Blasted Lands, Twisting Nether</p><p><strong>Organization:</strong> Solitary</p><p><strong>Treasure:</strong> None</p><p><strong>Advancement:</strong> 33-42 HD (Gargantuan)</p><p><strong>Level Adjustment:</strong> -</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 22,
+      "type": "Construct"
+    },
+    "skills": {
+      "jmp": {
+        "ability": "str",
+        "abilityModifier": 16,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 35,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 51,
+        "notes": "Printed total +51",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "grg",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Darkvision 60 ft., damage reduction 20/epic and, demon construct, improved demonic reinforcement, immunity to fire, resistance to cold 40 and electricity 20, spell resistance 34, construct traits",
+      "size": "grg",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

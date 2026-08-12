@@ -1,0 +1,1619 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "bb2a7ab5a85e6c17",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 4,
+                "die": 12,
+                "expression": "4d12",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Undead Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "low",
+          "changeFlags": {
+            "noCon": true,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "26",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "3",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "17",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "11",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "11",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "1",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "4",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "4",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "40",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "20",
+              "speed",
+              "climbSpeed",
+              "base-replace"
+            ],
+            [
+              "10",
+              "speed",
+              "burrowSpeed",
+              "base-replace"
+            ],
+            [
+              "5",
+              "misc",
+              "init",
+              "untyped"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "undead",
+          "damageReduction": [],
+          "hd": 12,
+          "hp": 0,
+          "levels": 4,
+          "maxLevel": 50,
+          "resistances": [
+            [
+              "5",
+              "energy-cold",
+              false,
+              false,
+              false
+            ]
+          ],
+          "savingThrows": {
+            "fort": {
+              "value": "low"
+            },
+            "ref": {
+              "value": "low"
+            },
+            "will": {
+              "value": "high"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 24"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "a3a5a6742043ba8b",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                6
+              ],
+              "printedDamage": "2d6+5"
+            },
+            "reference": {
+              "id": "756a323ae62fcde2",
+              "name": "Spear",
+              "pack": "warcraftrpg2e.warcraft-equipment"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Spear",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "4",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Spear",
+          "damage": {
+            "parts": [
+              [
+                "2d6+5",
+                "Piercing",
+                "damage-piercing"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Spear +6 melee (2d6+5).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "4c104cf69320c1a9",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                6
+              ],
+              "printedDamage": "1d8+4 and poison"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Bite",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "4",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "bite",
+          "damage": {
+            "parts": [
+              [
+                "1d8+4",
+                "Piercing or Bludgeoning",
+                "damage-piercing-bludgeoning"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> bite +6 melee (1d8+4 and poison).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "91b7b9b81bc9fa0b",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                5
+              ],
+              "printedDamage": "1d8+4"
+            },
+            "reference": {
+              "id": "612be86e7f7ad024",
+              "name": "Javelin",
+              "pack": "warcraftrpg2e.warcraft-equipment"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Javelin",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "rwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "3",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "javelin",
+          "damage": {
+            "parts": [
+              [
+                "1d8+4",
+                "Piercing",
+                "damage-piercing"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> javelin +5 ranged (1d8+4).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "4fbc9706e5bee83d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                1
+              ],
+              "printedDamage": "1d4+2"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Claws",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "-1",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "claws",
+          "damage": {
+            "parts": [
+              [
+                "1d4+2",
+                "Piercing or Slashing",
+                "damage-piercing-or-slashing"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> claws +1 melee (1d4+2).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "d939cc6576ae3d1f",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                6
+              ],
+              "printedDamage": "1d8+5"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Slam",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "4",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "slam",
+          "damage": {
+            "parts": [
+              [
+                "1d8+5",
+                "Bludgeoning",
+                "damage-bludg"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> slam +6 melee (1d8+5).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "9071f9c75fc6301a",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack - Spear and 2 claws",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "a3a5a6742043ba8b",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Spear",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 2,
+              "id": "4fbc9706e5bee83d",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Claws",
+              "primary": true
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> Spear +6 melee (2d6+5) and 2 claws +1 melee (1d4+2).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "e3cf2c506e460460",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack - bite and 2 claws",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "4c104cf69320c1a9",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Bite",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 2,
+              "id": "4fbc9706e5bee83d",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Claws",
+              "primary": true
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> bite +6 melee (1d8+4 and poison) and 2 claws +1 melee (1d4+2).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "2a78f26e981170a6",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack - slam",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "d939cc6576ae3d1f",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Slam",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> slam +6 melee (1d8+5).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "077ff538c69853b7",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack - javelin",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "91b7b9b81bc9fa0b",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Javelin",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> javelin +5 ranged (1d8+4).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "d931d6df6b3fbb66",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Special Attack",
+              "raw": "Poison (DC 14)"
+            },
+            "reference": {
+              "id": "HjLw7ZfbGOjpqSbN",
+              "name": "Poison",
+              "pack": "warcraftrpg2e.spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                24
+              ],
+              "section": "Nerubian Worker Crypt Fiend"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Poison",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Poison (DC 14).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.spells.Item.HjLw7ZfbGOjpqSbN]{Poison}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 24",
+          "uniqueId": "wc-monster-nerubian-worker-crypt-fiend-poison"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "990f47fa5650a1d5",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Special Attack",
+              "raw": "web (DC 16)"
+            },
+            "reference": {
+              "id": "0X7OpnVunSsGsXi5",
+              "name": "Web",
+              "pack": "warcraftrpg2e.spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                24
+              ],
+              "section": "Nerubian Worker Crypt Fiend"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "web",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> web (DC 16).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.spells.Item.0X7OpnVunSsGsXi5]{Web}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 24",
+          "uniqueId": "wc-monster-nerubian-worker-crypt-fiend-web"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "f9f2dc7b6b77a28e",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Darkvision 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                24
+              ],
+              "section": "Nerubian Worker Crypt Fiend"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Darkvision 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Darkvision 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 24",
+          "uniqueId": "wc-monster-nerubian-worker-crypt-fiend-darkvision-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "31ef93367ec98b73",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Special Quality",
+              "raw": "fast healing"
+            },
+            "reference": {
+              "id": "SCjDywxsPH2MvPTj",
+              "name": "Fast Healing",
+              "pack": "warcraftrpg2e.feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                24
+              ],
+              "section": "Nerubian Worker Crypt Fiend"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "fast healing",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> fast healing.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.feats.Item.SCjDywxsPH2MvPTj]{Fast Healing}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 24",
+          "uniqueId": "wc-monster-nerubian-worker-crypt-fiend-fast-healing"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "f8a40ed8595c2b76",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "resistance to cold 5"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                24
+              ],
+              "section": "Nerubian Worker Crypt Fiend"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "resistance to cold 5",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> resistance to cold 5.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 24",
+          "uniqueId": "wc-monster-nerubian-worker-crypt-fiend-resistance-to-cold-5"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "f2d1db4f1c0b44f3",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "undead traits"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                24
+              ],
+              "section": "Nerubian Worker Crypt Fiend"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "undead traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> undead traits.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 24",
+          "uniqueId": "wc-monster-nerubian-worker-crypt-fiend-undead-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "b0f08b54139dc03b",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Ability Focus (poison)"
+            },
+            "reference": {
+              "id": "btFxZnSXUHqGUffu",
+              "name": "Ability Focus",
+              "pack": "warcraftrpg2e.feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                24
+              ],
+              "section": "Nerubian Worker Crypt Fiend"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Ability Focus (poison)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Ability Focus (poison).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.feats.Item.btFxZnSXUHqGUffu]{Ability Focus}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 24",
+          "uniqueId": "wc-monster-nerubian-worker-crypt-fiend-ability-focus-poison"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "a4823912ea418641",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Initiative"
+            },
+            "reference": {
+              "id": "3232602c102e0494",
+              "name": "Improved Initiative",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                24
+              ],
+              "section": "Nerubian Worker Crypt Fiend"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Initiative",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Initiative.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.3232602c102e0494]{Improved Initiative}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 24",
+          "uniqueId": "wc-monster-nerubian-worker-crypt-fiend-improved-initiative"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "0ab0fa6569c8171e",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Large Undead; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "d92eb95c03dbf03c",
+              "name": "Undead Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                24
+              ],
+              "section": "Nerubian Worker Crypt Fiend"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Undead Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Large Undead; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.d92eb95c03dbf03c]{Undead Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 24",
+          "uniqueId": "wc-monster-nerubian-worker-crypt-fiend-undead-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "5cbcaf583f3ab877",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Applied Template",
+              "raw": "Crypt Fiend Template"
+            },
+            "reference": {
+              "id": "87c99fa596e9d88b",
+              "name": "Crypt Fiend Template",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                24
+              ],
+              "section": "Nerubian Worker Crypt Fiend"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Crypt Fiend Template",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Applied Template:</strong> Crypt Fiend Template.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.87c99fa596e9d88b]{Crypt Fiend Template}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 24",
+          "uniqueId": "wc-monster-nerubian-worker-crypt-fiend-crypt-fiend-template"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "d78dc310ee7ac724",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "example",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 19, Agy 15, Sta -, Int 12, Spt 10, Cha 10",
+          "Advancement": "5-10 HD (Large); 11-16 HD (Huge); or by character class",
+          "Alignment": "Usually lawful evil",
+          "Area": "Northrend",
+          "Armor Class": "17 (-1 size, +2 Agy, +6 natural), touch 11, flat-footed 11",
+          "Attack": "Spear +6 melee (2d6+5) or bite +6 melee (1d8+4 and poison) or javelin +5 ranged (1d8+4)",
+          "Base Attack/Grapple": "+3/+11",
+          "Challenge Rating": "6",
+          "Environment": "Cold and temperate forest, hills, plains, and underground",
+          "Feats": "Ability Focus (poison), Improved Initiative",
+          "Full Attack": "Spear +6 melee (2d6+5) and 2 claws +1 melee (1d4+2); or bite +6 melee (1d8+4 and poison) and 2 claws +1 melee (1d4+2); or slam +6 melee (1d8+5); or javelin +5 ranged (1d8+4)",
+          "Hit Dice": "4d12 (26 hp)",
+          "Initiative": "+7",
+          "Level Adjustment": "+5",
+          "Organization": "Solitary, pair, or swarm (3-12)",
+          "Saves": "Fort +1, Ref +4, Will +4",
+          "Skills": "Climb +15, Craft or Knowledge (any one) +4, Jump +7, Listen +3, Spot +3, Stealth +12 (+8 hiding)",
+          "Space/Reach": "10 ft./5 ft.",
+          "Special Attacks": "Poison (DC 14), web (DC 16)",
+          "Special Qualities": "Darkvision 60 ft., fast healing, resistance to cold 5, undead traits",
+          "Speed": "40 ft. (8 squares), burrow 10 ft., climb 20 ft.",
+          "Treasure": "Standard"
+        },
+        "rulesCoverage": {
+          "actor-defense": 1,
+          "linked-reference": 7,
+          "manual": 2
+        },
+        "subtypes": []
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          25
+        ],
+        "printedPages": [
+          24
+        ],
+        "section": "Nerubian Worker Crypt Fiend",
+        "verification": "native-text-table+review-override"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "bb2a7ab5a85e6c17",
+    "a3a5a6742043ba8b",
+    "4c104cf69320c1a9",
+    "91b7b9b81bc9fa0b",
+    "4fbc9706e5bee83d",
+    "d939cc6576ae3d1f",
+    "9071f9c75fc6301a",
+    "e3cf2c506e460460",
+    "2a78f26e981170a6",
+    "077ff538c69853b7",
+    "d931d6df6b3fbb66",
+    "990f47fa5650a1d5",
+    "f9f2dc7b6b77a28e",
+    "31ef93367ec98b73",
+    "f8a40ed8595c2b76",
+    "f2d1db4f1c0b44f3",
+    "b0f08b54139dc03b",
+    "a4823912ea418641",
+    "0ab0fa6569c8171e",
+    "5cbcaf583f3ab877"
+  ],
+  "name": "Nerubian Worker Crypt Fiend",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": true,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 0,
+        "penalty": 0,
+        "total": 0,
+        "userPenalty": 0,
+        "value": 0
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 2,
+        "origMod": 2,
+        "origTotal": 15,
+        "penalty": 0,
+        "total": 15,
+        "userPenalty": 0,
+        "value": 15
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 12,
+        "penalty": 0,
+        "total": 12,
+        "userPenalty": 0,
+        "value": 12
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 4,
+        "origMod": 4,
+        "origTotal": 19,
+        "penalty": 0,
+        "total": 19,
+        "userPenalty": 0,
+        "value": 19
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 11,
+          "value": 0
+        },
+        "normal": {
+          "total": 17,
+          "value": 0
+        },
+        "touch": {
+          "total": 11,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 3,
+        "nonepic": 3,
+        "total": 3,
+        "value": 0
+      },
+      "cmb": {
+        "total": 11,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "undead",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft-undead",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 100,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 4,
+        "total": 4
+      },
+      "hp": {
+        "base": 26,
+        "max": 26,
+        "min": 0,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 26
+      },
+      "init": {
+        "bonus": 0,
+        "total": 7,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 6,
+      "savingThrows": {
+        "fort": {
+          "base": 1,
+          "total": 1
+        },
+        "ref": {
+          "base": 4,
+          "total": 4
+        },
+        "will": {
+          "base": 4,
+          "total": 4
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": null,
+        "darkvision": 60,
+        "lowLight": false,
+        "lowLightMultiplier": null,
+        "tremorsense": null
+      },
+      "speed": {
+        "burrow": {
+          "base": 10,
+          "total": 10
+        },
+        "climb": {
+          "base": 20,
+          "total": 20
+        },
+        "land": {
+          "base": 40,
+          "total": 40
+        }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "Usually lawful evil",
+      "biography": {
+        "public": "",
+        "value": "<p>Nerubian Worker Crypt Fiend is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 6,
+      "environment": "Cold and temperate forest, hills, plains, and underground",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 4,
+        "value": 4
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 4d12 (26 hp)</p><p><strong>Initiative:</strong> +7</p><p><strong>Speed:</strong> 40 ft. (8 squares), burrow 10 ft., climb 20 ft.</p><p><strong>Armor Class:</strong> 17 (-1 size, +2 Agy, +6 natural), touch 11, flat-footed 11</p><p><strong>Base Attack/Grapple:</strong> +3/+11</p><p><strong>Attack:</strong> Spear +6 melee (2d6+5) or bite +6 melee (1d8+4 and poison) or javelin +5 ranged (1d8+4)</p><p><strong>Full Attack:</strong> Spear +6 melee (2d6+5) and 2 claws +1 melee (1d4+2); or bite +6 melee (1d8+4 and poison) and 2 claws +1 melee (1d4+2); or slam +6 melee (1d8+5); or javelin +5 ranged (1d8+4)</p><p><strong>Space/Reach:</strong> 10 ft./5 ft.</p><p><strong>Special Attacks:</strong> Poison (DC 14), web (DC 16)</p><p><strong>Special Qualities:</strong> Darkvision 60 ft., fast healing, resistance to cold 5, undead traits</p><p><strong>Saves:</strong> Fort +1, Ref +4, Will +4</p><p><strong>Abilities:</strong> Str 19, Agy 15, Sta -, Int 12, Spt 10, Cha 10</p><p><strong>Skills:</strong> Climb +15, Craft or Knowledge (any one) +4, Jump +7, Listen +3, Spot +3, Stealth +12 (+8 hiding)</p><p><strong>Feats:</strong> Ability Focus (poison), Improved Initiative</p><p><strong>Area:</strong> Northrend</p><p><strong>Organization:</strong> Solitary, pair, or swarm (3-12)</p><p><strong>Treasure:</strong> Standard</p><p><strong>Advancement:</strong> 5-10 HD (Large); 11-16 HD (Huge); or by character class</p><p><strong>Level Adjustment:</strong> +5</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 6,
+      "type": "Undead"
+    },
+    "skills": {
+      "clm": {
+        "ability": "str",
+        "abilityModifier": 4,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 11,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 15,
+        "notes": "Printed total +15",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "hid": {
+        "ability": "dex",
+        "abilityModifier": 2,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 10,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 12,
+        "notes": "Printed total +12 (+8 hiding)",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "jmp": {
+        "ability": "str",
+        "abilityModifier": 4,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 3,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 7,
+        "notes": "Printed total +7",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "lis": {
+        "ability": "wis",
+        "abilityModifier": 0,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 3,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 3,
+        "notes": "Printed total +3",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spt": {
+        "ability": "wis",
+        "abilityModifier": 0,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 3,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 3,
+        "notes": "Printed total +3",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "wc456e7cb5": {
+        "ability": "int",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 3,
+        "cs": false,
+        "custom": true,
+        "energyDrainPenalty": 0,
+        "mod": 4,
+        "name": "Craft or Knowledge (any one)",
+        "notes": "Printed total +4",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default",
+        "worldCustom": false
+      }
+    },
+    "traits": {
+      "actualSize": "lg",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Darkvision 60 ft., fast healing, resistance to cold 5, undead traits",
+      "size": "lg",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

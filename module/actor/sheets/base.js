@@ -33,6 +33,17 @@ import {
   SPELLBOOK_PREPARATION_MODE_REPERTOIRE,
   spellbookUsesSharedSlots,
 } from "../../item/helpers/spellbookPreparationHelper.js";
+import {
+  classifyWarcraftHealth,
+  DEATH_RULE_D35E,
+  DEATH_RULE_WARCRAFT,
+  resolveDeathRule,
+  warcraftStabilizationDc,
+} from "../helpers/warcraftDeathRules.js";
+import {
+  evaluateWarcraftSpellEligibility,
+  getWarcraftSlotPool,
+} from "../helpers/warcraftSpellcastingHelper.js";
 
 /**
  * Extend the basic ActorSheet class to do all the PF things!
@@ -154,6 +165,29 @@ export class ActorSheetPF extends foundry.appv1.sheets.ActorSheet {
     sheetData.system = sheetData.actor.system;
     sheetData.labels = this.actor.labels || {};
     sheetData.filters = this._filters;
+    const deathRule = resolveDeathRule(
+      sheetData.system.attributes.deathRule,
+      this.actor.race?.system?.deathRule,
+      sheetData.system.attributes.creatureType,
+    );
+    if (deathRule !== DEATH_RULE_D35E) {
+      const staminaScore = Number(sheetData.system.abilities.con.total ?? sheetData.system.abilities.con.value ?? 0);
+      const healthState = classifyWarcraftHealth({
+        hitPoints: sheetData.system.attributes.hp.value,
+        staminaScore,
+        deathRule,
+        stable: sheetData.system.attributes.conditions.stable,
+      });
+      sheetData.warcraftHealth = {
+        ...healthState,
+        rule: deathRule,
+        canRollStabilization: deathRule === DEATH_RULE_WARCRAFT && healthState.dying,
+        canRollRecovery: deathRule === DEATH_RULE_WARCRAFT && sheetData.system.attributes.conditions.stable,
+        healDc: deathRule === DEATH_RULE_WARCRAFT && healthState.dying
+          ? warcraftStabilizationDc(sheetData.system.attributes.hp.value)
+          : null,
+      };
+    }
 
     // Hit point sources
     if (this.actor.sourceDetails != null) sheetData.sourceDetails = foundry.utils.expandObject(this.actor.sourceDetails);
@@ -550,6 +584,8 @@ export class ActorSheetPF extends foundry.appv1.sheets.ActorSheet {
     const isRepertoire = preparationMode === SPELLBOOK_PREPARATION_MODE_REPERTOIRE;
     const usesSharedSlots = spellbookUsesSharedSlots(book);
     const repertoireLimit = isRepertoire ? getSpellbookRepertoireLimit(this.actor.system, book) : 0;
+    const warcraftPool = getWarcraftSlotPool(this.actor.system, book);
+    const classSystem = this.actor.system?.classes?.[book.class] || {};
 
     // Reduce spells to the nested spellbook structure
     let spellbook = {};
@@ -558,6 +594,7 @@ export class ActorSheetPF extends foundry.appv1.sheets.ActorSheet {
         level: a,
         usesSlots: true,
         spontaneous: usesSharedSlots && a !== 10,
+        usesWarcraftPool: Boolean(warcraftPool) && a !== 10,
         isRepertoire: isRepertoire && a !== 10,
         repertoireLimit,
         preparedCount: 0,
@@ -577,12 +614,17 @@ export class ActorSheetPF extends foundry.appv1.sheets.ActorSheet {
             data.sourceDetails.system.attributes.prestigeCl[book.spellcastingType].max != null
             ? data.sourceDetails.system.attributes.prestigeCl[book.spellcastingType].max
             : [],
-        uses: book.spells === undefined ? 0 : book?.spells["spell" + a]?.value || 0,
+        uses: warcraftPool
+          ? warcraftPool?.spells?.["spell" + a]?.value || 0
+          : book.spells === undefined ? 0 : book?.spells["spell" + a]?.value || 0,
         baseSlots: book.spells === undefined ? 0 : book?.spells["spell" + a]?.base || 0,
         maxKnown: book.spells === undefined ? 0 : book?.spells["spell" + a]?.maxKnown || 0,
-        slots: book.spells === undefined ? 0 : book?.spells["spell" + a]?.max || 0,
+        slots: warcraftPool
+          ? warcraftPool?.spells?.["spell" + a]?.max || 0
+          : book.spells === undefined ? 0 : book?.spells["spell" + a]?.max || 0,
         dataset: { type: "spell", level: a, spellbook: bookKey },
         specialSlotPrepared: false,
+        canUseSpecialSlot: a > 0 || book.specialSlotLevel0 === true,
         hasNonDomainSpells: false,
       };
     }
@@ -590,6 +632,18 @@ export class ActorSheetPF extends foundry.appv1.sheets.ActorSheet {
       const lvl = (spell.system.level || 0) > 9 ? 10 : spell.system.level || 0;
       spell.epicLevel = spell.system.level || 0;
       spell.epic = spell.epicLevel > 9;
+      const warcraftEligibility = evaluateWarcraftSpellEligibility(spell.system, classSystem, {
+        parentClass: classSystem.name,
+        learnedPath: spell.system.warcraftLearnedPath,
+      });
+      spell.warcraftEligibility = warcraftEligibility;
+      // Eligibility is derived from the actor's current class/path state.  A stored
+      // import diagnostic must not keep a spell disabled after the actor later
+      // acquires the required path.
+      spell.warcraftIneligible = !warcraftEligibility.eligible;
+      spell.canUseWarcraftSpecialSlot = book.warcraftPathBonusSlot === true
+        ? warcraftEligibility.eligible && Boolean(warcraftEligibility.path)
+        : spell.system.isDomainSpell === true;
       if (bannedSpellSpecialization.has(spell.system.school)) spell.isBanned = true;
       else spell.isBanned = false;
       if (availableSpellSpecialization.has(spell.system.school) || domainSpellNames.has(createTag(spell.name))) {
@@ -658,6 +712,9 @@ export class ActorSheetPF extends foundry.appv1.sheets.ActorSheet {
     keys.forEach((a) => {
       let skl = skillset[a];
       if (skl === null) return;
+      // Preserve legacy skill data on existing actors, but only display skills
+      // from the Warcraft skill list (plus explicitly created custom skills).
+      if (!skl.custom && !CONFIG.D35E.skills[a]) return;
       if (settings.worldDefaults?.skills[a] === "hide") return;
       skl.points = skl.points || 0;
       skl.mod = skl.mod || 0;
@@ -904,6 +961,10 @@ export class ActorSheetPF extends foundry.appv1.sheets.ActorSheet {
 
     // Rest
     root?.querySelectorAll?.(".rest").forEach((el) => el.addEventListener("click", this._onRest.bind(this)));
+    root?.querySelectorAll?.(".warcraft-stabilization-roll").forEach((el) =>
+      el.addEventListener("click", () => this.actor.rollWarcraftStabilization()));
+    root?.querySelectorAll?.(".warcraft-recovery-roll").forEach((el) =>
+      el.addEventListener("click", (event) => this.actor.rollWarcraftStableRecovery({ tended: event.shiftKey })));
 
     // Level up
     root?.querySelectorAll?.(".level-up").forEach((el) => el.addEventListener("click", this._onLevelUp.bind(this)));
@@ -2049,23 +2110,43 @@ export class ActorSheetPF extends foundry.appv1.sheets.ActorSheet {
 
   async _onSpellPrepareSpecialUses(event) {
     event.preventDefault();
-    // Remove old special prepared spell
     const spellbookKey = event.currentTarget.closest(".spellbook-group").dataset.tab;
     const level = event.currentTarget.closest(".spellbook-list").getAttribute("data-level");
     const k = `system.attributes.spells.spellbooks.${spellbookKey}.specialSlots.level${level}`;
-    let previousItemId = foundry.utils.getProperty(
-      this.actor.system,
-      `attributes.spells.spellbooks.${spellbookKey}.specialSlots.level${level}`
-    );
-    if (previousItemId) await this.actor.deleteEmbeddedDocuments("Item", [previousItemId]);
-
     const itemId = event.currentTarget.closest(".item").getAttribute("data-item-id");
     const itemDoc = this.actor.items.get(itemId);
     if (!itemDoc) return;
     const item = itemDoc.toObject();
     delete item.id;
     delete item._id;
-    item.system = foundry.utils.mergeObject(foundry.utils.duplicate(item.system), { specialPrepared: true });
+    const spellbook = this.actor.system.attributes.spells.spellbooks[spellbookKey];
+    const classSystem = this.actor.system?.classes?.[spellbook?.class] || {};
+    const eligibility = evaluateWarcraftSpellEligibility(item.system, classSystem, {
+      parentClass: classSystem.name,
+      learnedPath: item.system.warcraftLearnedPath,
+    });
+    const isArcanistPathSlot = spellbook?.warcraftPathBonusSlot === true;
+    if (isArcanistPathSlot && (!eligibility.eligible || !eligibility.path)) {
+      return ui.notifications.warn("The Arcanist bonus slot must contain a spell from an acquired path.");
+    }
+    if (!isArcanistPathSlot && !item.system.isDomainSpell) {
+      return ui.notifications.warn("A domain slot must contain an eligible domain spell.");
+    }
+    // Validate the replacement before removing an already-prepared special spell.
+    const previousItemId = foundry.utils.getProperty(
+      this.actor.system,
+      `attributes.spells.spellbooks.${spellbookKey}.specialSlots.level${level}`
+    );
+    if (previousItemId) await this.actor.deleteEmbeddedDocuments("Item", [previousItemId]);
+    item.system = foundry.utils.mergeObject(foundry.utils.duplicate(item.system), {
+      specialPrepared: true,
+      specialPreparedPath: eligibility.path || "domain",
+      preparation: {
+        ...item.system.preparation,
+        maxAmount: 1,
+        preparedAmount: 1,
+      },
+    });
     let x = await this.actor.createEmbeddedDocuments("Item", [item], { ignoreSpellbookAndLevel: true });
 
     // Update saved special prepared special id

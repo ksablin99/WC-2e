@@ -1,0 +1,44 @@
+{
+  "_embedded": {},
+  "_id": "766f7f19f97e7868",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "creatureRule": {
+        "kind": "template",
+        "reusable": true
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          20,
+          21
+        ],
+        "printedPages": [
+          19,
+          20
+        ],
+        "section": "Corrupted Creature Template",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/aura.svg",
+  "name": "Corrupted Creature Template",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilityType": "nat",
+    "description": {
+      "value": "<p>Acquired template. Apply the source creature's retained statistics plus corruption changes, subtype, fel damage, immunities, challenge adjustment, and other modifications listed on Monster Guide printed pages 19-20.</p><p>This reusable record defines shared conversion behavior. Individual actors carry exact printed exceptions and totals.</p>"
+    },
+    "featType": "trait",
+    "source": "World of Warcraft: Monster Guide, pp. 19-20",
+    "uniqueId": "wc-creature-rule-corrupted-creature-template"
+  },
+  "type": "feat"
+}

@@ -1,0 +1,343 @@
+{
+  "_embedded": {},
+  "_id": "0bc17ca7a7b91997",
+  "_stats": {
+    "compendiumSource": null,
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "lastModifiedBy": null,
+    "modifiedTime": null,
+    "systemId": null,
+    "systemVersion": null
+  },
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "domain": {
+        "generated": true,
+        "parentClass": "Healer",
+        "spellCount": 9,
+        "status": "linked-content-manual-access-rules"
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          273,
+          274,
+          275
+        ],
+        "printedPages": [
+          271,
+          272,
+          273
+        ],
+        "section": "Healing Domain",
+        "verification": "text+spell-list"
+      }
+    }
+  },
+  "folder": null,
+  "img": "systems/warcraftrpg2e/icons/spells/domain/healing.png",
+  "name": "Healing Domain",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "ability": {
+      "attack": null,
+      "critMult": 2,
+      "critRange": 20,
+      "damage": null,
+      "damageMult": 1,
+      "twoHandedOnly": false,
+      "vsTouchAc": false
+    },
+    "abilityType": "",
+    "actionType": "",
+    "activation": {
+      "cost": 1,
+      "type": ""
+    },
+    "addedLevel": 0,
+    "associations": {
+      "classes": []
+    },
+    "attack": {
+      "parts": []
+    },
+    "attackBonus": "",
+    "attackCountFormula": "",
+    "attackNotes": "",
+    "attackParts": [],
+    "autoscaleAttackParts": "",
+    "baseCl": "0",
+    "changeFlags": {
+      "heavyArmorFullSpeed": false,
+      "loseDexToAC": false,
+      "mediumArmorFullSpeed": false,
+      "multiAttack": false,
+      "multiweaponAttack": false,
+      "noCon": false,
+      "noDex": false,
+      "noEncumbrance": false,
+      "noInt": false,
+      "noStr": false,
+      "oneCha": false,
+      "oneInt": false,
+      "oneWis": false,
+      "uncannyDodge": false
+    },
+    "changes": [],
+    "classSource": "",
+    "combatChangeCustomDisplayName": "",
+    "combatChangeCustomReferenceName": "",
+    "combatChanges": [],
+    "combatChangesAdditionalRanges": {
+      "hasAdditionalRanges": false,
+      "slider1": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      },
+      "slider2": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      },
+      "slider3": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      }
+    },
+    "combatChangesApplySpecialActionsOnce": true,
+    "combatChangesRange": {
+      "max": 0,
+      "maxFormula": ""
+    },
+    "combatChangesUsesCost": "chargesPerUse",
+    "conditionFlags": {
+      "dazzled": false,
+      "polymorphed": false,
+      "wildshaped": false
+    },
+    "contextNotes": [],
+    "counterName": "",
+    "createdBy": "",
+    "creationChanges": [],
+    "critConfirmBonus": "",
+    "crOffset": "",
+    "customAttributes": {},
+    "customAttributesLocked": false,
+    "customTag": "",
+    "damage": {
+      "alternativeParts": [],
+      "parts": []
+    },
+    "damageReduction": [],
+    "description": {
+      "chat": "",
+      "unidentified": "",
+      "value": "<p>Lesser: +1 caster level for domain spells. Greater: cast a prepared cure/healing spell as a free out-of-turn action using a slot one level higher, 1 + Spirit modifier times/day.</p><p>Domain spells are linked below. Full situational details remain in the private core rulebook.</p>"
+    },
+    "duration": {
+      "units": "",
+      "value": null
+    },
+    "effectNotes": "",
+    "epic": "",
+    "favorite": false,
+    "featType": "spellSpecialization",
+    "formula": "",
+    "identifiedName": "Healing Domain",
+    "index": {
+      "subType": "spellSpecialization",
+      "uniqueId": "wc-domain-healing"
+    },
+    "linkedChargeItem": {
+      "id": null,
+      "img": null,
+      "name": null
+    },
+    "linkedItems": [],
+    "linkId": "",
+    "linkImported": false,
+    "links": {
+      "charges": []
+    },
+    "linkSourceId": "",
+    "linkSourceName": "",
+    "maxDamageDice": 0,
+    "maxDamageDiceFormula": "",
+    "measureTemplate": {
+      "customColor": "",
+      "customTexture": "",
+      "overrideColor": false,
+      "overrideTexture": false,
+      "size": 0,
+      "type": ""
+    },
+    "metamagic": {
+      "code": "",
+      "enabled": false,
+      "shortDesc": ""
+    },
+    "metamagicFeats": {
+      "empowered": false,
+      "enhanced": false,
+      "enhancedHalf": false,
+      "enlarged": false,
+      "intensified": false,
+      "maximized": false,
+      "widened": false
+    },
+    "nameFormula": "",
+    "nameFromFormula": false,
+    "originId": "0bc17ca7a7b91997",
+    "originPack": "warcraftrpg2e.warcraft-spells",
+    "originVersion": 99,
+    "possibleUpdate": false,
+    "pr": false,
+    "psionic": "",
+    "range": {
+      "long": null,
+      "units": "",
+      "value": null
+    },
+    "recharge": {
+      "_deprecated": true,
+      "charged": false,
+      "current": 0,
+      "enabled": false,
+      "formula": "",
+      "value": null
+    },
+    "requirements": [],
+    "requiresPsionicFocus": false,
+    "resistances": [],
+    "rollTableDraw": {
+      "formula": "",
+      "id": "",
+      "name": "",
+      "pack": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": 0,
+      "dcAutoAbility": "",
+      "dcAutoType": "",
+      "description": "",
+      "originVersion": 97,
+      "type": ""
+    },
+    "senses": {
+      "blindsight": 0,
+      "darkvision": 0,
+      "lowLight": false,
+      "lowLightMultiplier": 2,
+      "tremorsense": 0,
+      "truesight": 0
+    },
+    "showInQuickbar": false,
+    "sizeOverride": "",
+    "source": "World of Warcraft RPG, 2nd Edition, pp. 271-273",
+    "specialActions": [],
+    "spellSpecialization": {
+      "isDomain": true,
+      "spells": {
+        "level1": {
+          "id": "6c9e77be95d1b0da",
+          "img": "systems/warcraftrpg2e/icons/spells/named-spells/cure-wounds.png",
+          "level": 1,
+          "name": "Cure Light Wounds",
+          "pack": "warcraftrpg2e.warcraft-spells"
+        },
+        "level2": {
+          "id": "9e785112f4faf527",
+          "img": "systems/warcraftrpg2e/icons/spells/named-spells/cure-wounds.png",
+          "level": 2,
+          "name": "Cure Moderate Wounds",
+          "pack": "warcraftrpg2e.warcraft-spells"
+        },
+        "level3": {
+          "id": "9b1ae87ad2afcad4",
+          "img": "systems/warcraftrpg2e/icons/spells/named-spells/cure-wounds.png",
+          "level": 3,
+          "name": "Cure Serious Wounds",
+          "pack": "warcraftrpg2e.warcraft-spells"
+        },
+        "level4": {
+          "id": "d00f7b2c995a4628",
+          "img": "systems/warcraftrpg2e/icons/spells/named-spells/cure-wounds.png",
+          "level": 4,
+          "name": "Cure Critical Wounds",
+          "pack": "warcraftrpg2e.warcraft-spells"
+        },
+        "level5": {
+          "id": "6f624db455960b16",
+          "img": "icons/svg/target.svg",
+          "level": 5,
+          "name": "Healing Rain",
+          "pack": "warcraftrpg2e.warcraft-spells"
+        },
+        "level6": {
+          "id": "63c55254c2adcc07",
+          "img": "systems/warcraftrpg2e/icons/spells/named-spells/heal.png",
+          "level": 6,
+          "name": "Heal",
+          "pack": "warcraftrpg2e.warcraft-spells"
+        },
+        "level7": {
+          "id": "830d9e094e83a327",
+          "img": "systems/warcraftrpg2e/icons/spells/named-spells/regenerate.png",
+          "level": 7,
+          "name": "Regenerate",
+          "pack": "warcraftrpg2e.warcraft-spells"
+        },
+        "level8": {
+          "id": "e43008bd17b363e2",
+          "img": "icons/svg/target.svg",
+          "level": 8,
+          "name": "Mass Cure Critical Wounds",
+          "pack": "warcraftrpg2e.warcraft-spells"
+        },
+        "level9": {
+          "id": "54c202d0c41fb238",
+          "img": "icons/svg/target.svg",
+          "level": 9,
+          "name": "Mass Heal",
+          "pack": "warcraftrpg2e.warcraft-spells"
+        }
+      }
+    },
+    "spellSpecializationForbiddenNames": "",
+    "spellSpecializationName": "healing",
+    "sr": false,
+    "summon": [],
+    "tags": [],
+    "target": {
+      "value": ""
+    },
+    "uniqueId": "wc-domain-healing",
+    "userNonRemovable": false,
+    "uses": {
+      "allowMultipleUses": false,
+      "autoDeductCharges": true,
+      "canBeLinked": false,
+      "chargesPerUse": 1,
+      "isResource": false,
+      "max": 0,
+      "maxFormula": "",
+      "maxPerUse": null,
+      "maxPerUseFormula": "",
+      "per": null,
+      "rechargeFormula": null,
+      "value": 0
+    }
+  },
+  "type": "feat"
+}

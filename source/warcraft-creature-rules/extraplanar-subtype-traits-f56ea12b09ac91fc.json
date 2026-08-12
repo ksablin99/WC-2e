@@ -1,0 +1,42 @@
+{
+  "_embedded": {},
+  "_id": "f56ea12b09ac91fc",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "creatureRule": {
+        "kind": "subtype",
+        "reusable": true
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          190
+        ],
+        "printedPages": [
+          189
+        ],
+        "section": "Extraplanar Subtype",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/aura.svg",
+  "name": "Extraplanar Subtype Traits",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilityType": "nat",
+    "description": {
+      "value": "<p>Applies while a creature is away from its native plane. Azeroth is the assumed encounter plane in the catalogue; the subtype changes as the creature travels and never applies in the Twisting Nether.</p><p>This reusable record defines shared conversion behavior. Individual actors carry exact printed exceptions and totals.</p>"
+    },
+    "featType": "trait",
+    "source": "World of Warcraft: Monster Guide, pp. 189",
+    "uniqueId": "wc-creature-rule-extraplanar-subtype"
+  },
+  "type": "feat"
+}

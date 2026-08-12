@@ -1,4 +1,8 @@
 import { Roll35e } from "../../roll.js";
+import {
+  enforceWarcraftCasterLevelMinimum,
+  getWarcraftSpellcastingAdjustments,
+} from "../../actor/helpers/warcraftSpellcastingHelper.js";
 
 export class ItemSpellHelper {
   /**
@@ -13,11 +17,18 @@ export class ItemSpellHelper {
     if (itemData.spellbook) {
       const spellbookIndex = itemData.spellbook;
       const spellbook = item.actor.system.attributes.spells.spellbooks[spellbookIndex];
+      const classSystem = item.actor.system?.classes?.[spellbook.class] || {};
+      const warcraftAdjustment = getWarcraftSpellcastingAdjustments(itemData, classSystem, {
+        parentClass: classSystem.name,
+        learnedPath: itemData.warcraftLearnedPath,
+      });
       cl =
         spellbook.cl.total +
         (itemData.clOffset || 0) +
+        warcraftAdjustment.casterLevel +
         (rollData.featClBonus || 0) -
         (item.actor.system.attributes.energyDrain || 0);
+      cl = enforceWarcraftCasterLevelMinimum(cl, warcraftAdjustment);
     }
     if (itemData.deck) {
       const deckIndex = itemData.deck;

@@ -1,0 +1,44 @@
+{
+  "_embedded": {},
+  "_id": "a2af9f319e850676",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "creatureRule": {
+        "kind": "capability",
+        "reusable": true
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          197,
+          198
+        ],
+        "printedPages": [
+          196,
+          197
+        ],
+        "section": "Monster Spellcasting",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/aura.svg",
+  "name": "Monster Spellcasting Traits",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilityType": "nat",
+    "description": {
+      "value": "<p>A monster casting spells follows character spellcasting except for the printed creature exceptions: body movement may supply somatic components, material components are still needed, spellcasting alone grants no other class features, healer domain powers require actual healer levels, an arcanist path grants its restricted extra slot, and explicitly equivalent class casting stacks with levels in that class.</p><p>This reusable record defines shared conversion behavior. Individual actors carry exact printed exceptions and totals.</p>"
+    },
+    "featType": "trait",
+    "source": "World of Warcraft: Monster Guide, pp. 196-197",
+    "uniqueId": "wc-creature-rule-monster-spellcasting"
+  },
+  "type": "feat"
+}

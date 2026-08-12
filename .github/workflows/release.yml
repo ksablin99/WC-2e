@@ -40,8 +40,16 @@ jobs:
       - name: Install dependencies
         run: npm ci --ignore-scripts
 
-      - name: Build compendium packs
-        run: npm run sources:repack
+      - name: Generate, validate, and verify compendium packs
+        run: npm run warcraft:build
+
+      - name: Ensure generated source is committed
+        shell: bash
+        run: |
+          if ! git diff --exit-code -- source scripts/warcraft-content; then
+            echo "Committed Warcraft source/catalogues are not reproducible. Run npm run warcraft:build and commit the result before tagging." >&2
+            exit 1
+          fi
 
       - name: Restore D35E runtime icons
         shell: bash

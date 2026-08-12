@@ -1,0 +1,1168 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "0e05ef5efe64efd3",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 6,
+                "die": 8,
+                "expression": "6d8",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Plant Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "med",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "39",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "4",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "19",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "10",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "19",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "7",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "2",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "3",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "30",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "20",
+              "speed",
+              "swimSpeed",
+              "base-replace"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "plant",
+          "damageReduction": [
+            [
+              "5",
+              "bludgeoning",
+              false
+            ]
+          ],
+          "hd": 8,
+          "hp": 0,
+          "levels": 6,
+          "maxLevel": 50,
+          "resistances": [
+            [
+              "10",
+              "energy-fire",
+              false,
+              false,
+              false
+            ]
+          ],
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "low"
+            },
+            "will": {
+              "value": "low"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 133"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "3cf4e1137d869519",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                8
+              ],
+              "printedDamage": "1d8+4"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Slam",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "4",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Slam",
+          "damage": {
+            "parts": [
+              [
+                "1d8+4",
+                "Bludgeoning",
+                "damage-bludg"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Slam +8 melee (1d8+4).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "8dea11e838252a24",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 2,
+              "id": "3cf4e1137d869519",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Slam",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> 2 slams +8 melee (1d8+4).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "47f66e5b7fc4a8f4",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "Entangling shoots (DC 17)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                133
+              ],
+              "section": "Swampwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Entangling shoots",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Entangling shoots (DC 17).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 133",
+          "uniqueId": "wc-monster-swampwalker-entangling-shoots"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "fbfae782a02b3b5f",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Low-light vision"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                133
+              ],
+              "section": "Swampwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Low-light vision",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Low-light vision.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 133",
+          "uniqueId": "wc-monster-swampwalker-low-light-vision"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "c3829953f3159935",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "amphibious"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                133
+              ],
+              "section": "Swampwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "amphibious",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> amphibious.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 133",
+          "uniqueId": "wc-monster-swampwalker-amphibious"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "ff49d0e580ccea3c",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "damage reduction 5/bludgeoning"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                133
+              ],
+              "section": "Swampwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "damage reduction 5/bludgeoning",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> damage reduction 5/bludgeoning.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 133",
+          "uniqueId": "wc-monster-swampwalker-damage-reduction-5-bludgeoning"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "a452f6a171a38bdd",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "resistance to fire 10"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                133
+              ],
+              "section": "Swampwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "resistance to fire 10",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> resistance to fire 10.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 133",
+          "uniqueId": "wc-monster-swampwalker-resistance-to-fire-10"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "38231885fdbfd955",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "swamp regeneration"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                133
+              ],
+              "section": "Swampwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "swamp regeneration",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> swamp regeneration.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 133",
+          "uniqueId": "wc-monster-swampwalker-swamp-regeneration"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "f984bf65355fb76f",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "swamp sense"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                133
+              ],
+              "section": "Swampwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "swamp sense",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> swamp sense.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 133",
+          "uniqueId": "wc-monster-swampwalker-swamp-sense"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "0c78e157bde3c669",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "plant traits"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                133
+              ],
+              "section": "Swampwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "plant traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> plant traits.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 133",
+          "uniqueId": "wc-monster-swampwalker-plant-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "6916883d0d154b4b",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Bash"
+            },
+            "reference": {
+              "id": "60ca15d6f0332f77",
+              "name": "Bash",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                133
+              ],
+              "section": "Swampwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Bash",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Bash.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.60ca15d6f0332f77]{Bash}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 133",
+          "uniqueId": "wc-monster-swampwalker-bash"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "41636023b9b0db2c",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Sunder"
+            },
+            "reference": {
+              "id": "f3184e001d989d4b",
+              "name": "Improved Sunder",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                133
+              ],
+              "section": "Swampwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Sunder",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Sunder.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.f3184e001d989d4b]{Improved Sunder}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 133",
+          "uniqueId": "wc-monster-swampwalker-improved-sunder"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "7646fb648d92e4e5",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Power Attack"
+            },
+            "reference": {
+              "id": "95e094ad6c35e24e",
+              "name": "Power Attack",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                133
+              ],
+              "section": "Swampwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Power Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Power Attack.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.95e094ad6c35e24e]{Power Attack}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 133",
+          "uniqueId": "wc-monster-swampwalker-power-attack"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "d21e5ff6097aac3f",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Medium Plant (Aquatic); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "b80a2d6d0fbce71e",
+              "name": "Plant Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                133
+              ],
+              "section": "Swampwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Plant Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Medium Plant (Aquatic); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.b80a2d6d0fbce71e]{Plant Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 133",
+          "uniqueId": "wc-monster-swampwalker-plant-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "c772a40b1cbdc23d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Aquatic subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "6c0304b7fc3424a3",
+              "name": "Aquatic Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                133
+              ],
+              "section": "Swampwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Aquatic Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Aquatic subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.6c0304b7fc3424a3]{Aquatic Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 133",
+          "uniqueId": "wc-monster-swampwalker-aquatic-subtype-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "15b53452a1fc8ec3",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 19, Agy 11, Sta 15, Int 4, Spt 13, Cha 5",
+          "Advancement": "7-9 (Medium); 10-15 (Large)",
+          "Alignment": "Usually neutral",
+          "Area": "Swamp of Sorrows",
+          "Armor Class": "19 (+9 natural), touch 10, flat-footed 19",
+          "Attack": "Slam +8 melee (1d8+4)",
+          "Base Attack/Grapple": "+4/+8",
+          "Challenge Rating": "4",
+          "Environment": "Temperate and warm marshes",
+          "Feats": "Bash, Improved Sunder, Power Attack",
+          "Full Attack": "2 slams +8 melee (1d8+4)",
+          "Hit Dice": "6d8+12 (39 hp)",
+          "Initiative": "+0",
+          "Level Adjustment": "-",
+          "Organization": "Solitary, pair, clump (3-4), or patch (5-12)",
+          "Saves": "Fort +7, Ref +2, Will +3",
+          "Skills": "Listen +4, Spot +4, Stealth +3*, Swim +12",
+          "Space/Reach": "5 ft./5 ft.",
+          "Special Attacks": "Entangling shoots (DC 17)",
+          "Special Qualities": "Low-light vision, amphibious, damage reduction 5/bludgeoning, resistance to fire 10, swamp regeneration, swamp sense, plant traits",
+          "Speed": "30 ft. (6 squares), swim 20 ft.",
+          "Treasure": "Standard"
+        },
+        "rulesCoverage": {
+          "actor-defense": 2,
+          "linked-reference": 5,
+          "manual": 6
+        },
+        "subtypes": [
+          "Aquatic"
+        ]
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          134
+        ],
+        "printedPages": [
+          133
+        ],
+        "section": "Swampwalker",
+        "verification": "native-text-table"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "0e05ef5efe64efd3",
+    "3cf4e1137d869519",
+    "8dea11e838252a24",
+    "47f66e5b7fc4a8f4",
+    "fbfae782a02b3b5f",
+    "c3829953f3159935",
+    "ff49d0e580ccea3c",
+    "a452f6a171a38bdd",
+    "38231885fdbfd955",
+    "f984bf65355fb76f",
+    "0c78e157bde3c669",
+    "6916883d0d154b4b",
+    "41636023b9b0db2c",
+    "7646fb648d92e4e5",
+    "d21e5ff6097aac3f",
+    "c772a40b1cbdc23d"
+  ],
+  "name": "Swampwalker",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -3,
+        "origMod": -3,
+        "origTotal": 5,
+        "penalty": 0,
+        "total": 5,
+        "userPenalty": 0,
+        "value": 5
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 2,
+        "origMod": 2,
+        "origTotal": 15,
+        "penalty": 0,
+        "total": 15,
+        "userPenalty": 0,
+        "value": 15
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 11,
+        "penalty": 0,
+        "total": 11,
+        "userPenalty": 0,
+        "value": 11
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -3,
+        "origMod": -3,
+        "origTotal": 4,
+        "penalty": 0,
+        "total": 4,
+        "userPenalty": 0,
+        "value": 4
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 4,
+        "origMod": 4,
+        "origTotal": 19,
+        "penalty": 0,
+        "total": 19,
+        "userPenalty": 0,
+        "value": 19
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 13,
+        "penalty": 0,
+        "total": 13,
+        "userPenalty": 0,
+        "value": 13
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 19,
+          "value": 0
+        },
+        "normal": {
+          "total": 19,
+          "value": 0
+        },
+        "touch": {
+          "total": 10,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 4,
+        "nonepic": 4,
+        "total": 4,
+        "value": 0
+      },
+      "cmb": {
+        "total": 8,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "plant",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 100,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 6,
+        "total": 6
+      },
+      "hp": {
+        "base": 39,
+        "max": 39,
+        "min": -15,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 39
+      },
+      "init": {
+        "bonus": 0,
+        "total": 0,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 9,
+      "savingThrows": {
+        "fort": {
+          "base": 7,
+          "total": 7
+        },
+        "ref": {
+          "base": 2,
+          "total": 2
+        },
+        "will": {
+          "base": 3,
+          "total": 3
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": null,
+        "darkvision": null,
+        "lowLight": true,
+        "lowLightMultiplier": 2,
+        "tremorsense": null
+      },
+      "speed": {
+        "land": {
+          "base": 30,
+          "total": 30
+        },
+        "swim": {
+          "base": 20,
+          "total": 20
+        }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "Usually neutral",
+      "biography": {
+        "public": "",
+        "value": "<p>Swampwalker is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 4,
+      "environment": "Temperate and warm marshes",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 6,
+        "value": 6
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 6d8+12 (39 hp)</p><p><strong>Initiative:</strong> +0</p><p><strong>Speed:</strong> 30 ft. (6 squares), swim 20 ft.</p><p><strong>Armor Class:</strong> 19 (+9 natural), touch 10, flat-footed 19</p><p><strong>Base Attack/Grapple:</strong> +4/+8</p><p><strong>Attack:</strong> Slam +8 melee (1d8+4)</p><p><strong>Full Attack:</strong> 2 slams +8 melee (1d8+4)</p><p><strong>Space/Reach:</strong> 5 ft./5 ft.</p><p><strong>Special Attacks:</strong> Entangling shoots (DC 17)</p><p><strong>Special Qualities:</strong> Low-light vision, amphibious, damage reduction 5/bludgeoning, resistance to fire 10, swamp regeneration, swamp sense, plant traits</p><p><strong>Saves:</strong> Fort +7, Ref +2, Will +3</p><p><strong>Abilities:</strong> Str 19, Agy 11, Sta 15, Int 4, Spt 13, Cha 5</p><p><strong>Skills:</strong> Listen +4, Spot +4, Stealth +3*, Swim +12</p><p><strong>Feats:</strong> Bash, Improved Sunder, Power Attack</p><p><strong>Area:</strong> Swamp of Sorrows</p><p><strong>Organization:</strong> Solitary, pair, clump (3-4), or patch (5-12)</p><p><strong>Treasure:</strong> Standard</p><p><strong>Advancement:</strong> 7-9 (Medium); 10-15 (Large)</p><p><strong>Level Adjustment:</strong> -</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 4,
+      "type": "Plant"
+    },
+    "skills": {
+      "hid": {
+        "ability": "dex",
+        "abilityModifier": 0,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 3,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 3,
+        "notes": "Printed total +3 *",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "lis": {
+        "ability": "wis",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 3,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 4,
+        "notes": "Printed total +4",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spt": {
+        "ability": "wis",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 3,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 4,
+        "notes": "Printed total +4",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "swm": {
+        "ability": "str",
+        "abilityModifier": 4,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 8,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 12,
+        "notes": "Printed total +12",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "med",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Low-light vision, amphibious, damage reduction 5/bludgeoning, resistance to fire 10, swamp regeneration, swamp sense, plant traits",
+      "size": "med",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

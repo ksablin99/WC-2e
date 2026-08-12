@@ -1,0 +1,153 @@
+{
+  "_embedded": {},
+  "_id": "96d8bc15a7222634",
+  "_stats": {
+    "compendiumSource": null,
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "lastModifiedBy": null,
+    "modifiedTime": null,
+    "systemId": null,
+    "systemVersion": null
+  },
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "catalog": {
+        "category": "material",
+        "completeTableEntry": true,
+        "generated": true,
+        "status": "structured-summary"
+      },
+      "rules": {
+        "allowedItems": "Metal weapons, armor, shields, and ammunition",
+        "armorFortificationPercent": {
+          "heavy": 30,
+          "heavyShield": 5,
+          "light": 10,
+          "medium": 20
+        },
+        "costModifiersGp": {
+          "ammunition": 100,
+          "heavyArmor": 18000,
+          "lightArmor": 6000,
+          "mediumArmor": 12000,
+          "shield": 4000,
+          "weapon": 5000
+        },
+        "hitPointMultiplierForSteel": 1.25,
+        "masterworkIncluded": true,
+        "sourceNote": "The printed heavy-armor cost appears as +18,0000 gp; this record uses +18,000 gp and logs the defect in ERRATA.md.",
+        "weapon": {
+          "damageEnhancement": 1,
+          "piercingOrSlashingThreatRangeIncrease": 1
+        },
+        "weightMultiplier": 1
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          195
+        ],
+        "printedPages": [
+          193
+        ],
+        "section": "Arcanite",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "systems/warcraftrpg2e/icons/materials/adamantine.png",
+  "name": "Arcanite",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "changeFlags": {
+      "heavyArmorFullSpeed": false,
+      "loseDexToAC": false,
+      "mediumArmorFullSpeed": false,
+      "multiAttack": false,
+      "multiweaponAttack": false,
+      "noCon": false,
+      "noDex": false,
+      "noEncumbrance": false,
+      "noInt": false,
+      "noStr": false,
+      "oneCha": false,
+      "oneInt": false,
+      "oneWis": false
+    },
+    "changes": [],
+    "combatChangeCustomDisplayName": "",
+    "combatChangeCustomReferenceName": "",
+    "combatChanges": [],
+    "combatChangesAdditionalRanges": {
+      "hasAdditionalRanges": false,
+      "slider1": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      },
+      "slider2": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      },
+      "slider3": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      }
+    },
+    "combatChangesApplySpecialActionsOnce": true,
+    "combatChangesRange": {
+      "max": 0,
+      "maxFormula": ""
+    },
+    "combatChangesUsesCost": "chargesPerUse",
+    "conditionFlags": {
+      "dazzled": false,
+      "polymorphed": false,
+      "wildshaped": false
+    },
+    "counterName": "",
+    "createdBy": "",
+    "creationChanges": [],
+    "customReferenceId": "",
+    "damage": {
+      "alternativeParts": [],
+      "parts": []
+    },
+    "damageReduction": [],
+    "description": {
+      "value": "<p>Metal only; always masterwork. Weapons gain +1 damage and piercing/slashing threat range expands by 1. Armor grants 10/20/30% fortification by weight; a heavy shield adds 5%. Steel items gain one-quarter more hit points.</p>"
+    },
+    "hardness": "15",
+    "hpPerInch": "30",
+    "identifiedName": "Arcanite",
+    "identifiers": [],
+    "index": {
+      "subType": null,
+      "uniqueId": "wc-material-arcanite"
+    },
+    "isAdamantineEquivalent": false,
+    "isAlchemicalSilverEquivalent": false,
+    "isColdIronEquivalent": false,
+    "magicEquivalent": 0,
+    "originVersion": 1,
+    "priceDifference": 0,
+    "requirements": [],
+    "resistances": [],
+    "sizeOverride": "",
+    "slug": "damage",
+    "source": "World of Warcraft RPG, 2nd Edition, p. 193",
+    "uniqueId": "wc-material-arcanite"
+  },
+  "type": "material"
+}

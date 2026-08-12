@@ -1,0 +1,350 @@
+[
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "aberration-traits-75afac0a142710dd.json",
+    "key": "!items!75afac0a142710dd"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "air-subtype-traits-268922696b9a153b.json",
+    "key": "!items!268922696b9a153b"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "animal-traits-d0b085906e7933d3.json",
+    "key": "!items!d0b085906e7933d3"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "aquatic-subtype-traits-6c0304b7fc3424a3.json",
+    "key": "!items!6c0304b7fc3424a3"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "augmented-humanoid-subtype-traits-6310c5e6df2aca38.json",
+    "key": "!items!6310c5e6df2aca38"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "chaotic-subtype-traits-4af67d5314947ffd.json",
+    "key": "!items!4af67d5314947ffd"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "cold-subtype-traits-75f1d7c62c6febc9.json",
+    "key": "!items!75f1d7c62c6febc9"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "construct-traits-5d00d0447ab3942a.json",
+    "key": "!items!5d00d0447ab3942a"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "corrupted-creature-template-766f7f19f97e7868.json",
+    "key": "!items!766f7f19f97e7868"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "crypt-fiend-template-87c99fa596e9d88b.json",
+    "key": "!items!87c99fa596e9d88b"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "dark-iron-dwarf-subtype-traits-a9135d84d930df40.json",
+    "key": "!items!a9135d84d930df40"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "demon-subtype-traits-29bc818a8721f188.json",
+    "key": "!items!29bc818a8721f188"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "dragon-traits-b7f193113dd68652.json",
+    "key": "!items!b7f193113dd68652"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "dwarf-subtype-traits-bb1d2cdb89e6d4d4.json",
+    "key": "!items!bb1d2cdb89e6d4d4"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "earth-subtype-traits-3724120317a7b3b5.json",
+    "key": "!items!3724120317a7b3b5"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "elemental-traits-80222760db02f7a1.json",
+    "key": "!items!80222760db02f7a1"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "elite-creature-template-b31d7e8f3def5252.json",
+    "key": "!items!b31d7e8f3def5252"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "evil-subtype-traits-ad80f8e8725dc664.json",
+    "key": "!items!ad80f8e8725dc664"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "extraplanar-subtype-traits-f56ea12b09ac91fc.json",
+    "key": "!items!f56ea12b09ac91fc"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "fey-traits-02b0e80b61a301fb.json",
+    "key": "!items!02b0e80b61a301fb"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "fire-subtype-traits-2d6bdc174cc71ee5.json",
+    "key": "!items!2d6bdc174cc71ee5"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "full-attacks-traits-9f7e12d244537004.json",
+    "key": "!items!9f7e12d244537004"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "ghost-template-1be2bb589bc59fb5.json",
+    "key": "!items!1be2bb589bc59fb5"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "giant-traits-c38e3f9e99aa103b.json",
+    "key": "!items!c38e3f9e99aa103b"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "gnoll-subtype-traits-b37c8d52c95ca41a.json",
+    "key": "!items!b37c8d52c95ca41a"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "human-subtype-traits-3cfefc4db6535f94.json",
+    "key": "!items!3cfefc4db6535f94"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "humanoid-traits-401a6a80e9da08df.json",
+    "key": "!items!401a6a80e9da08df"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "incorporeal-subtype-traits-a18fb0a81d08b8d9.json",
+    "key": "!items!a18fb0a81d08b8d9"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "kobold-subtype-traits-43506af9aab3d756.json",
+    "key": "!items!43506af9aab3d756"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "lawful-subtype-traits-1cc3bc4e500b70cf.json",
+    "key": "!items!1cc3bc4e500b70cf"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "leper-gnome-subtype-traits-abea9ddfbf09f8a9.json",
+    "key": "!items!abea9ddfbf09f8a9"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "lich-template-bad386a60fc50a7d.json",
+    "key": "!items!bad386a60fc50a7d"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "magical-beast-traits-4a5e271e2b371475.json",
+    "key": "!items!4a5e271e2b371475"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "makrura-subtype-traits-de1b4ad4a49b70d2.json",
+    "key": "!items!de1b4ad4a49b70d2"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "mechanical-subtype-traits-5c863ccbbcdd76c0.json",
+    "key": "!items!5c863ccbbcdd76c0"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "mechanized-animal-template-91896ffb39621711.json",
+    "key": "!items!91896ffb39621711"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "monster-spellcasting-traits-a2af9f319e850676.json",
+    "key": "!items!a2af9f319e850676"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "monstrous-humanoid-traits-ad1ebed5dc963301.json",
+    "key": "!items!ad1ebed5dc963301"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "naga-subtype-traits-a22dfbdcf1f41105.json",
+    "key": "!items!a22dfbdcf1f41105"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "native-subtype-traits-3f859feb0e33d4d0.json",
+    "key": "!items!3f859feb0e33d4d0"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "natural-attacks-traits-d15baeae5a5e2844.json",
+    "key": "!items!d15baeae5a5e2844"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "ooze-traits-015d5b0c96b94cfb.json",
+    "key": "!items!015d5b0c96b94cfb"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "orc-subtype-traits-695243d464aab4e0.json",
+    "key": "!items!695243d464aab4e0"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "outsider-traits-dd750e0d27b12249.json",
+    "key": "!items!dd750e0d27b12249"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "plant-traits-b80a2d6d0fbce71e.json",
+    "key": "!items!b80a2d6d0fbce71e"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "risen-template-fa8d30372af4354a.json",
+    "key": "!items!fa8d30372af4354a"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "skeletal-creature-template-ad2192ba80ffc3b8.json",
+    "key": "!items!ad2192ba80ffc3b8"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "spell-like-abilities-traits-9072eee87e2208d9.json",
+    "key": "!items!9072eee87e2208d9"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "summoning-creatures-traits-6f37d068acd57510.json",
+    "key": "!items!6f37d068acd57510"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "swarm-subtype-traits-fc58e6ccee5d80e8.json",
+    "key": "!items!fc58e6ccee5d80e8"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "trogg-subtype-traits-d91b275e94d69f2c.json",
+    "key": "!items!d91b275e94d69f2c"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "troll-subtype-traits-f61d168d94459ec0.json",
+    "key": "!items!f61d168d94459ec0"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "undead-traits-d92eb95c03dbf03c.json",
+    "key": "!items!d92eb95c03dbf03c"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "vermin-traits-05c869446de21e10.json",
+    "key": "!items!05c869446de21e10"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "water-subtype-traits-f9aaded1848fd5c4.json",
+    "key": "!items!f9aaded1848fd5c4"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "withered-creature-template-01b84832d487fcc5.json",
+    "key": "!items!01b84832d487fcc5"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "zombie-subtype-traits-b5fe9ab025e00552.json",
+    "key": "!items!b5fe9ab025e00552"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "zombie-template-2a7bdc839b19b222.json",
+    "key": "!items!2a7bdc839b19b222"
+  }
+]

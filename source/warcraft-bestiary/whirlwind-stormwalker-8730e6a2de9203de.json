@@ -1,0 +1,1504 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "5900f956560f8788",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 24,
+                "die": 8,
+                "expression": "24d8",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Elemental Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "med",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "204",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "18",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "30",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "19",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "19",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "12",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "25",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "8",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "100",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "100",
+              "speed",
+              "flySpeed",
+              "base-replace"
+            ],
+            [
+              "4",
+              "misc",
+              "init",
+              "untyped"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "elemental",
+          "damageReduction": [
+            [
+              "5",
+              "any",
+              false
+            ]
+          ],
+          "hd": 8,
+          "hp": 0,
+          "levels": 24,
+          "maxLevel": 50,
+          "resistances": [],
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "low"
+            },
+            "will": {
+              "value": "low"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 54"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "9017847ccfbc3d36",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                27
+              ],
+              "printedDamage": "2d8+8"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Slam",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "11",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Slam",
+          "damage": {
+            "parts": [
+              [
+                "2d8+8",
+                "Bludgeoning",
+                "damage-bludg"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Slam +27 melee (2d8+8).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "3f611a86c54da90a",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 2,
+              "id": "9017847ccfbc3d36",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Slam",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> 2 slams +27 melee (2d8+8).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "2fc32db399b9bee2",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "Dustcloud (DC 33)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Whirlwind Stormwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Dustcloud",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Dustcloud (DC 33).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-whirlwind-stormwalker-dustcloud"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "04d4994f31ed773a",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "scour"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Whirlwind Stormwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "scour",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> scour.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-whirlwind-stormwalker-scour"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "11e0d6599edf6b82",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Special Attack",
+              "raw": "whirlwind (DC 30)"
+            },
+            "reference": {
+              "id": "b1deefa4e23ded53",
+              "name": "Whirlwind",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Whirlwind Stormwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "whirlwind",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> whirlwind (DC 30).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-spells.Item.b1deefa4e23ded53]{Whirlwind}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-whirlwind-stormwalker-whirlwind"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "d44553c7926c9bb7",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Darkvision 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Whirlwind Stormwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Darkvision 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Darkvision 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-whirlwind-stormwalker-darkvision-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "4b7dd7db814ee376",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "bracers"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Whirlwind Stormwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "bracers",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> bracers.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-whirlwind-stormwalker-bracers"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "2e02588578ddb307",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "damage reduction 5/-"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Whirlwind Stormwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "damage reduction 5/-",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> damage reduction 5/-.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-whirlwind-stormwalker-damage-reduction-5"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "494fe0a76a5bdc14",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "elemental traits"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Whirlwind Stormwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "elemental traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> elemental traits.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-whirlwind-stormwalker-elemental-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "1202d4b3ff2c3658",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Blind-Fight"
+            },
+            "reference": {
+              "id": "5f81db4e1389ce23",
+              "name": "Blind-Fight",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Whirlwind Stormwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Blind-Fight",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Blind-Fight.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.5f81db4e1389ce23]{Blind-Fight}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-whirlwind-stormwalker-blind-fight"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "c68394142fd629f9",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Combat Reflexes"
+            },
+            "reference": {
+              "id": "4c36b32171550210",
+              "name": "Combat Reflexes",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Whirlwind Stormwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Combat Reflexes",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Combat Reflexes.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.4c36b32171550210]{Combat Reflexes}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-whirlwind-stormwalker-combat-reflexes"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "d95b52203de2adb3",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Dodge"
+            },
+            "reference": {
+              "id": "7d08b8436a8b4167",
+              "name": "Dodge",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Whirlwind Stormwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Dodge",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Dodge.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.7d08b8436a8b4167]{Dodge}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-whirlwind-stormwalker-dodge"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "104ee2071a47ff56",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Flyby Attack"
+            },
+            "reference": {
+              "id": "SsqHUJ1AqujhZKeA",
+              "name": "Flyby Attack",
+              "pack": "warcraftrpg2e.feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Whirlwind Stormwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Flyby Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Flyby Attack.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.feats.Item.SsqHUJ1AqujhZKeA]{Flyby Attack}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-whirlwind-stormwalker-flyby-attack"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "cb89d269581a1481",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Initiative"
+            },
+            "reference": {
+              "id": "3232602c102e0494",
+              "name": "Improved Initiative",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Whirlwind Stormwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Initiative",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Initiative.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.3232602c102e0494]{Improved Initiative}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-whirlwind-stormwalker-improved-initiative"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "40314eb1d263552e",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Sunder"
+            },
+            "reference": {
+              "id": "f3184e001d989d4b",
+              "name": "Improved Sunder",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Whirlwind Stormwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Sunder",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Sunder.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.f3184e001d989d4b]{Improved Sunder}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-whirlwind-stormwalker-improved-sunder"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "841de98d3076a8d6",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Mobility"
+            },
+            "reference": {
+              "id": "62fbe110ddcb2b39",
+              "name": "Mobility",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Whirlwind Stormwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Mobility",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Mobility.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.62fbe110ddcb2b39]{Mobility}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-whirlwind-stormwalker-mobility"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "7853d0aaa47e2e89",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Power Attack"
+            },
+            "reference": {
+              "id": "95e094ad6c35e24e",
+              "name": "Power Attack",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Whirlwind Stormwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Power Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Power Attack.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.95e094ad6c35e24e]{Power Attack}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-whirlwind-stormwalker-power-attack"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "c9f4721ddd6cbd8b",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Skilled (Listen and Spot)"
+            },
+            "reference": {
+              "id": "63e93d7c15badc3f",
+              "name": "Skilled",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Whirlwind Stormwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Skilled (Listen and Spot)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Skilled (Listen and Spot).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.63e93d7c15badc3f]{Skilled}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-whirlwind-stormwalker-skilled-listen-and-spot"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "3654bc42b35010f0",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Spring Attack"
+            },
+            "reference": {
+              "id": "7745cccb3e31fbfb",
+              "name": "Spring Attack",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Whirlwind Stormwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Spring Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Spring Attack.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.7745cccb3e31fbfb]{Spring Attack}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-whirlwind-stormwalker-spring-attack"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "d0fe885cdeeab90d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Weapon Finesse"
+            },
+            "reference": {
+              "id": "09eb70cdcda3c32d",
+              "name": "Weapon Finesse",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Whirlwind Stormwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Weapon Finesse",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Weapon Finesse.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.09eb70cdcda3c32d]{Weapon Finesse}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-whirlwind-stormwalker-weapon-finesse"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "af13f4f59a6bd0b9",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Huge Elemental (Air, Extraplanar); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "80222760db02f7a1",
+              "name": "Elemental Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Whirlwind Stormwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Elemental Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Huge Elemental (Air, Extraplanar); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.80222760db02f7a1]{Elemental Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-whirlwind-stormwalker-elemental-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "6c4e435b705da2e8",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Air subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "268922696b9a153b",
+              "name": "Air Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Whirlwind Stormwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Air Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Air subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.268922696b9a153b]{Air Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-whirlwind-stormwalker-air-subtype-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "9516d42bc22d9e7a",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Extraplanar subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "f56ea12b09ac91fc",
+              "name": "Extraplanar Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Whirlwind Stormwalker"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Extraplanar Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Extraplanar subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.f56ea12b09ac91fc]{Extraplanar Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-whirlwind-stormwalker-extraplanar-subtype-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "8730e6a2de9203de",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 27, Agy 33, Sta 18, Int 10, Spt 11, Cha 11",
+          "Advancement": "25-28 HD (Huge)",
+          "Alignment": "Always chaotic neutral",
+          "Area": "Skywall (The Elemental Plane)",
+          "Armor Class": "30 (-2 size, +11 Agy, +11 natural), touch 19, flat-footed 19",
+          "Attack": "Slam +27 melee (2d8+8)",
+          "Base Attack/Grapple": "+18/+34",
+          "Challenge Rating": "11",
+          "Environment": "Any",
+          "Feats": "Blind-Fight, Combat Reflexes, Dodge, Flyby Attack*, Improved Initiative B , Improved Sunder, Mobility, Power Attack, Skilled (Listen and Spot), Spring Attack, Weapon Finesse B",
+          "Full Attack": "2 slams +27 melee (2d8+8)",
+          "Hit Dice": "24d8+96 (204 hp)",
+          "Initiative": "+15",
+          "Level Adjustment": "-",
+          "Organization": "Solitary",
+          "Saves": "Fort +12, Ref +25, Will +8",
+          "Skills": "Listen +17, Spot +17, Stealth +40 (+32 to hide)",
+          "Space/Reach": "15 ft./15 ft.",
+          "Special Attacks": "Dustcloud (DC 33), scour, whirlwind (DC 30)",
+          "Special Qualities": "Darkvision 60 ft., bracers, damage reduction 5/-, elemental traits",
+          "Speed": "Fly 100 ft. (20 squares) (perfect)",
+          "Treasure": "None"
+        },
+        "rulesCoverage": {
+          "actor-defense": 1,
+          "linked-reference": 15,
+          "manual": 5
+        },
+        "subtypes": [
+          "Air",
+          "Extraplanar"
+        ]
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          55
+        ],
+        "printedPages": [
+          54
+        ],
+        "section": "Whirlwind Stormwalker",
+        "verification": "native-text-table"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "5900f956560f8788",
+    "9017847ccfbc3d36",
+    "3f611a86c54da90a",
+    "2fc32db399b9bee2",
+    "04d4994f31ed773a",
+    "11e0d6599edf6b82",
+    "d44553c7926c9bb7",
+    "4b7dd7db814ee376",
+    "2e02588578ddb307",
+    "494fe0a76a5bdc14",
+    "1202d4b3ff2c3658",
+    "c68394142fd629f9",
+    "d95b52203de2adb3",
+    "104ee2071a47ff56",
+    "cb89d269581a1481",
+    "40314eb1d263552e",
+    "841de98d3076a8d6",
+    "7853d0aaa47e2e89",
+    "c9f4721ddd6cbd8b",
+    "3654bc42b35010f0",
+    "d0fe885cdeeab90d",
+    "af13f4f59a6bd0b9",
+    "6c4e435b705da2e8",
+    "9516d42bc22d9e7a"
+  ],
+  "name": "Whirlwind Stormwalker",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 11,
+        "penalty": 0,
+        "total": 11,
+        "userPenalty": 0,
+        "value": 11
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 4,
+        "origMod": 4,
+        "origTotal": 18,
+        "penalty": 0,
+        "total": 18,
+        "userPenalty": 0,
+        "value": 18
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 11,
+        "origMod": 11,
+        "origTotal": 33,
+        "penalty": 0,
+        "total": 33,
+        "userPenalty": 0,
+        "value": 33
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 8,
+        "origMod": 8,
+        "origTotal": 27,
+        "penalty": 0,
+        "total": 27,
+        "userPenalty": 0,
+        "value": 27
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 11,
+        "penalty": 0,
+        "total": 11,
+        "userPenalty": 0,
+        "value": 11
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 19,
+          "value": 0
+        },
+        "normal": {
+          "total": 30,
+          "value": 0
+        },
+        "touch": {
+          "total": 19,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 18,
+        "nonepic": 18,
+        "total": 18,
+        "value": 0
+      },
+      "cmb": {
+        "total": 34,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "elemental",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 100,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 24,
+        "total": 24
+      },
+      "hp": {
+        "base": 204,
+        "max": 204,
+        "min": -18,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 204
+      },
+      "init": {
+        "bonus": 0,
+        "total": 15,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 11,
+      "savingThrows": {
+        "fort": {
+          "base": 12,
+          "total": 12
+        },
+        "ref": {
+          "base": 25,
+          "total": 25
+        },
+        "will": {
+          "base": 8,
+          "total": 8
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": null,
+        "darkvision": 60,
+        "lowLight": false,
+        "lowLightMultiplier": null,
+        "tremorsense": null
+      },
+      "speed": {
+        "fly": {
+          "base": 100,
+          "total": 100
+        },
+        "land": {
+          "base": 100,
+          "total": 100
+        }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "Always chaotic neutral",
+      "biography": {
+        "public": "",
+        "value": "<p>Whirlwind Stormwalker is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 11,
+      "environment": "Any",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 24,
+        "value": 24
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 24d8+96 (204 hp)</p><p><strong>Initiative:</strong> +15</p><p><strong>Speed:</strong> Fly 100 ft. (20 squares) (perfect)</p><p><strong>Armor Class:</strong> 30 (-2 size, +11 Agy, +11 natural), touch 19, flat-footed 19</p><p><strong>Base Attack/Grapple:</strong> +18/+34</p><p><strong>Attack:</strong> Slam +27 melee (2d8+8)</p><p><strong>Full Attack:</strong> 2 slams +27 melee (2d8+8)</p><p><strong>Space/Reach:</strong> 15 ft./15 ft.</p><p><strong>Special Attacks:</strong> Dustcloud (DC 33), scour, whirlwind (DC 30)</p><p><strong>Special Qualities:</strong> Darkvision 60 ft., bracers, damage reduction 5/-, elemental traits</p><p><strong>Saves:</strong> Fort +12, Ref +25, Will +8</p><p><strong>Abilities:</strong> Str 27, Agy 33, Sta 18, Int 10, Spt 11, Cha 11</p><p><strong>Skills:</strong> Listen +17, Spot +17, Stealth +40 (+32 to hide)</p><p><strong>Feats:</strong> Blind-Fight, Combat Reflexes, Dodge, Flyby Attack*, Improved Initiative B , Improved Sunder, Mobility, Power Attack, Skilled (Listen and Spot), Spring Attack, Weapon Finesse B</p><p><strong>Area:</strong> Skywall (The Elemental Plane)</p><p><strong>Organization:</strong> Solitary</p><p><strong>Treasure:</strong> None</p><p><strong>Advancement:</strong> 25-28 HD (Huge)</p><p><strong>Level Adjustment:</strong> -</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 11,
+      "type": "Elemental"
+    },
+    "skills": {
+      "hid": {
+        "ability": "dex",
+        "abilityModifier": 11,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 29,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 40,
+        "notes": "Printed total +40 (+32 to hide)",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "lis": {
+        "ability": "wis",
+        "abilityModifier": 0,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 17,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 17,
+        "notes": "Printed total +17",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spt": {
+        "ability": "wis",
+        "abilityModifier": 0,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 17,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 17,
+        "notes": "Printed total +17",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "huge",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Darkvision 60 ft., bracers, damage reduction 5/-, elemental traits",
+      "size": "huge",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

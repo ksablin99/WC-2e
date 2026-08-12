@@ -1,0 +1,42 @@
+{
+  "_embedded": {},
+  "_id": "29bc818a8721f188",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "creatureRule": {
+        "kind": "subtype",
+        "reusable": true
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          189
+        ],
+        "printedPages": [
+          188
+        ],
+        "section": "Demon Subtype",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/aura.svg",
+  "name": "Demon Subtype Traits",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilityType": "nat",
+    "description": {
+      "value": "<p>Also has the evil subtype. Unless its entry overrides them, a demon is immune to death effects and poison, has resistance 10 to acid, cold, electricity, and fire, telepathy 100 feet, darkvision 60 feet, and can see through magical darkness. Its travel spell-like abilities are restricted to the Twisting Nether as described by the shared demon rules.</p><p>This reusable record defines shared conversion behavior. Individual actors carry exact printed exceptions and totals.</p>"
+    },
+    "featType": "trait",
+    "source": "World of Warcraft: Monster Guide, pp. 188",
+    "uniqueId": "wc-creature-rule-demon-subtype"
+  },
+  "type": "feat"
+}

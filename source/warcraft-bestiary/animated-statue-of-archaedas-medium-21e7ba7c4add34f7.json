@@ -1,0 +1,585 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "30098ffa97661f83",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 5,
+                "die": 8,
+                "expression": "5d8",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Construct Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "med",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": true
+          },
+          "changes": [
+            [
+              "32",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "3",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "18",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "10",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "18",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "3",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "1",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "2",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "20",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "construct",
+          "damageReduction": [],
+          "hd": 8,
+          "hp": 0,
+          "levels": 5,
+          "maxLevel": 50,
+          "resistances": [],
+          "savingThrows": {
+            "fort": {
+              "value": "low"
+            },
+            "ref": {
+              "value": "low"
+            },
+            "will": {
+              "value": "low"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 152"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "de7e5eda2ddc781f",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                11
+              ],
+              "printedDamage": "1d6+7"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Slam",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "8",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Slam",
+          "damage": {
+            "parts": [
+              [
+                "1d6+7",
+                "Bludgeoning",
+                "damage-bludg"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Slam +11 melee (1d6+7).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "b53e519227017d6d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 2,
+              "id": "de7e5eda2ddc781f",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Slam",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> 2 slams +11 melee (1d6+7).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "c95767ecb3195121",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Medium Construct; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "5d00d0447ab3942a",
+              "name": "Construct Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                152
+              ],
+              "section": "Animated Statue of Archaedas (Medium)"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Construct Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Medium Construct; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.5d00d0447ab3942a]{Construct Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 152",
+          "uniqueId": "wc-monster-animated-statue-of-archaedas-medium-construct-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "21e7ba7c4add34f7",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "summon",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 24, Agy 10, Sta 13, Int -, Spt 12, Cha 10",
+          "Armor Class": "18 (+0 Agy, +8 natural), touch 10, flat-footed 18",
+          "Attack": "Slam +11 melee (1d6+7)",
+          "Base Attack/Grapple": "+3/+11 +3/+15",
+          "Full Attack": "2 slams +11 melee (1d6+7)",
+          "Hit Dice": "5d8+10 (32 hp)",
+          "Initiative": "+0",
+          "Saves": "Fort +3, Ref +1, Will +2",
+          "Space/Reach": "5 ft./5 ft.",
+          "Speed": "20 ft. (4 squares)"
+        },
+        "rulesCoverage": {
+          "actor-defense": 0,
+          "linked-reference": 1,
+          "manual": 0
+        },
+        "subtypes": []
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          153
+        ],
+        "printedPages": [
+          152
+        ],
+        "section": "Animated Statue of Archaedas (Medium)",
+        "verification": "native-text-table+review-override"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "30098ffa97661f83",
+    "de7e5eda2ddc781f",
+    "b53e519227017d6d",
+    "c95767ecb3195121"
+  ],
+  "name": "Animated Statue of Archaedas (Medium)",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 13,
+        "penalty": 0,
+        "total": 13,
+        "userPenalty": 0,
+        "value": 13
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": true,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 0,
+        "penalty": 0,
+        "total": 0,
+        "userPenalty": 0,
+        "value": 0
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 7,
+        "origMod": 7,
+        "origTotal": 24,
+        "penalty": 0,
+        "total": 24,
+        "userPenalty": 0,
+        "value": 24
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 12,
+        "penalty": 0,
+        "total": 12,
+        "userPenalty": 0,
+        "value": 12
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 18,
+          "value": 0
+        },
+        "normal": {
+          "total": 18,
+          "value": 0
+        },
+        "touch": {
+          "total": 10,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 3,
+        "nonepic": 3,
+        "total": 3,
+        "value": 0
+      },
+      "cmb": {
+        "total": 11,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "construct",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft-construct",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 0,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 5,
+        "total": 5
+      },
+      "hp": {
+        "base": 32,
+        "max": 32,
+        "min": 0,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 32
+      },
+      "init": {
+        "bonus": 0,
+        "total": 0,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 8,
+      "savingThrows": {
+        "fort": {
+          "base": 3,
+          "total": 3
+        },
+        "ref": {
+          "base": 1,
+          "total": 1
+        },
+        "will": {
+          "base": 2,
+          "total": 2
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": null,
+        "darkvision": null,
+        "lowLight": false,
+        "lowLightMultiplier": null,
+        "tremorsense": null
+      },
+      "speed": {
+        "land": {
+          "base": 20,
+          "total": 20
+        }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "",
+      "biography": {
+        "public": "",
+        "value": "<p>Animated Statue of Archaedas (Medium) is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 0,
+      "environment": "",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 5,
+        "value": 5
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 5d8+10 (32 hp)</p><p><strong>Initiative:</strong> +0</p><p><strong>Speed:</strong> 20 ft. (4 squares)</p><p><strong>Armor Class:</strong> 18 (+0 Agy, +8 natural), touch 10, flat-footed 18</p><p><strong>Base Attack/Grapple:</strong> +3/+11 +3/+15</p><p><strong>Attack:</strong> Slam +11 melee (1d6+7)</p><p><strong>Full Attack:</strong> 2 slams +11 melee (1d6+7)</p><p><strong>Space/Reach:</strong> 5 ft./5 ft.</p><p><strong>Saves:</strong> Fort +3, Ref +1, Will +2</p><p><strong>Abilities:</strong> Str 24, Agy 10, Sta 13, Int -, Spt 12, Cha 10</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 0,
+      "type": "Construct"
+    },
+    "skills": {},
+    "traits": {
+      "actualSize": "med",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "",
+      "size": "med",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

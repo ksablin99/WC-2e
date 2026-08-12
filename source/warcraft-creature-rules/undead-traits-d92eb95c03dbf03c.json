@@ -1,0 +1,44 @@
+{
+  "_embedded": {},
+  "_id": "d92eb95c03dbf03c",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "creatureRule": {
+        "kind": "type",
+        "reusable": true
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          186,
+          201
+        ],
+        "printedPages": [
+          185,
+          200
+        ],
+        "section": "Undead",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/aura.svg",
+  "name": "Undead Traits",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilityType": "nat",
+    "description": {
+      "value": "<p>d12 Hit Dice; half base attack; good Will saves. No Stamina score. Darkvision 60 feet. Immune to mind-affecting effects, poison, sleep, paralysis, stunning, disease, death effects, critical hits, nonlethal damage, ability damage or drain, fatigue, exhaustion, and energy drain. Uses Charisma where a Stamina-based rule requires a score; destroyed at 0 hit points unless an entry states otherwise.</p><p>This reusable record defines shared conversion behavior. Individual actors carry exact printed exceptions and totals.</p>"
+    },
+    "featType": "trait",
+    "source": "World of Warcraft: Monster Guide, pp. 185-200",
+    "uniqueId": "wc-creature-rule-undead"
+  },
+  "type": "feat"
+}

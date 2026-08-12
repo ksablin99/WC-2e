@@ -1,0 +1,1058 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "457014ecfbffe676",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 9,
+                "die": 8,
+                "expression": "9d8",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Aberration Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "med",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "76",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "6",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "21",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "12",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "19",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "9",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "5",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "6",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "30",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "20",
+              "speed",
+              "climbSpeed",
+              "base-replace"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "aberration",
+          "damageReduction": [],
+          "hd": 8,
+          "hp": 0,
+          "levels": 9,
+          "maxLevel": 50,
+          "resistances": [],
+          "savingThrows": {
+            "fort": {
+              "value": "low"
+            },
+            "ref": {
+              "value": "low"
+            },
+            "will": {
+              "value": "high"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 122"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "3bf781e78259e660",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                10
+              ],
+              "printedDamage": "1d10+3"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Claw",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "4",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Claw",
+          "damage": {
+            "parts": [
+              [
+                "1d10+3",
+                "Piercing or Slashing",
+                "damage-piercing-or-slashing"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Claw +10 melee (1d10+3).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "16d1adf91a5e0dc1",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 2,
+              "id": "3bf781e78259e660",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Claw",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> 2 claws +10 melee (1d10+3).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "3749c7a91eba562d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "Reaving 1d10+3"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                122
+              ],
+              "section": "Silithid Reaver"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Reaving 1d10+3",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Reaving 1d10+3.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 122",
+          "uniqueId": "wc-monster-silithid-reaver-reaving-1d10-3"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "81793ed074efcedd",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Darkvision 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                122
+              ],
+              "section": "Silithid Reaver"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Darkvision 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Darkvision 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 122",
+          "uniqueId": "wc-monster-silithid-reaver-darkvision-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "ed10319b78e60ed6",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "low-light vision"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                122
+              ],
+              "section": "Silithid Reaver"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "low-light vision",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> low-light vision.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 122",
+          "uniqueId": "wc-monster-silithid-reaver-low-light-vision"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "ec5e3b200e3ad0a3",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "scent"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                122
+              ],
+              "section": "Silithid Reaver"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "scent",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> scent.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 122",
+          "uniqueId": "wc-monster-silithid-reaver-scent"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "9ea4a253f04deb2f",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "stability"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                122
+              ],
+              "section": "Silithid Reaver"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "stability",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> stability.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 122",
+          "uniqueId": "wc-monster-silithid-reaver-stability"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "330bb0f373241be2",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "tunnel defense"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                122
+              ],
+              "section": "Silithid Reaver"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "tunnel defense",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> tunnel defense.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 122",
+          "uniqueId": "wc-monster-silithid-reaver-tunnel-defense"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "88e0e923e1e41b67",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Blind-Fight"
+            },
+            "reference": {
+              "id": "5f81db4e1389ce23",
+              "name": "Blind-Fight",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                122
+              ],
+              "section": "Silithid Reaver"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Blind-Fight",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Blind-Fight.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.5f81db4e1389ce23]{Blind-Fight}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 122",
+          "uniqueId": "wc-monster-silithid-reaver-blind-fight"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "2a32ee0ee22020a7",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Combat Reflexes"
+            },
+            "reference": {
+              "id": "4c36b32171550210",
+              "name": "Combat Reflexes",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                122
+              ],
+              "section": "Silithid Reaver"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Combat Reflexes",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Combat Reflexes.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.4c36b32171550210]{Combat Reflexes}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 122",
+          "uniqueId": "wc-monster-silithid-reaver-combat-reflexes"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "f70080ee12477a15",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Great Fortitude"
+            },
+            "reference": {
+              "id": "66a59a40dae0fed6",
+              "name": "Great Fortitude",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                122
+              ],
+              "section": "Silithid Reaver"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Great Fortitude",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Great Fortitude.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.66a59a40dae0fed6]{Great Fortitude}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 122",
+          "uniqueId": "wc-monster-silithid-reaver-great-fortitude"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "8f1d7b4564c9ace2",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Weapon Focus (claw)"
+            },
+            "reference": {
+              "id": "fdea42738398197e",
+              "name": "Weapon Focus",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                122
+              ],
+              "section": "Silithid Reaver"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Weapon Focus (claw)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Weapon Focus (claw).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.fdea42738398197e]{Weapon Focus}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 122",
+          "uniqueId": "wc-monster-silithid-reaver-weapon-focus-claw"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "cf8e19c3d618dd37",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Medium Aberration; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "75afac0a142710dd",
+              "name": "Aberration Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                122
+              ],
+              "section": "Silithid Reaver"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Aberration Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Medium Aberration; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.75afac0a142710dd]{Aberration Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 122",
+          "uniqueId": "wc-monster-silithid-reaver-aberration-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "91476a7bb456b988",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 17, Agy 15, Sta 18, Int 1, Spt 11, Cha 5",
+          "Advancement": "10-18 HD (Large)",
+          "Alignment": "Usually neutral",
+          "Area": "The Barrens (southern), Feralas, Silithus, Tanaris, Thousand Needles, Un'Goro Crater",
+          "Armor Class": "21 (+2 Agy, +9 natural), touch 12, flat-footed 19",
+          "Attack": "Claw +10 melee (1d10+3)",
+          "Base Attack/Grapple": "+6/+9",
+          "Challenge Rating": "6",
+          "Environment": "Any underground",
+          "Feats": "Blind-Fight, Combat Reflexes, Great Fortitude, Weapon Focus (claw)",
+          "Full Attack": "2 claws +10 melee (1d10+3)",
+          "Hit Dice": "9d8+36 (76 hp)",
+          "Initiative": "+2",
+          "Level Adjustment": "-",
+          "Organization": "Solitary, pair, array (3-5), or wall (6-15)",
+          "Saves": "Fort +9, Ref +5, Will +6",
+          "Skills": "Climb +11, Listen +7, Spot +7",
+          "Space/Reach": "5 ft./5 ft.",
+          "Special Attacks": "Reaving 1d10+3",
+          "Special Qualities": "Darkvision 60 ft., low-light vision, scent, stability, tunnel defense",
+          "Speed": "30 ft., climb 20 ft."
+        },
+        "rulesCoverage": {
+          "actor-defense": 0,
+          "linked-reference": 5,
+          "manual": 6
+        },
+        "subtypes": []
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          123
+        ],
+        "printedPages": [
+          122
+        ],
+        "section": "Silithid Reaver",
+        "verification": "native-text-table+review-override"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "457014ecfbffe676",
+    "3bf781e78259e660",
+    "16d1adf91a5e0dc1",
+    "3749c7a91eba562d",
+    "81793ed074efcedd",
+    "ed10319b78e60ed6",
+    "ec5e3b200e3ad0a3",
+    "9ea4a253f04deb2f",
+    "330bb0f373241be2",
+    "88e0e923e1e41b67",
+    "2a32ee0ee22020a7",
+    "f70080ee12477a15",
+    "8f1d7b4564c9ace2",
+    "cf8e19c3d618dd37"
+  ],
+  "name": "Silithid Reaver",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -3,
+        "origMod": -3,
+        "origTotal": 5,
+        "penalty": 0,
+        "total": 5,
+        "userPenalty": 0,
+        "value": 5
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 4,
+        "origMod": 4,
+        "origTotal": 18,
+        "penalty": 0,
+        "total": 18,
+        "userPenalty": 0,
+        "value": 18
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 2,
+        "origMod": 2,
+        "origTotal": 15,
+        "penalty": 0,
+        "total": 15,
+        "userPenalty": 0,
+        "value": 15
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -5,
+        "origMod": -5,
+        "origTotal": 1,
+        "penalty": 0,
+        "total": 1,
+        "userPenalty": 0,
+        "value": 1
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 3,
+        "origMod": 3,
+        "origTotal": 17,
+        "penalty": 0,
+        "total": 17,
+        "userPenalty": 0,
+        "value": 17
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 11,
+        "penalty": 0,
+        "total": 11,
+        "userPenalty": 0,
+        "value": 11
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 19,
+          "value": 0
+        },
+        "normal": {
+          "total": 21,
+          "value": 0
+        },
+        "touch": {
+          "total": 12,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 6,
+        "nonepic": 6,
+        "total": 6,
+        "value": 0
+      },
+      "cmb": {
+        "total": 9,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "aberration",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 0,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 9,
+        "total": 9
+      },
+      "hp": {
+        "base": 76,
+        "max": 76,
+        "min": -18,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 76
+      },
+      "init": {
+        "bonus": 0,
+        "total": 2,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 9,
+      "savingThrows": {
+        "fort": {
+          "base": 9,
+          "total": 9
+        },
+        "ref": {
+          "base": 5,
+          "total": 5
+        },
+        "will": {
+          "base": 6,
+          "total": 6
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": null,
+        "darkvision": 60,
+        "lowLight": true,
+        "lowLightMultiplier": 2,
+        "tremorsense": null
+      },
+      "speed": {
+        "climb": {
+          "base": 20,
+          "total": 20
+        },
+        "land": {
+          "base": 30,
+          "total": 30
+        }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "Usually neutral",
+      "biography": {
+        "public": "",
+        "value": "<p>Silithid Reaver is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 6,
+      "environment": "Any underground",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 9,
+        "value": 9
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 9d8+36 (76 hp)</p><p><strong>Initiative:</strong> +2</p><p><strong>Speed:</strong> 30 ft., climb 20 ft.</p><p><strong>Armor Class:</strong> 21 (+2 Agy, +9 natural), touch 12, flat-footed 19</p><p><strong>Base Attack/Grapple:</strong> +6/+9</p><p><strong>Attack:</strong> Claw +10 melee (1d10+3)</p><p><strong>Full Attack:</strong> 2 claws +10 melee (1d10+3)</p><p><strong>Space/Reach:</strong> 5 ft./5 ft.</p><p><strong>Special Attacks:</strong> Reaving 1d10+3</p><p><strong>Special Qualities:</strong> Darkvision 60 ft., low-light vision, scent, stability, tunnel defense</p><p><strong>Saves:</strong> Fort +9, Ref +5, Will +6</p><p><strong>Abilities:</strong> Str 17, Agy 15, Sta 18, Int 1, Spt 11, Cha 5</p><p><strong>Skills:</strong> Climb +11, Listen +7, Spot +7</p><p><strong>Feats:</strong> Blind-Fight, Combat Reflexes, Great Fortitude, Weapon Focus (claw)</p><p><strong>Area:</strong> The Barrens (southern), Feralas, Silithus, Tanaris, Thousand Needles, Un&#039;Goro Crater</p><p><strong>Organization:</strong> Solitary, pair, array (3-5), or wall (6-15)</p><p><strong>Advancement:</strong> 10-18 HD (Large)</p><p><strong>Level Adjustment:</strong> -</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 6,
+      "type": "Aberration"
+    },
+    "skills": {
+      "clm": {
+        "ability": "str",
+        "abilityModifier": 3,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 8,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 11,
+        "notes": "Printed total +11",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "lis": {
+        "ability": "wis",
+        "abilityModifier": 0,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 7,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 7,
+        "notes": "Printed total +7",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spt": {
+        "ability": "wis",
+        "abilityModifier": 0,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 7,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 7,
+        "notes": "Printed total +7",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "med",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Darkvision 60 ft., low-light vision, scent, stability, tunnel defense",
+      "size": "med",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

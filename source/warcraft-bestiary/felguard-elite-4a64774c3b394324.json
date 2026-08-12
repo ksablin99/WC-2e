@@ -1,0 +1,1366 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "b118cd6522f24098",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 15,
+                "die": 8,
+                "expression": "15d8",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Outsider Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "high",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "172",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "15",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "18",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "10",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "17",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "16",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "11",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "11",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "50",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "4",
+              "misc",
+              "init",
+              "untyped"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "outsider",
+          "damageReduction": [
+            [
+              "12",
+              "good",
+              false
+            ]
+          ],
+          "hd": 8,
+          "hp": 0,
+          "levels": 15,
+          "maxLevel": 50,
+          "resistances": [],
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "high"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 68"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "0c6a831c3e48ee61",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                26
+              ],
+              "printedDamage": "2d8+17/x3"
+            },
+            "reference": {
+              "id": "f64dd47a0907ce71",
+              "name": "Halberd",
+              "pack": "warcraftrpg2e.warcraft-equipment"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "+1 Unholy Halberd",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 3,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "12",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "+1 unholy halberd",
+          "damage": {
+            "parts": [
+              [
+                "2d8+17",
+                "Bludgeoning",
+                "damage-bludg"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> +1 unholy halberd +26 melee (2d8+17/x3).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": true,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "2f45454bbf385da2",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "0c6a831c3e48ee61",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "+1 Unholy Halberd",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> +1 unholy halberd +26/+21/+16 melee (2d8+17/x3).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "b41de3e914c6c7bf",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Blindsight 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                68
+              ],
+              "section": "Felguard Elite"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Blindsight 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Blindsight 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 68",
+          "uniqueId": "wc-monster-felguard-elite-blindsight-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "475ea152959aca68",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "darkvision 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                68
+              ],
+              "section": "Felguard Elite"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "darkvision 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> darkvision 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 68",
+          "uniqueId": "wc-monster-felguard-elite-darkvision-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "d3c84ee2d5e6ad41",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "damage reduction 12/good"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                68
+              ],
+              "section": "Felguard Elite"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "damage reduction 12/good",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> damage reduction 12/good.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 68",
+          "uniqueId": "wc-monster-felguard-elite-damage-reduction-12-good"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "de0c4f3aaf794208",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Special Quality",
+              "raw": "rage"
+            },
+            "reference": {
+              "id": "3HYqrdyreOVyTEfJ",
+              "name": "Rage",
+              "pack": "warcraftrpg2e.spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                68
+              ],
+              "section": "Felguard Elite"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "rage",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> rage.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.spells.Item.3HYqrdyreOVyTEfJ]{Rage}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 68",
+          "uniqueId": "wc-monster-felguard-elite-rage"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "a2789651580c989f",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "demon traits"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                68
+              ],
+              "section": "Felguard Elite"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "demon traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> demon traits.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 68",
+          "uniqueId": "wc-monster-felguard-elite-demon-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "d130377df970043e",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Cleave"
+            },
+            "reference": {
+              "id": "34b794d403b119d7",
+              "name": "Cleave",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                68
+              ],
+              "section": "Felguard Elite"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Cleave",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Cleave.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.34b794d403b119d7]{Cleave}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 68",
+          "uniqueId": "wc-monster-felguard-elite-cleave"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "425014a098b2781b",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Furious Charge"
+            },
+            "reference": {
+              "id": "ff2d48c2fec51f05",
+              "name": "Furious Charge",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                68
+              ],
+              "section": "Felguard Elite"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Furious Charge",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Furious Charge.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.ff2d48c2fec51f05]{Furious Charge}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 68",
+          "uniqueId": "wc-monster-felguard-elite-furious-charge"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "5610a0549e40c2cd",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Initiative"
+            },
+            "reference": {
+              "id": "3232602c102e0494",
+              "name": "Improved Initiative",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                68
+              ],
+              "section": "Felguard Elite"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Initiative",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Initiative.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.3232602c102e0494]{Improved Initiative}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 68",
+          "uniqueId": "wc-monster-felguard-elite-improved-initiative"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "09f84de43bd05cab",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Overrun"
+            },
+            "reference": {
+              "id": "682fc7477ca63892",
+              "name": "Improved Overrun",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                68
+              ],
+              "section": "Felguard Elite"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Overrun",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Overrun.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.682fc7477ca63892]{Improved Overrun}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 68",
+          "uniqueId": "wc-monster-felguard-elite-improved-overrun"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "794fbf971b1794a1",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Intimidating Shout"
+            },
+            "reference": {
+              "id": "a828936b34512dca",
+              "name": "Intimidating Shout",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                68
+              ],
+              "section": "Felguard Elite"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Intimidating Shout",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Intimidating Shout.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.a828936b34512dca]{Intimidating Shout}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 68",
+          "uniqueId": "wc-monster-felguard-elite-intimidating-shout"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "7b78389b3452f19c",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Power Attack"
+            },
+            "reference": {
+              "id": "95e094ad6c35e24e",
+              "name": "Power Attack",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                68
+              ],
+              "section": "Felguard Elite"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Power Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Power Attack.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.95e094ad6c35e24e]{Power Attack}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 68",
+          "uniqueId": "wc-monster-felguard-elite-power-attack"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "8592d84781baba46",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Large Outsider (Demon, Evil, Extraplanar); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "dd750e0d27b12249",
+              "name": "Outsider Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                68
+              ],
+              "section": "Felguard Elite"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Outsider Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Large Outsider (Demon, Evil, Extraplanar); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.dd750e0d27b12249]{Outsider Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 68",
+          "uniqueId": "wc-monster-felguard-elite-outsider-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "3daea6e7f1a8a863",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Demon subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "29bc818a8721f188",
+              "name": "Demon Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                68
+              ],
+              "section": "Felguard Elite"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Demon Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Demon subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.29bc818a8721f188]{Demon Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 68",
+          "uniqueId": "wc-monster-felguard-elite-demon-subtype-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "4322f3ec40d38c31",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Evil subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "ad80f8e8725dc664",
+              "name": "Evil Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                68
+              ],
+              "section": "Felguard Elite"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Evil Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Evil subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.ad80f8e8725dc664]{Evil Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 68",
+          "uniqueId": "wc-monster-felguard-elite-evil-subtype-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "977fe9788047d644",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Extraplanar subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "f56ea12b09ac91fc",
+              "name": "Extraplanar Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                68
+              ],
+              "section": "Felguard Elite"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Extraplanar Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Extraplanar subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.f56ea12b09ac91fc]{Extraplanar Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 68",
+          "uniqueId": "wc-monster-felguard-elite-extraplanar-subtype-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "4a64774c3b394324",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 32, Agy 13, Sta 25, Int 12, Spt 14, Cha 17",
+          "Advancement": "16-19 HD (Large) or by character class",
+          "Alignment": "Always neutral evil",
+          "Area": "The Twisting Nether",
+          "Armor Class": "18 (-1 size, +1 Agy, +4 natural, +4 scale mail), touch 10, flat-footed 17",
+          "Attack": "+1 unholy halberd +26 melee (2d8+17/x3)",
+          "Base Attack/Grapple": "+15/+30",
+          "Challenge Rating": "12",
+          "Environment": "The Twisting Nether",
+          "Feats": "Cleave, Furious Charge, Improved Initiative, Improved Overrun, Intimidating Shout, Power Attack",
+          "Full Attack": "+1 unholy halberd +26/+21/+16 melee (2d8+17/x3)",
+          "Hit Dice": "15d8+105 (172 hp)",
+          "Initiative": "+5",
+          "Level Adjustment": "-",
+          "Organization": "Solitary, pair, or team (3-4)",
+          "Saves": "Fort +16, Ref +11, Will +11",
+          "Skills": "Climb +29, Intimidate +21, Jump +26, Knowledge (the planes) +19, Listen +20, Ride +20, Search +19, Spot +20, Survival +20, Swim +19",
+          "Space/Reach": "10 ft./10 ft.",
+          "Special Attacks": "-",
+          "Special Qualities": "Blindsight 60 ft., darkvision 60 ft., damage reduction 12/good, rage, demon traits",
+          "Speed": "50 ft. (10 squares)",
+          "Treasure": "Standard (including Large +1 unholy halberd )"
+        },
+        "rulesCoverage": {
+          "actor-defense": 1,
+          "linked-reference": 11,
+          "manual": 3
+        },
+        "subtypes": [
+          "Demon",
+          "Evil",
+          "Extraplanar"
+        ]
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          69
+        ],
+        "printedPages": [
+          68
+        ],
+        "section": "Felguard Elite",
+        "verification": "native-text-table"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "b118cd6522f24098",
+    "0c6a831c3e48ee61",
+    "2f45454bbf385da2",
+    "b41de3e914c6c7bf",
+    "475ea152959aca68",
+    "d3c84ee2d5e6ad41",
+    "de0c4f3aaf794208",
+    "a2789651580c989f",
+    "d130377df970043e",
+    "425014a098b2781b",
+    "5610a0549e40c2cd",
+    "09f84de43bd05cab",
+    "794fbf971b1794a1",
+    "7b78389b3452f19c",
+    "8592d84781baba46",
+    "3daea6e7f1a8a863",
+    "4322f3ec40d38c31",
+    "977fe9788047d644"
+  ],
+  "name": "Felguard Elite",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 3,
+        "origMod": 3,
+        "origTotal": 17,
+        "penalty": 0,
+        "total": 17,
+        "userPenalty": 0,
+        "value": 17
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 7,
+        "origMod": 7,
+        "origTotal": 25,
+        "penalty": 0,
+        "total": 25,
+        "userPenalty": 0,
+        "value": 25
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 13,
+        "penalty": 0,
+        "total": 13,
+        "userPenalty": 0,
+        "value": 13
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 12,
+        "penalty": 0,
+        "total": 12,
+        "userPenalty": 0,
+        "value": 12
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 11,
+        "origMod": 11,
+        "origTotal": 32,
+        "penalty": 0,
+        "total": 32,
+        "userPenalty": 0,
+        "value": 32
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 2,
+        "origMod": 2,
+        "origTotal": 14,
+        "penalty": 0,
+        "total": 14,
+        "userPenalty": 0,
+        "value": 14
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 17,
+          "value": 0
+        },
+        "normal": {
+          "total": 18,
+          "value": 0
+        },
+        "touch": {
+          "total": 10,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 15,
+        "nonepic": 15,
+        "total": 15,
+        "value": 0
+      },
+      "cmb": {
+        "total": 30,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "outsider",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 0,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 15,
+        "total": 15
+      },
+      "hp": {
+        "base": 172,
+        "max": 172,
+        "min": -25,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 172
+      },
+      "init": {
+        "bonus": 0,
+        "total": 5,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 4,
+      "savingThrows": {
+        "fort": {
+          "base": 16,
+          "total": 16
+        },
+        "ref": {
+          "base": 11,
+          "total": 11
+        },
+        "will": {
+          "base": 11,
+          "total": 11
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": 60,
+        "darkvision": 60,
+        "lowLight": false,
+        "lowLightMultiplier": null,
+        "tremorsense": null
+      },
+      "speed": {
+        "land": {
+          "base": 50,
+          "total": 50
+        }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "Always neutral evil",
+      "biography": {
+        "public": "",
+        "value": "<p>Felguard Elite is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 12,
+      "environment": "The Twisting Nether",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 15,
+        "value": 15
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 15d8+105 (172 hp)</p><p><strong>Initiative:</strong> +5</p><p><strong>Speed:</strong> 50 ft. (10 squares)</p><p><strong>Armor Class:</strong> 18 (-1 size, +1 Agy, +4 natural, +4 scale mail), touch 10, flat-footed 17</p><p><strong>Base Attack/Grapple:</strong> +15/+30</p><p><strong>Attack:</strong> +1 unholy halberd +26 melee (2d8+17/x3)</p><p><strong>Full Attack:</strong> +1 unholy halberd +26/+21/+16 melee (2d8+17/x3)</p><p><strong>Space/Reach:</strong> 10 ft./10 ft.</p><p><strong>Special Attacks:</strong> -</p><p><strong>Special Qualities:</strong> Blindsight 60 ft., darkvision 60 ft., damage reduction 12/good, rage, demon traits</p><p><strong>Saves:</strong> Fort +16, Ref +11, Will +11</p><p><strong>Abilities:</strong> Str 32, Agy 13, Sta 25, Int 12, Spt 14, Cha 17</p><p><strong>Skills:</strong> Climb +29, Intimidate +21, Jump +26, Knowledge (the planes) +19, Listen +20, Ride +20, Search +19, Spot +20, Survival +20, Swim +19</p><p><strong>Feats:</strong> Cleave, Furious Charge, Improved Initiative, Improved Overrun, Intimidating Shout, Power Attack</p><p><strong>Area:</strong> The Twisting Nether</p><p><strong>Organization:</strong> Solitary, pair, or team (3-4)</p><p><strong>Treasure:</strong> Standard (including Large +1 unholy halberd )</p><p><strong>Advancement:</strong> 16-19 HD (Large) or by character class</p><p><strong>Level Adjustment:</strong> -</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 12,
+      "type": "Outsider"
+    },
+    "skills": {
+      "clm": {
+        "ability": "str",
+        "abilityModifier": 11,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 18,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 29,
+        "notes": "Printed total +29",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "int": {
+        "ability": "cha",
+        "abilityModifier": 3,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 18,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 21,
+        "notes": "Printed total +21",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "jmp": {
+        "ability": "str",
+        "abilityModifier": 11,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 15,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 26,
+        "notes": "Printed total +26",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "kpl": {
+        "ability": "int",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 18,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 19,
+        "notes": "Printed total +19",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "lis": {
+        "ability": "wis",
+        "abilityModifier": 2,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 18,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 20,
+        "notes": "Printed total +20",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "rid": {
+        "ability": "dex",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 19,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 20,
+        "notes": "Printed total +20",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spt": {
+        "ability": "wis",
+        "abilityModifier": 2,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 18,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 20,
+        "notes": "Printed total +20",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "src": {
+        "ability": "int",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 18,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 19,
+        "notes": "Printed total +19",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "sur": {
+        "ability": "wis",
+        "abilityModifier": 2,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 18,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 20,
+        "notes": "Printed total +20",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "swm": {
+        "ability": "str",
+        "abilityModifier": 11,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 8,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 19,
+        "notes": "Printed total +19",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "lg",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Blindsight 60 ft., darkvision 60 ft., damage reduction 12/good, rage, demon traits",
+      "size": "lg",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

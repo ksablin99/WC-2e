@@ -1,0 +1,84 @@
+{
+  "_embedded": {
+    "pages": [
+      {
+        "_id": "729583c1bbf53409",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "category": null,
+        "flags": {
+          "warcraftrpg2e": {
+            "source": {
+              "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+              "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+              "section": "Private-use implementation policy",
+              "verification": "implementation-summary"
+            }
+          }
+        },
+        "image": {},
+        "name": "Faith and Affiliation",
+        "ownership": {
+          "default": -1
+        },
+        "sort": 0,
+        "src": null,
+        "system": {},
+        "text": {
+          "content": "<p>Actors can record faith, affiliation, and affiliation rating. These values are descriptive unless a feature explicitly consumes them. First-impression and situational social modifiers remain a GM-applied adjustment until target-aware social-roll integration is completed.</p>",
+          "format": 1
+        },
+        "title": {
+          "level": 1,
+          "show": false
+        },
+        "type": "text",
+        "video": {
+          "controls": true,
+          "volume": 0.5
+        }
+      }
+    ]
+  },
+  "_id": "1f898d97dcad19f8",
+  "_stats": {
+    "compendiumSource": null,
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "lastModifiedBy": null,
+    "modifiedTime": null,
+    "systemId": null,
+    "systemVersion": null
+  },
+  "categories": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "section": "Private-use implementation policy",
+        "verification": "implementation-summary"
+      }
+    }
+  },
+  "folder": null,
+  "name": "Faith and Affiliation",
+  "ownership": {
+    "default": 0
+  },
+  "pages": [
+    "729583c1bbf53409"
+  ],
+  "sort": 0
+}

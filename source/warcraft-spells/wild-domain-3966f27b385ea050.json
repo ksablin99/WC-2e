@@ -1,0 +1,348 @@
+{
+  "_embedded": {},
+  "_id": "3966f27b385ea050",
+  "_stats": {
+    "compendiumSource": null,
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "lastModifiedBy": null,
+    "modifiedTime": null,
+    "systemId": null,
+    "systemVersion": null
+  },
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "domain": {
+        "generated": true,
+        "parentClass": "Healer",
+        "spellCount": 9,
+        "status": "linked-content-manual-access-rules"
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          273,
+          274,
+          275
+        ],
+        "printedPages": [
+          271,
+          272,
+          273
+        ],
+        "section": "Wild Domain",
+        "verification": "text+spell-list"
+      }
+    }
+  },
+  "folder": null,
+  "img": "systems/warcraftrpg2e/icons/spells/domain/animal.png",
+  "name": "Wild Domain",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "ability": {
+      "attack": null,
+      "critMult": 2,
+      "critRange": 20,
+      "damage": null,
+      "damageMult": 1,
+      "twoHandedOnly": false,
+      "vsTouchAc": false
+    },
+    "abilityType": "",
+    "actionType": "",
+    "activateActions": [],
+    "activation": {
+      "cost": 1,
+      "type": ""
+    },
+    "addedLevel": 0,
+    "associations": {
+      "classes": []
+    },
+    "attack": {
+      "parts": []
+    },
+    "attackBonus": "",
+    "attackCountFormula": "",
+    "attackNotes": "",
+    "attackParts": [],
+    "autoscaleAttackParts": "",
+    "baseCl": "0",
+    "changeFlags": {
+      "heavyArmorFullSpeed": false,
+      "loseDexToAC": false,
+      "mediumArmorFullSpeed": false,
+      "multiAttack": false,
+      "multiweaponAttack": false,
+      "noCon": false,
+      "noDex": false,
+      "noEncumbrance": false,
+      "noInt": false,
+      "noStr": false,
+      "oneCha": false,
+      "oneInt": false,
+      "oneWis": false,
+      "uncannyDodge": false
+    },
+    "changes": [],
+    "classSource": "",
+    "combatChangeCustomDisplayName": "",
+    "combatChangeCustomReferenceName": "",
+    "combatChanges": [],
+    "combatChangesAdditionalRanges": {
+      "hasAdditionalRanges": false,
+      "slider1": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      },
+      "slider2": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      },
+      "slider3": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      }
+    },
+    "combatChangesApplySpecialActionsOnce": true,
+    "combatChangesRange": {
+      "max": 0,
+      "maxFormula": ""
+    },
+    "combatChangesUsesCost": "chargesPerUse",
+    "conditionals": [],
+    "conditionFlags": {
+      "dazzled": false,
+      "polymorphed": false,
+      "wildshaped": false
+    },
+    "container": "None",
+    "containerWeightless": false,
+    "contextNotes": [],
+    "counterName": "",
+    "createdBy": "",
+    "creationChanges": [],
+    "critConfirmBonus": "",
+    "crOffset": "",
+    "customAttributes": {},
+    "customAttributesLocked": false,
+    "customTag": "",
+    "damage": {
+      "alternativeParts": [],
+      "parts": []
+    },
+    "damageReduction": [],
+    "deactivateActions": [],
+    "description": {
+      "chat": "",
+      "unidentified": "",
+      "value": "<p>Lesser: +10-foot speed in animal form. Greater: once/day natural weapons gain Spirit modifier to attack/damage and count as magical for half druid level rounds.</p><p>Domain spells are linked below. Full situational details remain in the private core rulebook.</p>"
+    },
+    "duration": {
+      "units": "",
+      "value": null
+    },
+    "effectNotes": "",
+    "epic": "",
+    "favorite": false,
+    "featType": "spellSpecialization",
+    "formula": "",
+    "identifiedName": "Wild Domain",
+    "index": {
+      "subType": "spellSpecialization",
+      "uniqueId": "wc-domain-wild"
+    },
+    "linkedChargeItem": {
+      "id": null,
+      "img": null,
+      "name": null
+    },
+    "linkedItems": [],
+    "linkId": "",
+    "linkImported": false,
+    "links": {
+      "charges": []
+    },
+    "linkSourceId": "",
+    "linkSourceName": "",
+    "maxDamageDice": 0,
+    "maxDamageDiceFormula": "",
+    "measureTemplate": {
+      "customColor": "",
+      "customTexture": "",
+      "overrideColor": false,
+      "overrideTexture": false,
+      "size": 0,
+      "type": ""
+    },
+    "metamagic": {
+      "code": "",
+      "enabled": false,
+      "shortDesc": ""
+    },
+    "metamagicFeats": {
+      "empowered": false,
+      "enhanced": false,
+      "enhancedHalf": false,
+      "enlarged": false,
+      "intensified": false,
+      "maximized": false,
+      "widened": false
+    },
+    "nameFormula": "",
+    "nameFromFormula": false,
+    "originId": "3966f27b385ea050",
+    "originPack": "warcraftrpg2e.warcraft-spells",
+    "originVersion": 99,
+    "possibleUpdate": false,
+    "pr": false,
+    "psionic": "",
+    "range": {
+      "long": null,
+      "units": "",
+      "value": null
+    },
+    "recharge": {
+      "_deprecated": true,
+      "charged": false,
+      "current": 0,
+      "enabled": false,
+      "formula": "",
+      "value": null
+    },
+    "requirements": [],
+    "requiresPsionicFocus": false,
+    "resistances": [],
+    "rollTableDraw": {
+      "formula": "",
+      "id": "",
+      "name": "",
+      "pack": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": 0,
+      "dcAutoAbility": "",
+      "dcAutoType": "",
+      "description": "",
+      "originVersion": 97,
+      "type": ""
+    },
+    "senses": {
+      "blindsight": 0,
+      "darkvision": 0,
+      "lowLight": false,
+      "lowLightMultiplier": 2,
+      "tremorsense": 0,
+      "truesight": 0
+    },
+    "showInQuickbar": false,
+    "sizeOverride": "",
+    "source": "World of Warcraft RPG, 2nd Edition, pp. 271-273",
+    "specialActions": [],
+    "spellSpecialization": {
+      "isDomain": true,
+      "spells": {
+        "level1": {
+          "id": "5b828c1e2793e1a9",
+          "img": "icons/svg/target.svg",
+          "level": 1,
+          "name": "Roar",
+          "pack": "warcraftrpg2e.warcraft-spells"
+        },
+        "level2": {
+          "id": "ab73354ae34c8509",
+          "img": "icons/svg/target.svg",
+          "level": 2,
+          "name": "Moonfire",
+          "pack": "warcraftrpg2e.warcraft-spells"
+        },
+        "level3": {
+          "id": "c9405d7828d347f7",
+          "img": "icons/svg/target.svg",
+          "level": 3,
+          "name": "Entangling Roots",
+          "pack": "warcraftrpg2e.warcraft-spells"
+        },
+        "level4": {
+          "id": "d8ef4e0a7635f611",
+          "img": "icons/svg/target.svg",
+          "level": 4,
+          "name": "Mark of the Wild",
+          "pack": "warcraftrpg2e.warcraft-spells"
+        },
+        "level5": {
+          "id": "3aa50a67620d59f7",
+          "img": "systems/warcraftrpg2e/icons/spells/named-spells/wall-of-thorns.png",
+          "level": 5,
+          "name": "Wall of Thorns",
+          "pack": "warcraftrpg2e.warcraft-spells"
+        },
+        "level6": {
+          "id": "aeeae6169b0c14a9",
+          "img": "icons/svg/target.svg",
+          "level": 6,
+          "name": "Force of Nature",
+          "pack": "warcraftrpg2e.warcraft-spells"
+        },
+        "level7": {
+          "id": "1532dbb6095a1ec0",
+          "img": "systems/warcraftrpg2e/icons/spells/named-spells/animate-plants.png",
+          "level": 7,
+          "name": "Animate Plants",
+          "pack": "warcraftrpg2e.warcraft-spells"
+        },
+        "level8": {
+          "id": "08571e1c4f021841",
+          "img": "systems/warcraftrpg2e/icons/spells/named-spells/control-plants.png",
+          "level": 8,
+          "name": "Control Plants",
+          "pack": "warcraftrpg2e.warcraft-spells"
+        },
+        "level9": {
+          "id": "29bcd0efe52c5951",
+          "img": "systems/warcraftrpg2e/icons/spells/named-spells/shambler.png",
+          "level": 9,
+          "name": "Shambler",
+          "pack": "warcraftrpg2e.warcraft-spells"
+        }
+      }
+    },
+    "spellSpecializationForbiddenNames": "",
+    "spellSpecializationName": "wild",
+    "sr": false,
+    "summon": [],
+    "tags": [],
+    "target": {
+      "value": ""
+    },
+    "uniqueId": "wc-domain-wild",
+    "userNonRemovable": false,
+    "uses": {
+      "allowMultipleUses": false,
+      "autoDeductCharges": true,
+      "canBeLinked": false,
+      "chargesPerUse": 1,
+      "isResource": false,
+      "max": 0,
+      "maxFormula": "",
+      "maxPerUse": null,
+      "maxPerUseFormula": "",
+      "per": null,
+      "rechargeFormula": null,
+      "value": 0
+    }
+  },
+  "type": "feat"
+}

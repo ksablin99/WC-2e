@@ -1,0 +1,862 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "13dc4128ea0546d4",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 2,
+                "die": 8,
+                "expression": "2d8",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Monstrous Humanoid Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "high",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "9",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "2",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "15",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "11",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "14",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "0",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "4",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "4",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "10",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "80",
+              "speed",
+              "flySpeed",
+              "base-replace"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "monstrousHumanoid",
+          "damageReduction": [],
+          "hd": 8,
+          "hp": 0,
+          "levels": 2,
+          "maxLevel": 50,
+          "resistances": [],
+          "savingThrows": {
+            "fort": {
+              "value": "low"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "high"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 87"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "5e9ea8f5b1ec73c8",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                2
+              ],
+              "printedDamage": "1d3"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Claw",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "0",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Claw",
+          "damage": {
+            "parts": [
+              [
+                "1d3",
+                "Piercing or Slashing",
+                "damage-piercing-or-slashing"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Claw +2 melee (1d3).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "d87272344622db73",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                3
+              ],
+              "printedDamage": "1d6"
+            },
+            "reference": {
+              "id": "612be86e7f7ad024",
+              "name": "Javelin",
+              "pack": "warcraftrpg2e.warcraft-equipment"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Javelin",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "rwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "1",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "javelin",
+          "damage": {
+            "parts": [
+              [
+                "1d6",
+                "Piercing",
+                "damage-piercing"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> javelin +3 ranged (1d6).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "802232298db1a7e1",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                -3
+              ],
+              "printedDamage": "1d4"
+            },
+            "reference": {
+              "id": "73fa54d8379001bb",
+              "name": "Dagger",
+              "pack": "warcraftrpg2e.warcraft-equipment"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Dagger",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "-5",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "dagger",
+          "damage": {
+            "parts": [
+              [
+                "1d4",
+                "Piercing or Slashing",
+                "damage-piercing-or-slashing"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> dagger -3 melee (1d4).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "278c5bdd1f80b2f4",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack - 2 claws and dagger",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 2,
+              "id": "5e9ea8f5b1ec73c8",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Claw",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "802232298db1a7e1",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Dagger",
+              "primary": true
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> 2 claws +2/+2 melee (1d3) and dagger -3 melee (1d4).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "5428ea157e738287",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack - javelin",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "d87272344622db73",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Javelin",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> javelin +3 ranged (1d6).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "1cf4ceecf37d76bc",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Darkvision 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                87
+              ],
+              "section": "Harpy"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Darkvision 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Darkvision 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 87",
+          "uniqueId": "wc-monster-harpy-darkvision-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e89a28bca9f2cd0b",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Medium Monstrous Humanoid; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "ad1ebed5dc963301",
+              "name": "Monstrous Humanoid Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                87
+              ],
+              "section": "Harpy"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Monstrous Humanoid Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Medium Monstrous Humanoid; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.ad1ebed5dc963301]{Monstrous Humanoid Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 87",
+          "uniqueId": "wc-monster-harpy-monstrous-humanoid-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "4b20ace516e207d8",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 11, Agy 13, Sta 10, Int 9, Spt 12, Cha 8",
+          "Advancement": "",
+          "Alignment": "",
+          "Area": "",
+          "Armor Class": "15 (+1 Agy, +2 natural, +2 leather), touch 11, flat-footed 14",
+          "Attack": "Claw +2 melee (1d3) or javelin +3 ranged (1d6)",
+          "Base Attack/Grapple": "+2/+2",
+          "Challenge Rating": "1",
+          "Environment": "",
+          "Feats": "",
+          "Full Attack": "2 claws +2/+2 melee (1d3) and dagger -3 melee (1d4); or javelin +3 ranged (1d6)",
+          "Hit Dice": "2d8 (9 hp)",
+          "Initiative": "+1",
+          "Level Adjustment": "",
+          "Organization": "",
+          "Saves": "Fort +0, Ref +4, Will +4",
+          "Skills": "A gains racial on not of subtly ability",
+          "Space/Reach": "5 ft./5 ft.",
+          "Special Attacks": "-",
+          "Special Qualities": "Darkvision 60 ft.",
+          "Speed": "10 ft. (2 squares), fly 80 ft. (average)",
+          "Treasure": ""
+        },
+        "rulesCoverage": {
+          "actor-defense": 0,
+          "linked-reference": 1,
+          "manual": 1
+        },
+        "subtypes": []
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          88
+        ],
+        "printedPages": [
+          87
+        ],
+        "section": "Harpy",
+        "verification": "native-text-table+review-override"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "13dc4128ea0546d4",
+    "5e9ea8f5b1ec73c8",
+    "d87272344622db73",
+    "802232298db1a7e1",
+    "278c5bdd1f80b2f4",
+    "5428ea157e738287",
+    "1cf4ceecf37d76bc",
+    "e89a28bca9f2cd0b"
+  ],
+  "name": "Harpy",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -1,
+        "origMod": -1,
+        "origTotal": 8,
+        "penalty": 0,
+        "total": 8,
+        "userPenalty": 0,
+        "value": 8
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 13,
+        "penalty": 0,
+        "total": 13,
+        "userPenalty": 0,
+        "value": 13
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -1,
+        "origMod": -1,
+        "origTotal": 9,
+        "penalty": 0,
+        "total": 9,
+        "userPenalty": 0,
+        "value": 9
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 11,
+        "penalty": 0,
+        "total": 11,
+        "userPenalty": 0,
+        "value": 11
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 12,
+        "penalty": 0,
+        "total": 12,
+        "userPenalty": 0,
+        "value": 12
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 14,
+          "value": 0
+        },
+        "normal": {
+          "total": 15,
+          "value": 0
+        },
+        "touch": {
+          "total": 11,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 2,
+        "nonepic": 2,
+        "total": 2,
+        "value": 0
+      },
+      "cmb": {
+        "total": 2,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "monstrousHumanoid",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 0,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 2,
+        "total": 2
+      },
+      "hp": {
+        "base": 9,
+        "max": 9,
+        "min": -10,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 9
+      },
+      "init": {
+        "bonus": 0,
+        "total": 1,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 2,
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "total": 0
+        },
+        "ref": {
+          "base": 4,
+          "total": 4
+        },
+        "will": {
+          "base": 4,
+          "total": 4
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": null,
+        "darkvision": 60,
+        "lowLight": false,
+        "lowLightMultiplier": null,
+        "tremorsense": null
+      },
+      "speed": {
+        "fly": {
+          "base": 80,
+          "total": 80
+        },
+        "land": {
+          "base": 10,
+          "total": 10
+        }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "",
+      "biography": {
+        "public": "",
+        "value": "<p>Harpy is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 1,
+      "environment": "",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 2,
+        "value": 2
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 2d8 (9 hp)</p><p><strong>Initiative:</strong> +1</p><p><strong>Speed:</strong> 10 ft. (2 squares), fly 80 ft. (average)</p><p><strong>Armor Class:</strong> 15 (+1 Agy, +2 natural, +2 leather), touch 11, flat-footed 14</p><p><strong>Base Attack/Grapple:</strong> +2/+2</p><p><strong>Attack:</strong> Claw +2 melee (1d3) or javelin +3 ranged (1d6)</p><p><strong>Full Attack:</strong> 2 claws +2/+2 melee (1d3) and dagger -3 melee (1d4); or javelin +3 ranged (1d6)</p><p><strong>Space/Reach:</strong> 5 ft./5 ft.</p><p><strong>Special Attacks:</strong> -</p><p><strong>Special Qualities:</strong> Darkvision 60 ft.</p><p><strong>Saves:</strong> Fort +0, Ref +4, Will +4</p><p><strong>Abilities:</strong> Str 11, Agy 13, Sta 10, Int 9, Spt 12, Cha 8</p><p><strong>Skills:</strong> A gains racial on not of subtly ability</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 1,
+      "type": "Monstrous Humanoid"
+    },
+    "skills": {},
+    "traits": {
+      "actualSize": "med",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Darkvision 60 ft.",
+      "size": "med",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

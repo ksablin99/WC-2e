@@ -1,0 +1,1114 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "a0c17a4ce4cd704a",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 1,
+                "die": 8,
+                "expression": "1d8",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Humanoid Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "med",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "7",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "1",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "15",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "13",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "12",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "5",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "5",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "0",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "30",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "humanoid",
+          "damageReduction": [],
+          "hd": 8,
+          "hp": 0,
+          "levels": 1,
+          "maxLevel": 50,
+          "resistances": [
+            [
+              "",
+              "energy-cold",
+              true,
+              false,
+              false
+            ],
+            [
+              "",
+              "energy-fire",
+              false,
+              true,
+              false
+            ]
+          ],
+          "savingThrows": {
+            "fort": {
+              "value": "low"
+            },
+            "ref": {
+              "value": "low"
+            },
+            "will": {
+              "value": "low"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 137"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "fc5512e6a3079a10",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                2
+              ],
+              "printedDamage": "1d8+1/x3"
+            },
+            "reference": {
+              "id": "756a323ae62fcde2",
+              "name": "Spear",
+              "pack": "warcraftrpg2e.warcraft-equipment"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Spear",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 3,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "1",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Spear",
+          "damage": {
+            "parts": [
+              [
+                "1d8+1",
+                "Piercing",
+                "damage-piercing"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Spear +2 melee (1d8+1/x3).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "e678d1999f4349f9",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                5
+              ],
+              "printedDamage": "1d6+1"
+            },
+            "reference": {
+              "id": "612be86e7f7ad024",
+              "name": "Javelin",
+              "pack": "warcraftrpg2e.warcraft-equipment"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Javelin",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "rwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "4",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "javelin",
+          "damage": {
+            "parts": [
+              [
+                "1d6+1",
+                "Piercing",
+                "damage-piercing"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> javelin +5 ranged (1d6+1).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "652153bab95521a6",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack - Spear",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "fc5512e6a3079a10",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Spear",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> Spear +2 melee (1d8+1/x3).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "9f17673453852e08",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack - javelin",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "e678d1999f4349f9",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Javelin",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> javelin +5 ranged (1d6+1).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "6177a8889a1a3da3",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Low-light vision"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                137
+              ],
+              "section": "Ice Troll"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Low-light vision",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Low-light vision.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 137",
+          "uniqueId": "wc-monster-ice-troll-low-light-vision"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "c7708b645267f2e5",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "cold subtype"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                137
+              ],
+              "section": "Ice Troll"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "cold subtype",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> cold subtype.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 137",
+          "uniqueId": "wc-monster-ice-troll-cold-subtype"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "c4fa0884c15be2f0",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "improved rapid healing"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                137
+              ],
+              "section": "Ice Troll"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "improved rapid healing",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> improved rapid healing.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 137",
+          "uniqueId": "wc-monster-ice-troll-improved-rapid-healing"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "7e5d834e510dfc43",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "ice troll traits"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                137
+              ],
+              "section": "Ice Troll"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "ice troll traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> ice troll traits.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 137",
+          "uniqueId": "wc-monster-ice-troll-ice-troll-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "634cbad7b8cfdc24",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Skilled (Jump and Stealth)"
+            },
+            "reference": {
+              "id": "63e93d7c15badc3f",
+              "name": "Skilled",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                137
+              ],
+              "section": "Ice Troll"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Skilled (Jump and Stealth)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Skilled (Jump and Stealth).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.63e93d7c15badc3f]{Skilled}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 137",
+          "uniqueId": "wc-monster-ice-troll-skilled-jump-and-stealth"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "d206da66180e1600",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Medium Humanoid (Cold, Troll); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "401a6a80e9da08df",
+              "name": "Humanoid Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                137
+              ],
+              "section": "Ice Troll"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Humanoid Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Medium Humanoid (Cold, Troll); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.401a6a80e9da08df]{Humanoid Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 137",
+          "uniqueId": "wc-monster-ice-troll-humanoid-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "19d669c409a92402",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Cold subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "75f1d7c62c6febc9",
+              "name": "Cold Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                137
+              ],
+              "section": "Ice Troll"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Cold Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Cold subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.75f1d7c62c6febc9]{Cold Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 137",
+          "uniqueId": "wc-monster-ice-troll-cold-subtype-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "00a2d068fcef5b8f",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Troll subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "f61d168d94459ec0",
+              "name": "Troll Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                137
+              ],
+              "section": "Ice Troll"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Troll Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Troll subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.f61d168d94459ec0]{Troll Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 137",
+          "uniqueId": "wc-monster-ice-troll-troll-subtype-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "fa7ee1d97c6ec29b",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 13, Agy 16, Sta 16, Int 10, Spt 10, Cha 6",
+          "Advancement": "By character class",
+          "Alignment": "Usually chaotic evil",
+          "Area": "Dun Morogh, Zul'Drak",
+          "Armor Class": "15 (+3 Agy, +2 leather), touch 13, flat-footed 12",
+          "Attack": "Spear +2 melee (1d8+1/x3) or javelin +5 ranged (1d6+1)",
+          "Base Attack/Grapple": "+1/+2 enemies.",
+          "Challenge Rating": "1",
+          "Environment": "Cold land",
+          "Feats": "Skilled (Jump and Stealth)",
+          "Full Attack": "Spear +2 melee (1d8+1/x3) or javelin +5 ranged (1d6+1)",
+          "Hit Dice": "1d8+3 (7 hp)",
+          "Initiative": "+3",
+          "Level Adjustment": "Use racial levels",
+          "Organization": "Team (3-6), group (6-12), or raiding party (2-8 ice trolls, 1-4 3rd-level spellcasters, and one 8th-level leader)",
+          "Saves": "Fort +5, Ref +5, Will +0",
+          "Skills": "Balance +5, Jump +5, Stealth +9, Survival +4",
+          "Space/Reach": "5 ft./5 ft.",
+          "Special Attacks": "-",
+          "Special Qualities": "Low-light vision, cold subtype, improved rapid healing, ice troll traits",
+          "Speed": "30 ft. dwarves,",
+          "Treasure": ""
+        },
+        "rulesCoverage": {
+          "actor-defense": 1,
+          "linked-reference": 4,
+          "manual": 3
+        },
+        "subtypes": [
+          "Cold",
+          "Troll"
+        ]
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          138
+        ],
+        "printedPages": [
+          137
+        ],
+        "section": "Ice Troll",
+        "verification": "native-text-table+review-override"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "a0c17a4ce4cd704a",
+    "fc5512e6a3079a10",
+    "e678d1999f4349f9",
+    "652153bab95521a6",
+    "9f17673453852e08",
+    "6177a8889a1a3da3",
+    "c7708b645267f2e5",
+    "c4fa0884c15be2f0",
+    "7e5d834e510dfc43",
+    "634cbad7b8cfdc24",
+    "d206da66180e1600",
+    "19d669c409a92402",
+    "00a2d068fcef5b8f"
+  ],
+  "name": "Ice Troll",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -2,
+        "origMod": -2,
+        "origTotal": 6,
+        "penalty": 0,
+        "total": 6,
+        "userPenalty": 0,
+        "value": 6
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 3,
+        "origMod": 3,
+        "origTotal": 16,
+        "penalty": 0,
+        "total": 16,
+        "userPenalty": 0,
+        "value": 16
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 3,
+        "origMod": 3,
+        "origTotal": 16,
+        "penalty": 0,
+        "total": 16,
+        "userPenalty": 0,
+        "value": 16
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 13,
+        "penalty": 0,
+        "total": 13,
+        "userPenalty": 0,
+        "value": 13
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 12,
+          "value": 0
+        },
+        "normal": {
+          "total": 15,
+          "value": 0
+        },
+        "touch": {
+          "total": 13,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 1,
+        "nonepic": 1,
+        "total": 1,
+        "value": 0
+      },
+      "cmb": {
+        "total": 2,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "humanoid",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 0,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 1,
+        "total": 1
+      },
+      "hp": {
+        "base": 7,
+        "max": 7,
+        "min": -16,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 7
+      },
+      "init": {
+        "bonus": 0,
+        "total": 3,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 0,
+      "savingThrows": {
+        "fort": {
+          "base": 5,
+          "total": 5
+        },
+        "ref": {
+          "base": 5,
+          "total": 5
+        },
+        "will": {
+          "base": 0,
+          "total": 0
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": null,
+        "darkvision": null,
+        "lowLight": true,
+        "lowLightMultiplier": 2,
+        "tremorsense": null
+      },
+      "speed": {
+        "land": {
+          "base": 30,
+          "total": 30
+        }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "Usually chaotic evil",
+      "biography": {
+        "public": "",
+        "value": "<p>Ice Troll is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 1,
+      "environment": "Cold land",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 1,
+        "value": 1
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 1d8+3 (7 hp)</p><p><strong>Initiative:</strong> +3</p><p><strong>Speed:</strong> 30 ft. dwarves,</p><p><strong>Armor Class:</strong> 15 (+3 Agy, +2 leather), touch 13, flat-footed 12</p><p><strong>Base Attack/Grapple:</strong> +1/+2 enemies.</p><p><strong>Attack:</strong> Spear +2 melee (1d8+1/x3) or javelin +5 ranged (1d6+1)</p><p><strong>Full Attack:</strong> Spear +2 melee (1d8+1/x3) or javelin +5 ranged (1d6+1)</p><p><strong>Space/Reach:</strong> 5 ft./5 ft.</p><p><strong>Special Attacks:</strong> -</p><p><strong>Special Qualities:</strong> Low-light vision, cold subtype, improved rapid healing, ice troll traits</p><p><strong>Saves:</strong> Fort +5, Ref +5, Will +0</p><p><strong>Abilities:</strong> Str 13, Agy 16, Sta 16, Int 10, Spt 10, Cha 6</p><p><strong>Skills:</strong> Balance +5, Jump +5, Stealth +9, Survival +4</p><p><strong>Feats:</strong> Skilled (Jump and Stealth)</p><p><strong>Area:</strong> Dun Morogh, Zul&#039;Drak</p><p><strong>Organization:</strong> Team (3-6), group (6-12), or raiding party (2-8 ice trolls, 1-4 3rd-level spellcasters, and one 8th-level leader)</p><p><strong>Advancement:</strong> By character class</p><p><strong>Level Adjustment:</strong> Use racial levels</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 1,
+      "type": "Humanoid"
+    },
+    "skills": {
+      "blc": {
+        "ability": "dex",
+        "abilityModifier": 3,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 2,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 5,
+        "notes": "Printed total +5",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "hid": {
+        "ability": "dex",
+        "abilityModifier": 3,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 6,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 9,
+        "notes": "Printed total +9",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "jmp": {
+        "ability": "str",
+        "abilityModifier": 1,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 4,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 5,
+        "notes": "Printed total +5",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "sur": {
+        "ability": "wis",
+        "abilityModifier": 0,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 4,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 4,
+        "notes": "Printed total +4",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "med",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Low-light vision, cold subtype, improved rapid healing, ice troll traits",
+      "size": "med",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

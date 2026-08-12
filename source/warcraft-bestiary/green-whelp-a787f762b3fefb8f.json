@@ -1,0 +1,3280 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "b04e0739a0c9558e",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 9,
+                "die": 12,
+                "expression": "9d12",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Dragon Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "high",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "67",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "9",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "18",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "10",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "18",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "8",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "6",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "9",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "40",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "60",
+              "speed",
+              "swimSpeed",
+              "base-replace"
+            ],
+            [
+              "150",
+              "speed",
+              "flySpeed",
+              "base-replace"
+            ],
+            [
+              "4",
+              "misc",
+              "init",
+              "untyped"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "dragon",
+          "damageReduction": [
+            [
+              "5",
+              "magic",
+              false
+            ]
+          ],
+          "hd": 12,
+          "hp": 0,
+          "levels": 9,
+          "maxLevel": 50,
+          "resistances": [],
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "high"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 44"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "1067fb55cc8b771f",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                11
+              ],
+              "printedDamage": "1d8+2"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Bite",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "2",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Bite",
+          "damage": {
+            "parts": [
+              [
+                "1d8+2",
+                "Piercing or Bludgeoning",
+                "damage-piercing-bludgeoning"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Bite +11 melee (1d8+2).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "3a8411f582ed3458",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                9
+              ],
+              "printedDamage": "1d6+1"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Claws",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "0",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "claws",
+          "damage": {
+            "parts": [
+              [
+                "1d6+1",
+                "Piercing or Slashing",
+                "damage-piercing-or-slashing"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> claws +9 melee (1d6+1).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "cf22f2fed2f96c34",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                9
+              ],
+              "printedDamage": "1d4+1"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Wings",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "0",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "wings",
+          "damage": {
+            "parts": [
+              [
+                "1d4+1",
+                "Bludgeoning",
+                "damage-bludg"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> wings +9 melee (1d4+1).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "d5b5194a77342c12",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "1067fb55cc8b771f",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Bite",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 2,
+              "id": "3a8411f582ed3458",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Claws",
+              "primary": true
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 2,
+              "id": "cf22f2fed2f96c34",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Wings",
+              "primary": true
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> Bite +11 melee (1d8+2) and 2 claws +9 melee (1d6+1) and 2 wings +9 melee (1d4+1).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_embedded": {},
+        "_id": "dd6a15b4debe9043",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "catalog": {
+              "completeListEntry": true,
+              "generated": true,
+              "status": "srd-mechanics-with-warcraft-header"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 9,
+              "frequency": "day",
+              "kind": "sla",
+              "saveDC": 13,
+              "sourceSpell": {
+                "id": "6c9e77be95d1b0da",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    269,
+                    274,
+                    276,
+                    292
+                  ],
+                  "printedPages": [
+                    267,
+                    272,
+                    274,
+                    290
+                  ],
+                  "section": "Cure Light Wounds",
+                  "verification": "text-extracted-header"
+                }
+              },
+              "uses": 3
+            },
+            "reference": {
+              "id": "6c9e77be95d1b0da",
+              "name": "Cure Light Wounds",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                45
+              ],
+              "printedPages": [
+                44
+              ],
+              "section": "Green Whelp",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Cure Light Wounds (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "heal",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": false,
+          "autoscaleAttackParts": "",
+          "baseCl": "9",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "combatChanges": [],
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": [
+              [
+                "1d8+min(5,@cl)",
+                "positive energy"
+              ]
+            ]
+          },
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>Cures 1d8 damage +1/</p><hr><p><strong>Green Whelp spell-like ability:</strong> 3/day; caster level 9; save DC 13 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "Touch",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Cure Light Wounds (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Healer",
+                1
+              ],
+              [
+                "Paladin",
+                1
+              ]
+            ],
+            "domain": [
+              [
+                "Healing",
+                1
+              ]
+            ],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 1,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": ""
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 0,
+            "type": ""
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "6c9e77be95d1b0da",
+          "originPack": "warcraftrpg2e.warcraft-spells",
+          "originVersion": 108,
+          "possibleUpdate": false,
+          "powerPointsCost": 0,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 3,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 3
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "touch",
+            "value": null
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requiresPsionicFocus": false,
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "13",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "Will half (harmless); see text",
+            "originVersion": 97,
+            "type": "willhalf"
+          },
+          "school": "con",
+          "shortDescription": "<p>Cures 1d8 damage +1/</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "Cures 1d8 damage +1/",
+          "source": "World of Warcraft: Monster Guide, p. 44",
+          "specialActions": [],
+          "specialId": null,
+          "specialPrepared": true,
+          "spellArea": "",
+          "spellbook": "spelllike",
+          "spellDuration": "Instantaneous",
+          "spellDurationData": {
+            "units": "inst",
+            "value": null
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": true,
+          "subschool": "healing",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "Creature touched"
+          },
+          "types": "",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 3,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "day",
+            "rechargeFormula": null,
+            "value": 3
+          },
+          "warcraftManualPolicy": {
+            "mode": "srd-baseline",
+            "reason": "The inherited SRD implementation is used with the Warcraft list assignment and spell level."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_embedded": {},
+        "_id": "56113fef98a31d99",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "catalog": {
+              "completeListEntry": true,
+              "generated": true,
+              "status": "manual-effect-pending-verification"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 9,
+              "frequency": "day",
+              "kind": "sla",
+              "saveDC": 15,
+              "sourceSpell": {
+                "id": "c9405d7828d347f7",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    271,
+                    275,
+                    302
+                  ],
+                  "printedPages": [
+                    269,
+                    273,
+                    300
+                  ],
+                  "section": "Entangling Roots",
+                  "verification": "text-extracted-header"
+                }
+              },
+              "uses": 3
+            },
+            "reference": {
+              "id": "c9405d7828d347f7",
+              "name": "Entangling Roots",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                45
+              ],
+              "printedPages": [
+                44
+              ],
+              "section": "Green Whelp",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Entangling Roots (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "max(min(5,ceil(@cl/2)),1)",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": false,
+          "autoscaleAttackParts": "",
+          "baseCl": "9",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "combatChanges": [],
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": []
+          },
+          "damageReduction": [],
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>Grass and weeds entangle</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p><hr><p><strong>Green Whelp spell-like ability:</strong> 3/day; caster level 9; save DC 15 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "Medium (100 ft. + 10 ft./level)",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Entangling Roots (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Druid",
+                3
+              ]
+            ],
+            "domain": [
+              [
+                "Wild",
+                3
+              ]
+            ],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 3,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": ""
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 0,
+            "type": ""
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "c9405d7828d347f7",
+          "originPack": "warcraftrpg2e.warcraft-spells",
+          "originVersion": 109,
+          "possibleUpdate": false,
+          "powerPointsCost": 1,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 3,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 3
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "medium",
+            "value": null
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requiresPsionicFocus": false,
+          "resistances": [],
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "15",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "Reflex negates",
+            "originVersion": 97,
+            "type": "reflexnegates"
+          },
+          "school": "trs",
+          "shortDescription": "<p>Grass and weeds entangle</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "Grass and weeds entangle",
+          "source": "World of Warcraft: Monster Guide, p. 44",
+          "specialActions": [],
+          "specialId": null,
+          "specialPrepared": true,
+          "spellArea": "",
+          "spellbook": "spelllike",
+          "spellDuration": "1 round/level (D)",
+          "spellDurationData": {
+            "units": "roundPerLevel",
+            "value": 1
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": false,
+          "subschool": "",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "One creature"
+          },
+          "types": "force",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 3,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "day",
+            "rechargeFormula": null,
+            "value": 3
+          },
+          "warcraftManualPolicy": {
+            "mode": "manual",
+            "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_embedded": {},
+        "_id": "c9dc919d579cf0d4",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "catalog": {
+              "completeListEntry": true,
+              "generated": true,
+              "status": "manual-effect-pending-verification"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 9,
+              "frequency": "day",
+              "kind": "sla",
+              "saveDC": 13,
+              "sourceSpell": {
+                "id": "5b828c1e2793e1a9",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    270,
+                    272,
+                    275,
+                    335
+                  ],
+                  "printedPages": [
+                    268,
+                    270,
+                    273,
+                    333
+                  ],
+                  "section": "Roar",
+                  "verification": "text-extracted-header"
+                }
+              },
+              "uses": 3
+            },
+            "reference": {
+              "id": "5b828c1e2793e1a9",
+              "name": "Roar",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                45
+              ],
+              "printedPages": [
+                44
+              ],
+              "section": "Green Whelp",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Roar (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "max(min(5,ceil(@cl/2)),1)",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": false,
+          "autoscaleAttackParts": "",
+          "baseCl": "9",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "combatChanges": [],
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": []
+          },
+          "damageReduction": [],
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>Your great roar gives allies +1 morale</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p><hr><p><strong>Green Whelp spell-like ability:</strong> 3/day; caster level 9; save DC 13 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Roar (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Druid",
+                1
+              ],
+              [
+                "Shaman",
+                1
+              ]
+            ],
+            "domain": [
+              [
+                "Wild",
+                1
+              ]
+            ],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 1,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": ""
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 0,
+            "type": ""
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "5b828c1e2793e1a9",
+          "originPack": "warcraftrpg2e.warcraft-spells",
+          "originVersion": 109,
+          "possibleUpdate": false,
+          "powerPointsCost": 1,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 3,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 3
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "medium",
+            "value": null
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requiresPsionicFocus": false,
+          "resistances": [],
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "13",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "None",
+            "originVersion": 97,
+            "type": ""
+          },
+          "school": "enc",
+          "shortDescription": "<p>Your great roar gives allies +1 morale</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "Your great roar gives allies +1 morale",
+          "source": "World of Warcraft: Monster Guide, p. 44",
+          "specialActions": [],
+          "specialId": null,
+          "specialPrepared": true,
+          "spellArea": "All",
+          "spellbook": "spelllike",
+          "spellDuration": "1 round/level",
+          "spellDurationData": {
+            "units": "roundPerLevel",
+            "value": 1
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": true,
+          "subschool": "",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "All"
+          },
+          "types": "force",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 3,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "day",
+            "rechargeFormula": null,
+            "value": 3
+          },
+          "warcraftManualPolicy": {
+            "mode": "manual",
+            "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_embedded": {},
+        "_id": "2a2b4192b4f7524b",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "catalog": {
+              "completeListEntry": true,
+              "generated": true,
+              "status": "srd-mechanics-with-warcraft-header"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 9,
+              "frequency": "day",
+              "kind": "sla",
+              "saveDC": 13,
+              "sourceSpell": {
+                "id": "277ad16b56065f1a",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    270,
+                    273,
+                    287
+                  ],
+                  "printedPages": [
+                    268,
+                    271,
+                    285
+                  ],
+                  "section": "Charm Animal",
+                  "verification": "text-extracted-header"
+                }
+              },
+              "uses": 2
+            },
+            "reference": {
+              "id": "277ad16b56065f1a",
+              "name": "Charm Animal",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                45
+              ],
+              "printedPages": [
+                44
+              ],
+              "section": "Green Whelp",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Charm Animal (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "special",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "",
+          "attackNotes": "If the animal is currently being threatened or attacked by you or your allies, it receives a +5 bonus on its saving throw.",
+          "attackParts": [],
+          "atWill": false,
+          "autoscaleAttackParts": "",
+          "baseCl": "9",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "combatChanges": [],
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "creationChanges": [],
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": []
+          },
+          "damageReduction": [],
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>Makes one animal your friend.</p><hr><p><strong>Green Whelp spell-like ability:</strong> 2/day; caster level 9; save DC 13 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Charm Animal (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Druid",
+                1
+              ]
+            ],
+            "domain": [
+              [
+                "Animal",
+                1
+              ]
+            ],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 1,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": ""
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 0,
+            "type": ""
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "277ad16b56065f1a",
+          "originPack": "warcraftrpg2e.warcraft-spells",
+          "originVersion": 108,
+          "perRoundActions": [],
+          "possibleUpdate": false,
+          "powerPointsCost": 1,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 2,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 2
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "close",
+            "value": null
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requirements": [],
+          "requiresPsionicFocus": false,
+          "resistances": [],
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "13",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "Will negates",
+            "originVersion": 97,
+            "type": "willnegates"
+          },
+          "school": "enc",
+          "shortDescription": "<p>Makes one animal your friend.</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "Makes one animal your friend.",
+          "source": "World of Warcraft: Monster Guide, p. 44",
+          "specialActions": [],
+          "specialId": null,
+          "specialPrepared": true,
+          "spellArea": "",
+          "spellbook": "spelllike",
+          "spellDuration": "One day/level",
+          "spellDurationData": {
+            "units": "day",
+            "value": 1
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": true,
+          "subschool": "charm",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "One living creature"
+          },
+          "types": "mind-affecting",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 2,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "day",
+            "rechargeFormula": null,
+            "value": 2
+          },
+          "warcraftManualPolicy": {
+            "mode": "srd-baseline-with-manual-boundary",
+            "reason": "SRD mechanics are retained, but Warcraft-specific creatures, forms, slot manipulation, or persistent cross-actor state require GM adjudication."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_embedded": {},
+        "_id": "c1020b2c92f2d281",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "catalog": {
+              "completeListEntry": true,
+              "generated": true,
+              "status": "srd-mechanics-with-warcraft-header"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 9,
+              "frequency": "day",
+              "kind": "sla",
+              "saveDC": 17,
+              "sourceSpell": {
+                "id": "ca85281b11307684",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    271,
+                    272,
+                    288
+                  ],
+                  "printedPages": [
+                    269,
+                    270,
+                    286
+                  ],
+                  "section": "Commune with Nature",
+                  "verification": "text-extracted-header"
+                }
+              },
+              "uses": 1
+            },
+            "reference": {
+              "id": "ca85281b11307684",
+              "name": "Commune with Nature",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                45
+              ],
+              "printedPages": [
+                44
+              ],
+              "section": "Green Whelp",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Commune with Nature (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "other",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": false,
+          "autoscaleAttackParts": "",
+          "baseCl": "9",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "combatChanges": [],
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": []
+          },
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>You learn about terrain for</p><hr><p><strong>Green Whelp spell-like ability:</strong> 1/day; caster level 9; save DC 17 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "Personal",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Commune with Nature (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Druid",
+                5
+              ],
+              [
+                "Shaman",
+                5
+              ]
+            ],
+            "domain": [],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 5,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": ""
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 0,
+            "type": ""
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "ca85281b11307684",
+          "originPack": "warcraftrpg2e.warcraft-spells",
+          "originVersion": 108,
+          "possibleUpdate": false,
+          "powerPointsCost": 0,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 1,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 1
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "personal",
+            "value": null
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requiresPsionicFocus": false,
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "17",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "",
+            "originVersion": 97,
+            "type": ""
+          },
+          "school": "div",
+          "shortDescription": "<p>You learn about terrain for</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "You learn about terrain for",
+          "source": "World of Warcraft: Monster Guide, p. 44",
+          "specialActions": [],
+          "specialId": null,
+          "specialPrepared": true,
+          "spellArea": "",
+          "spellbook": "spelllike",
+          "spellDuration": "Instantaneous",
+          "spellDurationData": {
+            "units": "inst",
+            "value": null
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": false,
+          "subschool": "",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "You"
+          },
+          "types": "",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 1,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "day",
+            "rechargeFormula": null,
+            "value": 1
+          },
+          "warcraftManualPolicy": {
+            "mode": "srd-baseline",
+            "reason": "The inherited SRD implementation is used with the Warcraft list assignment and spell level."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_id": "69b3b0baa0da76ef",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "Breath weapon 4d6 acid (DC 15)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                44
+              ],
+              "section": "Green Whelp"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Breath weapon 4d6 acid",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Breath weapon 4d6 acid (DC 15).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 44",
+          "uniqueId": "wc-monster-green-whelp-breath-weapon-4d6-acid"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "df42dbccd6b738f8",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Special Attack",
+              "raw": "spell-like abilities"
+            },
+            "reference": {
+              "id": "9072eee87e2208d9",
+              "name": "Spell-Like Abilities Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                44
+              ],
+              "section": "Green Whelp"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "spell-like abilities",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> spell-like abilities.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.9072eee87e2208d9]{Spell-Like Abilities Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 44",
+          "uniqueId": "wc-monster-green-whelp-spell-like-abilities"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "2474d131e285b757",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Blindsense 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                44
+              ],
+              "section": "Green Whelp"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Blindsense 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Blindsense 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 44",
+          "uniqueId": "wc-monster-green-whelp-blindsense-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "337f325a4a17e211",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "darkvision 120 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                44
+              ],
+              "section": "Green Whelp"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "darkvision 120 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> darkvision 120 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 44",
+          "uniqueId": "wc-monster-green-whelp-darkvision-120-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "21abc91d62d94f5d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "low-light vision"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                44
+              ],
+              "section": "Green Whelp"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "low-light vision",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> low-light vision.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 44",
+          "uniqueId": "wc-monster-green-whelp-low-light-vision"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e93f0fb2f6201141",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "boundless mind"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                44
+              ],
+              "section": "Green Whelp"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "boundless mind",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> boundless mind.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 44",
+          "uniqueId": "wc-monster-green-whelp-boundless-mind"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "01f2f1b0e7b6cced",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "damage reduction 5/magic"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                44
+              ],
+              "section": "Green Whelp"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "damage reduction 5/magic",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> damage reduction 5/magic.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 44",
+          "uniqueId": "wc-monster-green-whelp-damage-reduction-5-magic"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "ba814942f28c49e7",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "immunity to paralysis and sleep"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                44
+              ],
+              "section": "Green Whelp"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "immunity to paralysis and sleep",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> immunity to paralysis and sleep.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 44",
+          "uniqueId": "wc-monster-green-whelp-immunity-to-paralysis-and-sleep"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "fa57d7e44fd681ce",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "immunity to poison"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                44
+              ],
+              "section": "Green Whelp"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "immunity to poison",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> immunity to poison.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 44",
+          "uniqueId": "wc-monster-green-whelp-immunity-to-poison"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "0766351a9e67430c",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Blind-Fight"
+            },
+            "reference": {
+              "id": "5f81db4e1389ce23",
+              "name": "Blind-Fight",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                44
+              ],
+              "section": "Green Whelp"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Blind-Fight",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Blind-Fight.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.5f81db4e1389ce23]{Blind-Fight}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 44",
+          "uniqueId": "wc-monster-green-whelp-blind-fight"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "ebe35e1bbda2a9ac",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Initiative"
+            },
+            "reference": {
+              "id": "3232602c102e0494",
+              "name": "Improved Initiative",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                44
+              ],
+              "section": "Green Whelp"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Initiative",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Initiative.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.3232602c102e0494]{Improved Initiative}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 44",
+          "uniqueId": "wc-monster-green-whelp-improved-initiative"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "387348031ec50588",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Multiattack"
+            },
+            "reference": {
+              "id": "4b2ed70fb66b7ceb",
+              "name": "Multiattack",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                44
+              ],
+              "section": "Green Whelp"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Multiattack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Multiattack.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.4b2ed70fb66b7ceb]{Multiattack}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 44",
+          "uniqueId": "wc-monster-green-whelp-multiattack"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "9bb242e128526d34",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Skilled (Listen and Spot)"
+            },
+            "reference": {
+              "id": "63e93d7c15badc3f",
+              "name": "Skilled",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                44
+              ],
+              "section": "Green Whelp"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Skilled (Listen and Spot)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Skilled (Listen and Spot).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.63e93d7c15badc3f]{Skilled}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 44",
+          "uniqueId": "wc-monster-green-whelp-skilled-listen-and-spot"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "ecc637a266786d3f",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Medium Dragon (Air); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "b7f193113dd68652",
+              "name": "Dragon Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                44
+              ],
+              "section": "Green Whelp"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Dragon Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Medium Dragon (Air); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.b7f193113dd68652]{Dragon Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 44",
+          "uniqueId": "wc-monster-green-whelp-dragon-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "6111a26007512fd9",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Air subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "268922696b9a153b",
+              "name": "Air Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                44
+              ],
+              "section": "Green Whelp"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Air Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Air subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.268922696b9a153b]{Air Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 44",
+          "uniqueId": "wc-monster-green-whelp-air-subtype-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "a787f762b3fefb8f",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": {
+          "regularSpells": 0,
+          "slaExecutable": 5,
+          "slaManual": 0
+        },
+        "rawFields": {
+          "Abilities": "Str 15, Agy 10, Sta 13, Int 12, Spt 17, Cha 14",
+          "Advancement": "10-23 HD (Large) or by character class",
+          "Alignment": "Usually neutral good",
+          "Area": "Any",
+          "Armor Class": "18 (+8 natural), touch 10, flat-footed 18",
+          "Attack": "Bite +11 melee (1d8+2)",
+          "Base Attack/Grapple": "+9/+11",
+          "Challenge Rating": "5",
+          "Environment": "Temperate land",
+          "Feats": "Blind-Fight, Improved Initiative, Multiattack, Skilled (Listen and Spot)",
+          "Full Attack": "Bite +11 melee (1d8+2) and 2 claws +9 melee (1d6+1) and 2 wings +9 melee (1d4+1)",
+          "Hit Dice": "9d12+9 (67 hp)",
+          "Initiative": "+4",
+          "Level Adjustment": "+4",
+          "Organization": "Solitary or clutch (2-5)",
+          "Saves": "Fort +8, Ref +6, Will +9",
+          "Skills": "Appraise +3, Concentration +7, Craft (alchemy) +7, Decipher Script +7, Gather Information +8, Heal +9, Intimidate +8, Jump +8, Knowledge (arcana) +3, Knowledge (nature) +9, Listen +9, Search +7, Spellcraft +5, Spot +9, Survival +7, Swim +14",
+          "Space/Reach": "5 ft./5 ft.",
+          "Special Attacks": "Breath weapon 4d6 acid (DC 15), spell-like abilities",
+          "Special Qualities": "Blindsense 60 ft., darkvision 120 ft., low-light vision, boundless mind, damage reduction 5/magic, immunity to paralysis and sleep, immunity to poison",
+          "Speed": "40 ft. (8 squares), fly 150 ft. (poor), swim 60 ft.",
+          "Treasure": "Double standard"
+        },
+        "rulesCoverage": {
+          "actor-defense": 3,
+          "linked-reference": 7,
+          "manual": 5
+        },
+        "subtypes": [
+          "Air"
+        ]
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          45
+        ],
+        "printedPages": [
+          44
+        ],
+        "section": "Green Whelp",
+        "verification": "native-text-table"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "b04e0739a0c9558e",
+    "1067fb55cc8b771f",
+    "3a8411f582ed3458",
+    "cf22f2fed2f96c34",
+    "d5b5194a77342c12",
+    "dd6a15b4debe9043",
+    "56113fef98a31d99",
+    "c9dc919d579cf0d4",
+    "2a2b4192b4f7524b",
+    "c1020b2c92f2d281",
+    "69b3b0baa0da76ef",
+    "df42dbccd6b738f8",
+    "2474d131e285b757",
+    "337f325a4a17e211",
+    "21abc91d62d94f5d",
+    "e93f0fb2f6201141",
+    "01f2f1b0e7b6cced",
+    "ba814942f28c49e7",
+    "fa57d7e44fd681ce",
+    "0766351a9e67430c",
+    "ebe35e1bbda2a9ac",
+    "387348031ec50588",
+    "9bb242e128526d34",
+    "ecc637a266786d3f",
+    "6111a26007512fd9"
+  ],
+  "name": "Green Whelp",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 2,
+        "origMod": 2,
+        "origTotal": 14,
+        "penalty": 0,
+        "total": 14,
+        "userPenalty": 0,
+        "value": 14
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 13,
+        "penalty": 0,
+        "total": 13,
+        "userPenalty": 0,
+        "value": 13
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 12,
+        "penalty": 0,
+        "total": 12,
+        "userPenalty": 0,
+        "value": 12
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 2,
+        "origMod": 2,
+        "origTotal": 15,
+        "penalty": 0,
+        "total": 15,
+        "userPenalty": 0,
+        "value": 15
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 3,
+        "origMod": 3,
+        "origTotal": 17,
+        "penalty": 0,
+        "total": 17,
+        "userPenalty": 0,
+        "value": 17
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 18,
+          "value": 0
+        },
+        "normal": {
+          "total": 18,
+          "value": 0
+        },
+        "touch": {
+          "total": 10,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 9,
+        "nonepic": 9,
+        "total": 9,
+        "value": 0
+      },
+      "cmb": {
+        "total": 11,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "dragon",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 0,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 9,
+        "total": 9
+      },
+      "hp": {
+        "base": 67,
+        "max": 67,
+        "min": -13,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 67
+      },
+      "init": {
+        "bonus": 0,
+        "total": 4,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 8,
+      "savingThrows": {
+        "fort": {
+          "base": 8,
+          "total": 8
+        },
+        "ref": {
+          "base": 6,
+          "total": 6
+        },
+        "will": {
+          "base": 9,
+          "total": 9
+        }
+      },
+      "senses": {
+        "blindsense": 60,
+        "blindsight": null,
+        "darkvision": 120,
+        "lowLight": true,
+        "lowLightMultiplier": 2,
+        "tremorsense": null
+      },
+      "speed": {
+        "fly": {
+          "base": 150,
+          "total": 150
+        },
+        "land": {
+          "base": 40,
+          "total": 40
+        },
+        "swim": {
+          "base": 60,
+          "total": 60
+        }
+      },
+      "spells": {
+        "spellbooks": {
+          "spelllike": {
+            "ability": "cha",
+            "arcaneSpellFailure": false,
+            "autoSetup": false,
+            "autoSpellLevels": false,
+            "baseDCFormula": "0",
+            "bonusPrestigeCl": 0,
+            "cl": {
+              "base": 9,
+              "formula": "0",
+              "total": 9,
+              "value": 0
+            },
+            "class": "",
+            "clNotes": "",
+            "concentration": 0,
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "dailyPowerPointsFormula": "",
+            "hasSpecialSlot": false,
+            "maximumPowerPointLimit": "@cl",
+            "name": "Spell-like Abilities",
+            "powerPoints": 0,
+            "powerPointsFormula": "",
+            "powerPointsTotal": 0,
+            "preparationMode": "prepared",
+            "repertoireLimitOverride": 0,
+            "repertoireSkill": "spl",
+            "showOnlyPrepared": false,
+            "specialSlotLevel0": false,
+            "specialSlots": {
+              "level0": null,
+              "level1": null,
+              "level2": null,
+              "level3": null,
+              "level4": null,
+              "level5": null,
+              "level6": null,
+              "level7": null,
+              "level8": null,
+              "level9": null
+            },
+            "spellcastingType": "arcane",
+            "spells": {
+              "spell0": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell1": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell2": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell3": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell4": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell5": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell6": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell7": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell8": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell9": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              }
+            },
+            "spellslotAbility": "cha",
+            "spontaneous": false,
+            "usePowerPoints": false,
+            "usesWarcraftSlotPool": false,
+            "warcraftCurrentPath": "",
+            "warcraftParentClass": "",
+            "warcraftPathBonusSlot": false,
+            "warcraftPoolKey": ""
+          }
+        },
+        "warcraftPools": {}
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "Usually neutral good",
+      "biography": {
+        "public": "",
+        "value": "<p>Green Whelp is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 5,
+      "environment": "Temperate land",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 9,
+        "value": 9
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 9d12+9 (67 hp)</p><p><strong>Initiative:</strong> +4</p><p><strong>Speed:</strong> 40 ft. (8 squares), fly 150 ft. (poor), swim 60 ft.</p><p><strong>Armor Class:</strong> 18 (+8 natural), touch 10, flat-footed 18</p><p><strong>Base Attack/Grapple:</strong> +9/+11</p><p><strong>Attack:</strong> Bite +11 melee (1d8+2)</p><p><strong>Full Attack:</strong> Bite +11 melee (1d8+2) and 2 claws +9 melee (1d6+1) and 2 wings +9 melee (1d4+1)</p><p><strong>Space/Reach:</strong> 5 ft./5 ft.</p><p><strong>Special Attacks:</strong> Breath weapon 4d6 acid (DC 15), spell-like abilities</p><p><strong>Special Qualities:</strong> Blindsense 60 ft., darkvision 120 ft., low-light vision, boundless mind, damage reduction 5/magic, immunity to paralysis and sleep, immunity to poison</p><p><strong>Saves:</strong> Fort +8, Ref +6, Will +9</p><p><strong>Abilities:</strong> Str 15, Agy 10, Sta 13, Int 12, Spt 17, Cha 14</p><p><strong>Skills:</strong> Appraise +3, Concentration +7, Craft (alchemy) +7, Decipher Script +7, Gather Information +8, Heal +9, Intimidate +8, Jump +8, Knowledge (arcana) +3, Knowledge (nature) +9, Listen +9, Search +7, Spellcraft +5, Spot +9, Survival +7, Swim +14</p><p><strong>Feats:</strong> Blind-Fight, Improved Initiative, Multiattack, Skilled (Listen and Spot)</p><p><strong>Area:</strong> Any</p><p><strong>Organization:</strong> Solitary or clutch (2-5)</p><p><strong>Treasure:</strong> Double standard</p><p><strong>Advancement:</strong> 10-23 HD (Large) or by character class</p><p><strong>Level Adjustment:</strong> +4</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 5,
+      "type": "Dragon"
+    },
+    "skills": {
+      "apr": {
+        "ability": "int",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 2,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 3,
+        "notes": "Printed total +3",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "coc": {
+        "ability": "con",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 6,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 7,
+        "notes": "Printed total +7",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "crf": {
+        "ability": "int",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": -1,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 0,
+        "notes": "",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "subSkills": {
+          "wc9539a222": {
+            "ability": "int",
+            "abilityModifier": 1,
+            "acp": false,
+            "acpPenalty": 0,
+            "background": false,
+            "changeBonus": 6,
+            "cs": false,
+            "energyDrainPenalty": 0,
+            "mod": 7,
+            "name": "alchemy",
+            "notes": "Printed total +7",
+            "points": 0,
+            "rank": 0,
+            "rt": false,
+            "value": 0,
+            "visibility": "default"
+          }
+        },
+        "value": 0,
+        "visibility": "default"
+      },
+      "dsc": {
+        "ability": "int",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 6,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 7,
+        "notes": "Printed total +7",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "gif": {
+        "ability": "cha",
+        "abilityModifier": 2,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 6,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 8,
+        "notes": "Printed total +8",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "hea": {
+        "ability": "wis",
+        "abilityModifier": 3,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 6,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 9,
+        "notes": "Printed total +9",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "int": {
+        "ability": "cha",
+        "abilityModifier": 2,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 6,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 8,
+        "notes": "Printed total +8",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "jmp": {
+        "ability": "str",
+        "abilityModifier": 2,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 6,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 8,
+        "notes": "Printed total +8",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "kar": {
+        "ability": "int",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 2,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 3,
+        "notes": "Printed total +3",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "kna": {
+        "ability": "int",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 8,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 9,
+        "notes": "Printed total +9",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "lis": {
+        "ability": "wis",
+        "abilityModifier": 3,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 6,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 9,
+        "notes": "Printed total +9",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spl": {
+        "ability": "int",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 4,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 5,
+        "notes": "Printed total +5",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spt": {
+        "ability": "wis",
+        "abilityModifier": 3,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 6,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 9,
+        "notes": "Printed total +9",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "src": {
+        "ability": "int",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 6,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 7,
+        "notes": "Printed total +7",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "sur": {
+        "ability": "wis",
+        "abilityModifier": 3,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 4,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 7,
+        "notes": "Printed total +7",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "swm": {
+        "ability": "str",
+        "abilityModifier": 2,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 12,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 14,
+        "notes": "Printed total +14",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "med",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Blindsense 60 ft., darkvision 120 ft., low-light vision, boundless mind, damage reduction 5/magic, immunity to paralysis and sleep, immunity to poison",
+      "size": "med",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

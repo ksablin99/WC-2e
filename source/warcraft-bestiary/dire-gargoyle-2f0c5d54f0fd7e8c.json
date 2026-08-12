@@ -1,0 +1,1325 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "fc6f153c0d3d751d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 15,
+                "die": 8,
+                "expression": "15d8",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Monstrous Humanoid Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "high",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "112",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "15",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "27",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "14",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "23",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "8",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "13",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "9",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "40",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "60",
+              "speed",
+              "flySpeed",
+              "base-replace"
+            ],
+            [
+              "4",
+              "misc",
+              "init",
+              "untyped"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "monstrousHumanoid",
+          "damageReduction": [
+            [
+              "10",
+              "magic",
+              false
+            ]
+          ],
+          "hd": 8,
+          "hp": 0,
+          "levels": 15,
+          "maxLevel": 50,
+          "resistances": [],
+          "savingThrows": {
+            "fort": {
+              "value": "low"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "high"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 36"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "f36d87f4d6c26ac8",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                21
+              ],
+              "printedDamage": "2d6+6"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Bite",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "6",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Bite",
+          "damage": {
+            "parts": [
+              [
+                "2d6+6",
+                "Piercing or Bludgeoning",
+                "damage-piercing-bludgeoning"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Bite +21 melee (2d6+6).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "d217c54c108c37db",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                18
+              ],
+              "printedDamage": "1d6+3"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Claws",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "3",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "claws",
+          "damage": {
+            "parts": [
+              [
+                "1d6+3",
+                "Piercing or Slashing",
+                "damage-piercing-or-slashing"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> claws +18 melee (1d6+3).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "21b41fcf12505e04",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                18
+              ],
+              "printedDamage": "1d6+3"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Wings",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "3",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "wings",
+          "damage": {
+            "parts": [
+              [
+                "1d6+3",
+                "Bludgeoning",
+                "damage-bludg"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> wings +18 melee (1d6+3).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "3607e53dcf54d2ba",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                18
+              ],
+              "printedDamage": "1d8+3"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Tail",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "3",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "tail",
+          "damage": {
+            "parts": [
+              [
+                "1d8+3",
+                "Bludgeoning",
+                "damage-bludg"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> tail +18 melee (1d8+3).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "1e42ba1928ba6bbd",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "f36d87f4d6c26ac8",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Bite",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 2,
+              "id": "d217c54c108c37db",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Claws",
+              "primary": true
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 2,
+              "id": "21b41fcf12505e04",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Wings",
+              "primary": true
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "3607e53dcf54d2ba",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Tail",
+              "primary": true
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> Bite +21 melee (2d6+6) and 2 claws +18 melee (1d6+3) and 2 wings +18 melee (1d6+3) and tail +18 melee (1d8+3).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "8a6a0fc256c5822a",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "Rend 2d6+6"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                36
+              ],
+              "section": "Dire Gargoyle"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Rend 2d6+6",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Rend 2d6+6.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 36",
+          "uniqueId": "wc-monster-dire-gargoyle-rend-2d6-6"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "badc92b42eb4a8e3",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Darkvision 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                36
+              ],
+              "section": "Dire Gargoyle"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Darkvision 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Darkvision 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 36",
+          "uniqueId": "wc-monster-dire-gargoyle-darkvision-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "da707e51fcf1db59",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "damage reduction 10/magic"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                36
+              ],
+              "section": "Dire Gargoyle"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "damage reduction 10/magic",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> damage reduction 10/magic.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 36",
+          "uniqueId": "wc-monster-dire-gargoyle-damage-reduction-10-magic"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "b21abf472e19e537",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "stone form"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                36
+              ],
+              "section": "Dire Gargoyle"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "stone form",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> stone form.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 36",
+          "uniqueId": "wc-monster-dire-gargoyle-stone-form"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "720db1fd1bf8e1a0",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "vitality"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                36
+              ],
+              "section": "Dire Gargoyle"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "vitality",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> vitality.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 36",
+          "uniqueId": "wc-monster-dire-gargoyle-vitality"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "d5f087c67db31027",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Flyby Attack"
+            },
+            "reference": {
+              "id": "SsqHUJ1AqujhZKeA",
+              "name": "Flyby Attack",
+              "pack": "warcraftrpg2e.feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                36
+              ],
+              "section": "Dire Gargoyle"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Flyby Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Flyby Attack.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.feats.Item.SsqHUJ1AqujhZKeA]{Flyby Attack}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 36",
+          "uniqueId": "wc-monster-dire-gargoyle-flyby-attack"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "c963d408ace9b641",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Hover"
+            },
+            "reference": {
+              "id": "TtrDaEvIWHFY72BE",
+              "name": "Hover",
+              "pack": "warcraftrpg2e.feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                36
+              ],
+              "section": "Dire Gargoyle"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Hover",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Hover.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.feats.Item.TtrDaEvIWHFY72BE]{Hover}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 36",
+          "uniqueId": "wc-monster-dire-gargoyle-hover"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "696a0b513dca4d1a",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Initiative"
+            },
+            "reference": {
+              "id": "3232602c102e0494",
+              "name": "Improved Initiative",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                36
+              ],
+              "section": "Dire Gargoyle"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Initiative",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Initiative.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.3232602c102e0494]{Improved Initiative}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 36",
+          "uniqueId": "wc-monster-dire-gargoyle-improved-initiative"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "bd26a30e920a746b",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Feat",
+              "raw": "Improved Natural Attack (bite)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                36
+              ],
+              "section": "Dire Gargoyle"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Natural Attack (bite)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Natural Attack (bite).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 36",
+          "uniqueId": "wc-monster-dire-gargoyle-improved-natural-attack-bite"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "0f8ccbb4a94dd889",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Multiattack"
+            },
+            "reference": {
+              "id": "4b2ed70fb66b7ceb",
+              "name": "Multiattack",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                36
+              ],
+              "section": "Dire Gargoyle"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Multiattack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Multiattack.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.4b2ed70fb66b7ceb]{Multiattack}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 36",
+          "uniqueId": "wc-monster-dire-gargoyle-multiattack"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "ed52084b727c4a0e",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Wingover"
+            },
+            "reference": {
+              "id": "NcoI24mlbBdFPlJR",
+              "name": "Wingover",
+              "pack": "warcraftrpg2e.feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                36
+              ],
+              "section": "Dire Gargoyle"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Wingover",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Wingover.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.feats.Item.NcoI24mlbBdFPlJR]{Wingover}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 36",
+          "uniqueId": "wc-monster-dire-gargoyle-wingover"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "368dcfaf580cc051",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Medium Monstrous Humanoid; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "ad1ebed5dc963301",
+              "name": "Monstrous Humanoid Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                36
+              ],
+              "section": "Dire Gargoyle"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Monstrous Humanoid Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Medium Monstrous Humanoid; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.ad1ebed5dc963301]{Monstrous Humanoid Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 36",
+          "uniqueId": "wc-monster-dire-gargoyle-monstrous-humanoid-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "2f0c5d54f0fd7e8c",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 22, Agy 19, Sta 16, Int 3, Spt 10, Cha 8",
+          "Advancement": "16-24 HD (Medium); 25-36 HD (Large)",
+          "Alignment": "Usually chaotic evil",
+          "Area": "Eastern Plaguelands, Stratholme",
+          "Armor Class": "27 (+4 Agy, +13 natural), touch 14, flat-footed 23",
+          "Attack": "Bite +21 melee (2d6+6)",
+          "Base Attack/Grapple": "+15/+21",
+          "Challenge Rating": "9",
+          "Environment": "Any land or underground",
+          "Feats": "Flyby Attack*, Hover*, Improved Initiative, Improved Natural Attack† (bite), Multiattack, Wingover*",
+          "Full Attack": "Bite +21 melee (2d6+6) and 2 claws +18 melee (1d6+3) and 2 wings +18 melee (1d6+3) and tail +18 melee (1d8+3)",
+          "Hit Dice": "15d8+45 (112 hp)",
+          "Initiative": "+8",
+          "Level Adjustment": "-",
+          "Organization": "Solitary, pair, or brood (3-12)",
+          "Saves": "Fort +8, Ref +13, Will +9",
+          "Skills": "Climb +10, Listen +4, Spot +5, Stealth +9",
+          "Space/Reach": "10 ft./5 ft. (10 ft. with tail)",
+          "Special Attacks": "Rend 2d6+6",
+          "Special Qualities": "Darkvision 60 ft., damage reduction 10/magic, stone form, vitality",
+          "Speed": "40 ft. (8 squares), fly 60 ft. (average)",
+          "Treasure": "Standard"
+        },
+        "rulesCoverage": {
+          "actor-defense": 1,
+          "linked-reference": 6,
+          "manual": 5
+        },
+        "subtypes": []
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          37
+        ],
+        "printedPages": [
+          36
+        ],
+        "section": "Dire Gargoyle",
+        "verification": "native-text-table"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "fc6f153c0d3d751d",
+    "f36d87f4d6c26ac8",
+    "d217c54c108c37db",
+    "21b41fcf12505e04",
+    "3607e53dcf54d2ba",
+    "1e42ba1928ba6bbd",
+    "8a6a0fc256c5822a",
+    "badc92b42eb4a8e3",
+    "da707e51fcf1db59",
+    "b21abf472e19e537",
+    "720db1fd1bf8e1a0",
+    "d5f087c67db31027",
+    "c963d408ace9b641",
+    "696a0b513dca4d1a",
+    "bd26a30e920a746b",
+    "0f8ccbb4a94dd889",
+    "ed52084b727c4a0e",
+    "368dcfaf580cc051"
+  ],
+  "name": "Dire Gargoyle",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -1,
+        "origMod": -1,
+        "origTotal": 8,
+        "penalty": 0,
+        "total": 8,
+        "userPenalty": 0,
+        "value": 8
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 3,
+        "origMod": 3,
+        "origTotal": 16,
+        "penalty": 0,
+        "total": 16,
+        "userPenalty": 0,
+        "value": 16
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 4,
+        "origMod": 4,
+        "origTotal": 19,
+        "penalty": 0,
+        "total": 19,
+        "userPenalty": 0,
+        "value": 19
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -4,
+        "origMod": -4,
+        "origTotal": 3,
+        "penalty": 0,
+        "total": 3,
+        "userPenalty": 0,
+        "value": 3
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 6,
+        "origMod": 6,
+        "origTotal": 22,
+        "penalty": 0,
+        "total": 22,
+        "userPenalty": 0,
+        "value": 22
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 23,
+          "value": 0
+        },
+        "normal": {
+          "total": 27,
+          "value": 0
+        },
+        "touch": {
+          "total": 14,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 15,
+        "nonepic": 15,
+        "total": 15,
+        "value": 0
+      },
+      "cmb": {
+        "total": 21,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "monstrousHumanoid",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 0,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 15,
+        "total": 15
+      },
+      "hp": {
+        "base": 112,
+        "max": 112,
+        "min": -16,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 112
+      },
+      "init": {
+        "bonus": 0,
+        "total": 8,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 13,
+      "savingThrows": {
+        "fort": {
+          "base": 8,
+          "total": 8
+        },
+        "ref": {
+          "base": 13,
+          "total": 13
+        },
+        "will": {
+          "base": 9,
+          "total": 9
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": null,
+        "darkvision": 60,
+        "lowLight": false,
+        "lowLightMultiplier": null,
+        "tremorsense": null
+      },
+      "speed": {
+        "fly": {
+          "base": 60,
+          "total": 60
+        },
+        "land": {
+          "base": 40,
+          "total": 40
+        }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "Usually chaotic evil",
+      "biography": {
+        "public": "",
+        "value": "<p>Dire Gargoyle is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 9,
+      "environment": "Any land or underground",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 15,
+        "value": 15
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 15d8+45 (112 hp)</p><p><strong>Initiative:</strong> +8</p><p><strong>Speed:</strong> 40 ft. (8 squares), fly 60 ft. (average)</p><p><strong>Armor Class:</strong> 27 (+4 Agy, +13 natural), touch 14, flat-footed 23</p><p><strong>Base Attack/Grapple:</strong> +15/+21</p><p><strong>Attack:</strong> Bite +21 melee (2d6+6)</p><p><strong>Full Attack:</strong> Bite +21 melee (2d6+6) and 2 claws +18 melee (1d6+3) and 2 wings +18 melee (1d6+3) and tail +18 melee (1d8+3)</p><p><strong>Space/Reach:</strong> 10 ft./5 ft. (10 ft. with tail)</p><p><strong>Special Attacks:</strong> Rend 2d6+6</p><p><strong>Special Qualities:</strong> Darkvision 60 ft., damage reduction 10/magic, stone form, vitality</p><p><strong>Saves:</strong> Fort +8, Ref +13, Will +9</p><p><strong>Abilities:</strong> Str 22, Agy 19, Sta 16, Int 3, Spt 10, Cha 8</p><p><strong>Skills:</strong> Climb +10, Listen +4, Spot +5, Stealth +9</p><p><strong>Feats:</strong> Flyby Attack*, Hover*, Improved Initiative, Improved Natural Attack† (bite), Multiattack, Wingover*</p><p><strong>Area:</strong> Eastern Plaguelands, Stratholme</p><p><strong>Organization:</strong> Solitary, pair, or brood (3-12)</p><p><strong>Treasure:</strong> Standard</p><p><strong>Advancement:</strong> 16-24 HD (Medium); 25-36 HD (Large)</p><p><strong>Level Adjustment:</strong> -</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 9,
+      "type": "Monstrous Humanoid"
+    },
+    "skills": {
+      "clm": {
+        "ability": "str",
+        "abilityModifier": 6,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 4,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 10,
+        "notes": "Printed total +10",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "hid": {
+        "ability": "dex",
+        "abilityModifier": 4,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 5,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 9,
+        "notes": "Printed total +9",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "lis": {
+        "ability": "wis",
+        "abilityModifier": 0,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 4,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 4,
+        "notes": "Printed total +4",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spt": {
+        "ability": "wis",
+        "abilityModifier": 0,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 5,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 5,
+        "notes": "Printed total +5",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "med",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Darkvision 60 ft., damage reduction 10/magic, stone form, vitality",
+      "size": "med",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

@@ -1,0 +1,42 @@
+{
+  "_embedded": {},
+  "_id": "f9aaded1848fd5c4",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "creatureRule": {
+        "kind": "subtype",
+        "reusable": true
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          201
+        ],
+        "printedPages": [
+          200
+        ],
+        "section": "Water Subtype",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/aura.svg",
+  "name": "Water Subtype Traits",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilityType": "nat",
+    "description": {
+      "value": "<p>Usually marks elementals and outsiders tied to water. It normally has a swim speed, moves through water without Swim checks, breathes water, and can usually breathe air.</p><p>This reusable record defines shared conversion behavior. Individual actors carry exact printed exceptions and totals.</p>"
+    },
+    "featType": "trait",
+    "source": "World of Warcraft: Monster Guide, pp. 200",
+    "uniqueId": "wc-creature-rule-water-subtype"
+  },
+  "type": "feat"
+}

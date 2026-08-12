@@ -1,0 +1,224 @@
+{
+  "_embedded": {},
+  "_id": "e0434b96c5f85729",
+  "_stats": {
+    "compendiumSource": null,
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "lastModifiedBy": null,
+    "modifiedTime": null,
+    "systemId": null,
+    "systemVersion": null
+  },
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "race": {
+        "automaticLanguages": [
+          "Common",
+          "Goblin"
+        ],
+        "bonusLanguages": [
+          "Any unrestricted language"
+        ],
+        "category": "player-race",
+        "favoredClass": [
+          "Tinker"
+        ],
+        "proficiencies": [
+          "Flintlock pistol (treated as martial)",
+          "Long rifle (treated as martial)"
+        ],
+        "racialLevel": {
+          "available": false,
+          "max": 0,
+          "name": ""
+        },
+        "searchableTraits": [
+          "Common",
+          "Goblin",
+          "Any unrestricted language",
+          "Flintlock pistol (treated as martial)",
+          "Long rifle (treated as martial)",
+          "Favored class: Tinker"
+        ],
+        "size": "sm"
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          45
+        ],
+        "printedPages": [
+          43
+        ],
+        "section": "Goblin racial traits",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "name": "Goblin",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "addedAbilities": [],
+    "addedLevel": 0,
+    "changeFlags": {
+      "heavyArmorFullSpeed": false,
+      "loseDexToAC": false,
+      "mediumArmorFullSpeed": false,
+      "multiAttack": false,
+      "multiweaponAttack": false,
+      "noCon": false,
+      "noDex": false,
+      "noEncumbrance": false,
+      "noInt": false,
+      "noStr": false,
+      "oneCha": false,
+      "oneInt": false,
+      "oneWis": false,
+      "uncannyDodge": false
+    },
+    "changes": [
+      [
+        "20",
+        "speed",
+        "landSpeed",
+        "base-replace"
+      ],
+      [
+        "2",
+        "ability",
+        "dex",
+        "racial"
+      ],
+      [
+        "-2",
+        "ability",
+        "str",
+        "racial"
+      ],
+      [
+        "2",
+        "skill",
+        "skill.apr",
+        "racial"
+      ],
+      [
+        "2",
+        "skill",
+        "skill.dip",
+        "racial"
+      ],
+      [
+        "2",
+        "skill",
+        "skill.lis",
+        "racial"
+      ],
+      [
+        "3",
+        "skill",
+        "skill.ctd",
+        "racial"
+      ]
+    ],
+    "classSource": "",
+    "combatChangeCustomDisplayName": "",
+    "combatChangeCustomReferenceName": "",
+    "combatChanges": [],
+    "combatChangesAdditionalRanges": {
+      "hasAdditionalRanges": false,
+      "slider1": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      },
+      "slider2": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      },
+      "slider3": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      }
+    },
+    "combatChangesApplySpecialActionsOnce": true,
+    "combatChangesRange": {
+      "max": 0,
+      "maxFormula": ""
+    },
+    "combatChangesUsesCost": "chargesPerUse",
+    "conditionFlags": {
+      "dazzled": false,
+      "polymorphed": false,
+      "wildshaped": false
+    },
+    "contextNotes": [],
+    "counterName": "feat.technology",
+    "createdBy": "",
+    "creationChanges": [],
+    "creatureType": "humanoid",
+    "customAttributes": {},
+    "customAttributesLocked": false,
+    "customTag": "",
+    "damage": {
+      "parts": []
+    },
+    "damageReduction": [],
+    "deathRule": "warcraft",
+    "description": {
+      "chat": "",
+      "unidentified": "",
+      "value": "<p>Goblin racial traits.</p><ul><li>+2 Agility, -2 Strength; Small; land speed 20 feet; low-light vision.</li><li>Treat flintlock pistols and long rifles as martial weapons; gain one technology feat at 1st level.</li><li>+2 Appraise, Craft (alchemy), Diplomacy, and Listen; +3 Craft (technological device). These are always class skills.</li><li>+2 Craft checks involving adamantine items.</li><li>Automatic Common and Goblin; any unrestricted bonus language.</li><li>Favored class Tinker.</li></ul>"
+    },
+    "disabledAbilities": [],
+    "epic": "",
+    "identifiedName": "Goblin",
+    "index": {
+      "subType": null,
+      "uniqueId": ""
+    },
+    "la": null,
+    "linkId": "",
+    "linkImported": false,
+    "links": {
+      "children": []
+    },
+    "linkSourceId": "",
+    "linkSourceName": "",
+    "nameFormula": "",
+    "nameFromFormula": false,
+    "originId": "",
+    "originPack": "",
+    "originVersion": 99,
+    "possibleUpdate": false,
+    "psionic": "",
+    "requirements": [],
+    "resistances": [],
+    "senses": {
+      "blindsight": null,
+      "darkvision": null,
+      "lowLight": true,
+      "lowLightMultiplier": 2,
+      "tremorsense": null,
+      "truesight": null
+    },
+    "sizeOverride": "sm",
+    "source": "World of Warcraft RPG, 2nd Edition, p. 43",
+    "subTypes": [],
+    "tags": [],
+    "uniqueId": "",
+    "userNonRemovable": false
+  },
+  "type": "race"
+}

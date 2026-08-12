@@ -1,0 +1,53 @@
+{
+  "_id": "200d8aed7cc88722",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "catalog": {
+        "category": "clothing",
+        "completeTableEntry": true,
+        "generated": true,
+        "status": "structured-table-data",
+        "tableValue": "5 gp; 6 lb."
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          202
+        ],
+        "printedPages": [
+          200
+        ],
+        "section": "Priest's Vestments",
+        "verification": "table-extraction"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/item-bag.svg",
+  "name": "Priest's Vestments",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "carried": true,
+    "description": {
+      "value": "<p><strong>Printed table value:</strong> 5 gp; 6 lb..</p>"
+    },
+    "hardness": 0,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "identified": true,
+    "identifiedName": "Priest's Vestments",
+    "price": 5,
+    "quantity": 1,
+    "source": "World of Warcraft RPG, 2nd Edition, p. 200",
+    "subType": "gear",
+    "weight": 6
+  },
+  "type": "loot"
+}

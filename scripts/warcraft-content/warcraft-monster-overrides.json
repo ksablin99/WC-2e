@@ -1,0 +1,406 @@
+{
+  "Arcane Nullifier X-21": {
+    "Space/Reach": "10 ft./10 ft."
+  },
+  "Black Ooze": {
+    "Space/Reach": "15 ft./10 ft.",
+    "Treasure": "None"
+  },
+  "Nerubian Worker Crypt Fiend": {
+    "Initiative": "+7",
+    "Armor Class": "17 (-1 size, +2 Agy, +6 natural), touch 11, flat-footed 11",
+    "Attack": "Spear +6 melee (2d6+5) or bite +6 melee (1d8+4 and poison) or javelin +5 ranged (1d8+4)",
+    "Full Attack": "Spear +6 melee (2d6+5) and 2 claws +1 melee (1d4+2); or bite +6 melee (1d8+4 and poison) and 2 claws +1 melee (1d4+2); or slam +6 melee (1d8+5); or javelin +5 ranged (1d8+4)",
+    "Space/Reach": "10 ft./5 ft.",
+    "Special Attacks": "Poison (DC 14), web (DC 16)",
+    "Special Qualities": "Darkvision 60 ft., fast healing, resistance to cold 5, undead traits",
+    "Skills": "Climb +15, Craft or Knowledge (any one) +4, Jump +7, Listen +3, Spot +3, Stealth +12 (+8 hiding)",
+    "Feats": "Ability Focus (poison), Improved Initiative",
+    "Environment": "Cold and temperate forest, hills, plains, and underground",
+    "Area": "Northrend",
+    "Organization": "Solitary, pair, or swarm (3-12)",
+    "Challenge Rating": "6",
+    "Treasure": "Standard",
+    "Alignment": "Usually lawful evil",
+    "Advancement": "5-10 HD (Large); 11-16 HD (Huge); or by character class",
+    "Level Adjustment": "+5"
+  },
+  "Basilisk": {
+    "Armor Class": "19 (-1 size, +10 natural), touch 9, flat-footed 19"
+  },
+  "Carrion Grub": {
+    "Initiative": "+1",
+    "Speed": "20 ft. (4 squares), burrow 5 ft.",
+    "Base Attack/Grapple": "+16/+20",
+    "Attack": "Bite +21 melee (1d8+6 plus 2d6 acid) or spit +17 ranged touch (2d6 acid)",
+    "Full Attack": "Bite +21 melee (1d8+6 plus 2d6 acid) or spit +17 ranged touch (2d6 acid)",
+    "Space/Reach": "5 ft./5 ft.",
+    "Organization": "Solitary, cluster (2-7), or swarm (8-27)",
+    "Treasure": "None",
+    "Advancement": "17-18 HD (Medium); 19-25 HD (Large); 26-32 HD (Huge)"
+  },
+  "Pterrordax": {
+    "Area": "Sholazar Basin, Un'Goro Crater",
+    "Organization": "Solitary, pair, or flight (3-6)",
+    "Challenge Rating": "6"
+  },
+  "Stegodon": {
+    "Full Attack": "Gore +23 melee (2d6+13/19-20)",
+    "Saves": "Fort +22, Ref +11, Will +8"
+  },
+  "Threshadon": {
+    "Saves": "Fort +11, Ref +8, Will +3",
+    "Skills": "Listen +5, Spot +5, Stealth +4 (+0 hiding)*, Swim +12"
+  },
+  "Devilsaur": {
+    "Base Attack/Grapple": "+18/+36 (+40 with bite)",
+    "Abilities": "Str 31, Agy 14, Sta 22, Int 2, Spt 11, Cha 10",
+    "Attack": "Bite +27 melee (4d6+15/19-20)",
+    "Full Attack": "Bite +27 melee (4d6+15/19-20)",
+    "Space/Reach": "15 ft./10 ft.",
+    "Skills": "Listen +12, Spot +12, Survival +16",
+    "Feats": "Bloodletter, Cleave, Improved Bull Rush, Improved Natural Attack (bite), Improved Critical (bite), Iron Will, Power Attack, Skilled (Listen and Spot), Weapon Focus (bite)",
+    "Environment": "Warm forest and marsh",
+    "Area": "Sholazar Basin, Un'Goro Crater",
+    "Organization": "Solitary, pair, or horde (3-6)",
+    "Challenge Rating": "10",
+    "Treasure": "None",
+    "Alignment": "Always neutral",
+    "Advancement": "26-32 HD (Huge); 33-45 HD (Gargantuan)",
+    "Level Adjustment": "-"
+  },
+  "Diemetradon": {
+    "Armor Class": "26 (-2 size, -1 Agy, +19 natural), touch 7, flat-footed 26",
+    "Full Attack": "Bite +17 melee (3d6+7) and 2 claws +14 melee (1d8+3)"
+  },
+  "Dire Ape": {
+    "Armor Class": "15 (-1 size, +2 Agy, +4 natural), touch 11, flat-footed 13",
+    "Base Attack/Grapple": "+3/+13"
+  },
+  "Dire Bat": {
+    "Base Attack/Grapple": "+3/+10",
+    "Skills": "Listen +12*, Spot +8*, Stealth +12 (+8 hiding)"
+  },
+  "Doomguard": {
+    "Abilities": "Str 35, Agy 23, Sta 31, Int 24, Spt 22, Cha 23",
+    "Challenge Rating": "18"
+  },
+  "Dark Iron Dwarf": {
+    "Armor Class": "18 (+2 Agy, +4 chain shirt, +2 heavy steel shield), touch 12, flat-footed 16",
+    "Base Attack/Grapple": "+0/+2",
+    "Attack": "Dwarven waraxe +3 melee (1d10+2/x3) or light crossbow +2 ranged (1d8/19-20)",
+    "Space/Reach": "5 ft./5 ft.",
+    "Special Attacks": "+1 on attack and damage rolls against Ironforge and Wildhammer dwarves",
+    "Special Qualities": "Darkvision 60 ft., fire magic affinity, resistance to fire 3, Dark Iron dwarf traits",
+    "Skills": "Listen +5, Search +4, Spot +5, Stealth +2",
+    "Feats": "Weapon Focus (dwarven waraxe)",
+    "Area": "Arathi Highlands, Searing Gorge",
+    "Organization": "Solitary (often rogue or assassin level 5th-10th), team (2-4), squad (11-20 plus two 3rd-level sergeants and one greater living flame), or clan (30-100 plus 30% noncombatants plus one 3rd-level sergeant per 10 adults, five 5th-level lieutenants, three fireguard destroyers, and one 8th-level chieftain)",
+    "Challenge Rating": "1",
+    "Treasure": "Standard",
+    "Alignment": "Always chaotic evil",
+    "Advancement": "By character class",
+    "Level Adjustment": "Use racial levels"
+  },
+  "Enraged Rock Elemental": {
+    "Challenge Rating": "11"
+  },
+  "Fiery Destroyer": {
+    "Challenge Rating": "11"
+  },
+  "Leper Gnome": {
+    "Initiative": "+2",
+    "Speed": "20 ft. (4 squares)",
+    "Base Attack/Grapple": "+1/-3",
+    "Attack": "Short sword +2 melee (1d4/19-20) or flintlock pistol +4 ranged (2d6/x3)",
+    "Full Attack": "Short sword +2 melee (1d4/19-20) or flintlock pistol +4 ranged (2d6/x3)",
+    "Space/Reach": "5 ft./5 ft.",
+    "Special Attacks": "-",
+    "Special Qualities": "Darkvision, leper gnome traits",
+    "Skills": "Climb -1, Craft (technological device) +3, Disable Device +3, Handle Animal +1, Intimidate +1, Listen +3, Open Lock +3, Spot +3, Jump -3",
+    "Feats": "Exotic Weapon Proficiency (firearms), Skilled (Listen and Spot)",
+    "Environment": "Any underground",
+    "Area": "Gnomeregan",
+    "Organization": "Solitary, troupe (2-4), attack squad (3-5 plus one 3rd-level sergeant), or cluster (10-20 plus 15% noncombatants plus two 3rd-level sergeants plus one 5th-level tinker)",
+    "Challenge Rating": "1/2",
+    "Treasure": "Standard",
+    "Alignment": "Always chaotic neutral",
+    "Advancement": "By character class",
+    "Level Adjustment": "-"
+  },
+  "Flamewaker": {
+    "Saves": "Fort +11, Ref +10, Will +12",
+    "Abilities": "Str 20, Agy 14, Sta 17, Int 16, Spt 15, Cha 18"
+  },
+  "Harpy": {
+    "Saves": "Fort +0, Ref +4, Will +4",
+    "Abilities": "Str 11, Agy 13, Sta 10, Int 9, Spt 12, Cha 8",
+    "Challenge Rating": "1"
+  },
+  "Grellkin": {
+    "Abilities": "Str 13, Agy 15, Sta 12, Int 8, Spt 14, Cha 13",
+    "Skills": "Listen +10, Perform (dance) +7, Spot +10, Stealth +8 (+12 hiding), Survival +8",
+    "Feats": "Skilled (Listen and Spot), Weapon Finesse",
+    "Environment": "Temperate forest",
+    "Area": "Teldrassil",
+    "Organization": "Gang (2-5)",
+    "Challenge Rating": "1"
+  },
+  "Hydra": {
+    "Initiative": "+5",
+    "Speed": "30 ft. (6 squares), swim 20 ft.",
+    "Base Attack/Grapple": "+12/+24",
+    "Attack": "Bite +20 melee (2d6+8/19-20 plus poison)",
+    "Full Attack": "3 bites +20 melee (2d6+8/19-20 plus poison)",
+    "Space/Reach": "10 ft./10 ft.",
+    "Special Qualities": "Darkvision 60 ft., fast healing 12, split",
+    "Skills": "Listen +13, Spot +14, Swim +16",
+    "Feats": "Ability Focus (poison), Improved Critical (bite), Improved Initiative, Skilled (Listen and Spot), Weapon Focus (bite)",
+    "Environment": "Temperate and warm aquatic, marsh, and underground",
+    "Area": "Any",
+    "Organization": "Solitary, pair, or colony (3-5 plus 1 hydra of 17+ HD)",
+    "Challenge Rating": "11",
+    "Treasure": "None",
+    "Alignment": "Usually neutral",
+    "Advancement": "13-16 HD (Large); 17-24 HD (Huge)",
+    "Level Adjustment": "-"
+  },
+  "Makrura Tidecaller": {
+    "Hit Dice": "1d8+3 plus 2d8+6 (22 hp)",
+    "Initiative": "+0",
+    "Speed": "20 ft. (4 squares), swim 40 ft.",
+    "Armor Class": "14 (-1 Agy, +5 natural), touch 9, flat-footed 14",
+    "Base Attack/Grapple": "+2/+2",
+    "Attack": "Claw +3 melee (1d6)",
+    "Full Attack": "2 claws +3 melee (1d6)",
+    "Space/Reach": "5 ft./5 ft.",
+    "Saves": "Fort +8, Ref -1, Will +4",
+    "Abilities": "Str 11, Agy 8, Sta 16, Int 11, Spt 15, Cha 10",
+    "Challenge Rating": "3"
+  },
+  "Makrura": {
+    "Initiative": "+1",
+    "Special Attacks": "Improved grab",
+    "Special Qualities": "Darkvision 60 ft., partially amphibious, resistance to cold 2, stability, unusual anatomy, makrura traits",
+    "Skills": "Balance +4, Listen +3, Spot +3, Swim +12"
+  },
+  "Risen Warrior": {
+    "Area": "Eastern Plaguelands, Scholomance",
+    "Challenge Rating": "13"
+  },
+  "Rot Hide Gnoll": {
+    "Hit Dice": "3d12 (19 hp)",
+    "Initiative": "+5",
+    "Speed": "30 ft. (6 squares)",
+    "Armor Class": "18 (+1 Agy, +3 natural, +2 leather armor, +2 heavy wooden shield), touch 11, flat-footed 17",
+    "Base Attack/Grapple": "+3/+9",
+    "Attack": "Battleaxe +10 melee (1d8+6/x3) or shortspear +10 melee (1d6+6/x3) or shortbow +6 ranged (1d6/x3) or slam +10 melee (1d6+6)",
+    "Full Attack": "Battleaxe +10 melee (1d8+6/x3) or shortspear +10 melee (1d6+6/x3) or shortbow +6 ranged (1d6/x3) or slam +10 melee (1d6+6)",
+    "Space/Reach": "5 ft./5 ft.",
+    "Special Attacks": "Create spawn (DC 12)",
+    "Special Qualities": "Darkvision 60 ft., damage reduction 2/-, immunity to cold, gnoll traits, undead traits",
+    "Saves": "Fort +3, Ref +2, Will +2",
+    "Abilities": "Str 23, Agy 12, Sta -, Int 4, Spt 12, Cha 2",
+    "Skills": "Listen +4, Spot +4, Stealth +2",
+    "Feats": "Improved Initiative, Power Attack, Skill Focus (Stealth), Weapon Focus (battleaxe), Weapon Focus (shortbow), Weapon Focus (shortspear)",
+    "Environment": "Temperate forest, plains and mountains",
+    "Area": "Any",
+    "Organization": "Solitary, pair, hunting party (3-5), band (10-100 plus 50% noncombatants plus 1 3rd-level sergeant per 20 adults and 1 leader of 4th-6th level), or tribe (20-200 plus 1 3rd-level sergeant per 20 adults, 1 or 2 lieutenants of 4th or 5th level, 1 leader of 6th-8th level)",
+    "Challenge Rating": "4",
+    "Treasure": "Standard",
+    "Alignment": "Usually chaotic evil",
+    "Advancement": "By character class",
+    "Level Adjustment": "+1"
+  },
+  "Trogg": {
+    "Saves": "Fort +5, Ref +1, Will +2",
+    "Skills": "Intimidate +3, Jump +1, Swim -3"
+  },
+  "Razormane Quilboar": {
+    "Initiative": "+0"
+  },
+  "Quilboar": {
+    "Initiative": "+2"
+  },
+  "Mechanostrider": {
+    "Advancement": "-"
+  },
+  "Ghostly Warrior": {
+    "Treasure": "None"
+  },
+  "Helboar": {
+    "Treasure": "None"
+  },
+  "Worg": {
+    "Saves": "Fort +8, Ref +7, Will +2"
+  },
+  "Ice Troll": {
+    "Initiative": "+3",
+    "Armor Class": "15 (+3 Agy, +2 leather), touch 13, flat-footed 12",
+    "Attack": "Spear +2 melee (1d8+1/x3) or javelin +5 ranged (1d6+1)",
+    "Space/Reach": "5 ft./5 ft."
+  },
+  "Rat Swarm": {
+    "Attack": "Swarm (1d6 plus disease)",
+    "Full Attack": "Swarm (1d6 plus disease)",
+    "Space/Reach": "10 ft./0 ft."
+  },
+  "Human Zombie": {
+    "Initiative": "-1",
+    "Attack": "Slam +3 melee (1d6+3)",
+    "Full Attack": "Slam +3 melee (1d6+3)",
+    "Space/Reach": "5 ft./5 ft.",
+    "Special Qualities": "Darkvision 60 ft., damage reduction 5/slashing, single actions only, undead traits",
+    "Environment": "Any land and underground",
+    "Area": "Eastern Plaguelands, Stranglethorn Vale, Tirisfal Glades, Western Plaguelands",
+    "Organization": "Any",
+    "Treasure": "None",
+    "Alignment": "Always neutral evil",
+    "Advancement": "-",
+    "Level Adjustment": "-"
+  },
+  "Imp": {
+    "Full Attack": "Claws +2 melee (1d3-1)"
+  },
+  "Kobold": {
+    "Attack": "Heavy pick +2 melee (1d4+1/x4)",
+    "Full Attack": "Heavy pick +2 melee (1d4+1/x4)"
+  },
+  "Obsidian Destroyer": {
+    "Attack": "Claw +16 melee (1d6+8 plus 2d6 sonic)",
+    "Full Attack": "2 claws +16 melee (1d6+8 plus 2d6 sonic)",
+    "Abilities": "Str 26, Agy 15, Sta -, Int 11, Spt 17, Cha 15"
+  },
+  "Obsidian Statue": {
+    "Attack": "Blast +9 ranged (2d6)",
+    "Full Attack": "Blast +9 ranged (2d6)"
+  },
+  "Silithid Reaver": {
+    "Attack": "Claw +10 melee (1d10+3)",
+    "Full Attack": "2 claws +10 melee (1d10+3)"
+  },
+  "Mechanostrider": {
+    "Attack": "Bite +7 melee (1d6+4) or slam +7 melee (1d4+6)",
+    "Full Attack": "Bite +7 melee (1d6+4) and 2 claws +2 melee (1d4+2); or slam +7 melee (1d4+6)"
+  },
+  "Scorpid Dunestalker": {
+    "Full Attack": "Sting +13 melee (1d4+4 plus poison) and 2 claws +11 melee (1d4+2)"
+  },
+  "Quilboar": {
+    "Initiative": "+2",
+    "Attack": "Shortspear +3 melee (1d6+3/x3) or quills +3 melee (1d4+3) or javelin +2 ranged (1d6+3)",
+    "Full Attack": "Shortspear +3 melee (1d6+3/x3) or quills +3 melee (1d4+3) or javelin +2 ranged (1d6+3)"
+  },
+  "Razormane Quilboar": {
+    "Initiative": "+0",
+    "Attack": "Spear +6 melee (1d8+4/x3) or quills +6 melee (1d4+3) or javelin +3 ranged (1d6+3)",
+    "Full Attack": "Spear +6 melee (1d8+4/x3) or quills +6 melee (1d4+3) or javelin +3 ranged (1d6+3)"
+  },
+  "Animated Statue of Archaedas (Medium)": {
+    "Initiative": "+0",
+    "Armor Class": "18 (+0 Agy, +8 natural), touch 10, flat-footed 18",
+    "Attack": "Slam +11 melee (1d6+7)",
+    "Full Attack": "2 slams +11 melee (1d6+7)",
+    "Space/Reach": "5 ft./5 ft.",
+    "Saves": "Fort +3, Ref +1, Will +2",
+    "Abilities": "Str 24, Agy 10, Sta 13, Int -, Spt 12, Cha 10"
+  },
+  "Animated Statue of Archaedas (Large)": {
+    "Hit Dice": "5d8+10 (32 hp)",
+    "Initiative": "+0",
+    "Speed": "20 ft. (4 squares)",
+    "Armor Class": "18 (-1 size, +0 Agy, +9 natural), touch 9, flat-footed 18",
+    "Base Attack/Grapple": "+3/+15",
+    "Attack": "Slam +11 melee (1d8+8)",
+    "Full Attack": "2 slams +11 melee (1d8+8)",
+    "Space/Reach": "10 ft./10 ft.",
+    "Saves": "Fort +3, Ref +1, Will +2",
+    "Abilities": "Str 26, Agy 10, Sta 13, Int -, Spt 12, Cha 10"
+  },
+  "Elite Dark Iron Rifleman": {
+    "Initiative": "+4",
+    "Attack": "Improved +2 flaming long rifle +16 ranged (5d6+4/19-20/x3 plus 1d6 fire) or masterwork greatsword +11 melee (2d6+1/19-20)",
+    "Space/Reach": "5 ft./5 ft.",
+    "Special Attacks": "+1 on attack and damage rolls against Ironforge and Wildhammer dwarves",
+    "Special Qualities": "Darkvision 60 ft., fire magic affinity, resistance to fire 9, Dark Iron dwarf traits",
+    "Skills": "Concentration +7, Listen +7, Search +6, Spot +10, Stealth +7",
+    "Feats": "Great Fortitude, Iron Will, Lightning Reflexes, Lightning Reload, Improved Critical (long rifle), Improved Lightning Reload, Point Blank Shot, Precise Shot, Rapid Shot, Weapon Focus (long rifle), Weapon Specialization (long rifle)",
+    "Area": "Arathi Highlands, Searing Gorge",
+    "Organization": "Solitary, team (one, plus 1-3 non-elite Dark Iron snipers), or squad (one, plus 11-20 non-elites plus one greater living flame)",
+    "Treasure": "Double standard",
+    "Alignment": "Always chaotic evil",
+    "Advancement": "By character class",
+    "Level Adjustment": "+4"
+  },
+  "Baron Rivendare": {
+    "Abilities": "Str 28 (22), Agy 14, Sta 18, Int 14, Spt 14, Cha 16",
+    "Feats": "Bloodletter, Cleave, Combat Reflexes, Dodge, Great Fortitude, Improved Initiative, Iron Will, Lightning Reflexes, Mounted Combat, Power Attack, Ride-By Attack, Skilled (Ride and Spot), Spirited Charge, Trample, Weapon Focus (bastard sword), Weapon Specialization (bastard sword)",
+    "Alignment": "Chaotic evil"
+  },
+  "Balnazzar": {
+    "Special Qualities": "Darkvision 120 ft., boundless mind, damage reduction 15/epic, damage reduction 15/good and truesilver, fast healing 5, fiendish defense, resistance to acid 15, cold 15, fire 20, and electricity 15, spell resistance 33, demon traits",
+    "Skills": "Bluff +31, Concentration +30, Craft (weaponsmithing) +10, Diplomacy +35, Disguise +29 (+31 acting), Gather Information +24, Handle Animal +12, Intimidate +34, Jump +16, Knowledge (arcana) +27, Knowledge (military tactics) +32, Knowledge (the planes) +27, Listen +28, Profession (military commander) +21, Ride +10, Search +27, Sense Motive +28, Spellcraft +29, Stealth +25 (+21 hiding), Spot +28, Swim +11",
+    "Feats": "Ability Focus (frightful presence), Cleave, Great Fortitude, Improved Critical (greatsword), Iron Will, Lightning Reflexes, Maximize Spell, Power Attack, Silent Spell, Skilled (Bluff and Diplomacy), Weapon Focus (greatsword), Weapon Specialization (greatsword)",
+    "Advancement": "By character class"
+  },
+  "Baron Geddon": {
+    "Space/Reach": "15 ft./15 ft.",
+    "Feats": "Bash, Blind-Fight, Cleave, Combat Reflexes, Dodge, Great Cleave, Great Fortitude, Improved Initiative, Improved Sunder, Iron Will, Mobility, Power Attack, Skilled (Listen and Spot), Spring Attack, Weapon Finesse, Weapon Focus (slam)"
+  },
+  "General Drakkisath": {
+    "Skills": "Bluff +21, Climb +15, Intimidate +34, Jump +9, Knowledge (arcana) +7, Knowledge (military tactics) +23, Listen +21, Profession (military commander) +18, Spellcraft +13, Spot +21, Stealth +4 (+0 hiding), Swim +5",
+    "Feats": "Ability Focus (black conflagration), Bash, Cleave, Dodge, Furious Charge, Great Fortitude, Greater Weapon Focus (scimitar), Greater Weapon Specialization (scimitar), Improved Initiative, Improved Overrun, Iron Will, Leadership, Lightning Reflexes, Power Attack, Thunderous Blow (DC 31) [x2], War Stomp, Weapon Focus (scimitar), Weapon Specialization (scimitar)",
+    "Advancement": "By character class"
+  },
+  "Garr": {
+    "Speed": "30 ft. (6 squares)",
+    "Armor Class": "31 (-2 size, +2 Agy, +21 natural), touch 10, flat-footed 31",
+    "Base Attack/Grapple": "+30/+52",
+    "Attack": "Slam +43 melee (4d8+14/19-20 plus 4d8 lava sear)",
+    "Full Attack": "2 slams +43 melee (4d8+14/19-20 plus 4d8 lava sear)",
+    "Space/Reach": "15 ft./15 ft.",
+    "Special Attacks": "Impacting blow, lava sear, magma shackles, push, surge (DC 44)",
+    "Special Qualities": "Darkvision 60 ft., low-light vision, anti-magic pulse, bracers, damage reduction 25/epic, damage reduction 20/-, earth glide, fire subtype, spell resistance 40, elemental traits",
+    "Saves": "Fort +32, Ref +17, Will +16",
+    "Abilities": "Str 38, Agy 14, Sta 31, Int 15, Spt 13, Cha 14",
+    "Challenge Rating": "25",
+    "Alignment": "Chaotic evil"
+  },
+  "Kel'Thuzad": {
+    "Skills": "Concentration +44, Diplomacy +17, Knowledge (arcana) +51, Knowledge (dungeoneering) +51, Knowledge (religion) +51, Knowledge (the planes) +51, Listen +34, Search +33, Sense Motive +16, Spellcraft +51, Spot +34, Stealth +28, Use Magic Device +44",
+    "Feats": "Combat Reflexes, Craft Staff, Craft Wondrous Item, Great Fortitude, Greater Spell Focus (necromancy), Improved Spell Capacity (x5), Improved Spell Penetration, Iron Will, Lightning Reflexes, Maximize Spell, Mental Stamina, Mind Over Matter, Quicken Spell, Scribe Scroll, Silent Spell, Spell Focus (evocation), Spell Focus (necromancy), Spell Penetration, Spell Specialization (frost nova), Still Spell, Weapon Finesse",
+    "Challenge Rating": "38"
+  },
+  "Lady Onyxia": {
+    "Abilities": "Str 41, Agy 10, Sta 29, Int 20, Spt 17, Cha 20",
+    "Challenge Rating": "25"
+  },
+  "Lord Kazzak": {
+    "Base Attack/Grapple": "+22/+44",
+    "Attack": "Warblade of Archimonde +42 melee (4d6+27/17-20/x3 plus 1d6 fel) or claw +34 melee (3d6+14 plus 1d6 fel)",
+    "Full Attack": "Warblade of Archimonde +42/+37/+32/+27 melee (4d6+27/17-20/x3 and 1d6 fel) or 2 claws +39 melee (3d6+14 and 1d6 fel)",
+    "Abilities": "Str 39, Agy 23, Sta 35, Int 24, Spt 25, Cha 28",
+    "Skills": "Bluff +33, Climb +16, Concentration +35, Craft (armorsmithing) +9, Craft (weaponsmithing) +9, Diplomacy +35, Gather Information +33, Intimidate +31, Jump +16, Knowledge (arcana) +30, Knowledge (military tactics) +31, Knowledge (the planes) +30, Listen +32, Search +31, Sense Motive +30, Spellcraft +30, Spot +31, Stealth +29 (+21 hiding), Survival +9, Swim +16, Use Magic Device +33",
+    "Challenge Rating": "23"
+  },
+  "Mekgineer Thermaplugg": {
+    "Hit Dice": "6d6-6 plus 6d6-6 plus 150 (182 hp)",
+    "Initiative": "+2",
+    "Speed": "20 ft. (4 squares)",
+    "Armor Class": "21 (-1 size, +2 Agy, +10 armor), touch 11, flat-footed 19",
+    "Base Attack/Grapple": "+8/+31",
+    "Attack": "Club +17 melee (1d8+6) or steam fist +17 melee (3d6+6) or slicer +17 melee (2d6+3)",
+    "Full Attack": "Club +17/+12 melee (1d8+6) or steam fist +17 melee (3d6+6) or club +15/+10 melee (1d8+6) and slicer +15 melee (2d6+3) or steam fist +15 melee (3d6+6) and slicer +15 melee (2d6+3)",
+    "Space/Reach": "10 ft./10 ft.",
+    "Special Attacks": "Steam armor universal remote",
+    "Special Qualities": "Darkvision 60 ft., armor bond +3, coolness under fire 1/day, cobble 1/week, evasion, hardness 10, improved personal proficiency, scavenge, spark of genius 1/week, leper gnome traits",
+    "Saves": "Fort +7, Ref +10, Will +9",
+    "Abilities": "Str 22, Agy 14, Sta 8, Int 22, Spt 13, Cha 16",
+    "Feats": "Awesome Blow, Bash, Combat Reflexes, Delay Malfunction, Improved Bull Rush, Power Attack, Steam Armor Knack, Vehicle Proficiency (steam armor)",
+    "Challenge Rating": "12",
+    "Alignment": "Lawful evil"
+  },
+  "Nefarian": {
+    "Challenge Rating": "31"
+  }
+}

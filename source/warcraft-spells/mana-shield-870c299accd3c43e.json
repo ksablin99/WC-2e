@@ -18,6 +18,11 @@
       "automation": {
         "damageInterception": "manual"
       },
+      "catalog": {
+        "completeListEntry": true,
+        "generated": false,
+        "status": "verified-vertical-slice"
+      },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
         "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
@@ -125,10 +130,6 @@
       "class": [
         [
           "Arcanist",
-          1
-        ],
-        [
-          "Mage",
           1
         ]
       ],
@@ -269,6 +270,10 @@
       "per": "",
       "rechargeFormula": null,
       "value": 0
+    },
+    "warcraftManualPolicy": {
+      "mode": "srd-baseline-with-manual-boundary",
+      "reason": "SRD mechanics are retained, but Warcraft-specific creatures, forms, slot manipulation, or persistent cross-actor state require GM adjudication."
     }
   },
   "type": "spell"

@@ -1,0 +1,44 @@
+{
+  "_embedded": {},
+  "_id": "02b0e80b61a301fb",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "creatureRule": {
+        "kind": "type",
+        "reusable": true
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          186,
+          201
+        ],
+        "printedPages": [
+          185,
+          200
+        ],
+        "section": "Fey",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/aura.svg",
+  "name": "Fey Traits",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilityType": "nat",
+    "description": {
+      "value": "<p>d6 Hit Dice; half base attack; good Reflex and Will saves. Low-light vision.</p><p>This reusable record defines shared conversion behavior. Individual actors carry exact printed exceptions and totals.</p>"
+    },
+    "featType": "trait",
+    "source": "World of Warcraft: Monster Guide, pp. 185-200",
+    "uniqueId": "wc-creature-rule-fey"
+  },
+  "type": "feat"
+}

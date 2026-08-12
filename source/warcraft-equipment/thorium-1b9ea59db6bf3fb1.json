@@ -1,0 +1,158 @@
+{
+  "_embedded": {},
+  "_id": "1b9ea59db6bf3fb1",
+  "_stats": {
+    "compendiumSource": null,
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "lastModifiedBy": null,
+    "modifiedTime": null,
+    "systemId": null,
+    "systemVersion": null
+  },
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "catalog": {
+        "category": "material",
+        "completeTableEntry": true,
+        "generated": true,
+        "status": "structured-summary"
+      },
+      "rules": {
+        "allowedItems": "Items made primarily of metal",
+        "armor": {
+          "acEnhancement": 2,
+          "armorCheckPenaltyMultiplier": 2,
+          "categoryStepsHeavier": 1,
+          "damageReduction": {
+            "heavy": "9/adamantine",
+            "light": "3/adamantine",
+            "medium": "6/adamantine"
+          },
+          "maxAgilityModifier": -2,
+          "maximumCategory": "heavy",
+          "spellFailureMultiplier": 2
+        },
+        "costModifiersGp": {
+          "heavyArmor": 36000,
+          "lightArmor": 12000,
+          "mediumArmor": 24000,
+          "weapon": 10000
+        },
+        "hitPointMultiplierForSteel": 2,
+        "masterworkIncluded": true,
+        "weapon": {
+          "requiresExoticProficiency": true,
+          "strengthDamageMultiplierOneHanded": 1.5,
+          "strengthDamageMultiplierTwoHanded": 2
+        },
+        "weightMultiplier": 2
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          196
+        ],
+        "printedPages": [
+          194
+        ],
+        "section": "Thorium",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "systems/warcraftrpg2e/icons/materials/adamantine.png",
+  "name": "Thorium",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "changeFlags": {
+      "heavyArmorFullSpeed": false,
+      "loseDexToAC": false,
+      "mediumArmorFullSpeed": false,
+      "multiAttack": false,
+      "multiweaponAttack": false,
+      "noCon": false,
+      "noDex": false,
+      "noEncumbrance": false,
+      "noInt": false,
+      "noStr": false,
+      "oneCha": false,
+      "oneInt": false,
+      "oneWis": false
+    },
+    "changes": [],
+    "combatChangeCustomDisplayName": "",
+    "combatChangeCustomReferenceName": "",
+    "combatChanges": [],
+    "combatChangesAdditionalRanges": {
+      "hasAdditionalRanges": false,
+      "slider1": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      },
+      "slider2": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      },
+      "slider3": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      }
+    },
+    "combatChangesApplySpecialActionsOnce": true,
+    "combatChangesRange": {
+      "max": 0,
+      "maxFormula": ""
+    },
+    "combatChangesUsesCost": "chargesPerUse",
+    "conditionFlags": {
+      "dazzled": false,
+      "polymorphed": false,
+      "wildshaped": false
+    },
+    "counterName": "",
+    "createdBy": "",
+    "creationChanges": [],
+    "customReferenceId": "",
+    "damage": {
+      "alternativeParts": [],
+      "parts": []
+    },
+    "damageReduction": [],
+    "description": {
+      "value": "<p>Metal items weigh twice normal and steel items have double hit points. Weapons require their exotic proficiency and improve Strength damage scaling. Armor gains +2 AC and 3/6/9 adamantine DR, counts one category heavier, reduces maximum Agility by 2, and doubles check penalty and spell failure; always masterwork.</p>"
+    },
+    "hardness": "25",
+    "hpPerInch": "40",
+    "identifiedName": "Thorium",
+    "identifiers": [],
+    "index": {
+      "subType": null,
+      "uniqueId": "wc-material-thorium"
+    },
+    "isAdamantineEquivalent": false,
+    "isAlchemicalSilverEquivalent": false,
+    "isColdIronEquivalent": false,
+    "magicEquivalent": 0,
+    "originVersion": 1,
+    "priceDifference": 0,
+    "requirements": [],
+    "resistances": [],
+    "sizeOverride": "",
+    "slug": "damage",
+    "source": "World of Warcraft RPG, 2nd Edition, p. 194",
+    "uniqueId": "wc-material-thorium"
+  },
+  "type": "material"
+}

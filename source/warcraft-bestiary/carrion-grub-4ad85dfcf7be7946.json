@@ -1,0 +1,1382 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "4855300dd46101ad",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 16,
+                "die": 10,
+                "expression": "16d10",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Magical Beast Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "high",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "267",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "16",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "20",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "11",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "19",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "21",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "11",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "5",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "20",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "5",
+              "speed",
+              "burrowSpeed",
+              "base-replace"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "magicalBeast",
+          "damageReduction": [],
+          "hd": 10,
+          "hp": 0,
+          "levels": 16,
+          "maxLevel": 50,
+          "resistances": [
+            [
+              "",
+              "energy-acid",
+              true,
+              false,
+              false
+            ]
+          ],
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "low"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 14"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "0b14992cf59731ea",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                21
+              ],
+              "printedDamage": "1d8+6 plus 2d6 acid"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Bite",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "5",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Bite",
+          "damage": {
+            "parts": [
+              [
+                "1d8+6",
+                "Piercing or Bludgeoning",
+                "damage-piercing-bludgeoning"
+              ],
+              [
+                "2d6",
+                "Acid",
+                "energy-acid"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Bite +21 melee (1d8+6 plus 2d6 acid).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "ff95e08080062fa2",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                17
+              ],
+              "printedDamage": "2d6 acid"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Spit",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": true
+          },
+          "actionType": "rsak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "1",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "spit",
+          "damage": {
+            "parts": [
+              [
+                "2d6",
+                "Acid",
+                "energy-acid"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> spit +17 ranged touch (2d6 acid).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "88acd30f45b562ab",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack - Bite",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "0b14992cf59731ea",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Bite",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> Bite +21 melee (1d8+6 plus 2d6 acid).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "b70fc32981ffa6c4",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack - spit",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "ff95e08080062fa2",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Spit",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> spit +17 ranged touch (2d6 acid).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "2e60e97e86f92aa1",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "Acid spray (DC 29)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                14
+              ],
+              "section": "Carrion Grub"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Acid spray",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Acid spray (DC 29).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 14",
+          "uniqueId": "wc-monster-carrion-grub-acid-spray"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "041fca1505542215",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "acidic slime"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                14
+              ],
+              "section": "Carrion Grub"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "acidic slime",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> acidic slime.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 14",
+          "uniqueId": "wc-monster-carrion-grub-acidic-slime"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "6cd3e4e2064ddf06",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "death throes (DC 29)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                14
+              ],
+              "section": "Carrion Grub"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "death throes",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> death throes (DC 29).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 14",
+          "uniqueId": "wc-monster-carrion-grub-death-throes"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "5d7e885c99aba8a7",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "spit acid"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                14
+              ],
+              "section": "Carrion Grub"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "spit acid",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> spit acid.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 14",
+          "uniqueId": "wc-monster-carrion-grub-spit-acid"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e595dd5c6c0b02bf",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Blindsense 120 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                14
+              ],
+              "section": "Carrion Grub"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Blindsense 120 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Blindsense 120 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 14",
+          "uniqueId": "wc-monster-carrion-grub-blindsense-120-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "1bdca2932098e337",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "darkvision 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                14
+              ],
+              "section": "Carrion Grub"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "darkvision 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> darkvision 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 14",
+          "uniqueId": "wc-monster-carrion-grub-darkvision-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "3b7ca497c054fa77",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "low-light vision"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                14
+              ],
+              "section": "Carrion Grub"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "low-light vision",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> low-light vision.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 14",
+          "uniqueId": "wc-monster-carrion-grub-low-light-vision"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "7a440b11fe1624e0",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "immunity to acid"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                14
+              ],
+              "section": "Carrion Grub"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "immunity to acid",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> immunity to acid.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 14",
+          "uniqueId": "wc-monster-carrion-grub-immunity-to-acid"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "8c2c6b1c684462f4",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "maggot body"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                14
+              ],
+              "section": "Carrion Grub"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "maggot body",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> maggot body.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 14",
+          "uniqueId": "wc-monster-carrion-grub-maggot-body"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "957cecd617878946",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Dodge"
+            },
+            "reference": {
+              "id": "7d08b8436a8b4167",
+              "name": "Dodge",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                14
+              ],
+              "section": "Carrion Grub"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Dodge",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Dodge.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.7d08b8436a8b4167]{Dodge}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 14",
+          "uniqueId": "wc-monster-carrion-grub-dodge"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "4408b85babab98d8",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Great Fortitude"
+            },
+            "reference": {
+              "id": "66a59a40dae0fed6",
+              "name": "Great Fortitude",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                14
+              ],
+              "section": "Carrion Grub"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Great Fortitude",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Great Fortitude.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.66a59a40dae0fed6]{Great Fortitude}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 14",
+          "uniqueId": "wc-monster-carrion-grub-great-fortitude"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "23b6739c5d70b6d9",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Overrun"
+            },
+            "reference": {
+              "id": "682fc7477ca63892",
+              "name": "Improved Overrun",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                14
+              ],
+              "section": "Carrion Grub"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Overrun",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Overrun.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.682fc7477ca63892]{Improved Overrun}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 14",
+          "uniqueId": "wc-monster-carrion-grub-improved-overrun"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "d490cf52c424d74d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Power Attack"
+            },
+            "reference": {
+              "id": "95e094ad6c35e24e",
+              "name": "Power Attack",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                14
+              ],
+              "section": "Carrion Grub"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Power Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Power Attack.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.95e094ad6c35e24e]{Power Attack}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 14",
+          "uniqueId": "wc-monster-carrion-grub-power-attack"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "5408bbc17b2fa9e3",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Toughness"
+            },
+            "reference": {
+              "id": "9a692fe6b110d94b",
+              "name": "Toughness",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                14
+              ],
+              "section": "Carrion Grub"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Toughness",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Toughness.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.9a692fe6b110d94b]{Toughness}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 14",
+          "uniqueId": "wc-monster-carrion-grub-toughness"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "ea7cdc20b9f93b93",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Weapon Focus (bite)"
+            },
+            "reference": {
+              "id": "fdea42738398197e",
+              "name": "Weapon Focus",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                14
+              ],
+              "section": "Carrion Grub"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Weapon Focus (bite)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Weapon Focus (bite).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.fdea42738398197e]{Weapon Focus}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 14",
+          "uniqueId": "wc-monster-carrion-grub-weapon-focus-bite"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "23ef6a9944964709",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Medium Magical Beast; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "4a5e271e2b371475",
+              "name": "Magical Beast Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                14
+              ],
+              "section": "Carrion Grub"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Magical Beast Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Medium Magical Beast; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.4a5e271e2b371475]{Magical Beast Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 14",
+          "uniqueId": "wc-monster-carrion-grub-magical-beast-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "4ad85dfcf7be7946",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 19, Agy 13, Sta 32, Int 1, Spt 10, Cha 10",
+          "Advancement": "17-18 HD (Medium); 19-25 HD (Large); 26-32 HD (Huge)",
+          "Alignment": "Always neutral",
+          "Area": "Eastern Plaguelands",
+          "Armor Class": "20 (+1 Agy, +9 natural), touch 11, flat-footed 19",
+          "Attack": "Bite +21 melee (1d8+6 plus 2d6 acid) or spit +17 ranged touch (2d6 acid)",
+          "Base Attack/Grapple": "+16/+20",
+          "Challenge Rating": "10",
+          "Environment": "Temperate forest and plains",
+          "Feats": "Dodge, Great Fortitude, Improved Overrun, Power Attack, Toughness, Weapon Focus (bite)",
+          "Full Attack": "Bite +21 melee (1d8+6 plus 2d6 acid) or spit +17 ranged touch (2d6 acid)",
+          "Hit Dice": "16d10+176+3 (267 hp)",
+          "Initiative": "+1",
+          "Level Adjustment": "-",
+          "Organization": "Solitary, cluster (2-7), or swarm (8-27)",
+          "Saves": "Fort +21, Ref +11, Will +5",
+          "Skills": "Survival +19",
+          "Space/Reach": "5 ft./5 ft.",
+          "Special Attacks": "Acid spray (DC 29), acidic slime, death throes (DC 29), spit acid",
+          "Special Qualities": "Blindsense 120 ft., darkvision 60 ft., low-light vision, immunity to acid, maggot body",
+          "Speed": "20 ft. (4 squares), burrow 5 ft.",
+          "Treasure": "None"
+        },
+        "rulesCoverage": {
+          "actor-defense": 1,
+          "linked-reference": 7,
+          "manual": 8
+        },
+        "subtypes": []
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          15
+        ],
+        "printedPages": [
+          14
+        ],
+        "section": "Carrion Grub",
+        "verification": "native-text-table+review-override"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "4855300dd46101ad",
+    "0b14992cf59731ea",
+    "ff95e08080062fa2",
+    "88acd30f45b562ab",
+    "b70fc32981ffa6c4",
+    "2e60e97e86f92aa1",
+    "041fca1505542215",
+    "6cd3e4e2064ddf06",
+    "5d7e885c99aba8a7",
+    "e595dd5c6c0b02bf",
+    "1bdca2932098e337",
+    "3b7ca497c054fa77",
+    "7a440b11fe1624e0",
+    "8c2c6b1c684462f4",
+    "957cecd617878946",
+    "4408b85babab98d8",
+    "23b6739c5d70b6d9",
+    "d490cf52c424d74d",
+    "5408bbc17b2fa9e3",
+    "ea7cdc20b9f93b93",
+    "23ef6a9944964709"
+  ],
+  "name": "Carrion Grub",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 11,
+        "origMod": 11,
+        "origTotal": 32,
+        "penalty": 0,
+        "total": 32,
+        "userPenalty": 0,
+        "value": 32
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 13,
+        "penalty": 0,
+        "total": 13,
+        "userPenalty": 0,
+        "value": 13
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -5,
+        "origMod": -5,
+        "origTotal": 1,
+        "penalty": 0,
+        "total": 1,
+        "userPenalty": 0,
+        "value": 1
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 4,
+        "origMod": 4,
+        "origTotal": 19,
+        "penalty": 0,
+        "total": 19,
+        "userPenalty": 0,
+        "value": 19
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 19,
+          "value": 0
+        },
+        "normal": {
+          "total": 20,
+          "value": 0
+        },
+        "touch": {
+          "total": 11,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 16,
+        "nonepic": 16,
+        "total": 16,
+        "value": 0
+      },
+      "cmb": {
+        "total": 20,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "magicalBeast",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 0,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 16,
+        "total": 16
+      },
+      "hp": {
+        "base": 267,
+        "max": 267,
+        "min": -32,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 267
+      },
+      "init": {
+        "bonus": 0,
+        "total": 1,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 9,
+      "savingThrows": {
+        "fort": {
+          "base": 21,
+          "total": 21
+        },
+        "ref": {
+          "base": 11,
+          "total": 11
+        },
+        "will": {
+          "base": 5,
+          "total": 5
+        }
+      },
+      "senses": {
+        "blindsense": 120,
+        "blindsight": null,
+        "darkvision": 60,
+        "lowLight": true,
+        "lowLightMultiplier": 2,
+        "tremorsense": null
+      },
+      "speed": {
+        "burrow": {
+          "base": 5,
+          "total": 5
+        },
+        "land": {
+          "base": 20,
+          "total": 20
+        }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "Always neutral",
+      "biography": {
+        "public": "",
+        "value": "<p>Carrion Grub is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 10,
+      "environment": "Temperate forest and plains",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 16,
+        "value": 16
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 16d10+176+3 (267 hp)</p><p><strong>Initiative:</strong> +1</p><p><strong>Speed:</strong> 20 ft. (4 squares), burrow 5 ft.</p><p><strong>Armor Class:</strong> 20 (+1 Agy, +9 natural), touch 11, flat-footed 19</p><p><strong>Base Attack/Grapple:</strong> +16/+20</p><p><strong>Attack:</strong> Bite +21 melee (1d8+6 plus 2d6 acid) or spit +17 ranged touch (2d6 acid)</p><p><strong>Full Attack:</strong> Bite +21 melee (1d8+6 plus 2d6 acid) or spit +17 ranged touch (2d6 acid)</p><p><strong>Space/Reach:</strong> 5 ft./5 ft.</p><p><strong>Special Attacks:</strong> Acid spray (DC 29), acidic slime, death throes (DC 29), spit acid</p><p><strong>Special Qualities:</strong> Blindsense 120 ft., darkvision 60 ft., low-light vision, immunity to acid, maggot body</p><p><strong>Saves:</strong> Fort +21, Ref +11, Will +5</p><p><strong>Abilities:</strong> Str 19, Agy 13, Sta 32, Int 1, Spt 10, Cha 10</p><p><strong>Skills:</strong> Survival +19</p><p><strong>Feats:</strong> Dodge, Great Fortitude, Improved Overrun, Power Attack, Toughness, Weapon Focus (bite)</p><p><strong>Area:</strong> Eastern Plaguelands</p><p><strong>Organization:</strong> Solitary, cluster (2-7), or swarm (8-27)</p><p><strong>Treasure:</strong> None</p><p><strong>Advancement:</strong> 17-18 HD (Medium); 19-25 HD (Large); 26-32 HD (Huge)</p><p><strong>Level Adjustment:</strong> -</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 10,
+      "type": "Magical Beast"
+    },
+    "skills": {
+      "sur": {
+        "ability": "wis",
+        "abilityModifier": 0,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 19,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 19,
+        "notes": "Printed total +19",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "med",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Blindsense 120 ft., darkvision 60 ft., low-light vision, immunity to acid, maggot body",
+      "size": "med",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

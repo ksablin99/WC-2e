@@ -1,0 +1,920 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "74d67c95db1de81f",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 20,
+                "die": 10,
+                "expression": "20d10",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Ooze Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "med",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": true
+          },
+          "changes": [
+            [
+              "150",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "15",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "22",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "10",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "22",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "8",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "6",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "8",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "30",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "20",
+              "speed",
+              "climbSpeed",
+              "base-replace"
+            ],
+            [
+              "30",
+              "speed",
+              "swimSpeed",
+              "base-replace"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "ooze",
+          "damageReduction": [
+            [
+              "10",
+              "any",
+              false
+            ]
+          ],
+          "hd": 10,
+          "hp": 0,
+          "levels": 20,
+          "maxLevel": 50,
+          "resistances": [
+            [
+              "",
+              "energy-acid",
+              true,
+              false,
+              false
+            ]
+          ],
+          "savingThrows": {
+            "fort": {
+              "value": "low"
+            },
+            "ref": {
+              "value": "low"
+            },
+            "will": {
+              "value": "low"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 110"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "7ddb4d82cafa720d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                19
+              ],
+              "printedDamage": "1d8+4 plus 2d6 acid"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Slam",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "4",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Slam",
+          "damage": {
+            "parts": [
+              [
+                "1d8+4",
+                "Bludgeoning",
+                "damage-bludg"
+              ],
+              [
+                "2d6",
+                "Acid",
+                "energy-acid"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Slam +19 melee (1d8+4 plus 2d6 acid).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "92c392b4863be931",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 2,
+              "id": "7ddb4d82cafa720d",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Slam",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> 2 slams +19 melee (1d8+4 plus 2d6 acid).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "94be12b551dc2308",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "Acidic cloud"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                110
+              ],
+              "section": "Primal Ooze"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Acidic cloud",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Acidic cloud.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 110",
+          "uniqueId": "wc-monster-primal-ooze-acidic-cloud"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "cea691d08fa5ce1c",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Blindsight 90 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                110
+              ],
+              "section": "Primal Ooze"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Blindsight 90 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Blindsight 90 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 110",
+          "uniqueId": "wc-monster-primal-ooze-blindsight-90-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "46859b24a0310dc0",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "acidic body"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                110
+              ],
+              "section": "Primal Ooze"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "acidic body",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> acidic body.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 110",
+          "uniqueId": "wc-monster-primal-ooze-acidic-body"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "470d6a5a5cdfde50",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "cloning"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                110
+              ],
+              "section": "Primal Ooze"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "cloning",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> cloning.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 110",
+          "uniqueId": "wc-monster-primal-ooze-cloning"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "920ca222780b37d2",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "damage reduction 10/-"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                110
+              ],
+              "section": "Primal Ooze"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "damage reduction 10/-",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> damage reduction 10/-.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 110",
+          "uniqueId": "wc-monster-primal-ooze-damage-reduction-10"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "bdb399ce7f6a335e",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "immunity to acid"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                110
+              ],
+              "section": "Primal Ooze"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "immunity to acid",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> immunity to acid.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 110",
+          "uniqueId": "wc-monster-primal-ooze-immunity-to-acid"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "cd68d2479b664133",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "ooze traits"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                110
+              ],
+              "section": "Primal Ooze"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "ooze traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> ooze traits.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 110",
+          "uniqueId": "wc-monster-primal-ooze-ooze-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e6462376fda07869",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Medium Ooze; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "015d5b0c96b94cfb",
+              "name": "Ooze Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                110
+              ],
+              "section": "Primal Ooze"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Ooze Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Medium Ooze; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.015d5b0c96b94cfb]{Ooze Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 110",
+          "uniqueId": "wc-monster-primal-ooze-ooze-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "9f1d399ebff7ba75",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 19, Agy 10, Sta 14, Int -, Spt 15, Cha 4",
+          "Advancement": "21-28 HD (Large); 29-36 HD (Huge)",
+          "Alignment": "Always neutral",
+          "Area": "Un'Goro Crater",
+          "Armor Class": "22 (+12 natural), touch 10, flat-footed 22",
+          "Attack": "Slam +19 melee (1d8+4 plus 2d6 acid)",
+          "Base Attack/Grapple": "+15/+19",
+          "Challenge Rating": "12",
+          "Environment": "Any",
+          "Feats": "-",
+          "Full Attack": "2 slams +19 melee (1d8+4 plus 2d6 acid)",
+          "Hit Dice": "20d10+40 (150 hp)",
+          "Initiative": "+0",
+          "Level Adjustment": "-",
+          "Organization": "Solitary or pair",
+          "Saves": "Fort +8, Ref +6, Will +8",
+          "Skills": "Swim +12",
+          "Space/Reach": "5 ft./10 ft.",
+          "Special Attacks": "Acidic cloud",
+          "Special Qualities": "Blindsight 90 ft., acidic body, cloning, damage reduction 10/-, immunity to acid, ooze traits",
+          "Speed": "30 ft. (6 squares), climb 20 ft., swim 30 ft.",
+          "Treasure": "Standard (but nothing that can be dissolved)"
+        },
+        "rulesCoverage": {
+          "actor-defense": 2,
+          "linked-reference": 1,
+          "manual": 5
+        },
+        "subtypes": []
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          111
+        ],
+        "printedPages": [
+          110
+        ],
+        "section": "Primal Ooze",
+        "verification": "native-text-table"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "74d67c95db1de81f",
+    "7ddb4d82cafa720d",
+    "92c392b4863be931",
+    "94be12b551dc2308",
+    "cea691d08fa5ce1c",
+    "46859b24a0310dc0",
+    "470d6a5a5cdfde50",
+    "920ca222780b37d2",
+    "bdb399ce7f6a335e",
+    "cd68d2479b664133",
+    "e6462376fda07869"
+  ],
+  "name": "Primal Ooze",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -3,
+        "origMod": -3,
+        "origTotal": 4,
+        "penalty": 0,
+        "total": 4,
+        "userPenalty": 0,
+        "value": 4
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 2,
+        "origMod": 2,
+        "origTotal": 14,
+        "penalty": 0,
+        "total": 14,
+        "userPenalty": 0,
+        "value": 14
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": true,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 0,
+        "penalty": 0,
+        "total": 0,
+        "userPenalty": 0,
+        "value": 0
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 4,
+        "origMod": 4,
+        "origTotal": 19,
+        "penalty": 0,
+        "total": 19,
+        "userPenalty": 0,
+        "value": 19
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 2,
+        "origMod": 2,
+        "origTotal": 15,
+        "penalty": 0,
+        "total": 15,
+        "userPenalty": 0,
+        "value": 15
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 22,
+          "value": 0
+        },
+        "normal": {
+          "total": 22,
+          "value": 0
+        },
+        "touch": {
+          "total": 10,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 15,
+        "nonepic": 15,
+        "total": 15,
+        "value": 0
+      },
+      "cmb": {
+        "total": 19,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "ooze",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 100,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 20,
+        "total": 20
+      },
+      "hp": {
+        "base": 150,
+        "max": 150,
+        "min": -14,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 150
+      },
+      "init": {
+        "bonus": 0,
+        "total": 0,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 12,
+      "savingThrows": {
+        "fort": {
+          "base": 8,
+          "total": 8
+        },
+        "ref": {
+          "base": 6,
+          "total": 6
+        },
+        "will": {
+          "base": 8,
+          "total": 8
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": 90,
+        "darkvision": null,
+        "lowLight": false,
+        "lowLightMultiplier": null,
+        "tremorsense": null
+      },
+      "speed": {
+        "climb": {
+          "base": 20,
+          "total": 20
+        },
+        "land": {
+          "base": 30,
+          "total": 30
+        },
+        "swim": {
+          "base": 30,
+          "total": 30
+        }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "Always neutral",
+      "biography": {
+        "public": "",
+        "value": "<p>Primal Ooze is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 12,
+      "environment": "Any",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 20,
+        "value": 20
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 20d10+40 (150 hp)</p><p><strong>Initiative:</strong> +0</p><p><strong>Speed:</strong> 30 ft. (6 squares), climb 20 ft., swim 30 ft.</p><p><strong>Armor Class:</strong> 22 (+12 natural), touch 10, flat-footed 22</p><p><strong>Base Attack/Grapple:</strong> +15/+19</p><p><strong>Attack:</strong> Slam +19 melee (1d8+4 plus 2d6 acid)</p><p><strong>Full Attack:</strong> 2 slams +19 melee (1d8+4 plus 2d6 acid)</p><p><strong>Space/Reach:</strong> 5 ft./10 ft.</p><p><strong>Special Attacks:</strong> Acidic cloud</p><p><strong>Special Qualities:</strong> Blindsight 90 ft., acidic body, cloning, damage reduction 10/-, immunity to acid, ooze traits</p><p><strong>Saves:</strong> Fort +8, Ref +6, Will +8</p><p><strong>Abilities:</strong> Str 19, Agy 10, Sta 14, Int -, Spt 15, Cha 4</p><p><strong>Skills:</strong> Swim +12</p><p><strong>Feats:</strong> -</p><p><strong>Area:</strong> Un&#039;Goro Crater</p><p><strong>Organization:</strong> Solitary or pair</p><p><strong>Treasure:</strong> Standard (but nothing that can be dissolved)</p><p><strong>Advancement:</strong> 21-28 HD (Large); 29-36 HD (Huge)</p><p><strong>Level Adjustment:</strong> -</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 12,
+      "type": "Ooze"
+    },
+    "skills": {
+      "swm": {
+        "ability": "str",
+        "abilityModifier": 4,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 8,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 12,
+        "notes": "Printed total +12",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "med",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Blindsight 90 ft., acidic body, cloning, damage reduction 10/-, immunity to acid, ooze traits",
+      "size": "med",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

@@ -1,0 +1,63 @@
+{
+  "_id": "e834a9f915485f64",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "catalog": {
+        "category": "explosive",
+        "completeTableEntry": true,
+        "generated": true,
+        "status": "structured-table-data",
+        "tableValue": "25 gp; 1 lb."
+      },
+      "rules": {
+        "ammunition": true,
+        "blastRadius": 5,
+        "damage": "3d6 fire",
+        "launchedOnly": true,
+        "malfunctionRating": 1,
+        "rangeIncrement": null,
+        "unitsPerPackage": 1
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          186
+        ],
+        "printedPages": [
+          184
+        ],
+        "section": "Mortar Shell",
+        "verification": "table-extraction"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/item-bag.svg",
+  "name": "Mortar Shell",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "carried": true,
+    "description": {
+      "value": "<p><strong>Printed table value:</strong> 25 gp; 1 lb..</p>"
+    },
+    "hardness": 0,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "identified": true,
+    "identifiedName": "Mortar Shell",
+    "price": 25,
+    "properties": {},
+    "quantity": 1,
+    "source": "World of Warcraft RPG, 2nd Edition, p. 184",
+    "subType": "ammo",
+    "weight": 1
+  },
+  "type": "loot"
+}

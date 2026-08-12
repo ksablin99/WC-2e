@@ -1,0 +1,1036 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "d7ef34aeea75accc",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 8,
+                "die": 8,
+                "expression": "8d8",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Animal Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "med",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "60",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "6",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "15",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "11",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "13",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "9",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "8",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "7",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "40",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "animal",
+          "damageReduction": [],
+          "hd": 8,
+          "hp": 0,
+          "levels": 8,
+          "maxLevel": 50,
+          "resistances": [],
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "low"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 35"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "0035c2864e6deca6",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                13
+              ],
+              "printedDamage": "1d6+7"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Claw",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "8",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Claw",
+          "damage": {
+            "parts": [
+              [
+                "1d6+7",
+                "Piercing or Slashing",
+                "damage-piercing-or-slashing"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Claw +13 melee (1d6+7).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "f020bf8e12ef6f49",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                7
+              ],
+              "printedDamage": "1d8+3"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Bite",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "2",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "bite",
+          "damage": {
+            "parts": [
+              [
+                "1d8+3",
+                "Piercing or Bludgeoning",
+                "damage-piercing-bludgeoning"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> bite +7 melee (1d8+3).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "c5cc36c8dd0849d4",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 2,
+              "id": "0035c2864e6deca6",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Claw",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "f020bf8e12ef6f49",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Bite",
+              "primary": true
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> 2 claws +13 melee (1d6+7) and bite +7 melee (1d8+3).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "c408f1edd3b2f239",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "Improved grab"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                35
+              ],
+              "section": "Dire Lion"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved grab",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Improved grab.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 35",
+          "uniqueId": "wc-monster-dire-lion-improved-grab"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e1f38742a190819c",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "pounce"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                35
+              ],
+              "section": "Dire Lion"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "pounce",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> pounce.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 35",
+          "uniqueId": "wc-monster-dire-lion-pounce"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "97e5e4b2a059d3a2",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "rake 1d6+3"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                35
+              ],
+              "section": "Dire Lion"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "rake 1d6+3",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> rake 1d6+3.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 35",
+          "uniqueId": "wc-monster-dire-lion-rake-1d6-3"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "f82a22e6fed1c57b",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Low-light vision"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                35
+              ],
+              "section": "Dire Lion"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Low-light vision",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Low-light vision.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 35",
+          "uniqueId": "wc-monster-dire-lion-low-light-vision"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "7b95fd74027c2825",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "scent"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                35
+              ],
+              "section": "Dire Lion"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "scent",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> scent.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 35",
+          "uniqueId": "wc-monster-dire-lion-scent"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "d721265e406a0bfb",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Run"
+            },
+            "reference": {
+              "id": "4c8b496bc7281048",
+              "name": "Run",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                35
+              ],
+              "section": "Dire Lion"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Run",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Run.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.4c8b496bc7281048]{Run}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 35",
+          "uniqueId": "wc-monster-dire-lion-run"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "09e563ef4d5ca7fd",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Skilled (Listen and Spot)"
+            },
+            "reference": {
+              "id": "63e93d7c15badc3f",
+              "name": "Skilled",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                35
+              ],
+              "section": "Dire Lion"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Skilled (Listen and Spot)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Skilled (Listen and Spot).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.63e93d7c15badc3f]{Skilled}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 35",
+          "uniqueId": "wc-monster-dire-lion-skilled-listen-and-spot"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "f0429a5e6756d24e",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Weapon Focus (claw)"
+            },
+            "reference": {
+              "id": "fdea42738398197e",
+              "name": "Weapon Focus",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                35
+              ],
+              "section": "Dire Lion"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Weapon Focus (claw)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Weapon Focus (claw).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.fdea42738398197e]{Weapon Focus}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 35",
+          "uniqueId": "wc-monster-dire-lion-weapon-focus-claw"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "cb0f7cc1d5342e73",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Large Animal; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "d0b085906e7933d3",
+              "name": "Animal Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                35
+              ],
+              "section": "Dire Lion"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Animal Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Large Animal; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.d0b085906e7933d3]{Animal Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 35",
+          "uniqueId": "wc-monster-dire-lion-animal-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "bb5ee6aa0329e40a",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 25, Agy 15, Sta 17, Int 2, Spt 12, Cha 10",
+          "Advancement": "9-16 HD (Large); 17-24 HD (Huge)",
+          "Alignment": "Always neutral",
+          "Area": "Any",
+          "Armor Class": "15 (-1 size, +2 Agy, +4 natural), touch 11, flat- footed 13",
+          "Attack": "Claw +13 melee (1d6+7)",
+          "Base Attack/Grapple": "+6/+17",
+          "Challenge Rating": "5",
+          "Environment": "Warm plains",
+          "Feats": "Run, Skilled (Listen and Spot), Weapon Focus (claw)",
+          "Full Attack": "2 claws +13 melee (1d6+7) and bite +7 melee (1d8+3)",
+          "Hit Dice": "8d8+24 (60 hp)",
+          "Initiative": "+2",
+          "Level Adjustment": "-",
+          "Organization": "Solitary, pair, or pride (6-10)",
+          "Saves": "Fort +9, Ref +8, Will +7",
+          "Skills": "Listen +7, Spot +7, Stealth +6 (+2 hiding)*",
+          "Space/Reach": "10 ft./5 ft.",
+          "Special Attacks": "Improved grab, pounce, rake 1d6+3",
+          "Special Qualities": "Low-light vision, scent",
+          "Speed": "40 ft. (8 squares)",
+          "Treasure": "None"
+        },
+        "rulesCoverage": {
+          "actor-defense": 0,
+          "linked-reference": 4,
+          "manual": 5
+        },
+        "subtypes": []
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          36
+        ],
+        "printedPages": [
+          35
+        ],
+        "section": "Dire Lion",
+        "verification": "native-text-table"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "d7ef34aeea75accc",
+    "0035c2864e6deca6",
+    "f020bf8e12ef6f49",
+    "c5cc36c8dd0849d4",
+    "c408f1edd3b2f239",
+    "e1f38742a190819c",
+    "97e5e4b2a059d3a2",
+    "f82a22e6fed1c57b",
+    "7b95fd74027c2825",
+    "d721265e406a0bfb",
+    "09e563ef4d5ca7fd",
+    "f0429a5e6756d24e",
+    "cb0f7cc1d5342e73"
+  ],
+  "name": "Dire Lion",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 3,
+        "origMod": 3,
+        "origTotal": 17,
+        "penalty": 0,
+        "total": 17,
+        "userPenalty": 0,
+        "value": 17
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 2,
+        "origMod": 2,
+        "origTotal": 15,
+        "penalty": 0,
+        "total": 15,
+        "userPenalty": 0,
+        "value": 15
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -4,
+        "origMod": -4,
+        "origTotal": 2,
+        "penalty": 0,
+        "total": 2,
+        "userPenalty": 0,
+        "value": 2
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 7,
+        "origMod": 7,
+        "origTotal": 25,
+        "penalty": 0,
+        "total": 25,
+        "userPenalty": 0,
+        "value": 25
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 12,
+        "penalty": 0,
+        "total": 12,
+        "userPenalty": 0,
+        "value": 12
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 13,
+          "value": 0
+        },
+        "normal": {
+          "total": 15,
+          "value": 0
+        },
+        "touch": {
+          "total": 11,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 6,
+        "nonepic": 6,
+        "total": 6,
+        "value": 0
+      },
+      "cmb": {
+        "total": 17,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "animal",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 0,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 8,
+        "total": 8
+      },
+      "hp": {
+        "base": 60,
+        "max": 60,
+        "min": -17,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 60
+      },
+      "init": {
+        "bonus": 0,
+        "total": 2,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 4,
+      "savingThrows": {
+        "fort": {
+          "base": 9,
+          "total": 9
+        },
+        "ref": {
+          "base": 8,
+          "total": 8
+        },
+        "will": {
+          "base": 7,
+          "total": 7
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": null,
+        "darkvision": null,
+        "lowLight": true,
+        "lowLightMultiplier": 2,
+        "tremorsense": null
+      },
+      "speed": {
+        "land": {
+          "base": 40,
+          "total": 40
+        }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "Always neutral",
+      "biography": {
+        "public": "",
+        "value": "<p>Dire Lion is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 5,
+      "environment": "Warm plains",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 8,
+        "value": 8
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 8d8+24 (60 hp)</p><p><strong>Initiative:</strong> +2</p><p><strong>Speed:</strong> 40 ft. (8 squares)</p><p><strong>Armor Class:</strong> 15 (-1 size, +2 Agy, +4 natural), touch 11, flat- footed 13</p><p><strong>Base Attack/Grapple:</strong> +6/+17</p><p><strong>Attack:</strong> Claw +13 melee (1d6+7)</p><p><strong>Full Attack:</strong> 2 claws +13 melee (1d6+7) and bite +7 melee (1d8+3)</p><p><strong>Space/Reach:</strong> 10 ft./5 ft.</p><p><strong>Special Attacks:</strong> Improved grab, pounce, rake 1d6+3</p><p><strong>Special Qualities:</strong> Low-light vision, scent</p><p><strong>Saves:</strong> Fort +9, Ref +8, Will +7</p><p><strong>Abilities:</strong> Str 25, Agy 15, Sta 17, Int 2, Spt 12, Cha 10</p><p><strong>Skills:</strong> Listen +7, Spot +7, Stealth +6 (+2 hiding)*</p><p><strong>Feats:</strong> Run, Skilled (Listen and Spot), Weapon Focus (claw)</p><p><strong>Area:</strong> Any</p><p><strong>Organization:</strong> Solitary, pair, or pride (6-10)</p><p><strong>Treasure:</strong> None</p><p><strong>Advancement:</strong> 9-16 HD (Large); 17-24 HD (Huge)</p><p><strong>Level Adjustment:</strong> -</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 5,
+      "type": "Animal"
+    },
+    "skills": {
+      "hid": {
+        "ability": "dex",
+        "abilityModifier": 2,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 4,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 6,
+        "notes": "Printed total +6 (+2 hiding)*",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "lis": {
+        "ability": "wis",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 6,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 7,
+        "notes": "Printed total +7",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spt": {
+        "ability": "wis",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 6,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 7,
+        "notes": "Printed total +7",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "lg",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Low-light vision, scent",
+      "size": "lg",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

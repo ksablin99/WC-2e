@@ -1,0 +1,827 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "6e5be10a925f14b4",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 3,
+                "die": 6,
+                "expression": "3d6",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Fey Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "low",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "13",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "1",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "18",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "13",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "16",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "0",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "4",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "4",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "20",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "fey",
+          "damageReduction": [],
+          "hd": 6,
+          "hp": 0,
+          "levels": 3,
+          "maxLevel": 50,
+          "resistances": [],
+          "savingThrows": {
+            "fort": {
+              "value": "low"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "high"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 86"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "784cc0c0de408215",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                4
+              ],
+              "printedDamage": "1d4+1"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Claw",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "2",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Claw",
+          "damage": {
+            "parts": [
+              [
+                "1d4+1",
+                "Piercing or Slashing",
+                "damage-piercing-or-slashing"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Claw +4 melee (1d4+1).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "0ef7fde28cd0f830",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "784cc0c0de408215",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Claw",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> Claw +4 melee (1d4+1).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "b8c6aedb1f4d2026",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Low-light vision"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                86
+              ],
+              "section": "Grellkin"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Low-light vision",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Low-light vision.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 86",
+          "uniqueId": "wc-monster-grellkin-low-light-vision"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "645b477554898bce",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Skilled (Listen and Spot)"
+            },
+            "reference": {
+              "id": "63e93d7c15badc3f",
+              "name": "Skilled",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                86
+              ],
+              "section": "Grellkin"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Skilled (Listen and Spot)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Skilled (Listen and Spot).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.63e93d7c15badc3f]{Skilled}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 86",
+          "uniqueId": "wc-monster-grellkin-skilled-listen-and-spot"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "15a545ddd82343bf",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Weapon Finesse"
+            },
+            "reference": {
+              "id": "09eb70cdcda3c32d",
+              "name": "Weapon Finesse",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                86
+              ],
+              "section": "Grellkin"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Weapon Finesse",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Weapon Finesse.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.09eb70cdcda3c32d]{Weapon Finesse}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 86",
+          "uniqueId": "wc-monster-grellkin-weapon-finesse"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "4d426fb5275a05e8",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Small Fey; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "02b0e80b61a301fb",
+              "name": "Fey Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                86
+              ],
+              "section": "Grellkin"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Fey Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Small Fey; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.02b0e80b61a301fb]{Fey Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 86",
+          "uniqueId": "wc-monster-grellkin-fey-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "48854377a0eaa867",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 13, Agy 15, Sta 12, Int 8, Spt 14, Cha 13",
+          "Advancement": "4-9 HD (Small) or by character class",
+          "Alignment": "Usually chaotic neutral",
+          "Area": "Teldrassil",
+          "Armor Class": "18 (+1 size, +2 Agy, +5 natural), touch 13, flat-footed 16",
+          "Attack": "Claw +4 melee (1d4+1)",
+          "Base Attack/Grapple": "+1/-2",
+          "Challenge Rating": "1",
+          "Environment": "Temperate forest",
+          "Feats": "Skilled (Listen and Spot), Weapon Finesse",
+          "Full Attack": "Claw +4 melee (1d4+1)",
+          "Hit Dice": "3d6+3 (13 hp)",
+          "Initiative": "+2",
+          "Level Adjustment": "-",
+          "Organization": "Gang (2-5)",
+          "Saves": "Fort +0, Ref +4, Will +4",
+          "Skills": "Listen +10, Perform (dance) +7, Spot +10, Stealth +8 (+12 hiding), Survival +8",
+          "Space/Reach": "5 ft./5 ft.",
+          "Special Attacks": "-",
+          "Special Qualities": "Low-light vision",
+          "Speed": "20 ft. (4 squares)",
+          "Treasure": "Standard"
+        },
+        "rulesCoverage": {
+          "actor-defense": 0,
+          "linked-reference": 3,
+          "manual": 1
+        },
+        "subtypes": []
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          87
+        ],
+        "printedPages": [
+          86
+        ],
+        "section": "Grellkin",
+        "verification": "native-text-table+review-override"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "6e5be10a925f14b4",
+    "784cc0c0de408215",
+    "0ef7fde28cd0f830",
+    "b8c6aedb1f4d2026",
+    "645b477554898bce",
+    "15a545ddd82343bf",
+    "4d426fb5275a05e8"
+  ],
+  "name": "Grellkin",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 13,
+        "penalty": 0,
+        "total": 13,
+        "userPenalty": 0,
+        "value": 13
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 12,
+        "penalty": 0,
+        "total": 12,
+        "userPenalty": 0,
+        "value": 12
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 2,
+        "origMod": 2,
+        "origTotal": 15,
+        "penalty": 0,
+        "total": 15,
+        "userPenalty": 0,
+        "value": 15
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -1,
+        "origMod": -1,
+        "origTotal": 8,
+        "penalty": 0,
+        "total": 8,
+        "userPenalty": 0,
+        "value": 8
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 13,
+        "penalty": 0,
+        "total": 13,
+        "userPenalty": 0,
+        "value": 13
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 2,
+        "origMod": 2,
+        "origTotal": 14,
+        "penalty": 0,
+        "total": 14,
+        "userPenalty": 0,
+        "value": 14
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 16,
+          "value": 0
+        },
+        "normal": {
+          "total": 18,
+          "value": 0
+        },
+        "touch": {
+          "total": 13,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 1,
+        "nonepic": 1,
+        "total": 1,
+        "value": 0
+      },
+      "cmb": {
+        "total": -2,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "fey",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 0,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 3,
+        "total": 3
+      },
+      "hp": {
+        "base": 13,
+        "max": 13,
+        "min": -12,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 13
+      },
+      "init": {
+        "bonus": 0,
+        "total": 2,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 5,
+      "savingThrows": {
+        "fort": {
+          "base": 0,
+          "total": 0
+        },
+        "ref": {
+          "base": 4,
+          "total": 4
+        },
+        "will": {
+          "base": 4,
+          "total": 4
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": null,
+        "darkvision": null,
+        "lowLight": true,
+        "lowLightMultiplier": 2,
+        "tremorsense": null
+      },
+      "speed": {
+        "land": {
+          "base": 20,
+          "total": 20
+        }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "Usually chaotic neutral",
+      "biography": {
+        "public": "",
+        "value": "<p>Grellkin is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 1,
+      "environment": "Temperate forest",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 3,
+        "value": 3
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 3d6+3 (13 hp)</p><p><strong>Initiative:</strong> +2</p><p><strong>Speed:</strong> 20 ft. (4 squares)</p><p><strong>Armor Class:</strong> 18 (+1 size, +2 Agy, +5 natural), touch 13, flat-footed 16</p><p><strong>Base Attack/Grapple:</strong> +1/-2</p><p><strong>Attack:</strong> Claw +4 melee (1d4+1)</p><p><strong>Full Attack:</strong> Claw +4 melee (1d4+1)</p><p><strong>Space/Reach:</strong> 5 ft./5 ft.</p><p><strong>Special Attacks:</strong> -</p><p><strong>Special Qualities:</strong> Low-light vision</p><p><strong>Saves:</strong> Fort +0, Ref +4, Will +4</p><p><strong>Abilities:</strong> Str 13, Agy 15, Sta 12, Int 8, Spt 14, Cha 13</p><p><strong>Skills:</strong> Listen +10, Perform (dance) +7, Spot +10, Stealth +8 (+12 hiding), Survival +8</p><p><strong>Feats:</strong> Skilled (Listen and Spot), Weapon Finesse</p><p><strong>Area:</strong> Teldrassil</p><p><strong>Organization:</strong> Gang (2-5)</p><p><strong>Treasure:</strong> Standard</p><p><strong>Advancement:</strong> 4-9 HD (Small) or by character class</p><p><strong>Level Adjustment:</strong> -</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 1,
+      "type": "Fey"
+    },
+    "skills": {
+      "hid": {
+        "ability": "dex",
+        "abilityModifier": 2,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 6,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 8,
+        "notes": "Printed total +8 (+12 hiding)",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "lis": {
+        "ability": "wis",
+        "abilityModifier": 2,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 8,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 10,
+        "notes": "Printed total +10",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "prf": {
+        "ability": "cha",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": -1,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 0,
+        "notes": "",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "subSkills": {
+          "wcf086bac3": {
+            "ability": "cha",
+            "abilityModifier": 1,
+            "acp": false,
+            "acpPenalty": 0,
+            "background": false,
+            "changeBonus": 6,
+            "cs": false,
+            "energyDrainPenalty": 0,
+            "mod": 7,
+            "name": "dance",
+            "notes": "Printed total +7",
+            "points": 0,
+            "rank": 0,
+            "rt": false,
+            "value": 0,
+            "visibility": "default"
+          }
+        },
+        "value": 0,
+        "visibility": "default"
+      },
+      "spt": {
+        "ability": "wis",
+        "abilityModifier": 2,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 8,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 10,
+        "notes": "Printed total +10",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "sur": {
+        "ability": "wis",
+        "abilityModifier": 2,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 6,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 8,
+        "notes": "Printed total +8",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "sm",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Low-light vision",
+      "size": "sm",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

@@ -1,0 +1,42 @@
+{
+  "_embedded": {},
+  "_id": "3724120317a7b3b5",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "creatureRule": {
+        "kind": "subtype",
+        "reusable": true
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          189
+        ],
+        "printedPages": [
+          188
+        ],
+        "section": "Earth Subtype",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/aura.svg",
+  "name": "Earth Subtype Traits",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilityType": "nat",
+    "description": {
+      "value": "<p>Usually marks elementals and outsiders tied to earth. Such creatures normally have a burrow speed, often through solid rock, unless their entry says otherwise.</p><p>This reusable record defines shared conversion behavior. Individual actors carry exact printed exceptions and totals.</p>"
+    },
+    "featType": "trait",
+    "source": "World of Warcraft: Monster Guide, pp. 188",
+    "uniqueId": "wc-creature-rule-earth-subtype"
+  },
+  "type": "feat"
+}

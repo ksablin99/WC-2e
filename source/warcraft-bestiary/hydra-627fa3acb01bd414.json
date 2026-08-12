@@ -1,0 +1,1075 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "f94edcad62c99bc1",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 12,
+                "die": 10,
+                "expression": "12d10",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Magical Beast Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "high",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "174",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "12",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "18",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "10",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "17",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "17",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "9",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "4",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "30",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "20",
+              "speed",
+              "swimSpeed",
+              "base-replace"
+            ],
+            [
+              "4",
+              "misc",
+              "init",
+              "untyped"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "magicalBeast",
+          "damageReduction": [],
+          "hd": 10,
+          "hp": 0,
+          "levels": 12,
+          "maxLevel": 50,
+          "resistances": [],
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "low"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 89"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "83fa45f88fb79456",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                20
+              ],
+              "printedDamage": "2d6+8/19-20 plus poison"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Bite",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 19,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "9",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Bite",
+          "damage": {
+            "parts": [
+              [
+                "2d6+8",
+                "Piercing or Bludgeoning",
+                "damage-piercing-bludgeoning"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Bite +20 melee (2d6+8/19-20 plus poison).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": true,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "ed353b346a92a800",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 3,
+              "id": "83fa45f88fb79456",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Bite",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> 3 bites +20 melee (2d6+8/19-20 plus poison).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "f4d1478e7d4f387a",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Special Attack",
+              "raw": "Poison (DC 27)"
+            },
+            "reference": {
+              "id": "HjLw7ZfbGOjpqSbN",
+              "name": "Poison",
+              "pack": "warcraftrpg2e.spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                89
+              ],
+              "section": "Hydra"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Poison",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Poison (DC 27).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.spells.Item.HjLw7ZfbGOjpqSbN]{Poison}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 89",
+          "uniqueId": "wc-monster-hydra-poison"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e8faad03877aa012",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "spit"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                89
+              ],
+              "section": "Hydra"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "spit",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> spit.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 89",
+          "uniqueId": "wc-monster-hydra-spit"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "b656c2fa9ccaff57",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Darkvision 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                89
+              ],
+              "section": "Hydra"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Darkvision 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Darkvision 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 89",
+          "uniqueId": "wc-monster-hydra-darkvision-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "256841cc08055c2e",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "fast healing 12"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                89
+              ],
+              "section": "Hydra"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "fast healing 12",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> fast healing 12.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 89",
+          "uniqueId": "wc-monster-hydra-fast-healing-12"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "8a3437ba150b5f95",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "split"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                89
+              ],
+              "section": "Hydra"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "split",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> split.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 89",
+          "uniqueId": "wc-monster-hydra-split"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "d46999886f376e00",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Ability Focus (poison)"
+            },
+            "reference": {
+              "id": "btFxZnSXUHqGUffu",
+              "name": "Ability Focus",
+              "pack": "warcraftrpg2e.feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                89
+              ],
+              "section": "Hydra"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Ability Focus (poison)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Ability Focus (poison).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.feats.Item.btFxZnSXUHqGUffu]{Ability Focus}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 89",
+          "uniqueId": "wc-monster-hydra-ability-focus-poison"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "7cfc7e3da043aef5",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Critical (bite)"
+            },
+            "reference": {
+              "id": "67beb7aa2473045e",
+              "name": "Improved Critical",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                89
+              ],
+              "section": "Hydra"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Critical (bite)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Critical (bite).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.67beb7aa2473045e]{Improved Critical}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 89",
+          "uniqueId": "wc-monster-hydra-improved-critical-bite"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e7cf3f1d461fad09",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Initiative"
+            },
+            "reference": {
+              "id": "3232602c102e0494",
+              "name": "Improved Initiative",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                89
+              ],
+              "section": "Hydra"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Initiative",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Initiative.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.3232602c102e0494]{Improved Initiative}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 89",
+          "uniqueId": "wc-monster-hydra-improved-initiative"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "a099106179035579",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Skilled (Listen and Spot)"
+            },
+            "reference": {
+              "id": "63e93d7c15badc3f",
+              "name": "Skilled",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                89
+              ],
+              "section": "Hydra"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Skilled (Listen and Spot)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Skilled (Listen and Spot).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.63e93d7c15badc3f]{Skilled}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 89",
+          "uniqueId": "wc-monster-hydra-skilled-listen-and-spot"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "c7a1c7b79303c76b",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Weapon Focus (bite)"
+            },
+            "reference": {
+              "id": "fdea42738398197e",
+              "name": "Weapon Focus",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                89
+              ],
+              "section": "Hydra"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Weapon Focus (bite)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Weapon Focus (bite).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.fdea42738398197e]{Weapon Focus}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 89",
+          "uniqueId": "wc-monster-hydra-weapon-focus-bite"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "9ae89d009215e455",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Large Magical Beast; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "4a5e271e2b371475",
+              "name": "Magical Beast Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                89
+              ],
+              "section": "Hydra"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Magical Beast Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Large Magical Beast; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.4a5e271e2b371475]{Magical Beast Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 89",
+          "uniqueId": "wc-monster-hydra-magical-beast-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "627fa3acb01bd414",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 26, Agy 12, Sta 28, Int 4, Spt 10, Cha 6",
+          "Advancement": "13-16 HD (Large); 17-24 HD (Huge)",
+          "Alignment": "Usually neutral",
+          "Area": "Any",
+          "Armor Class": "18 (-1 size, +1 Agy, +8 natural), touch 10, flat- footed 17",
+          "Attack": "Bite +20 melee (2d6+8/19-20 plus poison)",
+          "Base Attack/Grapple": "+12/+24",
+          "Challenge Rating": "11",
+          "Environment": "Temperate and warm aquatic, marsh, and underground",
+          "Feats": "Ability Focus (poison), Improved Critical (bite), Improved Initiative, Skilled (Listen and Spot), Weapon Focus (bite)",
+          "Full Attack": "3 bites +20 melee (2d6+8/19-20 plus poison)",
+          "Hit Dice": "12d10+108 (174 hp)",
+          "Initiative": "+5",
+          "Level Adjustment": "-",
+          "Organization": "Solitary, pair, or colony (3-5 plus 1 hydra of 17+ HD)",
+          "Saves": "Fort +17, Ref +9, Will +4",
+          "Skills": "Listen +13, Spot +14, Swim +16",
+          "Space/Reach": "10 ft./10 ft.",
+          "Special Attacks": "Poison (DC 27), spit",
+          "Special Qualities": "Darkvision 60 ft., fast healing 12, split",
+          "Speed": "30 ft. (6 squares), swim 20 ft.",
+          "Treasure": "None"
+        },
+        "rulesCoverage": {
+          "actor-defense": 1,
+          "linked-reference": 7,
+          "manual": 3
+        },
+        "subtypes": []
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          90
+        ],
+        "printedPages": [
+          89
+        ],
+        "section": "Hydra",
+        "verification": "native-text-table+review-override"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "f94edcad62c99bc1",
+    "83fa45f88fb79456",
+    "ed353b346a92a800",
+    "f4d1478e7d4f387a",
+    "e8faad03877aa012",
+    "b656c2fa9ccaff57",
+    "256841cc08055c2e",
+    "8a3437ba150b5f95",
+    "d46999886f376e00",
+    "7cfc7e3da043aef5",
+    "e7cf3f1d461fad09",
+    "a099106179035579",
+    "c7a1c7b79303c76b",
+    "9ae89d009215e455"
+  ],
+  "name": "Hydra",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -2,
+        "origMod": -2,
+        "origTotal": 6,
+        "penalty": 0,
+        "total": 6,
+        "userPenalty": 0,
+        "value": 6
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 9,
+        "origMod": 9,
+        "origTotal": 28,
+        "penalty": 0,
+        "total": 28,
+        "userPenalty": 0,
+        "value": 28
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 12,
+        "penalty": 0,
+        "total": 12,
+        "userPenalty": 0,
+        "value": 12
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -3,
+        "origMod": -3,
+        "origTotal": 4,
+        "penalty": 0,
+        "total": 4,
+        "userPenalty": 0,
+        "value": 4
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 8,
+        "origMod": 8,
+        "origTotal": 26,
+        "penalty": 0,
+        "total": 26,
+        "userPenalty": 0,
+        "value": 26
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 17,
+          "value": 0
+        },
+        "normal": {
+          "total": 18,
+          "value": 0
+        },
+        "touch": {
+          "total": 10,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 12,
+        "nonepic": 12,
+        "total": 12,
+        "value": 0
+      },
+      "cmb": {
+        "total": 24,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "magicalBeast",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 0,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 12,
+        "total": 12
+      },
+      "hp": {
+        "base": 174,
+        "max": 174,
+        "min": -28,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 174
+      },
+      "init": {
+        "bonus": 0,
+        "total": 5,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 8,
+      "savingThrows": {
+        "fort": {
+          "base": 17,
+          "total": 17
+        },
+        "ref": {
+          "base": 9,
+          "total": 9
+        },
+        "will": {
+          "base": 4,
+          "total": 4
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": null,
+        "darkvision": 60,
+        "lowLight": false,
+        "lowLightMultiplier": null,
+        "tremorsense": null
+      },
+      "speed": {
+        "land": {
+          "base": 30,
+          "total": 30
+        },
+        "swim": {
+          "base": 20,
+          "total": 20
+        }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "Usually neutral",
+      "biography": {
+        "public": "",
+        "value": "<p>Hydra is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 11,
+      "environment": "Temperate and warm aquatic, marsh, and underground",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 12,
+        "value": 12
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 12d10+108 (174 hp)</p><p><strong>Initiative:</strong> +5</p><p><strong>Speed:</strong> 30 ft. (6 squares), swim 20 ft.</p><p><strong>Armor Class:</strong> 18 (-1 size, +1 Agy, +8 natural), touch 10, flat- footed 17</p><p><strong>Base Attack/Grapple:</strong> +12/+24</p><p><strong>Attack:</strong> Bite +20 melee (2d6+8/19-20 plus poison)</p><p><strong>Full Attack:</strong> 3 bites +20 melee (2d6+8/19-20 plus poison)</p><p><strong>Space/Reach:</strong> 10 ft./10 ft.</p><p><strong>Special Attacks:</strong> Poison (DC 27), spit</p><p><strong>Special Qualities:</strong> Darkvision 60 ft., fast healing 12, split</p><p><strong>Saves:</strong> Fort +17, Ref +9, Will +4</p><p><strong>Abilities:</strong> Str 26, Agy 12, Sta 28, Int 4, Spt 10, Cha 6</p><p><strong>Skills:</strong> Listen +13, Spot +14, Swim +16</p><p><strong>Feats:</strong> Ability Focus (poison), Improved Critical (bite), Improved Initiative, Skilled (Listen and Spot), Weapon Focus (bite)</p><p><strong>Area:</strong> Any</p><p><strong>Organization:</strong> Solitary, pair, or colony (3-5 plus 1 hydra of 17+ HD)</p><p><strong>Treasure:</strong> None</p><p><strong>Advancement:</strong> 13-16 HD (Large); 17-24 HD (Huge)</p><p><strong>Level Adjustment:</strong> -</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 11,
+      "type": "Magical Beast"
+    },
+    "skills": {
+      "lis": {
+        "ability": "wis",
+        "abilityModifier": 0,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 13,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 13,
+        "notes": "Printed total +13",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spt": {
+        "ability": "wis",
+        "abilityModifier": 0,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 14,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 14,
+        "notes": "Printed total +14",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "swm": {
+        "ability": "str",
+        "abilityModifier": 8,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 8,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 16,
+        "notes": "Printed total +16",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "lg",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": 12,
+      "fastHealingTotal": 12,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Darkvision 60 ft., fast healing 12, split",
+      "size": "lg",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

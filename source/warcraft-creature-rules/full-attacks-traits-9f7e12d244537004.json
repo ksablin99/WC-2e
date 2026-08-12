@@ -1,0 +1,42 @@
+{
+  "_embedded": {},
+  "_id": "9f7e12d244537004",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "creatureRule": {
+        "kind": "capability",
+        "reusable": true
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          194
+        ],
+        "printedPages": [
+          193
+        ],
+        "section": "Full Attacks",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/aura.svg",
+  "name": "Full Attacks Traits",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilityType": "nat",
+    "description": {
+      "value": "<p>A full attack uses every attack and count linked from the creature's printed Full Attack line. Natural attacks do not gain BAB iteratives; manufactured-weapon iteratives and primary or secondary natural-weapon penalties are already reflected in the printed bonuses. Do not recalculate away explicit source exceptions.</p><p>This reusable record defines shared conversion behavior. Individual actors carry exact printed exceptions and totals.</p>"
+    },
+    "featType": "trait",
+    "source": "World of Warcraft: Monster Guide, pp. 193",
+    "uniqueId": "wc-creature-rule-full-attacks"
+  },
+  "type": "feat"
+}

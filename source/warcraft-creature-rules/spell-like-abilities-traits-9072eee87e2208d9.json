@@ -1,0 +1,42 @@
+{
+  "_embedded": {},
+  "_id": "9072eee87e2208d9",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "creatureRule": {
+        "kind": "capability",
+        "reusable": true
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          197
+        ],
+        "printedPages": [
+          196
+        ],
+        "section": "Spell-Like Abilities",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/aura.svg",
+  "name": "Spell-Like Abilities Traits",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilityType": "nat",
+    "description": {
+      "value": "<p>A spell-like ability has no components, normally takes a standard action, provokes, can be disrupted or used defensively with Concentration, is suppressed by anti-magic, and is subject to spell resistance when the duplicated spell is. It cannot counterspell or be counterspelled. Use the listed caster level, or Hit Dice if none is listed; the usual save DC is 10 + duplicated spell level + Charisma modifier.</p><p>This reusable record defines shared conversion behavior. Individual actors carry exact printed exceptions and totals.</p>"
+    },
+    "featType": "trait",
+    "source": "World of Warcraft: Monster Guide, pp. 196",
+    "uniqueId": "wc-creature-rule-spell-like-abilities"
+  },
+  "type": "feat"
+}

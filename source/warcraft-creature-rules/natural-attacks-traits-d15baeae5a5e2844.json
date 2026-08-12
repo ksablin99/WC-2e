@@ -1,0 +1,42 @@
+{
+  "_embedded": {},
+  "_id": "d15baeae5a5e2844",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "creatureRule": {
+        "kind": "capability",
+        "reusable": true
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          194
+        ],
+        "printedPages": [
+          193
+        ],
+        "section": "Natural Attacks",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/aura.svg",
+  "name": "Natural Attacks Traits",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilityType": "nat",
+    "description": {
+      "value": "<p>A natural weapon is armed, threatens normally, and does not gain iterative attacks from high base attack bonus. The printed Attack line identifies the primary weapon; remaining natural weapons are secondary, normally at -5 (-2 with Multiattack). Primary damage uses full Strength and secondary damage normally uses half Strength. The actor's linked Full Attack record is authoritative for number, order, and exceptions.</p><p>This reusable record defines shared conversion behavior. Individual actors carry exact printed exceptions and totals.</p>"
+    },
+    "featType": "trait",
+    "source": "World of Warcraft: Monster Guide, pp. 193",
+    "uniqueId": "wc-creature-rule-natural-attacks"
+  },
+  "type": "feat"
+}

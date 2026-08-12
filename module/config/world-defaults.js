@@ -62,7 +62,6 @@ export class WorldDefaultConfig extends FormApplication {
           kge: "hide",
           khi: "hide",
           kps: "hide",
-          mos: "hide",
           psi: "hide",
           upd: "hide",
         },

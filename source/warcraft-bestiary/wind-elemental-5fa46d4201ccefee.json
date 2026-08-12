@@ -1,0 +1,1189 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "01d39dac3878925c",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 4,
+                "die": 8,
+                "expression": "4d8",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Elemental Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "med",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "26",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "3",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "20",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "15",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "15",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "3",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "9",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "1",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "100",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "100",
+              "speed",
+              "flySpeed",
+              "base-replace"
+            ],
+            [
+              "4",
+              "misc",
+              "init",
+              "untyped"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "elemental",
+          "damageReduction": [],
+          "hd": 8,
+          "hp": 0,
+          "levels": 4,
+          "maxLevel": 50,
+          "resistances": [],
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "low"
+            },
+            "will": {
+              "value": "low"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 54"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "d0c2bebd070d8c95",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                8
+              ],
+              "printedDamage": "1d6+3"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Slam",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "5",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Slam",
+          "damage": {
+            "parts": [
+              [
+                "1d6+3",
+                "Bludgeoning",
+                "damage-bludg"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Slam +8 melee (1d6+3).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "1c816b809561c8da",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                7
+              ],
+              "printedDamage": "1d6+3"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Slam",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "4",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Slam",
+          "damage": {
+            "parts": [
+              [
+                "1d6+3",
+                "Bludgeoning",
+                "damage-bludg"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Slam +7 melee (1d6+3).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "05c0445d3fbf4363",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "1c816b809561c8da",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Slam",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> Slam +7 melee (1d6+3).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "57dd595281ae9379",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "Dustcloud (DC 17)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Wind Elemental"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Dustcloud",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Dustcloud (DC 17).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-wind-elemental-dustcloud"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "c609b61bca15c258",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Special Attack",
+              "raw": "whirlwind (DC 14)"
+            },
+            "reference": {
+              "id": "b1deefa4e23ded53",
+              "name": "Whirlwind",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Wind Elemental"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "whirlwind",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> whirlwind (DC 14).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-spells.Item.b1deefa4e23ded53]{Whirlwind}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-wind-elemental-whirlwind"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "04484a113a62e3ad",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Darkvision 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Wind Elemental"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Darkvision 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Darkvision 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-wind-elemental-darkvision-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "a1bd9d9f2c67b824",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "bracers"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Wind Elemental"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "bracers",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> bracers.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-wind-elemental-bracers"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "b299739142c72fb0",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "elemental traits"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Wind Elemental"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "elemental traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> elemental traits.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-wind-elemental-elemental-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "b62c605cafb893c4",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Flyby Attack"
+            },
+            "reference": {
+              "id": "SsqHUJ1AqujhZKeA",
+              "name": "Flyby Attack",
+              "pack": "warcraftrpg2e.feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Wind Elemental"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Flyby Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Flyby Attack.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.feats.Item.SsqHUJ1AqujhZKeA]{Flyby Attack}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-wind-elemental-flyby-attack"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "84d0e9d783560c12",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Initiative"
+            },
+            "reference": {
+              "id": "3232602c102e0494",
+              "name": "Improved Initiative",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Wind Elemental"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Initiative",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Initiative.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.3232602c102e0494]{Improved Initiative}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-wind-elemental-improved-initiative"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "327aa32eccc753cb",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Skilled (Listen and Spot)"
+            },
+            "reference": {
+              "id": "63e93d7c15badc3f",
+              "name": "Skilled",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Wind Elemental"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Skilled (Listen and Spot)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Skilled (Listen and Spot).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.63e93d7c15badc3f]{Skilled}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-wind-elemental-skilled-listen-and-spot"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "8cbec3febe884c6f",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Weapon Finesse"
+            },
+            "reference": {
+              "id": "09eb70cdcda3c32d",
+              "name": "Weapon Finesse",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Wind Elemental"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Weapon Finesse",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Weapon Finesse.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.09eb70cdcda3c32d]{Weapon Finesse}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-wind-elemental-weapon-finesse"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "2021d9f03ca99af3",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Medium Elemental (Air, Extraplanar); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "80222760db02f7a1",
+              "name": "Elemental Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Wind Elemental"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Elemental Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Medium Elemental (Air, Extraplanar); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.80222760db02f7a1]{Elemental Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-wind-elemental-elemental-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "4ea825d738d8b83d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Air subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "268922696b9a153b",
+              "name": "Air Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Wind Elemental"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Air Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Air subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.268922696b9a153b]{Air Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-wind-elemental-air-subtype-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "0b143e8217414ce2",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Extraplanar subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "f56ea12b09ac91fc",
+              "name": "Extraplanar Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                54
+              ],
+              "section": "Wind Elemental"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Extraplanar Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Extraplanar subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.f56ea12b09ac91fc]{Extraplanar Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 54",
+          "uniqueId": "wc-monster-wind-elemental-extraplanar-subtype-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "5fa46d4201ccefee",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 14, Agy 21, Sta 14, Int 4, Spt 11, Cha 11",
+          "Advancement": "",
+          "Alignment": "Always chaotic neutral",
+          "Area": "Skywall (The Elemental Plane)",
+          "Armor Class": "20 (+5 Agy, +5 natural), touch 15, flat-footed 15",
+          "Attack": "Slam +8 melee (1d6+3)",
+          "Base Attack/Grapple": "+3/+5",
+          "Challenge Rating": "3",
+          "Environment": "Any",
+          "Feats": "Flyby Attack*, Improved Initiative B , Skilled (Listen and Spot), Weapon Finesse B",
+          "Full Attack": "Slam +7 melee (1d6+3)",
+          "Hit Dice": "4d8+8 (26 hp)",
+          "Initiative": "+9",
+          "Level Adjustment": "-",
+          "Organization": "Solitary",
+          "Saves": "Fort +3, Ref +9, Will +1",
+          "Skills": "Listen +3, Spot +3, Stealth +15",
+          "Space/Reach": "5 ft./5 ft.",
+          "Special Attacks": "Dustcloud (DC 17), whirlwind (DC 14)",
+          "Special Qualities": "Darkvision 60 ft., bracers, elemental traits",
+          "Speed": "Fly 100 ft. (20 squares) (perfect)",
+          "Treasure": "None"
+        },
+        "rulesCoverage": {
+          "actor-defense": 0,
+          "linked-reference": 8,
+          "manual": 4
+        },
+        "subtypes": [
+          "Air",
+          "Extraplanar"
+        ]
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          55
+        ],
+        "printedPages": [
+          54
+        ],
+        "section": "Wind Elemental",
+        "verification": "native-text-table"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "01d39dac3878925c",
+    "d0c2bebd070d8c95",
+    "1c816b809561c8da",
+    "05c0445d3fbf4363",
+    "57dd595281ae9379",
+    "c609b61bca15c258",
+    "04484a113a62e3ad",
+    "a1bd9d9f2c67b824",
+    "b299739142c72fb0",
+    "b62c605cafb893c4",
+    "84d0e9d783560c12",
+    "327aa32eccc753cb",
+    "8cbec3febe884c6f",
+    "2021d9f03ca99af3",
+    "4ea825d738d8b83d",
+    "0b143e8217414ce2"
+  ],
+  "name": "Wind Elemental",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 11,
+        "penalty": 0,
+        "total": 11,
+        "userPenalty": 0,
+        "value": 11
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 2,
+        "origMod": 2,
+        "origTotal": 14,
+        "penalty": 0,
+        "total": 14,
+        "userPenalty": 0,
+        "value": 14
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 5,
+        "origMod": 5,
+        "origTotal": 21,
+        "penalty": 0,
+        "total": 21,
+        "userPenalty": 0,
+        "value": 21
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -3,
+        "origMod": -3,
+        "origTotal": 4,
+        "penalty": 0,
+        "total": 4,
+        "userPenalty": 0,
+        "value": 4
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 2,
+        "origMod": 2,
+        "origTotal": 14,
+        "penalty": 0,
+        "total": 14,
+        "userPenalty": 0,
+        "value": 14
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 11,
+        "penalty": 0,
+        "total": 11,
+        "userPenalty": 0,
+        "value": 11
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 15,
+          "value": 0
+        },
+        "normal": {
+          "total": 20,
+          "value": 0
+        },
+        "touch": {
+          "total": 15,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 3,
+        "nonepic": 3,
+        "total": 3,
+        "value": 0
+      },
+      "cmb": {
+        "total": 5,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "elemental",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 100,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 4,
+        "total": 4
+      },
+      "hp": {
+        "base": 26,
+        "max": 26,
+        "min": -14,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 26
+      },
+      "init": {
+        "bonus": 0,
+        "total": 9,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 5,
+      "savingThrows": {
+        "fort": {
+          "base": 3,
+          "total": 3
+        },
+        "ref": {
+          "base": 9,
+          "total": 9
+        },
+        "will": {
+          "base": 1,
+          "total": 1
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": null,
+        "darkvision": 60,
+        "lowLight": false,
+        "lowLightMultiplier": null,
+        "tremorsense": null
+      },
+      "speed": {
+        "fly": {
+          "base": 100,
+          "total": 100
+        },
+        "land": {
+          "base": 100,
+          "total": 100
+        }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "Always chaotic neutral",
+      "biography": {
+        "public": "",
+        "value": "<p>Wind Elemental is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 3,
+      "environment": "Any",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 4,
+        "value": 4
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 4d8+8 (26 hp)</p><p><strong>Initiative:</strong> +9</p><p><strong>Speed:</strong> Fly 100 ft. (20 squares) (perfect)</p><p><strong>Armor Class:</strong> 20 (+5 Agy, +5 natural), touch 15, flat-footed 15</p><p><strong>Base Attack/Grapple:</strong> +3/+5</p><p><strong>Attack:</strong> Slam +8 melee (1d6+3)</p><p><strong>Full Attack:</strong> Slam +7 melee (1d6+3)</p><p><strong>Space/Reach:</strong> 5 ft./5 ft.</p><p><strong>Special Attacks:</strong> Dustcloud (DC 17), whirlwind (DC 14)</p><p><strong>Special Qualities:</strong> Darkvision 60 ft., bracers, elemental traits</p><p><strong>Saves:</strong> Fort +3, Ref +9, Will +1</p><p><strong>Abilities:</strong> Str 14, Agy 21, Sta 14, Int 4, Spt 11, Cha 11</p><p><strong>Skills:</strong> Listen +3, Spot +3, Stealth +15</p><p><strong>Feats:</strong> Flyby Attack*, Improved Initiative B , Skilled (Listen and Spot), Weapon Finesse B</p><p><strong>Area:</strong> Skywall (The Elemental Plane)</p><p><strong>Organization:</strong> Solitary</p><p><strong>Treasure:</strong> None</p><p><strong>Level Adjustment:</strong> -</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 3,
+      "type": "Elemental"
+    },
+    "skills": {
+      "hid": {
+        "ability": "dex",
+        "abilityModifier": 5,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 10,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 15,
+        "notes": "Printed total +15",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "lis": {
+        "ability": "wis",
+        "abilityModifier": 0,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 3,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 3,
+        "notes": "Printed total +3",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spt": {
+        "ability": "wis",
+        "abilityModifier": 0,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 3,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 3,
+        "notes": "Printed total +3",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "med",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Darkvision 60 ft., bracers, elemental traits",
+      "size": "med",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

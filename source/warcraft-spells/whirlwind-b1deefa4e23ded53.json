@@ -1,0 +1,264 @@
+{
+  "_embedded": {},
+  "_id": "b1deefa4e23ded53",
+  "_stats": {
+    "compendiumSource": null,
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "lastModifiedBy": null,
+    "modifiedTime": null,
+    "systemId": null,
+    "systemVersion": null
+  },
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "catalog": {
+        "completeListEntry": true,
+        "generated": true,
+        "status": "srd-mechanics-with-warcraft-header"
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          273,
+          275,
+          358
+        ],
+        "printedPages": [
+          271,
+          273,
+          356
+        ],
+        "section": "Whirlwind",
+        "verification": "text-extracted-header"
+      }
+    }
+  },
+  "folder": null,
+  "img": "systems/warcraftrpg2e/icons/spells/named-spells/whirlwind.png",
+  "name": "Whirlwind",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "ability": {
+      "attack": "",
+      "critMult": 2,
+      "critRange": 20,
+      "damage": "",
+      "damageMult": 1,
+      "twoHandedOnly": false,
+      "vsTouchAc": false
+    },
+    "actionType": "other",
+    "activation": {
+      "cost": 1,
+      "type": "standard"
+    },
+    "addedLevel": 0,
+    "attack": {
+      "parts": []
+    },
+    "attackBonus": "",
+    "attackCountFormula": "",
+    "attackNotes": "",
+    "attackParts": [],
+    "atWill": false,
+    "autoscaleAttackParts": "",
+    "baseCl": "0",
+    "castTime": "1 standard action",
+    "classSource": "",
+    "clOffset": 0,
+    "components": {
+      "divineFocus": 1,
+      "focus": false,
+      "material": false,
+      "somatic": true,
+      "value": "V, S, DF",
+      "verbal": true
+    },
+    "conditionals": [],
+    "createdBy": "",
+    "critConfirmBonus": "",
+    "customAttributes": {},
+    "customAttributesLocked": false,
+    "customReferenceId": "",
+    "customTag": "",
+    "damage": {
+      "alternativeParts": [],
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "unidentified": "",
+      "value": "<p>Cyclone deals damage and can pick</p>"
+    },
+    "display": "Long (400 ft. + 40 ft./level)",
+    "duration": {
+      "units": "",
+      "value": null
+    },
+    "effectNotes": "",
+    "epic": "",
+    "favorite": false,
+    "formula": "",
+    "identifiedName": "Whirlwind",
+    "index": {
+      "subType": null,
+      "uniqueId": ""
+    },
+    "isDomainSpell": false,
+    "isPower": false,
+    "isSpellSpontaneousReplacement": false,
+    "learnedAt": {
+      "bloodline": [],
+      "class": [
+        [
+          "Shaman",
+          8
+        ]
+      ],
+      "domain": [
+        [
+          "Spirits",
+          8
+        ]
+      ],
+      "elementalSchool": [],
+      "subDomain": []
+    },
+    "level": 8,
+    "linkedChargeItem": {
+      "id": null,
+      "img": null,
+      "name": null
+    },
+    "linkId": "",
+    "linkImported": false,
+    "linkSourceId": "",
+    "linkSourceName": "",
+    "materials": {
+      "consumed": {
+        "_deprecated": true,
+        "value": false
+      },
+      "focus": "",
+      "value": ""
+    },
+    "maxDamageDice": 0,
+    "maxDamageDiceFormula": "",
+    "measureTemplate": {
+      "customColor": "",
+      "customTexture": "",
+      "overrideColor": false,
+      "overrideTexture": false,
+      "size": 0,
+      "type": ""
+    },
+    "metamagicFeats": {
+      "empowered": false,
+      "enhanced": false,
+      "enhancedHalf": false,
+      "enlarged": false,
+      "intensified": false,
+      "maximized": false,
+      "widened": false
+    },
+    "nameFormula": "",
+    "nameFromFormula": false,
+    "originId": "b1deefa4e23ded53",
+    "originPack": "warcraftrpg2e.warcraft-spells",
+    "originVersion": 109,
+    "possibleUpdate": false,
+    "powerPointsCost": 0,
+    "pr": false,
+    "preparation": {
+      "autoDeductCharges": true,
+      "maxAmount": 0,
+      "mode": "prepared",
+      "preparedAmount": 0
+    },
+    "psionic": "",
+    "range": {
+      "long": null,
+      "units": "long",
+      "value": null
+    },
+    "recharge": {
+      "current": 0,
+      "enabled": false,
+      "formula": ""
+    },
+    "requiresPsionicFocus": false,
+    "rollTableDraw": {
+      "formula": "",
+      "id": "",
+      "name": "",
+      "pack": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": "0",
+      "dcAutoAbility": "",
+      "dcAutoType": "",
+      "description": "Reflex negates; see text",
+      "originVersion": 97,
+      "type": "reflexnegates"
+    },
+    "school": "evo",
+    "shortDescription": "<p>Cyclone deals damage and can pick</p>",
+    "showInQuickbar": false,
+    "slOffset": 0,
+    "snip": "Cyclone deals damage and can pick",
+    "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 271-273",
+    "specialActions": [],
+    "specialId": null,
+    "specialPrepared": false,
+    "spellArea": "",
+    "spellbook": "primary",
+    "spellDuration": "1 round/level (D)",
+    "spellDurationData": {
+      "units": "roundPerLevel",
+      "value": 1
+    },
+    "spellEffect": "Cyclone 10 ft. wide at base, 30 ft. wide at top, and 30 ft. tall",
+    "spellType": {
+      "_deprecated": true,
+      "value": ""
+    },
+    "sr": true,
+    "subschool": "",
+    "summon": [],
+    "tags": [],
+    "target": {
+      "value": "Cyclone 10 ft. wide at base, 30 ft. wide at top, and 30 ft. tall"
+    },
+    "types": "air",
+    "uniqueId": "",
+    "userNonRemovable": false,
+    "uses": {
+      "allowMultipleUses": false,
+      "autoDeductCharges": true,
+      "canBeLinked": false,
+      "chargesPerUse": 1,
+      "isResource": false,
+      "max": 0,
+      "maxFormula": "",
+      "maxPerUse": null,
+      "maxPerUseFormula": "",
+      "per": "",
+      "rechargeFormula": null,
+      "value": 0
+    },
+    "warcraftManualPolicy": {
+      "mode": "srd-baseline",
+      "reason": "The inherited SRD implementation is used with the Warcraft list assignment and spell level."
+    }
+  },
+  "type": "spell"
+}

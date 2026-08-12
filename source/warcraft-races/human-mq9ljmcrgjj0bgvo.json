@@ -15,6 +15,30 @@
   "effects": [],
   "flags": {
     "warcraftrpg2e": {
+      "race": {
+        "automaticLanguages": [
+          "Common"
+        ],
+        "bonusLanguages": [
+          "Any unrestricted language"
+        ],
+        "category": "player-race",
+        "favoredClass": [
+          "Any"
+        ],
+        "proficiencies": [],
+        "racialLevel": {
+          "available": false,
+          "max": 0,
+          "name": ""
+        },
+        "searchableTraits": [
+          "Common",
+          "Any unrestricted language",
+          "Favored class: Any"
+        ],
+        "size": "med"
+      },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
         "file": "docs/World_of_Warcraft_2nd_Edition.pdf",

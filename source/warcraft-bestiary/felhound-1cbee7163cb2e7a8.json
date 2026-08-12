@@ -1,0 +1,1463 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "8f547f1e6e88b47b",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 6,
+                "die": 8,
+                "expression": "6d8",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Outsider Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "high",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "39",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "6",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "17",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "11",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "16",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "7",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "6",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "6",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "50",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "4",
+              "misc",
+              "init",
+              "untyped"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "outsider",
+          "damageReduction": [
+            [
+              "5",
+              "good",
+              false
+            ]
+          ],
+          "hd": 8,
+          "hp": 0,
+          "levels": 6,
+          "maxLevel": 50,
+          "resistances": [
+            [
+              "5",
+              "energy-acid",
+              false,
+              false,
+              false
+            ],
+            [
+              "5",
+              "energy-cold",
+              false,
+              false,
+              false
+            ],
+            [
+              "10",
+              "energy-fire",
+              false,
+              false,
+              false
+            ],
+            [
+              "5",
+              "energy-electric",
+              false,
+              false,
+              false
+            ]
+          ],
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "high"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 70"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "dbdd12d3a00cc852",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                11
+              ],
+              "printedDamage": "1d8+5 plus 1d6 fel"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Bite",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "5",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Bite",
+          "damage": {
+            "parts": [
+              [
+                "1d8+5",
+                "Piercing or Bludgeoning",
+                "damage-piercing-bludgeoning"
+              ],
+              [
+                "1d6",
+                "Fel",
+                "damage-untyped-energy"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Bite +11 melee (1d8+5 plus 1d6 fel).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "fe8e6e1791b28ce9",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                9
+              ],
+              "printedDamage": "1d6+2 plus 1d6 fel"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Claws",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "3",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "claws",
+          "damage": {
+            "parts": [
+              [
+                "1d6+2",
+                "Piercing or Slashing",
+                "damage-piercing-or-slashing"
+              ],
+              [
+                "1d6",
+                "Fel",
+                "damage-untyped-energy"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> claws +9 melee (1d6+2 plus 1d6 fel).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "405411c4380aaa47",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "dbdd12d3a00cc852",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Bite",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 2,
+              "id": "fe8e6e1791b28ce9",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Claws",
+              "primary": true
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> Bite +11 melee (1d8+5 plus 1d6 fel) and 2 claws +9 melee (1d6+2 plus 1d6 fel).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "e0d19152097c0ec1",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "Fel strike"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Felhound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Fel strike",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Fel strike.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-felhound-fel-strike"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "bb3440ac3ea2fbbc",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "pounce"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Felhound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "pounce",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> pounce.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-felhound-pounce"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "0b128ebb1b79c060",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Blindsight 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Felhound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Blindsight 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Blindsight 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-felhound-blindsight-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "f0ffefddc7f1dbb9",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "darkvision 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Felhound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "darkvision 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> darkvision 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-felhound-darkvision-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "04cfeb6210d229a8",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "damage reduction 5/good"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Felhound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "damage reduction 5/good",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> damage reduction 5/good.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-felhound-damage-reduction-5-good"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "cb2c9313a3c98133",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "resistance to acid 5"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Felhound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "resistance to acid 5",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> resistance to acid 5.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-felhound-resistance-to-acid-5"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "a78edf43b7fc4c11",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "cold 5"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Felhound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "cold 5",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> cold 5.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-felhound-cold-5"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "979663b1f05d9b85",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "fire 10"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Felhound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "fire 10",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> fire 10.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-felhound-fire-10"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "1b3cc637c498011e",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "and electricity 5"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Felhound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "and electricity 5",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> and electricity 5.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-felhound-and-electricity-5"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "ab63c242c8d75fa9",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "scent"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Felhound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "scent",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> scent.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-felhound-scent"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "8dc3ac43caaa0e89",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "sense magic"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Felhound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "sense magic",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> sense magic.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-felhound-sense-magic"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e7017f73e0d17200",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "spell resistance 16"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Felhound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "spell resistance 16",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> spell resistance 16.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-felhound-spell-resistance-16"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "2a02042b76ca4b71",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "demon traits"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Felhound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "demon traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> demon traits.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-felhound-demon-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "83839e2a6a6a5f58",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Initiative"
+            },
+            "reference": {
+              "id": "3232602c102e0494",
+              "name": "Improved Initiative",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Felhound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Initiative",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Initiative.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.3232602c102e0494]{Improved Initiative}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-felhound-improved-initiative"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "fab0d818b7813c84",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Multiattack"
+            },
+            "reference": {
+              "id": "4b2ed70fb66b7ceb",
+              "name": "Multiattack",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Felhound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Multiattack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Multiattack.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.4b2ed70fb66b7ceb]{Multiattack}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-felhound-multiattack"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "085faadcee784c98",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Skilled (Listen and Spot)"
+            },
+            "reference": {
+              "id": "63e93d7c15badc3f",
+              "name": "Skilled",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Felhound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Skilled (Listen and Spot)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Skilled (Listen and Spot).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.63e93d7c15badc3f]{Skilled}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-felhound-skilled-listen-and-spot"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "304d716130f549e1",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Track"
+            },
+            "reference": {
+              "id": "24251c982b9bb0bf",
+              "name": "Track",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Felhound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Track",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Track.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.24251c982b9bb0bf]{Track}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-felhound-track"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e6f6bd3763353939",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Medium Outsider; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "dd750e0d27b12249",
+              "name": "Outsider Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Felhound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Outsider Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Medium Outsider; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.dd750e0d27b12249]{Outsider Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-felhound-outsider-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "1cbee7163cb2e7a8",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 20, Agy 13, Sta 15, Int 4, Spt 12, Cha 8",
+          "Advancement": "7-9 HD (Medium)",
+          "Alignment": "Always chaotic evil",
+          "Area": "Felwood, Outland, the Twisting Nether",
+          "Armor Class": "17 (+1 Agy, +6 natural), touch 11, flat-footed 16",
+          "Attack": "Bite +11 melee (1d8+5 plus 1d6 fel)",
+          "Base Attack/Grapple": "+6/+11",
+          "Challenge Rating": "6",
+          "Environment": "Any land and underground",
+          "Feats": "Improved Initiative, Multiattack, Skilled (Listen and Spot), Track B",
+          "Full Attack": "Bite +11 melee (1d8+5 plus 1d6 fel) and 2 claws +9 melee (1d6+2 plus 1d6 fel)",
+          "Hit Dice": "6d8+12 (39 hp)",
+          "Initiative": "+5",
+          "Level Adjustment": "-",
+          "Organization": "Solitary or pack (3-8)",
+          "Saves": "Fort +7, Ref +6, Will +6",
+          "Skills": "Jump +14, Listen +12, Spot +12, Stealth +10, Survival +10",
+          "Space/Reach": "5 ft./5 ft.",
+          "Special Attacks": "Fel strike, pounce",
+          "Special Qualities": "Blindsight 60 ft., darkvision 60 ft., damage reduction 5/good, resistance to acid 5, cold 5, fire 10, and electricity 5, scent, sense magic, spell resistance 16, demon traits",
+          "Speed": "50 ft. (10 squares)",
+          "Treasure": "None"
+        },
+        "rulesCoverage": {
+          "actor-defense": 3,
+          "linked-reference": 5,
+          "manual": 10
+        },
+        "subtypes": []
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          71
+        ],
+        "printedPages": [
+          70
+        ],
+        "section": "Felhound",
+        "verification": "native-text-table"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "8f547f1e6e88b47b",
+    "dbdd12d3a00cc852",
+    "fe8e6e1791b28ce9",
+    "405411c4380aaa47",
+    "e0d19152097c0ec1",
+    "bb3440ac3ea2fbbc",
+    "0b128ebb1b79c060",
+    "f0ffefddc7f1dbb9",
+    "04cfeb6210d229a8",
+    "cb2c9313a3c98133",
+    "a78edf43b7fc4c11",
+    "979663b1f05d9b85",
+    "1b3cc637c498011e",
+    "ab63c242c8d75fa9",
+    "8dc3ac43caaa0e89",
+    "e7017f73e0d17200",
+    "2a02042b76ca4b71",
+    "83839e2a6a6a5f58",
+    "fab0d818b7813c84",
+    "085faadcee784c98",
+    "304d716130f549e1",
+    "e6f6bd3763353939"
+  ],
+  "name": "Felhound",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -1,
+        "origMod": -1,
+        "origTotal": 8,
+        "penalty": 0,
+        "total": 8,
+        "userPenalty": 0,
+        "value": 8
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 2,
+        "origMod": 2,
+        "origTotal": 15,
+        "penalty": 0,
+        "total": 15,
+        "userPenalty": 0,
+        "value": 15
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 13,
+        "penalty": 0,
+        "total": 13,
+        "userPenalty": 0,
+        "value": 13
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -3,
+        "origMod": -3,
+        "origTotal": 4,
+        "penalty": 0,
+        "total": 4,
+        "userPenalty": 0,
+        "value": 4
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 5,
+        "origMod": 5,
+        "origTotal": 20,
+        "penalty": 0,
+        "total": 20,
+        "userPenalty": 0,
+        "value": 20
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 12,
+        "penalty": 0,
+        "total": 12,
+        "userPenalty": 0,
+        "value": 12
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 16,
+          "value": 0
+        },
+        "normal": {
+          "total": 17,
+          "value": 0
+        },
+        "touch": {
+          "total": 11,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 6,
+        "nonepic": 6,
+        "total": 6,
+        "value": 0
+      },
+      "cmb": {
+        "total": 11,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "outsider",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 0,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 6,
+        "total": 6
+      },
+      "hp": {
+        "base": 39,
+        "max": 39,
+        "min": -15,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 39
+      },
+      "init": {
+        "bonus": 0,
+        "total": 5,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 6,
+      "savingThrows": {
+        "fort": {
+          "base": 7,
+          "total": 7
+        },
+        "ref": {
+          "base": 6,
+          "total": 6
+        },
+        "will": {
+          "base": 6,
+          "total": 6
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": 60,
+        "darkvision": 60,
+        "lowLight": false,
+        "lowLightMultiplier": null,
+        "tremorsense": null
+      },
+      "speed": {
+        "land": {
+          "base": 50,
+          "total": 50
+        }
+      },
+      "sr": {
+        "formula": "16",
+        "total": 16
+      }
+    },
+    "details": {
+      "alignment": "Always chaotic evil",
+      "biography": {
+        "public": "",
+        "value": "<p>Felhound is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 6,
+      "environment": "Any land and underground",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 6,
+        "value": 6
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 6d8+12 (39 hp)</p><p><strong>Initiative:</strong> +5</p><p><strong>Speed:</strong> 50 ft. (10 squares)</p><p><strong>Armor Class:</strong> 17 (+1 Agy, +6 natural), touch 11, flat-footed 16</p><p><strong>Base Attack/Grapple:</strong> +6/+11</p><p><strong>Attack:</strong> Bite +11 melee (1d8+5 plus 1d6 fel)</p><p><strong>Full Attack:</strong> Bite +11 melee (1d8+5 plus 1d6 fel) and 2 claws +9 melee (1d6+2 plus 1d6 fel)</p><p><strong>Space/Reach:</strong> 5 ft./5 ft.</p><p><strong>Special Attacks:</strong> Fel strike, pounce</p><p><strong>Special Qualities:</strong> Blindsight 60 ft., darkvision 60 ft., damage reduction 5/good, resistance to acid 5, cold 5, fire 10, and electricity 5, scent, sense magic, spell resistance 16, demon traits</p><p><strong>Saves:</strong> Fort +7, Ref +6, Will +6</p><p><strong>Abilities:</strong> Str 20, Agy 13, Sta 15, Int 4, Spt 12, Cha 8</p><p><strong>Skills:</strong> Jump +14, Listen +12, Spot +12, Stealth +10, Survival +10</p><p><strong>Feats:</strong> Improved Initiative, Multiattack, Skilled (Listen and Spot), Track B</p><p><strong>Area:</strong> Felwood, Outland, the Twisting Nether</p><p><strong>Organization:</strong> Solitary or pack (3-8)</p><p><strong>Treasure:</strong> None</p><p><strong>Advancement:</strong> 7-9 HD (Medium)</p><p><strong>Level Adjustment:</strong> -</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 6,
+      "type": "Outsider"
+    },
+    "skills": {
+      "hid": {
+        "ability": "dex",
+        "abilityModifier": 1,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 9,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 10,
+        "notes": "Printed total +10",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "jmp": {
+        "ability": "str",
+        "abilityModifier": 5,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 9,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 14,
+        "notes": "Printed total +14",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "lis": {
+        "ability": "wis",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 11,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 12,
+        "notes": "Printed total +12",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spt": {
+        "ability": "wis",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 11,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 12,
+        "notes": "Printed total +12",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "sur": {
+        "ability": "wis",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 9,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 10,
+        "notes": "Printed total +10",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "med",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Blindsight 60 ft., darkvision 60 ft., damage reduction 5/good, resistance to acid 5, cold 5, fire 10, and electricity 5, scent, sense magic, spell resistance 16, demon traits",
+      "size": "med",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

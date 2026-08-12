@@ -326,10 +326,49 @@
   "effects": [],
   "flags": {
     "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "rawFields": {
+          "Abilities": "Str 23, Agy 14, Sta - , Int - , Spt 12, Cha 1",
+          "Advancement": "8-15 HD (Medium)",
+          "Alignment": "Always neutral",
+          "Area": "Westfall",
+          "Armor Class": "20 (+2 Agy, +8 natural), touch 12, flat-footed 18",
+          "Attack": "Claw +12 melee (1d4+7/17-20)",
+          "Base Attack/Grapple": "+5/+11",
+          "Challenge Rating": "5",
+          "Environment": "Any",
+          "Feats": "-",
+          "Full Attack": "2 claws +12 melee (1d4+7/17-20)",
+          "Hit Dice": "7d10+20 (58 hp)",
+          "Initiative": "+2",
+          "Level Adjustment": "-",
+          "Organization": "Solitary",
+          "Saves": "Fort +2, Ref +4, Will +3",
+          "Skills": "Stealth +10",
+          "Space/Reach": "5 ft./5 ft.",
+          "Special Attacks": "Backstab +2d6, keen claws",
+          "Special Qualities": "Darkvision 60 ft., low-light vision, immunity to magic, lifeless mien, construct traits",
+          "Speed": "40 ft. (8 squares)",
+          "Treasure": "Special (see below)"
+        },
+        "subtypes": [
+          "Golem"
+        ]
+      },
       "source": {
         "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
         "pages": "85-86",
-        "section": "Harvest Golem"
+        "pdfPages": [
+          86
+        ],
+        "printedPages": [
+          85
+        ],
+        "section": "Harvest Golem",
+        "verification": "visually-reviewed-complete-statblock"
       }
     }
   },

@@ -1,0 +1,326 @@
+{
+  "Doomguard": {
+    "slaCasterLevel": 18,
+    "slas": [
+      { "name": "Blasphemy", "frequency": "atWill", "dc": 23 },
+      { "name": "Dominate Monster", "frequency": "atWill", "dc": 25 },
+      { "name": "Greater Dispel Magic", "frequency": "atWill" },
+      { "name": "Immolate", "frequency": "atWill", "dc": 21 },
+      { "name": "Rain of Fire", "frequency": "atWill", "dc": 21 },
+      { "name": "Shadow Strike", "frequency": "atWill" },
+      { "name": "Unholy Aura", "frequency": "atWill", "dc": 24 },
+      { "name": "Hellfire", "frequency": "day", "uses": 1, "dc": 24 },
+      { "name": "Shadowburn", "frequency": "day", "uses": 1, "dc": 24 }
+    ]
+  },
+  "Black Whelp": {
+    "slaCasterLevel": 8,
+    "slas": [
+      { "name": "Suggestion", "frequency": "day", "uses": 3, "dc": 15 },
+      { "name": "Produce Flame", "frequency": "day", "uses": 2 },
+      { "name": "Detect Thoughts", "frequency": "day", "uses": 1, "dc": 14 },
+      { "name": "Endure Elements", "frequency": "day", "uses": 1 }
+    ]
+  },
+  "Black Drake": {
+    "slaCasterLevel": 24,
+    "slas": [
+      { "name": "Suggestion", "frequency": "day", "uses": 3, "dc": 18 },
+      { "name": "Produce Flame", "frequency": "day", "uses": 2 },
+      { "name": "Shockwave", "frequency": "day", "uses": 2, "dc": 18 },
+      { "name": "Fire Blast", "frequency": "day", "uses": 2, "dc": 21 },
+      { "name": "Detect Thoughts", "frequency": "day", "uses": 1, "dc": 17 },
+      { "name": "Endure Elements", "frequency": "day", "uses": 1 }
+    ]
+  },
+  "Bronze Whelp": {
+    "slaCasterLevel": 9,
+    "slas": [
+      { "name": "Arcane Missile", "frequency": "day", "uses": 3 },
+      { "name": "Dancing Lights", "frequency": "day", "uses": 3 },
+      { "name": "Lesser Lightning Guardians", "frequency": "day", "uses": 3, "dc": 13 },
+      { "name": "Lightning Shield", "frequency": "day", "uses": 2 },
+      { "name": "Discern Location", "frequency": "day", "uses": 1 }
+    ]
+  },
+  "Bronze Drake": {
+    "slaCasterLevel": 24,
+    "slas": [
+      { "name": "Arcane Missile", "frequency": "day", "uses": 3 },
+      { "name": "Dancing Lights", "frequency": "day", "uses": 3 },
+      { "name": "Lesser Lightning Guardians", "frequency": "day", "uses": 3, "dc": 16 },
+      { "name": "Lightning Shield", "frequency": "day", "uses": 2 },
+      { "name": "Lightning Bolt", "frequency": "day", "uses": 2, "dc": 18 },
+      { "name": "Iron Body", "frequency": "day", "uses": 2 },
+      { "name": "Discern Location", "frequency": "day", "uses": 1 }
+    ]
+  },
+  "Green Whelp": {
+    "slaCasterLevel": 9,
+    "slas": [
+      { "name": "Cure Light Wounds", "frequency": "day", "uses": 3 },
+      { "name": "Entangling Roots", "frequency": "day", "uses": 3, "dc": 15 },
+      { "name": "Roar", "frequency": "day", "uses": 3 },
+      { "name": "Charm Animal", "frequency": "day", "uses": 2, "dc": 13 },
+      { "name": "Commune with Nature", "frequency": "day", "uses": 1 }
+    ]
+  },
+  "Green Drake": {
+    "slaCasterLevel": 24,
+    "slas": [
+      { "name": "Cure Light Wounds", "frequency": "day", "uses": 3 },
+      { "name": "Entangling Roots", "frequency": "day", "uses": 3, "dc": 18 },
+      { "name": "Roar", "frequency": "day", "uses": 3 },
+      { "name": "Mark of the Wild", "frequency": "day", "uses": 2 },
+      { "name": "Charm Animal", "frequency": "day", "uses": 2, "dc": 16 },
+      { "name": "Commune with Nature", "frequency": "day", "uses": 1 }
+    ]
+  },
+  "Red Whelp": {
+    "slaCasterLevel": 9,
+    "slas": [
+      { "name": "Cure Light Wounds", "frequency": "day", "uses": 3 },
+      { "name": "Firebolt", "frequency": "day", "uses": 3, "dc": 16 },
+      { "name": "Tongues", "frequency": "day", "uses": 3 },
+      { "name": "Speak with Animals", "frequency": "day", "uses": 2 },
+      { "name": "Detect Thoughts", "frequency": "day", "uses": 1, "dc": 14 }
+    ]
+  },
+  "Red Drake": {
+    "slaCasterLevel": 24,
+    "slas": [
+      { "name": "Cure Light Wounds", "frequency": "day", "uses": 3 },
+      { "name": "Firebolt", "frequency": "day", "uses": 3, "dc": 19 },
+      { "name": "Tongues", "frequency": "day", "uses": 3 },
+      { "name": "Speak with Animals", "frequency": "day", "uses": 2 },
+      { "name": "Dispel Magic", "frequency": "day", "uses": 2 },
+      { "name": "Heal", "frequency": "day", "uses": 2 },
+      { "name": "Detect Thoughts", "frequency": "day", "uses": 1, "dc": 17 }
+    ]
+  },
+  "Dreadlord": {
+    "slaCasterLevel": 17,
+    "slas": [
+      { "name": "Deeper Darkness", "frequency": "atWill" },
+      { "name": "Detect Chaos", "frequency": "atWill" },
+      { "name": "Detect Good", "frequency": "atWill" },
+      { "name": "Detect Magic", "frequency": "atWill" },
+      { "name": "Hold Monster", "frequency": "atWill", "dc": 23 },
+      { "name": "Read Magic", "frequency": "atWill" },
+      { "name": "Sleep", "frequency": "atWill", "dc": 19 },
+      { "name": "Teleport", "frequency": "atWill", "note": "Self plus 50 pounds of objects only." },
+      { "name": "Plane Shift", "frequency": "day", "uses": 3 },
+      { "name": "Sending", "frequency": "day", "uses": 3 },
+      { "name": "Summon Swarm", "frequency": "day", "uses": 3, "note": "Bats only." },
+      { "name": "Dream", "frequency": "day", "uses": 1 },
+      { "name": "Nightmare", "frequency": "day", "uses": 1, "dc": 23 }
+    ],
+    "spellcasting": {
+      "ability": "cha",
+      "casterLevel": 17,
+      "dcBase": 18,
+      "preparedLimit": 18,
+      "lists": [
+        { "name": "Arcanist", "maxLevel": 9 },
+        { "name": "Necromancer", "maxLevel": 9 },
+        { "name": "Warlock", "maxLevel": 9 }
+      ],
+      "prepared": ["Disguise Self", "Detect Thoughts", "Invisibility", "Mirror Image", "Dispel Magic", "Gaseous Form", "Charm Monster", "Confusion", "Detect Scrying", "Greater Invisibility", "Phantasmal Killer", "Drain Life", "Drain Soul", "Hold Monster", "Sending", "Greater Dispel Magic", "Mass Suggestion", "Greater Scrying", "Insanity", "Mass Hold Person", "Spell Turning", "Demand", "Mind Blank", "Dominate Monster", "Mass Hold Monster", "Summon Monster IX", "Summon Undead IX"],
+      "slots": [5, 7, 7, 7, 7, 6, 6, 5, 4, 2]
+    }
+  },
+  "Fel Ravager": {
+    "slaCasterLevel": 14,
+    "slas": [
+      { "name": "Detect Good", "frequency": "atWill" },
+      { "name": "Detect Law", "frequency": "atWill" },
+      { "name": "Greater Dispel Magic", "frequency": "atWill" },
+      { "name": "Read Magic", "frequency": "atWill" },
+      { "name": "Greater Shadow Bolt", "frequency": "day", "uses": 3, "dc": 16 },
+      { "name": "Cause Fear", "frequency": "day", "uses": 1, "dc": 12 },
+      { "name": "Darkness", "frequency": "day", "uses": 1 }
+    ]
+  },
+  "Flamewaker": {
+    "slaCasterLevel": 12,
+    "slas": [
+      { "name": "Blazing Column", "frequency": "day", "uses": 3 },
+      { "name": "Greater Shadow Word Pain", "frequency": "day", "uses": 3, "dc": 20 },
+      { "name": "Dominate Monster", "frequency": "day", "uses": 1, "dc": 23 },
+      { "name": "Fire Storm", "frequency": "day", "uses": 1, "dc": 22 }
+    ]
+  },
+  "Molten Giant": {
+    "slaCasterLevel": 18,
+    "slas": [{ "name": "Telekinesis", "frequency": "day", "uses": 3, "dc": 15 }]
+  },
+  "Sea Giant": {
+    "slaCasterLevel": 18,
+    "slas": [
+      { "name": "Control Water", "frequency": "atWill" },
+      { "name": "Fog Cloud", "frequency": "atWill" },
+      { "name": "Water Breathing", "frequency": "atWill" },
+      { "name": "Cone of Cold", "frequency": "day", "uses": 3, "dc": 15 },
+      { "name": "Frost Nova", "frequency": "day", "uses": 3, "dc": 13 }
+    ]
+  },
+  "Sea Giant Behemoth": {
+    "slaCasterLevel": 25,
+    "slas": [
+      { "name": "Control Water", "frequency": "atWill" },
+      { "name": "Fog Cloud", "frequency": "atWill" },
+      { "name": "Water Breathing", "frequency": "atWill" },
+      { "name": "Cone of Cold", "frequency": "day", "uses": 3, "dc": 15 },
+      { "name": "Frost Nova", "frequency": "day", "uses": 3, "dc": 13 },
+      { "name": "Whirlwind", "frequency": "day", "uses": 1, "dc": 18, "note": "Underwater only; creates an underwater whirlpool." }
+    ]
+  },
+  "Obsidian Destroyer": {
+    "slaCasterLevel": 20,
+    "slas": [
+      { "name": "Greater Dispel Magic", "frequency": "atWill" },
+      { "name": "Orb of Annihilation", "frequency": "atWill", "dc": 14 },
+      { "name": "Read Magic", "frequency": "atWill" },
+      { "name": "See Invisibility", "frequency": "atWill" }
+    ]
+  },
+  "Succubus": {
+    "slaCasterLevel": 9,
+    "slas": [
+      { "name": "Detect Good", "frequency": "atWill" },
+      { "name": "Charm Person", "frequency": "day", "uses": 3, "dc": 17 },
+      { "name": "Detect Thoughts", "frequency": "day", "uses": 3, "dc": 18 },
+      { "name": "Suggestion", "frequency": "day", "uses": 1, "dc": 19 }
+    ]
+  },
+  "Queen of Suffering": {
+    "slaCasterLevel": 16,
+    "slas": [
+      { "name": "Charm Monster", "frequency": "atWill", "dc": 23 },
+      { "name": "Detect Good", "frequency": "atWill" },
+      { "name": "Detect Thoughts", "frequency": "atWill", "dc": 21 },
+      { "name": "Suggestion", "frequency": "atWill", "dc": 22 },
+      { "name": "Dominate Person", "frequency": "day", "uses": 3, "dc": 24 }
+    ]
+  },
+  "Wraith": {
+    "slaCasterLevel": 6,
+    "slas": [
+      { "name": "Banshee's Curse", "frequency": "day", "uses": 3, "dc": 15 },
+      { "name": "Dominate Person", "frequency": "day", "uses": 3, "dc": 17 }
+    ]
+  },
+  "Balnazzar": {
+    "slaCasterLevel": 17,
+    "slas": [
+      { "name": "Deeper Darkness", "frequency": "atWill" },
+      { "name": "Detect Chaos", "frequency": "atWill" },
+      { "name": "Detect Good", "frequency": "atWill" },
+      { "name": "Detect Magic", "frequency": "atWill" },
+      { "name": "Hold Monster", "frequency": "atWill", "dc": 24 },
+      { "name": "Read Magic", "frequency": "atWill" },
+      { "name": "Sleep", "frequency": "atWill", "dc": 20 },
+      { "name": "Teleport", "frequency": "atWill", "note": "Self plus 50 pounds of objects only." },
+      { "name": "Plane Shift", "frequency": "day", "uses": 3 },
+      { "name": "Sending", "frequency": "day", "uses": 3 },
+      { "name": "Summon Swarm", "frequency": "day", "uses": 3, "note": "Bats only." },
+      { "name": "Dream", "frequency": "day", "uses": 1 },
+      { "name": "Nightmare", "frequency": "day", "uses": 1, "dc": 24 }
+    ],
+    "spellcasting": {
+      "ability": "cha",
+      "casterLevel": 17,
+      "dcBase": 19,
+      "preparedLimit": 19,
+      "lists": [
+        { "name": "Arcanist", "maxLevel": 9 },
+        { "name": "Necromancer", "maxLevel": 9 },
+        { "name": "Warlock", "maxLevel": 9 }
+      ],
+      "prepared": ["Disguise Self", "Detect Thoughts", "Invisibility", "Mirror Image", "Dispel Magic", "Gaseous Form", "Charm Monster", "Confusion", "Detect Scrying", "Greater Invisibility", "Phantasmal Killer", "Drain Life", "Drain Soul", "Greater Dispel Magic", "Mass Suggestion", "Greater Scrying", "Insanity", "Mass Hold Person", "Spell Turning", "Demand", "Mind Blank", "Dominate Monster", "Mass Hold Monster", "Summon Monster IX", "Summon Undead IX"],
+      "slots": [5, 7, 7, 7, 7, 6, 6, 5, 4, 2]
+    }
+  },
+  "Baron Rivendare": {
+    "slas": [
+      { "name": "Death Pact", "label": "Death Pact (Personal)", "frequency": "atWill", "dc": 18 },
+      { "name": "Death Pact", "label": "Death Pact (30 feet)", "frequency": "day", "uses": 3, "dc": 23, "note": "30-foot range." },
+      { "name": "Greater Death Coil", "frequency": "day", "uses": 3, "dc": 17 }
+    ]
+  },
+  "Kel'Thuzad": {
+    "spellcasting": {
+      "ability": "int",
+      "casterLevel": 33,
+      "dcBase": 25,
+      "preparedLimit": 18,
+      "lists": [
+        { "name": "Arcanist", "maxLevel": 9 },
+        { "name": "Necromancer", "maxLevel": 9 }
+      ],
+      "prepared": ["Frost Nova"],
+      "slots": [5, 9, 9, 9, 8, 8, 8, 8, 7, 7, 4, 4, 3, 3, 3]
+    }
+  },
+  "Lady Onyxia": {
+    "slaCasterLevel": 10,
+    "slas": [
+      { "name": "Suggestion", "frequency": "day", "uses": 3, "dc": 18 },
+      { "name": "Produce Flame", "frequency": "day", "uses": 2 },
+      { "name": "Shockwave", "frequency": "day", "uses": 2, "dc": 18 },
+      { "name": "Fire Blast", "frequency": "day", "uses": 2, "dc": 21 },
+      { "name": "Detect Thoughts", "frequency": "day", "uses": 1, "dc": 17 },
+      { "name": "Endure Elements", "frequency": "day", "uses": 1 }
+    ],
+    "spellcasting": {
+      "ability": "int",
+      "casterLevel": 19,
+      "dcBase": 15,
+      "preparedLimit": 21,
+      "lists": [
+        { "name": "Arcanist", "maxLevel": 9 },
+        { "name": "Mage", "maxLevel": 9 }
+      ],
+      "prepared": [],
+      "slots": [5, 7, 6, 6, 5, 5, 4, 4, 3, 3]
+    }
+  },
+  "Lord Kazzak": {
+    "slaCasterLevel": 20,
+    "slas": [
+      { "name": "Blasphemy", "frequency": "atWill", "dc": 26 },
+      { "name": "Dominate Monster", "frequency": "atWill", "dc": 28 },
+      { "name": "Greater Dispel Magic", "frequency": "atWill" },
+      { "name": "Immolate", "frequency": "atWill", "dc": 24, "note": "May be quickened through Quicken Spell-Like Ability." },
+      { "name": "Rain of Fire", "frequency": "atWill", "dc": 24 },
+      { "name": "Shadow Strike", "frequency": "atWill" },
+      { "name": "Unholy Aura", "frequency": "atWill", "dc": 27 },
+      { "name": "Hellfire", "frequency": "day", "uses": 1, "dc": 27 },
+      { "name": "Shadowburn", "frequency": "day", "uses": 1, "dc": 27 }
+    ]
+  },
+  "Nefarian": {
+    "slaCasterLevel": 10,
+    "slas": [
+      { "name": "Suggestion", "frequency": "day", "uses": 3, "dc": 21 },
+      { "name": "Produce Flame", "frequency": "day", "uses": 2 },
+      { "name": "Shockwave", "frequency": "day", "uses": 2, "dc": 21 },
+      { "name": "Fire Blast", "frequency": "day", "uses": 2, "dc": 24 },
+      { "name": "Detect Thoughts", "frequency": "day", "uses": 1, "dc": 20 },
+      { "name": "Endure Elements", "frequency": "day", "uses": 1 }
+    ],
+    "spellcasting": {
+      "ability": "int",
+      "casterLevel": 27,
+      "dcBase": 18,
+      "preparedLimit": 24,
+      "lists": [
+        { "name": "Arcanist", "maxLevel": 9 },
+        { "name": "Warlock", "maxLevel": 9 },
+        { "name": "Mage", "maxLevel": 6 }
+      ],
+      "prepared": [],
+      "slots": [5, 7, 7, 7, 7, 6, 6, 6, 6, 5]
+    }
+  }
+}

@@ -1,0 +1,3729 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "247a500350120694",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 25,
+                "die": 8,
+                "expression": "25d8",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Giant Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "med",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "312",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "18",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "27",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "8",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "26",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "22",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "9",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "12",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "20",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "40",
+              "speed",
+              "swimSpeed",
+              "base-replace"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "giant",
+          "damageReduction": [],
+          "hd": 8,
+          "hp": 0,
+          "levels": 25,
+          "maxLevel": 50,
+          "resistances": [],
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "low"
+            },
+            "will": {
+              "value": "low"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 80"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "62d99999647ff2d4",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                26
+              ],
+              "printedDamage": "3d6+15/x4"
+            },
+            "reference": {
+              "id": "4ca2293312235936",
+              "name": "Heavy Pick",
+              "pack": "warcraftrpg2e.warcraft-equipment"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Gargantuan Heavy Pick",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 4,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "12",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Gargantuan heavy pick",
+          "damage": {
+            "parts": [
+              [
+                "3d6+15",
+                "Bludgeoning",
+                "damage-bludg"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Gargantuan heavy pick +26 melee (3d6+15/x4).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "4331f37e934c915b",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                25
+              ],
+              "printedDamage": "2d6+10"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Slam",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "11",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "slam",
+          "damage": {
+            "parts": [
+              [
+                "2d6+10",
+                "Bludgeoning",
+                "damage-bludg"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> slam +25 melee (2d6+10).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "2143de798eac62b7",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                16
+              ],
+              "printedDamage": "3d8+10"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Rock",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "rwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "2",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "rock",
+          "damage": {
+            "parts": [
+              [
+                "3d8+10",
+                "Piercing",
+                "damage-piercing"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> rock +16 ranged (3d8+10).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "e91cf9827a5837a4",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                26,
+                21,
+                16,
+                11
+              ],
+              "printedDamage": "3d6+15/x4"
+            },
+            "reference": {
+              "id": "4ca2293312235936",
+              "name": "Heavy Pick",
+              "pack": "warcraftrpg2e.warcraft-equipment"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Heavy Pick",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 4,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "12",
+          "attackParts": [
+            [
+              "-5",
+              "Iterative attack"
+            ],
+            [
+              "-10",
+              "Iterative attack"
+            ],
+            [
+              "-15",
+              "Iterative attack"
+            ]
+          ],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Heavy pick",
+          "damage": {
+            "parts": [
+              [
+                "3d6+15",
+                "Bludgeoning",
+                "damage-bludg"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Heavy pick +26/+21/+16/+11 melee (3d6+15/x4).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "04a1183dfaee0ff7",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack - Heavy pick",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "e91cf9827a5837a4",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Heavy Pick",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> Heavy pick +26/+21/+16/+11 melee (3d6+15/x4).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "36343472a5084215",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack - 2 slams",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 2,
+              "id": "4331f37e934c915b",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Slam",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> 2 slams +25 melee (2d6+10).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "0812e0fc47bb21b5",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack - rock",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "2143de798eac62b7",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Rock",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> rock +16 ranged (3d8+10).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_embedded": {},
+        "_id": "461ae4e5a02877ad",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "catalog": {
+              "completeListEntry": true,
+              "generated": true,
+              "status": "srd-mechanics-with-warcraft-header"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 25,
+              "frequency": "atWill",
+              "kind": "sla",
+              "saveDC": 14,
+              "sourceSpell": {
+                "id": "73a7527050634075",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    271,
+                    274,
+                    290
+                  ],
+                  "printedPages": [
+                    269,
+                    272,
+                    288
+                  ],
+                  "section": "Control Water",
+                  "verification": "text-extracted-header"
+                }
+              },
+              "uses": 0
+            },
+            "reference": {
+              "id": "73a7527050634075",
+              "name": "Control Water",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                81
+              ],
+              "printedPages": [
+                80
+              ],
+              "section": "Sea Giant Behemoth",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Control Water (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "other",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": true,
+          "autoscaleAttackParts": "",
+          "baseCl": "25",
+          "castTime": "1 standard action",
+          "classSource": "",
+          "clOffset": 0,
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "createdBy": "",
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": []
+          },
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>Raises or lowers bodies of water.</p><hr><p><strong>Sea Giant Behemoth spell-like ability:</strong> At will; caster level 25; save DC 14 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "Long (400 ft. + 40 ft./level)",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Control Water (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Druid",
+                4
+              ]
+            ],
+            "domain": [
+              [
+                "Elements",
+                4
+              ]
+            ],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 4,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": "a drop of water (for raise water) or a pinch of dust (for lower water)"
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 0,
+            "type": "circle"
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "73a7527050634075",
+          "originPack": "warcraftrpg2e.warcraft-spells",
+          "originVersion": 109,
+          "possibleUpdate": false,
+          "powerPointsCost": 0,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 0,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 0
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "long",
+            "value": null
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requiresPsionicFocus": false,
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "14",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "None; see text",
+            "originVersion": 97,
+            "type": ""
+          },
+          "school": "trs",
+          "shortDescription": "<p>Raises or lowers bodies of water.</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "Raises or lowers bodies of water.",
+          "source": "World of Warcraft: Monster Guide, p. 80",
+          "specialActions": [],
+          "specialId": null,
+          "specialPrepared": false,
+          "spellArea": "Water in a volume of 10 ft./level by 10 ft./level by 2 ft./level (S)",
+          "spellbook": "spelllike",
+          "spellDuration": "10 min./level (D)",
+          "spellDurationData": {
+            "units": "minutePerLevel",
+            "value": 10
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": false,
+          "subschool": "",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "Water in a volume of 10 ft./level by 10 ft./level by 2 ft./level (S)"
+          },
+          "types": "water",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 0,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "",
+            "rechargeFormula": null,
+            "value": 0
+          },
+          "warcraftManualPolicy": {
+            "mode": "srd-baseline",
+            "reason": "The inherited SRD implementation is used with the Warcraft list assignment and spell level."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_embedded": {},
+        "_id": "6caa1ef676ecd9d2",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "catalog": {
+              "completeListEntry": true,
+              "generated": true,
+              "status": "srd-mechanics-with-warcraft-header"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 25,
+              "frequency": "atWill",
+              "kind": "sla",
+              "saveDC": 12,
+              "sourceSpell": {
+                "id": "76b929e34519398d",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    269,
+                    274,
+                    306
+                  ],
+                  "printedPages": [
+                    267,
+                    272,
+                    304
+                  ],
+                  "section": "Fog Cloud",
+                  "verification": "text-extracted-header"
+                }
+              },
+              "uses": 0
+            },
+            "reference": {
+              "id": "76b929e34519398d",
+              "name": "Fog Cloud",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                81
+              ],
+              "printedPages": [
+                80
+              ],
+              "section": "Sea Giant Behemoth",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Fog Cloud (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "other",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": true,
+          "autoscaleAttackParts": "",
+          "baseCl": "25",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": []
+          },
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>Fog obscures vision.</p><hr><p><strong>Sea Giant Behemoth spell-like ability:</strong> At will; caster level 25; save DC 12 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "Medium (100 ft. + 10 ft. level)",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Fog Cloud (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Healer",
+                2
+              ]
+            ],
+            "domain": [
+              [
+                "Elements",
+                2
+              ]
+            ],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 2,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": ""
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 20,
+            "type": "circle"
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "76b929e34519398d",
+          "originPack": "warcraftrpg2e.warcraft-spells",
+          "originVersion": 109,
+          "possibleUpdate": false,
+          "powerPointsCost": 0,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 0,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 0
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "medium",
+            "value": null
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requiresPsionicFocus": false,
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "12",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "None",
+            "originVersion": 97,
+            "type": ""
+          },
+          "school": "con",
+          "shortDescription": "<p>Fog obscures vision.</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "Fog obscures vision.",
+          "source": "World of Warcraft: Monster Guide, p. 80",
+          "specialActions": [],
+          "specialId": null,
+          "specialPrepared": false,
+          "spellArea": "",
+          "spellbook": "spelllike",
+          "spellDuration": "10 min./level",
+          "spellDurationData": {
+            "units": "minutePerLevel",
+            "value": 10
+          },
+          "spellEffect": "20-ft.-radius spread, 20 ft. high",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": false,
+          "subschool": "creation",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "20-ft.-radius spread, 20 ft. high"
+          },
+          "types": "",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 0,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "",
+            "rechargeFormula": null,
+            "value": 0
+          },
+          "warcraftManualPolicy": {
+            "mode": "srd-baseline",
+            "reason": "The inherited SRD implementation is used with the Warcraft list assignment and spell level."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_embedded": {},
+        "_id": "e4e8026002f2f445",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "catalog": {
+              "completeListEntry": true,
+              "generated": true,
+              "status": "srd-mechanics-with-warcraft-header"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 25,
+              "frequency": "atWill",
+              "kind": "sla",
+              "saveDC": 13,
+              "sourceSpell": {
+                "id": "d15bc5f83b60c140",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    268,
+                    357
+                  ],
+                  "printedPages": [
+                    266,
+                    355
+                  ],
+                  "section": "Water Breathing",
+                  "verification": "text-extracted-header"
+                }
+              },
+              "uses": 0
+            },
+            "reference": {
+              "id": "d15bc5f83b60c140",
+              "name": "Water Breathing",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                81
+              ],
+              "printedPages": [
+                80
+              ],
+              "section": "Sea Giant Behemoth",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Water Breathing (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "other",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": true,
+          "autoscaleAttackParts": "",
+          "baseCl": "25",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "combatChanges": [],
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": []
+          },
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>Subjects can breathe underwater.</p><hr><p><strong>Sea Giant Behemoth spell-like ability:</strong> At will; caster level 25; save DC 13 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "Touch",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Water Breathing (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Warlock",
+                3
+              ]
+            ],
+            "domain": [],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 3,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": "a short reed or piece of straw"
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 0,
+            "type": ""
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "d15bc5f83b60c140",
+          "originPack": "warcraftrpg2e.warcraft-spells",
+          "originVersion": 108,
+          "possibleUpdate": false,
+          "powerPointsCost": 0,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 0,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 0
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "touch",
+            "value": null
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requiresPsionicFocus": false,
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "13",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "Will negates (harmless)",
+            "originVersion": 97,
+            "type": ""
+          },
+          "school": "trs",
+          "shortDescription": "<p>Subjects can breathe underwater.</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "Subjects can breathe underwater.",
+          "source": "World of Warcraft: Monster Guide, p. 80",
+          "specialActions": [],
+          "specialId": null,
+          "specialPrepared": false,
+          "spellArea": "",
+          "spellbook": "spelllike",
+          "spellDuration": "2 hours/level; see text",
+          "spellDurationData": {
+            "dismissable": false,
+            "units": "seeText",
+            "value": 2
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": true,
+          "subschool": "",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "Living creatures touched"
+          },
+          "types": "",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 0,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "",
+            "rechargeFormula": null,
+            "value": 0
+          },
+          "warcraftManualPolicy": {
+            "mode": "srd-baseline",
+            "reason": "The inherited SRD implementation is used with the Warcraft list assignment and spell level."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_embedded": {},
+        "_id": "1d4e5cb6393c9e9b",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "catalog": {
+              "completeListEntry": true,
+              "generated": true,
+              "status": "srd-mechanics-with-warcraft-header"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 25,
+              "frequency": "day",
+              "kind": "sla",
+              "saveDC": 15,
+              "sourceSpell": {
+                "id": "a101c45c09af4942",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    267,
+                    289
+                  ],
+                  "printedPages": [
+                    265,
+                    287
+                  ],
+                  "section": "Cone of Cold",
+                  "verification": "text-extracted-header"
+                }
+              },
+              "uses": 3
+            },
+            "reference": {
+              "id": "a101c45c09af4942",
+              "name": "Cone of Cold",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                81
+              ],
+              "printedPages": [
+                80
+              ],
+              "section": "Sea Giant Behemoth",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Cone of Cold (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "other",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": false,
+          "autoscaleAttackParts": "",
+          "baseCl": "25",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": [
+              [
+                "min(15,(@cl))d6",
+                "Cold"
+              ]
+            ]
+          },
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>1d6/level cold damage.</p><hr><p><strong>Sea Giant Behemoth spell-like ability:</strong> 3/day; caster level 25; save DC 15 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "60 ft.",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Cone of Cold (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Mage",
+                5
+              ]
+            ],
+            "domain": [],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 5,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": "a very small crystal or glass cone"
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 60,
+            "type": "cone"
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "a101c45c09af4942",
+          "originPack": "warcraftrpg2e.warcraft-spells",
+          "originVersion": 108,
+          "possibleUpdate": false,
+          "powerPointsCost": 0,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 3,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 3
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "ft",
+            "value": 60
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requiresPsionicFocus": false,
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "15",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "Reflex half",
+            "originVersion": 97,
+            "type": "reflexhalf"
+          },
+          "school": "evo",
+          "shortDescription": "<p>1d6/level cold damage.</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "1d6/level cold damage.",
+          "source": "World of Warcraft: Monster Guide, p. 80",
+          "specialActions": [],
+          "specialId": null,
+          "specialPrepared": true,
+          "spellArea": "Cone-shaped burst",
+          "spellbook": "spelllike",
+          "spellDuration": "Instantaneous",
+          "spellDurationData": {
+            "units": "inst",
+            "value": null
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": true,
+          "subschool": "",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "Cone-shaped burst"
+          },
+          "types": "cold",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 3,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "day",
+            "rechargeFormula": null,
+            "value": 3
+          },
+          "warcraftManualPolicy": {
+            "mode": "srd-baseline",
+            "reason": "The inherited SRD implementation is used with the Warcraft list assignment and spell level."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_embedded": {},
+        "_id": "54ad5aad036a4925",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "automation": {
+              "chilledSave": "manual"
+            },
+            "catalog": {
+              "completeListEntry": true,
+              "generated": false,
+              "status": "verified-vertical-slice"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 25,
+              "frequency": "day",
+              "kind": "sla",
+              "saveDC": 13,
+              "sourceSpell": {
+                "id": "405cdeabb963b246",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    307
+                  ],
+                  "printedPages": [
+                    305
+                  ],
+                  "section": "Frost Nova",
+                  "verification": "text+render"
+                }
+              },
+              "uses": 3
+            },
+            "reference": {
+              "id": "405cdeabb963b246",
+              "name": "Frost Nova",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                81
+              ],
+              "printedPages": [
+                80
+              ],
+              "section": "Sea Giant Behemoth",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Frost Nova (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "spellsave",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": false,
+          "autoscaleAttackParts": "",
+          "baseCl": "25",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": [
+              [
+                "(min(10, @cl))d6",
+                null,
+                "energy-cold"
+              ]
+            ]
+          },
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>A low, 10-foot-radius burst deals 1d6 cold damage per caster level (maximum 10d6), Reflex half. A damaged creature that fails Fortitude is chilled for 1d4 rounds.</p><hr><p><strong>Sea Giant Behemoth spell-like ability:</strong> 3/day; caster level 25; save DC 13 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Frost Nova (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Mage",
+                3
+              ],
+              [
+                "Necromancer",
+                3
+              ],
+              [
+                "Shaman",
+                3
+              ]
+            ],
+            "domain": [
+              [
+                "Elements",
+                3
+              ]
+            ],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 3,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": "a tiny ball of bat guano and sulfur"
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 10,
+            "type": "circle"
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "",
+          "originPack": "",
+          "originVersion": 109,
+          "possibleUpdate": false,
+          "powerPointsCost": 0,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 3,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 3
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "close",
+            "value": null
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requiresPsionicFocus": false,
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "13",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "Reflex half; Fortitude negates chilled after taking damage",
+            "originVersion": 97,
+            "type": ""
+          },
+          "school": "evo",
+          "shortDescription": "<p>A low, 10-foot-radius burst deals 1d6 cold damage per caster level (maximum 10d6), Reflex half. A damaged creature that fails Fortitude is chilled for 1d4 rounds.</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "A low, 10-foot-radius burst deals 1d6 cold damage per caster level (maximum 10d6), Reflex half. A damaged creature that fails Fortitude is chilled for 1d4 rounds.",
+          "source": "World of Warcraft: Monster Guide, p. 80",
+          "specialActions": [
+            {
+              "action": "Create unique \"Chilled\" from \"warcraftrpg2e.warcraft-spells\" on target;Activate buff \"Chilled\" on target",
+              "condition": "",
+              "img": "icons/svg/explosion.svg",
+              "name": "Apply Chilled (failed Fortitude)"
+            }
+          ],
+          "specialId": null,
+          "specialPrepared": true,
+          "spellArea": "20-ft.-radius spread",
+          "spellbook": "spelllike",
+          "spellDuration": "Instantaneous",
+          "spellDurationData": {
+            "dismissable": false,
+            "units": "inst",
+            "value": ""
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": true,
+          "subschool": "",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "10-ft.-radius spread"
+          },
+          "types": "cold",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 3,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "day",
+            "rechargeFormula": null,
+            "value": 3
+          },
+          "warcraftManualPolicy": {
+            "mode": "verified-vertical-slice",
+            "reason": "This spell has a purpose-built Warcraft implementation."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_embedded": {},
+        "_id": "2f31df7c309438bc",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "catalog": {
+              "completeListEntry": true,
+              "generated": true,
+              "status": "srd-mechanics-with-warcraft-header"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 25,
+              "frequency": "day",
+              "kind": "sla",
+              "saveDC": 18,
+              "sourceSpell": {
+                "id": "b1deefa4e23ded53",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    273,
+                    275,
+                    358
+                  ],
+                  "printedPages": [
+                    271,
+                    273,
+                    356
+                  ],
+                  "section": "Whirlwind",
+                  "verification": "text-extracted-header"
+                }
+              },
+              "uses": 1
+            },
+            "reference": {
+              "id": "b1deefa4e23ded53",
+              "name": "Whirlwind",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                81
+              ],
+              "printedPages": [
+                80
+              ],
+              "section": "Sea Giant Behemoth",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Whirlwind (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "other",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": false,
+          "autoscaleAttackParts": "",
+          "baseCl": "25",
+          "castTime": "1 standard action",
+          "classSource": "",
+          "clOffset": 0,
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "createdBy": "",
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": []
+          },
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>Cyclone deals damage and can pick</p><hr><p><strong>Sea Giant Behemoth spell-like ability:</strong> 1/day; caster level 25; save DC 18 where applicable. Spell-like abilities have no components and normally use a standard action.</p><p><strong>Source exception:</strong> Underwater only; creates an underwater whirlpool.</p>"
+          },
+          "display": "Long (400 ft. + 40 ft./level)",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Whirlwind (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Shaman",
+                8
+              ]
+            ],
+            "domain": [
+              [
+                "Spirits",
+                8
+              ]
+            ],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 8,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": ""
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 0,
+            "type": ""
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "b1deefa4e23ded53",
+          "originPack": "warcraftrpg2e.warcraft-spells",
+          "originVersion": 109,
+          "possibleUpdate": false,
+          "powerPointsCost": 0,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 1,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 1
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "long",
+            "value": null
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requiresPsionicFocus": false,
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "18",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "Reflex negates; see text",
+            "originVersion": 97,
+            "type": "reflexnegates"
+          },
+          "school": "evo",
+          "shortDescription": "<p>Cyclone deals damage and can pick</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "Cyclone deals damage and can pick",
+          "source": "World of Warcraft: Monster Guide, p. 80",
+          "specialActions": [],
+          "specialId": null,
+          "specialPrepared": true,
+          "spellArea": "",
+          "spellbook": "spelllike",
+          "spellDuration": "1 round/level (D)",
+          "spellDurationData": {
+            "units": "roundPerLevel",
+            "value": 1
+          },
+          "spellEffect": "Cyclone 10 ft. wide at base, 30 ft. wide at top, and 30 ft. tall",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": true,
+          "subschool": "",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "Cyclone 10 ft. wide at base, 30 ft. wide at top, and 30 ft. tall"
+          },
+          "types": "air",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 1,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "day",
+            "rechargeFormula": null,
+            "value": 1
+          },
+          "warcraftManualPolicy": {
+            "mode": "srd-baseline",
+            "reason": "The inherited SRD implementation is used with the Warcraft list assignment and spell level."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_id": "74b8780526235f80",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "Anchor smash"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                80
+              ],
+              "section": "Sea Giant Behemoth"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Anchor smash",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Anchor smash.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 80",
+          "uniqueId": "wc-monster-sea-giant-behemoth-anchor-smash"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "5e66a298a7b718cf",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Special Attack",
+              "raw": "pulverize"
+            },
+            "reference": {
+              "id": "61414b1ec7cfaf61",
+              "name": "Pulverize",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                80
+              ],
+              "section": "Sea Giant Behemoth"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "pulverize",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> pulverize.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.61414b1ec7cfaf61]{Pulverize}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 80",
+          "uniqueId": "wc-monster-sea-giant-behemoth-pulverize"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "0e17a982715e2721",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "rock throwing"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                80
+              ],
+              "section": "Sea Giant Behemoth"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "rock throwing",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> rock throwing.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 80",
+          "uniqueId": "wc-monster-sea-giant-behemoth-rock-throwing"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "a49c6b8962fa1e54",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Special Attack",
+              "raw": "spell-like abilities"
+            },
+            "reference": {
+              "id": "9072eee87e2208d9",
+              "name": "Spell-Like Abilities Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                80
+              ],
+              "section": "Sea Giant Behemoth"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "spell-like abilities",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> spell-like abilities.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.9072eee87e2208d9]{Spell-Like Abilities Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 80",
+          "uniqueId": "wc-monster-sea-giant-behemoth-spell-like-abilities"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "4d0ae37dc04244a0",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Low-light vision"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                80
+              ],
+              "section": "Sea Giant Behemoth"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Low-light vision",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Low-light vision.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 80",
+          "uniqueId": "wc-monster-sea-giant-behemoth-low-light-vision"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "9b66b0595d96c39f",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "amphibious"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                80
+              ],
+              "section": "Sea Giant Behemoth"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "amphibious",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> amphibious.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 80",
+          "uniqueId": "wc-monster-sea-giant-behemoth-amphibious"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e4d36a1be0c75b2f",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "scent"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                80
+              ],
+              "section": "Sea Giant Behemoth"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "scent",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> scent.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 80",
+          "uniqueId": "wc-monster-sea-giant-behemoth-scent"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "19a8b74bb329e252",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Bash"
+            },
+            "reference": {
+              "id": "60ca15d6f0332f77",
+              "name": "Bash",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                80
+              ],
+              "section": "Sea Giant Behemoth"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Bash",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Bash.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.60ca15d6f0332f77]{Bash}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 80",
+          "uniqueId": "wc-monster-sea-giant-behemoth-bash"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "87d63818d76f9264",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Cleave"
+            },
+            "reference": {
+              "id": "34b794d403b119d7",
+              "name": "Cleave",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                80
+              ],
+              "section": "Sea Giant Behemoth"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Cleave",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Cleave.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.34b794d403b119d7]{Cleave}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 80",
+          "uniqueId": "wc-monster-sea-giant-behemoth-cleave"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e450c962b6e77819",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Great Cleave"
+            },
+            "reference": {
+              "id": "8ea93af3cfb52873",
+              "name": "Great Cleave",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                80
+              ],
+              "section": "Sea Giant Behemoth"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Great Cleave",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Great Cleave.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.8ea93af3cfb52873]{Great Cleave}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 80",
+          "uniqueId": "wc-monster-sea-giant-behemoth-great-cleave"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "4d81e3e5cceeaec3",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Iron Will"
+            },
+            "reference": {
+              "id": "bf55b7e5d7d1a388",
+              "name": "Iron Will",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                80
+              ],
+              "section": "Sea Giant Behemoth"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Iron Will",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Iron Will.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.bf55b7e5d7d1a388]{Iron Will}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 80",
+          "uniqueId": "wc-monster-sea-giant-behemoth-iron-will"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "290cb3fd5368bcdb",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Power Attack"
+            },
+            "reference": {
+              "id": "95e094ad6c35e24e",
+              "name": "Power Attack",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                80
+              ],
+              "section": "Sea Giant Behemoth"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Power Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Power Attack.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.95e094ad6c35e24e]{Power Attack}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 80",
+          "uniqueId": "wc-monster-sea-giant-behemoth-power-attack"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "935d5c799e784020",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Reckless Attack"
+            },
+            "reference": {
+              "id": "8712e67bdb0146dd",
+              "name": "Reckless Attack",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                80
+              ],
+              "section": "Sea Giant Behemoth"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Reckless Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Reckless Attack.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.8712e67bdb0146dd]{Reckless Attack}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 80",
+          "uniqueId": "wc-monster-sea-giant-behemoth-reckless-attack"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "23a06031bbc34d84",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Skilled (Knowledge [nature] and Survival)"
+            },
+            "reference": {
+              "id": "63e93d7c15badc3f",
+              "name": "Skilled",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                80
+              ],
+              "section": "Sea Giant Behemoth"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Skilled (Knowledge [nature] and Survival)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Skilled (Knowledge [nature] and Survival).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.63e93d7c15badc3f]{Skilled}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 80",
+          "uniqueId": "wc-monster-sea-giant-behemoth-skilled-knowledge-nature-and-survival"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e4af4477a9f65e66",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "War Stomp"
+            },
+            "reference": {
+              "id": "674d44d0db6a07d3",
+              "name": "War Stomp",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                80
+              ],
+              "section": "Sea Giant Behemoth"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "War Stomp",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> War Stomp.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.674d44d0db6a07d3]{War Stomp}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 80",
+          "uniqueId": "wc-monster-sea-giant-behemoth-war-stomp"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "88b91214fd43a2ac",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Weapon Focus (heavy pick)"
+            },
+            "reference": {
+              "id": "fdea42738398197e",
+              "name": "Weapon Focus",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                80
+              ],
+              "section": "Sea Giant Behemoth"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Weapon Focus (heavy pick)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Weapon Focus (heavy pick).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.fdea42738398197e]{Weapon Focus}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 80",
+          "uniqueId": "wc-monster-sea-giant-behemoth-weapon-focus-heavy-pick"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "9187c9f34d3e32ab",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Gargantuan Giant (Aquatic, Water); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "c38e3f9e99aa103b",
+              "name": "Giant Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                80
+              ],
+              "section": "Sea Giant Behemoth"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Giant Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Gargantuan Giant (Aquatic, Water); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.c38e3f9e99aa103b]{Giant Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 80",
+          "uniqueId": "wc-monster-sea-giant-behemoth-giant-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "6b0a45eb7ffa8843",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Aquatic subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "6c0304b7fc3424a3",
+              "name": "Aquatic Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                80
+              ],
+              "section": "Sea Giant Behemoth"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Aquatic Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Aquatic subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.6c0304b7fc3424a3]{Aquatic Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 80",
+          "uniqueId": "wc-monster-sea-giant-behemoth-aquatic-subtype-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "c6da50a4005d117e",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Water subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "f9aaded1848fd5c4",
+              "name": "Water Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                80
+              ],
+              "section": "Sea Giant Behemoth"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Water Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Water subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.f9aaded1848fd5c4]{Water Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 80",
+          "uniqueId": "wc-monster-sea-giant-behemoth-water-subtype-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "4681daedfc0ed1bc",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": {
+          "regularSpells": 0,
+          "slaExecutable": 6,
+          "slaManual": 0
+        },
+        "rawFields": {
+          "Abilities": "Str 30, Agy 12, Sta 26, Int 8, Spt 15, Cha 10",
+          "Advancement": "By character class",
+          "Alignment": "Often chaotic neutral",
+          "Area": "The Cape of Stranglethorn",
+          "Armor Class": "27 (-3 size, +1 Agy, +16 natural, +3 hide armor), touch 8, flat-footed 26",
+          "Attack": "Gargantuan heavy pick +26 melee (3d6+15/x4) or slam +25 melee (2d6+10) or rock +16 ranged (3d8+10)",
+          "Base Attack/Grapple": "+18/+40",
+          "Challenge Rating": "14",
+          "Environment": "Any aquatic",
+          "Feats": "Bash, Cleave, Great Cleave, Iron Will, Power Attack, Reckless Attack, Skilled (Knowledge [nature] and Survival), War Stomp, Weapon Focus (heavy pick)",
+          "Full Attack": "Heavy pick +26/+21/+16/+11 melee (3d6+15/x4); or 2 slams +25 melee (2d6+10); or rock +16 ranged (3d8+10)",
+          "Hit Dice": "25d8+200 (312 hp)",
+          "Initiative": "+1",
+          "Level Adjustment": "-",
+          "Organization": "Solitary or current (2-6)",
+          "Saves": "Fort +22, Ref +9, Will +12",
+          "Skills": "Knowledge (nature) +13, Survival +24, Swim +18",
+          "Space/Reach": "20 ft./20 ft.",
+          "Special Attacks": "Anchor smash, pulverize, rock throwing, spell-like abilities",
+          "Special Qualities": "Low-light vision, amphibious, scent",
+          "Speed": "20 ft. (4 squares), swim 40 ft.",
+          "Treasure": "Standard coins; double goods; standard items"
+        },
+        "rulesCoverage": {
+          "actor-defense": 0,
+          "linked-reference": 14,
+          "manual": 5
+        },
+        "subtypes": [
+          "Aquatic",
+          "Water"
+        ]
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          81
+        ],
+        "printedPages": [
+          80
+        ],
+        "section": "Sea Giant Behemoth",
+        "verification": "native-text-table"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "247a500350120694",
+    "62d99999647ff2d4",
+    "4331f37e934c915b",
+    "2143de798eac62b7",
+    "e91cf9827a5837a4",
+    "04a1183dfaee0ff7",
+    "36343472a5084215",
+    "0812e0fc47bb21b5",
+    "461ae4e5a02877ad",
+    "6caa1ef676ecd9d2",
+    "e4e8026002f2f445",
+    "1d4e5cb6393c9e9b",
+    "54ad5aad036a4925",
+    "2f31df7c309438bc",
+    "74b8780526235f80",
+    "5e66a298a7b718cf",
+    "0e17a982715e2721",
+    "a49c6b8962fa1e54",
+    "4d0ae37dc04244a0",
+    "9b66b0595d96c39f",
+    "e4d36a1be0c75b2f",
+    "19a8b74bb329e252",
+    "87d63818d76f9264",
+    "e450c962b6e77819",
+    "4d81e3e5cceeaec3",
+    "290cb3fd5368bcdb",
+    "935d5c799e784020",
+    "23a06031bbc34d84",
+    "e4af4477a9f65e66",
+    "88b91214fd43a2ac",
+    "9187c9f34d3e32ab",
+    "6b0a45eb7ffa8843",
+    "c6da50a4005d117e"
+  ],
+  "name": "Sea Giant Behemoth",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 8,
+        "origMod": 8,
+        "origTotal": 26,
+        "penalty": 0,
+        "total": 26,
+        "userPenalty": 0,
+        "value": 26
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 12,
+        "penalty": 0,
+        "total": 12,
+        "userPenalty": 0,
+        "value": 12
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -1,
+        "origMod": -1,
+        "origTotal": 8,
+        "penalty": 0,
+        "total": 8,
+        "userPenalty": 0,
+        "value": 8
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 10,
+        "origMod": 10,
+        "origTotal": 30,
+        "penalty": 0,
+        "total": 30,
+        "userPenalty": 0,
+        "value": 30
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 2,
+        "origMod": 2,
+        "origTotal": 15,
+        "penalty": 0,
+        "total": 15,
+        "userPenalty": 0,
+        "value": 15
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 26,
+          "value": 0
+        },
+        "normal": {
+          "total": 27,
+          "value": 0
+        },
+        "touch": {
+          "total": 8,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 18,
+        "nonepic": 18,
+        "total": 18,
+        "value": 0
+      },
+      "cmb": {
+        "total": 40,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "giant",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 0,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 25,
+        "total": 25
+      },
+      "hp": {
+        "base": 312,
+        "max": 312,
+        "min": -26,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 312
+      },
+      "init": {
+        "bonus": 0,
+        "total": 1,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 16,
+      "savingThrows": {
+        "fort": {
+          "base": 22,
+          "total": 22
+        },
+        "ref": {
+          "base": 9,
+          "total": 9
+        },
+        "will": {
+          "base": 12,
+          "total": 12
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": null,
+        "darkvision": null,
+        "lowLight": true,
+        "lowLightMultiplier": 2,
+        "tremorsense": null
+      },
+      "speed": {
+        "land": {
+          "base": 20,
+          "total": 20
+        },
+        "swim": {
+          "base": 40,
+          "total": 40
+        }
+      },
+      "spells": {
+        "spellbooks": {
+          "spelllike": {
+            "ability": "cha",
+            "arcaneSpellFailure": false,
+            "autoSetup": false,
+            "autoSpellLevels": false,
+            "baseDCFormula": "0",
+            "bonusPrestigeCl": 0,
+            "cl": {
+              "base": 25,
+              "formula": "0",
+              "total": 25,
+              "value": 0
+            },
+            "class": "",
+            "clNotes": "",
+            "concentration": 0,
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "dailyPowerPointsFormula": "",
+            "hasSpecialSlot": false,
+            "maximumPowerPointLimit": "@cl",
+            "name": "Spell-like Abilities",
+            "powerPoints": 0,
+            "powerPointsFormula": "",
+            "powerPointsTotal": 0,
+            "preparationMode": "prepared",
+            "repertoireLimitOverride": 0,
+            "repertoireSkill": "spl",
+            "showOnlyPrepared": false,
+            "specialSlotLevel0": false,
+            "specialSlots": {
+              "level0": null,
+              "level1": null,
+              "level2": null,
+              "level3": null,
+              "level4": null,
+              "level5": null,
+              "level6": null,
+              "level7": null,
+              "level8": null,
+              "level9": null
+            },
+            "spellcastingType": "arcane",
+            "spells": {
+              "spell0": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell1": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell2": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell3": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell4": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell5": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell6": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell7": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell8": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell9": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              }
+            },
+            "spellslotAbility": "cha",
+            "spontaneous": false,
+            "usePowerPoints": false,
+            "usesWarcraftSlotPool": false,
+            "warcraftCurrentPath": "",
+            "warcraftParentClass": "",
+            "warcraftPathBonusSlot": false,
+            "warcraftPoolKey": ""
+          }
+        },
+        "warcraftPools": {}
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "Often chaotic neutral",
+      "biography": {
+        "public": "",
+        "value": "<p>Sea Giant Behemoth is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 14,
+      "environment": "Any aquatic",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 25,
+        "value": 25
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 25d8+200 (312 hp)</p><p><strong>Initiative:</strong> +1</p><p><strong>Speed:</strong> 20 ft. (4 squares), swim 40 ft.</p><p><strong>Armor Class:</strong> 27 (-3 size, +1 Agy, +16 natural, +3 hide armor), touch 8, flat-footed 26</p><p><strong>Base Attack/Grapple:</strong> +18/+40</p><p><strong>Attack:</strong> Gargantuan heavy pick +26 melee (3d6+15/x4) or slam +25 melee (2d6+10) or rock +16 ranged (3d8+10)</p><p><strong>Full Attack:</strong> Heavy pick +26/+21/+16/+11 melee (3d6+15/x4); or 2 slams +25 melee (2d6+10); or rock +16 ranged (3d8+10)</p><p><strong>Space/Reach:</strong> 20 ft./20 ft.</p><p><strong>Special Attacks:</strong> Anchor smash, pulverize, rock throwing, spell-like abilities</p><p><strong>Special Qualities:</strong> Low-light vision, amphibious, scent</p><p><strong>Saves:</strong> Fort +22, Ref +9, Will +12</p><p><strong>Abilities:</strong> Str 30, Agy 12, Sta 26, Int 8, Spt 15, Cha 10</p><p><strong>Skills:</strong> Knowledge (nature) +13, Survival +24, Swim +18</p><p><strong>Feats:</strong> Bash, Cleave, Great Cleave, Iron Will, Power Attack, Reckless Attack, Skilled (Knowledge [nature] and Survival), War Stomp, Weapon Focus (heavy pick)</p><p><strong>Area:</strong> The Cape of Stranglethorn</p><p><strong>Organization:</strong> Solitary or current (2-6)</p><p><strong>Treasure:</strong> Standard coins; double goods; standard items</p><p><strong>Advancement:</strong> By character class</p><p><strong>Level Adjustment:</strong> -</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 14,
+      "type": "Giant"
+    },
+    "skills": {
+      "kna": {
+        "ability": "int",
+        "abilityModifier": -1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 14,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 13,
+        "notes": "Printed total +13",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "sur": {
+        "ability": "wis",
+        "abilityModifier": 2,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 22,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 24,
+        "notes": "Printed total +24",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "swm": {
+        "ability": "str",
+        "abilityModifier": 10,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 8,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 18,
+        "notes": "Printed total +18",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "grg",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Low-light vision, amphibious, scent",
+      "size": "grg",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

@@ -80,6 +80,8 @@ export class ActorChangesHelper {
                 return ["system.attributes.bab.total", "system.attributes.bab.nonepic", "system.attributes.cmb.total"];
             case "damage":
                 return "system.attributes.damage.general";
+            case "mdamage":
+                return "system.attributes.damage.melee";
             case "wdamage":
                 return "system.attributes.damage.weapon";
             case "sdamage":

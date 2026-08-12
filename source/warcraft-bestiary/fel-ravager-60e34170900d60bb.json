@@ -1,0 +1,3800 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "7bb87eff76aa7070",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 14,
+                "die": 8,
+                "expression": "14d8",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Outsider Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "high",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "105",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "14",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "23",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "13",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "20",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "12",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "12",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "12",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "50",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "4",
+              "misc",
+              "init",
+              "untyped"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "outsider",
+          "damageReduction": [
+            [
+              "10",
+              "good",
+              false
+            ]
+          ],
+          "hd": 8,
+          "hp": 0,
+          "levels": 14,
+          "maxLevel": 50,
+          "resistances": [
+            [
+              "10",
+              "energy-acid",
+              false,
+              false,
+              false
+            ],
+            [
+              "10",
+              "energy-cold",
+              false,
+              false,
+              false
+            ],
+            [
+              "10",
+              "energy-electric",
+              false,
+              false,
+              false
+            ],
+            [
+              "",
+              "energy-fire",
+              true,
+              false,
+              false
+            ]
+          ],
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "high"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 70"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "60292a6bebe93fa4",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                22
+              ],
+              "printedDamage": "2d6+8/19-20 plus 1d6 fel"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Bite",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 19,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "8",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Bite",
+          "damage": {
+            "parts": [
+              [
+                "2d6+8",
+                "Piercing or Bludgeoning",
+                "damage-piercing-bludgeoning"
+              ],
+              [
+                "1d6",
+                "Fel",
+                "damage-untyped-energy"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Bite +22 melee (2d6+8/19-20 plus 1d6 fel).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": true,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "ae169d5d55ba2f6c",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                17
+              ],
+              "printedDamage": "special"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Ray",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": true
+          },
+          "actionType": "rsak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "3",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "ray",
+          "damage": {
+            "parts": [
+              [
+                "0",
+                "Bludgeoning",
+                "damage-bludg"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> ray +17 ranged touch (special).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "11104aac77097a62",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                20
+              ],
+              "printedDamage": "1d8+4 plus 1d6 fel"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Claws",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "6",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "claws",
+          "damage": {
+            "parts": [
+              [
+                "1d8+4",
+                "Piercing or Slashing",
+                "damage-piercing-or-slashing"
+              ],
+              [
+                "1d6",
+                "Fel",
+                "damage-untyped-energy"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> claws +20 melee (1d8+4 plus 1d6 fel).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "8028da57d05c011c",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack - Bite and 2 claws",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "60292a6bebe93fa4",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Bite",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 2,
+              "id": "11104aac77097a62",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Claws",
+              "primary": true
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> Bite +22 melee (2d6+8/19-20 plus 1d6 fel) and 2 claws +20 melee (1d8+4 plus 1d6 fel).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "c218d4e0608fd93c",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack - ray",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "ae169d5d55ba2f6c",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Ray",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> ray +17 ranged touch (special).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_embedded": {},
+        "_id": "f860478943ce4c30",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 14,
+              "frequency": "atWill",
+              "kind": "sla",
+              "saveDC": 12,
+              "sourceSpell": {
+                "id": "X6RdVVq0VK3wZSiK",
+                "pack": "spells",
+                "source": null
+              },
+              "uses": 0
+            },
+            "reference": {
+              "id": "X6RdVVq0VK3wZSiK",
+              "name": "Detect Good",
+              "pack": "warcraftrpg2e.spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                71
+              ],
+              "printedPages": [
+                70
+              ],
+              "section": "Fel Ravager",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Detect Good (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "other",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": true,
+          "autoscaleAttackParts": "",
+          "baseCl": "14",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "combatChanges": [],
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": []
+          },
+          "damageReduction": [],
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;divination;\n    <br>\n    <strong>Level:</strong>&nbsp;Cleric 1;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, F, DF<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;60 feet<br>\n    <strong>Area:</strong>&nbsp;cone-shaped emanation<br>\n    \n    \n    <strong>Duration:</strong>&nbsp;Special (D)<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;1<br>\n        <strong>Saving Throw:</strong>&nbsp;None\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nYou can sense the presence of good. The amount of information revealed depends on how long you study a particular area or subject.\n</p><p><i>1st Round: </i>Presence or absence of good.\n</p><p><i>2nd Round: </i>Number of good auras (creatures, objects, or spells) in the area and the power of the most potent good aura present.\n</p><p>If you are of evil alignment, and the strongest good aura’s power is overwhelming (see below), and the HD or level of the aura’s source is at least twice your character level, you are stunned for 1 round and the spell ends.\n</p><p><i>3rd Round: </i>The power and location of each aura. If an aura is outside your line of sight, then you discern its direction but not its exact location.\n</p><p><i>Aura Power: </i>An good aura’s power depends on the type of good creature or object that you’re detecting and its HD, caster level, or (in the case of a cleric) class level; see the accompanying table. If an aura falls into more than one strength category, the spell indicates the stronger of the two.\n</p>\n\n<p><i>Lingering Aura: </i>A good aura lingers after its original source dissipates (in the case of a spell) or is destroyed (in the case of a creature or magic item). If <i>detect good </i>is cast and directed at such a location, the spell indicates an aura strength of dim (even weaker than a faint aura). How long the aura lingers at this dim level depends on its original power:\n</p>\n\n<p>Animals, traps, poisons, and other potential perils are not good, and as such this spell does not detect them.\n</p><p>Each round, you can turn to detect good in a new area. The spell can penetrate barriers, but 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt blocks it.\n</p>\n<hr/>\n\n\n\n</div>\n<hr><p><strong>Fel Ravager spell-like ability:</strong> At will; caster level 14; save DC 12 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Detect Good (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Cleric",
+                1
+              ]
+            ],
+            "domain": [],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 1,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": ""
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 60,
+            "type": "cone"
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "X6RdVVq0VK3wZSiK",
+          "originPack": "warcraftrpg2e.spells",
+          "originVersion": 108,
+          "possibleUpdate": false,
+          "powerPointsCost": 1,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 0,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 0
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "ft",
+            "value": "60"
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requiresPsionicFocus": false,
+          "resistances": [],
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "12",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "None",
+            "originVersion": 97,
+            "type": ""
+          },
+          "school": "div",
+          "shortDescription": "\n\n\n<p>\nYou can sense the presence of good. The amount of information revealed depends on how long you study a particular area or subject.\n</p><p><i>1st Round: </i>Presence or absence of good.\n</p><p><i>2nd Round: </i>Number of good auras (creatures, objects, or spells) in the area and the power of the most potent good aura present.\n</p><p>If you are of evil alignment, and the strongest good aura’s power is overwhelming (see below), and the HD or level of the aura’s source is at least twice your character level, you are stunned for 1 round and the spell ends.\n</p><p><i>3rd Round: </i>The power and location of each aura. If an aura is outside your line of sight, then you discern its direction but not its exact location.\n</p><p><i>Aura Power: </i>An good aura’s power depends on the type of good creature or object that you’re detecting and its HD, caster level, or (in the case of a cleric) class level; see the accompanying table. If an aura falls into more than one strength category, the spell indicates the stronger of the two.\n</p>\n\n<p><i>Lingering Aura: </i>A good aura lingers after its original source dissipates (in the case of a spell) or is destroyed (in the case of a creature or magic item). If <i>detect good </i>is cast and directed at such a location, the spell indicates an aura strength of dim (even weaker than a faint aura). How long the aura lingers at this dim level depends on its original power:\n</p>\n\n<p>Animals, traps, poisons, and other potential perils are not good, and as such this spell does not detect them.\n</p><p>Each round, you can turn to detect good in a new area. The spell can penetrate barriers, but 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt blocks it.\n</p>\n<hr/>\n\n\n",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "Reveals creatures, spells, or objects of selected alignment.",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "specialActions": [
+            {
+              "action": "Create unique \"Detect Good\" from \"warcraftrpg2e.commonbuffs\" on target;Set buff \"Detect Good\" field data.level to max(1,(@cl)) on target;Activate buff \"Detect Good\" on target",
+              "condition": "",
+              "img": "icons/svg/item-bag.svg",
+              "name": "Detect Good",
+              "range": ""
+            }
+          ],
+          "specialId": null,
+          "specialPrepared": false,
+          "spellArea": "cone-shaped emanation",
+          "spellbook": "spelllike",
+          "spellDuration": "Concentration, up to 10 min./ level (D)",
+          "spellDurationData": {
+            "dismissable": false,
+            "units": "spec",
+            "value": "Concentration, up to 10 min./ level"
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": false,
+          "subschool": "",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": ""
+          },
+          "types": "",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 0,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "",
+            "rechargeFormula": null,
+            "value": 0
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_embedded": {},
+        "_id": "0799d6ff7bb0c155",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 14,
+              "frequency": "atWill",
+              "kind": "sla",
+              "saveDC": 12,
+              "sourceSpell": {
+                "id": "sq0GVJvG06Wy4gFu",
+                "pack": "spells",
+                "source": null
+              },
+              "uses": 0
+            },
+            "reference": {
+              "id": "sq0GVJvG06Wy4gFu",
+              "name": "Detect Law",
+              "pack": "warcraftrpg2e.spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                71
+              ],
+              "printedPages": [
+                70
+              ],
+              "section": "Fel Ravager",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Detect Law (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "other",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": true,
+          "autoscaleAttackParts": "",
+          "baseCl": "14",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "combatChanges": [],
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": []
+          },
+          "damageReduction": [],
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;divination;\n    <br>\n    <strong>Level:</strong>&nbsp;Cleric 1;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, F, DF<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;60 feet<br>\n    <strong>Area:</strong>&nbsp;cone-shaped emanation<br>\n    \n    \n    <strong>Duration:</strong>&nbsp;Special (D)<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;1<br>\n        <strong>Saving Throw:</strong>&nbsp;None\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nYou can sense the presence of law. The amount of information revealed depends on how long you study a particular area or subject.\n</p><p><i>1st Round: </i>Presence or absence of law.\n</p><p><i>2nd Round: </i>Number of lawful auras (creatures, objects, or spells) in the area and the power of the most potent lawful aura present.\n</p><p>If you are of chaotic alignment, and the strongest lawful aura’s power is overwhelming (see below), and the HD or level of the aura’s source is at least twice your character level, you are stunned for 1 round and the spell ends.\n</p><p><i>3rd Round: </i>The power and location of each aura. If an aura is outside your line of sight, then you discern its direction but not its exact location.\n</p><p><i>Aura Power: </i>An lawful aura’s power depends on the type of lawful creature or object that you’re detecting and its HD, caster level, or (in the case of a cleric) class level; see the accompanying table. If an aura falls into more than one strength category, the spell indicates the stronger of the two.\n</p>\n\n<p><i>Lingering Aura: </i>A lawful aura lingers after its original source dissipates (in the case of a spell) or is destroyed (in the case of a creature or magic item). If <i>detect law</i> is cast and directed at such a location, the spell indicates an aura strength of dim (even weaker than a faint aura). How long the aura lingers at this dim level depends on its original power:\n</p>\n\n<p>Animals, traps, poisons, and other potential perils are not lawful, and as such this spell does not detect them.\n</p><p>Each round, you can turn to detect lawful in a new area. The spell can penetrate barriers, but 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt blocks it.\n</p>\n<hr/>\n\n\n\n</div>\n<hr><p><strong>Fel Ravager spell-like ability:</strong> At will; caster level 14; save DC 12 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Detect Law (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Cleric",
+                1
+              ]
+            ],
+            "domain": [],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 1,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": ""
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 60,
+            "type": "cone"
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "sq0GVJvG06Wy4gFu",
+          "originPack": "warcraftrpg2e.spells",
+          "originVersion": 108,
+          "possibleUpdate": false,
+          "powerPointsCost": 1,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 0,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 0
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "ft",
+            "value": "60"
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requiresPsionicFocus": false,
+          "resistances": [],
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "12",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "None",
+            "originVersion": 97,
+            "type": ""
+          },
+          "school": "div",
+          "shortDescription": "\n\n\n<p>\nYou can sense the presence of law. The amount of information revealed depends on how long you study a particular area or subject.\n</p><p><i>1st Round: </i>Presence or absence of law.\n</p><p><i>2nd Round: </i>Number of lawful auras (creatures, objects, or spells) in the area and the power of the most potent lawful aura present.\n</p><p>If you are of chaotic alignment, and the strongest lawful aura’s power is overwhelming (see below), and the HD or level of the aura’s source is at least twice your character level, you are stunned for 1 round and the spell ends.\n</p><p><i>3rd Round: </i>The power and location of each aura. If an aura is outside your line of sight, then you discern its direction but not its exact location.\n</p><p><i>Aura Power: </i>An lawful aura’s power depends on the type of lawful creature or object that you’re detecting and its HD, caster level, or (in the case of a cleric) class level; see the accompanying table. If an aura falls into more than one strength category, the spell indicates the stronger of the two.\n</p>\n\n<p><i>Lingering Aura: </i>A lawful aura lingers after its original source dissipates (in the case of a spell) or is destroyed (in the case of a creature or magic item). If <i>detect law</i> is cast and directed at such a location, the spell indicates an aura strength of dim (even weaker than a faint aura). How long the aura lingers at this dim level depends on its original power:\n</p>\n\n<p>Animals, traps, poisons, and other potential perils are not lawful, and as such this spell does not detect them.\n</p><p>Each round, you can turn to detect lawful in a new area. The spell can penetrate barriers, but 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt blocks it.\n</p>\n<hr/>\n\n\n",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "Reveals creatures, spells, or objects of selected alignment.",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "specialActions": [
+            {
+              "action": "Create unique \"Detect Law\" from \"warcraftrpg2e.commonbuffs\" on target;Set buff \"Detect Law\" field data.level to max(1,(@cl)) on target;Activate buff \"Detect Law\" on target",
+              "condition": "",
+              "img": "icons/svg/item-bag.svg",
+              "name": "Detect Law",
+              "range": ""
+            }
+          ],
+          "specialId": null,
+          "specialPrepared": false,
+          "spellArea": "cone-shaped emanation",
+          "spellbook": "spelllike",
+          "spellDuration": "Concentration, up to 10 min./ level (D)",
+          "spellDurationData": {
+            "dismissable": false,
+            "units": "spec",
+            "value": "Concentration, up to 10 min./ level"
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": false,
+          "subschool": "",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": ""
+          },
+          "types": "",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 0,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "",
+            "rechargeFormula": null,
+            "value": 0
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_embedded": {},
+        "_id": "b742c28f2e039b45",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "catalog": {
+              "completeListEntry": true,
+              "generated": true,
+              "status": "manual-effect-pending-verification"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 14,
+              "frequency": "atWill",
+              "kind": "sla",
+              "saveDC": 17,
+              "sourceSpell": {
+                "id": "b6ec75199f2656de",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    266,
+                    270,
+                    300
+                  ],
+                  "printedPages": [
+                    264,
+                    268,
+                    298
+                  ],
+                  "section": "Greater Dispel Magic",
+                  "verification": "text-extracted-header"
+                }
+              },
+              "uses": 0
+            },
+            "reference": {
+              "id": "b6ec75199f2656de",
+              "name": "Greater Dispel Magic",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                71
+              ],
+              "printedPages": [
+                70
+              ],
+              "section": "Fel Ravager",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Greater Dispel Magic (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "max(min(5,ceil(@cl/2)),1)",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": true,
+          "autoscaleAttackParts": "",
+          "baseCl": "14",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "combatChanges": [],
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": []
+          },
+          "damageReduction": [],
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>As dispel magic, but +20 on</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p><hr><p><strong>Fel Ravager spell-like ability:</strong> At will; caster level 14; save DC 17 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "Close (25 ft. + 5 ft./2 levels)",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Greater Dispel Magic (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Arcanist",
+                6
+              ],
+              [
+                "Healer",
+                6
+              ]
+            ],
+            "domain": [],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 6,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": ""
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 0,
+            "type": ""
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "b6ec75199f2656de",
+          "originPack": "warcraftrpg2e.warcraft-spells",
+          "originVersion": 109,
+          "possibleUpdate": false,
+          "powerPointsCost": 1,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 0,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 0
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "close",
+            "value": null
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requiresPsionicFocus": false,
+          "resistances": [],
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "17",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "None",
+            "originVersion": 97,
+            "type": ""
+          },
+          "school": "abj",
+          "shortDescription": "<p>As dispel magic, but +20 on</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "As dispel magic, but +20 on",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "specialActions": [],
+          "specialId": null,
+          "specialPrepared": false,
+          "spellArea": "",
+          "spellbook": "spelllike",
+          "spellDuration": "Instantaneous",
+          "spellDurationData": {
+            "units": "inst",
+            "value": null
+          },
+          "spellEffect": "Ray",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": true,
+          "subschool": "",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "Ray"
+          },
+          "types": "force",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 0,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "",
+            "rechargeFormula": null,
+            "value": 0
+          },
+          "warcraftManualPolicy": {
+            "mode": "manual",
+            "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_embedded": {},
+        "_id": "dbb1fb5551c7baae",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "catalog": {
+              "completeListEntry": true,
+              "generated": true,
+              "status": "srd-mechanics-with-warcraft-header"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 14,
+              "frequency": "atWill",
+              "kind": "sla",
+              "saveDC": 11,
+              "sourceSpell": {
+                "id": "5bd8404c0bad95e8",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    265,
+                    269,
+                    331
+                  ],
+                  "printedPages": [
+                    263,
+                    267,
+                    329
+                  ],
+                  "section": "Read Magic",
+                  "verification": "text-extracted-header"
+                }
+              },
+              "uses": 0
+            },
+            "reference": {
+              "id": "5bd8404c0bad95e8",
+              "name": "Read Magic",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                71
+              ],
+              "printedPages": [
+                70
+              ],
+              "section": "Fel Ravager",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Read Magic (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "other",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": true,
+          "autoscaleAttackParts": "",
+          "baseCl": "14",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "combatChanges": [],
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "creationChanges": [],
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": []
+          },
+          "damageReduction": [],
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>You may read scrolls and spellbooks.</p><hr><p><strong>Fel Ravager spell-like ability:</strong> At will; caster level 14; save DC 11 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "Personal",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Read Magic (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Arcanist",
+                0
+              ],
+              [
+                "Healer",
+                0
+              ]
+            ],
+            "domain": [],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 0,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "a clear crystal or mineral prism",
+            "value": ""
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 0,
+            "type": ""
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "5bd8404c0bad95e8",
+          "originPack": "warcraftrpg2e.warcraft-spells",
+          "originVersion": 109,
+          "perRoundActions": [],
+          "possibleUpdate": false,
+          "powerPointsCost": 0,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 0,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 0
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "personal",
+            "value": null
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requirements": [],
+          "requiresPsionicFocus": false,
+          "resistances": [],
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "11",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "",
+            "originVersion": 97,
+            "type": ""
+          },
+          "school": "div",
+          "shortDescription": "<p>You may read scrolls and spellbooks.</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "You may read scrolls and spellbooks.",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "specialActions": [
+            {
+              "action": "Create unique \"Read Magic\" from \"warcraftrpg2e.commonbuffs\" on target;Set buff \"Read Magic\" field data.level to max(1,(@cl)) on target;Activate buff \"Read Magic\" on target",
+              "condition": "",
+              "img": "icons/svg/item-bag.svg",
+              "name": "Read Magic",
+              "range": ""
+            }
+          ],
+          "specialId": null,
+          "specialPrepared": false,
+          "spellArea": "",
+          "spellbook": "spelllike",
+          "spellDuration": "10 min./level",
+          "spellDurationData": {
+            "units": "minutePerLevel",
+            "value": 10
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": false,
+          "subschool": "",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "You"
+          },
+          "types": "",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 0,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "",
+            "rechargeFormula": null,
+            "value": 0
+          },
+          "warcraftManualPolicy": {
+            "mode": "srd-baseline",
+            "reason": "The inherited SRD implementation is used with the Warcraft list assignment and spell level."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_id": "16f8f948ee13e0af",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Spell-Like Ability",
+              "raw": "Greater Shadow Bolt"
+            },
+            "monsterMagic": {
+              "automation": "manual-missing-spell",
+              "casterLevel": 14,
+              "frequency": "day",
+              "kind": "sla",
+              "saveDC": 16,
+              "uses": 3
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                71
+              ],
+              "printedPages": [
+                70
+              ],
+              "section": "Fel Ravager",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Greater Shadow Bolt (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "sp",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "description": {
+            "value": "<p><strong>Spell-like ability:</strong> 3/day; caster level 14; save DC 16 where applicable.</p><p><strong>Resolution:</strong> The source spell is not present in the available core or system spell catalogues. Track the listed uses here; its effect remains GM-adjudicated from the cited private source, and no substitute effect has been invented.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-fel-ravager-greater-shadow-bolt-sla",
+          "uses": {
+            "autoDeductCharges": true,
+            "chargesPerUse": 1,
+            "max": 3,
+            "per": "day",
+            "value": 3
+          }
+        },
+        "type": "feat"
+      },
+      {
+        "_embedded": {},
+        "_id": "91a07efebd2f7cad",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "catalog": {
+              "completeListEntry": true,
+              "generated": true,
+              "status": "srd-mechanics-with-warcraft-header"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 14,
+              "frequency": "day",
+              "kind": "sla",
+              "saveDC": 12,
+              "sourceSpell": {
+                "id": "356eebab8a32bf68",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    267,
+                    268,
+                    287
+                  ],
+                  "printedPages": [
+                    265,
+                    266,
+                    285
+                  ],
+                  "section": "Cause Fear",
+                  "verification": "text-extracted-header"
+                }
+              },
+              "uses": 1
+            },
+            "reference": {
+              "id": "356eebab8a32bf68",
+              "name": "Cause Fear",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                71
+              ],
+              "printedPages": [
+                70
+              ],
+              "section": "Fel Ravager",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Cause Fear (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "other",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": false,
+          "autoscaleAttackParts": "",
+          "baseCl": "14",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "combatChanges": [],
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "creationChanges": [],
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": []
+          },
+          "damageReduction": [],
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>One creature of 5 HD or less fl ees for</p><hr><p><strong>Fel Ravager spell-like ability:</strong> 1/day; caster level 14; save DC 12 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "Close (25 ft. + 5 ft./2 levels)",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "Creature Frightened for [[1d4]] rounds on failed save",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Cause Fear (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Necromancer",
+                1
+              ],
+              [
+                "Warlock",
+                1
+              ]
+            ],
+            "domain": [],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 1,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": ""
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 0,
+            "type": ""
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "356eebab8a32bf68",
+          "originPack": "warcraftrpg2e.warcraft-spells",
+          "originVersion": 114,
+          "perRoundActions": [],
+          "possibleUpdate": false,
+          "powerPointsCost": 0,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 1,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 1
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "close",
+            "value": null
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requirements": [],
+          "requiresPsionicFocus": false,
+          "resistances": [],
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "12",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "Will partial",
+            "originVersion": 97,
+            "type": ""
+          },
+          "school": "nec",
+          "shortDescription": "<p>One creature of 5 HD or less fl ees for</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "One creature of 5 HD or less fl ees for",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "specialActions": [
+            {
+              "action": "Create unique \"Frightened (Cause Fear)\" from \"warcraftrpg2e.commonbuffs\" on target;Set buff \"Frightened (Cause Fear)\" field data.level to max(1,(@cl)) on target;Activate buff \"Frightened (Cause Fear)\" on target",
+              "condition": "",
+              "img": "systems/warcraftrpg2e/icons/spells/named-spells/fear.png",
+              "name": "Frightened (Cause Fear)",
+              "range": ""
+            }
+          ],
+          "specialId": null,
+          "specialPrepared": true,
+          "spellArea": "",
+          "spellbook": "spelllike",
+          "spellDuration": "1d4 rounds or 1 round; see text",
+          "spellDurationData": {
+            "units": "seeText",
+            "value": null
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": true,
+          "subschool": "",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "One living creature with 5 or fewer HD"
+          },
+          "types": "fear, mind-affecting",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 1,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "day",
+            "rechargeFormula": null,
+            "value": 1
+          },
+          "warcraftManualPolicy": {
+            "mode": "srd-baseline",
+            "reason": "The inherited SRD implementation is used with the Warcraft list assignment and spell level."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_embedded": {},
+        "_id": "dc4e5d1f6120c616",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 14,
+              "frequency": "day",
+              "kind": "sla",
+              "saveDC": 13,
+              "sourceSpell": {
+                "id": "7oANjVX03tXwV9Tx",
+                "pack": "spells",
+                "source": null
+              },
+              "uses": 1
+            },
+            "reference": {
+              "id": "7oANjVX03tXwV9Tx",
+              "name": "Darkness",
+              "pack": "warcraftrpg2e.spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                71
+              ],
+              "printedPages": [
+                70
+              ],
+              "section": "Fel Ravager",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Darkness (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "other",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": false,
+          "autoscaleAttackParts": "",
+          "baseCl": "14",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": []
+          },
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;evocation&nbsp;[darkness];\n    <br>\n    <strong>Level:</strong>&nbsp;Assassin 2, Bard 2, Blackguard 2, Cleric 2, Sorcerer 2, Wizard 2;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, M/DF (a bit of bat fur and either a drop of pitch or a piece of coal), F<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;touch<br>\n    \n    <strong>Target:</strong>&nbsp;object touched<br>\n    \n    <strong>Duration:</strong>&nbsp;10 Minute/Level (D)<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;None\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThis spell causes an object to radiate shadowy illumination out to a 20-foot radius. All creatures in the area gain concealment (20% miss chance). Even creatures that can normally see in such conditions (such as with darkvision or low-light vision) have the miss chance in an area shrouded in magical <i>darkness</i>.\n</p><p>Normal lights (torches, candles, lanterns, and so forth) are incapable of brightening the area, as are light spells of lower level. Higher level light spells are not affected by <i>darkness.</i>\n</p><p>If <i>darkness</i> is cast on a small object that is then placed inside or under a lightproof covering, the spell’s effect is blocked until the covering is removed.\n</p><p><i>Darkness</i> counters or dispels any light spell of equal or lower spell level.\n</p><p><i>Arcane Material Component: </i>A bit of bat fur and either a drop of pitch or a piece of coal.\n</p>\n<hr/>\n\n\n\n</div>\n<hr><p><strong>Fel Ravager spell-like ability:</strong> 1/day; caster level 14; save DC 13 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Darkness (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Assassin",
+                2
+              ],
+              [
+                "Blackguard",
+                2
+              ],
+              [
+                "Bard",
+                2
+              ],
+              [
+                "Cleric",
+                2
+              ],
+              [
+                "Wizard",
+                2
+              ],
+              [
+                "Sorcerer",
+                2
+              ]
+            ],
+            "domain": [],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 2,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": "a bit of bat fur and either a drop of pitch or a piece of coal"
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 20,
+            "type": "circle"
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "",
+          "originPack": "",
+          "originVersion": 109,
+          "possibleUpdate": false,
+          "powerPointsCost": 0,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 1,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 1
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "touch",
+            "value": null
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requiresPsionicFocus": false,
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "13",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "None",
+            "originVersion": 97,
+            "type": ""
+          },
+          "school": "evo",
+          "shortDescription": "\n\n\n<p>\nThis spell causes an object to radiate shadowy illumination out to a 20-foot radius. All creatures in the area gain concealment (20% miss chance). Even creatures that can normally see in such conditions (such as with darkvision or low-light vision) have the miss chance in an area shrouded in magical <i>darkness</i>.\n</p><p>Normal lights (torches, candles, lanterns, and so forth) are incapable of brightening the area, as are light spells of lower level. Higher level light spells are not affected by <i>darkness.</i>\n</p><p>If <i>darkness</i> is cast on a small object that is then placed inside or under a lightproof covering, the spell’s effect is blocked until the covering is removed.\n</p><p><i>Darkness</i> counters or dispels any light spell of equal or lower spell level.\n</p><p><i>Arcane Material Component: </i>A bit of bat fur and either a drop of pitch or a piece of coal.\n</p>\n<hr/>\n\n\n",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "20-ft. radius of supernatural shadow.",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "specialActions": [],
+          "specialId": null,
+          "specialPrepared": true,
+          "spellArea": "",
+          "spellbook": "spelllike",
+          "spellDuration": "10 min./level (D)",
+          "spellDurationData": {
+            "dismissable": false,
+            "units": "minutePerLevel",
+            "value": "10*@cl"
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": false,
+          "subschool": "",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "object touched"
+          },
+          "types": "darkness",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 1,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "day",
+            "rechargeFormula": null,
+            "value": 1
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_id": "1164c87556a6ef16",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "Fel strike"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Fel Ravager"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Fel strike",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Fel strike.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-fel-ravager-fel-strike"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "27fa5678e3979016",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Special Attack",
+              "raw": "mana burn (DC 20)"
+            },
+            "reference": {
+              "id": "f80b9ac9041e11e2",
+              "name": "Mana Burn",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Fel Ravager"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "mana burn",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> mana burn (DC 20).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-spells.Item.f80b9ac9041e11e2]{Mana Burn}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-fel-ravager-mana-burn"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "3fb26e7373ea6468",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "pounce"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Fel Ravager"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "pounce",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> pounce.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-fel-ravager-pounce"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "64f1f38c4599d4eb",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Special Attack",
+              "raw": "spell-like abilities"
+            },
+            "reference": {
+              "id": "9072eee87e2208d9",
+              "name": "Spell-Like Abilities Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Fel Ravager"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "spell-like abilities",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> spell-like abilities.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.9072eee87e2208d9]{Spell-Like Abilities Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-fel-ravager-spell-like-abilities"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "23506a7b534d1780",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Blindsight 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Fel Ravager"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Blindsight 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Blindsight 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-fel-ravager-blindsight-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "ed6a9160ec5077cc",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "darkvision 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Fel Ravager"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "darkvision 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> darkvision 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-fel-ravager-darkvision-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "86ed4a7f8f108f5a",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "damage reduction 10/good"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Fel Ravager"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "damage reduction 10/good",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> damage reduction 10/good.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-fel-ravager-damage-reduction-10-good"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "4c5dbf4877edc5b3",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "immunity to fire"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Fel Ravager"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "immunity to fire",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> immunity to fire.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-fel-ravager-immunity-to-fire"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "db0d72f05392baca",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "resistance to acid 10"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Fel Ravager"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "resistance to acid 10",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> resistance to acid 10.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-fel-ravager-resistance-to-acid-10"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "b7da0b4013c0fe0d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "cold 10"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Fel Ravager"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "cold 10",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> cold 10.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-fel-ravager-cold-10"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "3a548692b078cb88",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "and electricity 10"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Fel Ravager"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "and electricity 10",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> and electricity 10.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-fel-ravager-and-electricity-10"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "029fa61b01306199",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "scent"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Fel Ravager"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "scent",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> scent.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-fel-ravager-scent"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "122638285b703b2e",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "sense magic"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Fel Ravager"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "sense magic",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> sense magic.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-fel-ravager-sense-magic"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "6fad5cb65c0aa841",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "spell resistance 24"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Fel Ravager"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "spell resistance 24",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> spell resistance 24.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-fel-ravager-spell-resistance-24"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "dfb349d5c8749ee8",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "demon traits"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Fel Ravager"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "demon traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> demon traits.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-fel-ravager-demon-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "df017f1edd2df1ee",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Ability Focus (mana burn ray)"
+            },
+            "reference": {
+              "id": "btFxZnSXUHqGUffu",
+              "name": "Ability Focus",
+              "pack": "warcraftrpg2e.feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Fel Ravager"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Ability Focus (mana burn ray)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Ability Focus (mana burn ray).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.feats.Item.btFxZnSXUHqGUffu]{Ability Focus}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-fel-ravager-ability-focus-mana-burn-ray"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "2f2318953bd864f7",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Critical (bite)"
+            },
+            "reference": {
+              "id": "67beb7aa2473045e",
+              "name": "Improved Critical",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Fel Ravager"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Critical (bite)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Critical (bite).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.67beb7aa2473045e]{Improved Critical}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-fel-ravager-improved-critical-bite"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "57459cd2dadf1456",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Initiative"
+            },
+            "reference": {
+              "id": "3232602c102e0494",
+              "name": "Improved Initiative",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Fel Ravager"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Initiative",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Initiative.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.3232602c102e0494]{Improved Initiative}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-fel-ravager-improved-initiative"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e21f4985b5819fa6",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Multiattack"
+            },
+            "reference": {
+              "id": "4b2ed70fb66b7ceb",
+              "name": "Multiattack",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Fel Ravager"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Multiattack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Multiattack.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.4b2ed70fb66b7ceb]{Multiattack}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-fel-ravager-multiattack"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e7e372574d0ff3b9",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Skilled (Listen and Spot)"
+            },
+            "reference": {
+              "id": "63e93d7c15badc3f",
+              "name": "Skilled",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Fel Ravager"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Skilled (Listen and Spot)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Skilled (Listen and Spot).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.63e93d7c15badc3f]{Skilled}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-fel-ravager-skilled-listen-and-spot"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "0415de1f45b223a2",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Track"
+            },
+            "reference": {
+              "id": "24251c982b9bb0bf",
+              "name": "Track",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Fel Ravager"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Track",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Track.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.24251c982b9bb0bf]{Track}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-fel-ravager-track"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e787720828fdacf6",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Medium Outsider; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "dd750e0d27b12249",
+              "name": "Outsider Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                70
+              ],
+              "section": "Fel Ravager"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Outsider Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Medium Outsider; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.dd750e0d27b12249]{Outsider Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 70",
+          "uniqueId": "wc-monster-fel-ravager-outsider-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "60e34170900d60bb",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": {
+          "regularSpells": 0,
+          "slaExecutable": 6,
+          "slaManual": 1
+        },
+        "rawFields": {
+          "Abilities": "Str 26, Agy 17, Sta 16, Int 8, Spt 17, Cha 12",
+          "Advancement": "15-17 HD (Medium); 18-24 HD (Large)",
+          "Alignment": "Always chaotic evil",
+          "Area": "Felwood, Outland, the Twisting Nether",
+          "Armor Class": "23 (+3 Agy, +10 natural), touch 13, flat-footed 20",
+          "Attack": "Bite +22 melee (2d6+8/19-20 plus 1d6 fel) or ray +17 ranged touch (special)",
+          "Base Attack/Grapple": "+14/+22",
+          "Challenge Rating": "14",
+          "Environment": "Any land and underground",
+          "Feats": "Ability Focus* (mana burn ray), Improved Critical (bite), Improved Initiative, Multiattack, Skilled (Listen and Spot) , Track B",
+          "Full Attack": "Bite +22 melee (2d6+8/19-20 plus 1d6 fel) and 2 claws +20 melee (1d8+4 plus 1d6 fel); or ray +17 ranged touch (special)",
+          "Hit Dice": "14d8+42 (105 hp)",
+          "Initiative": "+7",
+          "Level Adjustment": "-",
+          "Organization": "Solitary or pack (3-8)",
+          "Saves": "Fort +12, Ref +12, Will +12",
+          "Skills": "Climb +25, Jump +25, Listen +22, Spot +22, Stealth +20, Survival +20, Swim +25",
+          "Space/Reach": "5 ft./5 ft.",
+          "Special Attacks": "Fel strike, mana burn (DC 20), pounce, spell-like abilities",
+          "Special Qualities": "Blindsight 60 ft., darkvision 60 ft., damage reduction 10/good, immunity to fire, resistance to acid 10, cold 10, and electricity 10, scent, sense magic, spell resistance 24, demon traits",
+          "Speed": "50 ft. (10 squares)",
+          "Treasure": "None"
+        },
+        "rulesCoverage": {
+          "actor-defense": 4,
+          "linked-reference": 9,
+          "manual": 10
+        },
+        "subtypes": []
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          71
+        ],
+        "printedPages": [
+          70
+        ],
+        "section": "Fel Ravager",
+        "verification": "native-text-table"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "7bb87eff76aa7070",
+    "60292a6bebe93fa4",
+    "ae169d5d55ba2f6c",
+    "11104aac77097a62",
+    "8028da57d05c011c",
+    "c218d4e0608fd93c",
+    "f860478943ce4c30",
+    "0799d6ff7bb0c155",
+    "b742c28f2e039b45",
+    "dbb1fb5551c7baae",
+    "16f8f948ee13e0af",
+    "91a07efebd2f7cad",
+    "dc4e5d1f6120c616",
+    "1164c87556a6ef16",
+    "27fa5678e3979016",
+    "3fb26e7373ea6468",
+    "64f1f38c4599d4eb",
+    "23506a7b534d1780",
+    "ed6a9160ec5077cc",
+    "86ed4a7f8f108f5a",
+    "4c5dbf4877edc5b3",
+    "db0d72f05392baca",
+    "b7da0b4013c0fe0d",
+    "3a548692b078cb88",
+    "029fa61b01306199",
+    "122638285b703b2e",
+    "6fad5cb65c0aa841",
+    "dfb349d5c8749ee8",
+    "df017f1edd2df1ee",
+    "2f2318953bd864f7",
+    "57459cd2dadf1456",
+    "e21f4985b5819fa6",
+    "e7e372574d0ff3b9",
+    "0415de1f45b223a2",
+    "e787720828fdacf6"
+  ],
+  "name": "Fel Ravager",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 12,
+        "penalty": 0,
+        "total": 12,
+        "userPenalty": 0,
+        "value": 12
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 3,
+        "origMod": 3,
+        "origTotal": 16,
+        "penalty": 0,
+        "total": 16,
+        "userPenalty": 0,
+        "value": 16
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 3,
+        "origMod": 3,
+        "origTotal": 17,
+        "penalty": 0,
+        "total": 17,
+        "userPenalty": 0,
+        "value": 17
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -1,
+        "origMod": -1,
+        "origTotal": 8,
+        "penalty": 0,
+        "total": 8,
+        "userPenalty": 0,
+        "value": 8
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 8,
+        "origMod": 8,
+        "origTotal": 26,
+        "penalty": 0,
+        "total": 26,
+        "userPenalty": 0,
+        "value": 26
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 3,
+        "origMod": 3,
+        "origTotal": 17,
+        "penalty": 0,
+        "total": 17,
+        "userPenalty": 0,
+        "value": 17
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 20,
+          "value": 0
+        },
+        "normal": {
+          "total": 23,
+          "value": 0
+        },
+        "touch": {
+          "total": 13,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 14,
+        "nonepic": 14,
+        "total": 14,
+        "value": 0
+      },
+      "cmb": {
+        "total": 22,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "outsider",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 0,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 14,
+        "total": 14
+      },
+      "hp": {
+        "base": 105,
+        "max": 105,
+        "min": -16,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 105
+      },
+      "init": {
+        "bonus": 0,
+        "total": 7,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 10,
+      "savingThrows": {
+        "fort": {
+          "base": 12,
+          "total": 12
+        },
+        "ref": {
+          "base": 12,
+          "total": 12
+        },
+        "will": {
+          "base": 12,
+          "total": 12
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": 60,
+        "darkvision": 60,
+        "lowLight": false,
+        "lowLightMultiplier": null,
+        "tremorsense": null
+      },
+      "speed": {
+        "land": {
+          "base": 50,
+          "total": 50
+        }
+      },
+      "spells": {
+        "spellbooks": {
+          "spelllike": {
+            "ability": "cha",
+            "arcaneSpellFailure": false,
+            "autoSetup": false,
+            "autoSpellLevels": false,
+            "baseDCFormula": "0",
+            "bonusPrestigeCl": 0,
+            "cl": {
+              "base": 14,
+              "formula": "0",
+              "total": 14,
+              "value": 0
+            },
+            "class": "",
+            "clNotes": "",
+            "concentration": 0,
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "dailyPowerPointsFormula": "",
+            "hasSpecialSlot": false,
+            "maximumPowerPointLimit": "@cl",
+            "name": "Spell-like Abilities",
+            "powerPoints": 0,
+            "powerPointsFormula": "",
+            "powerPointsTotal": 0,
+            "preparationMode": "prepared",
+            "repertoireLimitOverride": 0,
+            "repertoireSkill": "spl",
+            "showOnlyPrepared": false,
+            "specialSlotLevel0": false,
+            "specialSlots": {
+              "level0": null,
+              "level1": null,
+              "level2": null,
+              "level3": null,
+              "level4": null,
+              "level5": null,
+              "level6": null,
+              "level7": null,
+              "level8": null,
+              "level9": null
+            },
+            "spellcastingType": "arcane",
+            "spells": {
+              "spell0": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell1": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell2": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell3": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell4": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell5": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell6": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell7": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell8": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell9": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              }
+            },
+            "spellslotAbility": "cha",
+            "spontaneous": false,
+            "usePowerPoints": false,
+            "usesWarcraftSlotPool": false,
+            "warcraftCurrentPath": "",
+            "warcraftParentClass": "",
+            "warcraftPathBonusSlot": false,
+            "warcraftPoolKey": ""
+          }
+        },
+        "warcraftPools": {}
+      },
+      "sr": {
+        "formula": "24",
+        "total": 24
+      }
+    },
+    "details": {
+      "alignment": "Always chaotic evil",
+      "biography": {
+        "public": "",
+        "value": "<p>Fel Ravager is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 14,
+      "environment": "Any land and underground",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 14,
+        "value": 14
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 14d8+42 (105 hp)</p><p><strong>Initiative:</strong> +7</p><p><strong>Speed:</strong> 50 ft. (10 squares)</p><p><strong>Armor Class:</strong> 23 (+3 Agy, +10 natural), touch 13, flat-footed 20</p><p><strong>Base Attack/Grapple:</strong> +14/+22</p><p><strong>Attack:</strong> Bite +22 melee (2d6+8/19-20 plus 1d6 fel) or ray +17 ranged touch (special)</p><p><strong>Full Attack:</strong> Bite +22 melee (2d6+8/19-20 plus 1d6 fel) and 2 claws +20 melee (1d8+4 plus 1d6 fel); or ray +17 ranged touch (special)</p><p><strong>Space/Reach:</strong> 5 ft./5 ft.</p><p><strong>Special Attacks:</strong> Fel strike, mana burn (DC 20), pounce, spell-like abilities</p><p><strong>Special Qualities:</strong> Blindsight 60 ft., darkvision 60 ft., damage reduction 10/good, immunity to fire, resistance to acid 10, cold 10, and electricity 10, scent, sense magic, spell resistance 24, demon traits</p><p><strong>Saves:</strong> Fort +12, Ref +12, Will +12</p><p><strong>Abilities:</strong> Str 26, Agy 17, Sta 16, Int 8, Spt 17, Cha 12</p><p><strong>Skills:</strong> Climb +25, Jump +25, Listen +22, Spot +22, Stealth +20, Survival +20, Swim +25</p><p><strong>Feats:</strong> Ability Focus* (mana burn ray), Improved Critical (bite), Improved Initiative, Multiattack, Skilled (Listen and Spot) , Track B</p><p><strong>Area:</strong> Felwood, Outland, the Twisting Nether</p><p><strong>Organization:</strong> Solitary or pack (3-8)</p><p><strong>Treasure:</strong> None</p><p><strong>Advancement:</strong> 15-17 HD (Medium); 18-24 HD (Large)</p><p><strong>Level Adjustment:</strong> -</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 14,
+      "type": "Outsider"
+    },
+    "skills": {
+      "clm": {
+        "ability": "str",
+        "abilityModifier": 8,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 17,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 25,
+        "notes": "Printed total +25",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "hid": {
+        "ability": "dex",
+        "abilityModifier": 3,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 17,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 20,
+        "notes": "Printed total +20",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "jmp": {
+        "ability": "str",
+        "abilityModifier": 8,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 17,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 25,
+        "notes": "Printed total +25",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "lis": {
+        "ability": "wis",
+        "abilityModifier": 3,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 19,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 22,
+        "notes": "Printed total +22",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spt": {
+        "ability": "wis",
+        "abilityModifier": 3,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 19,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 22,
+        "notes": "Printed total +22",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "sur": {
+        "ability": "wis",
+        "abilityModifier": 3,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 17,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 20,
+        "notes": "Printed total +20",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "swm": {
+        "ability": "str",
+        "abilityModifier": 8,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 17,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 25,
+        "notes": "Printed total +25",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "med",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Blindsight 60 ft., darkvision 60 ft., damage reduction 10/good, immunity to fire, resistance to acid 10, cold 10, and electricity 10, scent, sense magic, spell resistance 24, demon traits",
+      "size": "med",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

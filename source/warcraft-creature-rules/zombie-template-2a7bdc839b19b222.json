@@ -1,0 +1,46 @@
+{
+  "_embedded": {},
+  "_id": "2a7bdc839b19b222",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "creatureRule": {
+        "kind": "template",
+        "reusable": true
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          149,
+          150,
+          151
+        ],
+        "printedPages": [
+          148,
+          149,
+          150
+        ],
+        "section": "Zombie Template",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/aura.svg",
+  "name": "Zombie Template",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilityType": "nat",
+    "description": {
+      "value": "<p>Acquired corporeal undead template. Apply d12 Hit Dice, undead type, natural armor, slam attack, single-action limitation, abilities, and challenge adjustment from printed pages 148-150.</p><p>This reusable record defines shared conversion behavior. Individual actors carry exact printed exceptions and totals.</p>"
+    },
+    "featType": "trait",
+    "source": "World of Warcraft: Monster Guide, pp. 148-149-150",
+    "uniqueId": "wc-creature-rule-zombie-template"
+  },
+  "type": "feat"
+}

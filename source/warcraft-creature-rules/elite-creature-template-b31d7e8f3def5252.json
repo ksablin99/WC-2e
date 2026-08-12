@@ -1,0 +1,44 @@
+{
+  "_embedded": {},
+  "_id": "b31d7e8f3def5252",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "creatureRule": {
+        "kind": "template",
+        "reusable": true
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          67,
+          68
+        ],
+        "printedPages": [
+          66,
+          67
+        ],
+        "section": "Elite Creature Template",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/aura.svg",
+  "name": "Elite Creature Template",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilityType": "nat",
+    "description": {
+      "value": "<p>Elite multiplier template. Apply maximum hit points, enhanced attacks and defenses, villain-style durability, challenge adjustment, and the source multipliers on printed pages 66-67.</p><p>This reusable record defines shared conversion behavior. Individual actors carry exact printed exceptions and totals.</p>"
+    },
+    "featType": "trait",
+    "source": "World of Warcraft: Monster Guide, pp. 66-67",
+    "uniqueId": "wc-creature-rule-elite-creature-template"
+  },
+  "type": "feat"
+}

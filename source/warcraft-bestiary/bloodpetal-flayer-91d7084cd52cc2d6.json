@@ -1,0 +1,1116 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "85490914ec6e7e84",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 14,
+                "die": 8,
+                "expression": "14d8",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Plant Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "med",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "119",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "10",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "22",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "12",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "20",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "13",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "6",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "4",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "30",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "20",
+              "speed",
+              "climbSpeed",
+              "base-replace"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "plant",
+          "damageReduction": [],
+          "hd": 8,
+          "hp": 0,
+          "levels": 14,
+          "maxLevel": 50,
+          "resistances": [],
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "low"
+            },
+            "will": {
+              "value": "low"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 13"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "e279fe67771a0b48",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                15
+              ],
+              "printedDamage": "1d8+4/19-20/x3 plus poison"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Slam",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 3,
+            "critRange": 19,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "5",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Slam",
+          "damage": {
+            "parts": [
+              [
+                "1d8+4",
+                "Bludgeoning",
+                "damage-bludg"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Slam +15 melee (1d8+4/19-20/x3 plus poison).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": true,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "6cf49412bd0b660b",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 2,
+              "id": "e279fe67771a0b48",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Slam",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> 2 slams +15 melee (1d8+4/19-20/x3 plus poison).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "fa84a4a3ee753837",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "Piercing thorns (DC 21)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                13
+              ],
+              "section": "Bloodpetal Flayer"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Piercing thorns",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Piercing thorns (DC 21).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 13",
+          "uniqueId": "wc-monster-bloodpetal-flayer-piercing-thorns"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "576fb7c6ace8a0a8",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Special Attack",
+              "raw": "poison (DC 21)"
+            },
+            "reference": {
+              "id": "HjLw7ZfbGOjpqSbN",
+              "name": "Poison",
+              "pack": "warcraftrpg2e.spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                13
+              ],
+              "section": "Bloodpetal Flayer"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "poison",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> poison (DC 21).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.spells.Item.HjLw7ZfbGOjpqSbN]{Poison}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 13",
+          "uniqueId": "wc-monster-bloodpetal-flayer-poison"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e5e9506192f7b8ad",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "serrated thorns"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                13
+              ],
+              "section": "Bloodpetal Flayer"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "serrated thorns",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> serrated thorns.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 13",
+          "uniqueId": "wc-monster-bloodpetal-flayer-serrated-thorns"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "3c8e1ebd001b9c40",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "whirlwind strike"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                13
+              ],
+              "section": "Bloodpetal Flayer"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "whirlwind strike",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> whirlwind strike.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 13",
+          "uniqueId": "wc-monster-bloodpetal-flayer-whirlwind-strike"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "28e31f61c3b0a6e2",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Darkvision 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                13
+              ],
+              "section": "Bloodpetal Flayer"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Darkvision 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Darkvision 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 13",
+          "uniqueId": "wc-monster-bloodpetal-flayer-darkvision-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "4f7f3ffcd561295e",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Special Quality",
+              "raw": "thorn shield"
+            },
+            "reference": {
+              "id": "99284619bdc0ed52",
+              "name": "Thorn Shield",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                13
+              ],
+              "section": "Bloodpetal Flayer"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "thorn shield",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> thorn shield.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-spells.Item.99284619bdc0ed52]{Thorn Shield}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 13",
+          "uniqueId": "wc-monster-bloodpetal-flayer-thorn-shield"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "7fb87ee4ecc3c70c",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "plant traits"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                13
+              ],
+              "section": "Bloodpetal Flayer"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "plant traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> plant traits.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 13",
+          "uniqueId": "wc-monster-bloodpetal-flayer-plant-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "7d44382abe88d9fc",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Cleave"
+            },
+            "reference": {
+              "id": "34b794d403b119d7",
+              "name": "Cleave",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                13
+              ],
+              "section": "Bloodpetal Flayer"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Cleave",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Cleave.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.34b794d403b119d7]{Cleave}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 13",
+          "uniqueId": "wc-monster-bloodpetal-flayer-cleave"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "64624bc05819eed2",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Dodge"
+            },
+            "reference": {
+              "id": "7d08b8436a8b4167",
+              "name": "Dodge",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                13
+              ],
+              "section": "Bloodpetal Flayer"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Dodge",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Dodge.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.7d08b8436a8b4167]{Dodge}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 13",
+          "uniqueId": "wc-monster-bloodpetal-flayer-dodge"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "c3301c70feb535c9",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Critical (slam)"
+            },
+            "reference": {
+              "id": "67beb7aa2473045e",
+              "name": "Improved Critical",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                13
+              ],
+              "section": "Bloodpetal Flayer"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Critical (slam)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Critical (slam).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.67beb7aa2473045e]{Improved Critical}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 13",
+          "uniqueId": "wc-monster-bloodpetal-flayer-improved-critical-slam"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "edaa031b5dec339b",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Power Attack"
+            },
+            "reference": {
+              "id": "95e094ad6c35e24e",
+              "name": "Power Attack",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                13
+              ],
+              "section": "Bloodpetal Flayer"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Power Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Power Attack.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.95e094ad6c35e24e]{Power Attack}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 13",
+          "uniqueId": "wc-monster-bloodpetal-flayer-power-attack"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "40c5eb30a1d50b33",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Weapon Focus (slam)"
+            },
+            "reference": {
+              "id": "fdea42738398197e",
+              "name": "Weapon Focus",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                13
+              ],
+              "section": "Bloodpetal Flayer"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Weapon Focus (slam)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Weapon Focus (slam).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.fdea42738398197e]{Weapon Focus}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 13",
+          "uniqueId": "wc-monster-bloodpetal-flayer-weapon-focus-slam"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "327f3c5cfeceb2d1",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Medium Plant; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "b80a2d6d0fbce71e",
+              "name": "Plant Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                13
+              ],
+              "section": "Bloodpetal Flayer"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Plant Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Medium Plant; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.b80a2d6d0fbce71e]{Plant Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 13",
+          "uniqueId": "wc-monster-bloodpetal-flayer-plant-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "91d7084cd52cc2d6",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 19, Agy 15, Sta 19, Int 2, Spt 11, Cha 10",
+          "Advancement": "15-21 HD (Large); 22-25 HD (Huge)",
+          "Alignment": "Always neutral",
+          "Area": "Un'Goro Crater",
+          "Armor Class": "22 (+2 Agy, +10 natural), touch 12, flat-footed 20",
+          "Attack": "Slam +15 melee (1d8+4/19-20/x3 plus poison)",
+          "Base Attack/Grapple": "+10/+14",
+          "Challenge Rating": "8",
+          "Environment": "Warm forest",
+          "Feats": "Cleave, Dodge, Improved Critical (slam), Power Attack, Weapon Focus (slam)",
+          "Full Attack": "2 slams +15 melee (1d8+4/19-20/x3 plus poison)",
+          "Hit Dice": "14d8+56 (119 hp)",
+          "Initiative": "+2",
+          "Level Adjustment": "-",
+          "Organization": "Solitary, clump (2-9), or patch (10-30)",
+          "Saves": "Fort +13, Ref +6, Will +4",
+          "Skills": "Listen +17",
+          "Space/Reach": "5 ft./5 ft.",
+          "Special Attacks": "Piercing thorns (DC 21), poison (DC 21), serrated thorns, whirlwind strike",
+          "Special Qualities": "Darkvision 60 ft., thorn shield, plant traits",
+          "Speed": "30 ft. (6 squares), climb 20 ft.",
+          "Treasure": "None"
+        },
+        "rulesCoverage": {
+          "actor-defense": 0,
+          "linked-reference": 8,
+          "manual": 5
+        },
+        "subtypes": []
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          14
+        ],
+        "printedPages": [
+          13
+        ],
+        "section": "Bloodpetal Flayer",
+        "verification": "native-text-table"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "85490914ec6e7e84",
+    "e279fe67771a0b48",
+    "6cf49412bd0b660b",
+    "fa84a4a3ee753837",
+    "576fb7c6ace8a0a8",
+    "e5e9506192f7b8ad",
+    "3c8e1ebd001b9c40",
+    "28e31f61c3b0a6e2",
+    "4f7f3ffcd561295e",
+    "7fb87ee4ecc3c70c",
+    "7d44382abe88d9fc",
+    "64624bc05819eed2",
+    "c3301c70feb535c9",
+    "edaa031b5dec339b",
+    "40c5eb30a1d50b33",
+    "327f3c5cfeceb2d1"
+  ],
+  "name": "Bloodpetal Flayer",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 4,
+        "origMod": 4,
+        "origTotal": 19,
+        "penalty": 0,
+        "total": 19,
+        "userPenalty": 0,
+        "value": 19
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 2,
+        "origMod": 2,
+        "origTotal": 15,
+        "penalty": 0,
+        "total": 15,
+        "userPenalty": 0,
+        "value": 15
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -4,
+        "origMod": -4,
+        "origTotal": 2,
+        "penalty": 0,
+        "total": 2,
+        "userPenalty": 0,
+        "value": 2
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 4,
+        "origMod": 4,
+        "origTotal": 19,
+        "penalty": 0,
+        "total": 19,
+        "userPenalty": 0,
+        "value": 19
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 11,
+        "penalty": 0,
+        "total": 11,
+        "userPenalty": 0,
+        "value": 11
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 20,
+          "value": 0
+        },
+        "normal": {
+          "total": 22,
+          "value": 0
+        },
+        "touch": {
+          "total": 12,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 10,
+        "nonepic": 10,
+        "total": 10,
+        "value": 0
+      },
+      "cmb": {
+        "total": 14,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "plant",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 100,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 14,
+        "total": 14
+      },
+      "hp": {
+        "base": 119,
+        "max": 119,
+        "min": -19,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 119
+      },
+      "init": {
+        "bonus": 0,
+        "total": 2,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 10,
+      "savingThrows": {
+        "fort": {
+          "base": 13,
+          "total": 13
+        },
+        "ref": {
+          "base": 6,
+          "total": 6
+        },
+        "will": {
+          "base": 4,
+          "total": 4
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": null,
+        "darkvision": 60,
+        "lowLight": false,
+        "lowLightMultiplier": null,
+        "tremorsense": null
+      },
+      "speed": {
+        "climb": {
+          "base": 20,
+          "total": 20
+        },
+        "land": {
+          "base": 30,
+          "total": 30
+        }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "Always neutral",
+      "biography": {
+        "public": "",
+        "value": "<p>Bloodpetal Flayer is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 8,
+      "environment": "Warm forest",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 14,
+        "value": 14
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 14d8+56 (119 hp)</p><p><strong>Initiative:</strong> +2</p><p><strong>Speed:</strong> 30 ft. (6 squares), climb 20 ft.</p><p><strong>Armor Class:</strong> 22 (+2 Agy, +10 natural), touch 12, flat-footed 20</p><p><strong>Base Attack/Grapple:</strong> +10/+14</p><p><strong>Attack:</strong> Slam +15 melee (1d8+4/19-20/x3 plus poison)</p><p><strong>Full Attack:</strong> 2 slams +15 melee (1d8+4/19-20/x3 plus poison)</p><p><strong>Space/Reach:</strong> 5 ft./5 ft.</p><p><strong>Special Attacks:</strong> Piercing thorns (DC 21), poison (DC 21), serrated thorns, whirlwind strike</p><p><strong>Special Qualities:</strong> Darkvision 60 ft., thorn shield, plant traits</p><p><strong>Saves:</strong> Fort +13, Ref +6, Will +4</p><p><strong>Abilities:</strong> Str 19, Agy 15, Sta 19, Int 2, Spt 11, Cha 10</p><p><strong>Skills:</strong> Listen +17</p><p><strong>Feats:</strong> Cleave, Dodge, Improved Critical (slam), Power Attack, Weapon Focus (slam)</p><p><strong>Area:</strong> Un&#039;Goro Crater</p><p><strong>Organization:</strong> Solitary, clump (2-9), or patch (10-30)</p><p><strong>Treasure:</strong> None</p><p><strong>Advancement:</strong> 15-21 HD (Large); 22-25 HD (Huge)</p><p><strong>Level Adjustment:</strong> -</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 8,
+      "type": "Plant"
+    },
+    "skills": {
+      "lis": {
+        "ability": "wis",
+        "abilityModifier": 0,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 17,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 17,
+        "notes": "Printed total +17",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "med",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Darkvision 60 ft., thorn shield, plant traits",
+      "size": "med",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

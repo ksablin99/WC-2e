@@ -1,0 +1,223 @@
+{
+  "_embedded": {},
+  "_id": "37aea5239ede9a11",
+  "_stats": {
+    "compendiumSource": null,
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "lastModifiedBy": null,
+    "modifiedTime": null,
+    "systemId": null,
+    "systemVersion": null
+  },
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "race": {
+        "automaticLanguages": [
+          "Common",
+          "Dwarven"
+        ],
+        "bonusLanguages": [
+          "Gnome",
+          "Goblin",
+          "Orcish",
+          "Thalassian"
+        ],
+        "category": "player-race",
+        "favoredClass": [
+          "Warrior"
+        ],
+        "proficiencies": [
+          "Long rifle (treated as martial)",
+          "Flintlock pistol (treated as martial)",
+          "Dwarven waraxe (treated as martial)",
+          "Dwarven battle hammer (treated as martial)",
+          "Dwarven tossing hammer (treated as martial)"
+        ],
+        "racialLevel": {
+          "available": true,
+          "max": 3,
+          "name": "Ironforge Dwarf"
+        },
+        "searchableTraits": [
+          "Common",
+          "Dwarven",
+          "Gnome",
+          "Goblin",
+          "Orcish",
+          "Thalassian",
+          "Long rifle (treated as martial)",
+          "Flintlock pistol (treated as martial)",
+          "Dwarven waraxe (treated as martial)",
+          "Dwarven battle hammer (treated as martial)",
+          "Dwarven tossing hammer (treated as martial)",
+          "Favored class: Warrior"
+        ],
+        "size": "med"
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          37
+        ],
+        "printedPages": [
+          35
+        ],
+        "section": "Ironforge Dwarf racial traits",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "name": "Ironforge Dwarf",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "addedAbilities": [],
+    "addedLevel": 0,
+    "changeFlags": {
+      "heavyArmorFullSpeed": true,
+      "loseDexToAC": false,
+      "mediumArmorFullSpeed": true,
+      "multiAttack": false,
+      "multiweaponAttack": false,
+      "noCon": false,
+      "noDex": false,
+      "noEncumbrance": true,
+      "noInt": false,
+      "noStr": false,
+      "oneCha": false,
+      "oneInt": false,
+      "oneWis": false,
+      "uncannyDodge": false
+    },
+    "changes": [
+      [
+        "20",
+        "speed",
+        "landSpeed",
+        "base-replace"
+      ],
+      [
+        "2",
+        "ability",
+        "con",
+        "racial"
+      ],
+      [
+        "-2",
+        "ability",
+        "cha",
+        "racial"
+      ]
+    ],
+    "classSource": "",
+    "combatChangeCustomDisplayName": "",
+    "combatChangeCustomReferenceName": "",
+    "combatChanges": [],
+    "combatChangesAdditionalRanges": {
+      "hasAdditionalRanges": false,
+      "slider1": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      },
+      "slider2": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      },
+      "slider3": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      }
+    },
+    "combatChangesApplySpecialActionsOnce": true,
+    "combatChangesRange": {
+      "max": 0,
+      "maxFormula": ""
+    },
+    "combatChangesUsesCost": "chargesPerUse",
+    "conditionFlags": {
+      "dazzled": false,
+      "polymorphed": false,
+      "wildshaped": false
+    },
+    "contextNotes": [
+      [
+        "[[+2]] racial bonus against poison",
+        "savingThrows",
+        "allSavingThrows"
+      ],
+      [
+        "[[+4]] to resist bull rush or trip while standing on the ground",
+        "misc",
+        "cmb"
+      ]
+    ],
+    "counterName": "",
+    "createdBy": "",
+    "creationChanges": [],
+    "creatureType": "humanoid",
+    "customAttributes": {},
+    "customAttributesLocked": false,
+    "customTag": "",
+    "damage": {
+      "parts": []
+    },
+    "damageReduction": [],
+    "deathRule": "warcraft",
+    "description": {
+      "chat": "",
+      "unidentified": "",
+      "value": "<p>Ironforge Dwarf racial traits.</p><ul><li>+2 Stamina, -2 Charisma; Medium; land speed 20 feet, unchanged by medium/heavy armor or medium/heavy loads.</li><li>Darkvision 60 feet; stability; stonecunning.</li><li>Treat long rifles, flintlock pistols, dwarven waraxes, dwarven battle hammers, and dwarven tossing hammers as martial weapons.</li><li>+2 saves against poison. +2 Appraise and Craft for stone or metal, including gunsmithing where applicable.</li><li>Automatic Common and Dwarven; bonus Gnome, Goblin, Orc, and Thalassian.</li><li>Favored class Warrior; eligible for up to three Ironforge dwarf racial levels.</li></ul>"
+    },
+    "disabledAbilities": [],
+    "epic": "",
+    "identifiedName": "Ironforge Dwarf",
+    "index": {
+      "subType": null,
+      "uniqueId": ""
+    },
+    "la": null,
+    "linkId": "",
+    "linkImported": false,
+    "links": {
+      "children": []
+    },
+    "linkSourceId": "",
+    "linkSourceName": "",
+    "nameFormula": "",
+    "nameFromFormula": false,
+    "originId": "",
+    "originPack": "",
+    "originVersion": 99,
+    "possibleUpdate": false,
+    "psionic": "",
+    "requirements": [],
+    "resistances": [],
+    "senses": {
+      "blindsight": null,
+      "darkvision": 60,
+      "lowLight": false,
+      "lowLightMultiplier": null,
+      "tremorsense": null,
+      "truesight": null
+    },
+    "sizeOverride": "med",
+    "source": "World of Warcraft RPG, 2nd Edition, p. 35",
+    "subTypes": [],
+    "tags": [],
+    "uniqueId": "",
+    "userNonRemovable": false
+  },
+  "type": "race"
+}

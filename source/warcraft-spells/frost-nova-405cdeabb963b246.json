@@ -18,6 +18,11 @@
       "automation": {
         "chilledSave": "manual"
       },
+      "catalog": {
+        "completeListEntry": true,
+        "generated": false,
+        "status": "verified-vertical-slice"
+      },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
         "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
@@ -124,10 +129,6 @@
     "learnedAt": {
       "bloodline": [],
       "class": [
-        [
-          "Arcanist",
-          3
-        ],
         [
           "Mage",
           3
@@ -280,6 +281,10 @@
       "per": "",
       "rechargeFormula": null,
       "value": 0
+    },
+    "warcraftManualPolicy": {
+      "mode": "verified-vertical-slice",
+      "reason": "This spell has a purpose-built Warcraft implementation."
     }
   },
   "type": "spell"

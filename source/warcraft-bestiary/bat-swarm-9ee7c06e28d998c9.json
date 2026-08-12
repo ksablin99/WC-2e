@@ -1,0 +1,994 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "73723f4762195795",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 3,
+                "die": 8,
+                "expression": "3d8",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Animal Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "med",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "13",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "2",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "16",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "12",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "14",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "3",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "7",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "3",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "5",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "40",
+              "speed",
+              "flySpeed",
+              "base-replace"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "animal",
+          "damageReduction": [],
+          "hd": 8,
+          "hp": 0,
+          "levels": 3,
+          "maxLevel": 50,
+          "resistances": [],
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "low"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 129"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "364f753a17460745",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [],
+              "printedDamage": "1d6"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Swarm",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "special",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Swarm",
+          "damage": {
+            "parts": [
+              [
+                "1d6",
+                "Bludgeoning",
+                "damage-bludg"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Swarm  automatic (1d6).</p><p>This attack deals its listed damage without a normal attack roll.</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "4f94330ce9ea85fe",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "364f753a17460745",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Swarm",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> Swarm (1d6).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "779f4ac09cd98747",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "Distraction (DC 11)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                129
+              ],
+              "section": "Bat Swarm"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Distraction",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Distraction (DC 11).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 129",
+          "uniqueId": "wc-monster-bat-swarm-distraction"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "51844583f3c5120d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "wounding"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                129
+              ],
+              "section": "Bat Swarm"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "wounding",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> wounding.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 129",
+          "uniqueId": "wc-monster-bat-swarm-wounding"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "25939ea14c54bdb7",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Blindsense 20 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                129
+              ],
+              "section": "Bat Swarm"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Blindsense 20 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Blindsense 20 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 129",
+          "uniqueId": "wc-monster-bat-swarm-blindsense-20-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "cda1ca5b39312901",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "low-light vision"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                129
+              ],
+              "section": "Bat Swarm"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "low-light vision",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> low-light vision.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 129",
+          "uniqueId": "wc-monster-bat-swarm-low-light-vision"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "06bf4bbdb7d72a63",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "half damage from slashing and piercing"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                129
+              ],
+              "section": "Bat Swarm"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "half damage from slashing and piercing",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> half damage from slashing and piercing.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 129",
+          "uniqueId": "wc-monster-bat-swarm-half-damage-from-slashing-and-piercing"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "765db527bf3b34fe",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "swarm traits"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                129
+              ],
+              "section": "Bat Swarm"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "swarm traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> swarm traits.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 129",
+          "uniqueId": "wc-monster-bat-swarm-swarm-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "5640c68cc374a681",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Lightning Reflexes"
+            },
+            "reference": {
+              "id": "f501b369179d5112",
+              "name": "Lightning Reflexes",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                129
+              ],
+              "section": "Bat Swarm"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Lightning Reflexes",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Lightning Reflexes.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.f501b369179d5112]{Lightning Reflexes}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 129",
+          "uniqueId": "wc-monster-bat-swarm-lightning-reflexes"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "cf9dee16b179f0ae",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Skilled (Listen and Spot)"
+            },
+            "reference": {
+              "id": "63e93d7c15badc3f",
+              "name": "Skilled",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                129
+              ],
+              "section": "Bat Swarm"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Skilled (Listen and Spot)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Skilled (Listen and Spot).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.63e93d7c15badc3f]{Skilled}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 129",
+          "uniqueId": "wc-monster-bat-swarm-skilled-listen-and-spot"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "77c5500f4c0dcd51",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Diminutive Animal (Swarm); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "d0b085906e7933d3",
+              "name": "Animal Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                129
+              ],
+              "section": "Bat Swarm"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Animal Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Diminutive Animal (Swarm); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.d0b085906e7933d3]{Animal Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 129",
+          "uniqueId": "wc-monster-bat-swarm-animal-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e54a1e43874f8bb7",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Swarm subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "fc58e6ccee5d80e8",
+              "name": "Swarm Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                129
+              ],
+              "section": "Bat Swarm"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Swarm Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Swarm subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.fc58e6ccee5d80e8]{Swarm Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 129",
+          "uniqueId": "wc-monster-bat-swarm-swarm-subtype-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "9ee7c06e28d998c9",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 3, Agy 15, Sta 10, Int 2, Spt 14, Cha 4",
+          "Advancement": "",
+          "Alignment": "",
+          "Area": "Any Solitary, flight (2-4 swarms), or colony (11-20",
+          "Armor Class": "16 (+4 size, +2 Agy), touch 12, flat-footed 14",
+          "Attack": "Swarm (1d6)",
+          "Base Attack/Grapple": "+2/-",
+          "Challenge Rating": "2",
+          "Environment": "Temperate deserts and underground",
+          "Feats": "Lightning Reflexes, Skilled (Listen and Spot)",
+          "Full Attack": "Swarm (1d6)",
+          "Hit Dice": "3d8 (13 hp)",
+          "Initiative": "+2",
+          "Level Adjustment": "",
+          "Organization": "swarms)",
+          "Saves": "Fort +3, Ref +7, Will +3",
+          "Skills": "Listen +11, Spot +11",
+          "Space/Reach": "10 ft./0 ft.",
+          "Special Attacks": "Distraction (DC 11), wounding",
+          "Special Qualities": "Blindsense 20 ft., low-light vision, half damage from slashing and piercing, swarm traits",
+          "Speed": "5 ft. (1 square), fly 40 ft. (good)",
+          "Treasure": "None"
+        },
+        "rulesCoverage": {
+          "actor-defense": 0,
+          "linked-reference": 4,
+          "manual": 6
+        },
+        "subtypes": [
+          "Swarm"
+        ]
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          130
+        ],
+        "printedPages": [
+          129
+        ],
+        "section": "Bat Swarm",
+        "verification": "native-text-table"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "73723f4762195795",
+    "364f753a17460745",
+    "4f94330ce9ea85fe",
+    "779f4ac09cd98747",
+    "51844583f3c5120d",
+    "25939ea14c54bdb7",
+    "cda1ca5b39312901",
+    "06bf4bbdb7d72a63",
+    "765db527bf3b34fe",
+    "5640c68cc374a681",
+    "cf9dee16b179f0ae",
+    "77c5500f4c0dcd51",
+    "e54a1e43874f8bb7"
+  ],
+  "name": "Bat Swarm",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -3,
+        "origMod": -3,
+        "origTotal": 4,
+        "penalty": 0,
+        "total": 4,
+        "userPenalty": 0,
+        "value": 4
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 2,
+        "origMod": 2,
+        "origTotal": 15,
+        "penalty": 0,
+        "total": 15,
+        "userPenalty": 0,
+        "value": 15
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -4,
+        "origMod": -4,
+        "origTotal": 2,
+        "penalty": 0,
+        "total": 2,
+        "userPenalty": 0,
+        "value": 2
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -4,
+        "origMod": -4,
+        "origTotal": 3,
+        "penalty": 0,
+        "total": 3,
+        "userPenalty": 0,
+        "value": 3
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 2,
+        "origMod": 2,
+        "origTotal": 14,
+        "penalty": 0,
+        "total": 14,
+        "userPenalty": 0,
+        "value": 14
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 14,
+          "value": 0
+        },
+        "normal": {
+          "total": 16,
+          "value": 0
+        },
+        "touch": {
+          "total": 12,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 2,
+        "nonepic": 2,
+        "total": 2,
+        "value": 0
+      },
+      "cmb": {
+        "total": 0,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "animal",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 0,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 3,
+        "total": 3
+      },
+      "hp": {
+        "base": 13,
+        "max": 13,
+        "min": -10,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 13
+      },
+      "init": {
+        "bonus": 0,
+        "total": 2,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 0,
+      "savingThrows": {
+        "fort": {
+          "base": 3,
+          "total": 3
+        },
+        "ref": {
+          "base": 7,
+          "total": 7
+        },
+        "will": {
+          "base": 3,
+          "total": 3
+        }
+      },
+      "senses": {
+        "blindsense": 20,
+        "blindsight": null,
+        "darkvision": null,
+        "lowLight": true,
+        "lowLightMultiplier": 2,
+        "tremorsense": null
+      },
+      "speed": {
+        "fly": {
+          "base": 40,
+          "total": 40
+        },
+        "land": {
+          "base": 5,
+          "total": 5
+        }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "",
+      "biography": {
+        "public": "",
+        "value": "<p>Bat Swarm is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 2,
+      "environment": "Temperate deserts and underground",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 3,
+        "value": 3
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 3d8 (13 hp)</p><p><strong>Initiative:</strong> +2</p><p><strong>Speed:</strong> 5 ft. (1 square), fly 40 ft. (good)</p><p><strong>Armor Class:</strong> 16 (+4 size, +2 Agy), touch 12, flat-footed 14</p><p><strong>Base Attack/Grapple:</strong> +2/-</p><p><strong>Attack:</strong> Swarm (1d6)</p><p><strong>Full Attack:</strong> Swarm (1d6)</p><p><strong>Space/Reach:</strong> 10 ft./0 ft.</p><p><strong>Special Attacks:</strong> Distraction (DC 11), wounding</p><p><strong>Special Qualities:</strong> Blindsense 20 ft., low-light vision, half damage from slashing and piercing, swarm traits</p><p><strong>Saves:</strong> Fort +3, Ref +7, Will +3</p><p><strong>Abilities:</strong> Str 3, Agy 15, Sta 10, Int 2, Spt 14, Cha 4</p><p><strong>Skills:</strong> Listen +11, Spot +11</p><p><strong>Feats:</strong> Lightning Reflexes, Skilled (Listen and Spot)</p><p><strong>Area:</strong> Any Solitary, flight (2-4 swarms), or colony (11-20</p><p><strong>Organization:</strong> swarms)</p><p><strong>Treasure:</strong> None</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 2,
+      "type": "Animal"
+    },
+    "skills": {
+      "lis": {
+        "ability": "wis",
+        "abilityModifier": 2,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 9,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 11,
+        "notes": "Printed total +11",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spt": {
+        "ability": "wis",
+        "abilityModifier": 2,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 9,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 11,
+        "notes": "Printed total +11",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "dim",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Blindsense 20 ft., low-light vision, half damage from slashing and piercing, swarm traits",
+      "size": "dim",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

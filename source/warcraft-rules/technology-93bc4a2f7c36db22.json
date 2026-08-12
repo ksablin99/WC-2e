@@ -1,0 +1,84 @@
+{
+  "_embedded": {
+    "pages": [
+      {
+        "_id": "7a8ef86aa32f5ac5",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "category": null,
+        "flags": {
+          "warcraftrpg2e": {
+            "source": {
+              "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+              "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+              "section": "Private-use implementation policy",
+              "verification": "implementation-summary"
+            }
+          }
+        },
+        "image": {},
+        "name": "Technology",
+        "ownership": {
+          "default": -1
+        },
+        "sort": 0,
+        "src": null,
+        "system": {},
+        "text": {
+          "content": "<p>Technology uses Function Difficulty, Technological Limit, Technology Scores, Complexity, Time Factor, Malfunction Rating, fuel, hardness, hit points, construction, operation, repair, and upgrades. The content catalogue includes technology feats and relevant gear, but the coupled technology subsystem remains intentionally manual until its Ultra architecture phase.</p>",
+          "format": 1
+        },
+        "title": {
+          "level": 1,
+          "show": false
+        },
+        "type": "text",
+        "video": {
+          "controls": true,
+          "volume": 0.5
+        }
+      }
+    ]
+  },
+  "_id": "93bc4a2f7c36db22",
+  "_stats": {
+    "compendiumSource": null,
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "lastModifiedBy": null,
+    "modifiedTime": null,
+    "systemId": null,
+    "systemVersion": null
+  },
+  "categories": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "section": "Private-use implementation policy",
+        "verification": "implementation-summary"
+      }
+    }
+  },
+  "folder": null,
+  "name": "Technology",
+  "ownership": {
+    "default": 0
+  },
+  "pages": [
+    "7a8ef86aa32f5ac5"
+  ],
+  "sort": 0
+}

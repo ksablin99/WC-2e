@@ -113,7 +113,11 @@ export class TopPortraitBar {
         const damage = portraitDiv.querySelector('.damage');
         const life = portraitDiv.querySelector('.life');
         const hpValue = actor.system.attributes.hp.value;
-        const deathRule = resolveDeathRule(actor.system.attributes.deathRule, actor.race?.system?.deathRule);
+        const deathRule = resolveDeathRule(
+            actor.system.attributes.deathRule,
+            actor.race?.system?.deathRule,
+            actor.system.attributes.creatureType,
+        );
         const conditions = actor.system.attributes.conditions;
         const usesLegacyThreshold = deathRule === DEATH_RULE_D35E;
         const isDead = usesLegacyThreshold ? hpValue <= -10 : conditions.dead;

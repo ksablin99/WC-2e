@@ -1,0 +1,53 @@
+{
+  "_id": "259aef4f3f568fc5",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "catalog": {
+        "category": "tools",
+        "completeTableEntry": true,
+        "generated": true,
+        "status": "structured-table-data",
+        "tableValue": "+50 gp; negligible weight"
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          201
+        ],
+        "printedPages": [
+          199
+        ],
+        "section": "Masterwork Tool",
+        "verification": "table-extraction"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/item-bag.svg",
+  "name": "Masterwork Tool",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "carried": true,
+    "description": {
+      "value": "<p><strong>Printed table value:</strong> +50 gp; negligible weight.</p>"
+    },
+    "hardness": 0,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "identified": true,
+    "identifiedName": "Masterwork Tool",
+    "price": 50,
+    "quantity": 1,
+    "source": "World of Warcraft RPG, 2nd Edition, p. 199",
+    "subType": "gear",
+    "weight": 0
+  },
+  "type": "loot"
+}

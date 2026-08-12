@@ -81,6 +81,8 @@ export function getRepertoirePreparedLimit(abilityScore, spellcraftRanks = 0) {
  * @returns {number}
  */
 export function getSpellbookRepertoireLimit(actorSystem = {}, spellbook = {}) {
+  const explicitLimit = Number(spellbook?.repertoireLimitOverride);
+  if (Number.isFinite(explicitLimit) && explicitLimit > 0) return Math.floor(explicitLimit);
   const abilityKey = spellbook?.ability || "int";
   const skillKey = spellbook?.repertoireSkill || "spl";
   const ability = actorSystem?.abilities?.[abilityKey] || {};

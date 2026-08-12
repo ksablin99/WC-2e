@@ -543,6 +543,20 @@
                             </select>
                         </div>
 
+                        {{#if system.warcraftSpellcastingAdvancement.mode}}
+                        <div class="form-group">
+                            <label>Advances spellcasting class</label>
+                            <select name="system.warcraftSpellcastingAdvancement.selectedClass" data-dtype="String">
+                                {{#select system.warcraftSpellcastingAdvancement.selectedClass}}
+                                <option value="">Automatic when unambiguous</option>
+                                {{#each warcraftAdvancementCandidates as |candidate|}}
+                                <option value="{{candidate.id}}">{{candidate.name}}</option>
+                                {{/each}}
+                                {{/select}}
+                            </select>
+                        </div>
+                        {{/if}}
+
 
                         {{#if isSpellcaster}}
                         <div class="form-group spellcasting-ability flexrow">

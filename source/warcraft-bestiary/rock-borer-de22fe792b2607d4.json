@@ -1,0 +1,1007 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "f68fabd2dbbe5eb1",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 9,
+                "die": 10,
+                "expression": "9d10",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Magical Beast Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "high",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "85",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "9",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "19",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "14",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "14",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "10",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "11",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "3",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "30",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "20",
+              "speed",
+              "burrowSpeed",
+              "base-replace"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "magicalBeast",
+          "damageReduction": [],
+          "hd": 10,
+          "hp": 0,
+          "levels": 9,
+          "maxLevel": 50,
+          "resistances": [
+            [
+              "20",
+              "energy-acid",
+              false,
+              false,
+              false
+            ]
+          ],
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "low"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 116"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "a47131a6ba914686",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                12
+              ],
+              "printedDamage": "1d10+6 plus 1d6 acid"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Bite",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "4",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Bite",
+          "damage": {
+            "parts": [
+              [
+                "1d10+6",
+                "Piercing or Bludgeoning",
+                "damage-piercing-bludgeoning"
+              ],
+              [
+                "1d6",
+                "Acid",
+                "energy-acid"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Bite +12 melee (1d10+6 plus 1d6 acid).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "b40ce817b5ddf4ec",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "a47131a6ba914686",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Bite",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> Bite +12 melee (1d10+6 plus 1d6 acid).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "2e33b9544e2694d3",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "Acid glob (DC 19)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                116
+              ],
+              "section": "Rock Borer"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Acid glob",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Acid glob (DC 19).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 116",
+          "uniqueId": "wc-monster-rock-borer-acid-glob"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "3f841c6ab14dc658",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "burst forth"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                116
+              ],
+              "section": "Rock Borer"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "burst forth",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> burst forth.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 116",
+          "uniqueId": "wc-monster-rock-borer-burst-forth"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "4f61e9b92d4054b1",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Tremorsense 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                116
+              ],
+              "section": "Rock Borer"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Tremorsense 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Tremorsense 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 116",
+          "uniqueId": "wc-monster-rock-borer-tremorsense-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "08c0fec54926a023",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "resistance to acid 20"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                116
+              ],
+              "section": "Rock Borer"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "resistance to acid 20",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> resistance to acid 20.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 116",
+          "uniqueId": "wc-monster-rock-borer-resistance-to-acid-20"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "08ff1ab5cbbf5807",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Combat Reflexes"
+            },
+            "reference": {
+              "id": "4c36b32171550210",
+              "name": "Combat Reflexes",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                116
+              ],
+              "section": "Rock Borer"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Combat Reflexes",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Combat Reflexes.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.4c36b32171550210]{Combat Reflexes}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 116",
+          "uniqueId": "wc-monster-rock-borer-combat-reflexes"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "68bd481eb5f195db",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Dodge"
+            },
+            "reference": {
+              "id": "7d08b8436a8b4167",
+              "name": "Dodge",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                116
+              ],
+              "section": "Rock Borer"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Dodge",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Dodge.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.7d08b8436a8b4167]{Dodge}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 116",
+          "uniqueId": "wc-monster-rock-borer-dodge"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "f7a74464cef4b710",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Mobility"
+            },
+            "reference": {
+              "id": "62fbe110ddcb2b39",
+              "name": "Mobility",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                116
+              ],
+              "section": "Rock Borer"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Mobility",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Mobility.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.62fbe110ddcb2b39]{Mobility}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 116",
+          "uniqueId": "wc-monster-rock-borer-mobility"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "85d03e650be83b77",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Skill Focus (Stealth)"
+            },
+            "reference": {
+              "id": "8217a8f24b631891",
+              "name": "Skill Focus",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                116
+              ],
+              "section": "Rock Borer"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Skill Focus (Stealth)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Skill Focus (Stealth).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.8217a8f24b631891]{Skill Focus}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 116",
+          "uniqueId": "wc-monster-rock-borer-skill-focus-stealth"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "8631c831a1145d87",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Large Magical Beast (Earth); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "4a5e271e2b371475",
+              "name": "Magical Beast Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                116
+              ],
+              "section": "Rock Borer"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Magical Beast Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Large Magical Beast (Earth); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.4a5e271e2b371475]{Magical Beast Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 116",
+          "uniqueId": "wc-monster-rock-borer-magical-beast-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "36c8f58db51f622d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Earth subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "3724120317a7b3b5",
+              "name": "Earth Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                116
+              ],
+              "section": "Rock Borer"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Earth Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Earth subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.3724120317a7b3b5]{Earth Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 116",
+          "uniqueId": "wc-monster-rock-borer-earth-subtype-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "de22fe792b2607d4",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 18, Agy 21, Sta 19, Int 3, Spt 10, Cha 10",
+          "Advancement": "10-14 HD (Large); 15-20 HD (Huge)",
+          "Alignment": "Always neutral",
+          "Area": "Desolace, Dustwallow Marsh, Maraudon",
+          "Armor Class": "19 (-1 size, +5 Agy, +5 natural), touch 14, flat- footed 14",
+          "Attack": "Bite +12 melee (1d10+6 plus 1d6 acid)",
+          "Base Attack/Grapple": "+9/+17",
+          "Challenge Rating": "7",
+          "Environment": "Dry underground",
+          "Feats": "Combat Reflexes, Dodge, Mobility, Skill Focus (Stealth)",
+          "Full Attack": "Bite +12 melee (1d10+6 plus 1d6 acid)",
+          "Hit Dice": "9d10+36 (85 hp)",
+          "Initiative": "+5",
+          "Level Adjustment": "-",
+          "Organization": "Solitary, pair, clutch (3-7), or cluster (8-13)",
+          "Saves": "Fort +10, Ref +11, Will +3",
+          "Skills": "Stealth +20 (+16 hiding)",
+          "Space/Reach": "10 ft./15 ft.",
+          "Special Attacks": "Acid glob (DC 19), burst forth",
+          "Special Qualities": "Tremorsense 60 ft., resistance to acid 20",
+          "Speed": "30 ft. (6 squares), burrow 20 ft.",
+          "Treasure": ""
+        },
+        "rulesCoverage": {
+          "actor-defense": 1,
+          "linked-reference": 6,
+          "manual": 3
+        },
+        "subtypes": [
+          "Earth"
+        ]
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          117
+        ],
+        "printedPages": [
+          116
+        ],
+        "section": "Rock Borer",
+        "verification": "native-text-table"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "f68fabd2dbbe5eb1",
+    "a47131a6ba914686",
+    "b40ce817b5ddf4ec",
+    "2e33b9544e2694d3",
+    "3f841c6ab14dc658",
+    "4f61e9b92d4054b1",
+    "08c0fec54926a023",
+    "08ff1ab5cbbf5807",
+    "68bd481eb5f195db",
+    "f7a74464cef4b710",
+    "85d03e650be83b77",
+    "8631c831a1145d87",
+    "36c8f58db51f622d"
+  ],
+  "name": "Rock Borer",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 4,
+        "origMod": 4,
+        "origTotal": 19,
+        "penalty": 0,
+        "total": 19,
+        "userPenalty": 0,
+        "value": 19
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 5,
+        "origMod": 5,
+        "origTotal": 21,
+        "penalty": 0,
+        "total": 21,
+        "userPenalty": 0,
+        "value": 21
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -4,
+        "origMod": -4,
+        "origTotal": 3,
+        "penalty": 0,
+        "total": 3,
+        "userPenalty": 0,
+        "value": 3
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 4,
+        "origMod": 4,
+        "origTotal": 18,
+        "penalty": 0,
+        "total": 18,
+        "userPenalty": 0,
+        "value": 18
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 14,
+          "value": 0
+        },
+        "normal": {
+          "total": 19,
+          "value": 0
+        },
+        "touch": {
+          "total": 14,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 9,
+        "nonepic": 9,
+        "total": 9,
+        "value": 0
+      },
+      "cmb": {
+        "total": 17,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "magicalBeast",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 0,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 9,
+        "total": 9
+      },
+      "hp": {
+        "base": 85,
+        "max": 85,
+        "min": -19,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 85
+      },
+      "init": {
+        "bonus": 0,
+        "total": 5,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 5,
+      "savingThrows": {
+        "fort": {
+          "base": 10,
+          "total": 10
+        },
+        "ref": {
+          "base": 11,
+          "total": 11
+        },
+        "will": {
+          "base": 3,
+          "total": 3
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": null,
+        "darkvision": null,
+        "lowLight": false,
+        "lowLightMultiplier": null,
+        "tremorsense": 60
+      },
+      "speed": {
+        "burrow": {
+          "base": 20,
+          "total": 20
+        },
+        "land": {
+          "base": 30,
+          "total": 30
+        }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "Always neutral",
+      "biography": {
+        "public": "",
+        "value": "<p>Rock Borer is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 7,
+      "environment": "Dry underground",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 9,
+        "value": 9
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 9d10+36 (85 hp)</p><p><strong>Initiative:</strong> +5</p><p><strong>Speed:</strong> 30 ft. (6 squares), burrow 20 ft.</p><p><strong>Armor Class:</strong> 19 (-1 size, +5 Agy, +5 natural), touch 14, flat- footed 14</p><p><strong>Base Attack/Grapple:</strong> +9/+17</p><p><strong>Attack:</strong> Bite +12 melee (1d10+6 plus 1d6 acid)</p><p><strong>Full Attack:</strong> Bite +12 melee (1d10+6 plus 1d6 acid)</p><p><strong>Space/Reach:</strong> 10 ft./15 ft.</p><p><strong>Special Attacks:</strong> Acid glob (DC 19), burst forth</p><p><strong>Special Qualities:</strong> Tremorsense 60 ft., resistance to acid 20</p><p><strong>Saves:</strong> Fort +10, Ref +11, Will +3</p><p><strong>Abilities:</strong> Str 18, Agy 21, Sta 19, Int 3, Spt 10, Cha 10</p><p><strong>Skills:</strong> Stealth +20 (+16 hiding)</p><p><strong>Feats:</strong> Combat Reflexes, Dodge, Mobility, Skill Focus (Stealth)</p><p><strong>Area:</strong> Desolace, Dustwallow Marsh, Maraudon</p><p><strong>Organization:</strong> Solitary, pair, clutch (3-7), or cluster (8-13)</p><p><strong>Advancement:</strong> 10-14 HD (Large); 15-20 HD (Huge)</p><p><strong>Level Adjustment:</strong> -</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 7,
+      "type": "Magical Beast"
+    },
+    "skills": {
+      "hid": {
+        "ability": "dex",
+        "abilityModifier": 5,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 15,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 20,
+        "notes": "Printed total +20 (+16 hiding)",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "lg",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Tremorsense 60 ft., resistance to acid 20",
+      "size": "lg",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

@@ -1,0 +1,127 @@
+{
+  "_embedded": {},
+  "_id": "8472858e386d8387",
+  "_stats": {
+    "compendiumSource": null,
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "lastModifiedBy": null,
+    "modifiedTime": null,
+    "systemId": null,
+    "systemVersion": null
+  },
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "catalog": {
+        "category": "adventuringGear",
+        "completeTableEntry": true,
+        "generated": true,
+        "status": "structured"
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          199
+        ],
+        "printedPages": [
+          197
+        ],
+        "section": "Sunrod",
+        "verification": "table-extraction"
+      }
+    }
+  },
+  "folder": null,
+  "img": "systems/warcraftrpg2e/icons/items/inventory/Staff_v2_05.png",
+  "name": "Sunrod",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "addedLevel": 0,
+    "attackParts": [],
+    "bagOfHoldingLike": false,
+    "bonusAmmoAttack": "",
+    "bonusAmmoAttackNote": "",
+    "bonusAmmoDamage": "",
+    "bonusAmmoDamageType": "",
+    "bonusAmmoDamageUid": "",
+    "bonusAmmoEnhancement": "",
+    "brokenResalePrice": "",
+    "capacity": 0,
+    "carried": true,
+    "changes": [],
+    "classSource": "",
+    "constantWeight": false,
+    "container": "",
+    "containerCanUseItems": false,
+    "containerId": "",
+    "containerWeightless": false,
+    "contextNotes": [],
+    "createdBy": "",
+    "creationChanges": [],
+    "curseActive": false,
+    "cursed": false,
+    "customAttributes": {},
+    "customAttributesLocked": false,
+    "customReferenceId": "",
+    "customTag": "",
+    "damage": {
+      "parts": []
+    },
+    "description": {
+      "chat": "",
+      "unidentified": "",
+      "value": "<p>This 1-foot-long, gold-tipped, iron rod glows brightly when struck. It clearly illuminates a 30-foot radius and provides shadowy illumination in a 60-foot radius. It glows for 6 hours, after which the gold tip is burned out and worthless. See pages 164 for more rules on illumination.</p>"
+    },
+    "epic": "",
+    "equippedWeightless": false,
+    "fullResalePrice": false,
+    "hardness": 2,
+    "hp": {
+      "max": 5,
+      "value": 5
+    },
+    "identified": true,
+    "identifiedCurse": false,
+    "identifiedName": "Sunrod",
+    "index": {
+      "subType": null,
+      "uniqueId": ""
+    },
+    "linkId": "",
+    "linkImported": false,
+    "linkSourceId": "",
+    "linkSourceName": "",
+    "material": {
+      "data": null
+    },
+    "nameFormula": "",
+    "nameFromFormula": false,
+    "originId": "",
+    "originPack": "",
+    "originVersion": 99,
+    "possibleUpdate": false,
+    "price": 2,
+    "psionic": "",
+    "quantity": 1,
+    "resalePrice": "",
+    "source": "World of Warcraft RPG, 2nd Edition, p. 197",
+    "specialActions": [],
+    "subType": "gear",
+    "tags": [],
+    "unidentified": {
+      "name": "",
+      "price": 0
+    },
+    "uniqueId": "",
+    "userNonRemovable": false,
+    "weight": 1
+  },
+  "type": "loot"
+}

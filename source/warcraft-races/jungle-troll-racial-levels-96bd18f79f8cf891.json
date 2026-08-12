@@ -1,0 +1,379 @@
+{
+  "_embedded": {},
+  "_id": "96bd18f79f8cf891",
+  "_stats": {
+    "compendiumSource": null,
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "lastModifiedBy": null,
+    "modifiedTime": null,
+    "systemId": null,
+    "systemVersion": null
+  },
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "racialClass": {
+        "casterStack": "divine",
+        "maxLevel": 3,
+        "race": "Jungle Troll"
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          52,
+          53
+        ],
+        "printedPages": [
+          50,
+          51
+        ],
+        "section": "Jungle Troll levels",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/book.svg",
+  "name": "Jungle Troll Racial Levels",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "addedAbilities": [],
+    "addedLevel": 0,
+    "allSpellsKnown": false,
+    "automaticFeatures": true,
+    "bab": "high",
+    "changeFlags": {
+      "heavyArmorFullSpeed": false,
+      "loseDexToAC": false,
+      "mediumArmorFullSpeed": false,
+      "multiAttack": false,
+      "multiweaponAttack": false,
+      "noCon": false,
+      "noDex": false,
+      "noEncumbrance": false,
+      "noInt": false,
+      "noStr": false,
+      "oneCha": false,
+      "oneInt": false,
+      "oneWis": false,
+      "uncannyDodge": false
+    },
+    "changes": [],
+    "classSkills": {
+      "acr": false,
+      "apr": false,
+      "art": false,
+      "aut": false,
+      "blc": true,
+      "blf": false,
+      "clm": true,
+      "coc": false,
+      "crf": false,
+      "ctd": false,
+      "dev": false,
+      "dip": false,
+      "dis": false,
+      "dsc": false,
+      "esc": false,
+      "fly": false,
+      "fog": false,
+      "gif": false,
+      "han": false,
+      "hea": false,
+      "hid": true,
+      "int": false,
+      "jmp": true,
+      "kar": false,
+      "kdu": false,
+      "ken": false,
+      "kge": false,
+      "khi": false,
+      "klo": false,
+      "kmt": false,
+      "kna": false,
+      "kno": false,
+      "kpl": false,
+      "kps": false,
+      "kre": false,
+      "lin": false,
+      "lis": true,
+      "lor": false,
+      "mos": false,
+      "opl": false,
+      "per": false,
+      "pmc": false,
+      "prf": false,
+      "pro": false,
+      "psi": false,
+      "rid": false,
+      "sen": false,
+      "slt": false,
+      "spk": false,
+      "spl": false,
+      "spt": true,
+      "src": false,
+      "ste": false,
+      "sur": true,
+      "swm": true,
+      "tmb": true,
+      "umd": false,
+      "upd": false,
+      "uro": false,
+      "utd": false
+    },
+    "classSource": "",
+    "classType": "racial",
+    "combatChangeCustomDisplayName": "",
+    "combatChangeCustomReferenceName": "",
+    "combatChanges": [],
+    "combatChangesAdditionalRanges": {
+      "hasAdditionalRanges": false,
+      "slider1": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      },
+      "slider2": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      },
+      "slider3": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      }
+    },
+    "combatChangesApplySpecialActionsOnce": true,
+    "combatChangesRange": {
+      "max": 0,
+      "maxFormula": ""
+    },
+    "combatChangesUsesCost": "chargesPerUse",
+    "conditionFlags": {
+      "dazzled": false,
+      "polymorphed": false,
+      "wildshaped": false
+    },
+    "counterName": "",
+    "createdBy": "",
+    "creationChanges": [],
+    "creatureType": "humanoid",
+    "crPerHD": 4,
+    "customAttributes": {},
+    "customAttributesLocked": false,
+    "customTag": "",
+    "damage": {
+      "parts": []
+    },
+    "damageReduction": [],
+    "deckHandSizeFormula": "0",
+    "deckPrestigeClass": false,
+    "description": {
+      "chat": "",
+      "unidentified": "",
+      "value": "<p>Optional Jungle Troll racial class; maximum 3 levels.</p><ul><li>d8 Hit Die; 2 + Intellect skill points per level.</li><li>Base attack and saves follow the printed racial table.</li><li>Racial levels stack with the highest divine spellcasting class for caster level.</li></ul>"
+    },
+    "disabledAbilities": [],
+    "epic": "",
+    "extraDescription": {
+      "chat": "",
+      "unidentified": "",
+      "value": "<p>Level features are granted automatically from linked records in this compendium.</p>"
+    },
+    "fc": {
+      "alt": {
+        "value": 0
+      },
+      "hp": {
+        "value": 0
+      },
+      "skill": {
+        "value": 0
+      }
+    },
+    "halfCasterLevel": false,
+    "hasLimitedSpellbook": false,
+    "hasSpecialSlot": false,
+    "hasSpellbook": false,
+    "hd": 8,
+    "hdReplace": "",
+    "hdReplaceRacialOnly": false,
+    "hp": 8,
+    "identifiedName": "Jungle Troll Racial Levels",
+    "index": {
+      "subType": null,
+      "uniqueId": ""
+    },
+    "knownCardsSizeFormula": "0",
+    "la": 0,
+    "levels": 1,
+    "linkId": "",
+    "linkImported": false,
+    "linkSourceId": "",
+    "linkSourceName": "",
+    "maxLevel": 3,
+    "minionGroup": "none",
+    "minionLevelFormula": "0",
+    "nameFormula": "",
+    "nameFromFormula": false,
+    "nonActiveClassAbilities": [],
+    "originId": "",
+    "originPack": "",
+    "originVersion": 100,
+    "possibleUpdate": false,
+    "powerPointBonusBaseAbility": "",
+    "powerPointTable": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 0
+    },
+    "powersKnown": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 0
+    },
+    "powersMaxLevel": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 0
+    },
+    "preparation": {
+      "maxAmount": 0
+    },
+    "prestigeLevels": 0,
+    "psionic": "",
+    "racialRequirement": "Jungle Troll",
+    "requirements": [],
+    "resistances": [],
+    "savingThrows": {
+      "fort": {
+        "value": "high"
+      },
+      "ref": {
+        "value": "high"
+      },
+      "will": {
+        "value": "low"
+      }
+    },
+    "sizeOverride": "",
+    "skillsPerLevel": 2,
+    "sneakAttackFormula": "0",
+    "sneakAttackGroup": "none",
+    "source": "World of Warcraft RPG, 2nd Edition, pp. 50-51",
+    "spellbook": [],
+    "spellcastingAbility": "int",
+    "spellcastingDescription": "",
+    "spellcastingSpellname": "Spell",
+    "spellcastingSpellnamePl": "Spells",
+    "spellcastingSpontaneus": false,
+    "spellcastingType": "none",
+    "spellPointBonusFormula": "0",
+    "spellPointGroup": "none",
+    "spellPointTable": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 0
+    },
+    "spellsKnownPerLevel": [],
+    "spellslotAbility": "",
+    "spellsPerLevel": [],
+    "tags": [],
+    "turnUndeadLevelFormula": "0",
+    "uniqueId": "",
+    "userNonRemovable": false,
+    "warcraftPrerequisites": [
+      {
+        "type": "race",
+        "value": "Jungle Troll"
+      }
+    ],
+    "warcraftSpellcastingAdvancement": {
+      "affectsSlots": false,
+      "mode": "full",
+      "spellcastingType": "divine",
+      "target": "highest"
+    },
+    "weaponData": {
+      "critMult": 2,
+      "critRange": 20
+    }
+  },
+  "type": "class"
+}

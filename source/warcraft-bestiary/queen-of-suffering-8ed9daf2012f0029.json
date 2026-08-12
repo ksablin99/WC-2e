@@ -1,0 +1,3308 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "dd9ba9036e3e5e30",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 16,
+                "die": 8,
+                "expression": "16d8",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Outsider Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "high",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "136",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "16",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "31",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "20",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "21",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "16",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "20",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "16",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "30",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "4",
+              "misc",
+              "init",
+              "untyped"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "outsider",
+          "damageReduction": [],
+          "hd": 8,
+          "hp": 0,
+          "levels": 16,
+          "maxLevel": 50,
+          "resistances": [],
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "high"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 127"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "206ca8f2cac0c56f",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                26
+              ],
+              "printedDamage": "1d3+4 nonlethal plus 3d6 fel/x3 and stun"
+            },
+            "reference": {
+              "id": "f435acfa6c792cc4",
+              "name": "Whip",
+              "pack": "warcraftrpg2e.warcraft-equipment"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Whip",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 3,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "10",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Whip",
+          "damage": {
+            "parts": [
+              [
+                "1d3+4",
+                "Bludgeoning",
+                "damage-bludg"
+              ],
+              [
+                "3d6",
+                "Fel",
+                "damage-untyped-energy"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Whip +26 melee (1d3+4 nonlethal plus 3d6 fel/x3 and stun).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "51a9f736794cc828",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "206ca8f2cac0c56f",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Whip",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> Whip +26/+21/+16/+11 melee (1d3+4 nonlethal plus 3d6 fel/x3 and stun).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_embedded": {},
+        "_id": "9ebfc501cdc580be",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "catalog": {
+              "completeListEntry": true,
+              "generated": true,
+              "status": "srd-mechanics-with-warcraft-header"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 16,
+              "frequency": "atWill",
+              "kind": "sla",
+              "saveDC": 23,
+              "sourceSpell": {
+                "id": "7ac975ed432e42b6",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    265,
+                    287
+                  ],
+                  "printedPages": [
+                    263,
+                    285
+                  ],
+                  "section": "Charm Monster",
+                  "verification": "text-extracted-header"
+                }
+              },
+              "uses": 0
+            },
+            "reference": {
+              "id": "7ac975ed432e42b6",
+              "name": "Charm Monster",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                128
+              ],
+              "printedPages": [
+                127
+              ],
+              "section": "Queen of Suffering",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Charm Monster (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "special",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "",
+          "attackNotes": "If the creature is currently being threatened or attacked by you or your allies, it receives a +5 bonus on its saving throw.",
+          "attackParts": [],
+          "atWill": true,
+          "autoscaleAttackParts": "",
+          "baseCl": "16",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "combatChanges": [],
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "creationChanges": [],
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": []
+          },
+          "damageReduction": [],
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>Makes monster believe it is your ally.</p><hr><p><strong>Queen of Suffering spell-like ability:</strong> At will; caster level 16; save DC 23 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Charm Monster (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Arcanist",
+                4
+              ]
+            ],
+            "domain": [],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 4,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": ""
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 0,
+            "type": ""
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "7ac975ed432e42b6",
+          "originPack": "warcraftrpg2e.warcraft-spells",
+          "originVersion": 109,
+          "perRoundActions": [],
+          "possibleUpdate": false,
+          "powerPointsCost": 7,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 0,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 0
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "close",
+            "value": null
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requirements": [],
+          "requiresPsionicFocus": false,
+          "resistances": [],
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "23",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "Will negates",
+            "originVersion": 97,
+            "type": "willnegates"
+          },
+          "school": "enc",
+          "shortDescription": "<p>Makes monster believe it is your ally.</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "Makes monster believe it is your ally.",
+          "source": "World of Warcraft: Monster Guide, p. 127",
+          "specialActions": [],
+          "specialId": null,
+          "specialPrepared": false,
+          "spellArea": "",
+          "spellbook": "spelllike",
+          "spellDuration": "One day/level",
+          "spellDurationData": {
+            "units": "day",
+            "value": 1
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": true,
+          "subschool": "charm",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "One living creature"
+          },
+          "types": "mind-affecting",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 0,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "",
+            "rechargeFormula": null,
+            "value": 0
+          },
+          "warcraftManualPolicy": {
+            "mode": "srd-baseline-with-manual-boundary",
+            "reason": "SRD mechanics are retained, but Warcraft-specific creatures, forms, slot manipulation, or persistent cross-actor state require GM adjudication."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_embedded": {},
+        "_id": "9d4ae1e74481d6a8",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 16,
+              "frequency": "atWill",
+              "kind": "sla",
+              "saveDC": 20,
+              "sourceSpell": {
+                "id": "X6RdVVq0VK3wZSiK",
+                "pack": "spells",
+                "source": null
+              },
+              "uses": 0
+            },
+            "reference": {
+              "id": "X6RdVVq0VK3wZSiK",
+              "name": "Detect Good",
+              "pack": "warcraftrpg2e.spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                128
+              ],
+              "printedPages": [
+                127
+              ],
+              "section": "Queen of Suffering",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Detect Good (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "other",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": true,
+          "autoscaleAttackParts": "",
+          "baseCl": "16",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "combatChanges": [],
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": []
+          },
+          "damageReduction": [],
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;divination;\n    <br>\n    <strong>Level:</strong>&nbsp;Cleric 1;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, F, DF<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;60 feet<br>\n    <strong>Area:</strong>&nbsp;cone-shaped emanation<br>\n    \n    \n    <strong>Duration:</strong>&nbsp;Special (D)<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;1<br>\n        <strong>Saving Throw:</strong>&nbsp;None\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nYou can sense the presence of good. The amount of information revealed depends on how long you study a particular area or subject.\n</p><p><i>1st Round: </i>Presence or absence of good.\n</p><p><i>2nd Round: </i>Number of good auras (creatures, objects, or spells) in the area and the power of the most potent good aura present.\n</p><p>If you are of evil alignment, and the strongest good aura’s power is overwhelming (see below), and the HD or level of the aura’s source is at least twice your character level, you are stunned for 1 round and the spell ends.\n</p><p><i>3rd Round: </i>The power and location of each aura. If an aura is outside your line of sight, then you discern its direction but not its exact location.\n</p><p><i>Aura Power: </i>An good aura’s power depends on the type of good creature or object that you’re detecting and its HD, caster level, or (in the case of a cleric) class level; see the accompanying table. If an aura falls into more than one strength category, the spell indicates the stronger of the two.\n</p>\n\n<p><i>Lingering Aura: </i>A good aura lingers after its original source dissipates (in the case of a spell) or is destroyed (in the case of a creature or magic item). If <i>detect good </i>is cast and directed at such a location, the spell indicates an aura strength of dim (even weaker than a faint aura). How long the aura lingers at this dim level depends on its original power:\n</p>\n\n<p>Animals, traps, poisons, and other potential perils are not good, and as such this spell does not detect them.\n</p><p>Each round, you can turn to detect good in a new area. The spell can penetrate barriers, but 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt blocks it.\n</p>\n<hr/>\n\n\n\n</div>\n<hr><p><strong>Queen of Suffering spell-like ability:</strong> At will; caster level 16; save DC 20 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Detect Good (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Cleric",
+                1
+              ]
+            ],
+            "domain": [],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 1,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": ""
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 60,
+            "type": "cone"
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "X6RdVVq0VK3wZSiK",
+          "originPack": "warcraftrpg2e.spells",
+          "originVersion": 108,
+          "possibleUpdate": false,
+          "powerPointsCost": 1,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 0,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 0
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "ft",
+            "value": "60"
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requiresPsionicFocus": false,
+          "resistances": [],
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "20",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "None",
+            "originVersion": 97,
+            "type": ""
+          },
+          "school": "div",
+          "shortDescription": "\n\n\n<p>\nYou can sense the presence of good. The amount of information revealed depends on how long you study a particular area or subject.\n</p><p><i>1st Round: </i>Presence or absence of good.\n</p><p><i>2nd Round: </i>Number of good auras (creatures, objects, or spells) in the area and the power of the most potent good aura present.\n</p><p>If you are of evil alignment, and the strongest good aura’s power is overwhelming (see below), and the HD or level of the aura’s source is at least twice your character level, you are stunned for 1 round and the spell ends.\n</p><p><i>3rd Round: </i>The power and location of each aura. If an aura is outside your line of sight, then you discern its direction but not its exact location.\n</p><p><i>Aura Power: </i>An good aura’s power depends on the type of good creature or object that you’re detecting and its HD, caster level, or (in the case of a cleric) class level; see the accompanying table. If an aura falls into more than one strength category, the spell indicates the stronger of the two.\n</p>\n\n<p><i>Lingering Aura: </i>A good aura lingers after its original source dissipates (in the case of a spell) or is destroyed (in the case of a creature or magic item). If <i>detect good </i>is cast and directed at such a location, the spell indicates an aura strength of dim (even weaker than a faint aura). How long the aura lingers at this dim level depends on its original power:\n</p>\n\n<p>Animals, traps, poisons, and other potential perils are not good, and as such this spell does not detect them.\n</p><p>Each round, you can turn to detect good in a new area. The spell can penetrate barriers, but 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt blocks it.\n</p>\n<hr/>\n\n\n",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "Reveals creatures, spells, or objects of selected alignment.",
+          "source": "World of Warcraft: Monster Guide, p. 127",
+          "specialActions": [
+            {
+              "action": "Create unique \"Detect Good\" from \"warcraftrpg2e.commonbuffs\" on target;Set buff \"Detect Good\" field data.level to max(1,(@cl)) on target;Activate buff \"Detect Good\" on target",
+              "condition": "",
+              "img": "icons/svg/item-bag.svg",
+              "name": "Detect Good",
+              "range": ""
+            }
+          ],
+          "specialId": null,
+          "specialPrepared": false,
+          "spellArea": "cone-shaped emanation",
+          "spellbook": "spelllike",
+          "spellDuration": "Concentration, up to 10 min./ level (D)",
+          "spellDurationData": {
+            "dismissable": false,
+            "units": "spec",
+            "value": "Concentration, up to 10 min./ level"
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": false,
+          "subschool": "",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": ""
+          },
+          "types": "",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 0,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "",
+            "rechargeFormula": null,
+            "value": 0
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_embedded": {},
+        "_id": "8e8981967f6d9b85",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "catalog": {
+              "completeListEntry": true,
+              "generated": true,
+              "status": "srd-mechanics-with-warcraft-header"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 16,
+              "frequency": "atWill",
+              "kind": "sla",
+              "saveDC": 21,
+              "sourceSpell": {
+                "id": "849c0af1a9986970",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    265,
+                    297
+                  ],
+                  "printedPages": [
+                    263,
+                    295
+                  ],
+                  "section": "Detect Thoughts",
+                  "verification": "text-extracted-header"
+                }
+              },
+              "uses": 0
+            },
+            "reference": {
+              "id": "849c0af1a9986970",
+              "name": "Detect Thoughts",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                128
+              ],
+              "printedPages": [
+                127
+              ],
+              "section": "Queen of Suffering",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Detect Thoughts (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "other",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": true,
+          "autoscaleAttackParts": "",
+          "baseCl": "16",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "combatChanges": [],
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": []
+          },
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>Allows \"listening\" to surface</p><hr><p><strong>Queen of Suffering spell-like ability:</strong> At will; caster level 16; save DC 21 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "60 ft.",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Detect Thoughts (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Arcanist",
+                2
+              ]
+            ],
+            "domain": [],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 2,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "a copper piece",
+            "value": ""
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 60,
+            "type": "cone"
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "849c0af1a9986970",
+          "originPack": "warcraftrpg2e.warcraft-spells",
+          "originVersion": 108,
+          "possibleUpdate": false,
+          "powerPointsCost": 3,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 0,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 0
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "ft",
+            "value": 60
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requiresPsionicFocus": false,
+          "resistances": [],
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "21",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "Will negates; see text",
+            "originVersion": 97,
+            "type": "willnegates"
+          },
+          "school": "div",
+          "shortDescription": "<p>Allows \"listening\" to surface</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "Allows \"listening\" to surface",
+          "source": "World of Warcraft: Monster Guide, p. 127",
+          "specialActions": [
+            {
+              "action": "Create unique \"Detect Thoughts\" from \"warcraftrpg2e.commonbuffs\" on target;Set buff \"Detect Thoughts\" field data.level to max(1,(@cl)) on target;Activate buff \"Detect Thoughts\" on target",
+              "condition": "",
+              "img": "icons/svg/item-bag.svg",
+              "name": "Detect Thoughts",
+              "range": ""
+            }
+          ],
+          "specialId": null,
+          "specialPrepared": false,
+          "spellArea": "Cone-shaped emanation",
+          "spellbook": "spelllike",
+          "spellDuration": "Concentration, up to 1 min./level (D)",
+          "spellDurationData": {
+            "units": "minutePerLevel",
+            "value": 1
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": false,
+          "subschool": "",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "Cone-shaped emanation"
+          },
+          "types": "mind-affecting",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 0,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "",
+            "rechargeFormula": null,
+            "value": 0
+          },
+          "warcraftManualPolicy": {
+            "mode": "srd-baseline",
+            "reason": "The inherited SRD implementation is used with the Warcraft list assignment and spell level."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_embedded": {},
+        "_id": "b7ee997dc484910e",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "catalog": {
+              "completeListEntry": true,
+              "generated": true,
+              "status": "srd-mechanics-with-warcraft-list-data"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 16,
+              "frequency": "atWill",
+              "kind": "sla",
+              "saveDC": 22,
+              "sourceSpell": {
+                "id": "9e28aac4ad16102c",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    265
+                  ],
+                  "printedPages": [
+                    263
+                  ],
+                  "section": "Suggestion",
+                  "verification": "spell-list-entry"
+                }
+              },
+              "uses": 0
+            },
+            "reference": {
+              "id": "9e28aac4ad16102c",
+              "name": "Suggestion",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                128
+              ],
+              "printedPages": [
+                127
+              ],
+              "section": "Queen of Suffering",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Suggestion (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "other",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": true,
+          "autoscaleAttackParts": "",
+          "baseCl": "16",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "combatChanges": [],
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": []
+          },
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>Compels subject to follow stated course</p><hr><p><strong>Queen of Suffering spell-like ability:</strong> At will; caster level 16; save DC 22 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Suggestion (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Arcanist",
+                3
+              ]
+            ],
+            "domain": [],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 3,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": "a snake’s tongue and either a bit of honeycomb or a drop of sweet oil"
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 0,
+            "type": ""
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "9e28aac4ad16102c",
+          "originPack": "warcraftrpg2e.warcraft-spells",
+          "originVersion": 109,
+          "possibleUpdate": false,
+          "powerPointsCost": 0,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 0,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 0
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "close",
+            "value": null
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requiresPsionicFocus": false,
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "22",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "Will negates",
+            "originVersion": 97,
+            "type": ""
+          },
+          "school": "enc",
+          "shortDescription": "<p>Compels subject to follow stated course</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "Compels subject to follow stated course",
+          "source": "World of Warcraft: Monster Guide, p. 127",
+          "specialActions": [],
+          "specialId": null,
+          "specialPrepared": false,
+          "spellArea": "",
+          "spellbook": "spelllike",
+          "spellDuration": "1 hour/level or until completed",
+          "spellDurationData": {
+            "dismissable": false,
+            "units": "hourPerLevel",
+            "value": "1*@cl"
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": true,
+          "subschool": "compulsion",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "one living creature"
+          },
+          "types": "language-dependent, mind-affecting",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 0,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "",
+            "rechargeFormula": null,
+            "value": 0
+          },
+          "warcraftManualPolicy": {
+            "mode": "srd-baseline",
+            "reason": "The inherited SRD implementation is used with the Warcraft list assignment and spell level."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_embedded": {},
+        "_id": "02c7db4821c275a7",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "catalog": {
+              "completeListEntry": true,
+              "generated": true,
+              "status": "srd-mechanics-with-warcraft-header"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 16,
+              "frequency": "day",
+              "kind": "sla",
+              "saveDC": 24,
+              "sourceSpell": {
+                "id": "9200b178c5383e6c",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    266,
+                    300
+                  ],
+                  "printedPages": [
+                    264,
+                    298
+                  ],
+                  "section": "Dominate Person",
+                  "verification": "text-extracted-header"
+                }
+              },
+              "uses": 3
+            },
+            "reference": {
+              "id": "9200b178c5383e6c",
+              "name": "Dominate Person",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                128
+              ],
+              "printedPages": [
+                127
+              ],
+              "section": "Queen of Suffering",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Dominate Person (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "other",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": false,
+          "autoscaleAttackParts": "",
+          "baseCl": "16",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "combatChanges": [],
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "creationChanges": [],
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": []
+          },
+          "damageReduction": [],
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>Controls humanoid telepathically.</p><hr><p><strong>Queen of Suffering spell-like ability:</strong> 3/day; caster level 16; save DC 24 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "Close (25 ft. + 5 ft./2 levels)",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "Lasts [[@cl]] day(s).",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Dominate Person (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Arcanist",
+                5
+              ]
+            ],
+            "domain": [],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 5,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": ""
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 0,
+            "type": ""
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "9200b178c5383e6c",
+          "originPack": "warcraftrpg2e.warcraft-spells",
+          "originVersion": 108,
+          "perRoundActions": [],
+          "possibleUpdate": false,
+          "powerPointsCost": 9,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 3,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 3
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "close",
+            "value": null
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requirements": [],
+          "requiresPsionicFocus": false,
+          "resistances": [],
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "24",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "Will negates",
+            "originVersion": 97,
+            "type": "willnegates"
+          },
+          "school": "enc",
+          "shortDescription": "<p>Controls humanoid telepathically.</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "Controls humanoid telepathically.",
+          "source": "World of Warcraft: Monster Guide, p. 127",
+          "specialActions": [],
+          "specialId": null,
+          "specialPrepared": true,
+          "spellArea": "",
+          "spellbook": "spelllike",
+          "spellDuration": "One day/level",
+          "spellDurationData": {
+            "units": "day",
+            "value": 1
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": true,
+          "subschool": "compulsion",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "One humanoid"
+          },
+          "types": "mind-affecting",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 3,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "day",
+            "rechargeFormula": null,
+            "value": 3
+          },
+          "warcraftManualPolicy": {
+            "mode": "srd-baseline-with-manual-boundary",
+            "reason": "SRD mechanics are retained, but Warcraft-specific creatures, forms, slot manipulation, or persistent cross-actor state require GM adjudication."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_id": "62201dcad5a05694",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "Backstab +8d6"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                127
+              ],
+              "section": "Queen of Suffering"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Backstab +8d6",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Backstab +8d6.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 127",
+          "uniqueId": "wc-monster-queen-of-suffering-backstab-8d6"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "c5c639992abe734c",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "lash of pain"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                127
+              ],
+              "section": "Queen of Suffering"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "lash of pain",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> lash of pain.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 127",
+          "uniqueId": "wc-monster-queen-of-suffering-lash-of-pain"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "5f12864a0fa3a001",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "soothe (DC 27)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                127
+              ],
+              "section": "Queen of Suffering"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "soothe",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> soothe (DC 27).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 127",
+          "uniqueId": "wc-monster-queen-of-suffering-soothe"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "ad218e0e0437cf71",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Special Attack",
+              "raw": "spell-like abilities"
+            },
+            "reference": {
+              "id": "9072eee87e2208d9",
+              "name": "Spell-Like Abilities Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                127
+              ],
+              "section": "Queen of Suffering"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "spell-like abilities",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> spell-like abilities.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.9072eee87e2208d9]{Spell-Like Abilities Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 127",
+          "uniqueId": "wc-monster-queen-of-suffering-spell-like-abilities"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "c982b43572f7da12",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "stun"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                127
+              ],
+              "section": "Queen of Suffering"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "stun",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> stun.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 127",
+          "uniqueId": "wc-monster-queen-of-suffering-stun"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "43b7df30bab5c2a1",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Blindsight 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                127
+              ],
+              "section": "Queen of Suffering"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Blindsight 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Blindsight 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 127",
+          "uniqueId": "wc-monster-queen-of-suffering-blindsight-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "6a21564fa37ce525",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "darkvision 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                127
+              ],
+              "section": "Queen of Suffering"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "darkvision 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> darkvision 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 127",
+          "uniqueId": "wc-monster-queen-of-suffering-darkvision-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "4c2b13a4ddde679a",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "damage reduction 10/good and truesilver*"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                127
+              ],
+              "section": "Queen of Suffering"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "damage reduction 10/good and truesilver*",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> damage reduction 10/good and truesilver*.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 127",
+          "uniqueId": "wc-monster-queen-of-suffering-damage-reduction-10-good-and-truesilver"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "7b1e30417e250cdf",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "spell resistance 26"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                127
+              ],
+              "section": "Queen of Suffering"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "spell resistance 26",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> spell resistance 26.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 127",
+          "uniqueId": "wc-monster-queen-of-suffering-spell-resistance-26"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "ac64c8ff6d050b97",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "demon traits"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                127
+              ],
+              "section": "Queen of Suffering"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "demon traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> demon traits.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 127",
+          "uniqueId": "wc-monster-queen-of-suffering-demon-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "6388cf4f2ae4a581",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Combat Reflexes"
+            },
+            "reference": {
+              "id": "4c36b32171550210",
+              "name": "Combat Reflexes",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                127
+              ],
+              "section": "Queen of Suffering"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Combat Reflexes",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Combat Reflexes.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.4c36b32171550210]{Combat Reflexes}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 127",
+          "uniqueId": "wc-monster-queen-of-suffering-combat-reflexes"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "d253e029bb0a531c",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Dodge"
+            },
+            "reference": {
+              "id": "7d08b8436a8b4167",
+              "name": "Dodge",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                127
+              ],
+              "section": "Queen of Suffering"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Dodge",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Dodge.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.7d08b8436a8b4167]{Dodge}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 127",
+          "uniqueId": "wc-monster-queen-of-suffering-dodge"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "af82859751442e5a",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Feint"
+            },
+            "reference": {
+              "id": "49283f56b4631d2c",
+              "name": "Improved Feint",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                127
+              ],
+              "section": "Queen of Suffering"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Feint",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Feint.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.49283f56b4631d2c]{Improved Feint}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 127",
+          "uniqueId": "wc-monster-queen-of-suffering-improved-feint"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "7f5bcbeac663a26d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Initiative"
+            },
+            "reference": {
+              "id": "3232602c102e0494",
+              "name": "Improved Initiative",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                127
+              ],
+              "section": "Queen of Suffering"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Initiative",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Initiative.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.3232602c102e0494]{Improved Initiative}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 127",
+          "uniqueId": "wc-monster-queen-of-suffering-improved-initiative"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "85238f655ed1cbe3",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Mobility"
+            },
+            "reference": {
+              "id": "62fbe110ddcb2b39",
+              "name": "Mobility",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                127
+              ],
+              "section": "Queen of Suffering"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Mobility",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Mobility.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.62fbe110ddcb2b39]{Mobility}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 127",
+          "uniqueId": "wc-monster-queen-of-suffering-mobility"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "054fb4f147d935bb",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Spring Attack"
+            },
+            "reference": {
+              "id": "7745cccb3e31fbfb",
+              "name": "Spring Attack",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                127
+              ],
+              "section": "Queen of Suffering"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Spring Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Spring Attack.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.7745cccb3e31fbfb]{Spring Attack}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 127",
+          "uniqueId": "wc-monster-queen-of-suffering-spring-attack"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "3bf99540db1bfb57",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Weapon Finesse"
+            },
+            "reference": {
+              "id": "09eb70cdcda3c32d",
+              "name": "Weapon Finesse",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                127
+              ],
+              "section": "Queen of Suffering"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Weapon Finesse",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Weapon Finesse.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.09eb70cdcda3c32d]{Weapon Finesse}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 127",
+          "uniqueId": "wc-monster-queen-of-suffering-weapon-finesse"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "73d21dd3c2631eca",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Medium Outsider (Demon, Evil, Extraplanar, Lawful); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "dd750e0d27b12249",
+              "name": "Outsider Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                127
+              ],
+              "section": "Queen of Suffering"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Outsider Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Medium Outsider (Demon, Evil, Extraplanar, Lawful); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.dd750e0d27b12249]{Outsider Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 127",
+          "uniqueId": "wc-monster-queen-of-suffering-outsider-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "6c528faa854cbfe1",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Demon subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "29bc818a8721f188",
+              "name": "Demon Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                127
+              ],
+              "section": "Queen of Suffering"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Demon Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Demon subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.29bc818a8721f188]{Demon Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 127",
+          "uniqueId": "wc-monster-queen-of-suffering-demon-subtype-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "c7490606e2d7150d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Evil subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "ad80f8e8725dc664",
+              "name": "Evil Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                127
+              ],
+              "section": "Queen of Suffering"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Evil Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Evil subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.ad80f8e8725dc664]{Evil Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 127",
+          "uniqueId": "wc-monster-queen-of-suffering-evil-subtype-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "c387253e773fab0e",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Extraplanar subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "f56ea12b09ac91fc",
+              "name": "Extraplanar Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                127
+              ],
+              "section": "Queen of Suffering"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Extraplanar Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Extraplanar subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.f56ea12b09ac91fc]{Extraplanar Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 127",
+          "uniqueId": "wc-monster-queen-of-suffering-extraplanar-subtype-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "451d6c02c846d1e9",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Lawful subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "1cc3bc4e500b70cf",
+              "name": "Lawful Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                127
+              ],
+              "section": "Queen of Suffering"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Lawful Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Lawful subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.1cc3bc4e500b70cf]{Lawful Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 127",
+          "uniqueId": "wc-monster-queen-of-suffering-lawful-subtype-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "8ed9daf2012f0029",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": {
+          "regularSpells": 0,
+          "slaExecutable": 5,
+          "slaManual": 0
+        },
+        "rawFields": {
+          "Abilities": "Str 18, Agy 31, Sta 19, Int 19, Spt 22, Cha 29",
+          "Advancement": "17-24 HD (Medium); or by character class",
+          "Alignment": "Always lawful evil",
+          "Area": "The Twisting Nether",
+          "Armor Class": "31 (+10 Agy, +11 natural), touch 20, flat-footed 21",
+          "Attack": "Whip +26 melee (1d3+4 nonlethal plus 3d6 fel/x3 and stun)",
+          "Base Attack/Grapple": "+16/+20",
+          "Challenge Rating": "14",
+          "Environment": "The Twisting Nether",
+          "Feats": "Combat Reflexes, Dodge, Improved Feint B , Improved Initiative, Mobility, Spring Attack, Weapon Finesse",
+          "Full Attack": "Whip +26/+21/+16/+11 melee (1d3+4 nonlethal plus 3d6 fel/x3 and stun)",
+          "Hit Dice": "16d8+96 (136 hp)",
+          "Initiative": "+14",
+          "Level Adjustment": "-",
+          "Organization": "Solitary or coven (1 plus 2-4 succubi)",
+          "Saves": "Fort +16, Ref +20, Will +16",
+          "Skills": "Balance +31, Bluff+28, Climb +18, Diplomacy +32, Disguise +28 (+30 acting), Escape Artist +22 (+24 escaping bonds), Intimidate +30, Jump +18, Knowledge (the planes) +23, Sense Motive +25, Stealth +29, Tumble +31, Use Rope +29 (+31 tying bonds)",
+          "Space/Reach": "5 ft./5 ft. (15 ft. with whip)",
+          "Special Attacks": "Backstab +8d6, lash of pain, soothe (DC 27), spell-like abilities, stun",
+          "Special Qualities": "Blindsight 60 ft., darkvision 60 ft., damage reduction 10/good and truesilver*, spell resistance 26, demon traits",
+          "Speed": "30 ft. (6 squares)",
+          "Treasure": "Standard coins; double goods; standard items"
+        },
+        "rulesCoverage": {
+          "actor-defense": 2,
+          "linked-reference": 13,
+          "manual": 7
+        },
+        "subtypes": [
+          "Demon",
+          "Evil",
+          "Extraplanar",
+          "Lawful"
+        ]
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          128
+        ],
+        "printedPages": [
+          127
+        ],
+        "section": "Queen of Suffering",
+        "verification": "native-text-table"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "dd9ba9036e3e5e30",
+    "206ca8f2cac0c56f",
+    "51a9f736794cc828",
+    "9ebfc501cdc580be",
+    "9d4ae1e74481d6a8",
+    "8e8981967f6d9b85",
+    "b7ee997dc484910e",
+    "02c7db4821c275a7",
+    "62201dcad5a05694",
+    "c5c639992abe734c",
+    "5f12864a0fa3a001",
+    "ad218e0e0437cf71",
+    "c982b43572f7da12",
+    "43b7df30bab5c2a1",
+    "6a21564fa37ce525",
+    "4c2b13a4ddde679a",
+    "7b1e30417e250cdf",
+    "ac64c8ff6d050b97",
+    "6388cf4f2ae4a581",
+    "d253e029bb0a531c",
+    "af82859751442e5a",
+    "7f5bcbeac663a26d",
+    "85238f655ed1cbe3",
+    "054fb4f147d935bb",
+    "3bf99540db1bfb57",
+    "73d21dd3c2631eca",
+    "6c528faa854cbfe1",
+    "c7490606e2d7150d",
+    "c387253e773fab0e",
+    "451d6c02c846d1e9"
+  ],
+  "name": "Queen of Suffering",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 9,
+        "origMod": 9,
+        "origTotal": 29,
+        "penalty": 0,
+        "total": 29,
+        "userPenalty": 0,
+        "value": 29
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 4,
+        "origMod": 4,
+        "origTotal": 19,
+        "penalty": 0,
+        "total": 19,
+        "userPenalty": 0,
+        "value": 19
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 10,
+        "origMod": 10,
+        "origTotal": 31,
+        "penalty": 0,
+        "total": 31,
+        "userPenalty": 0,
+        "value": 31
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 4,
+        "origMod": 4,
+        "origTotal": 19,
+        "penalty": 0,
+        "total": 19,
+        "userPenalty": 0,
+        "value": 19
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 4,
+        "origMod": 4,
+        "origTotal": 18,
+        "penalty": 0,
+        "total": 18,
+        "userPenalty": 0,
+        "value": 18
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 6,
+        "origMod": 6,
+        "origTotal": 22,
+        "penalty": 0,
+        "total": 22,
+        "userPenalty": 0,
+        "value": 22
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 21,
+          "value": 0
+        },
+        "normal": {
+          "total": 31,
+          "value": 0
+        },
+        "touch": {
+          "total": 20,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 16,
+        "nonepic": 16,
+        "total": 16,
+        "value": 0
+      },
+      "cmb": {
+        "total": 20,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "outsider",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 0,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 16,
+        "total": 16
+      },
+      "hp": {
+        "base": 136,
+        "max": 136,
+        "min": -19,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 136
+      },
+      "init": {
+        "bonus": 0,
+        "total": 14,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 11,
+      "savingThrows": {
+        "fort": {
+          "base": 16,
+          "total": 16
+        },
+        "ref": {
+          "base": 20,
+          "total": 20
+        },
+        "will": {
+          "base": 16,
+          "total": 16
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": 60,
+        "darkvision": 60,
+        "lowLight": false,
+        "lowLightMultiplier": null,
+        "tremorsense": null
+      },
+      "speed": {
+        "land": {
+          "base": 30,
+          "total": 30
+        }
+      },
+      "spells": {
+        "spellbooks": {
+          "spelllike": {
+            "ability": "cha",
+            "arcaneSpellFailure": false,
+            "autoSetup": false,
+            "autoSpellLevels": false,
+            "baseDCFormula": "0",
+            "bonusPrestigeCl": 0,
+            "cl": {
+              "base": 16,
+              "formula": "0",
+              "total": 16,
+              "value": 0
+            },
+            "class": "",
+            "clNotes": "",
+            "concentration": 0,
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "dailyPowerPointsFormula": "",
+            "hasSpecialSlot": false,
+            "maximumPowerPointLimit": "@cl",
+            "name": "Spell-like Abilities",
+            "powerPoints": 0,
+            "powerPointsFormula": "",
+            "powerPointsTotal": 0,
+            "preparationMode": "prepared",
+            "repertoireLimitOverride": 0,
+            "repertoireSkill": "spl",
+            "showOnlyPrepared": false,
+            "specialSlotLevel0": false,
+            "specialSlots": {
+              "level0": null,
+              "level1": null,
+              "level2": null,
+              "level3": null,
+              "level4": null,
+              "level5": null,
+              "level6": null,
+              "level7": null,
+              "level8": null,
+              "level9": null
+            },
+            "spellcastingType": "arcane",
+            "spells": {
+              "spell0": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell1": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell2": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell3": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell4": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell5": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell6": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell7": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell8": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell9": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              }
+            },
+            "spellslotAbility": "cha",
+            "spontaneous": false,
+            "usePowerPoints": false,
+            "usesWarcraftSlotPool": false,
+            "warcraftCurrentPath": "",
+            "warcraftParentClass": "",
+            "warcraftPathBonusSlot": false,
+            "warcraftPoolKey": ""
+          }
+        },
+        "warcraftPools": {}
+      },
+      "sr": {
+        "formula": "26",
+        "total": 26
+      }
+    },
+    "details": {
+      "alignment": "Always lawful evil",
+      "biography": {
+        "public": "",
+        "value": "<p>Queen of Suffering is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 14,
+      "environment": "The Twisting Nether",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 16,
+        "value": 16
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 16d8+96 (136 hp)</p><p><strong>Initiative:</strong> +14</p><p><strong>Speed:</strong> 30 ft. (6 squares)</p><p><strong>Armor Class:</strong> 31 (+10 Agy, +11 natural), touch 20, flat-footed 21</p><p><strong>Base Attack/Grapple:</strong> +16/+20</p><p><strong>Attack:</strong> Whip +26 melee (1d3+4 nonlethal plus 3d6 fel/x3 and stun)</p><p><strong>Full Attack:</strong> Whip +26/+21/+16/+11 melee (1d3+4 nonlethal plus 3d6 fel/x3 and stun)</p><p><strong>Space/Reach:</strong> 5 ft./5 ft. (15 ft. with whip)</p><p><strong>Special Attacks:</strong> Backstab +8d6, lash of pain, soothe (DC 27), spell-like abilities, stun</p><p><strong>Special Qualities:</strong> Blindsight 60 ft., darkvision 60 ft., damage reduction 10/good and truesilver*, spell resistance 26, demon traits</p><p><strong>Saves:</strong> Fort +16, Ref +20, Will +16</p><p><strong>Abilities:</strong> Str 18, Agy 31, Sta 19, Int 19, Spt 22, Cha 29</p><p><strong>Skills:</strong> Balance +31, Bluff+28, Climb +18, Diplomacy +32, Disguise +28 (+30 acting), Escape Artist +22 (+24 escaping bonds), Intimidate +30, Jump +18, Knowledge (the planes) +23, Sense Motive +25, Stealth +29, Tumble +31, Use Rope +29 (+31 tying bonds)</p><p><strong>Feats:</strong> Combat Reflexes, Dodge, Improved Feint B , Improved Initiative, Mobility, Spring Attack, Weapon Finesse</p><p><strong>Area:</strong> The Twisting Nether</p><p><strong>Organization:</strong> Solitary or coven (1 plus 2-4 succubi)</p><p><strong>Treasure:</strong> Standard coins; double goods; standard items</p><p><strong>Advancement:</strong> 17-24 HD (Medium); or by character class</p><p><strong>Level Adjustment:</strong> -</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 14,
+      "type": "Outsider"
+    },
+    "skills": {
+      "blc": {
+        "ability": "dex",
+        "abilityModifier": 10,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 21,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 31,
+        "notes": "Printed total +31",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "blf": {
+        "ability": "cha",
+        "abilityModifier": 9,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 19,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 28,
+        "notes": "Printed total +28",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "clm": {
+        "ability": "str",
+        "abilityModifier": 4,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 14,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 18,
+        "notes": "Printed total +18",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "dip": {
+        "ability": "cha",
+        "abilityModifier": 9,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 23,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 32,
+        "notes": "Printed total +32",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "dis": {
+        "ability": "cha",
+        "abilityModifier": 9,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 19,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 28,
+        "notes": "Printed total +28 (+30 acting)",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "esc": {
+        "ability": "dex",
+        "abilityModifier": 10,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 12,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 22,
+        "notes": "Printed total +22 (+24 escaping bonds)",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "hid": {
+        "ability": "dex",
+        "abilityModifier": 10,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 19,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 29,
+        "notes": "Printed total +29",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "int": {
+        "ability": "cha",
+        "abilityModifier": 9,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 21,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 30,
+        "notes": "Printed total +30",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "jmp": {
+        "ability": "str",
+        "abilityModifier": 4,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 14,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 18,
+        "notes": "Printed total +18",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "kpl": {
+        "ability": "int",
+        "abilityModifier": 4,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 19,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 23,
+        "notes": "Printed total +23",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "sen": {
+        "ability": "wis",
+        "abilityModifier": 6,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 19,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 25,
+        "notes": "Printed total +25",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "tmb": {
+        "ability": "dex",
+        "abilityModifier": 10,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 21,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 31,
+        "notes": "Printed total +31",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "uro": {
+        "ability": "dex",
+        "abilityModifier": 10,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 19,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 29,
+        "notes": "Printed total +29 (+31 tying bonds)",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "med",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Blindsight 60 ft., darkvision 60 ft., damage reduction 10/good and truesilver*, spell resistance 26, demon traits",
+      "size": "med",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

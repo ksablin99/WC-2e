@@ -1,0 +1,42 @@
+{
+  "_embedded": {},
+  "_id": "3f859feb0e33d4d0",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "creatureRule": {
+        "kind": "subtype",
+        "reusable": true
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          194
+        ],
+        "printedPages": [
+          193
+        ],
+        "section": "Native Subtype",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/aura.svg",
+  "name": "Native Subtype Traits",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilityType": "nat",
+    "description": {
+      "value": "<p>Applies to an outsider with mortal ancestry or a strong tie to Azeroth. It can be raised, reincarnated, or resurrected normally and must eat and sleep as well as breathe.</p><p>This reusable record defines shared conversion behavior. Individual actors carry exact printed exceptions and totals.</p>"
+    },
+    "featType": "trait",
+    "source": "World of Warcraft: Monster Guide, pp. 193",
+    "uniqueId": "wc-creature-rule-native-subtype"
+  },
+  "type": "feat"
+}

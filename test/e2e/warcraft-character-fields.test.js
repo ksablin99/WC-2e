@@ -11,9 +11,15 @@ test.beforeEach(async ({ page }) => {
   await dismissOverlays(page);
 });
 
-test("character sheet persists Warcraft affiliation and Hero Points", async ({ page }) => {
+test("character sheet persists Warcraft affiliation, Hero Points, and shared Shout Uses", async ({ page }) => {
   const actorId = await page.evaluate(async () => {
     const actor = await Actor.create({ name: "Warcraft Character Fields", type: "character" });
+    await actor.createEmbeddedDocuments("Item", [{
+      name: "Battle Shout",
+      type: "feat",
+      flags: { warcraftrpg2e: { feat: { category: "Shout" } } },
+      system: { uniqueId: "wc-test-battle-shout" },
+    }]);
     return actor.id;
   });
 
@@ -26,6 +32,7 @@ test("character sheet persists Warcraft affiliation and Hero Points", async ({ p
     ["system.details.affiliationRating", "7"],
     ["system.attributes.heroPoints.value", "2"],
     ["system.attributes.heroPoints.max", "3"],
+    ["system.attributes.shoutUses.value", "1"],
   ]) {
     const input = sheet.locator(`input[name="${name}"]`);
     await input.fill(value);
@@ -39,11 +46,20 @@ test("character sheet persists Warcraft affiliation and Hero Points", async ({ p
       affiliation: actor.system.details.affiliation,
       rating: actor.system.details.affiliationRating,
       heroPoints: actor.system.attributes.heroPoints,
+      shoutUses: actor.system.attributes.shoutUses,
     };
   }, actorId)).toEqual({
     faith: "The Holy Light",
     affiliation: "Alliance",
     rating: 7,
     heroPoints: { value: 2, max: 3 },
+    shoutUses: { value: 1, max: 1 },
   });
+
+  await page.evaluate(async (id) => {
+    const actor = game.actors.get(id);
+    await actor.update({ "system.attributes.shoutUses.value": 0 });
+    await actor.rest(false, true, false);
+  }, actorId);
+  await expect.poll(() => page.evaluate((id) => game.actors.get(id).system.attributes.shoutUses.value, actorId)).toBe(1);
 });

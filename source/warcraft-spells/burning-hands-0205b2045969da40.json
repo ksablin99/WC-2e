@@ -1,0 +1,288 @@
+{
+  "_embedded": {},
+  "_id": "0205b2045969da40",
+  "_stats": {
+    "compendiumSource": null,
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "lastModifiedBy": null,
+    "modifiedTime": null,
+    "systemId": null,
+    "systemVersion": null
+  },
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "catalog": {
+        "completeListEntry": true,
+        "generated": true,
+        "status": "srd-mechanics-with-warcraft-header"
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          267,
+          272,
+          274,
+          286
+        ],
+        "printedPages": [
+          265,
+          270,
+          272,
+          284
+        ],
+        "section": "Burning Hands",
+        "verification": "text-extracted-header"
+      }
+    }
+  },
+  "folder": null,
+  "img": "systems/warcraftrpg2e/icons/spells/named-spells/burning-hands.png",
+  "name": "Burning Hands",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "ability": {
+      "attack": "",
+      "critMult": 2,
+      "critRange": 20,
+      "damage": "",
+      "damageMult": 1,
+      "twoHandedOnly": false,
+      "vsTouchAc": false
+    },
+    "actionType": "spellsave",
+    "activateActions": [],
+    "activation": {
+      "cost": 1,
+      "type": "standard"
+    },
+    "addedLevel": 0,
+    "attack": {
+      "parts": []
+    },
+    "attackBonus": "",
+    "attackCountFormula": "",
+    "attackNotes": "",
+    "attackParts": [],
+    "atWill": false,
+    "autoscaleAttackParts": "",
+    "baseCl": "0",
+    "castTime": "1 standard action",
+    "changes": [],
+    "classSource": "",
+    "clOffset": 0,
+    "combatChanges": [],
+    "components": {
+      "divineFocus": 0,
+      "focus": false,
+      "material": false,
+      "somatic": true,
+      "value": "V, S",
+      "verbal": true
+    },
+    "conditionals": [],
+    "container": "None",
+    "containerWeightless": false,
+    "contextNotes": [],
+    "createdBy": "",
+    "creationChanges": [],
+    "critConfirmBonus": "",
+    "customAttributes": {},
+    "customAttributesLocked": false,
+    "customReferenceId": "",
+    "customTag": "",
+    "damage": {
+      "alternativeParts": [],
+      "parts": [
+        [
+          "(min(5,@cl))d4",
+          "fire",
+          "energy-fire"
+        ]
+      ]
+    },
+    "damageReduction": [],
+    "deactivateActions": [],
+    "description": {
+      "chat": "",
+      "unidentified": "",
+      "value": "<p>1d4/level fi re damage (max 5d4).</p>"
+    },
+    "display": "15 ft.",
+    "duration": {
+      "units": "",
+      "value": null
+    },
+    "effectNotes": "",
+    "epic": "",
+    "favorite": false,
+    "formula": "",
+    "identifiedName": "Burning Hands",
+    "index": {
+      "subType": null,
+      "uniqueId": ""
+    },
+    "isDomainSpell": false,
+    "isPower": false,
+    "isSpellSpontaneousReplacement": false,
+    "learnedAt": {
+      "bloodline": [],
+      "class": [
+        [
+          "Mage",
+          1
+        ],
+        [
+          "Shaman",
+          1
+        ]
+      ],
+      "domain": [
+        [
+          "Destruction",
+          1
+        ]
+      ],
+      "elementalSchool": [],
+      "subDomain": []
+    },
+    "level": 1,
+    "linkedChargeItem": {
+      "id": null,
+      "img": null,
+      "name": null
+    },
+    "linkId": "",
+    "linkImported": false,
+    "linkSourceId": "",
+    "linkSourceName": "",
+    "materials": {
+      "consumed": {
+        "_deprecated": true,
+        "value": false
+      },
+      "focus": "",
+      "value": ""
+    },
+    "maxDamageDice": 0,
+    "maxDamageDiceFormula": "",
+    "measureTemplate": {
+      "customColor": "",
+      "customTexture": "",
+      "overrideColor": false,
+      "overrideTexture": false,
+      "size": "15",
+      "type": "cone"
+    },
+    "metamagicFeats": {
+      "empowered": false,
+      "enhanced": false,
+      "enhancedHalf": false,
+      "enlarged": false,
+      "intensified": false,
+      "maximized": false,
+      "widened": false
+    },
+    "nameFormula": "",
+    "nameFromFormula": false,
+    "originId": "0205b2045969da40",
+    "originPack": "warcraftrpg2e.warcraft-spells",
+    "originVersion": 109,
+    "perRoundActions": [],
+    "possibleUpdate": false,
+    "powerPointsCost": 0,
+    "pr": false,
+    "preparation": {
+      "autoDeductCharges": true,
+      "maxAmount": 0,
+      "mode": "prepared",
+      "preparedAmount": 0
+    },
+    "psionic": "",
+    "range": {
+      "long": null,
+      "units": "ft",
+      "value": 15
+    },
+    "recharge": {
+      "current": 0,
+      "enabled": false,
+      "formula": ""
+    },
+    "requirements": [],
+    "requiresPsionicFocus": false,
+    "resistances": [],
+    "rollTableDraw": {
+      "formula": "",
+      "id": "",
+      "name": "",
+      "pack": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": "0",
+      "dcAutoAbility": "",
+      "dcAutoType": "",
+      "description": "Reflex half",
+      "originVersion": 97,
+      "type": "reflexhalf"
+    },
+    "school": "evo",
+    "shortDescription": "<p>1d4/level fi re damage (max 5d4).</p>",
+    "showInQuickbar": false,
+    "slOffset": 0,
+    "snip": "1d4/level fi re damage (max 5d4).",
+    "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 265-272",
+    "specialActions": [],
+    "specialId": null,
+    "specialPrepared": false,
+    "spellArea": "Cone-shaped burst",
+    "spellbook": "primary",
+    "spellDuration": "Instantaneous",
+    "spellDurationData": {
+      "units": "inst",
+      "value": null
+    },
+    "spellEffect": "",
+    "spellType": {
+      "_deprecated": true,
+      "value": ""
+    },
+    "sr": true,
+    "subschool": "",
+    "summon": [],
+    "tags": [],
+    "target": {
+      "value": "Cone-shaped burst"
+    },
+    "types": "fire",
+    "uniqueId": "",
+    "userNonRemovable": false,
+    "uses": {
+      "allowMultipleUses": false,
+      "autoDeductCharges": true,
+      "canBeLinked": false,
+      "chargesPerUse": 1,
+      "isResource": false,
+      "max": 0,
+      "maxFormula": "",
+      "maxPerUse": null,
+      "maxPerUseFormula": "",
+      "per": "",
+      "rechargeFormula": null,
+      "value": 0
+    },
+    "warcraftManualPolicy": {
+      "mode": "srd-baseline",
+      "reason": "The inherited SRD implementation is used with the Warcraft list assignment and spell level."
+    }
+  },
+  "type": "spell"
+}

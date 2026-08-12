@@ -1,0 +1,283 @@
+{
+  "_embedded": {},
+  "_id": "579add507fc51333",
+  "_stats": {
+    "compendiumSource": null,
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "lastModifiedBy": null,
+    "modifiedTime": null,
+    "systemId": null,
+    "systemVersion": null
+  },
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "catalog": {
+        "completeListEntry": true,
+        "generated": true,
+        "status": "srd-mechanics-with-warcraft-header"
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          271,
+          273,
+          338
+        ],
+        "printedPages": [
+          269,
+          271,
+          336
+        ],
+        "section": "Shapechange",
+        "verification": "text-extracted-header"
+      }
+    }
+  },
+  "folder": null,
+  "img": "systems/warcraftrpg2e/icons/spells/named-spells/shapechange.png",
+  "name": "Shapechange",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "ability": {
+      "attack": "",
+      "critMult": 2,
+      "critRange": 20,
+      "damage": "",
+      "damageMult": 1,
+      "twoHandedOnly": false,
+      "vsTouchAc": false
+    },
+    "actionType": "other",
+    "activateActions": [],
+    "activation": {
+      "cost": 1,
+      "type": "standard"
+    },
+    "addedLevel": 0,
+    "attack": {
+      "parts": []
+    },
+    "attackBonus": "",
+    "attackCountFormula": "",
+    "attackNotes": "",
+    "attackParts": [],
+    "atWill": false,
+    "autoscaleAttackParts": "",
+    "baseCl": "0",
+    "castTime": "1 standard action",
+    "changes": [],
+    "classSource": "",
+    "clOffset": 0,
+    "combatChanges": [],
+    "components": {
+      "divineFocus": 0,
+      "focus": true,
+      "material": false,
+      "somatic": true,
+      "value": "V, S, F",
+      "verbal": true
+    },
+    "conditionals": [],
+    "container": "None",
+    "containerWeightless": false,
+    "contextNotes": [],
+    "createdBy": "",
+    "creationChanges": [],
+    "critConfirmBonus": "",
+    "customAttributes": {},
+    "customAttributesLocked": false,
+    "customReferenceId": "",
+    "customTag": "",
+    "damage": {
+      "alternativeParts": [],
+      "parts": []
+    },
+    "damageReduction": [],
+    "deactivateActions": [],
+    "description": {
+      "chat": "",
+      "unidentified": "",
+      "value": "<p>Transforms you into any</p>"
+    },
+    "display": "Personal",
+    "duration": {
+      "units": "",
+      "value": null
+    },
+    "effectNotes": "Assumed form can be up to [[(min(25, @cl))]] HD.",
+    "epic": "",
+    "favorite": false,
+    "formula": "",
+    "identifiedName": "Shapechange",
+    "index": {
+      "subType": null,
+      "uniqueId": ""
+    },
+    "isDomainSpell": false,
+    "isPower": false,
+    "isSpellSpontaneousReplacement": false,
+    "learnedAt": {
+      "bloodline": [],
+      "class": [
+        [
+          "Druid",
+          9
+        ]
+      ],
+      "domain": [
+        [
+          "Animal",
+          9
+        ]
+      ],
+      "elementalSchool": [],
+      "subDomain": []
+    },
+    "level": 9,
+    "linkedChargeItem": {
+      "id": null,
+      "img": null,
+      "name": null
+    },
+    "linkId": "",
+    "linkImported": false,
+    "linkSourceId": "",
+    "linkSourceName": "",
+    "materials": {
+      "consumed": {
+        "_deprecated": true,
+        "value": false
+      },
+      "focus": "a jade circlet worth no less than 1,500 gp, which you must place on your head when casting the spell  (the focus melds into your new form when you change shape )",
+      "value": ""
+    },
+    "maxDamageDice": 0,
+    "maxDamageDiceFormula": "",
+    "measureTemplate": {
+      "customColor": "",
+      "customTexture": "",
+      "overrideColor": false,
+      "overrideTexture": false,
+      "size": 0,
+      "type": ""
+    },
+    "metamagicFeats": {
+      "empowered": false,
+      "enhanced": false,
+      "enhancedHalf": false,
+      "enlarged": false,
+      "intensified": false,
+      "maximized": false,
+      "widened": false
+    },
+    "nameFormula": "",
+    "nameFromFormula": false,
+    "originId": "579add507fc51333",
+    "originPack": "warcraftrpg2e.warcraft-spells",
+    "originVersion": 108,
+    "perRoundActions": [],
+    "possibleUpdate": false,
+    "powerPointsCost": 17,
+    "pr": false,
+    "preparation": {
+      "autoDeductCharges": true,
+      "maxAmount": 0,
+      "mode": "prepared",
+      "preparedAmount": 0
+    },
+    "psionic": "",
+    "range": {
+      "long": null,
+      "units": "personal",
+      "value": null
+    },
+    "recharge": {
+      "current": 0,
+      "enabled": false,
+      "formula": ""
+    },
+    "requirements": [],
+    "requiresPsionicFocus": false,
+    "resistances": [],
+    "rollTableDraw": {
+      "formula": "",
+      "id": "",
+      "name": "",
+      "pack": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": "0",
+      "dcAutoAbility": "",
+      "dcAutoType": "",
+      "description": "None",
+      "originVersion": 97,
+      "type": ""
+    },
+    "school": "trs",
+    "shortDescription": "<p>Transforms you into any</p>",
+    "showInQuickbar": false,
+    "slOffset": 0,
+    "snip": "Transforms you into any",
+    "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 269-271",
+    "specialActions": [
+      {
+        "action": "Create unique \"Shapechange\" from \"warcraftrpg2e.commonbuffs\" on target;Set buff \"Shapechange\" field data.level to max(1,(@cl)) on target;Activate buff \"Shapechange\" on target",
+        "condition": "",
+        "img": "icons/svg/item-bag.svg",
+        "name": "Shapechange"
+      }
+    ],
+    "specialId": null,
+    "specialPrepared": false,
+    "spellArea": "",
+    "spellbook": "primary",
+    "spellDuration": "10 min./level (D)",
+    "spellDurationData": {
+      "units": "minutePerLevel",
+      "value": 10
+    },
+    "spellEffect": "",
+    "spellType": {
+      "_deprecated": true,
+      "value": ""
+    },
+    "sr": false,
+    "subschool": "",
+    "summon": [],
+    "tags": [],
+    "target": {
+      "value": "You"
+    },
+    "types": "",
+    "uniqueId": "",
+    "userNonRemovable": false,
+    "uses": {
+      "allowMultipleUses": false,
+      "autoDeductCharges": true,
+      "canBeLinked": false,
+      "chargesPerUse": 1,
+      "isResource": false,
+      "max": 0,
+      "maxFormula": "",
+      "maxPerUse": null,
+      "maxPerUseFormula": "",
+      "per": "",
+      "rechargeFormula": null,
+      "value": 0
+    },
+    "warcraftManualPolicy": {
+      "mode": "srd-baseline-with-manual-boundary",
+      "reason": "SRD mechanics are retained, but Warcraft-specific creatures, forms, slot manipulation, or persistent cross-actor state require GM adjudication."
+    }
+  },
+  "type": "spell"
+}

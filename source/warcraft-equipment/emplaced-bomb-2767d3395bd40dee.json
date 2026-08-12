@@ -1,0 +1,59 @@
+{
+  "_id": "2767d3395bd40dee",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "catalog": {
+        "category": "explosive",
+        "completeTableEntry": true,
+        "generated": true,
+        "status": "structured-table-data",
+        "tableValue": "80 gp; 5 lb."
+      },
+      "rules": {
+        "blastRadius": 5,
+        "damage": "4d6 fire",
+        "malfunctionRating": 1,
+        "rangeIncrement": null
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          186
+        ],
+        "printedPages": [
+          184
+        ],
+        "section": "Emplaced Bomb",
+        "verification": "table-extraction"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/item-bag.svg",
+  "name": "Emplaced Bomb",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "carried": true,
+    "description": {
+      "value": "<p><strong>Printed table value:</strong> 80 gp; 5 lb..</p>"
+    },
+    "hardness": 0,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "identified": true,
+    "identifiedName": "Emplaced Bomb",
+    "price": 80,
+    "quantity": 1,
+    "source": "World of Warcraft RPG, 2nd Edition, p. 184",
+    "subType": "gear",
+    "weight": 5
+  },
+  "type": "loot"
+}

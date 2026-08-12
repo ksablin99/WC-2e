@@ -1,0 +1,53 @@
+{
+  "_id": "4c6cfcd939492de4",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "catalog": {
+        "category": "foodAndLodging",
+        "completeTableEntry": true,
+        "generated": true,
+        "status": "structured-table-data",
+        "tableValue": "2 sp per night"
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          202
+        ],
+        "printedPages": [
+          200
+        ],
+        "section": "Poor Inn Stay",
+        "verification": "table-extraction"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/item-bag.svg",
+  "name": "Poor Inn Stay",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "carried": true,
+    "description": {
+      "value": "<p><strong>Printed table value:</strong> 2 sp per night.</p>"
+    },
+    "hardness": 0,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "identified": true,
+    "identifiedName": "Poor Inn Stay",
+    "price": 0.2,
+    "quantity": 1,
+    "source": "World of Warcraft RPG, 2nd Edition, p. 200",
+    "subType": "gear",
+    "weight": 0
+  },
+  "type": "loot"
+}

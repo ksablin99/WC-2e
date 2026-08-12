@@ -1,0 +1,59 @@
+{
+  "_id": "08fc317b24456728",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "catalog": {
+        "category": "explosive",
+        "completeTableEntry": true,
+        "generated": true,
+        "status": "structured-table-data",
+        "tableValue": "150 gp; 10 lb."
+      },
+      "rules": {
+        "blastRadius": 15,
+        "damage": "8d6 fire",
+        "malfunctionRating": 1,
+        "rangeIncrement": 5
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          186
+        ],
+        "printedPages": [
+          184
+        ],
+        "section": "Catapult Bomb",
+        "verification": "table-extraction"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/item-bag.svg",
+  "name": "Catapult Bomb",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "carried": true,
+    "description": {
+      "value": "<p><strong>Printed table value:</strong> 150 gp; 10 lb..</p>"
+    },
+    "hardness": 0,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "identified": true,
+    "identifiedName": "Catapult Bomb",
+    "price": 150,
+    "quantity": 1,
+    "source": "World of Warcraft RPG, 2nd Edition, p. 184",
+    "subType": "gear",
+    "weight": 10
+  },
+  "type": "loot"
+}

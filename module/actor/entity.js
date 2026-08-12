@@ -42,7 +42,29 @@ import {
   resolveClassPath,
   summarizeClassLevelRows,
 } from './helpers/classPathProgressionHelper.js';
-import { usesNaturalHitPointRecovery } from './helpers/warcraftDeathRules.js';
+import {
+  DEATH_RULE_WARCRAFT,
+  resolveDeathRule,
+  resolveWarcraftStabilization,
+  resolveWarcraftStableRecovery,
+  usesNaturalHitPointRecovery,
+  warcraftStabilizationDc,
+} from './helpers/warcraftDeathRules.js';
+import {
+  canApplyWarcraftAbilityDamage,
+  canApplyWarcraftAbilityDrain,
+  resolveWarcraftCreatureProfile,
+} from './helpers/warcraftCreatureRules.js';
+import { warcraftRestHitPointRecovery } from './helpers/warcraftNaturalRecovery.js';
+import {
+  clearPendingHeroPoint,
+  heroPointRollBonus,
+} from './helpers/warcraftHeroPoints.js';
+import {
+  allocateWarcraftPrestigeCasterLevels,
+  evaluateWarcraftSpellEligibility,
+  getWarcraftSlotPool,
+} from './helpers/warcraftSpellcastingHelper.js';
 
 /**
  * Extend the base Actor class to implement additional logic specialized for D&D5e.
@@ -325,6 +347,11 @@ export class ActorPF extends Actor {
         isSpellcastingSpontaneus: cls.system.spellcastingSpontaneus === true,
         spellcastingPreparationMode: cls.system.spellcastingPreparationMode || "",
         repertoireSkill: cls.system.repertoireSkill || "spl",
+        usesWarcraftSlotPool: cls.system.usesWarcraftSlotPool === true,
+        warcraftPoolKey: cls.system.warcraftPoolKey || cls.system.spellslotAbility || cls.system.spellcastingAbility || "",
+        warcraftParentClass: cls.system.warcraftParentClass || cls.name,
+        warcraftPathBonusSlot: cls.system.warcraftPathBonusSlot === true,
+        specialSlotLevel0: cls.system.specialSlotLevel0 === true,
         isArcane: cls.system.spellcastingType !== null &&
           cls.system.spellcastingType === 'arcane',
         spellcastingType: cls.system.spellcastingType,
@@ -398,6 +425,17 @@ export class ActorPF extends Actor {
       }
     });
 
+    const warcraftCasterAdvancement = allocateWarcraftPrestigeCasterLevels(
+      actorData.items.filter((obj) => obj.type === 'class'),
+    );
+    for (const [classTag, casterLevels] of Object.entries(
+      warcraftCasterAdvancement.byClass)) {
+      if (preparedData.classes[classTag]) {
+        preparedData.classes[classTag].warcraftCasterLevelBonus = casterLevels;
+      }
+    }
+    preparedData.warcraftUnresolvedCasterAdvancement = warcraftCasterAdvancement.unresolved;
+
     let naturalAttackCount = (actorData.items || []).filter(
       (o) => o.type === 'attack' && o.system.attackType === 'natural',
     )?.length;
@@ -422,6 +460,19 @@ export class ActorPF extends Actor {
       : [];
     preparedData.combinedDR = preparedData.damageReduction ? foundry.utils.duplicate(
       preparedData.damageReduction) : [];
+    const creatureProfile = resolveWarcraftCreatureProfile({
+      creatureType: preparedData.attributes.creatureType,
+      deathRule: resolveDeathRule(
+        preparedData.attributes.deathRule,
+        this.race?.system?.deathRule,
+        preparedData.attributes.creatureType,
+      ),
+    });
+    if (creatureProfile.immunities.length) {
+      const existing = String(preparedData.traits.ci.custom || '')
+        .split(';').map((entry) => entry.trim()).filter(Boolean);
+      preparedData.traits.ci.custom = [...new Set([...existing, ...creatureProfile.immunities])].join('; ');
+    }
     let erDrRollData = this.getRollData();
 
     for (let [a, abl] of Object.entries(preparedData.abilities)) {
@@ -543,6 +594,7 @@ export class ActorPF extends Actor {
           spellbook.cl.total += Math.floor(
             preparedData.classes[spellbook.class].level / 2);
         else spellbook.cl.total += preparedData.classes[spellbook.class].level;
+        spellbook.cl.total += preparedData.classes[spellbook.class].warcraftCasterLevelBonus || 0;
         let spellcastingType = spellbook.spellcastingType;
         if (
           spellcastingType !== undefined &&
@@ -742,9 +794,6 @@ export class ActorPF extends Actor {
         .filter((o) => o.type === "class")
         .forEach((c) => {
           priorLevel += c.system?.la || 0;
-          if (c.system.classType === "racial") {
-            priorLevel += o.system.levels || 0;
-          }
         });
     }
 
@@ -866,7 +915,7 @@ export class ActorPF extends Actor {
     //LogHelper.log('ActorPF | updateClassProgressionLevel | Starting update')
     const classes = this.items.filter(
       (o) => o.type === 'class' && foundry.utils.getProperty(o.system, 'classType') !==
-        'racial').sort((a, b) => {
+        'template').sort((a, b) => {
           return a.sort - b.sort;
         });
     let updateData = {};
@@ -1126,13 +1175,13 @@ export class ActorPF extends Actor {
     let spellsToAdd = [];
     let spellbook = this.system.attributes.spells.spellbooks[_spellbookKey];
     let spellbookClass = this.system.classes[spellbook.class];
-    if (spellbookClass?.hasSpellbook) {
+    if (spellbookClass?.hasSpellbook && spellbookClass.spelllist?.size > 0) {
       LogHelper.log(spellbookClass.spelllist);
       for (let spellData of spellbookClass.spelllist.values()) {
         if (spellData.level !== parseInt(level)) continue;
         const pack = game.packs.find((p) => p.metadata.id === spellData.pack);
         const packItem = await pack.getDocument(spellData.id);
-        if (itemData) {
+        if (packItem) {
           let itemData = packItem.toObject(true);
           if (itemData._id) delete itemData._id;
           itemData.system.level = spellData.level;
@@ -1150,10 +1199,20 @@ export class ActorPF extends Actor {
           let obj = _obj.toObject(true);
           if (obj.type !== 'spell') continue;
           let foundLevel = false;
-          if (obj.system.learnedAt !== undefined) {
+          if (spellbookClass?.classPaths?.enabled === true) {
+            const eligibility = evaluateWarcraftSpellEligibility(
+              obj.system,
+              spellbookClass,
+              { parentClass: spellbookClass.name },
+            );
+            if (eligibility.eligible) {
+              obj.system.level = eligibility.spellLevel;
+              obj.system.warcraftLearnedPath = eligibility.path;
+              foundLevel = true;
+            }
+          } else if (obj.system.learnedAt !== undefined) {
             obj.system.learnedAt.class.forEach((learnedAtObj) => {
-              if (learnedAtObj[0].toLowerCase() ===
-                spellbookClass.name.toLowerCase()) {
+              if (learnedAtObj[0].toLowerCase() === spellbookClass.name.toLowerCase()) {
                 obj.system.level = learnedAtObj[1];
                 foundLevel = true;
               }
@@ -1304,7 +1363,11 @@ export class ActorPF extends Actor {
     attackData['system.nonLethal'] = item.system.properties.nnl;
     attackData['system.thrown'] = item.system.properties.thr;
     attackData['system.returning'] = item.system.properties.ret;
-    attackData['system.noAmmoRequired'] = item.system.noAmmoRequired || false;
+    // Warcraft firearms consume their linked ammunition during the explicit
+    // reload action, so the generic attack dialog must not deduct it again.
+    attackData['system.noAmmoRequired'] = item.system.noAmmoRequired || Boolean(
+      item.flags?.warcraftrpg2e?.rules?.ammunition && item.flags?.warcraftrpg2e?.rules?.capacity
+    );
 
     // SRD 3.5e: extra manufactured attack at +6, +11, +16, … (non-epic BAB only).
     let extraAttacks = [];
@@ -2101,7 +2164,29 @@ export class ActorPF extends Actor {
             : ` - ${Math.abs(savingThrowManualBonus)}`;
       }
 
+      const heroPointBonus = heroPointRollBonus(this, ['save', 'd20']);
+      if (heroPointBonus) {
+        saveRollFormula += ` + ${heroPointBonus}`;
+        props.push({
+          header: game.i18n.localize('D35E.HeroPoints'),
+          value: [game.i18n.localize('D35E.WarcraftHeroSaveBonus')],
+        });
+      }
+
       let roll = await new Roll35e(saveRollFormula, rollData).roll();
+      if (heroPointBonus) {
+        rollData.heroPointBaseTotal = roll.total - heroPointBonus;
+        rollData.heroPointImprovedEvasion = Boolean(
+          target && rollData.heroPointBaseTotal >= target && /(?:half|partial)$/.test(_savingThrow)
+        );
+        if (rollData.heroPointImprovedEvasion) {
+          props.push({
+            header: game.i18n.localize('D35E.HeroPoints'),
+            value: [game.i18n.localize('D35E.WarcraftHeroIgnoreEffect')],
+          });
+        }
+        await clearPendingHeroPoint(this);
+      }
 
       let modifiersList = foundry.utils.duplicate(savingThrowSourceDetails);
       modifiersList.unshift(
@@ -2978,19 +3063,23 @@ export class ActorPF extends Actor {
     if (notes.length > 0) props.push({ header: 'Notes', value: notes });
     const label = CONFIG.D35E.abilities[abilityId];
     const abl = this.system.abilities[abilityId];
-    return DicePF.d20Roll({
+    const heroPointBonus = heroPointRollBonus(this, ['d20']);
+    const roll = await DicePF.d20Roll({
       event: options.event,
-      parts: ['@mod + @checkMod - @drain'],
+      parts: ['@mod + @checkMod - @drain + @heroPointBonus'],
       data: {
         mod: abl.mod,
         checkMod: abl.checkMod,
         drain: foundry.utils.getProperty(this.system, 'attributes.energyDrain') || 0,
+        heroPointBonus,
       },
       title: game.i18n.localize('D35E.AbilityTest').format(label),
       speaker: ChatMessage.getSpeaker({ actor: this }),
       chatTemplate: 'systems/warcraftrpg2e/templates/chat/roll-ext.html',
       chatTemplateData: { hasProperties: props.length > 0, properties: props },
     });
+    if (heroPointBonus) await clearPendingHeroPoint(this);
+    return roll;
   }
 
   async rollTurnUndead(name = 'Undead') {
@@ -3362,6 +3451,12 @@ export class ActorPF extends Actor {
       this._addCombatChangesToRollData(allCombatChanges, rollData);
 
       ac += parseInt(rollData.featAC) || 0;
+      const heroPointBonus = heroPointRollBonus(this, 'defense');
+      if (heroPointBonus) {
+        ac += heroPointBonus;
+        rollModifiers.push(game.i18n.localize('D35E.WarcraftHeroAcBonus'));
+        await clearPendingHeroPoint(this);
+      }
       rollData.featACList = rollData.featACList || [];
       rollData.featACList.unshift(
         { value: baseAc, sourceName: game.i18n.localize('D35E.AC') });
@@ -3515,6 +3610,15 @@ export class ActorPF extends Actor {
         abilityField = `system.abilities.${ability}.damage`,
         abilityDamage = a.system.abilities[ability].damage || 0,
         updateData = {};
+      if (!canApplyWarcraftAbilityDamage({
+        creatureType: a.system.attributes?.creatureType,
+        deathRule: resolveDeathRule(
+          a.system.attributes?.deathRule,
+          a.race?.system?.deathRule,
+          a.system.attributes?.creatureType,
+        ),
+        ability,
+      })) continue;
       updateData[abilityField] = abilityDamage + damage;
       promises.push(t.actor.update(updateData));
     }
@@ -3541,6 +3645,14 @@ export class ActorPF extends Actor {
         abilityField = `system.abilities.${ability}.drain`,
         abilityDrain = a.system.abilities[ability].drain || 0,
         updateData = {};
+      if (!canApplyWarcraftAbilityDrain({
+        creatureType: a.system.attributes?.creatureType,
+        deathRule: resolveDeathRule(
+          a.system.attributes?.deathRule,
+          a.race?.system?.deathRule,
+          a.system.attributes?.creatureType,
+        ),
+      })) continue;
       updateData[abilityField] = abilityDrain + damage;
       promises.push(t.actor.update(updateData));
     }
@@ -3984,6 +4096,9 @@ export class ActorPF extends Actor {
             ui.notifications.warn(
               `No Spellbook found for spell. Adding to Primary spellbook.`);
           }
+          obj.system.isDomainSpell = true;
+          obj.system.preparation ||= {};
+          obj.system.preparation.prepared = false;
         } else {
           let spellbook = this.system.attributes.spells.spellbooks[obj.system.spellbook];
           let foundLevel = false;
@@ -4018,6 +4133,19 @@ export class ActorPF extends Actor {
                     obj.system.spellbook = _spellbookKey;
                   }
                 }
+                const eligibility = evaluateWarcraftSpellEligibility(
+                  obj.system,
+                  _spellbookClass,
+                  { parentClass: spellbookClass },
+                );
+                if (eligibility.eligible && eligibility.path) {
+                  spellbook = _spellbook;
+                  foundByClass = true;
+                  obj.system.spellbook = _spellbookKey;
+                  obj.system.level = eligibility.spellLevel;
+                  obj.system.warcraftLearnedPath = eligibility.path;
+                  foundLevel = true;
+                }
               }
             }
             if (spellbook === undefined) {
@@ -4030,6 +4158,25 @@ export class ActorPF extends Actor {
           }
           let spellbookClass = this.system.classes[spellbook.class]?.name ||
             'Missing';
+          const warcraftEligibility = evaluateWarcraftSpellEligibility(
+            obj.system,
+            this.system.classes[spellbook.class] || {},
+            {
+              parentClass: spellbookClass,
+              learnedPath: obj.system.warcraftLearnedPath,
+            },
+          );
+          if (!warcraftEligibility.eligible) {
+            ui.notifications.error(warcraftEligibility.reason);
+            obj.system.warcraftEligibilityError = warcraftEligibility.reason;
+          } else {
+            obj.system.warcraftEligibilityError = "";
+            if (warcraftEligibility.path) {
+              obj.system.warcraftLearnedPath = warcraftEligibility.path;
+              obj.system.level = warcraftEligibility.spellLevel;
+              foundLevel = true;
+            }
+          }
           if (this.system.classes[spellbook.class]?.hasSpellbook) {
             let spellId = obj.system
               ? `${obj.system.originPack}.${obj.system.originId}`
@@ -4823,6 +4970,15 @@ export class ActorPF extends Actor {
         // Rolls arbitrary attack
         //LogHelper.log(action)
         if (action.parameters.length === 2) {
+          if (!canApplyWarcraftAbilityDamage({
+            creatureType: this.system.attributes?.creatureType,
+            deathRule: resolveDeathRule(
+              this.system.attributes?.deathRule,
+              this.race?.system?.deathRule,
+              this.system.attributes?.creatureType,
+            ),
+            ability: action.parameters[0],
+          })) break;
           let damage = await new Roll35e(cleanParam(action.parameters[1]),
             actionRollData).roll();
           let damageTotal = damage.total;
@@ -4872,6 +5028,14 @@ export class ActorPF extends Actor {
         // Rolls arbitrary attack
         //LogHelper.log(action)
         if (action.parameters.length === 2) {
+          if (!canApplyWarcraftAbilityDrain({
+            creatureType: this.system.attributes?.creatureType,
+            deathRule: resolveDeathRule(
+              this.system.attributes?.deathRule,
+              this.race?.system?.deathRule,
+              this.system.attributes?.creatureType,
+            ),
+          })) break;
           let damage = await new Roll35e(cleanParam(action.parameters[1]),
             actionRollData).roll();
           let damageTotal = damage.total;
@@ -5735,6 +5899,74 @@ export class ActorPF extends Actor {
     new ActorRestDialog(this).render(true);
   }
 
+  /** Roll the Warcraft d% stabilization check for a dying living creature. */
+  async rollWarcraftStabilization() {
+    const deathRule = resolveDeathRule(
+      this.system.attributes.deathRule,
+      this.race?.system?.deathRule,
+      this.system.attributes.creatureType,
+    );
+    if (deathRule !== DEATH_RULE_WARCRAFT) {
+      return ui.notifications.warn(game.i18n.localize('D35E.WarcraftStabilizationLivingOnly'));
+    }
+    const roll = await new Roll35e('1d100', this.getRollData()).roll();
+    const staminaScore = Number(this.system.abilities.con.total ?? this.system.abilities.con.value ?? 0);
+    const healDc = warcraftStabilizationDc(this.system.attributes.hp.value);
+    const result = resolveWarcraftStabilization({
+      hitPoints: this.system.attributes.hp.value,
+      staminaScore,
+      roll: roll.total,
+    });
+    if (!result.attempted) return ui.notifications.warn(game.i18n.localize('D35E.WarcraftStabilizationDyingOnly'));
+    await this.update({
+      'system.attributes.hp.value': result.hitPoints,
+      'system.attributes.conditions.stable': result.stable,
+      'system.attributes.conditions.dying': result.dying,
+      'system.attributes.conditions.dead': result.dead,
+    });
+    await roll.toMessage({
+      speaker: ChatMessage.getSpeaker({ actor: this }),
+      flavor: game.i18n.format(result.success ? 'D35E.WarcraftStabilizationSuccess' : 'D35E.WarcraftStabilizationFailure', {
+        stamina: staminaScore,
+        dc: healDc,
+      }),
+    });
+    return result;
+  }
+
+  /** Roll an hourly recovery check for a stable living Warcraft creature. */
+  async rollWarcraftStableRecovery({ tended = false } = {}) {
+    const deathRule = resolveDeathRule(
+      this.system.attributes.deathRule,
+      this.race?.system?.deathRule,
+      this.system.attributes.creatureType,
+    );
+    if (deathRule !== DEATH_RULE_WARCRAFT || !this.system.attributes.conditions.stable) {
+      return ui.notifications.warn(game.i18n.localize('D35E.WarcraftRecoveryStableOnly'));
+    }
+    const roll = await new Roll35e('1d100', this.getRollData()).roll();
+    const staminaScore = Number(this.system.abilities.con.total ?? this.system.abilities.con.value ?? 0);
+    const result = resolveWarcraftStableRecovery({
+      hitPoints: this.system.attributes.hp.value,
+      staminaScore,
+      roll: roll.total,
+      tended,
+    });
+    await this.update({
+      'system.attributes.hp.value': result.hitPoints,
+      'system.attributes.conditions.stable': result.stable,
+      'system.attributes.conditions.disabled': result.disabled,
+      'system.attributes.conditions.unconscious': result.unconscious,
+      'system.attributes.conditions.helpless': result.unconscious,
+      'system.attributes.conditions.dead': result.dead,
+    });
+    await roll.toMessage({
+      speaker: ChatMessage.getSpeaker({ actor: this }),
+      flavor: game.i18n.localize(result.success ? 'D35E.WarcraftRecoverySuccess' : 'D35E.WarcraftRecoveryFailure'),
+    });
+    return result;
+  }
+
   async rest(restoreHealth, restoreDailyUses, longTermCare) {
     const actorData = this.system;
     let rollData = this.getRollData();
@@ -5750,16 +5982,28 @@ export class ActorPF extends Actor {
     // Restore health and ability damage
     if (restoreHealth) {
       const hd = actorData.attributes.hd.total;
+      const raceName = this.race?.name ?? actorData.details?.race ?? '';
+      const racialClassLevels = this.items
+        .filter((item) => item.type === 'class' && item.system.classType === 'racial')
+        .reduce((sum, item) => sum + Number(item.system.levels || 0), 0);
       const restoresHitPoints = usesNaturalHitPointRecovery(
         actorData.attributes.deathRule,
         this.race?.system?.deathRule,
+        actorData.attributes.creatureType,
       );
       let heal = {
-        hp: restoresHitPoints ? hd : 0,
+        hp: restoresHitPoints
+          ? warcraftRestHitPointRecovery({
+            hitDice: hd,
+            staminaModifier: actorData.abilities.con?.mod,
+            raceName,
+            racialClassLevels,
+            longTermCare,
+          })
+          : 0,
         abl: 1,
       };
       if (longTermCare) {
-        heal.hp *= 2;
         heal.abl *= 2;
       }
 
@@ -5860,7 +6104,9 @@ export class ActorPF extends Actor {
             usesSharedSlots = spellbookUsesSharedSlots(spellbook),
             usePowerPoints = spellbook?.usePowerPoints === true;
           if (
-            !usesSharedSlots &&
+            // Warcraft restricted-slot copies track their own single use even
+            // though the ordinary repertoire spends from a shared pool.
+            (itemData.specialPrepared === true || !usesSharedSlots) &&
             !usePowerPoints &&
             itemData.preparation.preparedAmount !==
             itemData.preparation.maxAmount
@@ -5893,9 +6139,18 @@ export class ActorPF extends Actor {
       }
 
       // Restore shared-slot spellbooks (spontaneous and repertoire)
+      for (const [poolKey, pool] of Object.entries(
+        actorData.attributes.spells.warcraftPools || {})) {
+        for (let sl of Object.keys(CONFIG.D35E.spellLevels)) {
+          updateData[`system.attributes.spells.warcraftPools.${poolKey}.spells.spell${sl}.value`] = foundry.utils.getProperty(
+            pool,
+            `spells.spell${sl}.max`,
+          ) || 0;
+        }
+      }
       for (let [key, spellbook] of Object.entries(
         actorData.attributes.spells.spellbooks)) {
-        if (spellbookUsesSharedSlots(spellbook)) {
+        if (spellbookUsesSharedSlots(spellbook) && !getWarcraftSlotPool(actorData, spellbook)) {
           for (let sl of Object.keys(CONFIG.D35E.spellLevels)) {
             updateData[`system.attributes.spells.spellbooks.${key}.spells.spell${sl}.value`] = foundry.utils.getProperty(
               actorData,
@@ -5922,6 +6177,10 @@ export class ActorPF extends Actor {
 
       updateData[`system.attributes.turnUndeadUses`] = foundry.utils.getProperty(actorData,
         `attributes.turnUndeadUsesTotal`);
+      updateData[`system.attributes.shoutUses.value`] = foundry.utils.getProperty(
+        actorData,
+        `attributes.shoutUses.max`,
+      ) ?? 0;
     }
 
     this.update(updateData);
@@ -5972,7 +6231,7 @@ export class ActorPF extends Actor {
     if (d.traits.fastHealingTotal) {
       actions.push({
         label: game.i18n.localize('D35E.FastHealing'),
-        value: `SelfDamage -${d.traits.fastHealingTotal * roundDelta} on self;`,
+        value: `SelfDamage -min(${d.traits.fastHealingTotal * roundDelta}, max(0, @attributes.hp.max - @attributes.hp.value)) on self;`,
         isTargeted: false,
         action: 'customAction',
         img: '',

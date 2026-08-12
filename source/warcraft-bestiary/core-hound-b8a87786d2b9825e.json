@@ -1,0 +1,1514 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "b58b7e195a342843",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 18,
+                "die": 8,
+                "expression": "18d8",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Outsider Hit Dice",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "high",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "189",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "18",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "16",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "7",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "16",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "17",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "10",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "13",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "40",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "4",
+              "misc",
+              "init",
+              "untyped"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "outsider",
+          "damageReduction": [
+            [
+              "15",
+              "magic",
+              false
+            ]
+          ],
+          "hd": 8,
+          "hp": 0,
+          "levels": 18,
+          "maxLevel": 50,
+          "resistances": [
+            [
+              "",
+              "energy-fire",
+              true,
+              false,
+              false
+            ],
+            [
+              "",
+              "energy-cold",
+              false,
+              true,
+              false
+            ]
+          ],
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "high"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 17"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "9d0b0b5ac16fe5a9",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                25
+              ],
+              "printedDamage": "3d8+9 plus 2d8 fire"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Bite",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "9",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Bite",
+          "damage": {
+            "parts": [
+              [
+                "3d8+9",
+                "Piercing or Bludgeoning",
+                "damage-piercing-bludgeoning"
+              ],
+              [
+                "2d8",
+                "Fire",
+                "energy-fire"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Bite +25 melee (3d8+9 plus 2d8 fire).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "bd0900b84be31625",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 2,
+              "id": "9d0b0b5ac16fe5a9",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Bite",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> 2 bites +25 melee (3d8+9 plus 2d8 fire).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "a15e916b4593caf2",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "Constrict 3d8+9 plus 2d8 fire"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                17
+              ],
+              "section": "Core Hound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Constrict 3d8+9 plus 2d8 fire",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Constrict 3d8+9 plus 2d8 fire.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 17",
+          "uniqueId": "wc-monster-core-hound-constrict-3d8-9-plus-2d8-fire"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "2c707e77ccef6a5d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "improved grab"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                17
+              ],
+              "section": "Core Hound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "improved grab",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> improved grab.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 17",
+          "uniqueId": "wc-monster-core-hound-improved-grab"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "1111a0869f026648",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "savage bite"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                17
+              ],
+              "section": "Core Hound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "savage bite",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> savage bite.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 17",
+          "uniqueId": "wc-monster-core-hound-savage-bite"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "2d90b3680d961fde",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Darkvision 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                17
+              ],
+              "section": "Core Hound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Darkvision 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Darkvision 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 17",
+          "uniqueId": "wc-monster-core-hound-darkvision-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "60b648a3638460a4",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "damage reduction 15/magic"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                17
+              ],
+              "section": "Core Hound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "damage reduction 15/magic",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> damage reduction 15/magic.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 17",
+          "uniqueId": "wc-monster-core-hound-damage-reduction-15-magic"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "b45b50557b60d8da",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "fire subtype"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                17
+              ],
+              "section": "Core Hound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "fire subtype",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> fire subtype.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 17",
+          "uniqueId": "wc-monster-core-hound-fire-subtype"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "86761028f8ce78a3",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "regeneration 10"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                17
+              ],
+              "section": "Core Hound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "regeneration 10",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> regeneration 10.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 17",
+          "uniqueId": "wc-monster-core-hound-regeneration-10"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "0dc163ffd4574812",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "scent"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                17
+              ],
+              "section": "Core Hound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "scent",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> scent.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 17",
+          "uniqueId": "wc-monster-core-hound-scent"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "fb68fec486c4d1b6",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Bull Rush"
+            },
+            "reference": {
+              "id": "549e4a1ee28eb65b",
+              "name": "Improved Bull Rush",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                17
+              ],
+              "section": "Core Hound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Bull Rush",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Bull Rush.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.549e4a1ee28eb65b]{Improved Bull Rush}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 17",
+          "uniqueId": "wc-monster-core-hound-improved-bull-rush"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "d071907e4eee22d9",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Initiative"
+            },
+            "reference": {
+              "id": "3232602c102e0494",
+              "name": "Improved Initiative",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                17
+              ],
+              "section": "Core Hound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Initiative",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Initiative.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.3232602c102e0494]{Improved Initiative}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 17",
+          "uniqueId": "wc-monster-core-hound-improved-initiative"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "469ee32350483b35",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Iron Will"
+            },
+            "reference": {
+              "id": "bf55b7e5d7d1a388",
+              "name": "Iron Will",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                17
+              ],
+              "section": "Core Hound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Iron Will",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Iron Will.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.bf55b7e5d7d1a388]{Iron Will}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 17",
+          "uniqueId": "wc-monster-core-hound-iron-will"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "1c63854dfc861622",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Power Attack"
+            },
+            "reference": {
+              "id": "95e094ad6c35e24e",
+              "name": "Power Attack",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                17
+              ],
+              "section": "Core Hound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Power Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Power Attack.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.95e094ad6c35e24e]{Power Attack}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 17",
+          "uniqueId": "wc-monster-core-hound-power-attack"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "0c74dfd42193c986",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Skilled (Listen and Spot)"
+            },
+            "reference": {
+              "id": "63e93d7c15badc3f",
+              "name": "Skilled",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                17
+              ],
+              "section": "Core Hound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Skilled (Listen and Spot)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Skilled (Listen and Spot).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.63e93d7c15badc3f]{Skilled}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 17",
+          "uniqueId": "wc-monster-core-hound-skilled-listen-and-spot"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "77605f5b24cbd2c6",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Track"
+            },
+            "reference": {
+              "id": "24251c982b9bb0bf",
+              "name": "Track",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                17
+              ],
+              "section": "Core Hound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Track",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Track.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.24251c982b9bb0bf]{Track}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 17",
+          "uniqueId": "wc-monster-core-hound-track"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "f992cc1760aa5fd5",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Weapon Focus (bite)"
+            },
+            "reference": {
+              "id": "fdea42738398197e",
+              "name": "Weapon Focus",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                17
+              ],
+              "section": "Core Hound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Weapon Focus (bite)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Weapon Focus (bite).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.fdea42738398197e]{Weapon Focus}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 17",
+          "uniqueId": "wc-monster-core-hound-weapon-focus-bite"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "937e833b4de71694",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Huge Outsider (Chaotic, Evil, Extraplanar, Fire); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "dd750e0d27b12249",
+              "name": "Outsider Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                17
+              ],
+              "section": "Core Hound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Outsider Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Huge Outsider (Chaotic, Evil, Extraplanar, Fire); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.dd750e0d27b12249]{Outsider Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 17",
+          "uniqueId": "wc-monster-core-hound-outsider-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "29e3afba663d1b4a",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Chaotic subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "4af67d5314947ffd",
+              "name": "Chaotic Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                17
+              ],
+              "section": "Core Hound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Chaotic Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Chaotic subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.4af67d5314947ffd]{Chaotic Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 17",
+          "uniqueId": "wc-monster-core-hound-chaotic-subtype-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "c474c0133c08a612",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Evil subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "ad80f8e8725dc664",
+              "name": "Evil Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                17
+              ],
+              "section": "Core Hound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Evil Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Evil subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.ad80f8e8725dc664]{Evil Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 17",
+          "uniqueId": "wc-monster-core-hound-evil-subtype-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "80f65bc399f3ef38",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Extraplanar subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "f56ea12b09ac91fc",
+              "name": "Extraplanar Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                17
+              ],
+              "section": "Core Hound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Extraplanar Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Extraplanar subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.f56ea12b09ac91fc]{Extraplanar Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 17",
+          "uniqueId": "wc-monster-core-hound-extraplanar-subtype-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "7479cab7be66c0e1",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Fire subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "2d6bdc174cc71ee5",
+              "name": "Fire Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                17
+              ],
+              "section": "Core Hound"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Fire Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Fire subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.2d6bdc174cc71ee5]{Fire Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 17",
+          "uniqueId": "wc-monster-core-hound-fire-subtype-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "b8a87786d2b9825e",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 27, Agy 9, Sta 22, Int 6, Spt 10, Cha 11",
+          "Advancement": "19-27 HD (Huge); 28-54 HD (Gargantuan)",
+          "Alignment": "Always chaotic evil",
+          "Area": "Firelands (The Elemental Plane), Molten Core",
+          "Armor Class": "16 (-2 size, -1 Agy, +9 natural), touch 7, flat- footed 16",
+          "Attack": "Bite +25 melee (3d8+9 plus 2d8 fire)",
+          "Base Attack/Grapple": "+18/+34",
+          "Challenge Rating": "14",
+          "Environment": "Warm land and underground",
+          "Feats": "Improved Bull Rush, Improved Initiative, Iron Will, Power Attack, Skilled (Listen and Spot), Track, Weapon Focus (bite)",
+          "Full Attack": "2 bites +25 melee (3d8+9 plus 2d8 fire)",
+          "Hit Dice": "18d8+108 (189 hp)",
+          "Initiative": "+3",
+          "Level Adjustment": "-",
+          "Organization": "Solitary, pair, or pack (3-5)",
+          "Saves": "Fort +17, Ref +10, Will +13",
+          "Skills": "Climb +29, Jump +29, Listen +23, Spot +23, Survival +21, Swim +29",
+          "Space/Reach": "15 ft./10 ft.",
+          "Special Attacks": "Constrict 3d8+9 plus 2d8 fire, improved grab, savage bite",
+          "Special Qualities": "Darkvision 60 ft., damage reduction 15/magic, fire subtype, regeneration 10, scent",
+          "Speed": "40 ft. (8 squares)",
+          "Treasure": "None"
+        },
+        "rulesCoverage": {
+          "actor-defense": 3,
+          "linked-reference": 12,
+          "manual": 5
+        },
+        "subtypes": [
+          "Chaotic",
+          "Evil",
+          "Extraplanar",
+          "Fire"
+        ]
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          18
+        ],
+        "printedPages": [
+          17
+        ],
+        "section": "Core Hound",
+        "verification": "native-text-table"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "b58b7e195a342843",
+    "9d0b0b5ac16fe5a9",
+    "bd0900b84be31625",
+    "a15e916b4593caf2",
+    "2c707e77ccef6a5d",
+    "1111a0869f026648",
+    "2d90b3680d961fde",
+    "60b648a3638460a4",
+    "b45b50557b60d8da",
+    "86761028f8ce78a3",
+    "0dc163ffd4574812",
+    "fb68fec486c4d1b6",
+    "d071907e4eee22d9",
+    "469ee32350483b35",
+    "1c63854dfc861622",
+    "0c74dfd42193c986",
+    "77605f5b24cbd2c6",
+    "f992cc1760aa5fd5",
+    "937e833b4de71694",
+    "29e3afba663d1b4a",
+    "c474c0133c08a612",
+    "80f65bc399f3ef38",
+    "7479cab7be66c0e1"
+  ],
+  "name": "Core Hound",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 11,
+        "penalty": 0,
+        "total": 11,
+        "userPenalty": 0,
+        "value": 11
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 6,
+        "origMod": 6,
+        "origTotal": 22,
+        "penalty": 0,
+        "total": 22,
+        "userPenalty": 0,
+        "value": 22
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -1,
+        "origMod": -1,
+        "origTotal": 9,
+        "penalty": 0,
+        "total": 9,
+        "userPenalty": 0,
+        "value": 9
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -2,
+        "origMod": -2,
+        "origTotal": 6,
+        "penalty": 0,
+        "total": 6,
+        "userPenalty": 0,
+        "value": 6
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 8,
+        "origMod": 8,
+        "origTotal": 27,
+        "penalty": 0,
+        "total": 27,
+        "userPenalty": 0,
+        "value": 27
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
+        "total": 10,
+        "userPenalty": 0,
+        "value": 10
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 16,
+          "value": 0
+        },
+        "normal": {
+          "total": 16,
+          "value": 0
+        },
+        "touch": {
+          "total": 7,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 18,
+        "nonepic": 18,
+        "total": 18,
+        "value": 0
+      },
+      "cmb": {
+        "total": 34,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "outsider",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 0,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 18,
+        "total": 18
+      },
+      "hp": {
+        "base": 189,
+        "max": 189,
+        "min": -22,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 189
+      },
+      "init": {
+        "bonus": 0,
+        "total": 3,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 9,
+      "savingThrows": {
+        "fort": {
+          "base": 17,
+          "total": 17
+        },
+        "ref": {
+          "base": 10,
+          "total": 10
+        },
+        "will": {
+          "base": 13,
+          "total": 13
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": null,
+        "darkvision": 60,
+        "lowLight": false,
+        "lowLightMultiplier": null,
+        "tremorsense": null
+      },
+      "speed": {
+        "land": {
+          "base": 40,
+          "total": 40
+        }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
+      }
+    },
+    "details": {
+      "alignment": "Always chaotic evil",
+      "biography": {
+        "public": "",
+        "value": "<p>Core Hound is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 14,
+      "environment": "Warm land and underground",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 18,
+        "value": 18
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 18d8+108 (189 hp)</p><p><strong>Initiative:</strong> +3</p><p><strong>Speed:</strong> 40 ft. (8 squares)</p><p><strong>Armor Class:</strong> 16 (-2 size, -1 Agy, +9 natural), touch 7, flat- footed 16</p><p><strong>Base Attack/Grapple:</strong> +18/+34</p><p><strong>Attack:</strong> Bite +25 melee (3d8+9 plus 2d8 fire)</p><p><strong>Full Attack:</strong> 2 bites +25 melee (3d8+9 plus 2d8 fire)</p><p><strong>Space/Reach:</strong> 15 ft./10 ft.</p><p><strong>Special Attacks:</strong> Constrict 3d8+9 plus 2d8 fire, improved grab, savage bite</p><p><strong>Special Qualities:</strong> Darkvision 60 ft., damage reduction 15/magic, fire subtype, regeneration 10, scent</p><p><strong>Saves:</strong> Fort +17, Ref +10, Will +13</p><p><strong>Abilities:</strong> Str 27, Agy 9, Sta 22, Int 6, Spt 10, Cha 11</p><p><strong>Skills:</strong> Climb +29, Jump +29, Listen +23, Spot +23, Survival +21, Swim +29</p><p><strong>Feats:</strong> Improved Bull Rush, Improved Initiative, Iron Will, Power Attack, Skilled (Listen and Spot), Track, Weapon Focus (bite)</p><p><strong>Area:</strong> Firelands (The Elemental Plane), Molten Core</p><p><strong>Organization:</strong> Solitary, pair, or pack (3-5)</p><p><strong>Treasure:</strong> None</p><p><strong>Advancement:</strong> 19-27 HD (Huge); 28-54 HD (Gargantuan)</p><p><strong>Level Adjustment:</strong> -</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 14,
+      "type": "Outsider"
+    },
+    "skills": {
+      "clm": {
+        "ability": "str",
+        "abilityModifier": 8,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 21,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 29,
+        "notes": "Printed total +29",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "jmp": {
+        "ability": "str",
+        "abilityModifier": 8,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 21,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 29,
+        "notes": "Printed total +29",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "lis": {
+        "ability": "wis",
+        "abilityModifier": 0,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 23,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 23,
+        "notes": "Printed total +23",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spt": {
+        "ability": "wis",
+        "abilityModifier": 0,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 23,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 23,
+        "notes": "Printed total +23",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "sur": {
+        "ability": "wis",
+        "abilityModifier": 0,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 21,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 21,
+        "notes": "Printed total +21",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "swm": {
+        "ability": "str",
+        "abilityModifier": 8,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 21,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 29,
+        "notes": "Printed total +29",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "huge",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": 10,
+      "regenTotal": 10,
+      "senses": "Darkvision 60 ft., damage reduction 15/magic, fire subtype, regeneration 10, scent",
+      "size": "huge",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

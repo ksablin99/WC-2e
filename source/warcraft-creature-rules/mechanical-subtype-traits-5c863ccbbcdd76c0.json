@@ -1,0 +1,42 @@
+{
+  "_embedded": {},
+  "_id": "5c863ccbbcdd76c0",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "creatureRule": {
+        "kind": "subtype",
+        "reusable": true
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          193
+        ],
+        "printedPages": [
+          192
+        ],
+        "section": "Mechanical Subtype",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/aura.svg",
+  "name": "Mechanical Subtype Traits",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilityType": "nat",
+    "description": {
+      "value": "<p>Marks a technological construct. It can be modified like a technological device; a helpless mechanical creature can normally be disabled after at least 1 full round with Disable Device or Use Technological Device at DC 15 + half its Hit Dice, subject to GM adjudication.</p><p>This reusable record defines shared conversion behavior. Individual actors carry exact printed exceptions and totals.</p>"
+    },
+    "featType": "trait",
+    "source": "World of Warcraft: Monster Guide, pp. 192",
+    "uniqueId": "wc-creature-rule-mechanical-subtype"
+  },
+  "type": "feat"
+}

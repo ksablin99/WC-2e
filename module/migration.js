@@ -1,6 +1,7 @@
 import { IntelligentItemHelper } from "./item/helpers/intelligentItemHelper.js";
 import { legacyAlignmentUpdate } from "./alignment-migration.js";
 import { dancingEnhancementItemUpdate, dancingWeaponItemUpdate } from "./dancing-migration.js";
+import { buildStealthMigrationUpdate } from "./actor/helpers/warcraftStealthMigration.js";
 import {
   createMigrationState,
   getPendingMigrations,
@@ -14,6 +15,7 @@ import {
 export const LEGACY_MIGRATION_ID = "legacy-3-0-1";
 export const LEGACY_ALIGNMENT_MIGRATION_ID = "legacy-alignment-3-0-3";
 export const DANCING_MIGRATION_ID = "dancing-enhancement-3-0-3";
+export const WARCRAFT_STEALTH_MIGRATION_ID = "warcraft-stealth-3-1-3";
 
 export const MIGRATIONS = [
   {
@@ -37,6 +39,13 @@ export const MIGRATIONS = [
     title: "D35E.MigrationDancingEnhancementTitle",
     description: "D35E.MigrationDancingEnhancementDescription",
     run: async () => migrateDancingEnhancements(),
+  },
+  {
+    id: WARCRAFT_STEALTH_MIGRATION_ID,
+    version: "3.1.3",
+    title: "D35E.MigrationWarcraftStealthTitle",
+    description: "D35E.MigrationWarcraftStealthDescription",
+    run: async () => migrateWarcraftStealth(),
   },
 ];
 
@@ -323,6 +332,69 @@ export const migrateDancingEnhancements = async function() {
   }
 
   return migrationResult(affected);
+};
+
+/**
+ * Merge legacy Hide and Move Silently records into Warcraft Stealth.
+ * Every affected actor receives a reversible flag backup and refund report.
+ */
+export const migrateWarcraftStealth = async function() {
+  if (!game.user.isGM) return ui.notifications.error(game.i18n.localize("D35E.ErrorUnauthorizedAction"));
+  const affected = createMigrationAffected();
+  let refundableInvestment = 0;
+
+  const updateActor = async (actor, type) => {
+    const updateData = buildStealthMigrationUpdate(actor);
+    if (foundry.utils.isEmpty(updateData)) return false;
+    refundableInvestment += Number(updateData["flags.warcraftrpg2e.migrations.stealth"]?.refundableInvestment ?? 0);
+    await actor.update(updateData, { enforceTypes: false });
+    recordMigrationAffected(affected, type);
+    return true;
+  };
+
+  for (const actor of game.actors.contents) await updateActor(actor, "Actor");
+
+  for (const scene of game.scenes.contents) {
+    const tokens = [];
+    for (const token of scene.tokens.contents ?? scene.tokens ?? []) {
+      if (token.actorLink || !token.actor) continue;
+      const updateData = buildStealthMigrationUpdate(token.actor);
+      if (foundry.utils.isEmpty(updateData)) continue;
+      refundableInvestment += Number(updateData["flags.warcraftrpg2e.migrations.stealth"]?.refundableInvestment ?? 0);
+      const tokenData = token.toObject();
+      const targetKey = tokenData.delta ? "delta" : "actorData";
+      tokenData[targetKey] = tokenData[targetKey] ?? {};
+      foundry.utils.mergeObject(tokenData[targetKey], foundry.utils.expandObject(updateData), {
+        inplace: true,
+        performDeletions: true,
+      });
+      tokens.push(tokenData);
+    }
+    if (tokens.length) {
+      await scene.update({ tokens }, { enforceTypes: false });
+      recordMigrationAffected(affected, "Scene token", tokens.length);
+    }
+  }
+
+  for (const pack of game.packs.filter((entry) => entry.metadata.package === "world" && entry.documentName === "Actor")) {
+    let count = 0;
+    await pack.migrate();
+    for (const actor of await pack.getDocuments()) {
+      const updateData = buildStealthMigrationUpdate(actor);
+      if (foundry.utils.isEmpty(updateData)) continue;
+      refundableInvestment += Number(updateData["flags.warcraftrpg2e.migrations.stealth"]?.refundableInvestment ?? 0);
+      await actor.update(updateData, { enforceTypes: false });
+      count += 1;
+    }
+    recordMigrationAffected(affected, `Compendium ${pack.documentName}`, count);
+  }
+
+  if (refundableInvestment) {
+    game.D35E.logger.warn(
+      `Warcraft Stealth migration preserved the greater legacy investment and reported ${refundableInvestment} potentially refundable skill points in actor migration flags.`
+    );
+  }
+  return { ...migrationResult(affected), refundableInvestment };
 };
 
 const migrateDancingEnhancementsCompendium = async function(pack) {

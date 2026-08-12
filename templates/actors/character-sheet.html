@@ -173,6 +173,14 @@
               <input style="flex: 1" type="number" name="system.attributes.heroPoints.max" value="{{system.attributes.heroPoints.max}}" min="0"/>
             </div>
           </li>
+          <li>
+            <div class="flexrow" title="{{ localize 'D35E.ShoutUses' }}">
+              <span style="flex: 2; margin-left: 4px">{{ localize 'D35E.ShoutUses' }}</span>
+              <input style="flex: 1" type="number" name="system.attributes.shoutUses.value" value="{{system.attributes.shoutUses.value}}" min="0" max="{{system.attributes.shoutUses.max}}"/>
+              <span style="flex: 0 8px; text-align: center">/</span>
+              <input style="flex: 1" type="number" value="{{system.attributes.shoutUses.max}}" min="0" readonly/>
+            </div>
+          </li>
           <ol class="item-list race-container" style="width: 66.66%">
           <li class="flexrow item {{#unless race}}norace{{/unless}}" {{#if race}}data-item-id="{{race.id}}"{{/if}} style="width: 100%">
             <div class="race item-image {{#if race}}rollable{{/if}}" style="background-image: url({{race.img}})" title="{{labels.race}}">

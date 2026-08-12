@@ -1,0 +1,169 @@
+{
+  "10": [{ "name": "Arcane Nullifier X-21" }],
+  "11": [{ "name": "Basilisk" }],
+  "12": [{ "name": "Black Ooze" }],
+  "13": [{ "name": "Bloodpetal" }, { "name": "Bloodpetal Flayer" }],
+  "14": [{ "name": "Carrion Grub" }],
+  "16": [{ "name": "Cloud Serpent" }],
+  "17": [{ "name": "Core Hound" }],
+  "20": [
+    { "name": "Fel Orc", "kind": "example" },
+    { "name": "Crowd Pummeler 9-60" }
+  ],
+  "24": [{ "name": "Nerubian Worker Crypt Fiend", "kind": "example" }],
+  "25": [{ "name": "Devilsaur" }],
+  "27": [{ "name": "Diemetradon" }],
+  "28": [{ "name": "Pterrordax" }],
+  "29": [{ "name": "Stegodon" }],
+  "30": [{ "name": "Threshadon" }],
+  "31": [{ "name": "Dire Ape" }],
+  "32": [{ "name": "Dire Bat" }, { "name": "Dire Bear" }],
+  "33": [{ "name": "Dire Boar" }],
+  "34": [{ "name": "Dire Condor" }, { "name": "Dire Hyena" }],
+  "35": [{ "name": "Dire Lion" }],
+  "36": [{ "name": "Dire Gargoyle" }],
+  "37": [{ "name": "Doomguard" }],
+  "40": [
+    { "name": "Black Whelp", "typeLine": "Medium Dragon (Earth, Fire)" },
+    { "name": "Black Drake", "typeLine": "Huge Dragon (Earth, Fire)" }
+  ],
+  "42": [
+    { "name": "Bronze Whelp", "typeLine": "Medium Dragon (Air)" },
+    { "name": "Bronze Drake", "typeLine": "Huge Dragon (Air)" }
+  ],
+  "44": [
+    { "name": "Green Whelp", "typeLine": "Medium Dragon (Air)" },
+    { "name": "Green Drake", "typeLine": "Huge Dragon (Air)" }
+  ],
+  "46": [
+    { "name": "Red Whelp", "typeLine": "Medium Dragon (Fire)" },
+    { "name": "Red Drake", "typeLine": "Huge Dragon (Fire)" }
+  ],
+  "48": [{ "name": "Dragonspawn Wyrmkin" }, { "name": "Dragonspawn Scalebane" }],
+  "50": [{ "name": "Dreadlord" }],
+  "51": [{ "name": "Dark Iron Dwarf" }],
+  "54": [
+    { "name": "Lesser Wind Elemental", "typeLine": "Small Elemental (Air, Extraplanar)" },
+    { "name": "Wind Elemental", "typeLine": "Medium Elemental (Air, Extraplanar)" },
+    { "name": "Greater Wind Elemental", "typeLine": "Large Elemental (Air, Extraplanar)" },
+    { "name": "Whirlwind Ripper", "typeLine": "Huge Elemental (Air, Extraplanar)" },
+    { "name": "Whirlwind Shredder", "typeLine": "Huge Elemental (Air, Extraplanar)" },
+    { "name": "Whirlwind Stormwalker", "typeLine": "Huge Elemental (Air, Extraplanar)" }
+  ],
+  "56": [
+    { "name": "Lesser Rock Elemental", "typeLine": "Small Elemental (Earth, Extraplanar)" },
+    { "name": "Rock Elemental", "typeLine": "Medium Elemental (Earth, Extraplanar)" },
+    { "name": "Greater Rock Elemental", "typeLine": "Large Elemental (Earth, Extraplanar)" },
+    { "name": "Thundering Boulderkin", "typeLine": "Huge Elemental (Earth, Extraplanar)" },
+    { "name": "Rumbling Exile", "typeLine": "Huge Elemental (Earth, Extraplanar)" },
+    { "name": "Enraged Rock Elemental", "typeLine": "Huge Elemental (Earth, Extraplanar)" }
+  ],
+  "58": [
+    { "name": "Lesser Living Flame", "typeLine": "Small Elemental (Fire, Extraplanar)" },
+    { "name": "Living Flame", "typeLine": "Medium Elemental (Fire, Extraplanar)" },
+    { "name": "Greater Living Flame", "typeLine": "Large Elemental (Fire, Extraplanar)" },
+    { "name": "Flaming Elemental", "typeLine": "Huge Elemental (Fire, Extraplanar)" },
+    { "name": "Blazing Elemental", "typeLine": "Huge Elemental (Fire, Extraplanar)" },
+    { "name": "Fiery Destroyer", "typeLine": "Huge Elemental (Fire, Extraplanar)" }
+  ],
+  "60": [
+    { "name": "Lava Elemental", "typeLine": "Large Elemental (Earth, Extraplanar, Fire)" },
+    { "name": "Lava Surger", "typeLine": "Huge Elemental (Earth, Extraplanar, Fire)" }
+  ],
+  "61": [
+    { "name": "Lesser Deep Elemental", "typeLine": "Small Elemental (Water, Extraplanar)" },
+    { "name": "Deep Elemental", "typeLine": "Medium Elemental (Water, Extraplanar)" },
+    { "name": "Greater Deep Elemental", "typeLine": "Large Elemental (Water, Extraplanar)" },
+    { "name": "Befouled Water Elemental", "typeLine": "Huge Elemental (Water, Extraplanar)" },
+    { "name": "Sea Spray", "typeLine": "Huge Elemental (Water, Extraplanar)" },
+    { "name": "Sea Elemental", "typeLine": "Huge Elemental (Water, Extraplanar)" }
+  ],
+  "64": [{ "name": "Blood Elf" }],
+  "66": [{ "name": "Elite Dark Iron Rifleman", "kind": "example" }],
+  "67": [
+    { "name": "Entropic Beast", "typeLine": "Large Elemental (Extraplanar, Fire)" },
+    { "name": "Entropic Horror", "typeLine": "Large Elemental (Extraplanar, Fire)" }
+  ],
+  "68": [
+    { "name": "Felguard", "typeLine": "Medium Outsider (Demon, Evil, Extraplanar)" },
+    { "name": "Felguard Elite", "typeLine": "Large Outsider (Demon, Evil, Extraplanar)" }
+  ],
+  "70": [{ "name": "Felhound" }, { "name": "Felstalker" }, { "name": "Fel Ravager" }],
+  "71": [
+    { "name": "Felsteed", "typeLine": "Large Outsider (Demon, Evil, Extraplanar, Lawful)" },
+    { "name": "Dreadsteed", "typeLine": "Large Outsider (Demon, Evil, Extraplanar, Lawful)" }
+  ],
+  "73": [{ "name": "Flamewaker" }],
+  "76": [
+    { "name": "Ghostly Warrior", "kind": "example" },
+    { "name": "Ghoul" }
+  ],
+  "78": [{ "name": "Frost Giant" }],
+  "79": [{ "name": "Molten Giant" }],
+  "80": [{ "name": "Sea Giant" }, { "name": "Sea Giant Behemoth" }],
+  "82": [{ "name": "Gnoll" }],
+  "83": [{ "name": "Leper Gnome" }],
+  "85": [{ "name": "Harvest Golem" }],
+  "86": [{ "name": "Grell" }, { "name": "Grellkin" }],
+  "87": [{ "name": "Harpy" }],
+  "88": [{ "name": "Helboar" }],
+  "89": [{ "name": "Hydra" }],
+  "91": [{ "name": "Imp" }],
+  "92": [{ "name": "Lesser Infernal" }, { "name": "Infernal" }, { "name": "Massive Infernal" }],
+  "94": [{ "name": "Kobold" }],
+  "97": [{ "name": "Human Lich", "kind": "example" }],
+  "98": [
+    { "name": "Makrura", "typeLine": "Medium Monstrous Humanoid (Aquatic, Makrura)" },
+    { "name": "Makrura Tidecaller", "typeLine": "Medium Monstrous Humanoid (Aquatic, Makrura)" }
+  ],
+  "101": [{ "name": "Mana Surge" }, { "name": "Mana Burst" }],
+  "104": [{ "name": "Mechanostrider", "kind": "example" }],
+  "105": [{ "name": "Naga" }],
+  "108": [{ "name": "Obsidian Destroyer" }],
+  "109": [{ "name": "Obsidian Statue" }],
+  "110": [{ "name": "Primal Ooze" }],
+  "111": [{ "name": "Quilboar" }, { "name": "Razormane Quilboar" }],
+  "115": [{ "name": "Risen Warrior", "kind": "example" }],
+  "116": [{ "name": "Rock Borer" }],
+  "117": [{ "name": "Satyr" }],
+  "119": [{ "name": "Scorpid" }, { "name": "Scorpid Dunestalker" }],
+  "120": [{ "name": "Shade" }],
+  "122": [{ "name": "Silithid Reaver" }],
+  "123": [{ "name": "Silithid Swarmer" }, { "name": "Silithid Broodling Swarm" }],
+  "124": [{ "name": "Silithid Wasp" }],
+  "126": [{ "name": "Skeletal Warrior", "kind": "example" }],
+  "127": [
+    { "name": "Succubus", "typeLine": "Medium Outsider (Demon, Evil, Extraplanar, Lawful)" },
+    { "name": "Queen of Suffering", "typeLine": "Medium Outsider (Demon, Evil, Extraplanar, Lawful)" }
+  ],
+  "129": [{ "name": "Bat Swarm" }],
+  "130": [{ "name": "Rat Swarm" }],
+  "131": [{ "name": "Tar Beast" }, { "name": "Tar Lord" }],
+  "132": [{ "name": "Thistleshrub" }],
+  "133": [{ "name": "Timberling" }, { "name": "Swampwalker" }],
+  "135": [{ "name": "Trogg" }],
+  "137": [{ "name": "Ice Troll" }],
+  "138": [{ "name": "Voidwalker" }],
+  "140": [{ "name": "Wendigo" }, { "name": "Yeti" }],
+  "141": [{ "name": "Wildkin" }, { "name": "Owlbeast" }],
+  "144": [{ "name": "Rot Hide Gnoll", "kind": "example" }],
+  "145": [{ "name": "Worg" }],
+  "146": [{ "name": "Worgen" }, { "name": "Tainted One" }],
+  "148": [{ "name": "Wraith" }],
+  "150": [{ "name": "Human Zombie", "kind": "example" }],
+  "151": [{ "name": "Archaedas", "kind": "villain" }],
+  "152": [
+    { "name": "Animated Statue of Archaedas (Medium)", "kind": "summon", "typeLine": "Medium Construct" },
+    { "name": "Animated Statue of Archaedas (Large)", "kind": "summon", "typeLine": "Large Construct" }
+  ],
+  "153": [{ "name": "Balnazzar", "kind": "villain" }],
+  "155": [{ "name": "Baron Geddon", "kind": "villain" }],
+  "156": [{ "name": "Baron Rivendare", "kind": "villain" }],
+  "158": [{ "name": "General Drakkisath", "kind": "villain" }],
+  "159": [{ "name": "Garr", "kind": "villain" }],
+  "161": [{ "name": "Kel'Thuzad", "kind": "villain" }],
+  "164": [{ "name": "Lady Onyxia", "kind": "villain" }],
+  "166": [{ "name": "Lord Kazzak", "kind": "villain" }],
+  "168": [{ "name": "Mekgineer Thermaplugg", "kind": "villain", "typeLine": "Large Humanoid (Leper Gnome, Mechanical)" }],
+  "170": [{ "name": "Nefarian", "kind": "villain" }]
+}

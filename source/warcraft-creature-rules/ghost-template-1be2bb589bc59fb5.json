@@ -1,0 +1,46 @@
+{
+  "_embedded": {},
+  "_id": "1be2bb589bc59fb5",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "creatureRule": {
+        "kind": "template",
+        "reusable": true
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          75,
+          76,
+          77
+        ],
+        "printedPages": [
+          74,
+          75,
+          76
+        ],
+        "section": "Ghost Template",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/aura.svg",
+  "name": "Ghost Template",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilityType": "nat",
+    "description": {
+      "value": "<p>Acquired incorporeal undead template. Apply manifestation, incorporeality, rejuvenation, special attacks, abilities, and challenge adjustment from printed pages 74-76.</p><p>This reusable record defines shared conversion behavior. Individual actors carry exact printed exceptions and totals.</p>"
+    },
+    "featType": "trait",
+    "source": "World of Warcraft: Monster Guide, pp. 74-75-76",
+    "uniqueId": "wc-creature-rule-ghost-template"
+  },
+  "type": "feat"
+}

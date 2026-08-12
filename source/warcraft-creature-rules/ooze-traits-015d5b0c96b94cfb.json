@@ -1,0 +1,44 @@
+{
+  "_embedded": {},
+  "_id": "015d5b0c96b94cfb",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "creatureRule": {
+        "kind": "type",
+        "reusable": true
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          186,
+          201
+        ],
+        "printedPages": [
+          185,
+          200
+        ],
+        "section": "Ooze",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/aura.svg",
+  "name": "Ooze Traits",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilityType": "nat",
+    "description": {
+      "value": "<p>d10 Hit Dice; three-quarter base attack; no good saves. Mindless; blindsight as listed. Immune to mind-affecting effects, poison, sleep, paralysis, polymorph, stunning, and critical hits.</p><p>This reusable record defines shared conversion behavior. Individual actors carry exact printed exceptions and totals.</p>"
+    },
+    "featType": "trait",
+    "source": "World of Warcraft: Monster Guide, pp. 185-200",
+    "uniqueId": "wc-creature-rule-ooze"
+  },
+  "type": "feat"
+}

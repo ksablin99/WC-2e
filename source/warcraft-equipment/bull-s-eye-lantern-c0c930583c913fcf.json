@@ -1,0 +1,53 @@
+{
+  "_id": "c0c930583c913fcf",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "catalog": {
+        "category": "adventuringGear",
+        "completeTableEntry": true,
+        "generated": true,
+        "status": "structured-table-data",
+        "tableValue": "12 gp; 3 lb."
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          199
+        ],
+        "printedPages": [
+          197
+        ],
+        "section": "Bull's-Eye Lantern",
+        "verification": "table-extraction"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/item-bag.svg",
+  "name": "Bull's-Eye Lantern",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "carried": true,
+    "description": {
+      "value": "<p><strong>Printed table value:</strong> 12 gp; 3 lb..</p>"
+    },
+    "hardness": 0,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "identified": true,
+    "identifiedName": "Bull's-Eye Lantern",
+    "price": 12,
+    "quantity": 1,
+    "source": "World of Warcraft RPG, 2nd Edition, p. 197",
+    "subType": "gear",
+    "weight": 3
+  },
+  "type": "loot"
+}

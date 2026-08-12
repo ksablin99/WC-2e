@@ -1,0 +1,53 @@
+{
+  "_id": "aa382339dc203a80",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "catalog": {
+        "category": "foodAndLodging",
+        "completeTableEntry": true,
+        "generated": true,
+        "status": "structured-table-data",
+        "tableValue": "3 sp per day"
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          202
+        ],
+        "printedPages": [
+          200
+        ],
+        "section": "Common Meal",
+        "verification": "table-extraction"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/item-bag.svg",
+  "name": "Common Meal",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "carried": true,
+    "description": {
+      "value": "<p><strong>Printed table value:</strong> 3 sp per day.</p>"
+    },
+    "hardness": 0,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "identified": true,
+    "identifiedName": "Common Meal",
+    "price": 0.3,
+    "quantity": 1,
+    "source": "World of Warcraft RPG, 2nd Edition, p. 200",
+    "subType": "gear",
+    "weight": 0
+  },
+  "type": "loot"
+}

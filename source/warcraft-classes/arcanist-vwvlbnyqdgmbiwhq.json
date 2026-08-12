@@ -40,8 +40,11 @@
         "verification": "text+render"
       },
       "spellcasting": {
+        "domainSlot": 0,
+        "genericSlots": true,
+        "higherSlotSubstitution": true,
         "pathBonusSlot": 1,
-        "preparation": "repertoire"
+        "preparation": "persistent-repertoire"
       }
     }
   },
@@ -84,6 +87,14 @@
         {
           "id": "mage",
           "name": "Mage"
+        },
+        {
+          "id": "necromancer",
+          "name": "Necromancer"
+        },
+        {
+          "id": "warlock",
+          "name": "Warlock"
         }
       ],
       "default": "mage",
@@ -114,10 +125,10 @@
       "int": false,
       "jmp": false,
       "kar": true,
-      "kdu": true,
-      "ken": true,
-      "kge": true,
-      "khi": true,
+      "kdu": false,
+      "ken": false,
+      "kge": false,
+      "khi": false,
       "klo": true,
       "kmt": true,
       "kna": true,
@@ -231,7 +242,7 @@
     },
     "halfCasterLevel": false,
     "hasLimitedSpellbook": false,
-    "hasSpecialSlot": false,
+    "hasSpecialSlot": true,
     "hasSpellbook": true,
     "hd": 6,
     "hdReplace": "",
@@ -259,7 +270,9 @@
     "originPack": "",
     "originVersion": 105,
     "pathLevels": {
-      "mage": 0
+      "mage": 0,
+      "necromancer": 0,
+      "warlock": 0
     },
     "perRoundActions": [],
     "possibleUpdate": false,
@@ -355,6 +368,7 @@
     "sneakAttackGroup": "none",
     "source": "World of Warcraft RPG, 2nd Edition, pp. 56–60; spell preparation pp. 253–254",
     "specialActions": [],
+    "specialSlotLevel0": true,
     "spellbook": [
       {
         "level": 0,
@@ -398,7 +412,7 @@
       }
     ],
     "spellcastingAbility": "int",
-    "spellcastingDescription": "<p>After one hour of concentration, choose a repertoire from spells recorded in the spellbook. Repertoire spells share slots by spell level and use Intellect for casting and save DCs. Track the Mage path bonus slot manually in this slice.</p>",
+    "spellcastingDescription": "Prepare a persistent repertoire from the general Arcanist list and any path in which you have a level. Generic slots and caster level use total Arcanist level. One bonus slot restricted to any acquired path list exists at every spell level, including level 0. Forbidden Arts penalties are applied dynamically.",
     "spellcastingPreparationMode": "repertoire",
     "spellcastingSpellname": "Spell",
     "spellcastingSpellnamePl": "Spells",
@@ -696,6 +710,10 @@
     "turnUndeadLevelFormula": "0",
     "uniqueId": "",
     "userNonRemovable": false,
+    "usesWarcraftSlotPool": true,
+    "warcraftParentClass": "arcanist",
+    "warcraftPathBonusSlot": true,
+    "warcraftPoolKey": "int",
     "weaponData": {
       "critMult": 2,
       "critRange": 20

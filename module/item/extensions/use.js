@@ -13,6 +13,36 @@ import { Item35E } from "../entity.js";
 import { ItemActiveHelper } from "../helpers/itemActiveHelper.js";
 import { DistanceHelper } from '../../canvas/distance-helper.js';
 import { isSpellPreparedForSpellbook } from "../helpers/spellbookPreparationHelper.js";
+import {
+  enforceWarcraftCasterLevelMinimum,
+  evaluateWarcraftSpellEligibility,
+  getWarcraftSpellcastingAdjustments,
+  meetsWarcraftCastingAbilityMinimum,
+} from "../../actor/helpers/warcraftSpellcastingHelper.js";
+import {
+  calledShotEffect,
+  clearPendingHeroPoint,
+  heroPendingMatches,
+  resolveHeroAttackOption,
+} from "../../actor/helpers/warcraftHeroPoints.js";
+import {
+  finalizeFirearmAttack,
+  firearmMalfunctionFromAttacks,
+  isWarcraftFirearm,
+  loadedGunpowderModifiers,
+  sourceWeaponForAttack,
+} from "../helpers/warcraftEquipment.js";
+
+function heroTargetArmorClasses(tokens, item) {
+  const acType = foundry.utils.getProperty(item.system, "ability.vsTouchAc") ? "touch" : "normal";
+  return Array.from(tokens ?? [])
+    .map((token) => Number(foundry.utils.getProperty(token?.actor?.system, `attributes.ac.${acType}.total`)))
+    .filter(Number.isFinite);
+}
+
+function naturalD20FromAttack(attack) {
+  return Number(attack?.rolls?.[0]?.terms?.[0]?.results?.[0]?.result ?? 0) || null;
+}
 
 async function getSpellFailureData(item, actor) {
   if (!item || item.type !== "spell" || !actor || actor.spellFailure <= 0) return null;
@@ -317,6 +347,12 @@ export class ItemUse {
       maximize: false,
       multiplier: 1,
     };
+    const pendingHeroOption = actor?.flags?.warcraftrpg2e?.heroPoint?.pending?.option ?? null;
+    const hasHeroAttack = heroPendingMatches(actor, ["attack", "d20"]);
+    const hasHeroSpellDc = this.item.type === "spell" && heroPendingMatches(actor, "spell");
+    const heroPointNotes = [];
+    const warcraftFirearm = sourceWeaponForAttack(this.item, actor);
+    const firearmPowder = isWarcraftFirearm(warcraftFirearm) ? loadedGunpowderModifiers(warcraftFirearm) : null;
     // Get form data
     if (form) {
       const formData = this.extractFormData(
@@ -594,6 +630,28 @@ export class ItemUse {
     // Determine spell CL / SL / ablMod (does notthing for other items)
     this.#_determineSpellInfo(rollData)
 
+    // Action spells reach this method only after the attack dialog has been
+    // confirmed. Resolve Forbidden Arts here so cancelling the dialog never
+    // wastes a slot, while a genuine fizzle still does.
+    if (this.item.type === "spell") {
+      const spellbook = foundry.utils.getProperty(actor.system, `attributes.spells.spellbooks.${this.item.system.spellbook}`) || {};
+      const classSystem = actor.system?.classes?.[spellbook.class] || {};
+      const eligibility = evaluateWarcraftSpellEligibility(this.item.system, classSystem, {
+        parentClass: classSystem.name,
+        learnedPath: this.item.system.warcraftLearnedPath,
+      });
+      if (eligibility.penalties?.failurePercent > 0) {
+        const forbiddenArtsRoll = (await new Roll35e("1d100").roll()).total;
+        if (forbiddenArtsRoll <= eligibility.penalties.failurePercent) {
+          ui.notifications.warn(
+            `${this.item.name} fails under Forbidden Arts (${forbiddenArtsRoll} <= ${eligibility.penalties.failurePercent}%).`
+          );
+          rollData.warcraftForbiddenArtsFailed = true;
+          return { rolled: false, rollData };
+        }
+      }
+    }
+
     // Lock useAmount for powers to max value and add aliases
     if (this.item.type === "spell" && foundry.utils.getProperty(this.item.system, "isPower")) {
       rollData.useAmount = Math.max(
@@ -606,6 +664,10 @@ export class ItemUse {
     }
 
     let dc = this.#_getSpellDC(rollData);
+    if (hasHeroSpellDc) {
+      dc += 20;
+      heroPointNotes.push(game.i18n.localize("D35E.WarcraftHeroSpellDcBonus"));
+    }
     rollData.dc = dc;
     rollData.spellPenetration = rollData.cl + (new Roll35e(rollData.featSpellPenetrationBonus || "0", rollData).evaluateSync().total || 0);
     this.#_applyMetamagicModifiers(damageModifiers, rollModifiers, rollData);
@@ -638,10 +700,34 @@ export class ItemUse {
         // Create attack object
         let attack = new ChatAttack(this.item, atk.label, actor, attackRollData, rollData.ammoMaterial, rollData.ammoEnh);
         let localAttackExtraParts = foundry.utils.duplicate(attackExtraParts);
+        if (hasHeroAttack && attackId === 0) {
+          attackRollData.warcraftHeroAttackBonus = 20;
+          localAttackExtraParts.push({
+            part: "@warcraftHeroAttackBonus",
+            value: 20,
+            source: game.i18n.localize("D35E.HeroPoints"),
+          });
+        }
+        if (firearmPowder?.attack && attackId === 0) {
+          attackRollData.warcraftGunpowderAttackBonus = firearmPowder.attack;
+          localAttackExtraParts.push({
+            part: "@warcraftGunpowderAttackBonus",
+            value: firearmPowder.attack,
+            source: game.i18n.localize("D35E.WarcraftGunpowder"),
+          });
+        }
         for (let aepConditional of attackEnhancementMap.get(`attack.${attackId}`) || []) {
           localAttackExtraParts.push(aepConditional);
         }
         let localDamageExtraParts = foundry.utils.duplicate(damageExtraParts);
+        if (firearmPowder?.damage && attackId === 0) {
+          localDamageExtraParts.push([
+            String(firearmPowder.damage),
+            game.i18n.localize("D35E.WarcraftGunpowder"),
+            "base",
+          ]);
+        }
+        if (firearmPowder?.magic) attackRollData.item.magic = true;
         this.#appendFeatDamagePartsFromRollData(attackRollData, localDamageExtraParts);
         for (let aepConditional of damageEnhancementMap.get(`attack.${attackId}`) || []) {
           localDamageExtraParts.push([
@@ -660,22 +746,63 @@ export class ItemUse {
             new Roll35e(`${foundry.utils.getProperty(this.item.system, "critConfirmBonus")}` || "0", attackRollData).evaluateSync().total +
             (attackRollData.featCritConfirmBonus || 0),
         });
-        if (this.item.hasDamage) {
+        let heroAttackOutcome = null;
+        if (hasHeroAttack && attackId === 0) {
+          heroAttackOutcome = resolveHeroAttackOption({
+            option: pendingHeroOption,
+            modifiedTotal: attack.attack.total,
+            targetArmorClasses: heroTargetArmorClasses(selectedTargets, this.item),
+            natural: naturalD20FromAttack(attack),
+          });
+          attack.warcraftHeroPoint = { option: pendingHeroOption, ...heroAttackOutcome };
+          if (heroAttackOutcome.manual && !["attack", "d20"].includes(pendingHeroOption)) {
+            heroPointNotes.push(game.i18n.localize("D35E.WarcraftHeroAttackNeedsTarget"));
+          } else if (heroAttackOutcome.specialEligible && pendingHeroOption === "powerfulBlow") {
+            heroPointNotes.push(game.i18n.localize("D35E.WarcraftHeroPowerfulBlow"));
+          } else if (heroAttackOutcome.specialEligible && calledShotEffect(pendingHeroOption)) {
+            const effect = calledShotEffect(pendingHeroOption);
+            heroPointNotes.push(
+              game.i18n.format("D35E.WarcraftHeroCalledShot", { condition: effect.condition, duration: effect.duration })
+            );
+          } else if (!["attack", "d20"].includes(pendingHeroOption)) {
+            heroPointNotes.push(game.i18n.localize("D35E.WarcraftHeroNormalHitOnly"));
+          }
+        }
+        const firearmMalfunction = isWarcraftFirearm(warcraftFirearm)
+          ? firearmMalfunctionFromAttacks(warcraftFirearm, [attack])
+          : { malfunctioned: false };
+        if (firearmMalfunction.malfunctioned) {
+          heroPointNotes.push(game.i18n.format("D35E.WarcraftFirearmMalfunctionResult", {
+            roll: firearmMalfunction.naturalRoll,
+            rating: firearmMalfunction.rating,
+          }));
+        }
+        if (this.item.hasDamage && !firearmMalfunction.malfunctioned) {
+          const normalDamageModifiers = foundry.utils.duplicate(damageModifiers);
+          if (heroAttackOutcome?.specialEligible && pendingHeroOption === "powerfulBlow") {
+            normalDamageModifiers.multiplier = (Number(normalDamageModifiers.multiplier) || 1) * 2;
+          }
           await attack.addDamage({
             extraParts: localDamageExtraParts,
             primaryAttack: primaryAttack,
             critical: false,
             actor: actor,
-            modifiers: damageModifiers,
+            modifiers: normalDamageModifiers,
             ammoDamageParts: ammoDamageParts,
           });
           if (attack.hasCritConfirm) {
+            const criticalDamageModifiers = foundry.utils.duplicate(damageModifiers);
+            if (heroAttackOutcome?.specialEligible && pendingHeroOption === "powerfulBlow") {
+              const critMult = Math.max(2, Number(foundry.utils.getProperty(attackRollData, "item.ability.critMult")) || 2);
+              criticalDamageModifiers.multiplier =
+                (Number(criticalDamageModifiers.multiplier) || 1) * ((critMult + 1) / critMult);
+            }
             await attack.addDamage({
               extraParts: localDamageExtraParts,
               primaryAttack: primaryAttack,
               critical: true,
               actor: actor,
-              modifiers: damageModifiers,
+              modifiers: criticalDamageModifiers,
               ammoDamageParts: ammoDamageParts,
             });
           }
@@ -839,6 +966,17 @@ export class ItemUse {
       templateId = _template.id;
       templateX = _template.x;
       templateY = _template.y;
+    }
+
+    const firearmResult = await finalizeFirearmAttack(this.item, actor, attacks);
+    if (firearmResult.note && !heroPointNotes.some((note) => note.includes(String(firearmResult.naturalRoll)))) {
+      heroPointNotes.push(firearmResult.note);
+    }
+    if (hasHeroAttack || hasHeroSpellDc) await clearPendingHeroPoint(actor);
+    if (heroPointNotes.length) {
+      extraText += `<div class="flexcol property-group warcraft-hero-result"><label>${game.i18n.localize(
+        "D35E.HeroPoints"
+      )}</label><div>${heroPointNotes.map((note) => `<p>${note}</p>`).join("")}</div></div>`;
     }
 
     // //game.D35E.logger.log(`Updating item on attack.`)
@@ -1783,6 +1921,23 @@ export class ItemUse {
     if (!isSpellPreparedForSpellbook(this.item.system, spellbook)) {
       return ui.notifications.warn(game.i18n.localize("D35E.ErrorSpellNotPreparedInRepertoire"));
     }
+    const spellbookClass = actor.system?.classes?.[spellbook?.class] || {};
+    const warcraftEligibility = evaluateWarcraftSpellEligibility(this.item.system, spellbookClass, {
+      parentClass: spellbookClass.name,
+      learnedPath: this.item.system.warcraftLearnedPath,
+    });
+    if (!warcraftEligibility.eligible) {
+      return ui.notifications.warn(warcraftEligibility.reason);
+    }
+    const spellAbility = spellbook?.ability;
+    const abilityScore = foundry.utils.getProperty(actor.system, `abilities.${spellAbility}.total`)
+      ?? foundry.utils.getProperty(actor.system, `abilities.${spellAbility}.value`);
+    if (spellbook?.usesWarcraftSlotPool === true
+      && !meetsWarcraftCastingAbilityMinimum(abilityScore, warcraftEligibility.spellLevel)) {
+      return ui.notifications.warn(
+        `${this.item.name} requires ${CONFIG.D35E.abilities[spellAbility] || spellAbility} ${10 + warcraftEligibility.spellLevel} to cast.`
+      );
+    }
     if (foundry.utils.getProperty(this.item.system, "preparation.mode") !== "atwill" && new ItemCharges(this.item).getCharges() <= 0)
       return ui.notifications.warn(game.i18n.localize("D35E.ErrorNoSpellsLeft"));
 
@@ -1795,6 +1950,10 @@ export class ItemUse {
       );
       if (!attackResult.wasRolled) return;
       let roll = await attackResult.roll;
+      if (roll?.rollData?.warcraftForbiddenArtsFailed) {
+        await new ItemCharges(this.item).addCharges(-1);
+        return;
+      }
       await new ItemCharges(this.item).addCharges(-1 + (-1 * roll?.rollData?.useAmount || 0));
       return;
     }
@@ -1804,6 +1963,16 @@ export class ItemUse {
     const shouldFizzleOnArcaneFailure = game.settings.get("warcraftrpg2e", "fizzleSpellOnArcaneFailure");
 
     await new ItemCharges(this.item).addCharges(-1);
+
+    if (warcraftEligibility.penalties?.failurePercent > 0) {
+      const forbiddenArtsRoll = (await new Roll35e("1d100").roll()).total;
+      if (forbiddenArtsRoll <= warcraftEligibility.penalties.failurePercent) {
+        ui.notifications.warn(
+          `${this.item.name} fails under Forbidden Arts (${forbiddenArtsRoll} <= ${warcraftEligibility.penalties.failurePercent}%).`
+        );
+        return;
+      }
+    }
 
     if (spellFailureData && shouldFizzleOnArcaneFailure && !spellFailureData.spellFailureSuccess) {
       await postSpellFailureCard(usedItem, actor, spellFailureData, { rollMode });
@@ -1853,8 +2022,18 @@ export class ItemUse {
 
     cl += foundry.utils.getProperty(spellSource, "cl.total") || 0;
     cl += data.clOffset || 0;
+    let warcraftAdjustment = null;
+    if (this.item.type === "spell") {
+      const classSystem = this.item.actor?.system?.classes?.[spellSource.class] || {};
+      warcraftAdjustment = getWarcraftSpellcastingAdjustments(data, classSystem, {
+        parentClass: classSystem.name,
+        learnedPath: data.warcraftLearnedPath,
+      });
+      cl += warcraftAdjustment.casterLevel;
+    }
     cl += rollData.featClBonus || 0;
     cl -= this.item.actor?.system?.attributes?.energyDrain || 0;
+    cl = enforceWarcraftCasterLevelMinimum(cl, warcraftAdjustment);
 
     sl += data.level;
     sl += data.slOffset || 0;
@@ -1897,6 +2076,11 @@ export class ItemUse {
       if (this.item.type === "spell") {
         const spellbook = foundry.utils.getProperty(this.item.actor.system, `attributes.spells.spellbooks.${data.spellbook}`) || {};
         saveDC += new Roll35e(spellbook.baseDCFormula || "", rollData).evaluateSync().total;
+        const classSystem = this.item.actor?.system?.classes?.[spellbook.class] || {};
+        saveDC += getWarcraftSpellcastingAdjustments(data, classSystem, {
+          parentClass: classSystem.name,
+          learnedPath: data.warcraftLearnedPath,
+        }).saveDc;
       }
 
       if (saveDC > 0 && data?.save?.type) {

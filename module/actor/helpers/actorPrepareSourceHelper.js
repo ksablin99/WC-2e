@@ -64,23 +64,23 @@ export class ActorPrepareSourceHelper {
     }
     if (actorData.system.abilities.dex.mod !== 0) {
       sourceDetails["system.attributes.cmd.total"].push({
-        name: "Dexterity",
+        name: "Agility",
         value: actorData.system.abilities.dex.mod,
       });
       if (actorData.system.abilities.dex.mod < 0) {
         sourceDetails["system.attributes.cmd.flatFootedTotal"].push({
-          name: "Dexterity",
+          name: "Agility",
           value: actorData.system.abilities.dex.mod,
         });
       }
       sourceDetails["system.attributes.init.total"].push({
-        name: "Dexterity",
+        name: "Agility",
         value: actorData.system.abilities.dex.mod,
       });
     }
     if (flags.uncannyDodge && !flags.loseDexToAC) {
       sourceDetails["system.attributes.ac.flatFooted.total"].push({
-        name: "Dexterity (Uncanny Dodge)",
+        name: "Agility (Uncanny Dodge)",
         value: actorData.system.abilities.dex.mod,
       });
     }
@@ -172,10 +172,10 @@ export class ActorPrepareSourceHelper {
         ? Math.min(maxDexBonus, actorData.system.abilities.dex.mod)
         : actorData.system.abilities.dex.mod;
     if (dexBonus < 0 || (!flags.loseDexToAC && dexBonus > 0)) {
-      sourceDetails["system.attributes.ac.normal.total"].push({ name: "Dexterity", value: dexBonus });
-      sourceDetails["system.attributes.ac.touch.total"].push({ name: "Dexterity", value: dexBonus });
+      sourceDetails["system.attributes.ac.normal.total"].push({ name: "Agility", value: dexBonus });
+      sourceDetails["system.attributes.ac.touch.total"].push({ name: "Agility", value: dexBonus });
       if (dexBonus < 0) {
-        sourceDetails["system.attributes.ac.flatFooted.total"].push({ name: "Dexterity", value: dexBonus });
+        sourceDetails["system.attributes.ac.flatFooted.total"].push({ name: "Agility", value: dexBonus });
       }
     }
 

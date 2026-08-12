@@ -4,6 +4,16 @@ import {
   serializeClassSelectorData,
   summarizeClassLevelRows,
 } from "../actor/helpers/classPathProgressionHelper.js";
+import {
+  effectiveWarcraftHitDie,
+  filterEligibleProgressionClasses,
+  racialClassRequirement,
+  validateRacialProgressionRows,
+} from "../actor/helpers/racialProgressionHelper.js";
+import {
+  evaluateWarcraftPrerequisites,
+  getWarcraftItemPrerequisites,
+} from "../item/helpers/warcraftPrerequisiteHelper.js";
 
 export class LevelUpDataDialog extends FormApplication {
   constructor(...args) {
@@ -76,11 +86,27 @@ export class LevelUpDataDialog extends FormApplication {
         };
       });
     });
-    let classes = this.actor.items
-      .filter((o) => o.type === "class" && foundry.utils.getProperty(o.system, "classType") !== "racial")
+    const allClasses = this.actor.items.filter((o) => o.type === "class");
+    let classes = filterEligibleProgressionClasses(
+      this.actor,
+      allClasses,
+      this.actor.system.details.levelUpData.filter((row) => row.id !== this.levelUpId)
+    )
+      .filter((item) => {
+        const requirements = getWarcraftItemPrerequisites(item.system);
+        if (!requirements.length || Number(item.system?.levels) > 0) return true;
+        return evaluateWarcraftPrerequisites(requirements, this.actor).automatedMet;
+      })
       .sort((a, b) => {
         return a.sort - b.sort;
       });
+    // Keep the row's current selection visible while editing a completed
+    // maximum racial level. Validation still prevents adding a fourth row.
+    const currentSelection = allClasses.find((item) => item.id === this.levelUpData.classId);
+    if (currentSelection && !classes.some((item) => item.id === currentSelection.id)) {
+      classes.push(currentSelection);
+      classes.sort((a, b) => a.sort - b.sort);
+    }
     const serializedClasses = classes.map((_class) => ({
       id: _class.id,
       classSkills: _class.system.classSkills,
@@ -89,9 +115,25 @@ export class LevelUpDataDialog extends FormApplication {
     const selectedClass = classes.find((_class) => _class.id === this.levelUpData.classId);
     const selectedClassPaths = normalizeClassPaths(selectedClass?.system);
     const selectedPath = resolveClassPath(selectedClass?.system, this.levelUpData.path);
+    const currentRowIndex = this.actor.system.details.levelUpData.findIndex((row) => row.id === this.levelUpId);
+    const classById = new Map(allClasses.map((item) => [item.id, item]));
+    const forsakenRacialLevels = this.actor.system.details.levelUpData
+      .slice(0, Math.max(0, currentRowIndex))
+      .reduce((sum, row) => {
+        const item = classById.get(row.classId);
+        return sum + Number(item?.system?.classType === "racial" && racialClassRequirement(item) === "Forsaken");
+      }, 0);
+    const classChoices = classes.map((_class) => ({
+      id: _class.id,
+      name: _class.name,
+      img: _class.img,
+      sort: _class.sort,
+      system: _class.system,
+      warcraftHitDie: effectiveWarcraftHitDie(_class.system.hd, { forsakenRacialLevels }),
+    }));
     let data = {
       actor: this.actor,
-      classes: classes,
+      classes: classChoices,
       classesJson: serializeClassSelectorData(serializedClasses),
       classPathSelection: {
         ...selectedClassPaths,
@@ -126,6 +168,21 @@ export class LevelUpDataDialog extends FormApplication {
     if (classId) {
       let _class = this.actor.items.find((cls) => cls.id === classId);
       if (!_class) return this.object.update(updateData);
+      const requirements = getWarcraftItemPrerequisites(_class.system);
+      if (requirements.length && Number(_class.system?.levels) === 0) {
+        const validation = evaluateWarcraftPrerequisites(requirements, this.actor);
+        if (!validation.automatedMet) {
+          ui.notifications.error(
+            `Cannot enter ${_class.name}: ${validation.automatedUnmet.map((entry) => entry.label).join("; ")}`
+          );
+          return;
+        }
+        if (validation.manual.length) {
+          ui.notifications.warn(
+            `${_class.name} needs GM verification: ${validation.manual.map((entry) => entry.label).join("; ")}`
+          );
+        }
+      }
       const selectedPath = resolveClassPath(_class.system, formData["path"]);
       let levelUpData = foundry.utils.duplicate(this.actor.system.details.levelUpData);
       levelUpData.forEach((a) => {
@@ -161,10 +218,19 @@ export class LevelUpDataDialog extends FormApplication {
       updateData[`system.details.levelUpData`] = levelUpData;
 
       const classes = this.actor.items
-        .filter((o) => o.type === "class" && foundry.utils.getProperty(o.system, "classType") !== "racial")
+        .filter((o) => o.type === "class")
         .sort((a, b) => {
           return a.sort - b.sort;
         });
+      const racialValidation = validateRacialProgressionRows(this.actor, classes, levelUpData);
+      if (!racialValidation.valid) {
+        const error = racialValidation.errors[0];
+        const message = error.code === "race-mismatch"
+          ? game.i18n.format("D35E.RacialLevelRaceMismatch", { required: error.required, actual: error.actual || "—" })
+          : game.i18n.format("D35E.RacialLevelMaximum", { maximum: error.maximum });
+        ui.notifications.error(message);
+        return;
+      }
 
       // Iterate over all levl ups
       levelUpData.forEach((lud) => {
@@ -200,7 +266,6 @@ export class LevelUpDataDialog extends FormApplication {
         }
       });
       for (var __class of classes) {
-        if (__class.system.classType === "racial") continue;
         const progression = classProgression.get(__class.id);
         const itemUpdateData = {
           _id: __class.id,

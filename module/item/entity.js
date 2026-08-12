@@ -19,6 +19,7 @@ import { ItemCombatChanges } from "./extensions/combatChanges.js";
 import { ItemUse } from "./extensions/use.js";
 import { ItemEnhancementHelper } from "./helpers/itemEnhancementHelper.js";
 import { ItemBase35E } from "./base.js";
+import { evaluateWarcraftFeatRequirements } from "./helpers/warcraftFeatRequirements.js";
 
 /**
  * Override and extend the basic :class:`Item` implementation
@@ -1933,6 +1934,10 @@ export class Item35E extends ItemBase35E {
           );
         }
       }
+    }
+    if (this.type === "feat" && this.actor) {
+      const warcraft = evaluateWarcraftFeatRequirements(this, this.actor);
+      unmetRequirements.push(...warcraft.unmet, ...warcraft.manual.map((label) => `${label} (manual verification)`));
     }
     return unmetRequirements;
   }

@@ -2,38 +2,242 @@
   {
     "childKeyByCollection": {},
     "embeddedCollections": [],
-    "file": "longsword-wclongsword00001.json",
-    "key": "!items!wcLongsword00001"
+    "file": "acid-flask-8f38ba6aabb181e4.json",
+    "key": "!items!8f38ba6aabb181e4"
   },
   {
     "childKeyByCollection": {},
     "embeddedCollections": [],
-    "file": "shortbow-wcshortbow000001.json",
-    "key": "!items!wcShortbow000001"
+    "file": "alchemist-s-fire-flask-1bedd66dfa95e731.json",
+    "key": "!items!1bedd66dfa95e731"
   },
   {
     "childKeyByCollection": {},
     "embeddedCollections": [],
-    "file": "flintlock-pistol-wcflintlock00001.json",
-    "key": "!items!wcFlintlock00001"
+    "file": "alchemist-s-lab-502f9a20fc22ed73.json",
+    "key": "!items!502f9a20fc22ed73"
   },
   {
     "childKeyByCollection": {},
     "embeddedCollections": [],
-    "file": "long-rifle-wclongrifle00001.json",
-    "key": "!items!wcLongRifle00001"
+    "file": "ale-gallon-c84c3b33e02a4ab3.json",
+    "key": "!items!c84c3b33e02a4ab3"
   },
   {
     "childKeyByCollection": {},
     "embeddedCollections": [],
-    "file": "firearm-ammunition-wcfireammo000001.json",
-    "key": "!items!wcFireAmmo000001"
+    "file": "ale-mug-6169b12b2ad77e9e.json",
+    "key": "!items!6169b12b2ad77e9e"
   },
   {
     "childKeyByCollection": {},
     "embeddedCollections": [],
-    "file": "gunpowder-horn-wcgunpowder00001.json",
-    "key": "!items!wcGunpowder00001"
+    "file": "amazing-lock-d16cc2e376ed6529.json",
+    "key": "!items!d16cc2e376ed6529"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "antitoxin-vial-95ac7381da0cb123.json",
+    "key": "!items!95ac7381da0cb123"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "arcanite-96d8bc15a7222634.json",
+    "key": "!items!96d8bc15a7222634"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "arrows-20-c99fd8457bd68ee6.json",
+    "key": "!items!c99fd8457bd68ee6"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "artisan-s-outfit-69d78803c02c3077.json",
+    "key": "!items!69d78803c02c3077"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "artisan-s-tools-ad8eab0b49e11543.json",
+    "key": "!items!ad8eab0b49e11543"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "average-lock-4498e9ebb3c64b73.json",
+    "key": "!items!4498e9ebb3c64b73"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "backpack-3f789c539a95cb45.json",
+    "key": "!items!3f789c539a95cb45"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "banded-mail-5c69b1fb4fb4f329.json",
+    "key": "!items!5c69b1fb4fb4f329"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "banquet-0efc755769a8263b.json",
+    "key": "!items!0efc755769a8263b"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "barrel-4fb7c978f77be50f.json",
+    "key": "!items!4fb7c978f77be50f"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "basket-f072e7d0d32704f9.json",
+    "key": "!items!f072e7d0d32704f9"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "bastard-sword-1ec5528bb979b545.json",
+    "key": "!items!1ec5528bb979b545"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "battleaxe-847c545526c99f1a.json",
+    "key": "!items!847c545526c99f1a"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "bayonet-33520445b903f4a5.json",
+    "key": "!items!33520445b903f4a5"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "bedroll-8b3543316dd0f0a5.json",
+    "key": "!items!8b3543316dd0f0a5"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "bell-ca41ebe4161ff730.json",
+    "key": "!items!ca41ebe4161ff730"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "belt-pouch-5fb816470d330957.json",
+    "key": "!items!5fb816470d330957"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "bit-and-bridle-e0c136f57aa8e5d4.json",
+    "key": "!items!e0c136f57aa8e5d4"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "block-and-tackle-8c90e034050976b6.json",
+    "key": "!items!8c90e034050976b6"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "blunderbuss-d142d710ca7a2b5f.json",
+    "key": "!items!d142d710ca7a2b5f"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "blunderbuss-shot-12-ff5f53447af1e6a0.json",
+    "key": "!items!ff5f53447af1e6a0"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "bolas-be9fb3cec8acff78.json",
+    "key": "!items!be9fb3cec8acff78"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "bread-a5a0f5235f38a16c.json",
+    "key": "!items!a5a0f5235f38a16c"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "breastplate-f982fcefec1164b5.json",
+    "key": "!items!f982fcefec1164b5"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "bucket-76635aa6386b498e.json",
+    "key": "!items!76635aa6386b498e"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "buckler-d415e2cecd0cc48c.json",
+    "key": "!items!d415e2cecd0cc48c"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "bull-s-eye-lantern-c0c930583c913fcf.json",
+    "key": "!items!c0c930583c913fcf"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "caltrops-67bf438070728811.json",
+    "key": "!items!67bf438070728811"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "candle-628498592eb2a989.json",
+    "key": "!items!628498592eb2a989"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "canvas-1-sq-yd-cda83aa995da7dce.json",
+    "key": "!items!cda83aa995da7dce"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "cart-ba33356782d3c9ed.json",
+    "key": "!items!ba33356782d3c9ed"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "castle-5ee7f7b64ac4e888.json",
+    "key": "!items!5ee7f7b64ac4e888"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "catapult-bomb-08fc317b24456728.json",
+    "key": "!items!08fc317b24456728"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "chain-10-ft-b9dbffc6cae9cb6c.json",
+    "key": "!items!b9dbffc6cae9cb6c"
   },
   {
     "childKeyByCollection": {},
@@ -44,8 +248,1160 @@
   {
     "childKeyByCollection": {},
     "embeddedCollections": [],
+    "file": "chainmail-8fe6cfd9ee424766.json",
+    "key": "!items!8fe6cfd9ee424766"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "chalk-783d5cd4bf7e116e.json",
+    "key": "!items!783d5cd4bf7e116e"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "cheese-45cedec4300d9485.json",
+    "key": "!items!45cedec4300d9485"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "chest-16577dd01a8bafb2.json",
+    "key": "!items!16577dd01a8bafb2"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "clay-jug-0728fa7c5c7d7ee2.json",
+    "key": "!items!0728fa7c5c7d7ee2"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "clay-mug-072f91f8f1f37e8e.json",
+    "key": "!items!072f91f8f1f37e8e"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "clay-pitcher-4559fae4426992ea.json",
+    "key": "!items!4559fae4426992ea"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "climber-s-kit-506e3c5952f47cc8.json",
+    "key": "!items!506e3c5952f47cc8"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "club-da6fc909c199e14e.json",
+    "key": "!items!da6fc909c199e14e"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "coach-cab-585428f1430e5458.json",
+    "key": "!items!585428f1430e5458"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "cold-weather-outfit-872b27d0228d669e.json",
+    "key": "!items!872b27d0228d669e"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "common-inn-stay-f46fde4b3230f65b.json",
+    "key": "!items!f46fde4b3230f65b"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "common-lamp-f87593502643cad2.json",
+    "key": "!items!f87593502643cad2"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "common-meal-aa382339dc203a80.json",
+    "key": "!items!aa382339dc203a80"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "common-musical-instrument-f24fa2d6d5b37003.json",
+    "key": "!items!f24fa2d6d5b37003"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "common-wine-pitcher-2744ef32e6df69b3.json",
+    "key": "!items!2744ef32e6df69b3"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "composite-longbow-2f4d8039c767f4ff.json",
+    "key": "!items!2f4d8039c767f4ff"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "composite-shortbow-a59cceb64ea6c35a.json",
+    "key": "!items!a59cceb64ea6c35a"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "courtier-s-outfit-a799f9e90dd2d627.json",
+    "key": "!items!a799f9e90dd2d627"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "crossbow-bolts-10-a9370c7f0a9e3c13.json",
+    "key": "!items!a9370c7f0a9e3c13"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "crowbar-6726a8b9a24479bd.json",
+    "key": "!items!6726a8b9a24479bd"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "dagger-73fa54d8379001bb.json",
+    "key": "!items!73fa54d8379001bb"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "dart-1b7517eb6c0aed81.json",
+    "key": "!items!1b7517eb6c0aed81"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "dire-wolf-01ea4af7631beea3.json",
+    "key": "!items!01ea4af7631beea3"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "disguise-kit-146757d59c942776.json",
+    "key": "!items!146757d59c942776"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "donkey-or-mule-68a7bac4cf435ca3.json",
+    "key": "!items!68a7bac4cf435ca3"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "dragonhide-64df82f1a7dc8428.json",
+    "key": "!items!64df82f1a7dc8428"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "dwarven-battle-hammer-feb4f94ba11850de.json",
+    "key": "!items!feb4f94ba11850de"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "dwarven-tossing-hammer-72450b855195eb23.json",
+    "key": "!items!72450b855195eb23"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "dwarven-waraxe-9bfbda2f7589af61.json",
+    "key": "!items!9bfbda2f7589af61"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "emplaced-bomb-2767d3395bd40dee.json",
+    "key": "!items!2767d3395bd40dee"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "entertainer-s-outfit-89641a278e9ad497.json",
+    "key": "!items!89641a278e9ad497"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "exotic-military-saddle-2fc72ef70428c84e.json",
+    "key": "!items!2fc72ef70428c84e"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "exotic-pack-saddle-a825b8d6527016eb.json",
+    "key": "!items!a825b8d6527016eb"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "exotic-riding-saddle-dcf13417ec3a2647.json",
+    "key": "!items!dcf13417ec3a2647"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "explorer-s-outfit-a0b7db9982540d97.json",
+    "key": "!items!a0b7db9982540d97"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "falchion-40616d0c1ec8cb8c.json",
+    "key": "!items!40616d0c1ec8cb8c"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "feed-73b00abaef62e34d.json",
+    "key": "!items!73b00abaef62e34d"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "fine-wine-bottle-f8144e58c8862213.json",
+    "key": "!items!f8144e58c8862213"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "firearm-ammunition-wcfireammo000001.json",
+    "key": "!items!wcFireAmmo000001"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "firewood-1-day-9aedce6fca385147.json",
+    "key": "!items!9aedce6fca385147"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "fishhook-1b9780324d24b481.json",
+    "key": "!items!1b9780324d24b481"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "fishing-net-db2fb0154f8e7859.json",
+    "key": "!items!db2fb0154f8e7859"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "flail-6205db12db2d6394.json",
+    "key": "!items!6205db12db2d6394"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "flask-f1beb5350f8cf021.json",
+    "key": "!items!f1beb5350f8cf021"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "flint-and-steel-dabfa437a5fd62f0.json",
+    "key": "!items!dabfa437a5fd62f0"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "flintlock-pistol-wcflintlock00001.json",
+    "key": "!items!wcFlintlock00001"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "full-plate-b4904bd4a5d8ea9f.json",
+    "key": "!items!b4904bd4a5d8ea9f"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "galley-6cffaf8b2790ee8c.json",
+    "key": "!items!6cffaf8b2790ee8c"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "gauntlet-f42a6cf78925e41e.json",
+    "key": "!items!f42a6cf78925e41e"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "glaive-04be5c726576bdc0.json",
+    "key": "!items!04be5c726576bdc0"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "glass-bottle-b9297dda43019dbb.json",
+    "key": "!items!b9297dda43019dbb"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "good-inn-stay-0e056377a1a5389e.json",
+    "key": "!items!0e056377a1a5389e"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "good-lock-f724585381b94123.json",
+    "key": "!items!f724585381b94123"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "good-meal-404ce2826c48fe7f.json",
+    "key": "!items!404ce2826c48fe7f"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "grand-house-4cb19275394960cd.json",
+    "key": "!items!4cb19275394960cd"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "grappling-hook-56773cc41b7311d2.json",
+    "key": "!items!56773cc41b7311d2"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "greataxe-8d5f68fc4f44e7de.json",
+    "key": "!items!8d5f68fc4f44e7de"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "greatclub-8236cb9affc9e0cd.json",
+    "key": "!items!8236cb9affc9e0cd"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "greathammer-240ff64418275485.json",
+    "key": "!items!240ff64418275485"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "greatsword-87af1443fa49b807.json",
+    "key": "!items!87af1443fa49b807"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "grenade-bomb-0a72d09ce491e8d1.json",
+    "key": "!items!0a72d09ce491e8d1"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "gryphon-5fc9bd0aa68194a2.json",
+    "key": "!items!5fc9bd0aa68194a2"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "gunpowder-horn-wcgunpowder00001.json",
+    "key": "!items!wcGunpowder00001"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "gunpowder-keg-15-lb-037c53898749871b.json",
+    "key": "!items!037c53898749871b"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "halberd-f64dd47a0907ce71.json",
+    "key": "!items!f64dd47a0907ce71"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "half-plate-2f71778818d0ede1.json",
+    "key": "!items!2f71778818d0ede1"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "hammer-5a4ba913e8fcd68e.json",
+    "key": "!items!5a4ba913e8fcd68e"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "hand-crossbow-26488b68e5267554.json",
+    "key": "!items!26488b68e5267554"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "hand-crossbow-bolts-10-9f76e649a6b9f595.json",
+    "key": "!items!9f76e649a6b9f595"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "handaxe-5832802c071a513f.json",
+    "key": "!items!5832802c071a513f"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "healer-s-kit-a2873d77a1084eb7.json",
+    "key": "!items!a2873d77a1084eb7"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "heavy-crossbow-a7053d5359d5bfdf.json",
+    "key": "!items!a7053d5359d5bfdf"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "heavy-flail-ec8563f7a379ed31.json",
+    "key": "!items!ec8563f7a379ed31"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "heavy-horse-468ac4e66c566a47.json",
+    "key": "!items!468ac4e66c566a47"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "heavy-mace-b58dfdf117a97746.json",
+    "key": "!items!b58dfdf117a97746"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "heavy-pick-4ca2293312235936.json",
+    "key": "!items!4ca2293312235936"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "heavy-shield-bash-4031a56e411e9595.json",
+    "key": "!items!4031a56e411e9595"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "heavy-steel-shield-91af38dc20728703.json",
+    "key": "!items!91af38dc20728703"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "heavy-warhorse-d99427f3df3137b6.json",
+    "key": "!items!d99427f3df3137b6"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "heavy-wooden-shield-110ec5cb69adfc28.json",
+    "key": "!items!110ec5cb69adfc28"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "hemp-rope-50-ft-77713bf48dc84e5c.json",
+    "key": "!items!77713bf48dc84e5c"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "hide-armor-49a4b29b5f94d220.json",
+    "key": "!items!49a4b29b5f94d220"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "hooded-lantern-cc17e231ab75a3b9.json",
+    "key": "!items!cc17e231ab75a3b9"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "hourglass-4fa91cbfe3be8f0d.json",
+    "key": "!items!4fa91cbfe3be8f0d"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "huge-castle-9fae445bf95ca09a.json",
+    "key": "!items!9fae445bf95ca09a"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "imbued-gunpowder-horn-2-lb-cbb10cff4b4d2b2a.json",
+    "key": "!items!cbb10cff4b4d2b2a"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "ink-1-oz-8e4fddecb0e5f732.json",
+    "key": "!items!8e4fddecb0e5f732"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "ink-pen-ddbfdd74dc834c4b.json",
+    "key": "!items!ddbfdd74dc834c4b"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "iron-pot-41a2ed33391786ec.json",
+    "key": "!items!41a2ed33391786ec"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "javelin-612be86e7f7ad024.json",
+    "key": "!items!612be86e7f7ad024"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "keelboat-7a8010419188d16b.json",
+    "key": "!items!7a8010419188d16b"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "keep-fba64f6b660570f1.json",
+    "key": "!items!fba64f6b660570f1"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "kukri-5346521866a210e6.json",
+    "key": "!items!5346521866a210e6"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "ladder-10-ft-ae085ad9cfc5ade6.json",
+    "key": "!items!ae085ad9cfc5ade6"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "lance-b78ebd4ce68b3bf7.json",
+    "key": "!items!b78ebd4ce68b3bf7"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "large-creature-barding-9e92071b9e900059.json",
+    "key": "!items!9e92071b9e900059"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "leather-armor-f4deedaea79de915.json",
+    "key": "!items!f4deedaea79de915"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "light-crossbow-31ea02cc03a0df6a.json",
+    "key": "!items!31ea02cc03a0df6a"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "light-horse-0c3d11ce7fe4c1fd.json",
+    "key": "!items!0c3d11ce7fe4c1fd"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "light-mace-6f760184dd709d6c.json",
+    "key": "!items!6f760184dd709d6c"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "light-pick-f23cf00ae0877fec.json",
+    "key": "!items!f23cf00ae0877fec"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "light-shield-bash-4a858c8e0ad1b447.json",
+    "key": "!items!4a858c8e0ad1b447"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
     "file": "light-steel-shield-wclightshield001.json",
     "key": "!items!wcLightShield001"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "light-warhorse-3b1681078615855a.json",
+    "key": "!items!3b1681078615855a"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "light-wooden-shield-2747357cd8013480.json",
+    "key": "!items!2747357cd8013480"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "liquid-phlogiston-vial-6330e697179fcd94.json",
+    "key": "!items!6330e697179fcd94"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "locked-gauntlet-52e2a9e967f44896.json",
+    "key": "!items!52e2a9e967f44896"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "long-rifle-wclongrifle00001.json",
+    "key": "!items!wcLongRifle00001"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "longbow-830ea36051933ac5.json",
+    "key": "!items!830ea36051933ac5"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "longship-fbe8d9921e73ecee.json",
+    "key": "!items!fbe8d9921e73ecee"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "longspear-740fa3ac3a8257f5.json",
+    "key": "!items!740fa3ac3a8257f5"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "longsword-wclongsword00001.json",
+    "key": "!items!wcLongsword00001"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "magnifying-glass-ee2d9ba787348227.json",
+    "key": "!items!ee2d9ba787348227"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "manacles-36806a98343551e2.json",
+    "key": "!items!36806a98343551e2"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "mansion-476d0af766f98d65.json",
+    "key": "!items!476d0af766f98d65"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "map-or-scroll-case-23d164ba09022adb.json",
+    "key": "!items!23d164ba09022adb"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "masterwork-artisan-s-tools-6b1b41d53cb4c1c2.json",
+    "key": "!items!6b1b41d53cb4c1c2"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "masterwork-manacles-647ba58d776d93c0.json",
+    "key": "!items!647ba58d776d93c0"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "masterwork-musical-instrument-e1eb1afbd6f10bb5.json",
+    "key": "!items!e1eb1afbd6f10bb5"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "masterwork-thieves-tools-eb6bd6ccef7200ff.json",
+    "key": "!items!eb6bd6ccef7200ff"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "masterwork-tool-259aef4f3f568fc5.json",
+    "key": "!items!259aef4f3f568fc5"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "meat-6188837c620b81c0.json",
+    "key": "!items!6188837c620b81c0"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "medium-creature-barding-8cb5dfa63ca9fa42.json",
+    "key": "!items!8cb5dfa63ca9fa42"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "merchant-s-scale-c29fc6c1c78fa782.json",
+    "key": "!items!c29fc6c1c78fa782"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "messenger-6de9f886c05de5ab.json",
+    "key": "!items!6de9f886c05de5ab"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "miner-s-pick-141c64baf2f7ee1b.json",
+    "key": "!items!141c64baf2f7ee1b"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "miniature-bayonet-5dfeb881d740bb1c.json",
+    "key": "!items!5dfeb881d740bb1c"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "mithril-3500bc919d26ebf7.json",
+    "key": "!items!3500bc919d26ebf7"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "moat-with-bridge-4997a524eb09f75a.json",
+    "key": "!items!4997a524eb09f75a"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "moon-sword-2f2979744d2e122f.json",
+    "key": "!items!2f2979744d2e122f"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "moonglaive-55cb93580c488362.json",
+    "key": "!items!55cb93580c488362"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "morningstar-4a4fea7c8df7e0d0.json",
+    "key": "!items!4a4fea7c8df7e0d0"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "mortar-58802fd5d2a01b18.json",
+    "key": "!items!58802fd5d2a01b18"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "mortar-shell-e834a9f915485f64.json",
+    "key": "!items!e834a9f915485f64"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "net-333b96cca3c170bd.json",
+    "key": "!items!333b96cca3c170bd"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "nightsaber-panther-69f7ff3d42b058f1.json",
+    "key": "!items!69f7ff3d42b058f1"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "noble-s-outfit-53ac9e3af66d0c21.json",
+    "key": "!items!53ac9e3af66d0c21"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "oar-3c96f8af2da3dc60.json",
+    "key": "!items!3c96f8af2da3dc60"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "oil-flask-47110d85c8335215.json",
+    "key": "!items!47110d85c8335215"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "orc-claws-of-attack-128e546af19ace49.json",
+    "key": "!items!128e546af19ace49"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "padded-armor-1246a6dbff55476a.json",
+    "key": "!items!1246a6dbff55476a"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "paper-3bdd511215130d1c.json",
+    "key": "!items!3bdd511215130d1c"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "parchment-de5f042afa69a60f.json",
+    "key": "!items!de5f042afa69a60f"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "peasant-s-outfit-dd784fbcd9bca6b7.json",
+    "key": "!items!dd784fbcd9bca6b7"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "pistol-balls-10-20c4a15217095d98.json",
+    "key": "!items!20c4a15217095d98"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "piton-30564cc7a593ecdf.json",
+    "key": "!items!30564cc7a593ecdf"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "pole-10-ft-9ef15787c3aea95f.json",
+    "key": "!items!9ef15787c3aea95f"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "pony-9cb81e960220342f.json",
+    "key": "!items!9cb81e960220342f"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "poor-inn-stay-4c6cfcd939492de4.json",
+    "key": "!items!4c6cfcd939492de4"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "poor-meal-a90449d563690167.json",
+    "key": "!items!a90449d563690167"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "portable-ram-f92d9468d6dd5aa5.json",
+    "key": "!items!f92d9468d6dd5aa5"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "priest-s-vestments-200d8aed7cc88722.json",
+    "key": "!items!200d8aed7cc88722"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "quarterstaff-f509a5d814ee84ab.json",
+    "key": "!items!f509a5d814ee84ab"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "refined-gunpowder-horn-2-lb-29605f2688a7c449.json",
+    "key": "!items!29605f2688a7c449"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "refined-gunpowder-keg-15-lb-4b5a800cacd918f4.json",
+    "key": "!items!4b5a800cacd918f4"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "regular-military-saddle-0116c3a47102a806.json",
+    "key": "!items!0116c3a47102a806"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "regular-pack-saddle-8ed806f4eabb4224.json",
+    "key": "!items!8ed806f4eabb4224"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "regular-riding-saddle-479974b1052f4c2c.json",
+    "key": "!items!479974b1052f4c2c"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "rifle-bullets-10-4c4c2e6ccb3d4918.json",
+    "key": "!items!4c4c2e6ccb3d4918"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "road-or-gate-toll-90cc24c0af776815.json",
+    "key": "!items!90cc24c0af776815"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "rowboat-d57d12ad4eacf267.json",
+    "key": "!items!d57d12ad4eacf267"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "royal-outfit-207eef43b1d7fa9a.json",
+    "key": "!items!207eef43b1d7fa9a"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "sack-aeb65d6a496b5f57.json",
+    "key": "!items!aeb65d6a496b5f57"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "saddlebags-6fd199302a8050fc.json",
+    "key": "!items!6fd199302a8050fc"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "sailing-ship-936df8dbbca801ea.json",
+    "key": "!items!936df8dbbca801ea"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "sap-1f07602b45a2c9cc.json",
+    "key": "!items!1f07602b45a2c9cc"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "scale-mail-cf8106b0f5b54e13.json",
+    "key": "!items!cf8106b0f5b54e13"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "scholar-s-outfit-7252458bebfaa345.json",
+    "key": "!items!7252458bebfaa345"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "scimitar-e6996029e3560d94.json",
+    "key": "!items!e6996029e3560d94"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "scythe-9dd1f32e07f256eb.json",
+    "key": "!items!9dd1f32e07f256eb"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "sealing-wax-4f509758a696a6ae.json",
+    "key": "!items!4f509758a696a6ae"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "sewing-needle-7ebcc942471b6780.json",
+    "key": "!items!7ebcc942471b6780"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "ship-s-passage-3d0c7b3c724d82c9.json",
+    "key": "!items!3d0c7b3c724d82c9"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "short-sword-0354daa0f3df7faf.json",
+    "key": "!items!0354daa0f3df7faf"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "shortbow-wcshortbow000001.json",
+    "key": "!items!wcShortbow000001"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "shortspear-312f3126ce5513c0.json",
+    "key": "!items!312f3126ce5513c0"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "sickle-b989c194885058a0.json",
+    "key": "!items!b989c194885058a0"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "signal-whistle-0a8026d9c16c0ffc.json",
+    "key": "!items!0a8026d9c16c0ffc"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "signet-ring-abe5731b5ef64283.json",
+    "key": "!items!abe5731b5ef64283"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "silk-rope-50-ft-e31c58c23d04e921.json",
+    "key": "!items!e31c58c23d04e921"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "silver-holy-symbol-892418c39c487e08.json",
+    "key": "!items!892418c39c487e08"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "simple-house-332a1e6dc63ae9d0.json",
+    "key": "!items!332a1e6dc63ae9d0"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "sled-903af4505876aa99.json",
+    "key": "!items!903af4505876aa99"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "sledge-01f5908f314e53e4.json",
+    "key": "!items!01f5908f314e53e4"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "sling-19d4a4c3e3f8dd4f.json",
+    "key": "!items!19d4a4c3e3f8dd4f"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "sling-bullets-10-327c5145dfcac943.json",
+    "key": "!items!327c5145dfcac943"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "small-steel-mirror-17cb8e91bbddae7d.json",
+    "key": "!items!17cb8e91bbddae7d"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "smokestick-27156f2f975e5f20.json",
+    "key": "!items!27156f2f975e5f20"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "soap-d7947d53aa4144a0.json",
+    "key": "!items!d7947d53aa4144a0"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "spade-or-shovel-9685791083584e93.json",
+    "key": "!items!9685791083584e93"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "spear-756a323ae62fcde2.json",
+    "key": "!items!756a323ae62fcde2"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "spell-component-pouch-wcspellpouch0001.json",
+    "key": "!items!wcSpellPouch0001"
   },
   {
     "childKeyByCollection": {},
@@ -56,7 +1412,241 @@
   {
     "childKeyByCollection": {},
     "embeddedCollections": [],
-    "file": "spell-component-pouch-wcspellpouch0001.json",
-    "key": "!items!wcSpellPouch0001"
+    "file": "spidersilk-rope-50-ft-565d22097495ccb7.json",
+    "key": "!items!565d22097495ccb7"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "spiked-chain-a4644296b79cd9c3.json",
+    "key": "!items!a4644296b79cd9c3"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "spiked-gauntlet-8de7d27279e04c18.json",
+    "key": "!items!8de7d27279e04c18"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "splint-mail-2da75abc2546087b.json",
+    "key": "!items!2da75abc2546087b"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "spyglass-e5e211bafc8f2f67.json",
+    "key": "!items!e5e211bafc8f2f67"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "stabling-2a196e0951f59d4f.json",
+    "key": "!items!2a196e0951f59d4f"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "studded-leather-armor-f1fa31a19b7928f7.json",
+    "key": "!items!f1fa31a19b7928f7"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "sunrod-8472858e386d8387.json",
+    "key": "!items!8472858e386d8387"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "tanglefoot-bag-f9bef2a6f1b1ebd8.json",
+    "key": "!items!f9bef2a6f1b1ebd8"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "tauren-halberd-38b88be93a1f8d2f.json",
+    "key": "!items!38b88be93a1f8d2f"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "tauren-totem-098936063251d2a5.json",
+    "key": "!items!098936063251d2a5"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "teleportation-service-ed4f2c90b6071486.json",
+    "key": "!items!ed4f2c90b6071486"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "tent-954a00f85c173469.json",
+    "key": "!items!954a00f85c173469"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "thieves-tools-169a01c74ddbf393.json",
+    "key": "!items!169a01c74ddbf393"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "thorium-1b9ea59db6bf3fb1.json",
+    "key": "!items!1b9ea59db6bf3fb1"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "throwing-axe-1348d8059cea5260.json",
+    "key": "!items!1348d8059cea5260"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "thunderstone-d1abfbf05bb9e58f.json",
+    "key": "!items!d1abfbf05bb9e58f"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "tindertwig-3d66a5b7d4d856ce.json",
+    "key": "!items!3d66a5b7d4d856ce"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "torch-f2358c345e9b418f.json",
+    "key": "!items!f2358c345e9b418f"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "tower-b9ac0f978b93eed9.json",
+    "key": "!items!b9ac0f978b93eed9"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "tower-shield-e13809d009b996f7.json",
+    "key": "!items!e13809d009b996f7"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "trail-rations-00658c6d86908888.json",
+    "key": "!items!00658c6d86908888"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "traveler-s-outfit-a7cadc129485fd53.json",
+    "key": "!items!a7cadc129485fd53"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "trident-ab72cb68ecc63d10.json",
+    "key": "!items!ab72cb68ecc63d10"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "two-bladed-sword-5c09c34bf819ac42.json",
+    "key": "!items!5c09c34bf819ac42"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "unarmed-strike-611b5a0e99c4eb0f.json",
+    "key": "!items!611b5a0e99c4eb0f"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "very-simple-lock-914b029558b3320b.json",
+    "key": "!items!914b029558b3320b"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "vial-79a295755da83d09.json",
+    "key": "!items!79a295755da83d09"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "wagon-05f20d16e1eded60.json",
+    "key": "!items!05f20d16e1eded60"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "warblade-f10873f83a3262af.json",
+    "key": "!items!f10873f83a3262af"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "warglaive-7b3b36ed14af345e.json",
+    "key": "!items!7b3b36ed14af345e"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "warhammer-9a21079430b7aca4.json",
+    "key": "!items!9a21079430b7aca4"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "warpony-43fc6630a1168717.json",
+    "key": "!items!43fc6630a1168717"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "warship-f134fcdce5892b86.json",
+    "key": "!items!f134fcdce5892b86"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "water-clock-aa1885e6f2481bf4.json",
+    "key": "!items!aa1885e6f2481bf4"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "waterskin-fa2f46e080be918e.json",
+    "key": "!items!fa2f46e080be918e"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "whetstone-61688b76c17dde3f.json",
+    "key": "!items!61688b76c17dde3f"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "whip-f435acfa6c792cc4.json",
+    "key": "!items!f435acfa6c792cc4"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "winter-blanket-41ac45b71986fc10.json",
+    "key": "!items!41ac45b71986fc10"
+  },
+  {
+    "childKeyByCollection": {},
+    "embeddedCollections": [],
+    "file": "wooden-holy-symbol-c7a7485ace332941.json",
+    "key": "!items!c7a7485ace332941"
   }
 ]

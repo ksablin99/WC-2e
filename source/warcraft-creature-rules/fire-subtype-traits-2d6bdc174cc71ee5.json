@@ -1,0 +1,42 @@
+{
+  "_embedded": {},
+  "_id": "2d6bdc174cc71ee5",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "creatureRule": {
+        "kind": "subtype",
+        "reusable": true
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          191
+        ],
+        "printedPages": [
+          190
+        ],
+        "section": "Fire Subtype",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/aura.svg",
+  "name": "Fire Subtype Traits",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilityType": "nat",
+    "description": {
+      "value": "<p>Immune to fire and vulnerable to cold; cold damage is increased by one-half even when a saving throw applies or succeeds.</p><p>This reusable record defines shared conversion behavior. Individual actors carry exact printed exceptions and totals.</p>"
+    },
+    "featType": "trait",
+    "source": "World of Warcraft: Monster Guide, pp. 190",
+    "uniqueId": "wc-creature-rule-fire-subtype"
+  },
+  "type": "feat"
+}

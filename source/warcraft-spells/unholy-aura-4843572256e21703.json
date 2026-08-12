@@ -1,0 +1,265 @@
+{
+  "_embedded": {},
+  "_id": "4843572256e21703",
+  "_stats": {
+    "compendiumSource": null,
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "lastModifiedBy": null,
+    "modifiedTime": null,
+    "systemId": null,
+    "systemVersion": null
+  },
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "catalog": {
+        "completeListEntry": true,
+        "generated": true,
+        "status": "srd-mechanics-with-warcraft-header"
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          272,
+          355
+        ],
+        "printedPages": [
+          270,
+          353
+        ],
+        "section": "Unholy Aura",
+        "verification": "text-extracted-header"
+      }
+    }
+  },
+  "folder": null,
+  "img": "systems/warcraftrpg2e/icons/spells/named-spells/unholy-aura.png",
+  "name": "Unholy Aura",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "ability": {
+      "attack": "",
+      "critMult": 2,
+      "critRange": 20,
+      "damage": "",
+      "damageMult": 1,
+      "twoHandedOnly": false,
+      "vsTouchAc": false
+    },
+    "actionType": "other",
+    "activateActions": [],
+    "activation": {
+      "cost": 1,
+      "type": "standard"
+    },
+    "addedLevel": 0,
+    "attack": {
+      "parts": []
+    },
+    "attackBonus": "",
+    "attackCountFormula": "",
+    "attackNotes": "",
+    "attackParts": [],
+    "atWill": false,
+    "autoscaleAttackParts": "",
+    "baseCl": "0",
+    "castTime": "1 standard action",
+    "changes": [],
+    "classSource": "",
+    "clOffset": 0,
+    "combatChanges": [],
+    "components": {
+      "divineFocus": 0,
+      "focus": true,
+      "material": false,
+      "somatic": true,
+      "value": "V, S, F",
+      "verbal": true
+    },
+    "conditionals": [],
+    "container": "None",
+    "containerWeightless": false,
+    "contextNotes": [],
+    "createdBy": "",
+    "critConfirmBonus": "",
+    "customAttributes": {},
+    "customAttributesLocked": false,
+    "customReferenceId": "",
+    "customTag": "",
+    "damage": {
+      "alternativeParts": [],
+      "parts": []
+    },
+    "deactivateActions": [],
+    "description": {
+      "chat": "",
+      "unidentified": "",
+      "value": "<p>+4 to AC, +4 resistance and SR 25</p>"
+    },
+    "display": "20 ft.",
+    "duration": {
+      "units": "",
+      "value": null
+    },
+    "effectNotes": "",
+    "epic": "",
+    "favorite": false,
+    "formula": "",
+    "identifiedName": "Unholy Aura",
+    "index": {
+      "subType": null,
+      "uniqueId": ""
+    },
+    "isDomainSpell": false,
+    "isPower": false,
+    "isSpellSpontaneousReplacement": false,
+    "learnedAt": {
+      "bloodline": [],
+      "class": [
+        [
+          "Priest",
+          8
+        ]
+      ],
+      "domain": [],
+      "elementalSchool": [],
+      "subDomain": []
+    },
+    "level": 8,
+    "linkedChargeItem": {
+      "id": null,
+      "img": null,
+      "name": null
+    },
+    "linkId": "",
+    "linkImported": false,
+    "linkSourceId": "",
+    "linkSourceName": "",
+    "materials": {
+      "consumed": {
+        "_deprecated": true,
+        "value": false
+      },
+      "focus": "a tiny reliquary containing some sacred relic, such as a piece of parchment from an unholy text  the reliquary costs at least 500 gp",
+      "value": ""
+    },
+    "maxDamageDice": 0,
+    "maxDamageDiceFormula": "",
+    "measureTemplate": {
+      "customColor": "",
+      "customTexture": "",
+      "overrideColor": false,
+      "overrideTexture": false,
+      "size": 20,
+      "type": ""
+    },
+    "metamagicFeats": {
+      "empowered": false,
+      "enhanced": false,
+      "enhancedHalf": false,
+      "enlarged": false,
+      "intensified": false,
+      "maximized": false,
+      "widened": false
+    },
+    "nameFormula": "",
+    "nameFromFormula": false,
+    "originId": "4843572256e21703",
+    "originPack": "warcraftrpg2e.warcraft-spells",
+    "originVersion": 109,
+    "possibleUpdate": false,
+    "powerPointsCost": 0,
+    "pr": false,
+    "preparation": {
+      "autoDeductCharges": true,
+      "maxAmount": 0,
+      "mode": "prepared",
+      "preparedAmount": 0
+    },
+    "psionic": "",
+    "range": {
+      "long": null,
+      "units": "ft",
+      "value": 20
+    },
+    "recharge": {
+      "current": 0,
+      "enabled": false,
+      "formula": ""
+    },
+    "requiresPsionicFocus": false,
+    "rollTableDraw": {
+      "formula": "",
+      "id": "",
+      "name": "",
+      "pack": ""
+    },
+    "save": {
+      "ability": "",
+      "dc": "0",
+      "dcAutoAbility": "",
+      "dcAutoType": "",
+      "description": "See text",
+      "originVersion": 97,
+      "type": ""
+    },
+    "school": "abj",
+    "shortDescription": "<p>+4 to AC, +4 resistance and SR 25</p>",
+    "showInQuickbar": false,
+    "slOffset": 0,
+    "snip": "+4 to AC, +4 resistance and SR 25",
+    "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 270-270",
+    "specialActions": [],
+    "specialId": null,
+    "specialPrepared": false,
+    "spellArea": "",
+    "spellbook": "primary",
+    "spellDuration": "1 round/level (D)",
+    "spellDurationData": {
+      "dismissable": false,
+      "units": "roundPerLevel",
+      "value": "1*@cl"
+    },
+    "spellEffect": "",
+    "spellType": {
+      "_deprecated": true,
+      "value": ""
+    },
+    "sr": true,
+    "subschool": "",
+    "summon": [],
+    "tags": [],
+    "target": {
+      "value": "One creature/level in a 20-ft.-radius burst centered on the"
+    },
+    "types": "evil",
+    "uniqueId": "",
+    "userNonRemovable": false,
+    "uses": {
+      "allowMultipleUses": false,
+      "autoDeductCharges": true,
+      "canBeLinked": false,
+      "chargesPerUse": 1,
+      "isResource": false,
+      "max": 0,
+      "maxFormula": "",
+      "maxPerUse": null,
+      "maxPerUseFormula": "",
+      "per": "",
+      "rechargeFormula": null,
+      "value": 0
+    },
+    "warcraftManualPolicy": {
+      "mode": "srd-baseline",
+      "reason": "The inherited SRD implementation is used with the Warcraft list assignment and spell level."
+    }
+  },
+  "type": "spell"
+}

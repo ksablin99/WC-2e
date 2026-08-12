@@ -2,9 +2,20 @@
   "_embedded": {
     "items": [
       {
-        "_id": "wcBasClass000001",
+        "_id": "7592dc6a26992899",
         "effects": [],
-        "flags": {},
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 6,
+                "die": 10,
+                "expression": "6d10",
+                "index": 0
+              }
+            }
+          }
+        },
         "folder": null,
         "img": "icons/svg/book.svg",
         "name": "Magical Beast Hit Dice",
@@ -21,18 +32,68 @@
           },
           "changes": [
             [
-              "10",
+              "45",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "6",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "19",
               "ac",
-              "nac",
-              "racial"
+              "pac",
+              "replace"
+            ],
+            [
+              "9",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "19",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "7",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "5",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "3",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "20",
+              "speed",
+              "landSpeed",
+              "base-replace"
             ]
           ],
           "classType": "racial",
           "creatureType": "magicalBeast",
+          "damageReduction": [],
           "hd": 10,
-          "hp": 33,
+          "hp": 0,
           "levels": 6,
-          "maxLevel": 18,
+          "maxLevel": 50,
+          "resistances": [],
           "savingThrows": {
             "fort": {
               "value": "high"
@@ -44,14 +105,29 @@
               "value": "low"
             }
           },
-          "source": "Monster Guide pp. 11-12"
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 11"
         },
         "type": "class"
       },
       {
-        "_id": "wcBasBite0000001",
+        "_id": "47ed5cfbdf369c23",
         "effects": [],
-        "flags": {},
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                10
+              ],
+              "printedDamage": "1d8+5"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
         "folder": null,
         "img": "icons/svg/sword.svg",
         "name": "Bite",
@@ -61,56 +137,506 @@
         "sort": 0,
         "system": {
           "ability": {
-            "attack": "str",
+            "attack": "",
             "critMult": 2,
             "critRange": 20,
-            "damage": "str",
-            "damageMult": 1
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
           },
           "actionType": "mwak",
           "activation": {
             "cost": 1,
             "type": "standard"
           },
-          "attackBonus": "",
+          "attackBonus": "5",
+          "attackParts": [],
           "attackType": "natural",
+          "autoScaleOption": "never",
           "baseWeaponType": "Bite",
           "damage": {
             "parts": [
               [
-                "1d8",
-                null,
-                "damage-piercing-or-bludgeoning"
+                "1d8+5",
+                "Piercing or Bludgeoning",
+                "damage-piercing-bludgeoning"
               ]
             ]
           },
           "description": {
-            "value": "<p>Primary bite. The full attack also includes two claws at +8 melee for 1d6+2 each; resolve those manually.</p>"
+            "value": "<p><strong>Printed attack:</strong> Bite +10 melee (1d8+5).</p>"
           },
+          "enh": 0,
           "favorite": true,
+          "magic": false,
           "primaryAttack": true,
           "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
           "weaponSubtype": "natural"
         },
         "type": "attack"
       },
       {
-        "_id": "wcBasTraits00001",
+        "_id": "f4a61af05b760d8d",
         "effects": [],
-        "flags": {},
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                8
+              ],
+              "printedDamage": "1d6+2"
+            }
+          }
+        },
         "folder": null,
-        "img": "icons/svg/aura.svg",
-        "name": "Basilisk Special Abilities",
+        "img": "icons/svg/sword.svg",
+        "name": "Claws",
         "ownership": {
           "default": 0
         },
         "sort": 0,
         "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "3",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "claws",
+          "damage": {
+            "parts": [
+              [
+                "1d6+2",
+                "Piercing or Slashing",
+                "damage-piercing-or-slashing"
+              ]
+            ]
+          },
           "description": {
-            "value": "<p><strong>Petrifying Gaze (Su):</strong> Permanent petrification, 30 feet; Fortitude DC 15 negates.</p><p><strong>Sleep (Sp):</strong> As the sleep spell without an HD limit; save DC 13. Both abilities require manual resolution.</p><p>Basilisks gain a +5 racial bonus on Search checks.</p>"
+            "value": "<p><strong>Printed attack:</strong> claws +8 melee (1d6+2).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "7898a56165bf1a74",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "47ed5cfbdf369c23",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Bite",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 2,
+              "id": "f4a61af05b760d8d",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Claws",
+              "primary": true
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> Bite +10 melee (1d8+5) and 2 claws +8 melee (1d6+2).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "6b6030fa279177e1",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "Petrifying gaze (DC 15)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                11
+              ],
+              "section": "Basilisk"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Petrifying gaze",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Petrifying gaze (DC 15).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
           },
           "featType": "trait",
-          "source": "Monster Guide pp. 11-12"
+          "source": "World of Warcraft: Monster Guide, p. 11",
+          "uniqueId": "wc-monster-basilisk-petrifying-gaze"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "814458e122d6bc46",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Special Attack",
+              "raw": "sleep (DC 13)"
+            },
+            "reference": {
+              "id": "RxKhjymcQfSCfsk6",
+              "name": "Sleep",
+              "pack": "warcraftrpg2e.spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                11
+              ],
+              "section": "Basilisk"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "sleep",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> sleep (DC 13).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.spells.Item.RxKhjymcQfSCfsk6]{Sleep}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 11",
+          "uniqueId": "wc-monster-basilisk-sleep"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "cb67a5c849d9c572",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Darkvision 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                11
+              ],
+              "section": "Basilisk"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Darkvision 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Darkvision 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 11",
+          "uniqueId": "wc-monster-basilisk-darkvision-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "8ccdf278dec4ba9b",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "low-light vision"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                11
+              ],
+              "section": "Basilisk"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "low-light vision",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> low-light vision.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 11",
+          "uniqueId": "wc-monster-basilisk-low-light-vision"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "a00dec2c3fec3a94",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Ability Focus (petrifying gaze)"
+            },
+            "reference": {
+              "id": "btFxZnSXUHqGUffu",
+              "name": "Ability Focus",
+              "pack": "warcraftrpg2e.feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                11
+              ],
+              "section": "Basilisk"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Ability Focus (petrifying gaze)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Ability Focus (petrifying gaze).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.feats.Item.btFxZnSXUHqGUffu]{Ability Focus}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 11",
+          "uniqueId": "wc-monster-basilisk-ability-focus-petrifying-gaze"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "bff3502e9820706d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Multiattack"
+            },
+            "reference": {
+              "id": "4b2ed70fb66b7ceb",
+              "name": "Multiattack",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                11
+              ],
+              "section": "Basilisk"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Multiattack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Multiattack.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.4b2ed70fb66b7ceb]{Multiattack}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 11",
+          "uniqueId": "wc-monster-basilisk-multiattack"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "6486b88d56b295d8",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Skilled (Listen and Spot)"
+            },
+            "reference": {
+              "id": "63e93d7c15badc3f",
+              "name": "Skilled",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                11
+              ],
+              "section": "Basilisk"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Skilled (Listen and Spot)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Skilled (Listen and Spot).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.63e93d7c15badc3f]{Skilled}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 11",
+          "uniqueId": "wc-monster-basilisk-skilled-listen-and-spot"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "3df4dde0618bdb9a",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Large Magical Beast; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "4a5e271e2b371475",
+              "name": "Magical Beast Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                11
+              ],
+              "section": "Basilisk"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Magical Beast Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Large Magical Beast; use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.4a5e271e2b371475]{Magical Beast Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 11",
+          "uniqueId": "wc-monster-basilisk-magical-beast-traits"
         },
         "type": "feat"
       }
@@ -120,19 +646,70 @@
   "effects": [],
   "flags": {
     "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "creature",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 20, Agy 10, Sta 15, Int 4, Spt 12, Cha 11",
+          "Advancement": "7-12 HD (Large); 13-18 H D (Huge)",
+          "Alignment": "Always neutral",
+          "Area": "The Blasted Lands, Desolace, Duskwood, Maraudon, the South Seas, Stonetalon Mountains, Stranglethorn Vale, Tanaris, Thousand Needles, Uldaman",
+          "Armor Class": "19 (-1 size, +10 natural), touch 9, flat-footed 19",
+          "Attack": "Bite +10 melee (1d8+5)",
+          "Base Attack/Grapple": "+6/+15",
+          "Challenge Rating": "6",
+          "Environment": "Temperate forest",
+          "Feats": "Ability Focus* (petrifying gaze), Multiattack, Skilled (Listen and Spot)",
+          "Full Attack": "Bite +10 melee (1d8+5) and 2 claws +8 melee (1d6+2)",
+          "Hit Dice": "6d10+12 (45 hp)",
+          "Initiative": "+0",
+          "Level Adjustment": "-",
+          "Organization": "Solitary or colony (3-6)",
+          "Saves": "Fort +7, Ref +5, Will +3",
+          "Skills": "Listen +6, Search +5, Spot +6",
+          "Space/Reach": "10 ft./5 ft.",
+          "Special Attacks": "Petrifying gaze (DC 15), sleep (DC 13)",
+          "Special Qualities": "Darkvision 60 ft., low-light vision",
+          "Speed": "20 ft. (4 squares)",
+          "Treasure": "None"
+        },
+        "rulesCoverage": {
+          "actor-defense": 0,
+          "linked-reference": 5,
+          "manual": 3
+        },
+        "subtypes": []
+      },
       "source": {
         "book": "World of Warcraft: Monster Guide",
-        "pages": "11-12",
-        "section": "Basilisk"
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          12
+        ],
+        "printedPages": [
+          11
+        ],
+        "section": "Basilisk",
+        "verification": "native-text-table+review-override"
       }
     }
   },
   "folder": null,
   "img": "icons/svg/mystery-man.svg",
   "items": [
-    "wcBasClass000001",
-    "wcBasBite0000001",
-    "wcBasTraits00001"
+    "7592dc6a26992899",
+    "47ed5cfbdf369c23",
+    "f4a61af05b760d8d",
+    "7898a56165bf1a74",
+    "6b6030fa279177e1",
+    "814458e122d6bc46",
+    "cb67a5c849d9c572",
+    "8ccdf278dec4ba9b",
+    "a00dec2c3fec3a94",
+    "bff3502e9820706d",
+    "6486b88d56b295d8",
+    "3df4dde0618bdb9a"
   ],
   "name": "Basilisk",
   "ownership": {
@@ -142,101 +719,276 @@
   "system": {
     "abilities": {
       "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 11,
+        "penalty": 0,
         "total": 11,
+        "userPenalty": 0,
         "value": 11
       },
       "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 2,
+        "origMod": 2,
+        "origTotal": 15,
+        "penalty": 0,
         "total": 15,
+        "userPenalty": 0,
         "value": 15
       },
       "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 0,
+        "origMod": 0,
+        "origTotal": 10,
+        "penalty": 0,
         "total": 10,
+        "userPenalty": 0,
         "value": 10
       },
       "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": -3,
+        "origMod": -3,
+        "origTotal": 4,
+        "penalty": 0,
         "total": 4,
+        "userPenalty": 0,
         "value": 4
       },
       "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 5,
+        "origMod": 5,
+        "origTotal": 20,
+        "penalty": 0,
         "total": 20,
+        "userPenalty": 0,
         "value": 20
       },
       "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 1,
+        "origMod": 1,
+        "origTotal": 12,
+        "penalty": 0,
         "total": 12,
+        "userPenalty": 0,
         "value": 12
       }
     },
     "attributes": {
       "ac": {
         "flatFooted": {
-          "total": 19
+          "total": 19,
+          "value": 0
         },
         "normal": {
-          "total": 19
+          "total": 19,
+          "value": 0
         },
         "touch": {
-          "total": 9
+          "total": 9,
+          "value": 0
         }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
       },
       "bab": {
         "base": 6,
-        "total": 6
+        "nonepic": 6,
+        "total": 6,
+        "value": 0
       },
       "cmb": {
-        "total": 15
+        "total": 15,
+        "value": 0
       },
       "cmd": {
-        "total": 20
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
       },
       "creatureType": "magicalBeast",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
       "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 0,
+        "value": 0
+      },
       "hd": {
         "racialClass": 6,
         "total": 6
       },
       "hp": {
+        "base": 45,
         "max": 45,
         "min": -15,
+        "nonlethal": 0,
+        "temp": 0,
         "value": 45
       },
       "init": {
-        "total": 0
+        "bonus": 0,
+        "total": 0,
+        "value": 0
       },
+      "maxAoO": 1,
+      "naturalAC": 0,
       "naturalACTotal": 10,
       "savingThrows": {
         "fort": {
+          "base": 7,
           "total": 7
         },
         "ref": {
+          "base": 5,
           "total": 5
         },
         "will": {
+          "base": 3,
           "total": 3
         }
       },
       "senses": {
+        "blindsense": null,
+        "blindsight": null,
         "darkvision": 60,
-        "lowLight": true
+        "lowLight": true,
+        "lowLightMultiplier": 2,
+        "tremorsense": null
       },
       "speed": {
         "land": {
           "base": 20,
           "total": 20
         }
+      },
+      "sr": {
+        "formula": "",
+        "total": 0
       }
     },
     "details": {
       "alignment": "Always neutral",
+      "biography": {
+        "public": "",
+        "value": "<p>Basilisk is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
       "cr": 6,
       "environment": "Temperate forest",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 6,
+        "value": 6
+      },
       "notes": {
-        "value": "<p>Large magical beast. Full attack: bite +10 (1d8+5) and two claws +8 (1d6+2). Special abilities are documented on the embedded trait and are manual in this starter slice.</p>"
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 6d10+12 (45 hp)</p><p><strong>Initiative:</strong> +0</p><p><strong>Speed:</strong> 20 ft. (4 squares)</p><p><strong>Armor Class:</strong> 19 (-1 size, +10 natural), touch 9, flat-footed 19</p><p><strong>Base Attack/Grapple:</strong> +6/+15</p><p><strong>Attack:</strong> Bite +10 melee (1d8+5)</p><p><strong>Full Attack:</strong> Bite +10 melee (1d8+5) and 2 claws +8 melee (1d6+2)</p><p><strong>Space/Reach:</strong> 10 ft./5 ft.</p><p><strong>Special Attacks:</strong> Petrifying gaze (DC 15), sleep (DC 13)</p><p><strong>Special Qualities:</strong> Darkvision 60 ft., low-light vision</p><p><strong>Saves:</strong> Fort +7, Ref +5, Will +3</p><p><strong>Abilities:</strong> Str 20, Agy 10, Sta 15, Int 4, Spt 12, Cha 11</p><p><strong>Skills:</strong> Listen +6, Search +5, Spot +6</p><p><strong>Feats:</strong> Ability Focus* (petrifying gaze), Multiattack, Skilled (Listen and Spot)</p><p><strong>Area:</strong> The Blasted Lands, Desolace, Duskwood, Maraudon, the South Seas, Stonetalon Mountains, Stranglethorn Vale, Tanaris, Thousand Needles, Uldaman</p><p><strong>Organization:</strong> Solitary or colony (3-6)</p><p><strong>Treasure:</strong> None</p><p><strong>Advancement:</strong> 7-12 HD (Large); 13-18 H D (Huge)</p><p><strong>Level Adjustment:</strong> -</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
       },
       "totalCr": 6,
       "type": "Magical Beast"
     },
+    "skills": {
+      "lis": {
+        "ability": "wis",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 5,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 6,
+        "notes": "Printed total +6",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spt": {
+        "ability": "wis",
+        "abilityModifier": 1,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 5,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 6,
+        "notes": "Printed total +6",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "src": {
+        "ability": "int",
+        "abilityModifier": -3,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 8,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 5,
+        "notes": "Printed total +5",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
     "traits": {
       "actualSize": "lg",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
       "senses": "Darkvision 60 ft., low-light vision",
       "size": "lg",
       "tokensize": "actor"

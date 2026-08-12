@@ -147,6 +147,21 @@
                                value="{{#if system.attributes.hp.nonlethal}}{{system.attributes.hp.nonlethal}}{{/if}}"
                                data-dtype="Number" title="{{ localize 'D35E.Nonlethal' }}"/>
                     </footer>
+                    {{#if warcraftHealth}}
+                    <footer class="attribute-footer warcraft-health-controls">
+                        {{#if warcraftHealth.canRollStabilization}}
+                        <a class="warcraft-stabilization-roll" title="{{ localize 'D35E.WarcraftStabilizationHint' }}">
+                            {{ localize 'D35E.WarcraftStabilize' }} ({{ localize 'D35E.Heal' }} DC {{warcraftHealth.healDc}})
+                        </a>
+                        {{/if}}
+                        {{#if warcraftHealth.canRollRecovery}}
+                        <a class="warcraft-recovery-roll" title="{{ localize 'D35E.WarcraftRecoveryHint' }}">
+                            {{ localize 'D35E.WarcraftRecovery' }}
+                        </a>
+                        {{/if}}
+                        {{#if warcraftHealth.down}}<span>{{ localize 'D35E.Down' }}</span>{{/if}}
+                    </footer>
+                    {{/if}}
                 </li>
 
                 <li>

@@ -1,0 +1,53 @@
+{
+  "_id": "6169b12b2ad77e9e",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "catalog": {
+        "category": "foodAndLodging",
+        "completeTableEntry": true,
+        "generated": true,
+        "status": "structured-table-data",
+        "tableValue": "4 cp; 1 lb."
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          202
+        ],
+        "printedPages": [
+          200
+        ],
+        "section": "Ale (mug)",
+        "verification": "table-extraction"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/item-bag.svg",
+  "name": "Ale (mug)",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "carried": true,
+    "description": {
+      "value": "<p><strong>Printed table value:</strong> 4 cp; 1 lb..</p>"
+    },
+    "hardness": 0,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "identified": true,
+    "identifiedName": "Ale (mug)",
+    "price": 0.04,
+    "quantity": 1,
+    "source": "World of Warcraft RPG, 2nd Edition, p. 200",
+    "subType": "gear",
+    "weight": 1
+  },
+  "type": "loot"
+}

@@ -1,0 +1,44 @@
+{
+  "_embedded": {},
+  "_id": "a18fb0a81d08b8d9",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "creatureRule": {
+        "kind": "subtype",
+        "reusable": true
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          192,
+          193
+        ],
+        "printedPages": [
+          191,
+          192
+        ],
+        "section": "Incorporeal Subtype",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/aura.svg",
+  "name": "Incorporeal Subtype Traits",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilityType": "nat",
+    "description": {
+      "value": "<p>Has no physical body. Nonmagical attacks cannot harm it; corporeal magical sources normally have a 50% failure chance except for force, positive or negative energy, ghost touch, and other stated exceptions. It uses a Charisma-based deflection bonus, can pass through objects under the printed limits, moves silently, cannot fall or make physical trip or grapple attacks, and follows the full incorporeal combat rules.</p><p>This reusable record defines shared conversion behavior. Individual actors carry exact printed exceptions and totals.</p>"
+    },
+    "featType": "trait",
+    "source": "World of Warcraft: Monster Guide, pp. 191-192",
+    "uniqueId": "wc-creature-rule-incorporeal-subtype"
+  },
+  "type": "feat"
+}

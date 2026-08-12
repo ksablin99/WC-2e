@@ -7,6 +7,7 @@ import { TokenDocumentPF } from "../token/tokenDocument.js";
 import { LogHelper } from "../helpers/LogHelper.js";
 import { Sockets } from "../sockets/sockets.js";
 import { CHAT_MESSAGE_STYLE_KEY, CHAT_MESSAGE_STYLE_CHAT, getRollModesForSelect } from "../lib.js";
+import { clearPendingHeroPoint, heroPointRollBonus } from "../actor/helpers/warcraftHeroPoints.js";
 
 export class CombatantD35E extends Combatant {
   constructor(...args) {
@@ -132,6 +133,8 @@ export class CombatD35E extends Combat {
       if (!c) return results;
       const actorData = c.actor ? c.actor.system : {};
       formula = this._getInitiativeFormula(c.actor ? c.actor : null) || formula;
+      const heroPointBonus = heroPointRollBonus(c.actor, "d20");
+      if (heroPointBonus) formula += ` + ${heroPointBonus}`;
 
       actorData.bonus = bonus;
       // Add bonus
@@ -153,9 +156,13 @@ export class CombatD35E extends Combat {
         ui.notifications.warn(err.message);
         roll = await Roll35e.create("0", actorData).evaluate();
       }
+      if (heroPointBonus) await clearPendingHeroPoint(c.actor);
       updates.push({ _id: id, initiative: roll.total });
 
       const [notes, notesHTML] = c.actor.getInitiativeContextNotes();
+      const heroNotesHTML = heroPointBonus
+        ? `<div class="flexcol property-group"><label>${game.i18n.localize("D35E.HeroPoints")}</label><div>${game.i18n.localize("D35E.WarcraftHeroInitiativeBonus")}</div></div>`
+        : "";
 
       // Create roll template data
       const rollData = foundry.utils.mergeObject(
@@ -165,7 +172,7 @@ export class CombatD35E extends Combat {
           tooltip: await roll.getTooltip(),
           total: roll.total,
         },
-        notes.length > 0 ? { hasExtraText: true, extraText: notesHTML } : {}
+        notes.length > 0 || heroPointBonus ? { hasExtraText: true, extraText: `${notesHTML ?? ""}${heroNotesHTML}` } : {}
       );
 
       // Create chat data

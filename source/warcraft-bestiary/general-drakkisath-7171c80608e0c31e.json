@@ -1,0 +1,2046 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "bac51ea3b88ec5bd",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 9,
+                "die": 8,
+                "expression": "9d8",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Monstrous Humanoid Hit Dice (9d8 pool)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "high",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "976",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "19",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "34",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "10",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "31",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "24",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "16",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "19",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "30",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "4",
+              "misc",
+              "init",
+              "untyped"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "monstrousHumanoid",
+          "damageReduction": [],
+          "hd": 8,
+          "hp": 0,
+          "levels": 9,
+          "maxLevel": 50,
+          "resistances": [
+            [
+              "10",
+              "energy-acid",
+              false,
+              false,
+              false
+            ],
+            [
+              "10",
+              "energy-electric",
+              false,
+              false,
+              false
+            ]
+          ],
+          "savingThrows": {
+            "fort": {
+              "value": "low"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "high"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 158"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "59b9295585aaedc4",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 3,
+                "die": 8,
+                "expression": "3d8",
+                "index": 1
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Monstrous Humanoid Hit Dice (3d8 pool)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "high",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [],
+          "classType": "racial",
+          "creatureType": "monstrousHumanoid",
+          "damageReduction": [],
+          "hd": 8,
+          "hp": 0,
+          "levels": 3,
+          "maxLevel": 50,
+          "resistances": [],
+          "savingThrows": {
+            "fort": {
+              "value": "low"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "high"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 158"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "9deb2a26560e3f39",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 12,
+                "die": 10,
+                "expression": "12d10",
+                "index": 2
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Monstrous Humanoid Hit Dice (12d10 pool)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "high",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [],
+          "classType": "racial",
+          "creatureType": "monstrousHumanoid",
+          "damageReduction": [],
+          "hd": 10,
+          "hp": 0,
+          "levels": 12,
+          "maxLevel": 50,
+          "resistances": [],
+          "savingThrows": {
+            "fort": {
+              "value": "low"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "high"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 158"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "1da824c361e9a7ee",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                30
+              ],
+              "printedDamage": "1d8+14/15-20 plus 1d6 fire"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Blackblade Of Shahram",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 15,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "12",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Blackblade of Shahram",
+          "damage": {
+            "parts": [
+              [
+                "1d8+14",
+                "Piercing or Slashing",
+                "damage-piercing-or-slashing"
+              ],
+              [
+                "1d6",
+                "Fire",
+                "energy-fire"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Blackblade of Shahram +30 melee (1d8+14/15-20 plus 1d6 fire).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": true,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "4589665ba92bb379",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "1da824c361e9a7ee",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Blackblade Of Shahram",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> Blackblade of Shahram +30/+25/+20/+15 melee (1d8+14/15-20 plus 1d6 fire).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "78fa79e6ba4baf37",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "Black conflagration (DC 27)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                158
+              ],
+              "section": "General Drakkisath"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Black conflagration",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Black conflagration (DC 27).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 158",
+          "uniqueId": "wc-monster-general-drakkisath-black-conflagration"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e1a69d716e32bd91",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "flame burst (DC 25)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                158
+              ],
+              "section": "General Drakkisath"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "flame burst",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> flame burst (DC 25).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 158",
+          "uniqueId": "wc-monster-general-drakkisath-flame-burst"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "c0671dc01ad1387f",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "pierce armor"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                158
+              ],
+              "section": "General Drakkisath"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "pierce armor",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> pierce armor.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 158",
+          "uniqueId": "wc-monster-general-drakkisath-pierce-armor"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "cf2dc64dabd70184",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Darkvision 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                158
+              ],
+              "section": "General Drakkisath"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Darkvision 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Darkvision 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 158",
+          "uniqueId": "wc-monster-general-drakkisath-darkvision-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "9590328804d6d141",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "heritage immunities"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                158
+              ],
+              "section": "General Drakkisath"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "heritage immunities",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> heritage immunities.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 158",
+          "uniqueId": "wc-monster-general-drakkisath-heritage-immunities"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "d20313758797ebc3",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "immunity to fear"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                158
+              ],
+              "section": "General Drakkisath"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "immunity to fear",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> immunity to fear.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 158",
+          "uniqueId": "wc-monster-general-drakkisath-immunity-to-fear"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "084407a3a53457b1",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "resistance to acid 10 and electricity 10"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                158
+              ],
+              "section": "General Drakkisath"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "resistance to acid 10 and electricity 10",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> resistance to acid 10 and electricity 10.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 158",
+          "uniqueId": "wc-monster-general-drakkisath-resistance-to-acid-10-and-electricity-10"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "de6776e96a04c734",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "spell resistance 29"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                158
+              ],
+              "section": "General Drakkisath"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "spell resistance 29",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> spell resistance 29.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 158",
+          "uniqueId": "wc-monster-general-drakkisath-spell-resistance-29"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "d8fe7e7af836f9b3",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Ability Focus (black conflagration)"
+            },
+            "reference": {
+              "id": "btFxZnSXUHqGUffu",
+              "name": "Ability Focus",
+              "pack": "warcraftrpg2e.feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                158
+              ],
+              "section": "General Drakkisath"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Ability Focus (black conflagration)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Ability Focus (black conflagration).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.feats.Item.btFxZnSXUHqGUffu]{Ability Focus}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 158",
+          "uniqueId": "wc-monster-general-drakkisath-ability-focus-black-conflagration"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "2b9648bcac80c3f1",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Bash"
+            },
+            "reference": {
+              "id": "60ca15d6f0332f77",
+              "name": "Bash",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                158
+              ],
+              "section": "General Drakkisath"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Bash",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Bash.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.60ca15d6f0332f77]{Bash}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 158",
+          "uniqueId": "wc-monster-general-drakkisath-bash"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "0b1657c9cd2ec4a8",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Cleave"
+            },
+            "reference": {
+              "id": "34b794d403b119d7",
+              "name": "Cleave",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                158
+              ],
+              "section": "General Drakkisath"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Cleave",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Cleave.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.34b794d403b119d7]{Cleave}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 158",
+          "uniqueId": "wc-monster-general-drakkisath-cleave"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "0853e85d2c5c11be",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Dodge"
+            },
+            "reference": {
+              "id": "7d08b8436a8b4167",
+              "name": "Dodge",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                158
+              ],
+              "section": "General Drakkisath"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Dodge",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Dodge.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.7d08b8436a8b4167]{Dodge}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 158",
+          "uniqueId": "wc-monster-general-drakkisath-dodge"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "9634a1d7f66c6def",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Furious Charge"
+            },
+            "reference": {
+              "id": "ff2d48c2fec51f05",
+              "name": "Furious Charge",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                158
+              ],
+              "section": "General Drakkisath"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Furious Charge",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Furious Charge.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.ff2d48c2fec51f05]{Furious Charge}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 158",
+          "uniqueId": "wc-monster-general-drakkisath-furious-charge"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "d592854e801c980b",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Great Fortitude"
+            },
+            "reference": {
+              "id": "66a59a40dae0fed6",
+              "name": "Great Fortitude",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                158
+              ],
+              "section": "General Drakkisath"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Great Fortitude",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Great Fortitude.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.66a59a40dae0fed6]{Great Fortitude}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 158",
+          "uniqueId": "wc-monster-general-drakkisath-great-fortitude"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e71dd22b952dc62a",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Greater Weapon Focus (scimitar)"
+            },
+            "reference": {
+              "id": "5f27142755ab0f19",
+              "name": "Greater Weapon Focus",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                158
+              ],
+              "section": "General Drakkisath"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Greater Weapon Focus (scimitar)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Greater Weapon Focus (scimitar).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.5f27142755ab0f19]{Greater Weapon Focus}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 158",
+          "uniqueId": "wc-monster-general-drakkisath-greater-weapon-focus-scimitar"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "ae22a3f8e37a9d19",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Greater Weapon Specialization (scimitar)"
+            },
+            "reference": {
+              "id": "695f1a45a545cf5c",
+              "name": "Greater Weapon Specialization",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                158
+              ],
+              "section": "General Drakkisath"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Greater Weapon Specialization (scimitar)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Greater Weapon Specialization (scimitar).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.695f1a45a545cf5c]{Greater Weapon Specialization}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 158",
+          "uniqueId": "wc-monster-general-drakkisath-greater-weapon-specialization-scimitar"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "5cbb2ef835e1900e",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Initiative"
+            },
+            "reference": {
+              "id": "3232602c102e0494",
+              "name": "Improved Initiative",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                158
+              ],
+              "section": "General Drakkisath"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Initiative",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Initiative.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.3232602c102e0494]{Improved Initiative}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 158",
+          "uniqueId": "wc-monster-general-drakkisath-improved-initiative"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "0b5689fe1071406f",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Improved Overrun"
+            },
+            "reference": {
+              "id": "682fc7477ca63892",
+              "name": "Improved Overrun",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                158
+              ],
+              "section": "General Drakkisath"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Improved Overrun",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Improved Overrun.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.682fc7477ca63892]{Improved Overrun}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 158",
+          "uniqueId": "wc-monster-general-drakkisath-improved-overrun"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "d8c491ffb8a39ca5",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Iron Will"
+            },
+            "reference": {
+              "id": "bf55b7e5d7d1a388",
+              "name": "Iron Will",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                158
+              ],
+              "section": "General Drakkisath"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Iron Will",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Iron Will.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.bf55b7e5d7d1a388]{Iron Will}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 158",
+          "uniqueId": "wc-monster-general-drakkisath-iron-will"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e4cba082695e1167",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Leadership"
+            },
+            "reference": {
+              "id": "26e990081f158fdb",
+              "name": "Leadership",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                158
+              ],
+              "section": "General Drakkisath"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Leadership",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Leadership.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.26e990081f158fdb]{Leadership}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 158",
+          "uniqueId": "wc-monster-general-drakkisath-leadership"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "3ffa5306988f1459",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Lightning Reflexes"
+            },
+            "reference": {
+              "id": "f501b369179d5112",
+              "name": "Lightning Reflexes",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                158
+              ],
+              "section": "General Drakkisath"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Lightning Reflexes",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Lightning Reflexes.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.f501b369179d5112]{Lightning Reflexes}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 158",
+          "uniqueId": "wc-monster-general-drakkisath-lightning-reflexes"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "78a3afb82d55faf2",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Power Attack"
+            },
+            "reference": {
+              "id": "95e094ad6c35e24e",
+              "name": "Power Attack",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                158
+              ],
+              "section": "General Drakkisath"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Power Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Power Attack.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.95e094ad6c35e24e]{Power Attack}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 158",
+          "uniqueId": "wc-monster-general-drakkisath-power-attack"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "a82ef3a822cb942f",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Feat",
+              "raw": "Thunderous Blow (DC 31) [x2]"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                158
+              ],
+              "section": "General Drakkisath"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Thunderous Blow (DC 31) [x2]",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Thunderous Blow (DC 31) [x2].</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 158",
+          "uniqueId": "wc-monster-general-drakkisath-thunderous-blow-dc-31-x2"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "bb1f107d806e658b",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "War Stomp"
+            },
+            "reference": {
+              "id": "674d44d0db6a07d3",
+              "name": "War Stomp",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                158
+              ],
+              "section": "General Drakkisath"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "War Stomp",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> War Stomp.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.674d44d0db6a07d3]{War Stomp}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 158",
+          "uniqueId": "wc-monster-general-drakkisath-war-stomp"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "98b5e0f251718a89",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Weapon Focus (scimitar)"
+            },
+            "reference": {
+              "id": "fdea42738398197e",
+              "name": "Weapon Focus",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                158
+              ],
+              "section": "General Drakkisath"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Weapon Focus (scimitar)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Weapon Focus (scimitar).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.fdea42738398197e]{Weapon Focus}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 158",
+          "uniqueId": "wc-monster-general-drakkisath-weapon-focus-scimitar"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "1d6f70db984415e9",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Weapon Specialization (scimitar)"
+            },
+            "reference": {
+              "id": "37f879fb4a6e0db6",
+              "name": "Weapon Specialization",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                158
+              ],
+              "section": "General Drakkisath"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Weapon Specialization (scimitar)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Weapon Specialization (scimitar).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.37f879fb4a6e0db6]{Weapon Specialization}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 158",
+          "uniqueId": "wc-monster-general-drakkisath-weapon-specialization-scimitar"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "1f11a8013f0819dd",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Large Monstrous Humanoid (Fire); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "ad1ebed5dc963301",
+              "name": "Monstrous Humanoid Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                158
+              ],
+              "section": "General Drakkisath"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Monstrous Humanoid Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Large Monstrous Humanoid (Fire); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.ad1ebed5dc963301]{Monstrous Humanoid Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 158",
+          "uniqueId": "wc-monster-general-drakkisath-monstrous-humanoid-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "16bf5d88522465bb",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Fire subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "2d6bdc174cc71ee5",
+              "name": "Fire Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                158
+              ],
+              "section": "General Drakkisath"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Fire Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Fire subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.2d6bdc174cc71ee5]{Fire Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 158",
+          "uniqueId": "wc-monster-general-drakkisath-fire-subtype-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "7171c80608e0c31e",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "villain",
+        "magic": null,
+        "rawFields": {
+          "Abilities": "Str 21, Agy 19, Sta 20, Int 18, Spt 22, Cha 28",
+          "Advancement": "By character class",
+          "Alignment": "Lawful evil",
+          "Armor Class": "34 (-1 size, +1 Agy, +6 natural, +13 +5 full plate, +5 +3 heavy steel shield ), touch 10, flat- footed 31",
+          "Attack": "Blackblade of Shahram +30 melee (1d8+14/15-20 plus 1d6 fire)",
+          "Base Attack/Grapple": "+19/+28",
+          "Challenge Rating": "20",
+          "Feats": "Ability Focus (black conflagration), Bash, Cleave, Dodge, Furious Charge, Great Fortitude, Greater Weapon Focus (scimitar), Greater Weapon Specialization (scimitar), Improved Initiative, Improved Overrun, Iron Will, Leadership, Lightning Reflexes, Power Attack, Thunderous Blow (DC 31) [x2], War Stomp, Weapon Focus (scimitar), Weapon Specialization (scimitar)",
+          "Full Attack": "Blackblade of Shahram +30/+25/+20/+15 melee (1d8+14/15-20 plus 1d6 fire)",
+          "Hit Dice": "9d8+45 plus 3d8+15 plus 12d10+60 [x4] (976 hp)",
+          "Initiative": "+8",
+          "Saves": "Fort +24, Ref +16, Will +19",
+          "Skills": "Bluff +21, Climb +15, Intimidate +34, Jump +9, Knowledge (arcana) +7, Knowledge (military tactics) +23, Listen +21, Profession (military commander) +18, Spellcraft +13, Spot +21, Stealth +4 (+0 hiding), Swim +5",
+          "Space/Reach": "10 ft./10 ft.",
+          "Special Attacks": "Black conflagration (DC 27), flame burst (DC 25), pierce armor",
+          "Special Qualities": "Darkvision 60 ft., heritage immunities, immunity to fear, resistance to acid 10 and electricity 10, spell resistance 29",
+          "Speed": "30 ft. (6 squares) in armor; 40 ft. base"
+        },
+        "rulesCoverage": {
+          "actor-defense": 3,
+          "linked-reference": 19,
+          "manual": 6
+        },
+        "subtypes": [
+          "Fire"
+        ]
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          159
+        ],
+        "printedPages": [
+          158
+        ],
+        "section": "General Drakkisath",
+        "verification": "native-text-table+review-override"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "bac51ea3b88ec5bd",
+    "59b9295585aaedc4",
+    "9deb2a26560e3f39",
+    "1da824c361e9a7ee",
+    "4589665ba92bb379",
+    "78fa79e6ba4baf37",
+    "e1a69d716e32bd91",
+    "c0671dc01ad1387f",
+    "cf2dc64dabd70184",
+    "9590328804d6d141",
+    "d20313758797ebc3",
+    "084407a3a53457b1",
+    "de6776e96a04c734",
+    "d8fe7e7af836f9b3",
+    "2b9648bcac80c3f1",
+    "0b1657c9cd2ec4a8",
+    "0853e85d2c5c11be",
+    "9634a1d7f66c6def",
+    "d592854e801c980b",
+    "e71dd22b952dc62a",
+    "ae22a3f8e37a9d19",
+    "5cbb2ef835e1900e",
+    "0b5689fe1071406f",
+    "d8c491ffb8a39ca5",
+    "e4cba082695e1167",
+    "3ffa5306988f1459",
+    "78a3afb82d55faf2",
+    "a82ef3a822cb942f",
+    "bb1f107d806e658b",
+    "98b5e0f251718a89",
+    "1d6f70db984415e9",
+    "1f11a8013f0819dd",
+    "16bf5d88522465bb"
+  ],
+  "name": "General Drakkisath",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 9,
+        "origMod": 9,
+        "origTotal": 28,
+        "penalty": 0,
+        "total": 28,
+        "userPenalty": 0,
+        "value": 28
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 5,
+        "origMod": 5,
+        "origTotal": 20,
+        "penalty": 0,
+        "total": 20,
+        "userPenalty": 0,
+        "value": 20
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 4,
+        "origMod": 4,
+        "origTotal": 19,
+        "penalty": 0,
+        "total": 19,
+        "userPenalty": 0,
+        "value": 19
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 4,
+        "origMod": 4,
+        "origTotal": 18,
+        "penalty": 0,
+        "total": 18,
+        "userPenalty": 0,
+        "value": 18
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 5,
+        "origMod": 5,
+        "origTotal": 21,
+        "penalty": 0,
+        "total": 21,
+        "userPenalty": 0,
+        "value": 21
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 6,
+        "origMod": 6,
+        "origTotal": 22,
+        "penalty": 0,
+        "total": 22,
+        "userPenalty": 0,
+        "value": 22
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 31,
+          "value": 0
+        },
+        "normal": {
+          "total": 34,
+          "value": 0
+        },
+        "touch": {
+          "total": 10,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 19,
+        "nonepic": 19,
+        "total": 19,
+        "value": 0
+      },
+      "cmb": {
+        "total": 28,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "monstrousHumanoid",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 0,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 24,
+        "total": 24
+      },
+      "hp": {
+        "base": 976,
+        "max": 976,
+        "min": -20,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 976
+      },
+      "init": {
+        "bonus": 0,
+        "total": 8,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 6,
+      "savingThrows": {
+        "fort": {
+          "base": 24,
+          "total": 24
+        },
+        "ref": {
+          "base": 16,
+          "total": 16
+        },
+        "will": {
+          "base": 19,
+          "total": 19
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": null,
+        "darkvision": 60,
+        "lowLight": false,
+        "lowLightMultiplier": null,
+        "tremorsense": null
+      },
+      "speed": {
+        "land": {
+          "base": 30,
+          "total": 30
+        }
+      },
+      "sr": {
+        "formula": "29",
+        "total": 29
+      }
+    },
+    "details": {
+      "alignment": "Lawful evil",
+      "biography": {
+        "public": "",
+        "value": "<p>General Drakkisath is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 20,
+      "environment": "",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 24,
+        "value": 24
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 9d8+45 plus 3d8+15 plus 12d10+60 [x4] (976 hp)</p><p><strong>Initiative:</strong> +8</p><p><strong>Speed:</strong> 30 ft. (6 squares) in armor; 40 ft. base</p><p><strong>Armor Class:</strong> 34 (-1 size, +1 Agy, +6 natural, +13 +5 full plate, +5 +3 heavy steel shield ), touch 10, flat- footed 31</p><p><strong>Base Attack/Grapple:</strong> +19/+28</p><p><strong>Attack:</strong> Blackblade of Shahram +30 melee (1d8+14/15-20 plus 1d6 fire)</p><p><strong>Full Attack:</strong> Blackblade of Shahram +30/+25/+20/+15 melee (1d8+14/15-20 plus 1d6 fire)</p><p><strong>Space/Reach:</strong> 10 ft./10 ft.</p><p><strong>Special Attacks:</strong> Black conflagration (DC 27), flame burst (DC 25), pierce armor</p><p><strong>Special Qualities:</strong> Darkvision 60 ft., heritage immunities, immunity to fear, resistance to acid 10 and electricity 10, spell resistance 29</p><p><strong>Saves:</strong> Fort +24, Ref +16, Will +19</p><p><strong>Abilities:</strong> Str 21, Agy 19, Sta 20, Int 18, Spt 22, Cha 28</p><p><strong>Skills:</strong> Bluff +21, Climb +15, Intimidate +34, Jump +9, Knowledge (arcana) +7, Knowledge (military tactics) +23, Listen +21, Profession (military commander) +18, Spellcraft +13, Spot +21, Stealth +4 (+0 hiding), Swim +5</p><p><strong>Feats:</strong> Ability Focus (black conflagration), Bash, Cleave, Dodge, Furious Charge, Great Fortitude, Greater Weapon Focus (scimitar), Greater Weapon Specialization (scimitar), Improved Initiative, Improved Overrun, Iron Will, Leadership, Lightning Reflexes, Power Attack, Thunderous Blow (DC 31) [x2], War Stomp, Weapon Focus (scimitar), Weapon Specialization (scimitar)</p><p><strong>Advancement:</strong> By character class</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 20,
+      "type": "Monstrous Humanoid"
+    },
+    "skills": {
+      "blf": {
+        "ability": "cha",
+        "abilityModifier": 9,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 12,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 21,
+        "notes": "Printed total +21",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "clm": {
+        "ability": "str",
+        "abilityModifier": 5,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 10,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 15,
+        "notes": "Printed total +15",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "hid": {
+        "ability": "dex",
+        "abilityModifier": 4,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 0,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 4,
+        "notes": "Printed total +4 (+0 hiding)",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "int": {
+        "ability": "cha",
+        "abilityModifier": 9,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 25,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 34,
+        "notes": "Printed total +34",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "jmp": {
+        "ability": "str",
+        "abilityModifier": 5,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 4,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 9,
+        "notes": "Printed total +9",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "kar": {
+        "ability": "int",
+        "abilityModifier": 4,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 3,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 7,
+        "notes": "Printed total +7",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "kmt": {
+        "ability": "int",
+        "abilityModifier": 4,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 19,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 23,
+        "notes": "Printed total +23",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "lis": {
+        "ability": "wis",
+        "abilityModifier": 6,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 15,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 21,
+        "notes": "Printed total +21",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "pmc": {
+        "ability": "wis",
+        "abilityModifier": 6,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 12,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 18,
+        "notes": "Printed total +18",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spl": {
+        "ability": "int",
+        "abilityModifier": 4,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 9,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 13,
+        "notes": "Printed total +13",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spt": {
+        "ability": "wis",
+        "abilityModifier": 6,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 15,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 21,
+        "notes": "Printed total +21",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "swm": {
+        "ability": "str",
+        "abilityModifier": 5,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 0,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 5,
+        "notes": "Printed total +5",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "lg",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Darkvision 60 ft., heritage immunities, immunity to fear, resistance to acid 10 and electricity 10, spell resistance 29",
+      "size": "lg",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

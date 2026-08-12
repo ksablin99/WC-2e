@@ -1,0 +1,42 @@
+{
+  "_embedded": {},
+  "_id": "6f37d068acd57510",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "creatureRule": {
+        "kind": "capability",
+        "reusable": true
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          198
+        ],
+        "printedPages": [
+          197
+        ],
+        "section": "Summoning Creatures",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/aura.svg",
+  "name": "Summoning Creatures Traits",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilityType": "nat",
+    "description": {
+      "value": "<p>Roll the listed success chance. A successful summon normally lasts 1 hour; a summoned creature cannot use its own summon ability for 1 hour and grants no experience when defeated. Use the listed equivalent spell level for Concentration and dispelling. The summoner's feature names the eligible creature and any exception.</p><p>This reusable record defines shared conversion behavior. Individual actors carry exact printed exceptions and totals.</p>"
+    },
+    "featType": "trait",
+    "source": "World of Warcraft: Monster Guide, pp. 197",
+    "uniqueId": "wc-creature-rule-summoning-creatures"
+  },
+  "type": "feat"
+}

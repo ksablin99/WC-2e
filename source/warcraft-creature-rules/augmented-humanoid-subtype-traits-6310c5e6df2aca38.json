@@ -1,0 +1,42 @@
+{
+  "_embedded": {},
+  "_id": "6310c5e6df2aca38",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "creatureRule": {
+        "kind": "subtype",
+        "reusable": true
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          187
+        ],
+        "printedPages": [
+          186
+        ],
+        "section": "Augmented Humanoid Subtype",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/aura.svg",
+  "name": "Augmented Humanoid Subtype Traits",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilityType": "nat",
+    "description": {
+      "value": "<p>The creature changed from humanoid to another type. It normally uses the traits of its current type while retaining the features, such as Hit Die and base progressions, of its original humanoid type.</p><p>This reusable record defines shared conversion behavior. Individual actors carry exact printed exceptions and totals.</p>"
+    },
+    "featType": "trait",
+    "source": "World of Warcraft: Monster Guide, pp. 186",
+    "uniqueId": "wc-creature-rule-augmented-humanoid-subtype"
+  },
+  "type": "feat"
+}

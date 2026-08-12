@@ -84,5 +84,10 @@ describe("Warcraft spellbook preparation", () => {
       expect(getSpellbookRepertoireLimit(actorSystem, {})).toBe(3);
       expect(getSpellbookRepertoireLimit(null, null)).toBe(0);
     });
+
+    it("accepts a source-stated monster repertoire limit", () => {
+      expect(getSpellbookRepertoireLimit({}, { repertoireLimitOverride: 18 })).toBe(18);
+      expect(getSpellbookRepertoireLimit({}, { repertoireLimitOverride: 0 })).toBe(0);
+    });
   });
 });

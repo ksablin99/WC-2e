@@ -712,7 +712,6 @@ export class MonsterImporterDialog extends FormApplication {
                         }
                     }
                     if (feat.toLowerCase() === 'stealthy') {
-                        featSkillMod['mos'] = -2
                         featSkillMod['hid'] = -2
                     }
                     if (feat.toLowerCase() === 'alertness') {

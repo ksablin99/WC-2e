@@ -1,0 +1,4884 @@
+{
+  "_embedded": {
+    "items": [
+      {
+        "_id": "831561a25a92ebb4",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 20,
+                "die": 8,
+                "expression": "20d8",
+                "index": 0
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Outsider Hit Dice (20d8 pool)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "high",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [
+            [
+              "1480",
+              "misc",
+              "mhp",
+              "replace"
+            ],
+            [
+              "22",
+              "misc",
+              "babattack",
+              "base-replace"
+            ],
+            [
+              "34",
+              "ac",
+              "pac",
+              "replace"
+            ],
+            [
+              "14",
+              "ac",
+              "tch",
+              "replace"
+            ],
+            [
+              "28",
+              "ac",
+              "ffac",
+              "replace"
+            ],
+            [
+              "29",
+              "savingThrows",
+              "fort",
+              "replace"
+            ],
+            [
+              "20",
+              "savingThrows",
+              "ref",
+              "replace"
+            ],
+            [
+              "21",
+              "savingThrows",
+              "will",
+              "replace"
+            ],
+            [
+              "40",
+              "speed",
+              "landSpeed",
+              "base-replace"
+            ],
+            [
+              "60",
+              "speed",
+              "flySpeed",
+              "base-replace"
+            ]
+          ],
+          "classType": "racial",
+          "creatureType": "outsider",
+          "damageReduction": [
+            [
+              "15",
+              "epic",
+              false
+            ]
+          ],
+          "hd": 8,
+          "hp": 0,
+          "levels": 20,
+          "maxLevel": 50,
+          "resistances": [
+            [
+              "10",
+              "energy-acid",
+              false,
+              false,
+              false
+            ],
+            [
+              "10",
+              "energy-cold",
+              false,
+              false,
+              false
+            ],
+            [
+              "10",
+              "energy-electric",
+              false,
+              false,
+              false
+            ],
+            [
+              "",
+              "energy-fire",
+              true,
+              false,
+              false
+            ]
+          ],
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "high"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 166"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "3c2d31660618eb29",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "hdPool": {
+                "count": 2,
+                "die": 12,
+                "expression": "2d12",
+                "index": 1
+              }
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/book.svg",
+        "name": "Outsider Hit Dice (2d12 pool)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "automaticFeatures": false,
+          "bab": "high",
+          "changeFlags": {
+            "noCon": false,
+            "noInt": false
+          },
+          "changes": [],
+          "classType": "racial",
+          "creatureType": "outsider",
+          "damageReduction": [],
+          "hd": 12,
+          "hp": 0,
+          "levels": 2,
+          "maxLevel": 50,
+          "resistances": [],
+          "savingThrows": {
+            "fort": {
+              "value": "high"
+            },
+            "ref": {
+              "value": "high"
+            },
+            "will": {
+              "value": "high"
+            }
+          },
+          "skillsPerLevel": 0,
+          "source": "World of Warcraft: Monster Guide, p. 166"
+        },
+        "type": "class"
+      },
+      {
+        "_id": "e39bb05ed6994f7d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                42
+              ],
+              "printedDamage": "4d6+27/17-20/x3 plus 1d6 fel"
+            },
+            "reference": {
+              "id": "f10873f83a3262af",
+              "name": "Warblade",
+              "pack": "warcraftrpg2e.warcraft-equipment"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Warblade Of Archimonde",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 3,
+            "critRange": 17,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "22",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "Warblade of Archimonde",
+          "damage": {
+            "parts": [
+              [
+                "4d6+27",
+                "Piercing or Slashing",
+                "damage-piercing-or-slashing"
+              ],
+              [
+                "1d6",
+                "Fel",
+                "damage-untyped-energy"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> Warblade of Archimonde +42 melee (4d6+27/17-20/x3 plus 1d6 fel).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": true,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "f4ca7a979d392f14",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                34
+              ],
+              "printedDamage": "3d6+14 plus 1d6 fel"
+            },
+            "reference": {
+              "id": "d15baeae5a5e2844",
+              "name": "Natural Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Claw",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "14",
+          "attackParts": [],
+          "attackType": "natural",
+          "autoScaleOption": "never",
+          "baseWeaponType": "claw",
+          "damage": {
+            "parts": [
+              [
+                "3d6+14",
+                "Piercing or Slashing",
+                "damage-piercing-or-slashing"
+              ],
+              [
+                "1d6",
+                "Fel",
+                "damage-untyped-energy"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> claw +34 melee (3d6+14 plus 1d6 fel).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "natural"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "36e509eaf5b59941",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "printedBonus": [
+                39
+              ],
+              "printedDamage": "3d6+14 and 1d6 fel"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Claws",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "vsTouchAc": false
+          },
+          "actionType": "mwak",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "attackBonus": "19",
+          "attackParts": [],
+          "attackType": "weapon",
+          "autoScaleOption": "never",
+          "baseWeaponType": "claws",
+          "damage": {
+            "parts": [
+              [
+                "3d6+14",
+                "Piercing or Slashing",
+                "damage-piercing-or-slashing"
+              ],
+              [
+                "1d6",
+                "Fel",
+                "damage-untyped-energy"
+              ]
+            ]
+          },
+          "description": {
+            "value": "<p><strong>Printed attack:</strong> claws +39 melee (3d6+14 and 1d6 fel).</p>"
+          },
+          "enh": 0,
+          "favorite": true,
+          "magic": false,
+          "primaryAttack": true,
+          "proficient": true,
+          "source": "World of Warcraft: Monster Guide",
+          "threatRangeExtended": false,
+          "weaponSubtype": "other"
+        },
+        "type": "attack"
+      },
+      {
+        "_id": "cc048acfc605d53c",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack - Warblade of Archimonde",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 1,
+              "id": "e39bb05ed6994f7d",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Warblade Of Archimonde",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> Warblade of Archimonde +42/+37/+32/+27 melee (4d6+27/17-20/x3 and 1d6 fel).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_id": "b984df7a05a242fa",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "reference": {
+              "id": "9f7e12d244537004",
+              "name": "Full Attacks Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/sword.svg",
+        "name": "Full Attack - 2 claws",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "attacks": {
+            "attack1": {
+              "_id": 1,
+              "attackMode": "primary",
+              "count": 2,
+              "id": "36e509eaf5b59941",
+              "img": "icons/svg/sword.svg",
+              "isWeapon": false,
+              "name": "Claws",
+              "primary": true
+            },
+            "attack2": {
+              "_id": 2,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack3": {
+              "_id": 3,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack4": {
+              "_id": 4,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            },
+            "attack5": {
+              "_id": 5,
+              "attackMode": "primary",
+              "count": 0,
+              "id": "",
+              "img": "",
+              "isWeapon": false,
+              "name": "",
+              "primary": false
+            }
+          },
+          "attackType": "full",
+          "description": {
+            "value": "<p><strong>Printed full attack:</strong> 2 claws +39 melee (3d6+14 and 1d6 fel).</p>"
+          },
+          "source": "World of Warcraft: Monster Guide"
+        },
+        "type": "full-attack"
+      },
+      {
+        "_embedded": {},
+        "_id": "db76083ef589f33d",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "catalog": {
+              "completeListEntry": true,
+              "generated": true,
+              "status": "srd-mechanics-with-warcraft-header"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 20,
+              "frequency": "atWill",
+              "kind": "sla",
+              "saveDC": 26,
+              "sourceSpell": {
+                "id": "daf77a65e9052cfc",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    272,
+                    273,
+                    284
+                  ],
+                  "printedPages": [
+                    270,
+                    271,
+                    282
+                  ],
+                  "section": "Blasphemy",
+                  "verification": "text-extracted-header"
+                }
+              },
+              "uses": 0
+            },
+            "reference": {
+              "id": "daf77a65e9052cfc",
+              "name": "Blasphemy",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                167
+              ],
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Blasphemy (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "other",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": true,
+          "autoscaleAttackParts": "",
+          "baseCl": "20",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "combatChanges": [],
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "creationChanges": [],
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": []
+          },
+          "damageReduction": [],
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>Kills, paralyzes, weakens or dazes</p><hr><p><strong>Lord Kazzak spell-like ability:</strong> At will; caster level 20; save DC 26 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "40 ft.",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Blasphemy (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Priest",
+                7
+              ]
+            ],
+            "domain": [
+              [
+                "Death",
+                7
+              ]
+            ],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 7,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": ""
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": "40",
+            "type": "circle"
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "daf77a65e9052cfc",
+          "originPack": "warcraftrpg2e.warcraft-spells",
+          "originVersion": 108,
+          "perRoundActions": [],
+          "possibleUpdate": false,
+          "powerPointsCost": 13,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 0,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 0
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "ft",
+            "value": 40
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requirements": [],
+          "requiresPsionicFocus": false,
+          "resistances": [],
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "26",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "None or Will negates; see text",
+            "originVersion": 97,
+            "type": "willnegates"
+          },
+          "school": "evo",
+          "shortDescription": "<p>Kills, paralyzes, weakens or dazes</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "Kills, paralyzes, weakens or dazes",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "specialActions": [
+            {
+              "action": "Create unique \"Weaken\" from \"warcraftrpg2e.commonbuffs\" on target; Set buff \"Weaken\" field data.timeline.formula to 2d4 on target; Set \"Weaken\" field data.level to 2d6 on target; Activate buff \"Weaken\" on target;",
+              "condition": "",
+              "img": "icons/svg/item-bag.svg",
+              "name": "Weaken"
+            },
+            {
+              "action": "Condition set dazzled to true on target;",
+              "condition": "",
+              "img": "icons/svg/item-bag.svg",
+              "name": "Dazed"
+            },
+            {
+              "action": "Condition set paralyzed to true on target;",
+              "condition": "",
+              "img": "icons/svg/item-bag.svg",
+              "name": "Paralyzed"
+            },
+            {
+              "action": "Condition set dead to true on target;",
+              "condition": "",
+              "img": "icons/svg/item-bag.svg",
+              "name": "Killed"
+            }
+          ],
+          "specialId": null,
+          "specialPrepared": false,
+          "spellArea": "Nonevil creatures in a 40-ft.-radius spread centered on you",
+          "spellbook": "spelllike",
+          "spellDuration": "Instantaneous",
+          "spellDurationData": {
+            "units": "inst",
+            "value": null
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": true,
+          "subschool": "",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "Nonevil creatures in a 40-ft.-radius spread centered on you"
+          },
+          "types": "evil, sonic",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 0,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "",
+            "rechargeFormula": null,
+            "value": 0
+          },
+          "warcraftManualPolicy": {
+            "mode": "srd-baseline",
+            "reason": "The inherited SRD implementation is used with the Warcraft list assignment and spell level."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_embedded": {},
+        "_id": "81ede70aed8320b4",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "catalog": {
+              "completeListEntry": true,
+              "generated": true,
+              "status": "srd-mechanics-with-warcraft-header"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 20,
+              "frequency": "atWill",
+              "kind": "sla",
+              "saveDC": 28,
+              "sourceSpell": {
+                "id": "8f23f2647470eb12",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    266,
+                    300
+                  ],
+                  "printedPages": [
+                    264,
+                    298
+                  ],
+                  "section": "Dominate Monster",
+                  "verification": "text-extracted-header"
+                }
+              },
+              "uses": 0
+            },
+            "reference": {
+              "id": "8f23f2647470eb12",
+              "name": "Dominate Monster",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                167
+              ],
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Dominate Monster (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "other",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": true,
+          "autoscaleAttackParts": "",
+          "baseCl": "20",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "combatChanges": [],
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "creationChanges": [],
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": []
+          },
+          "damageReduction": [],
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>As dominate person, but any</p><hr><p><strong>Lord Kazzak spell-like ability:</strong> At will; caster level 20; save DC 28 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "Close (25 ft. + 5 ft./2 levels)",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "Lasts [[@cl]] day(s).",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Dominate Monster (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Arcanist",
+                9
+              ]
+            ],
+            "domain": [],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 9,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": ""
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 0,
+            "type": ""
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "8f23f2647470eb12",
+          "originPack": "warcraftrpg2e.warcraft-spells",
+          "originVersion": 108,
+          "perRoundActions": [],
+          "possibleUpdate": false,
+          "powerPointsCost": 17,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 0,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 0
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "close",
+            "value": null
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requirements": [],
+          "requiresPsionicFocus": false,
+          "resistances": [],
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "28",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "Will negates",
+            "originVersion": 97,
+            "type": "willnegates"
+          },
+          "school": "enc",
+          "shortDescription": "<p>As dominate person, but any</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "As dominate person, but any",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "specialActions": [],
+          "specialId": null,
+          "specialPrepared": false,
+          "spellArea": "",
+          "spellbook": "spelllike",
+          "spellDuration": "One day/level",
+          "spellDurationData": {
+            "units": "day",
+            "value": 1
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": true,
+          "subschool": "compulsion",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "One humanoid"
+          },
+          "types": "mind-affecting",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 0,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "",
+            "rechargeFormula": null,
+            "value": 0
+          },
+          "warcraftManualPolicy": {
+            "mode": "srd-baseline-with-manual-boundary",
+            "reason": "SRD mechanics are retained, but Warcraft-specific creatures, forms, slot manipulation, or persistent cross-actor state require GM adjudication."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_embedded": {},
+        "_id": "807f56b99d1bfc04",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "catalog": {
+              "completeListEntry": true,
+              "generated": true,
+              "status": "manual-effect-pending-verification"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 20,
+              "frequency": "atWill",
+              "kind": "sla",
+              "saveDC": 25,
+              "sourceSpell": {
+                "id": "b6ec75199f2656de",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    266,
+                    270,
+                    300
+                  ],
+                  "printedPages": [
+                    264,
+                    268,
+                    298
+                  ],
+                  "section": "Greater Dispel Magic",
+                  "verification": "text-extracted-header"
+                }
+              },
+              "uses": 0
+            },
+            "reference": {
+              "id": "b6ec75199f2656de",
+              "name": "Greater Dispel Magic",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                167
+              ],
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Greater Dispel Magic (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "max(min(5,ceil(@cl/2)),1)",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": true,
+          "autoscaleAttackParts": "",
+          "baseCl": "20",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "combatChanges": [],
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": []
+          },
+          "damageReduction": [],
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>As dispel magic, but +20 on</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p><hr><p><strong>Lord Kazzak spell-like ability:</strong> At will; caster level 20; save DC 25 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "Close (25 ft. + 5 ft./2 levels)",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Greater Dispel Magic (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Arcanist",
+                6
+              ],
+              [
+                "Healer",
+                6
+              ]
+            ],
+            "domain": [],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 6,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": ""
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 0,
+            "type": ""
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "b6ec75199f2656de",
+          "originPack": "warcraftrpg2e.warcraft-spells",
+          "originVersion": 109,
+          "possibleUpdate": false,
+          "powerPointsCost": 1,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 0,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 0
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "close",
+            "value": null
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requiresPsionicFocus": false,
+          "resistances": [],
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "25",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "None",
+            "originVersion": 97,
+            "type": ""
+          },
+          "school": "abj",
+          "shortDescription": "<p>As dispel magic, but +20 on</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "As dispel magic, but +20 on",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "specialActions": [],
+          "specialId": null,
+          "specialPrepared": false,
+          "spellArea": "",
+          "spellbook": "spelllike",
+          "spellDuration": "Instantaneous",
+          "spellDurationData": {
+            "units": "inst",
+            "value": null
+          },
+          "spellEffect": "Ray",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": true,
+          "subschool": "",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "Ray"
+          },
+          "types": "force",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 0,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "",
+            "rechargeFormula": null,
+            "value": 0
+          },
+          "warcraftManualPolicy": {
+            "mode": "manual",
+            "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_id": "c7d3d06496f1962e",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Spell-Like Ability",
+              "raw": "Immolate"
+            },
+            "monsterMagic": {
+              "automation": "manual-missing-spell",
+              "casterLevel": 20,
+              "frequency": "atWill",
+              "kind": "sla",
+              "saveDC": 24,
+              "uses": 0
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                167
+              ],
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Immolate (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "sp",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "description": {
+            "value": "<p><strong>Spell-like ability:</strong> At will; caster level 20; save DC 24 where applicable.</p><p><strong>Source exception:</strong> May be quickened through Quicken Spell-Like Ability.</p><p><strong>Resolution:</strong> The source spell is not present in the available core or system spell catalogues. Track the listed uses here; its effect remains GM-adjudicated from the cited private source, and no substitute effect has been invented.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-immolate-sla",
+          "uses": {
+            "autoDeductCharges": true,
+            "chargesPerUse": 1,
+            "max": 0,
+            "per": "",
+            "value": 0
+          }
+        },
+        "type": "feat"
+      },
+      {
+        "_embedded": {},
+        "_id": "87db2f749c4b489e",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "catalog": {
+              "completeListEntry": true,
+              "generated": true,
+              "status": "srd-mechanics-with-warcraft-header"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 20,
+              "frequency": "atWill",
+              "kind": "sla",
+              "saveDC": 24,
+              "sourceSpell": {
+                "id": "985c5d0383bb46c5",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    267,
+                    268,
+                    274,
+                    331
+                  ],
+                  "printedPages": [
+                    265,
+                    266,
+                    272,
+                    329
+                  ],
+                  "section": "Rain of Fire",
+                  "verification": "text-extracted-header"
+                }
+              },
+              "uses": 0
+            },
+            "reference": {
+              "id": "985c5d0383bb46c5",
+              "name": "Rain of Fire",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                167
+              ],
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Rain of Fire (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "other",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": true,
+          "autoscaleAttackParts": "",
+          "baseCl": "20",
+          "castTime": "1 standard action",
+          "classSource": "",
+          "clOffset": 0,
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "createdBy": "",
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": []
+          },
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>3d6 bludgeoning and 2d6 fi re damage,</p><hr><p><strong>Lord Kazzak spell-like ability:</strong> At will; caster level 20; save DC 24 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "Medium (100 ft. + 10 ft./level)",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Rain of Fire (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Mage",
+                4
+              ],
+              [
+                "Warlock",
+                4
+              ]
+            ],
+            "domain": [
+              [
+                "Destruction",
+                4
+              ]
+            ],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 4,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": ""
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 0,
+            "type": "circle"
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "985c5d0383bb46c5",
+          "originPack": "warcraftrpg2e.warcraft-spells",
+          "originVersion": 104,
+          "possibleUpdate": false,
+          "powerPointsCost": 0,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 0,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 0
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "medium",
+            "value": null
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requiresPsionicFocus": false,
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "24",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "None",
+            "originVersion": 97,
+            "type": ""
+          },
+          "school": "evo",
+          "shortDescription": "<p>3d6 bludgeoning and 2d6 fi re damage,</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "3d6 bludgeoning and 2d6 fi re damage,",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "specialActions": [],
+          "specialId": null,
+          "specialPrepared": false,
+          "spellArea": "Cylinder (20-ft. radius, 40 ft. high)",
+          "spellbook": "spelllike",
+          "spellDuration": "Instantaneous",
+          "spellDurationData": {
+            "units": "inst",
+            "value": null
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": true,
+          "subschool": "",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "Cylinder (20-ft. radius, 40 ft. high)"
+          },
+          "types": "fire",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 0,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "",
+            "rechargeFormula": null,
+            "value": 0
+          },
+          "warcraftManualPolicy": {
+            "mode": "srd-baseline",
+            "reason": "The inherited SRD implementation is used with the Warcraft list assignment and spell level."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_embedded": {},
+        "_id": "344f0760c5da0393",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "catalog": {
+              "completeListEntry": true,
+              "generated": true,
+              "status": "manual-effect-pending-verification"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 20,
+              "frequency": "atWill",
+              "kind": "sla",
+              "saveDC": 25,
+              "sourceSpell": {
+                "id": "02eab0308c7a7a4b",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    267,
+                    337,
+                    338
+                  ],
+                  "printedPages": [
+                    265,
+                    335,
+                    336
+                  ],
+                  "section": "Shadow Strike",
+                  "verification": "text-extracted-header"
+                }
+              },
+              "uses": 0
+            },
+            "reference": {
+              "id": "02eab0308c7a7a4b",
+              "name": "Shadow Strike",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                167
+              ],
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Shadow Strike (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "max(min(5,ceil(@cl/2)),1)",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": true,
+          "autoscaleAttackParts": "",
+          "baseCl": "20",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "combatChanges": [],
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": []
+          },
+          "damageReduction": [],
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>Melee attack deals an extra 10d8</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p><hr><p><strong>Lord Kazzak spell-like ability:</strong> At will; caster level 20; save DC 25 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "Touch",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Shadow Strike (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Mage",
+                6
+              ]
+            ],
+            "domain": [],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 6,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "",
+            "value": ""
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 0,
+            "type": ""
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "02eab0308c7a7a4b",
+          "originPack": "warcraftrpg2e.warcraft-spells",
+          "originVersion": 109,
+          "possibleUpdate": false,
+          "powerPointsCost": 1,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 0,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 0
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "touch",
+            "value": null
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requiresPsionicFocus": false,
+          "resistances": [],
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "25",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "None",
+            "originVersion": 97,
+            "type": ""
+          },
+          "school": "trs",
+          "shortDescription": "<p>Melee attack deals an extra 10d8</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "Melee attack deals an extra 10d8",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "specialActions": [],
+          "specialId": null,
+          "specialPrepared": false,
+          "spellArea": "",
+          "spellbook": "spelllike",
+          "spellDuration": "Permanent until discharged (see text)",
+          "spellDurationData": {
+            "units": "perm",
+            "value": null
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": true,
+          "subschool": "",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "One creature touched"
+          },
+          "types": "force",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 0,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "",
+            "rechargeFormula": null,
+            "value": 0
+          },
+          "warcraftManualPolicy": {
+            "mode": "manual",
+            "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_embedded": {},
+        "_id": "11b8f3b31dd465d8",
+        "_stats": {
+          "compendiumSource": null,
+          "coreVersion": "13.351",
+          "createdTime": null,
+          "duplicateSource": null,
+          "exportSource": null,
+          "lastModifiedBy": null,
+          "modifiedTime": null,
+          "systemId": null,
+          "systemVersion": null
+        },
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "catalog": {
+              "completeListEntry": true,
+              "generated": true,
+              "status": "srd-mechanics-with-warcraft-header"
+            },
+            "monsterMagic": {
+              "automation": "spell-clone",
+              "casterLevel": 20,
+              "frequency": "atWill",
+              "kind": "sla",
+              "saveDC": 27,
+              "sourceSpell": {
+                "id": "4843572256e21703",
+                "pack": "warcraft-spells",
+                "source": {
+                  "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+                  "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+                  "pdfPages": [
+                    272,
+                    355
+                  ],
+                  "printedPages": [
+                    270,
+                    353
+                  ],
+                  "section": "Unholy Aura",
+                  "verification": "text-extracted-header"
+                }
+              },
+              "uses": 0
+            },
+            "reference": {
+              "id": "4843572256e21703",
+              "name": "Unholy Aura",
+              "pack": "warcraftrpg2e.warcraft-spells"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                167
+              ],
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Unholy Aura (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "ability": {
+            "attack": "",
+            "critMult": 2,
+            "critRange": 20,
+            "damage": "",
+            "damageMult": 1,
+            "twoHandedOnly": false,
+            "vsTouchAc": false
+          },
+          "actionType": "other",
+          "activateActions": [],
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "addedLevel": 0,
+          "attack": {
+            "parts": []
+          },
+          "attackBonus": "",
+          "attackCountFormula": "",
+          "attackNotes": "",
+          "attackParts": [],
+          "atWill": true,
+          "autoscaleAttackParts": "",
+          "baseCl": "20",
+          "castTime": "1 standard action",
+          "changes": [],
+          "classSource": "",
+          "clOffset": 0,
+          "combatChanges": [],
+          "components": {
+            "divineFocus": 0,
+            "focus": false,
+            "material": false,
+            "somatic": false,
+            "value": "",
+            "verbal": false
+          },
+          "conditionals": [],
+          "container": "None",
+          "containerWeightless": false,
+          "contextNotes": [],
+          "createdBy": "",
+          "critConfirmBonus": "",
+          "customAttributes": {},
+          "customAttributesLocked": false,
+          "customReferenceId": "",
+          "customTag": "",
+          "damage": {
+            "alternativeParts": [],
+            "parts": []
+          },
+          "deactivateActions": [],
+          "description": {
+            "chat": "",
+            "unidentified": "",
+            "value": "<p>+4 to AC, +4 resistance and SR 25</p><hr><p><strong>Lord Kazzak spell-like ability:</strong> At will; caster level 20; save DC 27 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+          },
+          "display": "20 ft.",
+          "duration": {
+            "units": "",
+            "value": null
+          },
+          "effectNotes": "",
+          "epic": "",
+          "favorite": false,
+          "formula": "",
+          "identifiedName": "Unholy Aura (Sp)",
+          "index": {
+            "subType": null,
+            "uniqueId": ""
+          },
+          "isDomainSpell": false,
+          "isPower": false,
+          "isSpellSpontaneousReplacement": false,
+          "learnedAt": {
+            "bloodline": [],
+            "class": [
+              [
+                "Priest",
+                8
+              ]
+            ],
+            "domain": [],
+            "elementalSchool": [],
+            "subDomain": []
+          },
+          "level": 8,
+          "linkedChargeItem": {
+            "id": null,
+            "img": null,
+            "name": null
+          },
+          "linkId": "",
+          "linkImported": false,
+          "linkSourceId": "",
+          "linkSourceName": "",
+          "materials": {
+            "consumed": {
+              "_deprecated": true,
+              "value": false
+            },
+            "focus": "a tiny reliquary containing some sacred relic, such as a piece of parchment from an unholy text  the reliquary costs at least 500 gp",
+            "value": ""
+          },
+          "maxDamageDice": 0,
+          "maxDamageDiceFormula": "",
+          "measureTemplate": {
+            "customColor": "",
+            "customTexture": "",
+            "overrideColor": false,
+            "overrideTexture": false,
+            "size": 20,
+            "type": ""
+          },
+          "metamagicFeats": {
+            "empowered": false,
+            "enhanced": false,
+            "enhancedHalf": false,
+            "enlarged": false,
+            "intensified": false,
+            "maximized": false,
+            "widened": false
+          },
+          "nameFormula": "",
+          "nameFromFormula": false,
+          "originId": "4843572256e21703",
+          "originPack": "warcraftrpg2e.warcraft-spells",
+          "originVersion": 109,
+          "possibleUpdate": false,
+          "powerPointsCost": 0,
+          "pr": false,
+          "preparation": {
+            "autoDeductCharges": true,
+            "maxAmount": 0,
+            "mode": "prepared",
+            "prepared": true,
+            "preparedAmount": 0
+          },
+          "psionic": "",
+          "range": {
+            "long": null,
+            "units": "ft",
+            "value": 20
+          },
+          "recharge": {
+            "current": 0,
+            "enabled": false,
+            "formula": ""
+          },
+          "requiresPsionicFocus": false,
+          "rollTableDraw": {
+            "formula": "",
+            "id": "",
+            "name": "",
+            "pack": ""
+          },
+          "save": {
+            "ability": "",
+            "dc": "27",
+            "dcAutoAbility": "",
+            "dcAutoType": "",
+            "description": "See text",
+            "originVersion": 97,
+            "type": ""
+          },
+          "school": "abj",
+          "shortDescription": "<p>+4 to AC, +4 resistance and SR 25</p>",
+          "showInQuickbar": false,
+          "slOffset": 0,
+          "snip": "+4 to AC, +4 resistance and SR 25",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "specialActions": [],
+          "specialId": null,
+          "specialPrepared": false,
+          "spellArea": "",
+          "spellbook": "spelllike",
+          "spellDuration": "1 round/level (D)",
+          "spellDurationData": {
+            "dismissable": false,
+            "units": "roundPerLevel",
+            "value": "1*@cl"
+          },
+          "spellEffect": "",
+          "spellType": {
+            "_deprecated": true,
+            "value": ""
+          },
+          "sr": true,
+          "subschool": "",
+          "summon": [],
+          "tags": [],
+          "target": {
+            "value": "One creature/level in a 20-ft.-radius burst centered on the"
+          },
+          "types": "evil",
+          "uniqueId": "",
+          "userNonRemovable": false,
+          "uses": {
+            "allowMultipleUses": false,
+            "autoDeductCharges": true,
+            "canBeLinked": false,
+            "chargesPerUse": 1,
+            "isResource": false,
+            "max": 0,
+            "maxFormula": "",
+            "maxPerUse": null,
+            "maxPerUseFormula": "",
+            "per": "",
+            "rechargeFormula": null,
+            "value": 0
+          },
+          "warcraftManualPolicy": {
+            "mode": "srd-baseline",
+            "reason": "The inherited SRD implementation is used with the Warcraft list assignment and spell level."
+          }
+        },
+        "type": "spell"
+      },
+      {
+        "_id": "1bd3453dcf66da76",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Spell-Like Ability",
+              "raw": "Hellfire"
+            },
+            "monsterMagic": {
+              "automation": "manual-missing-spell",
+              "casterLevel": 20,
+              "frequency": "day",
+              "kind": "sla",
+              "saveDC": 27,
+              "uses": 1
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                167
+              ],
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Hellfire (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "sp",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "description": {
+            "value": "<p><strong>Spell-like ability:</strong> 1/day; caster level 20; save DC 27 where applicable.</p><p><strong>Resolution:</strong> The source spell is not present in the available core or system spell catalogues. Track the listed uses here; its effect remains GM-adjudicated from the cited private source, and no substitute effect has been invented.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-hellfire-sla",
+          "uses": {
+            "autoDeductCharges": true,
+            "chargesPerUse": 1,
+            "max": 1,
+            "per": "day",
+            "value": 1
+          }
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "9d7653e5dac36db1",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Spell-Like Ability",
+              "raw": "Shadowburn"
+            },
+            "monsterMagic": {
+              "automation": "manual-missing-spell",
+              "casterLevel": 20,
+              "frequency": "day",
+              "kind": "sla",
+              "saveDC": 27,
+              "uses": 1
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+              "pdfPages": [
+                167
+              ],
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak",
+              "verification": "text+render"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Shadowburn (Sp)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "sp",
+          "activation": {
+            "cost": 1,
+            "type": "standard"
+          },
+          "description": {
+            "value": "<p><strong>Spell-like ability:</strong> 1/day; caster level 20; save DC 27 where applicable.</p><p><strong>Resolution:</strong> The source spell is not present in the available core or system spell catalogues. Track the listed uses here; its effect remains GM-adjudicated from the cited private source, and no substitute effect has been invented.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-shadowburn-sla",
+          "uses": {
+            "autoDeductCharges": true,
+            "chargesPerUse": 1,
+            "max": 1,
+            "per": "day",
+            "value": 1
+          }
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "b0df30cc259658b6",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "Fel strike"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Fel strike",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> Fel strike.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-fel-strike"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e45f997558ae5567",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "mark of Kazzak (DC 29)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "mark of Kazzak",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> mark of Kazzak (DC 29).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-mark-of-kazzak"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "bc3cd67d5f2cffd2",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "mortal infection (DC 29)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "mortal infection",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> mortal infection (DC 29).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-mortal-infection"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "74b6579238c58d81",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "shadow storm (DC 29)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "shadow storm",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> shadow storm (DC 29).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-shadow-storm"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "584d729389a623c6",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "rage 1/day"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "rage 1/day",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> rage 1/day.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-rage-1-day"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "666dcb833fdd7b02",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Special Attack",
+              "raw": "spell-like abilities"
+            },
+            "reference": {
+              "id": "9072eee87e2208d9",
+              "name": "Spell-Like Abilities Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "spell-like abilities",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> spell-like abilities.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.9072eee87e2208d9]{Spell-Like Abilities Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-spell-like-abilities"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "9e5ce90f81ed6138",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Attack",
+              "raw": "void bolt (DC 29)"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "void bolt",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Attack:</strong> void bolt (DC 29).</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-void-bolt"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "4bb159c8d3126f12",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "Blindsight 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Blindsight 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> Blindsight 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-blindsight-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "91e71a654c73001c",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "darkvision 60 ft."
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "darkvision 60 ft.",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> darkvision 60 ft..</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-darkvision-60-ft"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "f4d766938df313af",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "low-light vision"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "low-light vision",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> low-light vision.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-low-light-vision"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "0d842fb96b950dae",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "damage reduction 15/epic"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "damage reduction 15/epic",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> damage reduction 15/epic.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-damage-reduction-15-epic"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "ac0346036e27434b",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "damage reduction 15/good and truesilver"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "damage reduction 15/good and truesilver",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> damage reduction 15/good and truesilver.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-damage-reduction-15-good-and-truesilver"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e556d4d010c6694c",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "death drain"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "death drain",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> death drain.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-death-drain"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "71e45ed7696b04ef",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "immunity to fel and fire"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "immunity to fel and fire",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> immunity to fel and fire.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-immunity-to-fel-and-fire"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "17c28d7970a6c517",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "resistance to acid 10"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "resistance to acid 10",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> resistance to acid 10.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-resistance-to-acid-10"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "3838fb94407712f7",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "cold 10"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "cold 10",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> cold 10.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-cold-10"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "600f8b057106209c",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "and electricity 10"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "and electricity 10",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> and electricity 10.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-and-electricity-10"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "d8276ca7ed17fbc2",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "actor-defense",
+              "category": "Special Quality",
+              "raw": "spell resistance 30"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "spell resistance 30",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> spell resistance 30.</p><p><strong>Resolution:</strong> Numeric defenses from this declaration are represented on the actor; exceptional conditions remain GM-adjudicated.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-spell-resistance-30"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "f9d7c747efa5f1f3",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "twisted reflection"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "twisted reflection",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> twisted reflection.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-twisted-reflection"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "b019e88927241c1d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "uncanny dodge"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "uncanny dodge",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> uncanny dodge.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-uncanny-dodge"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "cf3575cf6f3c4dbc",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "warrior mark"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "warrior mark",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> warrior mark.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-warrior-mark"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "566b7a3c28187267",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Special Quality",
+              "raw": "demon traits"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "demon traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Special Quality:</strong> demon traits.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-demon-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "0d3feb517cb70535",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Cleave"
+            },
+            "reference": {
+              "id": "34b794d403b119d7",
+              "name": "Cleave",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Cleave",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Cleave.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.34b794d403b119d7]{Cleave}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-cleave"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "6b0951a8fb5a0082",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Dodge"
+            },
+            "reference": {
+              "id": "7d08b8436a8b4167",
+              "name": "Dodge",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Dodge",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Dodge.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.7d08b8436a8b4167]{Dodge}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-dodge"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "9f1c95e4ae68e4c5",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Great Fortitude"
+            },
+            "reference": {
+              "id": "66a59a40dae0fed6",
+              "name": "Great Fortitude",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Great Fortitude",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Great Fortitude.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.66a59a40dae0fed6]{Great Fortitude}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-great-fortitude"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "2d8d30aeb7b23c3d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Greater Weapon Focus (greatsword)"
+            },
+            "reference": {
+              "id": "5f27142755ab0f19",
+              "name": "Greater Weapon Focus",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Greater Weapon Focus (greatsword)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Greater Weapon Focus (greatsword).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.5f27142755ab0f19]{Greater Weapon Focus}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-greater-weapon-focus-greatsword"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "2088a5a4a03f309c",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Iron Will"
+            },
+            "reference": {
+              "id": "bf55b7e5d7d1a388",
+              "name": "Iron Will",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Iron Will",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Iron Will.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.bf55b7e5d7d1a388]{Iron Will}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-iron-will"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "6623a9d4e531257d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Feat",
+              "raw": "PLightning Reflexes"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "PLightning Reflexes",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> PLightning Reflexes.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-plightning-reflexes"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "bad35edf74da3ef0",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "manual",
+              "category": "Feat",
+              "raw": "ower Attack"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "ower Attack",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> ower Attack.</p><p><strong>Resolution:</strong> This situational ability is recorded for play but remains GM-adjudicated from the cited private source page.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-ower-attack"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "7e7dd083d1126274",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Quicken Spell-Like Ability ( immolate )"
+            },
+            "reference": {
+              "id": "uM9YHxqkrddSVYuL",
+              "name": "Quicken Spell-Like Ability",
+              "pack": "warcraftrpg2e.feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Quicken Spell-Like Ability ( immolate )",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Quicken Spell-Like Ability ( immolate ).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.feats.Item.uM9YHxqkrddSVYuL]{Quicken Spell-Like Ability}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-quicken-spell-like-ability-immolate"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "960dd9c8a9b1566d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Weapon Focus (greatsword)"
+            },
+            "reference": {
+              "id": "fdea42738398197e",
+              "name": "Weapon Focus",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Weapon Focus (greatsword)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Weapon Focus (greatsword).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.fdea42738398197e]{Weapon Focus}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-weapon-focus-greatsword"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "0e374c2db2afd259",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Feat",
+              "raw": "Weapon Specialization (greatsword)"
+            },
+            "reference": {
+              "id": "37f879fb4a6e0db6",
+              "name": "Weapon Specialization",
+              "pack": "warcraftrpg2e.warcraft-feats"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Weapon Specialization (greatsword)",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Feat:</strong> Weapon Specialization (greatsword).</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-feats.Item.37f879fb4a6e0db6]{Weapon Specialization}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-weapon-specialization-greatsword"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "01ca31170cf548c4",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Type",
+              "raw": "Huge Outsider (Demon, Evil, Extraplanar, Lawful); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules"
+            },
+            "reference": {
+              "id": "dd750e0d27b12249",
+              "name": "Outsider Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Outsider Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Type:</strong> Huge Outsider (Demon, Evil, Extraplanar, Lawful); use the reusable creature-type record for shared immunities, senses, proficiencies, and life-cycle rules.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.dd750e0d27b12249]{Outsider Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-outsider-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "4f8e6e94018ac74f",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Demon subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "29bc818a8721f188",
+              "name": "Demon Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Demon Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Demon subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.29bc818a8721f188]{Demon Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-demon-subtype-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "5d71a35ab631131d",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Evil subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "ad80f8e8725dc664",
+              "name": "Evil Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Evil Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Evil subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.ad80f8e8725dc664]{Evil Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-evil-subtype-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "e8221412963fb7f6",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Extraplanar subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "f56ea12b09ac91fc",
+              "name": "Extraplanar Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Extraplanar Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Extraplanar subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.f56ea12b09ac91fc]{Extraplanar Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-extraplanar-subtype-traits"
+        },
+        "type": "feat"
+      },
+      {
+        "_id": "549a1e4611a08360",
+        "effects": [],
+        "flags": {
+          "warcraftrpg2e": {
+            "bestiary": {
+              "automation": "linked-reference",
+              "category": "Creature Subtype",
+              "raw": "Lawful subtype; use the reusable subtype record for shared rules and the actor's printed totals for exceptions"
+            },
+            "reference": {
+              "id": "1cc3bc4e500b70cf",
+              "name": "Lawful Subtype Traits",
+              "pack": "warcraftrpg2e.warcraft-creature-rules"
+            },
+            "source": {
+              "book": "World of Warcraft: Monster Guide",
+              "printedPages": [
+                166
+              ],
+              "section": "Lord Kazzak"
+            }
+          }
+        },
+        "folder": null,
+        "img": "icons/svg/aura.svg",
+        "name": "Lawful Subtype Traits",
+        "ownership": {
+          "default": 0
+        },
+        "sort": 0,
+        "system": {
+          "abilityType": "nat",
+          "description": {
+            "value": "<p><strong>Creature Subtype:</strong> Lawful subtype; use the reusable subtype record for shared rules and the actor&#039;s printed totals for exceptions.</p><p><strong>Shared rule:</strong> @UUID[Compendium.warcraftrpg2e.warcraft-creature-rules.Item.1cc3bc4e500b70cf]{Lawful Subtype Traits}.</p>"
+          },
+          "featType": "trait",
+          "source": "World of Warcraft: Monster Guide, p. 166",
+          "uniqueId": "wc-monster-lord-kazzak-lawful-subtype-traits"
+        },
+        "type": "feat"
+      }
+    ]
+  },
+  "_id": "6d8e49b8141255ee",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "bestiary": {
+        "completeStatblock": true,
+        "kind": "villain",
+        "magic": {
+          "regularSpells": 0,
+          "slaExecutable": 6,
+          "slaManual": 3
+        },
+        "rawFields": {
+          "Abilities": "Str 39, Agy 23, Sta 35, Int 24, Spt 25, Cha 28",
+          "Armor Class": "34 (-2 size, +6 Agy, +20 natural) touch 14, flat- footed 28",
+          "Attack": "Warblade of Archimonde +42 melee (4d6+27/17-20/x3 plus 1d6 fel) or claw +34 melee (3d6+14 plus 1d6 fel)",
+          "Base Attack/Grapple": "+22/+44",
+          "Challenge Rating": "23",
+          "Feats": "Cleave, Dodge, Great Fortitude B , Greater Weapon Focus (greatsword), Iron Will B , PLightning Reflexes B , ower Attack, Quicken Spell-Like Ability* ( immolate ), Weapon Focus (greatsword), Weapon Specialization (greatsword)",
+          "Full Attack": "Warblade of Archimonde +42/+37/+32/+27 melee (4d6+27/17-20/x3 and 1d6 fel) or 2 claws +39 melee (3d6+14 and 1d6 fel)",
+          "Hit Dice": "20d8+240 plus 2d12+24 (1,480 hp)",
+          "Initiative": "+6",
+          "Saves": "Fort +29, Ref +20, Will +21",
+          "Skills": "Bluff +33, Climb +16, Concentration +35, Craft (armorsmithing) +9, Craft (weaponsmithing) +9, Diplomacy +35, Gather Information +33, Intimidate +31, Jump +16, Knowledge (arcana) +30, Knowledge (military tactics) +31, Knowledge (the planes) +30, Listen +32, Search +31, Sense Motive +30, Spellcraft +30, Spot +31, Stealth +29 (+21 hiding), Survival +9, Swim +16, Use Magic Device +33",
+          "Space/Reach": "15 ft./15 ft.",
+          "Special Attacks": "Fel strike, mark of Kazzak (DC 29), mortal infection (DC 29), shadow storm (DC 29), rage 1/day, spell-like abilities, void bolt (DC 29)",
+          "Special Qualities": "Blindsight 60 ft., darkvision 60 ft., low-light vision, damage reduction 15/epic, damage reduction 15/good and truesilver, death drain, immunity to fel and fire, resistance to acid 10, cold 10, and electricity 10, spell resistance 30, twisted reflection, uncanny dodge, warrior mark, demon traits",
+          "Speed": "40 ft. (8 squares), fly 60 ft. (good)"
+        },
+        "rulesCoverage": {
+          "actor-defense": 5,
+          "linked-reference": 14,
+          "manual": 21
+        },
+        "subtypes": [
+          "Demon",
+          "Evil",
+          "Extraplanar",
+          "Lawful"
+        ]
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          167
+        ],
+        "printedPages": [
+          166
+        ],
+        "section": "Lord Kazzak",
+        "verification": "native-text-table+review-override"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "items": [
+    "831561a25a92ebb4",
+    "3c2d31660618eb29",
+    "e39bb05ed6994f7d",
+    "f4ca7a979d392f14",
+    "36e509eaf5b59941",
+    "cc048acfc605d53c",
+    "b984df7a05a242fa",
+    "db76083ef589f33d",
+    "81ede70aed8320b4",
+    "807f56b99d1bfc04",
+    "c7d3d06496f1962e",
+    "87db2f749c4b489e",
+    "344f0760c5da0393",
+    "11b8f3b31dd465d8",
+    "1bd3453dcf66da76",
+    "9d7653e5dac36db1",
+    "b0df30cc259658b6",
+    "e45f997558ae5567",
+    "bc3cd67d5f2cffd2",
+    "74b6579238c58d81",
+    "584d729389a623c6",
+    "666dcb833fdd7b02",
+    "9e5ce90f81ed6138",
+    "4bb159c8d3126f12",
+    "91e71a654c73001c",
+    "f4d766938df313af",
+    "0d842fb96b950dae",
+    "ac0346036e27434b",
+    "e556d4d010c6694c",
+    "71e45ed7696b04ef",
+    "17c28d7970a6c517",
+    "3838fb94407712f7",
+    "600f8b057106209c",
+    "d8276ca7ed17fbc2",
+    "f9d7c747efa5f1f3",
+    "b019e88927241c1d",
+    "cf3575cf6f3c4dbc",
+    "566b7a3c28187267",
+    "0d3feb517cb70535",
+    "6b0951a8fb5a0082",
+    "9f1c95e4ae68e4c5",
+    "2d8d30aeb7b23c3d",
+    "2088a5a4a03f309c",
+    "6623a9d4e531257d",
+    "bad35edf74da3ef0",
+    "7e7dd083d1126274",
+    "960dd9c8a9b1566d",
+    "0e374c2db2afd259",
+    "01ca31170cf548c4",
+    "4f8e6e94018ac74f",
+    "5d71a35ab631131d",
+    "e8221412963fb7f6",
+    "549a1e4611a08360"
+  ],
+  "name": "Lord Kazzak",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilities": {
+      "cha": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 9,
+        "origMod": 9,
+        "origTotal": 28,
+        "penalty": 0,
+        "total": 28,
+        "userPenalty": 0,
+        "value": 28
+      },
+      "con": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 12,
+        "origMod": 12,
+        "origTotal": 35,
+        "penalty": 0,
+        "total": 35,
+        "userPenalty": 0,
+        "value": 35
+      },
+      "dex": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 6,
+        "origMod": 6,
+        "origTotal": 23,
+        "penalty": 0,
+        "total": 23,
+        "userPenalty": 0,
+        "value": 23
+      },
+      "int": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 7,
+        "origMod": 7,
+        "origTotal": 24,
+        "penalty": 0,
+        "total": 24,
+        "userPenalty": 0,
+        "value": 24
+      },
+      "str": {
+        "carryBonus": 0,
+        "carryMultiplier": 1,
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 14,
+        "origMod": 14,
+        "origTotal": 39,
+        "penalty": 0,
+        "total": 39,
+        "userPenalty": 0,
+        "value": 39
+      },
+      "wis": {
+        "checkMod": 0,
+        "damage": 0,
+        "drain": 0,
+        "isZero": false,
+        "mod": 7,
+        "origMod": 7,
+        "origTotal": 25,
+        "penalty": 0,
+        "total": 25,
+        "userPenalty": 0,
+        "value": 25
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flatFooted": {
+          "total": 28,
+          "value": 0
+        },
+        "normal": {
+          "total": 34,
+          "value": 0
+        },
+        "touch": {
+          "total": 14,
+          "value": 0
+        }
+      },
+      "attack": {
+        "bullrush": 0,
+        "general": 0,
+        "melee": 0,
+        "ranged": 0,
+        "sunder": 0
+      },
+      "bab": {
+        "base": 22,
+        "nonepic": 22,
+        "total": 22,
+        "value": 0
+      },
+      "cmb": {
+        "total": 44,
+        "value": 0
+      },
+      "cmd": {
+        "flatFootedTotal": 0,
+        "total": 0,
+        "value": 0
+      },
+      "creatureType": "outsider",
+      "damage": {
+        "general": 0,
+        "spell": 0,
+        "weapon": 0
+      },
+      "deathRule": "warcraft",
+      "energyDrain": 0,
+      "fortification": {
+        "total": 0,
+        "value": 0
+      },
+      "hd": {
+        "racialClass": 22,
+        "total": 22
+      },
+      "hp": {
+        "base": 1480,
+        "max": 1480,
+        "min": -35,
+        "nonlethal": 0,
+        "temp": 0,
+        "value": 1480
+      },
+      "init": {
+        "bonus": 0,
+        "total": 6,
+        "value": 0
+      },
+      "maxAoO": 1,
+      "naturalAC": 0,
+      "naturalACTotal": 20,
+      "savingThrows": {
+        "fort": {
+          "base": 29,
+          "total": 29
+        },
+        "ref": {
+          "base": 20,
+          "total": 20
+        },
+        "will": {
+          "base": 21,
+          "total": 21
+        }
+      },
+      "senses": {
+        "blindsense": null,
+        "blindsight": 60,
+        "darkvision": 60,
+        "lowLight": true,
+        "lowLightMultiplier": 2,
+        "tremorsense": null
+      },
+      "speed": {
+        "fly": {
+          "base": 60,
+          "total": 60
+        },
+        "land": {
+          "base": 40,
+          "total": 40
+        }
+      },
+      "spells": {
+        "spellbooks": {
+          "spelllike": {
+            "ability": "cha",
+            "arcaneSpellFailure": false,
+            "autoSetup": false,
+            "autoSpellLevels": false,
+            "baseDCFormula": "0",
+            "bonusPrestigeCl": 0,
+            "cl": {
+              "base": 20,
+              "formula": "0",
+              "total": 20,
+              "value": 0
+            },
+            "class": "",
+            "clNotes": "",
+            "concentration": 0,
+            "concentrationFormula": "",
+            "concentrationNotes": "",
+            "dailyPowerPointsFormula": "",
+            "hasSpecialSlot": false,
+            "maximumPowerPointLimit": "@cl",
+            "name": "Spell-like Abilities",
+            "powerPoints": 0,
+            "powerPointsFormula": "",
+            "powerPointsTotal": 0,
+            "preparationMode": "prepared",
+            "repertoireLimitOverride": 0,
+            "repertoireSkill": "spl",
+            "showOnlyPrepared": false,
+            "specialSlotLevel0": false,
+            "specialSlots": {
+              "level0": null,
+              "level1": null,
+              "level2": null,
+              "level3": null,
+              "level4": null,
+              "level5": null,
+              "level6": null,
+              "level7": null,
+              "level8": null,
+              "level9": null
+            },
+            "spellcastingType": "arcane",
+            "spells": {
+              "spell0": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell1": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell2": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell3": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell4": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell5": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell6": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell7": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell8": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              },
+              "spell9": {
+                "base": 0,
+                "bonus": 0,
+                "known": 0,
+                "max": 0,
+                "value": 0
+              }
+            },
+            "spellslotAbility": "cha",
+            "spontaneous": false,
+            "usePowerPoints": false,
+            "usesWarcraftSlotPool": false,
+            "warcraftCurrentPath": "",
+            "warcraftParentClass": "",
+            "warcraftPathBonusSlot": false,
+            "warcraftPoolKey": ""
+          }
+        },
+        "warcraftPools": {}
+      },
+      "sr": {
+        "formula": "30",
+        "total": 30
+      }
+    },
+    "details": {
+      "alignment": "",
+      "biography": {
+        "public": "",
+        "value": "<p>Lord Kazzak is provided as a complete mechanical statblock conversion. Descriptive setting prose and book artwork are intentionally not reproduced.</p>"
+      },
+      "cr": 23,
+      "environment": "",
+      "level": {
+        "available": 0,
+        "max": 50,
+        "min": 22,
+        "value": 22
+      },
+      "notes": {
+        "public": "",
+        "value": "<h2>Printed Statblock</h2><p><strong>Hit Dice:</strong> 20d8+240 plus 2d12+24 (1,480 hp)</p><p><strong>Initiative:</strong> +6</p><p><strong>Speed:</strong> 40 ft. (8 squares), fly 60 ft. (good)</p><p><strong>Armor Class:</strong> 34 (-2 size, +6 Agy, +20 natural) touch 14, flat- footed 28</p><p><strong>Base Attack/Grapple:</strong> +22/+44</p><p><strong>Attack:</strong> Warblade of Archimonde +42 melee (4d6+27/17-20/x3 plus 1d6 fel) or claw +34 melee (3d6+14 plus 1d6 fel)</p><p><strong>Full Attack:</strong> Warblade of Archimonde +42/+37/+32/+27 melee (4d6+27/17-20/x3 and 1d6 fel) or 2 claws +39 melee (3d6+14 and 1d6 fel)</p><p><strong>Space/Reach:</strong> 15 ft./15 ft.</p><p><strong>Special Attacks:</strong> Fel strike, mark of Kazzak (DC 29), mortal infection (DC 29), shadow storm (DC 29), rage 1/day, spell-like abilities, void bolt (DC 29)</p><p><strong>Special Qualities:</strong> Blindsight 60 ft., darkvision 60 ft., low-light vision, damage reduction 15/epic, damage reduction 15/good and truesilver, death drain, immunity to fel and fire, resistance to acid 10, cold 10, and electricity 10, spell resistance 30, twisted reflection, uncanny dodge, warrior mark, demon traits</p><p><strong>Saves:</strong> Fort +29, Ref +20, Will +21</p><p><strong>Abilities:</strong> Str 39, Agy 23, Sta 35, Int 24, Spt 25, Cha 28</p><p><strong>Skills:</strong> Bluff +33, Climb +16, Concentration +35, Craft (armorsmithing) +9, Craft (weaponsmithing) +9, Diplomacy +35, Gather Information +33, Intimidate +31, Jump +16, Knowledge (arcana) +30, Knowledge (military tactics) +31, Knowledge (the planes) +30, Listen +32, Search +31, Sense Motive +30, Spellcraft +30, Spot +31, Stealth +29 (+21 hiding), Survival +9, Swim +16, Use Magic Device +33</p><p><strong>Feats:</strong> Cleave, Dodge, Great Fortitude B , Greater Weapon Focus (greatsword), Iron Will B , PLightning Reflexes B , ower Attack, Quicken Spell-Like Ability* ( immolate ), Weapon Focus (greatsword), Weapon Specialization (greatsword)</p><p><strong>Manual boundary:</strong> situational targeting, tactical decisions, and exceptional special abilities remain GM-adjudicated unless an embedded item provides a roll or effect.</p>"
+      },
+      "totalCr": 23,
+      "type": "Outsider"
+    },
+    "skills": {
+      "blf": {
+        "ability": "cha",
+        "abilityModifier": 9,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 24,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 33,
+        "notes": "Printed total +33",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "clm": {
+        "ability": "str",
+        "abilityModifier": 14,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 2,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 16,
+        "notes": "Printed total +16",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "coc": {
+        "ability": "con",
+        "abilityModifier": 12,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 23,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 35,
+        "notes": "Printed total +35",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "crf": {
+        "ability": "int",
+        "abilityModifier": 7,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": -7,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 0,
+        "notes": "",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "subSkills": {
+          "wc3597eb5b": {
+            "ability": "int",
+            "abilityModifier": 7,
+            "acp": false,
+            "acpPenalty": 0,
+            "background": false,
+            "changeBonus": 2,
+            "cs": false,
+            "energyDrainPenalty": 0,
+            "mod": 9,
+            "name": "weaponsmithing",
+            "notes": "Printed total +9",
+            "points": 0,
+            "rank": 0,
+            "rt": false,
+            "value": 0,
+            "visibility": "default"
+          },
+          "wc5b6b1078": {
+            "ability": "int",
+            "abilityModifier": 7,
+            "acp": false,
+            "acpPenalty": 0,
+            "background": false,
+            "changeBonus": 2,
+            "cs": false,
+            "energyDrainPenalty": 0,
+            "mod": 9,
+            "name": "armorsmithing",
+            "notes": "Printed total +9",
+            "points": 0,
+            "rank": 0,
+            "rt": false,
+            "value": 0,
+            "visibility": "default"
+          }
+        },
+        "value": 0,
+        "visibility": "default"
+      },
+      "dip": {
+        "ability": "cha",
+        "abilityModifier": 9,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 26,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 35,
+        "notes": "Printed total +35",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "gif": {
+        "ability": "cha",
+        "abilityModifier": 9,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 24,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 33,
+        "notes": "Printed total +33",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "hid": {
+        "ability": "dex",
+        "abilityModifier": 6,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 23,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 29,
+        "notes": "Printed total +29 (+21 hiding)",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "int": {
+        "ability": "cha",
+        "abilityModifier": 9,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 22,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 31,
+        "notes": "Printed total +31",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "jmp": {
+        "ability": "str",
+        "abilityModifier": 14,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 2,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 16,
+        "notes": "Printed total +16",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "kar": {
+        "ability": "int",
+        "abilityModifier": 7,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 23,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 30,
+        "notes": "Printed total +30",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "kmt": {
+        "ability": "int",
+        "abilityModifier": 7,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 24,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 31,
+        "notes": "Printed total +31",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "kpl": {
+        "ability": "int",
+        "abilityModifier": 7,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 23,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 30,
+        "notes": "Printed total +30",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "lis": {
+        "ability": "wis",
+        "abilityModifier": 7,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 25,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 32,
+        "notes": "Printed total +32",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "sen": {
+        "ability": "wis",
+        "abilityModifier": 7,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 23,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 30,
+        "notes": "Printed total +30",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spl": {
+        "ability": "int",
+        "abilityModifier": 7,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 23,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 30,
+        "notes": "Printed total +30",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "spt": {
+        "ability": "wis",
+        "abilityModifier": 7,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 24,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 31,
+        "notes": "Printed total +31",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "src": {
+        "ability": "int",
+        "abilityModifier": 7,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 24,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 31,
+        "notes": "Printed total +31",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "sur": {
+        "ability": "wis",
+        "abilityModifier": 7,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 2,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 9,
+        "notes": "Printed total +9",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "swm": {
+        "ability": "str",
+        "abilityModifier": 14,
+        "acp": true,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 2,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 16,
+        "notes": "Printed total +16",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      },
+      "umd": {
+        "ability": "cha",
+        "abilityModifier": 9,
+        "acp": false,
+        "acpPenalty": 0,
+        "background": false,
+        "changeBonus": 24,
+        "cs": false,
+        "energyDrainPenalty": 0,
+        "mod": 33,
+        "notes": "Printed total +33",
+        "points": 0,
+        "rank": 0,
+        "rt": false,
+        "value": 0,
+        "visibility": "default"
+      }
+    },
+    "traits": {
+      "actualSize": "huge",
+      "ci": {
+        "custom": "",
+        "value": []
+      },
+      "di": {
+        "custom": "",
+        "value": []
+      },
+      "fastHealing": null,
+      "fastHealingTotal": null,
+      "regen": null,
+      "regenTotal": null,
+      "senses": "Blindsight 60 ft., darkvision 60 ft., low-light vision, damage reduction 15/epic, damage reduction 15/good and truesilver, death drain, immunity to fel and fire, resistance to acid 10, cold 10, and electricity 10, spell resistance 30, twisted reflection, uncanny dodge, warrior mark, demon traits",
+      "size": "huge",
+      "tokensize": "actor"
+    }
+  },
+  "type": "npc"
+}

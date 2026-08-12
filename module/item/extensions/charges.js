@@ -1,5 +1,10 @@
 import { Roll35e } from "../../roll.js";
 import { spellbookUsesSharedSlots } from "../helpers/spellbookPreparationHelper.js";
+import {
+  findWarcraftCastSlotLevel,
+  getWarcraftSlotPool,
+  getWarcraftSlotPoolKey,
+} from "../../actor/helpers/warcraftSpellcastingHelper.js";
 
 export class ItemCharges {
   /**
@@ -16,7 +21,7 @@ export class ItemCharges {
       return this.item.actor.getChargesFromItemById(this.item.system?.linkedChargeItem?.id);
     } else {
       if (foundry.utils.getProperty(this.item.system, "uses.per") === "single") return foundry.utils.getProperty(this.item.system, "quantity");
-      if (this.item.type === "spell") return this.#getSpellUses();
+      if (this.item.type === "spell") return this.#getSpellUses(false);
       return foundry.utils.getProperty(this.item.system, "uses.value") || 0;
     }
   }
@@ -27,7 +32,7 @@ export class ItemCharges {
       return this.item.actor.getMaxChargesFromItemById(this.item.system?.linkedChargeItem?.id);
     } else {
       if (foundry.utils.getProperty(this.item.system, "uses.per") === "single") return foundry.utils.getProperty(this.item.system, "quantity");
-      if (this.item.type === "spell") return this.#getSpellUses();
+      if (this.item.type === "spell") return this.#getSpellUses(true);
       return foundry.utils.getProperty(this.item.system, "uses.max") || 0;
     }
   }
@@ -104,7 +109,7 @@ export class ItemCharges {
     Hooks.call("D35E.ItemCharges.postAddCharges", this.item, data, value, game.userId);
   }
 
-  #getSpellUses() {
+  #getSpellUses(maximum = false) {
     if (!this.item.actor) return 0;
     if (foundry.utils.getProperty(this.item.system, "atWill")) return Number.POSITIVE_INFINITY;
 
@@ -112,10 +117,29 @@ export class ItemCharges {
       return 0;
     const spellbook = foundry.utils.getProperty(this.item.actor.system, `attributes.spells.spellbooks.${this.item.system.spellbook}`);
     if (!spellbook) return 0;
+    if (this.item.system?.specialPrepared) {
+      return foundry.utils.getProperty(
+        this.item.system,
+        maximum ? "preparation.maxAmount" : "preparation.preparedAmount"
+      ) || 0;
+    }
     const usesSharedSlots = spellbookUsesSharedSlots(spellbook),
       usePowerPoints = spellbook.usePowerPoints,
       isEpic = foundry.utils.getProperty(this.item.system, "level") > 9,
       spellLevel = foundry.utils.getProperty(this.item.system, "level");
+    const warcraftPool = getWarcraftSlotPool(this.item.actor.system, spellbook);
+    if (warcraftPool && !isEpic) {
+      if (maximum) {
+        return Array.from({ length: 10 - spellLevel }, (_, offset) => spellLevel + offset)
+          .reduce((total, level) => total + (Number(warcraftPool?.spells?.[`spell${level}`]?.max) || 0), 0);
+      }
+      const castLevel = findWarcraftCastSlotLevel(
+        warcraftPool,
+        spellLevel,
+        this.item.system?.preparation?.castSlotLevel
+      );
+      return castLevel == null ? 0 : Number(warcraftPool.spells[`spell${castLevel}`].value) || 0;
+    }
     return usePowerPoints
       ? foundry.utils.getProperty(spellbook, `powerPoints`) - foundry.utils.getProperty(this.item.system, "powerPointsCost") >= 0 || 0
       : usesSharedSlots && !isEpic
@@ -145,10 +169,32 @@ export class ItemCharges {
     //game.D35E.logger.log(`Adding spell uses ${value}`)
     const spellbook = foundry.utils.getProperty(this.item.actor.system, `attributes.spells.spellbooks.${this.item.system.spellbook}`);
     if (!spellbook) return;
+    if (this.item.system?.specialPrepared) {
+      const newCharges = Math.max(
+        0,
+        (Number(foundry.utils.getProperty(this.item.system, "preparation.preparedAmount")) || 0) + value
+      );
+      const key = "system.preparation.preparedAmount";
+      if (data == null) return this.item.update({ [key]: newCharges });
+      data[key] = newCharges;
+      return null;
+    }
     const usesSharedSlots = spellbookUsesSharedSlots(spellbook),
       usePowerPoints = spellbook.usePowerPoints,
       spellbookKey = foundry.utils.getProperty(this.item.system, "spellbook") || "primary",
       spellLevel = foundry.utils.getProperty(this.item.system, "level");
+    const warcraftPool = getWarcraftSlotPool(this.item.actor.system, spellbook);
+    if (warcraftPool && spellLevel <= 9) {
+      const castLevel = value < 0
+        ? findWarcraftCastSlotLevel(warcraftPool, spellLevel, this.item.system?.preparation?.castSlotLevel)
+        : spellLevel;
+      if (castLevel == null) return null;
+      const poolKey = getWarcraftSlotPoolKey(spellbook);
+      const key = `system.attributes.spells.warcraftPools.${poolKey}.spells.spell${castLevel}.value`;
+      const current = Number(warcraftPool?.spells?.[`spell${castLevel}`]?.value) || 0;
+      const max = Number(warcraftPool?.spells?.[`spell${castLevel}`]?.max) || 0;
+      return this.item.actor.update({ [key]: Math.min(max, Math.max(0, current + value)) });
+    }
     const newCharges = usePowerPoints
       ? Math.max(
           0,

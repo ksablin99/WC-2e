@@ -1,0 +1,73 @@
+{
+  "_id": "240ff64418275485",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "catalog": {
+        "category": "weapon",
+        "completeTableEntry": true,
+        "generated": true,
+        "status": "structured"
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          184,
+          185,
+          186
+        ],
+        "printedPages": [
+          182,
+          183,
+          184
+        ],
+        "section": "Greathammer",
+        "verification": "table-extraction"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/sword.svg",
+  "name": "Greathammer",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "baseWeaponType": "Greathammer",
+    "carried": true,
+    "description": {
+      "value": "<p>A standard one-handed martial sword.</p>"
+    },
+    "equipped": true,
+    "hardness": 10,
+    "hp": {
+      "max": 5,
+      "value": 5
+    },
+    "identified": true,
+    "identifiedName": "Greathammer",
+    "index": {
+      "subType": "martial",
+      "uniqueId": ""
+    },
+    "masterwork": false,
+    "price": 40,
+    "properties": {},
+    "quantity": 1,
+    "source": "World of Warcraft RPG, 2nd Edition, p. 182-183-184",
+    "weaponData": {
+      "critMult": "3",
+      "critRange": "20",
+      "damageRoll": "2d6",
+      "damageType": "B",
+      "range": null,
+      "size": "med"
+    },
+    "weaponSubtype": "2h",
+    "weaponType": "exotic",
+    "weight": 14
+  },
+  "type": "weapon"
+}

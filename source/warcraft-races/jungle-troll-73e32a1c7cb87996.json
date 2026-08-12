@@ -1,0 +1,229 @@
+{
+  "_embedded": {},
+  "_id": "73e32a1c7cb87996",
+  "_stats": {
+    "compendiumSource": null,
+    "coreVersion": "13.351",
+    "createdTime": null,
+    "duplicateSource": null,
+    "exportSource": null,
+    "lastModifiedBy": null,
+    "modifiedTime": null,
+    "systemId": null,
+    "systemVersion": null
+  },
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "race": {
+        "automaticLanguages": [
+          "Common",
+          "Low Common"
+        ],
+        "bonusLanguages": [
+          "Goblin",
+          "Orcish",
+          "Taur-ahe"
+        ],
+        "category": "player-race",
+        "favoredClass": [
+          "Barbarian"
+        ],
+        "proficiencies": [],
+        "racialLevel": {
+          "available": true,
+          "max": 3,
+          "name": "Jungle Troll"
+        },
+        "searchableTraits": [
+          "Common",
+          "Low Common",
+          "Goblin",
+          "Orcish",
+          "Taur-ahe",
+          "Favored class: Barbarian"
+        ],
+        "size": "med"
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          52
+        ],
+        "printedPages": [
+          50
+        ],
+        "section": "Jungle Troll racial traits",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/mystery-man.svg",
+  "name": "Jungle Troll",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "addedAbilities": [],
+    "addedLevel": 0,
+    "changeFlags": {
+      "heavyArmorFullSpeed": false,
+      "loseDexToAC": false,
+      "mediumArmorFullSpeed": false,
+      "multiAttack": false,
+      "multiweaponAttack": false,
+      "noCon": false,
+      "noDex": false,
+      "noEncumbrance": false,
+      "noInt": false,
+      "noStr": false,
+      "oneCha": false,
+      "oneInt": false,
+      "oneWis": false,
+      "uncannyDodge": false
+    },
+    "changes": [
+      [
+        "30",
+        "speed",
+        "landSpeed",
+        "base-replace"
+      ],
+      [
+        "2",
+        "ability",
+        "dex",
+        "racial"
+      ],
+      [
+        "-2",
+        "ability",
+        "int",
+        "racial"
+      ],
+      [
+        "-2",
+        "ability",
+        "cha",
+        "racial"
+      ],
+      [
+        "2",
+        "skill",
+        "skill.sur",
+        "racial"
+      ],
+      [
+        "2",
+        "skill",
+        "skill.jmp",
+        "racial"
+      ],
+      [
+        "2",
+        "skill",
+        "skill.tmb",
+        "racial"
+      ]
+    ],
+    "classSource": "",
+    "combatChangeCustomDisplayName": "",
+    "combatChangeCustomReferenceName": "",
+    "combatChanges": [],
+    "combatChangesAdditionalRanges": {
+      "hasAdditionalRanges": false,
+      "slider1": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      },
+      "slider2": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      },
+      "slider3": {
+        "max": 0,
+        "maxFormula": "",
+        "name": ""
+      }
+    },
+    "combatChangesApplySpecialActionsOnce": true,
+    "combatChangesRange": {
+      "max": 0,
+      "maxFormula": ""
+    },
+    "combatChangesUsesCost": "chargesPerUse",
+    "conditionFlags": {
+      "dazzled": false,
+      "polymorphed": false,
+      "wildshaped": false
+    },
+    "contextNotes": [
+      [
+        "[[+1]] racial bonus with thrown weapons",
+        "attacks",
+        "attack"
+      ]
+    ],
+    "counterName": "",
+    "createdBy": "",
+    "creationChanges": [],
+    "creatureType": "humanoid",
+    "customAttributes": {},
+    "customAttributesLocked": false,
+    "customTag": "",
+    "damage": {
+      "parts": []
+    },
+    "damageReduction": [],
+    "deathRule": "warcraft",
+    "description": {
+      "chat": "",
+      "unidentified": "",
+      "value": "<p>Jungle Troll racial traits.</p><ul><li>+2 Agility, -2 Intellect, -2 Charisma; Medium; land speed 30 feet; low-light vision.</li><li>Rapid healing doubles hit points recovered from rest.</li><li>+1 attacks with thrown weapons; +2 Survival, Jump, and Tumble. These three skills are always class skills.</li><li>Automatic Common and Low Common; bonus Goblin, Orc, and Taur-ahe.</li><li>Favored class Barbarian; eligible for up to three jungle troll racial levels.</li></ul>"
+    },
+    "disabledAbilities": [],
+    "epic": "",
+    "identifiedName": "Jungle Troll",
+    "index": {
+      "subType": null,
+      "uniqueId": ""
+    },
+    "la": null,
+    "linkId": "",
+    "linkImported": false,
+    "links": {
+      "children": []
+    },
+    "linkSourceId": "",
+    "linkSourceName": "",
+    "nameFormula": "",
+    "nameFromFormula": false,
+    "originId": "",
+    "originPack": "",
+    "originVersion": 99,
+    "possibleUpdate": false,
+    "psionic": "",
+    "requirements": [],
+    "resistances": [],
+    "senses": {
+      "blindsight": null,
+      "darkvision": null,
+      "lowLight": true,
+      "lowLightMultiplier": 2,
+      "tremorsense": null,
+      "truesight": null
+    },
+    "sizeOverride": "med",
+    "source": "World of Warcraft RPG, 2nd Edition, p. 50",
+    "subTypes": [],
+    "tags": [],
+    "uniqueId": "",
+    "userNonRemovable": false
+  },
+  "type": "race"
+}

@@ -1,0 +1,44 @@
+{
+  "_embedded": {},
+  "_id": "fc58e6ccee5d80e8",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "creatureRule": {
+        "kind": "subtype",
+        "reusable": true
+      },
+      "source": {
+        "book": "World of Warcraft: Monster Guide",
+        "file": "docs/WoW - Monster Guide [2007] {WW17212}.pdf",
+        "pdfPages": [
+          198,
+          199
+        ],
+        "printedPages": [
+          197,
+          198
+        ],
+        "section": "Swarm Subtype",
+        "verification": "text+render"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/aura.svg",
+  "name": "Swarm Subtype Traits",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "abilityType": "nat",
+    "description": {
+      "value": "<p>Acts as one creature occupying a 10-foot area with reach 0. It shares one pool of statistics, moves through occupied spaces, is immune to critical hits and flanking, cannot be tripped, grappled, or bull rushed, and is damaged according to component size. It deals automatic swarm damage in occupied spaces, does not threaten, applies distraction, is generally immune to fixed-target effects, and takes half again as much damage from area effects. Use the printed component-size, wind, and damage table details.</p><p>This reusable record defines shared conversion behavior. Individual actors carry exact printed exceptions and totals.</p>"
+    },
+    "featType": "trait",
+    "source": "World of Warcraft: Monster Guide, pp. 197-198",
+    "uniqueId": "wc-creature-rule-swarm-subtype"
+  },
+  "type": "feat"
+}

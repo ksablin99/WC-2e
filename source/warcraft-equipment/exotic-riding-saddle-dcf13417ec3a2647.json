@@ -1,0 +1,53 @@
+{
+  "_id": "dcf13417ec3a2647",
+  "effects": [],
+  "flags": {
+    "warcraftrpg2e": {
+      "catalog": {
+        "category": "mounts",
+        "completeTableEntry": true,
+        "generated": true,
+        "status": "structured-table-data",
+        "tableValue": "30 gp; 30 lb."
+      },
+      "source": {
+        "book": "World of Warcraft: The Roleplaying Game, Second Edition",
+        "file": "docs/World_of_Warcraft_2nd_Edition.pdf",
+        "pdfPages": [
+          203
+        ],
+        "printedPages": [
+          201
+        ],
+        "section": "Exotic Riding Saddle",
+        "verification": "table-extraction"
+      }
+    }
+  },
+  "folder": null,
+  "img": "icons/svg/item-bag.svg",
+  "name": "Exotic Riding Saddle",
+  "ownership": {
+    "default": 0
+  },
+  "sort": 0,
+  "system": {
+    "carried": true,
+    "description": {
+      "value": "<p><strong>Printed table value:</strong> 30 gp; 30 lb..</p>"
+    },
+    "hardness": 0,
+    "hp": {
+      "max": 2,
+      "value": 2
+    },
+    "identified": true,
+    "identifiedName": "Exotic Riding Saddle",
+    "price": 30,
+    "quantity": 1,
+    "source": "World of Warcraft RPG, 2nd Edition, p. 201",
+    "subType": "gear",
+    "weight": 30
+  },
+  "type": "loot"
+}

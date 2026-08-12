@@ -473,6 +473,18 @@ export class ItemSheetPF extends foundry.appv1.sheets.ItemSheet {
         this.item.system.spellcastingType !== null &&
         this.item.system.spellcastingType !== "none";
       sheetData.isNonPsionSpellcaster = sheetData.isSpellcaster && !sheetData.isPsionSpellcaster;
+      sheetData.warcraftAdvancementCandidates = this.actor
+        ? this.actor.items
+          .filter((item) => item.type === "class" && item.system?.classType === "base")
+          .filter((item) => {
+            const wanted = this.item.system?.warcraftSpellcastingAdvancement?.spellcastingType;
+            return !wanted || item.system?.spellcastingType === wanted;
+          })
+          .map((item) => ({
+            id: item.system?.customTag || item.name.toLowerCase().replace(/[^a-z0-9]+/g, "-"),
+            name: item.name,
+          }))
+        : [];
       sheetData.progression = [];
       sheetData.spellProgression = [];
       sheetData.knownSpellProgression = [];

@@ -1,0 +1,122 @@
+[
+  {
+    "childKeyByCollection": {
+      "pages": {
+        "a807358f1eb886bf": "!journal.pages!762f9983500938aa.a807358f1eb886bf"
+      }
+    },
+    "embeddedCollections": [
+      "pages"
+    ],
+    "file": "character-creation-762f9983500938aa.json",
+    "key": "!journal!762f9983500938aa"
+  },
+  {
+    "childKeyByCollection": {
+      "pages": {
+        "ab1c20e654943622": "!journal.pages!b90128e65d75495e.ab1c20e654943622"
+      }
+    },
+    "embeddedCollections": [
+      "pages"
+    ],
+    "file": "races-and-racial-levels-b90128e65d75495e.json",
+    "key": "!journal!b90128e65d75495e"
+  },
+  {
+    "childKeyByCollection": {
+      "pages": {
+        "2cb09530fd763567": "!journal.pages!1e7c2d428f6588de.2cb09530fd763567"
+      }
+    },
+    "embeddedCollections": [
+      "pages"
+    ],
+    "file": "classes-paths-and-advancement-1e7c2d428f6588de.json",
+    "key": "!journal!1e7c2d428f6588de"
+  },
+  {
+    "childKeyByCollection": {
+      "pages": {
+        "6bc1e866fdbc6f5b": "!journal.pages!d59a91f1e19f184d.6bc1e866fdbc6f5b"
+      }
+    },
+    "embeddedCollections": [
+      "pages"
+    ],
+    "file": "skills-and-feats-d59a91f1e19f184d.json",
+    "key": "!journal!d59a91f1e19f184d"
+  },
+  {
+    "childKeyByCollection": {
+      "pages": {
+        "8b01c2d0ac226cc9": "!journal.pages!7f4b5a4abda28e6b.8b01c2d0ac226cc9"
+      }
+    },
+    "embeddedCollections": [
+      "pages"
+    ],
+    "file": "combat-and-conditions-7f4b5a4abda28e6b.json",
+    "key": "!journal!7f4b5a4abda28e6b"
+  },
+  {
+    "childKeyByCollection": {
+      "pages": {
+        "647fde0ec3c28c12": "!journal.pages!77beb20c90060008.647fde0ec3c28c12"
+      }
+    },
+    "embeddedCollections": [
+      "pages"
+    ],
+    "file": "magic-and-spell-preparation-77beb20c90060008.json",
+    "key": "!journal!77beb20c90060008"
+  },
+  {
+    "childKeyByCollection": {
+      "pages": {
+        "897478592d1e6fe8": "!journal.pages!61f4865557a71dad.897478592d1e6fe8"
+      }
+    },
+    "embeddedCollections": [
+      "pages"
+    ],
+    "file": "hero-points-and-shouts-61f4865557a71dad.json",
+    "key": "!journal!61f4865557a71dad"
+  },
+  {
+    "childKeyByCollection": {
+      "pages": {
+        "c80f35a6f821b78d": "!journal.pages!2469ec958f21cfe6.c80f35a6f821b78d"
+      }
+    },
+    "embeddedCollections": [
+      "pages"
+    ],
+    "file": "equipment-firearms-and-explosives-2469ec958f21cfe6.json",
+    "key": "!journal!2469ec958f21cfe6"
+  },
+  {
+    "childKeyByCollection": {
+      "pages": {
+        "7a8ef86aa32f5ac5": "!journal.pages!93bc4a2f7c36db22.7a8ef86aa32f5ac5"
+      }
+    },
+    "embeddedCollections": [
+      "pages"
+    ],
+    "file": "technology-93bc4a2f7c36db22.json",
+    "key": "!journal!93bc4a2f7c36db22"
+  },
+  {
+    "childKeyByCollection": {
+      "pages": {
+        "729583c1bbf53409": "!journal.pages!1f898d97dcad19f8.729583c1bbf53409"
+      }
+    },
+    "embeddedCollections": [
+      "pages"
+    ],
+    "file": "faith-and-affiliation-1f898d97dcad19f8.json",
+    "key": "!journal!1f898d97dcad19f8"
+  }
+]

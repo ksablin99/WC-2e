@@ -263,9 +263,13 @@
                    name="system.attributes.spells.spellbooks.{{../spellbookIndex}}.spells.spell{{section.level}}.base"
                    value="{{section.baseSlots}}" placeholder="Base"/>
             {{/unless}}
+            {{#if section.usesWarcraftPool}}
+            <input type="text" value="{{section.uses}}" disabled placeholder="0" data-dtype="Number"/>
+            {{else}}
             <input type="text" value="{{section.uses}}"
                    name="system.attributes.spells.spellbooks.{{../spellbookIndex}}.spells.spell{{section.level}}.value"
                    placeholder="0" data-dtype="Number"/>
+            {{/if}}
             <span class="sep"> / </span>
             <input type="text" value="{{section.slots}}" disabled placeholder="0" data-dtype="Number"/>
             {{/unless}}
@@ -307,6 +311,11 @@
                     {{#if item.system.specialPrepared}}
                     <i class="fas fa-hand-sparkles tooltip">
                         <span class="tooltipcontent" style="z-index: 999">{{localize "D35E.SpecialSlotPrepared"}}</span>
+                    </i>
+                    {{/if}}
+                    {{#if item.warcraftIneligible}}
+                    <i class="fas fa-triangle-exclamation tooltip" style="color: darkred">
+                        <span class="tooltipcontent" style="z-index: 999">{{item.warcraftEligibility.reason}}{{item.system.warcraftEligibilityError}}</span>
                     </i>
                     {{/if}}
                     {{#if item.system.isSpellSpontaneousReplacement}}
@@ -373,6 +382,17 @@
                 {{else}}
                 <div style="flex: 0 16px;"></div>
                 {{/if}}
+                {{/if}}
+                {{#if ../../spellbook.orig.hasSpecialSlot}}
+                {{#unless item.system.specialPrepared}}
+                {{#if section.canUseSpecialSlot}}
+                {{#if item.canUseWarcraftSpecialSlot}}
+                <a class="item-control spell-prepare-special" title="{{ localize 'D35E.PrepareAsSpecialSpell' }}">
+                    <i class="fas fa-hand-sparkles"></i>
+                </a>
+                {{/if}}
+                {{/if}}
+                {{/unless}}
                 {{/if}}
                 {{else}}
                 {{#if item.system.atWill}}
@@ -478,7 +498,7 @@
         {{/unless}}
         {{#if ../spellbook.orig.hasSpecialSlot}}
         {{#unless section.specialSlotPrepared}}
-        {{#if section.level}}
+        {{#if section.canUseSpecialSlot}}
         {{#if section.slots}}
         <li class="item flexrow" data-item-id="{{item.id}}" data-replacement-id="{{section.spellReplacementId}}">
             <div class="item-name flexrow" style="opacity: 0.8; text-align: center">
