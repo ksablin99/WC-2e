@@ -25,17 +25,16 @@
           "Orcish",
           "Thalassian"
         ],
-        "proficiencies": [],
+        "category": "player-race",
         "favoredClass": [
           "Warrior"
         ],
+        "proficiencies": [],
         "racialLevel": {
           "available": true,
-          "name": "Forsaken",
-          "max": 3
+          "max": 3,
+          "name": "Forsaken"
         },
-        "category": "player-race",
-        "size": "med",
         "searchableTraits": [
           "Common",
           "Goblin",
@@ -43,7 +42,8 @@
           "Orcish",
           "Thalassian",
           "Favored class: Warrior"
-        ]
+        ],
+        "size": "med"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
