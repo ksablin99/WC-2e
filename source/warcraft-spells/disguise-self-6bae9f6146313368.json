@@ -32,7 +32,7 @@
           297
         ],
         "section": "Disguise Self",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -103,7 +103,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Changes your appearance.</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;illusion&nbsp;(glamer);\n    <br>\n    <strong>Level:</strong>&nbsp;Assassin 1, Bard 1, Sorcerer 1, Wizard 1;\n    <strong>Domain:</strong>&nbsp;Trickery 1;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;personal<br>\n    \n    <strong>Target:</strong>&nbsp;you<br>\n    \n    <strong>Duration:</strong>&nbsp;10 Minute/Level (D)<br>\n    \n  </p>\n  <h2>Description</h2>\n  <p>You make yourself&mdash;including clothing, armor, weapons, and equipment&mdash;look different. You can seem 1 foot shorter or taller, thin, fat, or in between. You cannot change your body type. Otherwise, the extent of the apparent change is up to you. You could add or obscure a minor feature or look like an entirely different person.</p>\n<p>The spell does not provide the abilities or mannerisms of the chosen form, nor does it alter the perceived tactile (touch) or audible (sound) properties of you or your equipment.</p>\n<p>If you use this spell to create a disguise, you get a +10 bonus on the Disguise check.</p>\n<p>A creature that interacts with the glamer gets a Will save to recognize it as an illusion.</p>\n<hr />\n</div>\n"
     },
     "display": "Personal",
     "duration": {
@@ -216,7 +216,7 @@
       "type": "willnegates"
     },
     "school": "ill",
-    "shortDescription": "<p>Changes your appearance.</p>",
+    "shortDescription": "<p>You make yourself&mdash;including clothing, armor, weapons, and equipment&mdash;look different. You can seem 1 foot shorter or taller, thin, fat, or in between. You cannot change your body type. Otherwise, the extent of the apparent change is up to you. You could add or obscure a minor feature or look like an entirely different person.</p>\n<p>The spell does not provide the abilities or mannerisms of the chosen form, nor does it alter the perceived tactile (touch) or audible (sound) properties of you or your equipment.</p>\n<p>If you use this spell to create a disguise, you get a +10 bonus on the Disguise check.</p>\n<p>A creature that interacts with the glamer gets a Will save to recognize it as an illusion.</p>\n<hr />",
     "showInQuickbar": false,
     "slOffset": 0,
     "snip": "Changes your appearance.",

@@ -32,7 +32,7 @@
           351
         ],
         "section": "Touch of Fatigue",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -103,7 +103,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Touch attack fatigues target.</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;necromancy;\n    <br>\n    <strong>Level:</strong>&nbsp;Sorcerer 0, Wizard 0;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, M (a drop of sweat)<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;touch<br>\n    \n    <strong>Target:</strong>&nbsp;creature touched<br>\n    \n    <strong>Duration:</strong>&nbsp;1 Round/Level<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;Fortitude Negates\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nYou channel negative energy through your touch, fatiguing the target. You must succeed on a touch attack to strike a target.\n</p><p>The subject is immediately fatigued for the spell’s duration.\n</p><p>This spell has no effect on a creature that is already fatigued. Unlike with normal fatigue, the effect ends as soon as the spell’s duration expires.\n</p><p><i>Material Component: </i>A drop of sweat.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Touch",
     "duration": {
@@ -216,10 +216,10 @@
       "type": "fortitudenegates"
     },
     "school": "nec",
-    "shortDescription": "<p>Touch attack fatigues target.</p>",
+    "shortDescription": "\n\n\n<p>\nYou channel negative energy through your touch, fatiguing the target. You must succeed on a touch attack to strike a target.\n</p><p>The subject is immediately fatigued for the spell’s duration.\n</p><p>This spell has no effect on a creature that is already fatigued. Unlike with normal fatigue, the effect ends as soon as the spell’s duration expires.\n</p><p><i>Material Component: </i>A drop of sweat.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Touch attack fatigues target.",
+    "snip": "Touch attack fatigues target.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 265-265",
     "specialActions": [
       {

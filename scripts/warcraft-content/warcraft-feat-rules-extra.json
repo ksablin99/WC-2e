@@ -1,0 +1,85 @@
+{
+  "Block Spell": {
+    "summary": "Interrupt a spell aimed specifically at you and proceed directly to a counterspell attempt.",
+    "benefit": "When you are a spell's target, make a Spellcraft check against DC 15 + that spell's level as a free action. No readied action is required. Success identifies the spell and lets you immediately attempt to counter it using the normal counterspell rules.",
+    "manual": "Foundry records the feat but does not interrupt another caster automatically. The player or GM must confirm that the user is a target, roll the Spellcraft check, identify the spell on success, choose a legal counterspell method, and expend or resolve that method normally."
+  },
+  "Brilliant Leadership": {
+    "summary": "Your spellcasting followers receive an additional spell slot each day.",
+    "benefit": "Each day, every follower of yours who can cast spells gains one extra spell slot. Its level may be any level no higher than two below the highest spell level you can cast.",
+    "manual": "Foundry does not determine followers or grant their daily slots from their leader. The GM must identify qualifying followers, determine the leader's highest castable spell level, choose each extra slot's permitted level, and remove or refresh those slots with the daily preparation cycle."
+  },
+  "Crafty Leader": {
+    "summary": "A sufficiently large team provides unusually effective help on your Craft work.",
+    "benefit": "This applies only when at least three assistants each have 1 or more rank in the same Craft skill you are using. Every qualifying assistant who succeeds on the check to aid your Craft check contributes +4 instead of +2.",
+    "normal": "A successful check to assist another character ordinarily contributes +2.",
+    "special": "A tinker may select Crafty Leader as a bonus tinker feat.",
+    "manual": "Foundry records the feat but does not inspect assistants or assemble their aid bonuses. The GM must verify team size, matching Craft skill ranks, and each aid result, then apply +4 only for each successful qualifying assistant."
+  },
+  "Deflect Spell": {
+    "summary": "Redirect a spell you have successfully countered to legal targets of your choice.",
+    "benefit": "After you successfully counter a spell, you may expend an additional spell slot whose level is at least the countered spell's level. Choose a legal new target within the spell's range; for a multi-target spell, choose every target. The spell then resolves normally against those targets using the original caster's statistics.",
+    "normal": "A successfully countered spell is ordinarily negated rather than redirected.",
+    "manual": "Foundry does not link counterspell success to retargeting or spend the extra slot. The player or GM must confirm the counter, expend a qualifying slot in addition to any resource used to counter, validate all new targets and range, and resolve the original spell with the original caster's values."
+  },
+  "Delay Malfunction": {
+    "summary": "Keep a malfunctioning device running briefly, with a chance to avert the malfunction entirely.",
+    "benefit": "When a device malfunctions, attempt a Craft (technological device) check against DC 15 + the device's Malfunction Rating. Success lets the device operate normally for 1d3 rounds. A natural 20 on the check prevents the malfunction completely. This feat can be used only once for any particular malfunction.",
+    "special": "A tinker may select Delay Malfunction as a bonus tinker feat.",
+    "manual": "The book assigns no action type to this response. Foundry records the feat but does not detect a malfunction, enforce its timing or one-use limit, roll its duration, or clear the malfunction on a natural 20; the GM must adjudicate and track those steps."
+  },
+  "Emergency Repair": {
+    "summary": "Make a rapid field repair that stabilizes a failed device for an hour or, on an exceptional check, fixes it permanently.",
+    "benefit": "As a full-round action, make a Craft (technological device) check on a broken or malfunctioning device against DC 20 + twice its Malfunction Rating. On success, that malfunction neither destroys the device nor endangers its user; the device works normally for 1 hour, then stops until repaired normally. A natural 20 instead restores the device completely and permanently.",
+    "special": "A tinker may select Emergency Repair as a bonus tinker feat.",
+    "manual": "Foundry records the feat but does not derive the device DC, suppress malfunction consequences, time the one-hour operation, disable the device afterward, or convert a natural 20 into a permanent repair. The GM must manage all device state changes."
+  },
+  "Firearm Knack": {
+    "summary": "You are especially capable at constructing firearms and using firearms you personally built.",
+    "benefit": "Gain +2 on Craft (technological device) checks made to build firearms and increase your Technological Limit by 2 for firearm construction. You also gain a +1 competence bonus on attack rolls made with firearms you built yourself.",
+    "special": "A tinker may select Firearm Knack as a bonus tinker feat.",
+    "manual": "Foundry records the feat but does not classify construction projects or remember a firearm's builder. Apply the Craft and Technological Limit adjustments to firearm projects manually, and apply the competence attack bonus only after confirming that the user built that firearm."
+  },
+  "Mirror Spell": {
+    "summary": "Cast two simultaneous, independently resolved copies of one spell.",
+    "benefit": "A mirrored spell produces two copies that resolve at the same time but separately. The copies may share targets or use different legal targets. Preparing or casting it requires a spell slot whose level equals 2 x the original spell's level + 1.",
+    "manual": "Foundry records the feat but does not calculate or expend the unusual slot cost, create a second spell resolution, or validate separate target sets. The player or GM must confirm an adequate slot and resolve both copies independently."
+  },
+  "Reflect Spell": {
+    "summary": "Turn a successfully countered spell back on its original caster.",
+    "benefit": "After you successfully counter a spell, you may expend an additional spell slot whose level is at least the countered spell's level to reflect it. The original caster becomes the target if that caster is a legal target; otherwise the reflection attempt fails. A reflected spell resolves normally using the original caster's statistics.",
+    "normal": "A successfully countered spell is ordinarily negated rather than returned to its caster.",
+    "manual": "Foundry does not link counterspell success to reflection or spend the extra slot. The player or GM must confirm the counter, expend a qualifying slot in addition to any countering resource, verify that the caster is a legal target, and resolve the original spell with the original caster's values."
+  },
+  "Scavenge Materials": {
+    "summary": "Trade a harder construction check for a steep reduction in raw-material cost.",
+    "benefit": "You may construct an item with raw materials worth only one-tenth of its market price. Increase that item's Craft check DC by 10.",
+    "special": "A tinker may select Scavenge Materials as a bonus tinker feat.",
+    "manual": "Foundry records the feat but does not recalculate project cost or Craft DC. The player or GM must opt into the feat for a specific project, charge one-tenth market value in materials, and add 10 to its construction DC."
+  },
+  "Siege Weapon Knack": {
+    "summary": "Gain expertise in constructing and sabotaging siege weapons.",
+    "benefit": "Gain +2 on Craft (technological device) checks to build catapults, cannons, mortars, or other siege weapons; gain +2 on Disable Device checks to sabotage such weapons; and increase your Technological Limit by 2 when building siege weapons.",
+    "special": "A tinker may select Siege Weapon Knack as a bonus tinker feat.",
+    "manual": "Foundry records the feat but does not classify a project or sabotage target as a siege weapon. The player or GM must apply the appropriate check bonus and construction-only Technological Limit increase when the object qualifies."
+  },
+  "Small Device Knack": {
+    "summary": "Build exceptionally small devices and optionally hide or disguise their purpose.",
+    "benefit": "Gain +2 on Craft (technological device) checks to build Tiny, Diminutive, or Fine devices, and increase your Technological Limit by 2 for those projects. You may conceal such a device or disguise it as another object. Finding a concealed or disguised device requires a Spot check, while determining its function requires a Use Technological Device check; both DCs equal 10 + your ranks in Craft (technological device).",
+    "special": "A tinker may select Small Device Knack as a bonus tinker feat.",
+    "manual": "Foundry records the feat but does not classify device size, apply the contextual construction modifiers, or generate concealment records. Record whether the device is hidden or disguised; the GM must resolve the Spot and Use Technological Device checks using the creator's Craft ranks, adjudicating any later rank change because the feat does not specify when that value is fixed."
+  },
+  "Vehicle Knack": {
+    "summary": "Gain expertise in both constructing and operating vehicles.",
+    "benefit": "Gain +2 on Craft (technological device) checks to build vehicles and on Use Technological Device checks to use them. Increase your Technological Limit by 2 for vehicle construction.",
+    "special": "A tinker may select Vehicle Knack as a bonus tinker feat.",
+    "manual": "Foundry records the feat but does not classify a project or operated device as a vehicle. The player or GM must apply the contextual skill bonuses and the construction-only Technological Limit increase when the object qualifies."
+  },
+  "Vehicle Proficiency": {
+    "summary": "Become trained with one vehicle environment: land, water, or air.",
+    "benefit": "Choose land vehicles, water vehicles, or air vehicles when taking this feat. You may operate vehicles of the chosen type by making the required Use Technological Device check.",
+    "normal": "Operating a vehicle without proficiency in its type imposes a -4 penalty on the Use Technological Device check.",
+    "special": "This feat may be taken more than once, but each selection must cover a different vehicle specialty. A tinker may select Vehicle Proficiency as a bonus tinker feat.",
+    "manual": "Foundry records the feat but does not prompt for or enforce its specialty. Record each chosen specialty separately; the player or GM must determine the vehicle's type and apply the -4 penalty whenever no matching proficiency is present."
+  }
+}

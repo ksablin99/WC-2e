@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -34,7 +34,7 @@
           312
         ],
         "section": "Greater Hooks of Binding",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -55,11 +55,11 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
-      "type": "hour"
+      "type": "standard"
     },
     "addedLevel": 0,
     "attack": {
@@ -72,7 +72,7 @@
     "atWill": false,
     "autoscaleAttackParts": "",
     "baseCl": "0",
-    "castTime": "1 hour",
+    "castTime": "1 standard action",
     "changes": [],
     "classSource": "",
     "clOffset": 0,
@@ -104,9 +104,9 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Immobilizes a powerful</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>This functions as <em>hooks of binding</em>, including its movement, Agility, attack, concentration, force, and escape rules, but it can affect a demon or undead creature of any Hit Dice.</p><p><strong>Automation boundary:</strong> Apply immobilization and penalties, block travel, and resolve casting and escape checks manually.</p>"
     },
-    "display": "Touch",
+    "display": "Medium (100 ft. + 10 ft./level)",
     "duration": {
       "units": "",
       "value": null
@@ -193,7 +193,7 @@
     "psionic": "",
     "range": {
       "long": null,
-      "units": "touch",
+      "units": "medium",
       "value": null
     },
     "recharge": {
@@ -214,32 +214,32 @@
       "dc": "0",
       "dcAutoAbility": "",
       "dcAutoType": "",
-      "description": "None",
+      "description": "Fortitude negates",
       "originVersion": 97,
-      "type": ""
+      "type": "fortitudenegates"
     },
     "school": "con",
-    "shortDescription": "<p>Immobilizes a powerful</p>",
+    "shortDescription": "<p>As hooks of binding, but without the 12-HD target limit.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Immobilizes a powerful",
+    "snip": "As hooks of binding, but without the 12-HD target limit.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 266-270",
     "specialActions": [],
     "specialId": null,
     "specialPrepared": false,
     "spellArea": "",
     "spellbook": "primary",
-    "spellDuration": "Instantaneous",
+    "spellDuration": "1 round/level",
     "spellDurationData": {
-      "units": "inst",
-      "value": null
+      "units": "roundPerLevel",
+      "value": 1
     },
     "spellEffect": "",
     "spellType": {
       "_deprecated": true,
       "value": ""
     },
-    "sr": false,
+    "sr": true,
     "subschool": "",
     "summon": [],
     "tags": [],
@@ -265,7 +265,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Apply immobilization and penalties, block travel, and resolve casting and escape checks manually."
     }
   },
   "type": "spell"

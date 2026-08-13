@@ -19,7 +19,13 @@
         "category": "General",
         "prerequisite": "Bluff 3 ranks.",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "You may aid another from up to 30 feet away when the recipient also has Battle Language. Sending the signal requires a DC 15 Bluff check. A character with at least 5 ranks in Knowledge (military tactics) gains a +2 synergy bonus on checks to send or intercept Battle Language communications.",
+          "manual": "Choose the recipient and roll Bluff manually; the GM resolves whether the signal can be perceived or intercepted and applies the appropriate aid-another benefit.",
+          "normal": "Aid another normally works only within melee reach.",
+          "summary": "Send aid-another signals to a trained ally up to 30 feet away."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": true
       },
@@ -33,7 +39,7 @@
           142
         ],
         "section": "Battle Language",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +154,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p><strong>Prerequisites:</strong> Bluff 3 ranks.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 142) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Prerequisites:</strong> Bluff 3 ranks.</p><p><strong>Summary:</strong> Send aid-another signals to a trained ally up to 30 feet away.</p><p><strong>Benefit:</strong> You may aid another from up to 30 feet away when the recipient also has Battle Language. Sending the signal requires a DC 15 Bluff check. A character with at least 5 ranks in Knowledge (military tactics) gains a +2 synergy bonus on checks to send or intercept Battle Language communications.</p><p><strong>Normal:</strong> Aid another normally works only within melee reach.</p><p><strong>Warrior bonus feat:</strong> Yes</p><p><strong>Foundry and GM handling:</strong> Choose the recipient and roll Bluff manually; the GM resolves whether the signal can be perceived or intercepted and applies the appropriate aid-another benefit.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +254,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat; requires Bluff 3 ranks..</p>",
+    "shortDescription": "<p>Send aid-another signals to a trained ally up to 30 feet away.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 142",

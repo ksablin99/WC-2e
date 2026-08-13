@@ -19,7 +19,13 @@
         "category": "General",
         "prerequisite": "",
         "repeatable": true,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "Choose two skills in which you have at least 1 rank. You gain a +2 unnamed bonus on checks with each selected skill.",
+          "manual": "Record both selected skills and apply their bonuses manually.",
+          "special": "You may select this feat more than once, but every selection must name two skills not chosen by an earlier selection.",
+          "summary": "Gain +2 on checks with each of two chosen trained skills."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": false
       },
@@ -33,7 +39,7 @@
           157
         ],
         "section": "Skilled",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +154,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 157) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Summary:</strong> Gain +2 on checks with each of two chosen trained skills.</p><p><strong>Benefit:</strong> Choose two skills in which you have at least 1 rank. You gain a +2 unnamed bonus on checks with each selected skill.</p><p><strong>Special:</strong> You may select this feat more than once, but every selection must name two skills not chosen by an earlier selection.</p><p><strong>Foundry and GM handling:</strong> Record both selected skills and apply their bonuses manually.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +254,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat.</p>",
+    "shortDescription": "<p>Gain +2 on checks with each of two chosen trained skills.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 157",

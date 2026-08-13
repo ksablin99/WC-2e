@@ -998,7 +998,7 @@ export class ActorPF extends Actor {
   async _onCreate(data, options, userId, context) {
     await super._onCreate(data, options, userId, context);
     if (userId === game.user.id) {
-      await this._updateChanges();
+      await this._updateChanges({}, { preserveCurrentHitPoints: true });
     }
   }
 
@@ -1644,7 +1644,7 @@ export class ActorPF extends Actor {
       speaker: ChatMessage.getSpeaker({ actor: this }),
       rollMode: 'public',
       sound: CONFIG.sounds.dice,
-      'flags.D35E.noRollRender': true,
+      'flags.warcraftrpg2e.noRollRender': true,
     };
     let chatTemplateData = {
       name: this.name,
@@ -1921,7 +1921,7 @@ export class ActorPF extends Actor {
         speaker: ChatMessage.getSpeaker({ actor: this }),
         rollMode: rollMode || 'gmroll',
         sound: CONFIG.sounds.dice,
-        'flags.D35E.noRollRender': true,
+        'flags.warcraftrpg2e.noRollRender': true,
       };
       let chatTemplateData = {
         name: this.name,
@@ -2223,7 +2223,7 @@ export class ActorPF extends Actor {
           { actor: this }),
         rollMode: rollMode || 'gmroll',
         sound: CONFIG.sounds.dice,
-        'flags.D35E.noRollRender': true,
+        'flags.warcraftrpg2e.noRollRender': true,
       };
       let chatTemplateData = {
         name: this.name,
@@ -2615,7 +2615,7 @@ export class ActorPF extends Actor {
           { actor: this }),
         rollMode: rollMode || 'gmroll',
         sound: CONFIG.sounds.dice,
-        'flags.D35E.noRollRender': true,
+        'flags.warcraftrpg2e.noRollRender': true,
       };
       let chatTemplateData = {
         name: this.name,
@@ -2893,7 +2893,7 @@ export class ActorPF extends Actor {
         speaker: ChatMessage.getSpeaker({ actor: this }),
         rollMode: rollMode || 'gmroll',
         sound: CONFIG.sounds.dice,
-        'flags.D35E.noRollRender': true,
+        'flags.warcraftrpg2e.noRollRender': true,
       };
       let chatTemplateData = {
         name: this.name,
@@ -3170,7 +3170,7 @@ export class ActorPF extends Actor {
     let chatData = {
       speaker: ChatMessage.getSpeaker({ actor: this }),
       sound: CONFIG.sounds.dice,
-      'flags.D35E.noRollRender': true,
+      'flags.warcraftrpg2e.noRollRender': true,
     };
 
     data.level = turnUndeadHdTotal;
@@ -4329,7 +4329,7 @@ export class ActorPF extends Actor {
    */
   importItemFromCollection(collection, entryId) {
     const pack = game.packs.find((p) => p.metadata.id === collection);
-    if (pack.metadata.entity !== 'Item') return;
+    if (!pack || pack.documentName !== 'Item') return;
 
     return pack.getDocument(entryId).then((ent) => {
       //LogHelper.log(`${vtt} | Importing Item ${ent.name} from ${collection}`);
@@ -4357,7 +4357,7 @@ export class ActorPF extends Actor {
         game.i18n.localize('D35E.NoPackFound') + ' ' + collection);
       return;
     }
-    if (pack.metadata.type !== 'Item') return;
+    if (pack.documentName !== 'Item') return;
     await pack.getIndex();
     const entry = pack.index.find((e) => getOriginalNameIfExists(e) === name);
     if (!entry) {
@@ -5553,7 +5553,6 @@ export class ActorPF extends Actor {
       actorUpdates = Object.fromEntries(
         Object.entries(actorUpdates).map(([k, v]) => [k.replace(/^data\./, 'system.'), v])
       );
-      console.log('ACTION | actorUpdates after self. replacement', actorUpdates);
       await this.update(actorUpdates);
     } else {
       await this.update({});
@@ -5971,6 +5970,7 @@ export class ActorPF extends Actor {
     const actorData = this.system;
     let rollData = this.getRollData();
     const updateData = {};
+    let preserveCurrentHitPoints = false;
 
     if (this.items !== undefined && this.items.size > 0) {
       // Update items
@@ -5991,6 +5991,7 @@ export class ActorPF extends Actor {
         this.race?.system?.deathRule,
         actorData.attributes.creatureType,
       );
+      preserveCurrentHitPoints = !restoresHitPoints;
       let heal = {
         hp: restoresHitPoints
           ? warcraftRestHitPointRecovery({
@@ -6183,7 +6184,7 @@ export class ActorPF extends Actor {
       ) ?? 0;
     }
 
-    this.update(updateData);
+    return await this.update(updateData, { preserveCurrentHitPoints });
   }
 
   async _setAverageHitDie() {
@@ -6215,7 +6216,7 @@ export class ActorPF extends Actor {
       speaker: ChatMessage.getSpeaker({ actor: this }),
       rollMode: 'selfroll',
       sound: CONFIG.sounds.dice,
-      'flags.D35E.noRollRender': true,
+      'flags.warcraftrpg2e.noRollRender': true,
     };
     let actions = [];
     if (d.traits.regenTotal) {
@@ -6291,8 +6292,8 @@ export class ActorPF extends Actor {
     if (!foundry.utils.getProperty(this.system, 'companionUuid')) return false;
 
     let userWithCharacterIsActive = game.users.players.some(
-      (u) => u.active && u.character === this.id);
-    let isMyCharacter = game.users.current.character === this.id;
+      (u) => u.active && u.character?.id === this.id);
+    let isMyCharacter = game.user.character?.id === this.id;
     // It is not ours character and user that has this character is active - so better direct commands to his/her account
     if (!isMyCharacter && userWithCharacterIsActive) return false;
 
@@ -6505,7 +6506,7 @@ export class ActorPF extends Actor {
       speaker: ChatMessage.getSpeaker({ actor: this }),
       rollMode: 'selfroll',
       sound: CONFIG.sounds.dice,
-      'flags.D35E.noRollRender': true,
+      'flags.warcraftrpg2e.noRollRender': true,
     };
     let actions = [];
     for (let i of items) {
@@ -6580,6 +6581,17 @@ export class ActorPF extends Actor {
     if (type === 'Item') {
       payload = data instanceof Array ? [...data] : [data];
       await this._prepareItemEmbedCreateData(payload, options);
+      // Per-item preCreate hooks run before any member of a batch is embedded.
+      // Preserve the small subset of sibling data needed by prerequisite checks
+      // so a class can recognize a race (or another class) imported beside it.
+      options._warcraftPendingItems = payload.map((item) => ({
+        name: item?.name ?? '',
+        type: item?.type ?? '',
+        system: {
+          customTag: item?.system?.customTag ?? '',
+          levels: item?.system?.levels ?? 0,
+        },
+      }));
     }
     let createdItems = await super.createEmbeddedDocuments(type, payload, options);
     this._cachedAuras = null;

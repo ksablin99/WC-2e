@@ -32,7 +32,7 @@
           306
         ],
         "section": "Gaseous Form",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -103,7 +103,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>The subject and all its gear become</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;transmutation;\n    <br>\n    <strong>Level:</strong>&nbsp;Bard 3, Sorcerer 3, Wizard 3;\n    <strong>Domain:</strong>&nbsp;Air 3;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;S, M/DF (a bit of gauze and a wisp of smoke), F<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;touch<br>\n    \n    <strong>Target:</strong>&nbsp;willing corporeal creature touched<br>\n    \n    <strong>Duration:</strong>&nbsp;2 Minute/Level (D)<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;5<br>\n        <strong>Saving Throw:</strong>&nbsp;none\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThe subject and all its gear become insubstantial, misty, and translucent. Its material armor (including natural armor) becomes worthless, though its size, Dexterity, deflection bonuses, and armor bonuses from force effects still apply. The subject gains damage reduction 10/magic and becomes immune to poison and critical hits. It can’t attack or cast spells with verbal, somatic, material, or focus components while in gaseous form. (This does not rule out the use of certain spells that the subject may have prepared using the feats Silent Spell, Still Spell, and Eschew Materials.) The subject also loses supernatural abilities while in gaseous form. If it has a touch spell ready to use, that spell is discharged harmlessly when the <i>gaseous form </i>spell takes effect.\n</p><p>A gaseous creature can’t run, but it can fly at a speed of 10 feet (maneuverability perfect). It can pass through small holes or narrow openings, even mere cracks, with all it was wearing or holding in its hands, as long as the spell persists. The creature is subject to the effects of wind, and it can’t enter water or other liquid. It also can’t manipulate objects or activate items, even those carried along with its gaseous form. Continuously active items remain active, though in some cases their effects may be moot.\n</p><p><i>Arcane Material Component: </i>A bit of gauze and a wisp of smoke.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Touch",
     "duration": {
@@ -216,10 +216,10 @@
       "type": ""
     },
     "school": "trs",
-    "shortDescription": "<p>The subject and all its gear become</p>",
+    "shortDescription": "\n\n\n<p>\nThe subject and all its gear become insubstantial, misty, and translucent. Its material armor (including natural armor) becomes worthless, though its size, Dexterity, deflection bonuses, and armor bonuses from force effects still apply. The subject gains damage reduction 10/magic and becomes immune to poison and critical hits. It can’t attack or cast spells with verbal, somatic, material, or focus components while in gaseous form. (This does not rule out the use of certain spells that the subject may have prepared using the feats Silent Spell, Still Spell, and Eschew Materials.) The subject also loses supernatural abilities while in gaseous form. If it has a touch spell ready to use, that spell is discharged harmlessly when the <i>gaseous form </i>spell takes effect.\n</p><p>A gaseous creature can’t run, but it can fly at a speed of 10 feet (maneuverability perfect). It can pass through small holes or narrow openings, even mere cracks, with all it was wearing or holding in its hands, as long as the spell persists. The creature is subject to the effects of wind, and it can’t enter water or other liquid. It also can’t manipulate objects or activate items, even those carried along with its gaseous form. Continuously active items remain active, though in some cases their effects may be moot.\n</p><p><i>Arcane Material Component: </i>A bit of gauze and a wisp of smoke.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "The subject and all its gear become",
+    "snip": "Subject becomes insubstantial and can fly slowly.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 263-263",
     "specialActions": [
       {

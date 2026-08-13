@@ -170,7 +170,7 @@ test('casting a level-1 spell decrements level-1 spell slots by 1', async ({ pag
 
 // ── 4. Chat data contains spell output ────────────────────────────────────────
 
-test('cast Magic Missile chat message contains D35E chatTemplateData', async ({ page }) => {
+test('cast Magic Missile chat message contains system chatTemplateData', async ({ page }) => {
   const { actorId, spellId } = await createWizardWithMagicMissile(page);
 
   if (!spellId) {
@@ -191,7 +191,7 @@ test('cast Magic Missile chat message contains D35E chatTemplateData', async ({ 
 
   const chatData = await page.evaluate(() => {
     const msg = game.messages.contents.at(-1);
-    return msg?.flags?.D35E?.chatTemplateData ?? null;
+    return msg?.flags?.warcraftrpg2e?.chatTemplateData ?? null;
   });
 
   expect(chatData).not.toBeNull();

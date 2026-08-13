@@ -96,18 +96,29 @@ async function createActor(page, name, size = 'med') {
  *  disposition: 1=friendly, -1=hostile, 0=neutral
  */
 async function placeToken(page, opts) {
-  return page.evaluate(async (o) => {
+  const placed = await page.evaluate(async (o) => {
     const scene = canvas.scene;
-    const [tokenDoc] = await scene.createEmbeddedDocuments('Token', [{
+    const actor = game.actors.get(o.actorId);
+    if (!actor) throw new Error(`Cannot place missing actor ${o.actorId}`);
+    const prototype = await actor.getTokenDocument({
       name: `Token-${o.actorId.slice(-4)}`,
-      actorId: o.actorId,
       actorLink: o.actorLink ?? true,
       x: o.x,
       y: o.y,
       disposition: o.disposition ?? 1,
-    }]);
-    return tokenDoc.id;
+    }, { parent: scene });
+    const [tokenDoc] = await scene.createEmbeddedDocuments('Token', [prototype.toObject()]);
+    return { id: tokenDoc.id, width: tokenDoc.width, height: tokenDoc.height };
   }, opts);
+
+  // createToken hooks may asynchronously refresh the linked actor. Do not let
+  // a test observe the default 1x1 placeable while that refresh is still
+  // replacing it with the actor's prototype dimensions.
+  await page.waitForFunction(({ id, width, height }) => {
+    const token = canvas.tokens.placeables.find((entry) => entry.id === id);
+    return token?.document.width === width && token?.document.height === height;
+  }, placed, { timeout: 8_000 });
+  return placed.id;
 }
 
 /**

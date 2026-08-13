@@ -1,4 +1,5 @@
 import {LogHelper} from "../../helpers/LogHelper.js";
+import { getSystemFlag } from "../../utils/system-flags.js";
 
 export class ActorConditions {
     /**
@@ -17,7 +18,7 @@ export class ActorConditions {
             const buffTextures = this.actor.buffs.calcBuffTextures();
             const buffOrigins = new Set(Object.keys(buffTextures));
             const getEffectOrigin = (effect) => effect?.origin ?? effect?.data?.origin;
-            const isD35EIconEffect = (effect) => effect?.getFlag?.("D35E", "show") !== undefined;
+            const isD35EIconEffect = (effect) => getSystemFlag(effect, "show") !== undefined;
             const hasStatus = (effect, statusId) => effect.statuses?.has(statusId) || effect.getFlag("core", "statusId") === statusId;
 
             for (let t of tokens) {
@@ -52,7 +53,7 @@ export class ActorConditions {
                     if (hasCondition && !hasEffectIcon) {
                         toCreate.push({
                             statuses: [k],
-                            "flags.D35E.show": !game.settings.get("warcraftrpg2e", "hideTokenConditions"),
+                            "flags.warcraftrpg2e.show": !game.settings.get("warcraftrpg2e", "hideTokenConditions"),
                             name: CONFIG.D35E.conditions[k],
                             label: CONFIG.D35E.conditions[k],
                             img: CONFIG.D35E.conditionTextures[k],

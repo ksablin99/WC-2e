@@ -32,7 +32,7 @@
           321
         ],
         "section": "Mount",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -94,7 +94,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Summons riding horse for 2 hours/level.</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;conjuration&nbsp;(summoning);\n    <br>\n    <strong>Level:</strong>&nbsp;Sorcerer 1, Wizard 1;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, M (a bit of horse hair)<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 round<br>\n    <strong>Range:</strong>&nbsp;close (25 ft. + 5 ft./2 levels)<br>\n    \n    \n    <strong>Effect:</strong>&nbsp;One mount\n<br>\n    <strong>Duration:</strong>&nbsp;2 Hours/Level (D)<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;None\n\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nYou summon a light horse or a pony (your choice) to serve you as a mount. The steed serves willingly and well. The mount comes with a bit and bridle and a riding saddle.\n</p><p><i>Material Component: </i>A bit of horse hair.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "",
     "duration": {
@@ -204,7 +204,7 @@
       "type": ""
     },
     "school": "con",
-    "shortDescription": "<p>Summons riding horse for 2 hours/level.</p>",
+    "shortDescription": "\n\n\n<p>\nYou summon a light horse or a pony (your choice) to serve you as a mount. The steed serves willingly and well. The mount comes with a bit and bridle and a riding saddle.\n</p><p><i>Material Component: </i>A bit of horse hair.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
     "snip": "Summons riding horse for 2 hours/level.",

@@ -2,6 +2,13 @@ import { ActorSheetPFNPC } from "./npc.js";
 import { createTabs } from "../../lib.js";
 import {LootSheetActions} from "../../lootsheet/actions.js";
 import {QuantityDialog} from "../../lootsheet/quantityDialog.js";
+import {
+  getSystemFlag,
+  LEGACY_SYSTEM_FLAG_SCOPE,
+  setSystemFlag,
+  SYSTEM_FLAG_SCOPE,
+  unsetSystemFlag,
+} from "../../utils/system-flags.js";
 
 export class ActorSheetPFNPCLoot extends ActorSheetPFNPC {
   get template() {
@@ -83,14 +90,14 @@ export class ActorSheetPFNPCLoot extends ActorSheetPFNPC {
     //game.D35E.logger.log("sheetData.isGM: ", sheetData.isGM);
     //game.D35E.logger.log(this.actor);
 
-    let lootsheettype = await this.actor.getFlag("D35E", "lootsheettype");
+    let lootsheettype = getSystemFlag(this.actor, "lootsheettype");
     if (!lootsheettype) {
       lootsheettype = "Loot"
-      await this.actor.setFlag("D35E", "lootsheettype", lootsheettype);
+      await setSystemFlag(this.actor, "lootsheettype", lootsheettype);
     }
     game.D35E.logger.log(`Loot Sheet | Loot sheet type = ${lootsheettype}`);
 
-    let rolltable = await this.actor.getFlag("D35E", "rolltable");
+    let rolltable = getSystemFlag(this.actor, "rolltable");
     game.D35E.logger.log(`Loot Sheet | Rolltable = ${rolltable}`);
 
 
@@ -98,19 +105,19 @@ export class ActorSheetPFNPCLoot extends ActorSheetPFNPC {
     let priceModifierBuy = 1.0;
     game.D35E.logger.log("D35E LootSheet | ", lootsheettype)
     if (lootsheettype === "Merchant") {
-      priceModifier = await this.actor.getFlag("D35E", "priceModifier");
-      if (!priceModifier) await this.actor.setFlag("D35E", "priceModifier", 1.0);
-      priceModifier = await this.actor.getFlag("D35E", "priceModifier");
-      priceModifierBuy = await this.actor.getFlag("D35E", "priceModifierBuy");
-      if (!priceModifierBuy) await this.actor.setFlag("D35E", "priceModifierBuy", 1.0);
-      priceModifierBuy = await this.actor.getFlag("D35E", "priceModifierBuy");
+      priceModifier = getSystemFlag(this.actor, "priceModifier");
+      if (!priceModifier) await setSystemFlag(this.actor, "priceModifier", 1.0);
+      priceModifier = getSystemFlag(this.actor, "priceModifier");
+      priceModifierBuy = getSystemFlag(this.actor, "priceModifierBuy");
+      if (!priceModifierBuy) await setSystemFlag(this.actor, "priceModifierBuy", 1.0);
+      priceModifierBuy = getSystemFlag(this.actor, "priceModifierBuy");
     }
 
     let totalItems = 0
     let totalWeight = 0
     let totalPrice = 0
-    let maxCapacity = await this.actor.getFlag("D35E", "maxCapacity") || 0;
-    let maxLoad = await this.actor.getFlag("D35E", "maxLoad") || 0;
+    let maxCapacity = getSystemFlag(this.actor, "maxCapacity") || 0;
+    let maxLoad = getSystemFlag(this.actor, "maxLoad") || 0;
 
 
     Object.keys(sheetData.actor.itemGroups).forEach( f => sheetData.actor.itemGroups[f].items.forEach( _i => {
@@ -127,6 +134,17 @@ export class ActorSheetPFNPCLoot extends ActorSheetPFNPC {
 
     sheetData.lootsheettype = lootsheettype;
     sheetData.rolltable = rolltable;
+    sheetData.systemFlags = Object.fromEntries([
+      "lootsheettype",
+      "dragEnabled",
+      "allowPlayerMovement",
+      "maxCapacity",
+      "maxLoad",
+      "rolltable",
+      "shopQty",
+      "itemQty",
+      "shopStack",
+    ].map((key) => [key, getSystemFlag(this.actor, key)]));
     sheetData.priceModifier = priceModifier;
     sheetData.priceModifierBuy = priceModifierBuy;
     sheetData.rolltables = game.tables.contents;
@@ -161,7 +179,7 @@ export class ActorSheetPFNPCLoot extends ActorSheetPFNPC {
     super.activateListeners(html);
     const root = html?.nodeType === 1 ? html : html?.[0] ?? html;
 
-    const dragEnabled = this.actor.getFlag("D35E", "dragEnabled") && this.actor.getFlag("D35E", "lootsheettype") === "Loot";
+    const dragEnabled = getSystemFlag(this.actor, "dragEnabled") && getSystemFlag(this.actor, "lootsheettype") === "Loot";
     if(!dragEnabled) {
       let handler = ev => this._onDragItemStart(ev);
       root.querySelectorAll('li.item').forEach(li => {
@@ -212,9 +230,9 @@ export class ActorSheetPFNPCLoot extends ActorSheetPFNPC {
     }
 
     if (event.target.value) {
-      await this.actor.setFlag("D35E", targetKey, event.target.value);
+      await setSystemFlag(this.actor, targetKey, event.target.value);
     } else {
-      await this.actor.unsetFlag("D35E", targetKey, event.target.value);
+      await unsetSystemFlag(this.actor, targetKey);
     }
   }
 
@@ -228,10 +246,15 @@ export class ActorSheetPFNPCLoot extends ActorSheetPFNPC {
       const name = flags[i][0].split(".")
       const value = flags[i][1]
       if( name.length === 3 ) { // Ex : data.flags.lootsheetnpcpf1.dragEnabled
+        const isSystemScope = [SYSTEM_FLAG_SCOPE, LEGACY_SYSTEM_FLAG_SCOPE].includes(name[1]);
+        const currentValue = isSystemScope
+          ? getSystemFlag(this.actor, name[2])
+          : this.actor.getFlag(name[1], name[2]);
         // check if has changed
-        if(this.actor.getFlag(name[1], name[2]) != value) {
+        if(currentValue != value) {
           game.D35E.logger.log(`Setting flag ${name[1]}.${name[2]} to ${value}`)
-          await this.actor.setFlag(name[1], name[2], value)
+          if (isSystemScope) await setSystemFlag(this.actor, name[2], value);
+          else await this.actor.setFlag(name[1], name[2], value)
         }
       }
     }
@@ -254,10 +277,10 @@ export class ActorSheetPFNPCLoot extends ActorSheetPFNPC {
       return;
     }
 
-    const rolltableUUID = await this.actor.getFlag("D35E", "rolltable");
-    const shopQtyFormula = await this.actor.getFlag("D35E", "shopQty") || "1";
-    const itemQtyFormula = await this.actor.getFlag("D35E", "itemQty") || "1";
-    const itemStack = await this.actor.getFlag("D35E", "stopStack") || "1";
+    const rolltableUUID = getSystemFlag(this.actor, "rolltable");
+    const shopQtyFormula = getSystemFlag(this.actor, "shopQty") || "1";
+    const itemQtyFormula = getSystemFlag(this.actor, "itemQty") || "1";
+    const itemStack = getSystemFlag(this.actor, "shopStack") ?? true;
 
     if (!rolltableUUID || rolltableUUID.length == 0) {
       return ui.notifications.error(game.i18n.format("ERROR.lsChooseTable"));
@@ -548,13 +571,13 @@ export class ActorSheetPFNPCLoot extends ActorSheetPFNPC {
     event.preventDefault();
     //game.D35E.logger.log("Loot Sheet | _priceModifier")
 
-    let priceModifier = await this.actor.getFlag("D35E", "priceModifier");
+    let priceModifier = getSystemFlag(this.actor, "priceModifier");
     if (!priceModifier) priceModifier = 1.0;
 
     priceModifier = Math.round(priceModifier * 100);
 
 
-    let priceModifierBuy = await this.actor.getFlag("D35E", "priceModifierBuy");
+    let priceModifierBuy = getSystemFlag(this.actor, "priceModifierBuy");
     if (!priceModifierBuy) priceModifierBuy = 1.0;
 
     priceModifierBuy = Math.round(priceModifierBuy * 100);
@@ -568,8 +591,8 @@ export class ActorSheetPFNPCLoot extends ActorSheetPFNPC {
             icon: '<i class="fas fa-check"></i>',
             label: game.i18n.localize("D35E.ls.update"),
             callback: () =>  {
-              this.actor.setFlag("D35E", "priceModifier", document.getElementById("price-modifier-percent").value / 100)
-              this.actor.setFlag("D35E", "priceModifierBuy", document.getElementById("price-modifier-percent-buy").value / 100)
+              setSystemFlag(this.actor, "priceModifier", document.getElementById("price-modifier-percent").value / 100)
+              setSystemFlag(this.actor, "priceModifierBuy", document.getElementById("price-modifier-percent-buy").value / 100)
             }
           },
           two: {
@@ -597,10 +620,10 @@ export class ActorSheetPFNPCLoot extends ActorSheetPFNPC {
     let item = this.actor.items.get(itemId);
     if(item) {
       game.D35E.logger.log(item)
-      if(!item.getFlag("D35E", "secret")) {
-        item.setFlag("D35E", "secret", true);
+      if(!getSystemFlag(item, "secret")) {
+        setSystemFlag(item, "secret", true);
       } else {
-        item.unsetFlag("D35E", "secret");
+        unsetSystemFlag(item, "secret");
       }
     }
   }

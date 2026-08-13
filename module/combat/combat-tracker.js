@@ -1,3 +1,5 @@
+import { getSystemFlag, setSystemFlag } from "../utils/system-flags.js";
+
 export class D35ECombatTracker extends foundry.applications.sidebar.tabs.CombatTracker {
 
     static PARTS = {
@@ -29,17 +31,17 @@ export class D35ECombatTracker extends foundry.applications.sidebar.tabs.CombatT
             case "usedMoveAction":
             case "usedAttackAction":
             case "usedSwiftAction": {
-                const current = combatant.getFlag("D35E", actionKey) ?? false;
-                await combatant.setFlag("D35E", actionKey, !current);
+                const current = getSystemFlag(combatant, actionKey) ?? false;
+                await setSystemFlag(combatant, actionKey, !current);
                 break;
             }
             case "usedAllAao": {
-                const used = combatant.getFlag("D35E", "usedAaoCount") ?? 0;
-                const max  = combatant.getFlag("D35E", "aaoCount") ?? 1;
+                const used = getSystemFlag(combatant, "usedAaoCount") ?? 0;
+                const max  = getSystemFlag(combatant, "aaoCount") ?? 1;
                 if (used >= max) {
-                    await combatant.setFlag("D35E", "usedAaoCount", 0);
+                    await setSystemFlag(combatant, "usedAaoCount", 0);
                 } else {
-                    await combatant.setFlag("D35E", "usedAaoCount", max);
+                    await setSystemFlag(combatant, "usedAaoCount", max);
                 }
                 break;
             }
@@ -58,14 +60,14 @@ export class D35ECombatTracker extends foundry.applications.sidebar.tabs.CombatT
             turn.usedAttackAction = combatant.usedAttackAction;
             turn.usedSwiftAction = combatant.usedSwiftAction;
             turn.usedAllAao = combatant.usedAllAao;
-            const aaoMax  = combatant.getFlag("D35E", "aaoCount") ?? 1;
-            const aaoUsed = combatant.getFlag("D35E", "usedAaoCount") ?? 0;
+            const aaoMax  = getSystemFlag(combatant, "aaoCount") ?? 1;
+            const aaoUsed = getSystemFlag(combatant, "usedAaoCount") ?? 0;
             turn.aaoLeft = Math.max(0, aaoMax - aaoUsed);
             turn.aaoMax  = aaoMax;
         } else if (!isActor) {
-            turn.actorImage = combatant.flags?.D35E?.actorImg ?? "";
-            turn.actorName = combatant.flags?.D35E?.actorName ?? "";
-            turn.linkedActorId = combatant.flags?.D35E?.actor ?? null;
+            turn.actorImage = getSystemFlag(combatant, "actorImg") ?? "";
+            turn.actorName = getSystemFlag(combatant, "actorName") ?? "";
+            turn.linkedActorId = getSystemFlag(combatant, "actor") ?? null;
         }
         return turn;
     }

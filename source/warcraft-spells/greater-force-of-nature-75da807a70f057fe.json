@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           304
         ],
         "section": "Greater Force of Nature",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>As force of nature, creates</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>This functions as <em>force of nature</em>, except it creates 1d4+1 treants. Each requires a suitable living tree and follows the same dispelling, dismissal, and re-rooting rules.</p><p><strong>Automation boundary:</strong> Roll the number, create and control each treant actor, and track its source tree and re-rooting manually.</p>"
     },
     "display": "Touch",
     "duration": {
@@ -213,10 +213,10 @@
       "type": ""
     },
     "school": "trs",
-    "shortDescription": "<p>As force of nature, creates</p>",
+    "shortDescription": "<p>Transform healthy trees into 1d4+1 temporary obedient treants.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "As force of nature, creates",
+    "snip": "Transform healthy trees into 1d4+1 temporary obedient treants.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 269-269",
     "specialActions": [],
     "specialId": null,
@@ -238,7 +238,7 @@
     "summon": [],
     "tags": [],
     "target": {
-      "value": "Tree touched"
+      "value": "Trees touched"
     },
     "types": "force",
     "uniqueId": "",
@@ -259,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Roll the number, create and control each treant actor, and track its source tree and re-rooting manually."
     }
   },
   "type": "spell"

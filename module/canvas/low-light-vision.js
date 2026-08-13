@@ -1,3 +1,5 @@
+import { getSystemFlag } from "../utils/system-flags.js";
+
 /**
  * Add a checkbox to enable/disable low-light vision effects to a light's configuration
  *
@@ -18,8 +20,8 @@ export function addLowLightVisionToLightConfig(app, html) {
       hint: game.i18n.localize("D35E.SETTINGS.DisableLLV.Hint"),
     },
     {
-      name: "flags.D35E.disableLowLight",
-      value: light.getFlag("D35E", "disableLowLight") ?? false,
+      name: "flags.warcraftrpg2e.disableLowLight",
+      value: getSystemFlag(light, "disableLowLight") ?? false,
     }
   );
 
@@ -37,7 +39,7 @@ export function addLowLightVisionToLightConfig(app, html) {
  * @param {TokenDocument} token
  * @returns {boolean}
  */
-const hasSystemVision = (token) => token.getFlag("D35E", "customVisionRules") !== true;
+const hasSystemVision = (token) => getSystemFlag(token, "customVisionRules") !== true;
 
 /**
  * LLV support mixin for AmbientLight and Token
@@ -76,7 +78,7 @@ export const LLVMixin = (Base) =>
       // System vision is disabled
       if (!game.settings.get("warcraftrpg2e", "vision")) return result;
       // This light source has LLV handling disabled
-      if (this.document.getFlag("D35E", "disableLowLight")) return result;
+      if (getSystemFlag(this.document, "disableLowLight")) return result;
 
       const token = this.object?.document;
       if (token && !hasSystemVision(token)) return result;

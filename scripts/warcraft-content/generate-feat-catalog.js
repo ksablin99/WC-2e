@@ -5,6 +5,10 @@ const path = require("path");
 const root = path.resolve(__dirname, "../..");
 const outputDir = path.join(root, "source", "warcraft-feats");
 const catalog = JSON.parse(fs.readFileSync(path.join(__dirname, "warcraft-feat-catalog.json"), "utf8"));
+const verifiedFeatRules = Object.assign({}, ...[
+  "warcraft-feat-rules-general.json",
+  "warcraft-feat-rules-extra.json",
+].map((file) => JSON.parse(fs.readFileSync(path.join(__dirname, file), "utf8"))));
 fs.mkdirSync(outputDir, { recursive: true });
 
 function documentsIn(directory) {
@@ -15,6 +19,14 @@ function documentsIn(directory) {
 function normalized(name) { return name.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim(); }
 function idFor(name) { return crypto.createHash("sha256").update(`warcraftrpg2e:feat:${name}`).digest("hex").slice(0, 16); }
 function slug(name) { return normalized(name).replace(/ /g, "-"); }
+function escapeHtml(value) {
+  return String(value).replace(/[&<>"']/g, (character) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#39;",
+  }[character]));
+}
+function ruleParagraph(label, value) {
+  return value ? `<p><strong>${label}:</strong> ${escapeHtml(value)}</p>` : "";
+}
 
 const sourceFeats = documentsIn(path.join(root, "source", "feats"));
 const byName = new Map(sourceFeats.map((document) => [normalized(document.name), document]));
@@ -29,6 +41,11 @@ const categoryTypes = {
 };
 const fixes = {
   "Thunderous Blow": "Strength 15, Bash, Power Attack, base attack bonus +4.",
+  "Greater Weapon Focus": "Proficiency with selected weapon, Weapon Focus with selected weapon, warrior level 8th.",
+  "Greater Weapon Specialization": "Proficiency with selected weapon, Greater Weapon Focus with selected weapon, Weapon Focus with selected weapon, Weapon Specialization with selected weapon, warrior level 12th.",
+  "Lightning Reload": "Agility 13, Exotic Weapon Proficiency (firearms).",
+  "Rapid Reload": "Weapon Proficiency (selected crossbow type).",
+  "Weapon Specialization": "Proficiency with selected weapon, Weapon Focus with selected weapon, warrior level 4th.",
 };
 const warriorBonus = new Set([
   "Bash","Battle Language","Battle Shout","Blind-Fight","Bloodletter","Careful Strike","Challenging Shout","Cleave","Close Shot","Combat Expertise","Combat Reflexes","Counterattack","Defend","Deflect Arrows","Demoralizing Shout","Dodge","Exotic Weapon Proficiency","Expert Rider","Far Shot","Furious Charge","Great Cleave","Greater Two-Weapon Fighting","Greater Weapon Focus","Greater Weapon Specialization","Improved Bull Rush","Improved Critical","Improved Disarm","Improved Feint","Improved Grapple","Improved Overrun","Improved Precise Shot","Improved Sunder","Improved Trip","Improved Two-Weapon Fighting","Improved Unarmed Strike","Intimidating Shout","Lightning Reload","Manyshot","Mobility","Mounted Archery","Mounted Combat","Pistol Whip","Point Blank Shot","Power Attack","Precise Shot","Pulverize","Punishing Blow","Quick Draw","Rapid Reload","Rapid Shot","Reckless Attack","Ride Bareback","Ride-By Attack","Shot on the Run","Snatch Arrows","Sniper Shot","Spirited Charge","Spring Attack","Storm Bolt","Stunning Fist","Thunderous Blow","Trample","Trick Shot","Two-Weapon Defense","Two-Weapon Fighting","War Stomp","Weapon Finesse","Weapon Focus","Weapon Specialization","Whirlwind Attack",
@@ -55,8 +72,10 @@ const commonShoutRules = {
   generalSource: { printedPage: 137, pdfPage: 139, section: "Shout Feats" },
 };
 let inherited = 0;
+let verifiedRules = 0;
 for (const entry of catalog) {
   const source = byName.get(normalized(entry.name));
+  const verifiedRule = verifiedFeatRules[entry.name];
   const document = JSON.parse(JSON.stringify(source || base));
   document._id = idFor(entry.name);
   document.name = entry.name;
@@ -78,12 +97,25 @@ for (const entry of catalog) {
     document.system.deactivateActions = [];
     document.system.damage.parts = [];
     document.system.attack.parts = [];
-    document.system.description.value = [
-      `<p><strong>Category:</strong> ${entry.category}.</p>`,
-      prerequisite ? `<p><strong>Prerequisites:</strong> ${prerequisite}</p>` : "",
-      `<p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. ${entry.printedPages.join(", ")}) until a verified automation record replaces this note.</p>`,
-    ].join("");
-    document.system.shortDescription = `<p>${entry.category} feat${prerequisite ? `; requires ${prerequisite}` : ""}.</p>`;
+    if (entry.category !== "Shout") {
+      if (!verifiedRule?.summary || !verifiedRule?.benefit || !verifiedRule?.manual) {
+        throw new Error(`Missing complete verified feat rules for ${entry.name}`);
+      }
+      verifiedRules += 1;
+      document.system.description.value = [
+        ruleParagraph("Category", `${entry.category} feat`),
+        ruleParagraph("Prerequisites", prerequisite),
+        ruleParagraph("Summary", verifiedRule.summary),
+        ruleParagraph("Benefit", verifiedRule.benefit),
+        ruleParagraph("Normal", verifiedRule.normal),
+        ruleParagraph("Special", verifiedRule.special),
+        warriorBonus.has(entry.name) ? ruleParagraph("Warrior bonus feat", "Yes") : "",
+        entry.category === "Technology" ? ruleParagraph("Tinker bonus feat", "Yes") : "",
+        ruleParagraph("Supported automation", verifiedRule.automation),
+        ruleParagraph("Foundry and GM handling", verifiedRule.manual),
+      ].join("");
+      document.system.shortDescription = `<p>${escapeHtml(verifiedRule.summary)}</p>`;
+    }
   } else {
     inherited += 1;
   }
@@ -115,7 +147,7 @@ for (const entry of catalog) {
         pdfPages: entry.pdfPages,
         printedPages: entry.printedPages,
         section: entry.name,
-        verification: "text+catalogue-table",
+        verification: verifiedRule ? "text+render" : "text+catalogue-table",
       },
       feat: {
         category: entry.category,
@@ -125,7 +157,10 @@ for (const entry of catalog) {
         repeatable: repeatable.has(entry.name),
         status: entry.category === "Shout"
           ? (shoutRules[entry.name].usesSharedPool ? "structured-automated-effect" : "structured-trigger-manual")
-          : (source ? "srd-mechanics-with-warcraft-metadata" : "manual-effect-pending-verification"),
+          : (source
+            ? "srd-mechanics-with-warcraft-metadata"
+            : (verifiedRule.automation ? "verified-rules-supported-automation" : "verified-rules-manual-adjudication")),
+        ...(verifiedRule ? { rules: verifiedRule } : {}),
         ...(entry.category === "Shout" ? { rules: { ...commonShoutRules, ...shoutRules[entry.name] } } : {}),
       },
     },
@@ -141,4 +176,4 @@ const index = documents.map(({ file, document }) => ({
   childKeyByCollection: {}, embeddedCollections: [], file, key: `!items!${document._id}`,
 }));
 fs.writeFileSync(path.join(outputDir, ".index.json"), `${JSON.stringify(index, null, 2)}\n`);
-console.log(`Generated ${documents.length} Warcraft feat records (${inherited} inherited SRD mechanics).`);
+console.log(`Generated ${documents.length} Warcraft feat records (${inherited} inherited SRD mechanics, ${verifiedRules} verified Warcraft rules).`);

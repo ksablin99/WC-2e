@@ -105,6 +105,7 @@ import { WarcraftCharacterCreationHook } from './module/actor/hooks/warcraftChar
 import { AlignmentSelectorDialog } from './module/apps/alignment-selector.js';
 import { MigrationDialog } from './module/apps/migration-dialog.js';
 import { ConjuredManager } from './module/conjuration/conjuredManager.js';
+import { getSystemFlag, setSystemFlag } from './module/utils/system-flags.js';
 
 // Add String.format
 if (!String.prototype.format) {
@@ -433,7 +434,6 @@ Hooks.once("ready", async function () {
     if (game.paused) game.togglePause();
   }
 
-  console.log("D35E | Cache is ", CACHE);
   //game.actors.contents.forEach(obj => { obj._updateChanges({sourceOnly: true}, {skipToken: true}); });
 
 
@@ -637,13 +637,13 @@ Hooks.on("createActor", (actor, data, options) => {
     }
     updateData["prototypeToken.sight.enabled"] = true;
     updateData["prototypeToken.actorLink"] = true;
-    if (updateData) actor.update(updateData);
+    if (updateData) actor.update(updateData, { preserveCurrentHitPoints: true });
   } else if (actor.type === "npc") {
     let updateData = {};
     updateData["prototypeToken.bar1"] = { attribute: "attributes.hp" };
     updateData["prototypeToken.displayName"] = 20;
     updateData["prototypeToken.displayBars"] = 40;
-    if (updateData) actor.update(updateData);
+    if (updateData) actor.update(updateData, { preserveCurrentHitPoints: true });
   }
 });
 /* -------------------------------------------- */
@@ -695,14 +695,12 @@ Hooks.on("renderChatPopout", (_, html) => ActorChatListener.chatListeners(html))
 
 const debouncedCollate = foundry.utils.debounce((a, b, c, d) => CollateAuras(a, b, c, d), 100);
 Hooks.on("updateItem", (item, changedData, options, user) => {
-  console.log("D35E | Updated Item", item, changedData, options, user, game.userId);
   let actor = item.parent;
   if (actor) {
     TopPortraitBar.render(actor);
     if (!(actor instanceof Actor)) return;
 
     if (user !== game.userId) {
-      console.log("Not updating actor as action was started by other user");
       return;
     }
     //actor.refresh(options)
@@ -712,7 +710,6 @@ Hooks.on("updateItem", (item, changedData, options, user) => {
 function _injectTokenVisionInfo(actor, html) {
   const tabElem = html?.querySelector?.(`.tab[data-tab="vision"]`);
   if (!tabElem) return;
-  console.log("D35E | _injectTokenVisionInfo", actor);
   const noVisionOverride = foundry.utils.getProperty(actor, "system.noVisionOverride") === true;
   const div = document.createElement("div");
   div.style.cssText = "width: 100%; padding: 4px; border-bottom: 1px solid var(--color-border-light-primary); margin-bottom: 4px;";
@@ -728,14 +725,12 @@ function _injectTokenVisionInfo(actor, html) {
 
 // Placed token config (TokenConfig extends DocumentSheetV2)
 Hooks.on("renderTokenConfig", async (app, html, state) => {
-  console.log("D35E | renderTokenConfig", state.document);
   const actor = state.document?.actor;
   if (actor) _injectTokenVisionInfo(actor, html);
 });
 
 // Prototype token config (PrototypeTokenConfig extends ApplicationV2)
 Hooks.on("renderPrototypeTokenConfig", async (app, html, state) => {
-  console.log("D35E | renderPrototypeTokenConfig", app, html, state);
   const actor = app.actor;
   if (actor) _injectTokenVisionInfo(actor, html);
 });
@@ -837,8 +832,8 @@ Hooks.on("preUpdateToken", async (token, data, options, userId) => {
               moverName: rawToken.document.name,
               threateningTokens: threateningTokens.map(t => {
                 const combatant = game.combat.combatants.find(c => c.tokenId === t.id);
-                const aooMax = combatant?.getFlag("D35E", "aaoCount") ?? 1;
-                const aooUsed = combatant?.getFlag("D35E", "usedAaoCount") ?? 0;
+                const aooMax = getSystemFlag(combatant, "aaoCount") ?? 1;
+                const aooUsed = getSystemFlag(combatant, "usedAaoCount") ?? 0;
                 const aooLeft = Math.max(0, aooMax - aooUsed);
                 return {
                   id: t.id,
@@ -864,7 +859,7 @@ Hooks.on("preUpdateToken", async (token, data, options, userId) => {
   if (userId === game.user.id && game.combat && (data?.x !== undefined || data?.y !== undefined)
     && game.settings.get("warcraftrpg2e", "advanced-combat-tracking")) {
     const combatant = game.combat.combatants.find(c => c.tokenId === token.id);
-    if (combatant && !combatant.getFlag("D35E", "usedMoveAction")) {
+    if (combatant && !getSystemFlag(combatant, "usedMoveAction")) {
       const moveToken = canvas?.tokens?.placeables?.find(t => t.id === token.id);
       if (moveToken) {
         const dx = (data.x ?? moveToken.x) - moveToken.x;
@@ -872,16 +867,16 @@ Hooks.on("preUpdateToken", async (token, data, options, userId) => {
         const movedDist = Math.sqrt(dx * dx + dy * dy);
         // Only mark if moved more than one diagonal square (> 5-foot step)
         if (movedDist > Math.sqrt(2) * canvas.grid.size) {
-          combatant.setFlag("D35E", "usedMoveAction", true);
+          await setSystemFlag(combatant, "usedMoveAction", true);
         }
       }
     }
   }
 
   if (userId !== game.user.id) return false;
-  if (token.actor.getFlag("D35E", "lootsheettype")) {
+  if (getSystemFlag(token.actor, "lootsheettype")) {
     if (data?.x || data?.y) {
-      if (!game.user.isGM && !token.actor.getFlag("D35E", "allowPlayerMovement")) {
+      if (!game.user.isGM && !getSystemFlag(token.actor, "allowPlayerMovement")) {
         return false;
       }
     }
@@ -971,7 +966,6 @@ Hooks.on("preCreateItem", (data, d, options, user) => {
   if (!(data.parent instanceof Actor)) return;
 
   if (user !== game.userId) {
-    console.log("Not updating actor as action was started by other user");
     return;
   }
   //data.parent.refresh(options);
@@ -981,7 +975,6 @@ Hooks.on("createItem", (data, options, user) => {
   if (!(data.parent instanceof Actor)) return;
 
   if (user !== game.userId) {
-    console.log("Not updating actor as action was started by other user");
     return;
   }
   //data.parent.refresh(options);
@@ -990,7 +983,6 @@ Hooks.on("deleteItem", (data, options, user) => {
   if (!(data.parent instanceof Actor)) return;
 
   if (user !== game.userId) {
-    console.log("Not updating actor as action was started by other user");
     return;
   }
   //data.parent.refresh(options);
@@ -1002,7 +994,6 @@ Hooks.on("updateActor", (actor, data, options, user) => {
   TopPortraitBar.render(actor);
   if (!(actor instanceof Actor)) return;
   if (user !== game.userId) {
-    console.log("Not updating actor as action was started by other user");
     return;
   } else {
     if (options?.stopAuraUpdate) return;
@@ -1126,7 +1117,7 @@ Hooks.on("combatTurnChange", (combat, previous, current) => {
 
   const combatant = combat.combatant;
   if (!combatant?.actor) return;
-  if (combatant.flags?.D35E?.isBuff) return;
+  if (getSystemFlag(combatant, "isBuff")) return;
 
   void combatant.actor.progressRechargeOnCombatTurnStart().catch((err) => {
     console.error("D35E | progressRechargeOnCombatTurnStart failed", err);
@@ -1201,7 +1192,7 @@ async function createSkillMacro(actorId, skill, slot) {
         type: "script",
         img: CONFIG.D35E.skills[skill] ? `/systems/warcraftrpg2e/icons/skills/${skill}.png` : `/systems/warcraftrpg2e/icons/actions/unknown.png`,
         command: command,
-        flags: { "D35E.skillMacro": true },
+        flags: { warcraftrpg2e: { skillMacro: true } },
       },
       { displaySheet: false }
     );
@@ -1229,7 +1220,7 @@ async function createItemMacro(itemUuid, slot) {
         type: "script",
         img: item.img,
         command: command,
-        flags: { "D35E.itemMacro": true },
+        flags: { warcraftrpg2e: { itemMacro: true } },
       },
       { displaySheet: false }
     );

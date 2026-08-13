@@ -1,3 +1,37 @@
+/**
+ * Parse the importer's explicit JSON interchange format.
+ *
+ * The legacy HTML stat-block parser which once populated this dialog is not
+ * present in this repository.  Accepting only JSON keeps this boundary
+ * deterministic instead of silently returning undefined and creating a
+ * partially populated Bestiary folder.
+ *
+ * @param {string|null|undefined} text JSON for one monster object or an array.
+ * @returns {object[]} parsed monster records
+ */
+export function parseMonsterImportText(text) {
+    if (text == null) return [];
+    if (typeof text !== "string") {
+        throw new TypeError("Monster import input must be a JSON string.");
+    }
+    if (text.trim() === "") return [];
+
+    let parsed;
+    try {
+        parsed = JSON.parse(text);
+    } catch (error) {
+        const syntaxError = new SyntaxError(`Monster import input is not valid JSON: ${error.message}`);
+        syntaxError.cause = error;
+        throw syntaxError;
+    }
+
+    const monsters = Array.isArray(parsed) ? parsed : [parsed];
+    if (monsters.some(monster => monster == null || typeof monster !== "object" || Array.isArray(monster))) {
+        throw new TypeError("Monster import JSON must contain an object or an array of objects.");
+    }
+    return monsters;
+}
+
 export class MonsterImporterDialog extends FormApplication {
     constructor(...args) {
         super(...args);
@@ -21,6 +55,7 @@ export class MonsterImporterDialog extends FormApplication {
     diceFromText(str) {
         const regex = /(\d+d\d+)/gi;
         let foundDices = []
+        let m;
         while ((m = regex.exec(str)) !== null) {
             if (m.index === regex.lastIndex) {
                 regex.lastIndex++;
@@ -40,6 +75,7 @@ export class MonsterImporterDialog extends FormApplication {
     spellsFromText(str) {
         const regex = /<i>(.*?)<\/i>/gi;
         let spells = []
+        let m;
         while ((m = regex.exec(str)) !== null) {
             if (m.index === regex.lastIndex) {
                 regex.lastIndex++;
@@ -54,6 +90,7 @@ export class MonsterImporterDialog extends FormApplication {
     dcFromText(str) {
         const regex = /dc (\d+)/gi;
         let foundDC = []
+        let m;
         while ((m = regex.exec(str)) !== null) {
             if (m.index === regex.lastIndex) {
                 regex.lastIndex++;
@@ -68,6 +105,7 @@ export class MonsterImporterDialog extends FormApplication {
     distanceFromText(str) {
         const regex = /(\d+) ft./gi;
         let found = []
+        let m;
         while ((m = regex.exec(str)) !== null) {
             if (m.index === regex.lastIndex) {
                 regex.lastIndex++;
@@ -82,6 +120,7 @@ export class MonsterImporterDialog extends FormApplication {
     regenFromText(str) {
         const regex = /regeneration (\d+)/gi;
         let found = []
+        let m;
         while ((m = regex.exec(str)) !== null) {
             if (m.index === regex.lastIndex) {
                 regex.lastIndex++;
@@ -98,47 +137,47 @@ export class MonsterImporterDialog extends FormApplication {
         return parseFloat(cr.replace("2 (", "2").replace("1/1", "1").replace("1/2", "0.5").replace("1/4", "0.25").replace("1/8", "0.125").replace("1/3", "0.33").replace("1/6", "0.166"))
     }
 
-    parseTextMonster() {
-        let val = document.getElementById('monsterImportBox').value;
-        
+    parseTextMonster(text) {
+        const value = text === undefined
+            ? globalThis.document?.getElementById("monsterImportBox")?.value
+            : text;
+        return parseMonsterImportText(value);
     }
 
-    async importMonster() {
+    async importMonster(text) {
         let all_missing_specials = new Set()
 
-        let folder = await Folder.create({
+        const monsters = this.parseTextMonster(text);
+        if (monsters.length === 0) return [];
+
+        const importedActors = [];
+        const loadPack = async id => {
+            const loadedPack = game.packs.get(id);
+            if (!loadedPack) throw new Error(`Monster importer requires compendium pack "${id}".`);
+            await loadedPack.getIndex();
+            return loadedPack;
+        };
+        const getIndexEntryId = (entry, label) => {
+            const id = entry?.id ?? entry?._id;
+            if (!id) throw new Error(`Monster importer could not find required compendium entry "${label}".`);
+            return id;
+        };
+
+        const [racialHDPack, featPack, monsterAbilityPack, weaponPack, naturalWeaponPack, spellPack] =
+            await Promise.all([
+                loadPack("warcraftrpg2e.racialhd"),
+                loadPack("warcraftrpg2e.feats"),
+                loadPack("world.monster-ability"),
+                loadPack("warcraftrpg2e.weapons-and-ammo"),
+                loadPack("world.monster-attack"),
+                loadPack("warcraftrpg2e.spells")
+            ]);
+
+        const folder = await Folder.create({
             name: 'Bestiary',
             parent: null,
             type: "Actor"
         })
-
-        pack = game.packs.get("warcraftrpg2e.racialhd")
-        await pack.getContent()
-        await pack.getIndex()
-        pack = game.packs.get("warcraftrpg2e.feats")
-        await pack.getContent()
-        await pack.getIndex()
-        pack = game.packs.get("world.monster-ability")
-        await pack.getContent()
-        await pack.getIndex()
-        pack = game.packs.get("warcraftrpg2e.weapons-and-ammo")
-        await pack.getContent()
-        await pack.getIndex()
-        pack = game.packs.get("world.monster-attack")
-        await pack.getContent()
-        await pack.getIndex()
-        spellPack = game.packs.get("warcraftrpg2e.spells")
-        await spellPack.getContent()
-        await spellPack.getIndex()
-
-        let naturalWeaponPack = pack = game.packs.get("world.monster-attack")
-        await naturalWeaponPack.getContent()
-        await naturalWeaponPack.getIndex()
-        let weaponPack = game.packs.get("warcraftrpg2e.weapons-and-ammo")
-        await weaponPack.getContent()
-        await weaponPack.getIndex()
-
-        let monsters = this.parseTextMonster();
 
         for (let monster of monsters) {
 
@@ -152,46 +191,49 @@ export class MonsterImporterDialog extends FormApplication {
                 type: 'npc',
                 folder: folder.id
             })
-            let updateData = []
-            updateData["data.details.cr"] = parseChallengeRating(monster.challenge_rating)
-            updateData["data.details.type"] = monster.descriptor
-            updateData["data.details.alignment"] = monster.alignment
+            importedActors.push(actor);
+            let updateData = {}
+            updateData["system.details.cr"] = this.parseChallengeRating(monster.challenge_rating)
+            updateData["system.details.type"] = monster.descriptor
+            updateData["system.details.alignment"] = monster.alignment
             updateData["system.details.alignmentMode"] = "text"
-            updateData["data.traits.size"] = monster.mapped_size
+            updateData["system.traits.size"] = monster.mapped_size
 
-            if (regenFromText(monster.special_qualities).length) {
-                updateData["data.traits.regen"] = parseInt(regenFromText(monster.special_qualities)[1])
+            if (this.regenFromText(monster.special_qualities).length) {
+                updateData["system.traits.regen"] = parseInt(this.regenFromText(monster.special_qualities)[1])
             }
 
             updateData["img"] = monster.image
 
             if (monster.basespeed) {
-                updateData["data.attributes.speed.land.base"] = monster.basespeed
+                updateData["system.attributes.speed.land.base"] = monster.basespeed
             }
             if (monster.flyspeed) {
-                updateData["data.attributes.speed.fly.base"] = monster.flyspeed
+                updateData["system.attributes.speed.fly.base"] = monster.flyspeed
             }
             if (monster.swimspeed) {
-                updateData["data.attributes.speed.swim.base"] = monster.swimspeed
+                updateData["system.attributes.speed.swim.base"] = monster.swimspeed
             }
             if (monster.climbspeed) {
-                updateData["data.attributes.speed.climb.base"] = monster.climbspeed
+                updateData["system.attributes.speed.climb.base"] = monster.climbspeed
             }
 
-            updateData["token.vision"] = true;
+            updateData["prototypeToken.sight.enabled"] = true;
 
             for (let ability of monster.abilities.split(", ")) {
                 let abl = ability.split(' ')
                 if (abl.length > 1)
-                    updateData[`data.abilities.${abl[0].toLowerCase()}.value`] = !isNaN(parseInt(abl[1])) ? parseInt(abl[1]) : 0
+                    updateData[`system.abilities.${abl[0].toLowerCase()}.value`] = !isNaN(parseInt(abl[1])) ? parseInt(abl[1]) : 0
             }
             // First round of updates - setting abilities
             await actor.update(updateData)
-            updateData = []
+            updateData = {}
             // Setting up racial HD
-            pack = game.packs.get("warcraftrpg2e.racialhd")
-            let racialHDIndex = pack.index.find(e => e.name.toLowerCase().indexOf(monster.type.toLowerCase()) !== -1)
-            let racialHDItem = await actor.importItemFromCollection("warcraftrpg2e.racialhd", racialHDIndex._id)
+            let racialHDIndex = racialHDPack.index.find(e => e.name.toLowerCase().indexOf(monster.type.toLowerCase()) !== -1)
+            let racialHDItem = await actor.importItemFromCollection(
+                "warcraftrpg2e.racialhd",
+                getIndexEntryId(racialHDIndex, `${monster.type} racial HD`)
+            )
             let racialChanges = foundry.utils.duplicate(racialHDItem.system.changes);
             let resistances = foundry.utils.duplicate(racialHDItem.system.resistances);
             let damageReduction = foundry.utils.duplicate(racialHDItem.system.damageReduction);
@@ -199,7 +241,6 @@ export class MonsterImporterDialog extends FormApplication {
                 racialChanges.push(change)
             }
 
-            pack = game.packs.get("world.monster-ability")
             let unprocessed_specials = []
             let senses = []
             for (let missing_special of monster.missing_specials) {
@@ -337,36 +378,27 @@ export class MonsterImporterDialog extends FormApplication {
                 } else if (missing_special.startsWith("fast healing")) {
                     let val = missing_special.replace("fast healing", "").trim();
                     if (parseInt(val) > 0)
-                        updateData["data.traits.fastHealing"] = parseInt(val)
+                        updateData["system.traits.fastHealing"] = parseInt(val)
                     else
                         unprocessed_specials.push(missing_special)
                 } else if (missing_special.startsWith("regeneration")) {
                     let val = missing_special.replace("regeneration", "").trim();
                     if (parseInt(val) > 0)
-                        updateData["data.traits.regeneration"] = parseInt(val)
+                        updateData["system.traits.regen"] = parseInt(val)
                     else
                         unprocessed_specials.push(missing_special)
                 } else if (missing_special.startsWith("darkvision")) {
                     let val = missing_special.replace("darkvision", "").replace("ft.", "").trim();
                     senses.push(`Darkvision ${val} ft.`)
-                    //updateData["trait.senses"] = (updateData["trait.senses"] || "") + "Darkvision"
-                    // Must update token
                     if (parseInt(val) > 0)
-                        updateData["token.brightSight"] = parseInt(val)
+                        updateData["system.attributes.senses.darkvision"] = parseInt(val)
                 } else if (missing_special === "low-light vision") {
                     senses.push(`Low Light Vision`)
-                    updateData["token.flags.D35E.lowLightVision"] = true
-                    // Must update token
-                    // if (parseInt(val) > 0)
-                    //     updateData["data.traits.fastHealing"] = parseInt(val)
+                    updateData["system.attributes.senses.lowLight"] = true
                 } else if (missing_special === "vermin traits") {
-                    // Give darkvision
-                    // if (parseInt(val) > 0)
-                    //     updateData["data.traits.fastHealing"] = parseInt(val)
+                    // Given by the racial HD item.
                 } else if (missing_special === "elemental traits") {
-                    // Give darkvision
-                    // if (parseInt(val) > 0)
-                    //     updateData["data.traits.fastHealing"] = parseInt(val)
+                    // Given by the racial HD item.
                 } else if (missing_special === "undead traits") {
                     // Skip, given by undead racial HD
                 } else if (missing_special === "construct traits") {
@@ -381,14 +413,17 @@ export class MonsterImporterDialog extends FormApplication {
                         breathWeapon = breathWeapon.replace('breath weapon', '').replace('(', '').replace(')', '')
                         let abilityIndex = null
                         if (breathWeapon.indexOf('cone') !== -1) {
-                            abilityIndex = pack.index.find(e => "Breath Weapon (Cone)".toLowerCase().startsWith(e.name.toLowerCase()))
+                            abilityIndex = monsterAbilityPack.index.find(e => "Breath Weapon (Cone)".toLowerCase().startsWith(e.name.toLowerCase()))
                         } else {
-                            abilityIndex = pack.index.find(e => "Breath Weapon (Ray)".toLowerCase().startsWith(e.name.toLowerCase()))
+                            abilityIndex = monsterAbilityPack.index.find(e => "Breath Weapon (Ray)".toLowerCase().startsWith(e.name.toLowerCase()))
                         }
-                        let abilityItem = await actor.importItemFromCollection("world.monster-ability", abilityIndex._id)
+                        let abilityItem = await actor.importItemFromCollection(
+                            "world.monster-ability",
+                            getIndexEntryId(abilityIndex, "breath weapon")
+                        )
 
                         let abilityUpdateData = {}
-                        abilityUpdateData['id'] = abilityItem.id
+                        abilityUpdateData['_id'] = abilityItem.id
                         let energy = 'fire'
                         if (breathWeapon.indexOf('cold') !== -1) {
                             energy = 'cold'
@@ -403,60 +438,63 @@ export class MonsterImporterDialog extends FormApplication {
                         } else if (breathWeapon.indexOf('cold') !== -1) {
                             energy = 'cold'
                         }
-                        abilityUpdateData['name'] = "Breath Weapon (" + breathWeapon.split(' ').map(capitalize).join(' ').replace(' Dc', ', DC').replace('Ft.', 'ft.').replace(' Of ', ' of ').trim() + ")"
-                        if (diceFromText(breathWeapon).length) {
-                            abilityUpdateData['data.damage.parts'] = [
-                                [diceFromText(breathWeapon)[0], null, `energy-${energy}`]
+                        abilityUpdateData['name'] = "Breath Weapon (" + breathWeapon.split(' ').map(this.capitalize).join(' ').replace(' Dc', ', DC').replace('Ft.', 'ft.').replace(' Of ', ' of ').trim() + ")"
+                        if (this.diceFromText(breathWeapon).length) {
+                            abilityUpdateData['system.damage.parts'] = [
+                                [this.diceFromText(breathWeapon)[0], null, `energy-${energy}`]
                             ]
                         }
-                        if (dcFromText(breathWeapon).length) {
-                            abilityUpdateData['data.save.dc'] = dcFromText(breathWeapon)[1]
+                        if (this.dcFromText(breathWeapon).length) {
+                            abilityUpdateData['system.save.dc'] = this.dcFromText(breathWeapon)[1]
                         }
-                        if (distanceFromText(breathWeapon).length) {
-                            abilityUpdateData['data.measureTemplate.size'] = parseInt(distanceFromText(breathWeapon)[1])
-                            abilityUpdateData['data.range.value'] = distanceFromText(breathWeapon)[1]
+                        if (this.distanceFromText(breathWeapon).length) {
+                            abilityUpdateData['system.measureTemplate.size'] = parseInt(this.distanceFromText(breathWeapon)[1])
+                            abilityUpdateData['system.range.value'] = this.distanceFromText(breathWeapon)[1]
                         }
 
                         await actor.updateEmbeddedDocuments('Item', [abilityUpdateData])
                     }
                 } else {
 
-                    let abilityIndex = pack.index.find(e => missing_special.toLowerCase().startsWith(e.name.toLowerCase()))
+                    let abilityIndex = monsterAbilityPack.index.find(e => missing_special.toLowerCase().startsWith(e.name.toLowerCase()))
                     if (abilityIndex) {
-                        let abilityItem = await actor.importItemFromCollection("world.monster-ability", abilityIndex._id)
+                        let abilityItem = await actor.importItemFromCollection(
+                            "world.monster-ability",
+                            getIndexEntryId(abilityIndex, missing_special)
+                        )
                         if (missing_special.startsWith("rake")) {
-                            if (diceFromText(missing_special).length) {
+                            if (this.diceFromText(missing_special).length) {
                                 let abilityUpdateData = {}
-                                abilityUpdateData['id'] = abilityItem.id
-                                abilityUpdateData['data.damage.parts'] = [
-                                    [diceFromText(missing_special)[0], null, 'damage-piercing-or-slashing']
+                                abilityUpdateData['_id'] = abilityItem.id
+                                abilityUpdateData['system.damage.parts'] = [
+                                    [this.diceFromText(missing_special)[0], null, 'damage-piercing-or-slashing']
                                 ]
                                 await actor.updateEmbeddedDocuments('Item', [abilityUpdateData])
                             }
                         } else if (missing_special.startsWith("constrict")) {
-                            if (diceFromText(missing_special).length) {
+                            if (this.diceFromText(missing_special).length) {
                                 let abilityUpdateData = {}
-                                abilityUpdateData['id'] = abilityItem.id
-                                abilityUpdateData['data.damage.parts'] = [
-                                    [diceFromText(missing_special)[0], null, 'damage-bludg']
+                                abilityUpdateData['_id'] = abilityItem.id
+                                abilityUpdateData['system.damage.parts'] = [
+                                    [this.diceFromText(missing_special)[0], null, 'damage-bludg']
                                 ]
                                 await actor.updateEmbeddedDocuments('Item', [abilityUpdateData])
                             }
                         } else if (missing_special.startsWith("rend")) {
-                            if (diceFromText(missing_special).length) {
+                            if (this.diceFromText(missing_special).length) {
                                 let abilityUpdateData = {}
-                                abilityUpdateData['id'] = abilityItem.id
-                                abilityUpdateData['data.damage.parts'] = [
-                                    [diceFromText(missing_special)[0], null, 'damage-piercing-or-slashing']
+                                abilityUpdateData['_id'] = abilityItem.id
+                                abilityUpdateData['system.damage.parts'] = [
+                                    [this.diceFromText(missing_special)[0], null, 'damage-piercing-or-slashing']
                                 ]
                                 await actor.updateEmbeddedDocuments('Item', [abilityUpdateData])
                             }
                         } else if (missing_special.startsWith("trample")) {
-                            if (diceFromText(missing_special).length) {
+                            if (this.diceFromText(missing_special).length) {
                                 let abilityUpdateData = {}
-                                abilityUpdateData['id'] = abilityItem.id
-                                abilityUpdateData['data.damage.parts'] = [
-                                    [diceFromText(missing_special)[0], null, 'damage-bludg']
+                                abilityUpdateData['_id'] = abilityItem.id
+                                abilityUpdateData['system.damage.parts'] = [
+                                    [this.diceFromText(missing_special)[0], null, 'damage-bludg']
                                 ]
                                 await actor.updateEmbeddedDocuments('Item', [abilityUpdateData])
                             }
@@ -464,7 +502,7 @@ export class MonsterImporterDialog extends FormApplication {
                             let val = missing_special.replace("blindsight", "").replace("ft.", "").trim();
                             if (val) {
                                 let abilityUpdateData = {}
-                                abilityUpdateData['id'] = abilityItem.id
+                                abilityUpdateData['_id'] = abilityItem.id
                                 abilityUpdateData['name'] = abilityItem.name + " " + val + " ft."
                                 await actor.updateEmbeddedDocuments('Item', [abilityUpdateData])
                             }
@@ -472,7 +510,7 @@ export class MonsterImporterDialog extends FormApplication {
                             let val = missing_special.replace("telepathy", "").replace("ft.", "").trim();
                             if (val) {
                                 let abilityUpdateData = {}
-                                abilityUpdateData['id'] = abilityItem.id
+                                abilityUpdateData['_id'] = abilityItem.id
                                 abilityUpdateData['name'] = abilityItem.name + " " + val + " ft."
                                 await actor.updateEmbeddedDocuments('Item', [abilityUpdateData])
                             }
@@ -480,36 +518,36 @@ export class MonsterImporterDialog extends FormApplication {
                             let val = missing_special.replace("tremorsense", "").replace("ft.", "").trim();
                             if (val) {
                                 let abilityUpdateData = {}
-                                abilityUpdateData['id'] = abilityItem.id
+                                abilityUpdateData['_id'] = abilityItem.id
                                 abilityUpdateData['name'] = abilityItem.name + " " + val + " ft."
                                 await actor.updateEmbeddedDocuments('Item', [abilityUpdateData])
                             }
                         } else if (missing_special.startsWith("frightful presence")) {
-                            if (dcFromText(missing_special).length) {
+                            if (this.dcFromText(missing_special).length) {
                                 let abilityUpdateData = {}
-                                abilityUpdateData['id'] = abilityItem.id
-                                abilityUpdateData['data.save.dc'] = dcFromText(missing_special)[1]
+                                abilityUpdateData['_id'] = abilityItem.id
+                                abilityUpdateData['system.save.dc'] = this.dcFromText(missing_special)[1]
                                 await actor.updateEmbeddedDocuments('Item', [abilityUpdateData])
                             }
                         } else if (missing_special.startsWith("tail sweep")) {
-                            if (dcFromText(missing_special).length) {
+                            if (this.dcFromText(missing_special).length) {
                                 let abilityUpdateData = {}
-                                abilityUpdateData['id'] = abilityItem.id
-                                abilityUpdateData['data.save.dc'] = dcFromText(missing_special)[1]
+                                abilityUpdateData['_id'] = abilityItem.id
+                                abilityUpdateData['system.save.dc'] = this.dcFromText(missing_special)[1]
                                 await actor.updateEmbeddedDocuments('Item', [abilityUpdateData])
                             }
                         } else if (missing_special.startsWith("crush")) {
-                            if (dcFromText(missing_special).length) {
+                            if (this.dcFromText(missing_special).length) {
                                 let abilityUpdateData = {}
-                                abilityUpdateData['id'] = abilityItem.id
-                                abilityUpdateData['data.save.dc'] = dcFromText(missing_special)[1]
+                                abilityUpdateData['_id'] = abilityItem.id
+                                abilityUpdateData['system.save.dc'] = this.dcFromText(missing_special)[1]
                                 await actor.updateEmbeddedDocuments('Item', [abilityUpdateData])
                             }
                         } else if (missing_special.startsWith("turn resistance")) {
                             let val = missing_special.replace("turn resistance ", "").trim();
                             if (val) {
                                 let abilityUpdateData = {}
-                                abilityUpdateData['id'] = abilityItem.id
+                                abilityUpdateData['_id'] = abilityItem.id
                                 abilityUpdateData['name'] = abilityItem.name + " " + val
                                 await actor.updateEmbeddedDocuments('Item', [abilityUpdateData])
                             }
@@ -517,7 +555,7 @@ export class MonsterImporterDialog extends FormApplication {
                             let val = missing_special.replace(" turn resistance", "").trim();
                             if (val) {
                                 let abilityUpdateData = {}
-                                abilityUpdateData['id'] = abilityItem.id
+                                abilityUpdateData['_id'] = abilityItem.id
                                 abilityUpdateData['name'] = abilityItem.name + " " + val
                                 await actor.updateEmbeddedDocuments('Item', [abilityUpdateData])
                             }
@@ -526,12 +564,12 @@ export class MonsterImporterDialog extends FormApplication {
                         }
                     } else if (missing_special !== "-" || missing_special.startsWith("dc ")) {
 
-                        // let abilityIndex = pack.index.find(e => "Custom Ability".toLowerCase().startsWith(e.name.toLowerCase()))
-                        // let abilityItem = await actor.importItemFromCollection("world.monster-ability", abilityIndex._id)
+                        // let abilityIndex = monsterAbilityPack.index.find(e => "Custom Ability".toLowerCase().startsWith(e.name.toLowerCase()))
+                        // let abilityItem = await actor.importItemFromCollection("world.monster-ability", getIndexEntryId(abilityIndex, missing_special))
                         // let abilityUpdateData = {}
-                        // abilityUpdateData['id'] = abilityItem.id
+                        // abilityUpdateData['_id'] = abilityItem.id
                         // abilityUpdateData['name'] = missing_special
-                        // abilityUpdateData['data.description.value'] = "<em>This ability could not be automatically imported.</em>"
+                        // abilityUpdateData['system.description.value'] = "<em>This ability could not be automatically imported.</em>"
                         // await actor.updateEmbeddedDocuments('Item', [abilityUpdateData])
                         if (missing_special.startsWith('immunity to')) {
                             let possibleImmunities = [];
@@ -553,9 +591,9 @@ export class MonsterImporterDialog extends FormApplication {
                                 else customImmunities.push(imm)
                             }
                             if (possibleImmunities)
-                                updateData["data.traits.ci.value"] = possibleImmunities
+                                updateData["system.traits.ci.value"] = possibleImmunities
                             if (customImmunities)
-                                updateData["data.traits.ci.custom"] = customImmunities.join(", ")
+                                updateData["system.traits.ci.custom"] = customImmunities.join(", ")
 
                         } else {
                             unprocessed_specials.push(missing_special);
@@ -569,22 +607,25 @@ export class MonsterImporterDialog extends FormApplication {
             }
 
             for (let special_data of monster.special_data) {
-                let abilityIndex = pack.index.find(e => "Custom Ability".toLowerCase().startsWith(e.name.toLowerCase()))
-                let abilityItem = await actor.importItemFromCollection("world.monster-ability", abilityIndex._id)
+                let abilityIndex = monsterAbilityPack.index.find(e => "Custom Ability".toLowerCase().startsWith(e.name.toLowerCase()))
+                let abilityItem = await actor.importItemFromCollection(
+                    "world.monster-ability",
+                    getIndexEntryId(abilityIndex, "Custom Ability")
+                )
                 let abilityUpdateData = {}
-                abilityUpdateData['id'] = abilityItem.id
+                abilityUpdateData['_id'] = abilityItem.id
                 abilityUpdateData['name'] = special_data.name
-                abilityUpdateData['data.description.value'] = '<p><em>This ability was imported automatically does not have actions or changes.</em></p>' + special_data.text.replace(/<b>.*?<\/b>/gi, '')
+                abilityUpdateData['system.description.value'] = '<p><em>This ability was imported automatically does not have actions or changes.</em></p>' + special_data.text.replace(/<b>.*?<\/b>/gi, '')
                 await actor.updateEmbeddedDocuments('Item', [abilityUpdateData])
                 if (special_data.name.toLowerCase().indexOf("spells") !== -1) {
-                    let spells = spellsFromText(special_data.text);
+                    let spells = this.spellsFromText(special_data.text);
                     //game.D35E.logger.warn(`IMPORTER | WARN | Monster ${monster.name} has spells`, spells)
                     let spellsToAdd = []
                     for (let spell of spells) {
                         let spellIndex = spellPack.index.find(e => spell.toLowerCase() === e.name.toLowerCase())
                         if (spellIndex) {
                             let spellItem = await spellPack.getDocument(spellIndex.id)
-                            itemData = spellItem.toObject ? spellItem.toObject(false) : spellItem
+                            const itemData = spellItem.toObject ? spellItem.toObject(false) : spellItem
                             if (itemData._id) delete itemData._id;
                             itemData.system = itemData.system || {};
                             itemData.system.spellbook = "primary"
@@ -598,7 +639,7 @@ export class MonsterImporterDialog extends FormApplication {
                 }
                 if (special_data.name.toLowerCase().indexOf("spell-like") !== -1) {
                     for (let spelllikeblock of special_data.text.split(";")) {
-                        let spells = spellsFromText(spelllikeblock);
+                        let spells = this.spellsFromText(spelllikeblock);
                         let spellsToAdd = []
                         //game.D35E.logger.warn(`IMPORTER | WARN | Monster ${monster.name} has spell-like abilities group`, spelllikeblock)
                         for (let spell of spells) {
@@ -625,7 +666,7 @@ export class MonsterImporterDialog extends FormApplication {
                                     spellItem.system.preparation.preparedAmount = 5
                                     spellItem.system.preparation.maxAmount = 5
                                 }
-                                itemData = spellItem.toObject ? spellItem.toObject(false) : spellItem
+                                const itemData = spellItem.toObject ? spellItem.toObject(false) : spellItem
                                 if (itemData._id) delete itemData._id;
                                 spellsToAdd.push(itemData)
                             }
@@ -640,15 +681,14 @@ export class MonsterImporterDialog extends FormApplication {
             }
 
             let itemUpdateData = {
-                'id': racialHDItem.id,
-                'data.levels': monster.hd || parseInt(monster.hit_dice.split('d')[0]),
-                'data.changes': racialChanges,
-                'data.damageReduction': damageReduction,
-                'data.resistances': resistances
+                '_id': racialHDItem.id,
+                'system.levels': monster.hd || parseInt(monster.hit_dice.split('d')[0]),
+                'system.changes': racialChanges,
+                'system.damageReduction': damageReduction,
+                'system.resistances': resistances
             }
 
             let featSkillMod = {}
-            pack = game.packs.get("warcraftrpg2e.feats")
             for (let feat of monster.feat_list) {
                 if (feat.endsWith(","))
                     feat = feat.replace(",", "")
@@ -703,12 +743,18 @@ export class MonsterImporterDialog extends FormApplication {
                     featNumTimes = 6
                     feat = feat.replace("(x6)", "").trim();
                 }
-                let featIndex = pack.index.find(e => e.name.toLowerCase() === feat.toLowerCase())
+                let featIndex = featPack.index.find(e => e.name.toLowerCase() === feat.toLowerCase())
                 if (featIndex) {
-                    let featItem = await actor.importItemFromCollection("warcraftrpg2e.feats", featIndex._id)
+                    let featItem = await actor.importItemFromCollection(
+                        "warcraftrpg2e.feats",
+                        getIndexEntryId(featIndex, feat)
+                    )
                     if (featNumTimes > 1) {
                         for (let i = 1; i < featNumTimes; i++) {
-                            await actor.importItemFromCollection("warcraftrpg2e.feats", featIndex._id)
+                            await actor.importItemFromCollection(
+                                "warcraftrpg2e.feats",
+                                getIndexEntryId(featIndex, feat)
+                            )
                         }
                     }
                     if (feat.toLowerCase() === 'stealthy') {
@@ -729,65 +775,65 @@ export class MonsterImporterDialog extends FormApplication {
                     if (feat.toLowerCase() === 'weapon focus (no weapon set)') {
                         if (featAdditionalData) {
                             let abilityUpdateData = {}
-                            abilityUpdateData['id'] = featItem.id
-                            abilityUpdateData['name'] = `Weapon Focus (${featAdditionalData.split(' ').map(capitalize).join(' ')})`
-                            abilityUpdateData['data.customAttributes._q9or7r27r.value'] = featAdditionalData.split(' ').map(capitalize).join(' ')
+                            abilityUpdateData['_id'] = featItem.id
+                            abilityUpdateData['name'] = `Weapon Focus (${featAdditionalData.split(' ').map(this.capitalize).join(' ')})`
+                            abilityUpdateData['system.customAttributes._q9or7r27r.value'] = featAdditionalData.split(' ').map(this.capitalize).join(' ')
                             await actor.updateEmbeddedDocuments('Item', [abilityUpdateData])
                         }
                     } else if (feat.toLowerCase() === 'greater weapon focus (no weapon set)') {
                         if (featAdditionalData) {
                             let abilityUpdateData = {}
-                            abilityUpdateData['id'] = featItem.id
-                            abilityUpdateData['name'] = `Greater Weapon Focus (${featAdditionalData.split(' ').map(capitalize).join(' ')})`
-                            abilityUpdateData['data.customAttributes._kh4mdayuu.value'] = featAdditionalData.split(' ').map(capitalize).join(' ')
+                            abilityUpdateData['_id'] = featItem.id
+                            abilityUpdateData['name'] = `Greater Weapon Focus (${featAdditionalData.split(' ').map(this.capitalize).join(' ')})`
+                            abilityUpdateData['system.customAttributes._kh4mdayuu.value'] = featAdditionalData.split(' ').map(this.capitalize).join(' ')
                             await actor.updateEmbeddedDocuments('Item', [abilityUpdateData])
                         }
                     } else if (feat.toLowerCase() === 'epic weapon focus (no weapon set)') {
                         if (featAdditionalData) {
                             let abilityUpdateData = {}
-                            abilityUpdateData['id'] = featItem.id
-                            abilityUpdateData['name'] = `Epic Weapon Focus (${featAdditionalData.split(' ').map(capitalize).join(' ')})`
-                            abilityUpdateData['data.customAttributes._kh4mdayuu.value'] = featAdditionalData.split(' ').map(capitalize).join(' ')
+                            abilityUpdateData['_id'] = featItem.id
+                            abilityUpdateData['name'] = `Epic Weapon Focus (${featAdditionalData.split(' ').map(this.capitalize).join(' ')})`
+                            abilityUpdateData['system.customAttributes._kh4mdayuu.value'] = featAdditionalData.split(' ').map(this.capitalize).join(' ')
                             await actor.updateEmbeddedDocuments('Item', [abilityUpdateData])
                         }
                     } else if (feat.toLowerCase() === 'improved natural attack (no weapon set)') {
                         if (featAdditionalData) {
                             let abilityUpdateData = {}
-                            abilityUpdateData['id'] = featItem.id
-                            abilityUpdateData['name'] = `Improved Natural Attack (${featAdditionalData.split(' ').map(capitalize).join(' ')})`
-                            abilityUpdateData['data.customAttributes._kh4mdayuu.value'] = featAdditionalData.split(' ').map(capitalize).join(' ')
+                            abilityUpdateData['_id'] = featItem.id
+                            abilityUpdateData['name'] = `Improved Natural Attack (${featAdditionalData.split(' ').map(this.capitalize).join(' ')})`
+                            abilityUpdateData['system.customAttributes._kh4mdayuu.value'] = featAdditionalData.split(' ').map(this.capitalize).join(' ')
                             await actor.updateEmbeddedDocuments('Item', [abilityUpdateData])
                         }
                     } else if (feat.toLowerCase() === 'spell stowaway (no spell set)') {
                         if (featAdditionalData) {
                             let abilityUpdateData = {}
-                            abilityUpdateData['id'] = featItem.id
-                            abilityUpdateData['name'] = `Spell Stowaway (${featAdditionalData.split(' ').map(capitalize).join(' ')})`
-                            abilityUpdateData['data.customAttributes._kh4mdayuu.value'] = featAdditionalData.split(' ').map(capitalize).join(' ')
+                            abilityUpdateData['_id'] = featItem.id
+                            abilityUpdateData['name'] = `Spell Stowaway (${featAdditionalData.split(' ').map(this.capitalize).join(' ')})`
+                            abilityUpdateData['system.customAttributes._kh4mdayuu.value'] = featAdditionalData.split(' ').map(this.capitalize).join(' ')
                             await actor.updateEmbeddedDocuments('Item', [abilityUpdateData])
                         }
                     } else if (feat.toLowerCase() === 'tenacious magic (no spell set)') {
                         if (featAdditionalData) {
                             let abilityUpdateData = {}
-                            abilityUpdateData['id'] = featItem.id
-                            abilityUpdateData['name'] = `Tenacious Magic (${featAdditionalData.split(' ').map(capitalize).join(' ')})`
-                            abilityUpdateData['data.customAttributes._kh4mdayuu.value'] = featAdditionalData.split(' ').map(capitalize).join(' ')
+                            abilityUpdateData['_id'] = featItem.id
+                            abilityUpdateData['name'] = `Tenacious Magic (${featAdditionalData.split(' ').map(this.capitalize).join(' ')})`
+                            abilityUpdateData['system.customAttributes._kh4mdayuu.value'] = featAdditionalData.split(' ').map(this.capitalize).join(' ')
                             await actor.updateEmbeddedDocuments('Item', [abilityUpdateData])
                         }
                     } else if (feat.toLowerCase() === 'improved critical (no weapon set)') {
                         if (featAdditionalData) {
                             let abilityUpdateData = {}
-                            abilityUpdateData['id'] = featItem.id
-                            abilityUpdateData['name'] = `Improved Critical (${featAdditionalData.split(' ').map(capitalize).join(' ')})`
-                            abilityUpdateData['data.customAttributes._q876yak3y.value'] = featAdditionalData.split(' ').map(capitalize).join(' ')
+                            abilityUpdateData['_id'] = featItem.id
+                            abilityUpdateData['name'] = `Improved Critical (${featAdditionalData.split(' ').map(this.capitalize).join(' ')})`
+                            abilityUpdateData['system.customAttributes._q876yak3y.value'] = featAdditionalData.split(' ').map(this.capitalize).join(' ')
                             await actor.updateEmbeddedDocuments('Item', [abilityUpdateData])
                         }
                     } else if (feat.toLowerCase() === 'skill focus') {
                         if (featAdditionalData) {
                             let abilityUpdateData = {}
-                            abilityUpdateData['id'] = featItem.id
-                            abilityUpdateData['name'] = `Skill Focus (${featAdditionalData.split(' ').map(capitalize).join(' ')})`
-                            abilityUpdateData['data.description.value'] = '<p><em>Bonus from this feat is included in skill ranks for this creature.</em></p><p>You get a +3 bonus on all checks involving that skill.</p>'
+                            abilityUpdateData['_id'] = featItem.id
+                            abilityUpdateData['name'] = `Skill Focus (${featAdditionalData.split(' ').map(this.capitalize).join(' ')})`
+                            abilityUpdateData['system.description.value'] = '<p><em>Bonus from this feat is included in skill ranks for this creature.</em></p><p>You get a +3 bonus on all checks involving that skill.</p>'
 
                             await actor.updateEmbeddedDocuments('Item', [abilityUpdateData])
                         }
@@ -799,7 +845,7 @@ export class MonsterImporterDialog extends FormApplication {
             }
 
 
-            sizeSkillMod = {
+            const sizeSkillMod = {
                 "hid": {
                     "fine": 16,
                     "dim": 12,
@@ -815,18 +861,18 @@ export class MonsterImporterDialog extends FormApplication {
 
             // Setting up skills
             for (let skill of Object.values(monster.skill_list)) {
-                itemUpdateData[`data.classSkills.${skill.code}`] = true
+                itemUpdateData[`system.classSkills.${skill.code}`] = true
                 if (skill.code) {
                     let abl = actor.system.skills[skill.code].ability;
                     let ablMod = actor.system.abilities[abl].mod;
-                    updateData[`data.skills.${skill.code}.rank`] = skill.value - ablMod + (featSkillMod[skill.code] || 0) - (sizeSkillMod[skill.code] ? sizeSkillMod[skill.code][monster.mapped_size] : 0)
+                    updateData[`system.skills.${skill.code}.rank`] = skill.value - ablMod + (featSkillMod[skill.code] || 0) - (sizeSkillMod[skill.code] ? sizeSkillMod[skill.code][monster.mapped_size] : 0)
                 }
             }
 
             await actor.updateEmbeddedDocuments('Item', [itemUpdateData])
 
-            updateData["data.traits.senses"] = senses.join(', ')
-            updateData['data.details.notes.value'] = monster.full_text.replace(/h5/g, 'h2')
+            updateData["system.traits.senses"] = senses.join(', ')
+            updateData['system.details.notes.value'] = monster.full_text.replace(/h5/g, 'h2')
             await actor.update(updateData)
 
             //Setting up attacks
@@ -841,52 +887,55 @@ export class MonsterImporterDialog extends FormApplication {
                 }
                 let naturalWeaponIndex = naturalWeaponPack.index.find(e => attack.toLowerCase().startsWith(e.name.toLowerCase()))
                 if (naturalWeaponIndex) {
-                    let attackItem = await actor.importItemFromCollection("world.monster-attack", naturalWeaponIndex._id)
+                    let attackItem = await actor.importItemFromCollection(
+                        "world.monster-attack",
+                        getIndexEntryId(naturalWeaponIndex, attack)
+                    )
 
                     if (attack.toLowerCase().startsWith("swarm")) {
-                        if (diceFromText(monster.attack).length) {
+                        if (this.diceFromText(monster.attack).length) {
                             let abilityUpdateData = {}
-                            abilityUpdateData['id'] = attackItem.id
-                            abilityUpdateData['data.damage.parts'] = [
-                                [diceFromText(monster.attack)[0], 'Swarm', null]
+                            abilityUpdateData['_id'] = attackItem.id
+                            abilityUpdateData['system.damage.parts'] = [
+                                [this.diceFromText(monster.attack)[0], 'Swarm', null]
                             ]
                             await actor.updateEmbeddedDocuments('Item', [abilityUpdateData])
                         }
                         game.D35E.logger.warn("IMPORTER | WARN | Monster is a Swarm!", monster)
                     } else if (attack.toLowerCase().startsWith("incorporeal touch")) {
-                        if (diceFromText(monster.attack).length) {
+                        if (this.diceFromText(monster.attack).length) {
                             let abilityUpdateData = {}
-                            abilityUpdateData['id'] = attackItem.id
+                            abilityUpdateData['_id'] = attackItem.id
                             // TODO: Fix this
-                            abilityUpdateData['data.damage.parts'] = [
-                                [diceFromText(monster.attack)[0], 'Touch', '']
+                            abilityUpdateData['system.damage.parts'] = [
+                                [this.diceFromText(monster.attack)[0], 'Touch', '']
                             ]
                             await actor.updateEmbeddedDocuments('Item', [abilityUpdateData])
                         }
                         game.D35E.logger.warn(`IMPORTER | WARN | Monster ${monster.name} has Incorporeal Touch!`, monster)
                     } else {
                         if (monster.text_attacks[attack.toLowerCase()]) {
-                            if (diceFromText(monster.text_attacks[attack.toLowerCase()]).length) {
-                                let dices = diceFromText(monster.text_attacks[attack.toLowerCase()])[0]
+                            if (this.diceFromText(monster.text_attacks[attack.toLowerCase()]).length) {
+                                let dices = this.diceFromText(monster.text_attacks[attack.toLowerCase()])[0]
                                 let abilityUpdateData = {}
-                                abilityUpdateData['id'] = attackItem.id
+                                abilityUpdateData['_id'] = attackItem.id
                                 let damageParts = foundry.utils.duplicate(attackItem.system.damage.parts)
                                 damageParts[0][0] = dices;
-                                abilityUpdateData['data.damage.parts'] = damageParts;
+                                abilityUpdateData['system.damage.parts'] = damageParts;
                                 await actor.updateEmbeddedDocuments('Item', [abilityUpdateData])
                             }
                         }
                     }
                     if (firstAttack) {
                         let abilityUpdateData = {}
-                        abilityUpdateData['id'] = attackItem.id
-                        abilityUpdateData['data.primaryAttack'] = true
+                        abilityUpdateData['_id'] = attackItem.id
+                        abilityUpdateData['system.primaryAttack'] = true
                         await actor.updateEmbeddedDocuments('Item', [abilityUpdateData])
                         firstAttack = false
                         attackIdMap.set(attack.toLowerCase(), {
                             _id: 0,
                             count: 0,
-                            id: attackItem._id,
+                            id: attackItem.id,
                             name: attackItem.name,
                             img: attackItem.img,
                             isWeapon: false,
@@ -896,7 +945,7 @@ export class MonsterImporterDialog extends FormApplication {
                         attackIdMap.set(attack.toLowerCase(), {
                             _id: 0,
                             count: 0,
-                            id: attackItem._id,
+                            id: attackItem.id,
                             name: attackItem.name,
                             img: attackItem.img,
                             isWeapon: false,
@@ -906,13 +955,13 @@ export class MonsterImporterDialog extends FormApplication {
 
                 } else {
                     let fixedAttackName = attack.toLowerCase().replace('short sword', 'shortsword')
-                    weaponIndex = weaponPack.index.find(e => fixedAttackName.startsWith(e.name.toLowerCase()));
+                    const weaponIndex = weaponPack.index.find(e => fixedAttackName.startsWith(e.name.toLowerCase()));
                     if (weaponIndex) {
                         let ai = await weaponPack.getDocument(weaponIndex.id)
                         let itemData = foundry.utils.duplicate(ai.toObject ? ai.toObject(false) : ai)
                         if (itemData._id) delete itemData._id;
                         let attackItem = (await actor.createEmbeddedDocuments("Item", [itemData]))[0]
-                        //let attackItem = await actor.importItemFromCollection("warcraftrpg2e.weapons-and-ammo", weaponIndex._id)
+                        //let attackItem = await actor.importItemFromCollection("warcraftrpg2e.weapons-and-ammo", getIndexEntryId(weaponIndex, fixedAttackName))
                         game.D35E.logger.log('IMPORTER | INFO | ', itemData, actor)
                         let attack = await actor.createAttackFromWeapon(attackItem)
                         attackIdMap.set(fixedAttackName, {
@@ -942,16 +991,19 @@ export class MonsterImporterDialog extends FormApplication {
                 if (!fullAttack) continue;
                 let naturalWeaponIndex = naturalWeaponPack.index.find(e => "full attack".toLowerCase().startsWith(e.name.toLowerCase()))
                 if (naturalWeaponIndex) {
-                    let attackItem = await actor.importItemFromCollection("world.monster-attack", naturalWeaponIndex._id)
+                    let attackItem = await actor.importItemFromCollection(
+                        "world.monster-attack",
+                        getIndexEntryId(naturalWeaponIndex, "full attack")
+                    )
                     let id = 1;
                     let abilityUpdateData = {}
-                    abilityUpdateData['id'] = attackItem.id
+                    abilityUpdateData['_id'] = attackItem.id
                     for (let _attack of fullAttack) {
                         if (attackIdMap.has(_attack[0])) {
                             let attackData = foundry.utils.duplicate(attackIdMap.get(_attack[0]))
                             attackData.count = Math.max(1, _attack[1])
                             attackData._id = id
-                            abilityUpdateData[`data.attacks.attack${id}`] = attackData
+                            abilityUpdateData[`system.attacks.attack${id}`] = attackData
                         } else {
                             game.D35E.logger.error(`IMPORTER | WARN | Monster ${monster.name} has missing element in full attack`, _attack, attackIdMap)
                         }
@@ -962,12 +1014,15 @@ export class MonsterImporterDialog extends FormApplication {
             }
 
         }
+        return importedActors;
     }
 
     activateListeners(html) {
         super.activateListeners(html);
         const root = html?.nodeType === 1 ? html : html?.[0] ?? html;
-        root.querySelectorAll(".MonsterButton").forEach(el => el.addEventListener("click", this.getMonsters.bind(this)));
+        root?.querySelectorAll("[data-action='import-monsters']").forEach(el => {
+            el.addEventListener("click", () => this.importMonster());
+        });
     }
 
 }

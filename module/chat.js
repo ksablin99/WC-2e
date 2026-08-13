@@ -5,6 +5,31 @@ import { ActorPF } from "./actor/entity.js";
 import { ItemChatAction } from "./item/chat/chatAction.js";
 import { ActorDamageHelper } from "./actor/helpers/actorDamageHelper.js";
 import { CHAT_MESSAGE_STYLE_KEY, CHAT_MESSAGE_STYLE_CHAT } from "./lib.js";
+import { LEGACY_SYSTEM_FLAG_SCOPE, SYSTEM_FLAG_SCOPE } from "./utils/system-flags.js";
+
+const CHAT_FLAG_SCOPE = SYSTEM_FLAG_SCOPE;
+const LEGACY_CHAT_FLAG_SCOPE = LEGACY_SYSTEM_FLAG_SCOPE;
+
+/**
+ * Convert legacy chat flag payloads supplied by older callers into the active
+ * system scope before ChatMessage creation. This accepts both nested and
+ * flattened document-data forms while keeping new messages legacy-free.
+ */
+function normalizeChatFlagScopes(chatData) {
+  const normalized = { ...chatData, flags: { ...(chatData.flags ?? {}) } };
+  const modernFlags = normalized.flags[CHAT_FLAG_SCOPE] ?? {};
+  const legacyFlags = normalized.flags[LEGACY_CHAT_FLAG_SCOPE] ?? {};
+  normalized.flags[CHAT_FLAG_SCOPE] = { ...legacyFlags, ...modernFlags };
+  delete normalized.flags[LEGACY_CHAT_FLAG_SCOPE];
+
+  const legacyPrefix = `flags.${LEGACY_CHAT_FLAG_SCOPE}.`;
+  for (const [path, value] of Object.entries(normalized)) {
+    if (!path.startsWith(legacyPrefix)) continue;
+    foundry.utils.setProperty(normalized, `flags.${CHAT_FLAG_SCOPE}.${path.slice(legacyPrefix.length)}`, value);
+    delete normalized[path];
+  }
+  return normalized;
+}
 
 export function bindShowReveal(chatMessage, html, data) {
   const root = html?.nodeType === 1 ? html : html?.[0] ?? html;
@@ -13,14 +38,14 @@ export function bindShowReveal(chatMessage, html, data) {
     const target = event.target.closest(".reveal-roll");
     if (target) {
       event.stopPropagation();
-      chatMessage.setFlag("D35E", "revealed", true);
+      chatMessage.setFlag(CHAT_FLAG_SCOPE, "revealed", true);
     }
   });
   root.addEventListener("click", (event) => {
     const target = event.target.closest(".hide-roll");
     if (target) {
       event.stopPropagation();
-      chatMessage.setFlag("D35E", "revealed", false);
+      chatMessage.setFlag(CHAT_FLAG_SCOPE, "revealed", false);
     }
   });
 }
@@ -102,22 +127,26 @@ export const createCustomChatMessage = async function (
 ) {
   let rollMode = game.settings.get("core", "rollMode");
   chatTemplateData = cleanChatTemplateData(chatTemplateData);
+  chatData = normalizeChatFlagScopes(chatData);
+  const suppliedSystemFlags = chatData.flags?.[CHAT_FLAG_SCOPE] ?? {};
   chatData = foundry.utils.mergeObject(
     {
       rollMode: rollMode,
       user: game.user.id,
       [CHAT_MESSAGE_STYLE_KEY]: CHAT_MESSAGE_STYLE_CHAT,
-      flags: {
-        "core.canPopout": true,
-        D35E: {
-          chatTemplateData: chatTemplateData,
-          template: chatTemplate,
-          revealed: false,
-        },
-      },
     },
     chatData
   );
+  chatData.flags = {
+    ...(chatData.flags ?? {}),
+    "core.canPopout": chatData.flags?.["core.canPopout"] ?? true,
+    [CHAT_FLAG_SCOPE]: {
+      chatTemplateData: chatTemplateData,
+      template: chatTemplate,
+      revealed: false,
+      ...suppliedSystemFlags,
+    },
+  };
   chatData.content = await foundry.applications.handlebars.renderTemplate(chatTemplate, chatTemplateData);
   // Handle different roll modes
   switch (chatData.rollMode) {

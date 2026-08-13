@@ -27,6 +27,7 @@ import { CompendiumBrowser } from '../../apps/compendium-browser.js';
 import { ItemEquipHook } from "../../item/hooks/itemEquipHook.js";
 import { injectFormulaCreatorButtons } from "../../apps/formula-creator.js";
 import { ConjuredManager } from "../../conjuration/conjuredManager.js";
+import { getSystemFlag, systemFlagPath, unsetSystemFlag } from "../../utils/system-flags.js";
 import {
   getSpellbookPreparationMode,
   getSpellbookRepertoireLimit,
@@ -311,7 +312,7 @@ export class ActorSheetPF extends foundry.appv1.sheets.ActorSheet {
           if (skl2.ability)
             skl2.sourceDetails.push({
               name: game.i18n.localize("D35E.Ability"),
-              value: foundry.utils.getProperty(sheetData.actor, `data.abilities.${skl2.ability}.mod`),
+              value: foundry.utils.getProperty(sheetData.actor, `system.abilities.${skl2.ability}.mod`),
             });
           if (!skl2.cls && skl2.points)
             skl.sourceDetails.push({
@@ -1578,7 +1579,7 @@ export class ActorSheetPF extends foundry.appv1.sheets.ActorSheet {
         props.className = "item-properties";
         chatData.properties.forEach((p) => props.insertAdjacentHTML("beforeend", `<span class="tag">${p}</span>`));
         if (!item.showUnidentifiedData) {
-          const dancingState = foundry.utils.getProperty(item, "flags.D35E.dancingWeapon") ?? {};
+          const dancingState = getSystemFlag(item, "dancingWeapon") ?? {};
           (foundry.utils.getProperty(item.system, `enhancements.items`) || []).forEach((__enh) => {
             const _enh = foundry.utils.duplicate(__enh);
             delete _enh._id;
@@ -1681,7 +1682,7 @@ export class ActorSheetPF extends foundry.appv1.sheets.ActorSheet {
       enh.conjuredSourceWeaponId = item.id;
       await ConjuredManager.createSummonedWeapon(enh, this.actor);
     } else if (a.classList.contains("item-enh-dancing-cooldown")) {
-      await item.update({ "flags.D35E.dancingWeapon.cooldownRounds": 0 });
+      await item.update({ [systemFlagPath("dancingWeapon.cooldownRounds")]: 0 });
     }
   }
 
@@ -2037,7 +2038,10 @@ export class ActorSheetPF extends foundry.appv1.sheets.ActorSheet {
             itemUpdate["system.enhancements.uses.value"] = itemData.enhancements.uses.max;
           }
         } else if (item.type === "spell") {
-          const spellbook = foundry.utils.getProperty(actorData, `attributes.spells.spellbooks.${itemData.spellbook}`),
+          const spellbook = foundry.utils.getProperty(
+              this.actor.system,
+              `attributes.spells.spellbooks.${itemData.spellbook}`
+            ),
             usesSharedSlots = spellbookUsesSharedSlots(spellbook),
             usePowerPoints = spellbook?.usePowerPoints === true;
           if (
@@ -2679,7 +2683,7 @@ export class ActorSheetPF extends foundry.appv1.sheets.ActorSheet {
         canCreate: this.actor.isOwner === true,
         spellcastingTypeName:
           deck.spellcastingType !== undefined && deck.spellcastingType !== null
-            ? game.i18n.localize(CONFIG.D35E.spellcastingType[spellbook.spellcastingType])
+            ? game.i18n.localize(CONFIG.D35E.spellcastingType[deck.spellcastingType])
             : "None",
       };
     }
@@ -2813,13 +2817,13 @@ export class ActorSheetPF extends foundry.appv1.sheets.ActorSheet {
           // Explicit position match first, then floating fallback (backward compat)
           let itemForPos = equipped.find(i => {
             if (placedIds.has(i.id)) return false;
-            const { provider: p, index: idx } = parseSlotSource(i.flags?.D35E?.slotSource ?? null);
+            const { provider: p, index: idx } = parseSlotSource(getSystemFlag(i, "slotSource") ?? null);
             return p === provider && idx === targetIndex;
           });
           if (!itemForPos) {
             itemForPos = equipped.find(i => {
               if (placedIds.has(i.id)) return false;
-              const { provider: p, index: idx } = parseSlotSource(i.flags?.D35E?.slotSource ?? null);
+              const { provider: p, index: idx } = parseSlotSource(getSystemFlag(i, "slotSource") ?? null);
               return p === provider && idx === null;
             }) ?? null;
           }
@@ -2858,7 +2862,7 @@ export class ActorSheetPF extends foundry.appv1.sheets.ActorSheet {
       const rememberedByProvider = new Map(); // providerId → unequipped items[]
       for (const item of inventory.equipment.items) {
         if (item.system.equipped || placedIds.has(item.id)) continue;
-        const src = item.flags?.D35E?.slotSource;
+        const src = getSystemFlag(item, "slotSource");
         if (!src) continue;
         // Extract provider ID — strip ":N" index suffix; skip ":N" (default position, no provider)
         const m = src.match(/^(.*?):(\d+)$/);
@@ -3017,9 +3021,19 @@ export class ActorSheetPF extends foundry.appv1.sheets.ActorSheet {
         let className = f.system.source.split(" ");
         className.pop();
         let sourceClassName = className.join(" ");
-        if (!classFeaturesMap.has(sourceClassName)) classFeaturesMap.set(sourceClassName, []);
-        classFeaturesMap.get(sourceClassName).push(f);
-        if (sourceClassName === "" || !!game.settings.get("warcraftrpg2e", "classFeaturesInTabs") || k === "racial") {
+        const isClassFeature = k === "classFeat";
+        if (isClassFeature) {
+          if (!classFeaturesMap.has(sourceClassName)) classFeaturesMap.set(sourceClassName, []);
+          classFeaturesMap.get(sourceClassName).push(f);
+        }
+        // Source is citation metadata for feats and traits. Only actual class
+        // features should be hidden inside their parent class row.
+        if (
+          !isClassFeature ||
+          sourceClassName === "" ||
+          !!game.settings.get("warcraftrpg2e", "classFeaturesInTabs") ||
+          k === "racial"
+        ) {
           features[k].items.push(f);
         }
       } else {
@@ -3472,9 +3486,9 @@ export class ActorSheetPF extends foundry.appv1.sheets.ActorSheet {
       const equipToPosition = async (target) => {
         if (target.type !== "equipment" || ItemEquipHook.getEffectiveSlot(target) !== targetSlot) return;
         if (targetSlotSource) {
-          await target.update({ "system.equipped": true, "flags.D35E.slotSource": targetSlotSource }, { _slotBypass: true });
+          await target.update({ "system.equipped": true, [systemFlagPath("slotSource")]: targetSlotSource }, { _slotBypass: true });
         } else {
-          await target.unsetFlag("D35E", "slotSource");
+          await unsetSystemFlag(target, "slotSource");
           await target.update({ "system.equipped": true }, { _slotBypass: true });
         }
       };
@@ -3533,7 +3547,7 @@ export class ActorSheetPF extends foundry.appv1.sheets.ActorSheet {
         if (it.id === item.id) return false;
         if (it.type !== "equipment" || !it.system.equipped) return false;
         if (ItemEquipHook.getEffectiveSlot(it) !== slotKey) return false;
-        const src = it.getFlag("D35E", "slotSource") ?? "";
+        const src = getSystemFlag(it, "slotSource") ?? "";
         if (posProviderId === null) {
           if (posIndex === 0) return !src || src === "" || src === ":0";
           return src === `:${posIndex}`;
@@ -3596,10 +3610,10 @@ export class ActorSheetPF extends foundry.appv1.sheets.ActorSheet {
     if (choiceIndex == null) return; // dialog closed/cancelled
     const chosen = positions[choiceIndex];
     if (chosen.value) {
-      await item.update({ "system.equipped": true, "flags.D35E.slotSource": chosen.value }, { _slotBypass: true });
+      await item.update({ "system.equipped": true, [systemFlagPath("slotSource")]: chosen.value }, { _slotBypass: true });
     } else {
       // value "" = first default position — unset flag so backward compat is preserved
-      await item.unsetFlag("D35E", "slotSource");
+      await unsetSystemFlag(item, "slotSource");
       await item.update({ "system.equipped": true }, { _slotBypass: true });
     }
   }

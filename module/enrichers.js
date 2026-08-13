@@ -9,7 +9,6 @@ export class EnrichersHelper {
       {
         pattern: /@LinkedDescription\[(.+?)\]/gm,
         enricher: async (match, options) => {
-          console.log("D35E | Enriching Linked Description");
           let item = await fromUuid(match[1]);
           const a = document.createElement("div");
           a.innerHTML = await item.getDescription();
@@ -21,7 +20,6 @@ export class EnrichersHelper {
       {
         pattern: /@LinkedFieldText\[(.+?)\]\{(.+?)}/gm,
         enricher: async (match, options) => {
-          console.log("D35E | Enriching Linked Description");
           let item = await fromUuid(match[1]);
           const a = document.createElement("div");
           a.innerHTML = await foundry.applications.ux.TextEditor.enrichHTML(foundry.utils.getProperty(item, match[2]), { async: true, rollData: item.getActorItemRollData() });
@@ -34,7 +32,6 @@ export class EnrichersHelper {
       {
         pattern: /@DynamicField\[(.+?)\]/gm,
         enricher: async (match, options) => {
-          console.log("D35E | Enriching Dynamic Field Description", match, options);
           // Roll the match and return the result
           let roll = new Roll35e(match[1], options.rollData);
           let rollResult = await roll.roll();
@@ -50,7 +47,6 @@ export class EnrichersHelper {
       {
         pattern: /@SkillCheck\[(.+?),(.+?)\]/gm,
         enricher: async (match, options) => {
-          console.log("D35E | Enriching Skill Check");
           // The data is in the format of @SkillCheck[DC,skillId] and we want rollName to be DC 15 Skill Name
           let rollName = `${CONFIG.D35E.skills[match[2]]} DC ${match[1]}`;
           let contentLink = `<a class="content-link d35e-skill-check" data-skill="${match[2]}" data-dc="${match[1]}"><i class="fas fa-chess-rook"></i>${rollName}</a>`
@@ -67,7 +63,6 @@ export class EnrichersHelper {
       {
         pattern: /@AbilityCheck\[(.+?),(.+?)\]/gm,
         enricher: async (match, options) => {
-          console.log("D35E | Enriching Ability Check");
           // The data is in the format of @SkillCheck[DC,skillId] and we want rollName to be DC 15 Skill Name
           let rollName = `${CONFIG.D35E.abilities[match[2]]} DC ${match[1]}`;
           let contentLink = `<a class="content-link d35e-ability-check" data-ability="${match[2]}" data-dc="${match[1]}"><i class="fas fa-hand-rock"></i>${rollName}</a>`
@@ -83,7 +78,6 @@ export class EnrichersHelper {
       {
         pattern: /@SavingThrow\[(.+?),(.+?)\]/gm,
         enricher: async (match, options) => {
-          console.log("D35E | Enriching Skill Check");
           // The data is in the format of @SkillCheck[DC,skillId] and we want rollName to be DC 15 Skill Name
           let rollName = `DC ${match[1]} ${CONFIG.D35E.savingThrows[match[2]]}`;
           let contentLink = `<a class="content-link d35e-saving-throw" data-save="${match[2]}" data-dc="${match[1]}"><i class="fas fa-shield-alt"></i>${rollName}</a>`
@@ -100,7 +94,6 @@ export class EnrichersHelper {
       {
         pattern: /@DamageRoll\[(.+?),(.+?)\]/gm,
         enricher: async (match, options) => {
-          console.log("D35E | Enriching Damage Roll");
           // The data is in the format of @DamageRoll[type,roll]
           // We should try to get readable damage name from the type, using items in damage type compendium
           let damageTypeName = ActorDamageHelper.nameByType(match[1])

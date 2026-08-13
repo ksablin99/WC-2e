@@ -19,7 +19,13 @@
         "category": "General",
         "prerequisite": "",
         "repeatable": true,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "Choose a school of magic for which you already have Spell Focus. The save DC of your spells from that school increases by 1; this stacks with Spell Focus.",
+          "manual": "Record the selected school and apply the conditional save DC bonus manually.",
+          "special": "You may select this feat more than once, choosing a different school each time. It cannot be selected twice for the same school.",
+          "summary": "Increase the saving throw DC of spells from one focused school by 1 more."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": false
       },
@@ -33,7 +39,7 @@
           149
         ],
         "section": "Greater Spell Focus",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +154,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 149) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Summary:</strong> Increase the saving throw DC of spells from one focused school by 1 more.</p><p><strong>Benefit:</strong> Choose a school of magic for which you already have Spell Focus. The save DC of your spells from that school increases by 1; this stacks with Spell Focus.</p><p><strong>Special:</strong> You may select this feat more than once, choosing a different school each time. It cannot be selected twice for the same school.</p><p><strong>Foundry and GM handling:</strong> Record the selected school and apply the conditional save DC bonus manually.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +254,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat.</p>",
+    "shortDescription": "<p>Increase the saving throw DC of spells from one focused school by 1 more.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 149",

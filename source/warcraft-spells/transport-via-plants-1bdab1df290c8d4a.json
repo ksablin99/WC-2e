@@ -32,7 +32,7 @@
           352
         ],
         "section": "Transport via Plants",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -103,7 +103,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Move instantly from one</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;conjuration&nbsp;(teleportation);\n    <br>\n    <strong>Level:</strong>&nbsp;Druid 6;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;unlimited<br>\n    \n    <strong>Target:</strong>&nbsp;you and touched objects or other touched willing creatures<br>\n    \n    <strong>Duration:</strong>&nbsp;Special<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;11<br>\n        <strong>Saving Throw:</strong>&nbsp;None\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nYou can enter any normal plant (Medium or larger) and pass any distance to a plant of the same kind in a single round, regardless of the distance separating the two. The entry plant must be alive. The destination plant need not be familiar to you, but it also must be alive. If you are uncertain of the location of a particular kind of destination plant, you need merely designate direction and distance and the <i>transport via plants </i>spell moves you as close as possible to the desired location. If a particular destination plant is desired but the plant is not living, the spell fails and you are ejected from the entry plant.\n</p><p>You can bring along objects as long as their weight doesn’t exceed your maximum load. You may also bring one additional willing Medium or smaller creature (carrying gear or objects up to its maximum load) or its equivalent per three caster levels. Use the following equivalents to determine the maximum number of larger creatures you can bring along: A Large creature counts as two Medium creatures, a Huge creature counts as two Large creatures, and so forth. All creatures to be transported must be in contact with one another, and at least one of those creatures must be in contact with you.\n</p><p>You can’t use this spell to travel through plant creatures.\n</p><p>The destruction of an occupied plant slays you and any creatures you have brought along, and ejects the bodies and all carried objects from the tree.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Unlimited",
     "duration": {
@@ -216,10 +216,10 @@
       "type": ""
     },
     "school": "con",
-    "shortDescription": "<p>Move instantly from one</p>",
+    "shortDescription": "\n\n\n<p>\nYou can enter any normal plant (Medium or larger) and pass any distance to a plant of the same kind in a single round, regardless of the distance separating the two. The entry plant must be alive. The destination plant need not be familiar to you, but it also must be alive. If you are uncertain of the location of a particular kind of destination plant, you need merely designate direction and distance and the <i>transport via plants </i>spell moves you as close as possible to the desired location. If a particular destination plant is desired but the plant is not living, the spell fails and you are ejected from the entry plant.\n</p><p>You can bring along objects as long as their weight doesn’t exceed your maximum load. You may also bring one additional willing Medium or smaller creature (carrying gear or objects up to its maximum load) or its equivalent per three caster levels. Use the following equivalents to determine the maximum number of larger creatures you can bring along: A Large creature counts as two Medium creatures, a Huge creature counts as two Large creatures, and so forth. All creatures to be transported must be in contact with one another, and at least one of those creatures must be in contact with you.\n</p><p>You can’t use this spell to travel through plant creatures.\n</p><p>The destruction of an occupied plant slays you and any creatures you have brought along, and ejects the bodies and all carried objects from the tree.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Move instantly from one",
+    "snip": "Move instantly from one plant to another of the same kind.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 269-269",
     "specialActions": [],
     "specialId": null,

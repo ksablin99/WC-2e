@@ -8,6 +8,7 @@ import { LogHelper } from "../helpers/LogHelper.js";
 import { Sockets } from "../sockets/sockets.js";
 import { CHAT_MESSAGE_STYLE_KEY, CHAT_MESSAGE_STYLE_CHAT, getRollModesForSelect } from "../lib.js";
 import { clearPendingHeroPoint, heroPointRollBonus } from "../actor/helpers/warcraftHeroPoints.js";
+import { getSystemFlag, setSystemFlag } from "../utils/system-flags.js";
 
 export class CombatantD35E extends Combatant {
   constructor(...args) {
@@ -17,21 +18,21 @@ export class CombatantD35E extends Combatant {
   resetPerRoundCounters() {
     if (this.actor) {
       const maxAoO = this.actor.system?.attributes?.maxAoO ?? 1;
-      this.setFlag("D35E", "aaoCount", maxAoO);
-      this.setFlag("D35E", "usedAaoCount", 0);
-      this.setFlag("D35E", "usedAttackAction", false);
-      this.setFlag("D35E", "usedMoveAction", false);
-      this.setFlag("D35E", "usedSwiftAction", false);
+      setSystemFlag(this, "aaoCount", maxAoO);
+      setSystemFlag(this, "usedAaoCount", 0);
+      setSystemFlag(this, "usedAttackAction", false);
+      setSystemFlag(this, "usedMoveAction", false);
+      setSystemFlag(this, "usedSwiftAction", false);
     }
   }
 
   useAttackAction() {
     let isMyTurn = game.combats?.active?.current.combatantId === this.id;
     if (isMyTurn) {
-      this.setFlag("D35E", "usedAttackAction", true);
+      setSystemFlag(this, "usedAttackAction", true);
     } else {
-      const usedAao = this.getFlag("D35E", "usedAaoCount") ?? 0;
-      this.setFlag("D35E", "usedAaoCount", usedAao + 1);
+      const usedAao = getSystemFlag(this, "usedAaoCount") ?? 0;
+      setSystemFlag(this, "usedAaoCount", usedAao + 1);
     }
   }
 
@@ -39,37 +40,37 @@ export class CombatantD35E extends Combatant {
     if (activationCost.type === "attack" || activationCost.type === "standard") {
       this.useAttackAction();
     } else if (activationCost.type === "swift") {
-        this.setFlag("D35E", "usedSwiftAction", true);
+        setSystemFlag(this, "usedSwiftAction", true);
     }
   }
 
   useFullAttackAction() {
-    this.setFlag("D35E", "usedAttackAction", true);
-    this.setFlag("D35E", "usedMoveAction", true);
+    setSystemFlag(this, "usedAttackAction", true);
+    setSystemFlag(this, "usedMoveAction", true);
     this.update({});
   }
 
   get usedAttackAction() {
     /* our turn is over this round if we have ended item
      * or have been marked defeated */
-    return this.getFlag("D35E", "usedAttackAction") ?? false;
+    return getSystemFlag(this, "usedAttackAction") ?? false;
   }
 
   get usedMoveAction() {
     /* our turn is over this round if we have ended item
      * or have been marked defeated */
-    return this.getFlag("D35E", "usedMoveAction") ?? false;
+    return getSystemFlag(this, "usedMoveAction") ?? false;
   }
 
   get usedSwiftAction() {
     /* our turn is over this round if we have ended item
      * or have been marked defeated */
-    return this.getFlag("D35E", "usedSwiftAction") ?? false;
+    return getSystemFlag(this, "usedSwiftAction") ?? false;
   }
 
   get usedAllAao() {
-    const used = this.getFlag("D35E", "usedAaoCount");
-    const max  = this.getFlag("D35E", "aaoCount");
+    const used = getSystemFlag(this, "usedAaoCount");
+    const max  = getSystemFlag(this, "aaoCount");
     if (used == null || max == null) return false;
     return used >= max;
   }
@@ -130,7 +131,7 @@ export class CombatD35E extends Combat {
     for (let id of ids) {
       // Get Combatant data
       const c = this.combatants.get(id);
-      if (!c) return results;
+      if (!c) continue;
       const actorData = c.actor ? c.actor.system : {};
       formula = this._getInitiativeFormula(c.actor ? c.actor : null) || formula;
       const heroPointBonus = heroPointRollBonus(c.actor, "d20");
@@ -195,7 +196,7 @@ export class CombatD35E extends Combat {
         },
         messageOptions
       );
-      foundry.utils.setProperty(chatData, "flags.D35E.subject.core", "init");
+      foundry.utils.setProperty(chatData, "flags.warcraftrpg2e.subject.core", "init");
 
       // Handle different roll modes
       ChatMessage.applyRollMode(chatData, chatData.rollMode);
@@ -288,7 +289,7 @@ export class CombatD35E extends Combat {
   async _processCurrentCombatant() {
     try {
       const actor = this.combatant?.actor;
-      const buffId = this.combatant?.flags?.D35E?.buffId;
+      const buffId = getSystemFlag(this.combatant, "buffId");
       if (actor != null) {
         if (this.roundBuffUpdates.size) {
           LogHelper.debug(this.roundBuffUpdates);
@@ -332,7 +333,7 @@ export class CombatD35E extends Combat {
               let missingItems = update.itemsToDelete.filter((id) => !actor.items.has(id));
               let missingCombatants = [];
               for (let missingBuff of missingItems) {
-                let missingCombatantId = game.combat.combatants.find((c) => c.flags?.D35E?.buffId === missingBuff)?.id;
+                let missingCombatantId = game.combat.combatants.find((c) => getSystemFlag(c, "buffId") === missingBuff)?.id;
                 if (missingCombatantId) missingCombatants.push(missingCombatantId);
               }
               promises.push(this.deleteEmbeddedDocuments("Combatant", missingCombatants));
@@ -354,18 +355,19 @@ export class CombatD35E extends Combat {
       } else if (buffId) {
         LogHelper.startTimer("D35E.processCurrentCombatant");
         let actor;
-        if (!this.combatant?.flags?.D35E?.actorUuid) {
-          if (this.combatant?.flags?.D35E?.isToken) {
-            actor = canvas.scene.tokens.get(this.combatant?.flags?.D35E?.tokenId).actor;
+        const combatantActorUuid = getSystemFlag(this.combatant, "actorUuid");
+        if (!combatantActorUuid) {
+          if (getSystemFlag(this.combatant, "isToken")) {
+            actor = canvas.scene.tokens.get(getSystemFlag(this.combatant, "tokenId")).actor;
           } else {
-            actor = game.actors.get(this.combatant?.flags?.D35E?.actor);
+            actor = game.actors.get(getSystemFlag(this.combatant, "actor"));
           }
         } else {
-          actor = await this.getActorFromTokenOrActorUuid(this.combatant?.flags?.D35E?.actorUuid);
+          actor = await this.getActorFromTokenOrActorUuid(combatantActorUuid);
         }
-        if (this.combatant?.flags?.D35E?.isAura) {
+        if (getSystemFlag(this.combatant, "isAura")) {
           for (let combatant of this.combatants) {
-            if (combatant?.flags?.D35E?.buffId) continue;
+            if (getSystemFlag(combatant, "buffId")) continue;
             let _actor = null;
             if (combatant.actor) {
               _actor = combatant.actor;
@@ -414,7 +416,7 @@ export class CombatD35E extends Combat {
         (response) => {}
       );
       LogHelper.log("Skipping Round on non-GM Client");
-      return combat;
+      return this;
     } else {
       const combat = await super.nextRound();
       await this._resetPerRoundCounter();
@@ -450,7 +452,7 @@ export class CombatD35E extends Combat {
         (response) => {}
       );
       LogHelper.log("Skipping Turn on non-GM Client");
-      return combat;
+      return this;
     } else {
       const combat = await super.nextTurn();
       await this._processCurrentCombatant();
@@ -467,7 +469,7 @@ export class CombatD35E extends Combat {
       if (buff.type !== "aura" && !buff.system.timeline?.enabled) continue;
       let updateExisting = false;
       for (let combatant of this.combatants) {
-        if (combatant?.flags?.D35E?.buffId === buff.id) {
+        if (getSystemFlag(combatant, "buffId") === buff.id) {
           buffsToUpdate.push({
             id: combatant.id,
             initiative: buffActor.initiative || (this.combatant?.initiative ?? 20) + 0.01,
@@ -483,7 +485,7 @@ export class CombatD35E extends Combat {
           img: buff.img,
           initiative: buffActor.initiative || this.combatant.initiative || 20 + buffDelta,
           flags: {
-            D35E: {
+            warcraftrpg2e: {
               isBuff: true,
               buffId: buff.id,
               isAura: buff.isAura,
@@ -512,7 +514,7 @@ export class CombatD35E extends Combat {
     try {
       let combatantsToDelete = [];
       for (let combatant of this.combatants) {
-        if (buffs.includes(combatant?.flags?.D35E?.buffId)) {
+        if (buffs.includes(getSystemFlag(combatant, "buffId"))) {
           combatantsToDelete.push(combatant.id);
         }
       }

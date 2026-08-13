@@ -32,7 +32,7 @@
           353
         ],
         "section": "Unholy Aura",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -101,7 +101,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>+4 to AC, +4 resistance and SR 25</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;abjuration&nbsp;[evil];\n    <br>\n    <strong>Level:</strong>&nbsp;Cleric 8;\n    <strong>Domain:</strong>&nbsp;Evil 8;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, F (a tiny reliquary containing some sacred relic, such as a piece of parchment from an unholy text  the reliquary costs at least 500 gp)<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;20 feet<br>\n    \n    <strong>Target:</strong>&nbsp;one creature/level in a 20-ft.-radius burst centered on you<br>\n    \n    <strong>Duration:</strong>&nbsp;1 Round/Level (D)<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;See text\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nA malevolent darkness surrounds the subjects, protecting them from attacks, granting them resistance to spells cast by good creatures, and weakening good creatures when they strike the subjects. This abjuration has four effects.\n</p><p>First, each warded creature gains a +4 deflection bonus to AC and a +4 resistance bonus on saves. Unlike the effect of <i>protection from good</i>, this benefit applies against all attacks, not just against attacks by good creatures.\n</p><p>Second, a warded creature gains spell resistance 25 against good spells and spells cast by good creatures.\n</p><p>Third, the abjuration blocks possession and mental influence, just as <i>protection from good</i> does.\n</p><p>Finally, if a good creature succeeds on a melee attack against a warded creature, the offending attacker takes 1d6 points of temporary Strength damage (Fortitude negates).\n</p><p><i>Focus:</i> A tiny reliquary containing some sacred relic, such as a piece of parchment from an unholy text. The reliquary costs at least 500 gp.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "20 ft.",
     "duration": {
@@ -211,10 +211,10 @@
       "type": ""
     },
     "school": "abj",
-    "shortDescription": "<p>+4 to AC, +4 resistance and SR 25</p>",
+    "shortDescription": "\n\n\n<p>\nA malevolent darkness surrounds the subjects, protecting them from attacks, granting them resistance to spells cast by good creatures, and weakening good creatures when they strike the subjects. This abjuration has four effects.\n</p><p>First, each warded creature gains a +4 deflection bonus to AC and a +4 resistance bonus on saves. Unlike the effect of <i>protection from good</i>, this benefit applies against all attacks, not just against attacks by good creatures.\n</p><p>Second, a warded creature gains spell resistance 25 against good spells and spells cast by good creatures.\n</p><p>Third, the abjuration blocks possession and mental influence, just as <i>protection from good</i> does.\n</p><p>Finally, if a good creature succeeds on a melee attack against a warded creature, the offending attacker takes 1d6 points of temporary Strength damage (Fortitude negates).\n</p><p><i>Focus:</i> A tiny reliquary containing some sacred relic, such as a piece of parchment from an unholy text. The reliquary costs at least 500 gp.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "+4 to AC, +4 resistance and SR 25",
+    "snip": "+4 to AC, +4 resistance, and SR 25 against good spells.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 270-270",
     "specialActions": [],
     "specialId": null,

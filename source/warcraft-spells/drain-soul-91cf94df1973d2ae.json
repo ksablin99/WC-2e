@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           299
         ],
         "section": "Drain Soul",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>You draw the vital energy out of your</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>The living target takes 1d10 damage per round for a number of rounds equal to your caster level; Fortitude halves the damage. If this spell kills the target, you may pay 750 XP while its essence is available to form one soul shard. No XP is paid if the target survives. Creating the shard does not prevent later return to life.</p><p><strong>Automation boundary:</strong> Roll and apply each damage pulse, determine whether this spell caused death, deduct 750 XP only then, and create the soul-shard item manually.</p>"
     },
     "display": "90 feet",
     "duration": {
@@ -187,8 +187,8 @@
     "psionic": "",
     "range": {
       "long": null,
-      "units": "spec",
-      "value": null
+      "units": "ft",
+      "value": 90
     },
     "recharge": {
       "current": 0,
@@ -213,10 +213,10 @@
       "type": "fortitudehalf"
     },
     "school": "con",
-    "shortDescription": "<p>You draw the vital energy out of your</p>",
+    "shortDescription": "<p>Deal 1d10 damage per round; if this kills the target, spend XP to create a soul shard.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "You draw the vital energy out of your",
+    "snip": "Deal 1d10 damage per round; if this kills the target, spend XP to create a soul shard.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 266-266",
     "specialActions": [],
     "specialId": null,
@@ -226,7 +226,7 @@
     "spellDuration": "Special",
     "spellDurationData": {
       "units": "spec",
-      "value": 1
+      "value": null
     },
     "spellEffect": "",
     "spellType": {
@@ -259,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Roll and apply each damage pulse, determine whether this spell caused death, deduct 750 XP only then, and create the soul-shard item manually."
     }
   },
   "type": "spell"

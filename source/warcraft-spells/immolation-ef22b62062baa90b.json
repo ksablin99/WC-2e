@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -34,7 +34,7 @@
           312
         ],
         "section": "Immolation",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -55,7 +55,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -104,7 +104,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Flames cover you, damaging opponents</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>Each round, every other creature within 5 feet takes 2d6 fire damage; spell resistance applies separately to each creature. The flames provide bright light for 30 feet and shadowy light for another 30 feet. The material component is a small amount of phosphorus.</p><p><strong>Automation boundary:</strong> Apply each per-round area damage pulse and illumination manually.</p>"
     },
     "display": "Personal",
     "duration": {
@@ -219,10 +219,10 @@
       "type": ""
     },
     "school": "evo",
-    "shortDescription": "<p>Flames cover you, damaging opponents</p>",
+    "shortDescription": "<p>Flames surrounding you deal 2d6 fire damage each round to creatures within 5 feet.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Flames cover you, damaging opponents",
+    "snip": "Flames surrounding you deal 2d6 fire damage each round to creatures within 5 feet.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 265-270",
     "specialActions": [],
     "specialId": null,
@@ -265,7 +265,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Apply each per-round area damage pulse and illumination manually."
     }
   },
   "type": "spell"

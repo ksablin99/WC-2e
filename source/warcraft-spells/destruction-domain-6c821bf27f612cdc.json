@@ -293,7 +293,7 @@
         },
         "level7": {
           "id": "fe3179c56f35a169",
-          "img": "icons/svg/target.svg",
+          "img": "systems/warcraftrpg2e/icons/spells/named-spells/inflict-wounds-mass.png",
           "level": 7,
           "name": "Mass Inflict Serious Wounds",
           "pack": "warcraftrpg2e.warcraft-spells"

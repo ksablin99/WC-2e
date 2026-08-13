@@ -51,6 +51,29 @@ async function waitForSkillBonus(page, actorId, skillKey, expected) {
 
 // ── 1. Below threshold — no synergy ──────────────────────────────────────────
 
+test('removed legacy psionic skills do not break Warcraft actor updates', async ({ page }) => {
+  const result = await page.evaluate(async () => {
+    const actor = await Actor.create({ name: 'Warcraft Skill Compatibility Test', type: 'character' });
+    await actor.update({
+      'system.abilities.str.value': 14,
+      'system.skills.coc.points': 10,
+    });
+
+    const fresh = game.actors.get(actor.id);
+    return {
+      hasAutohypnosis: fresh.system.skills.aut != null,
+      hasKnowledgePsionics: fresh.system.skills.kps != null,
+      strength: fresh.system.abilities.str.value,
+    };
+  });
+
+  expect(result).toEqual({
+    hasAutohypnosis: false,
+    hasKnowledgePsionics: false,
+    strength: 14,
+  });
+});
+
 test('Bluff rank 4 does NOT grant Diplomacy synergy bonus', async ({ page }) => {
   const actorId = await page.evaluate(async () => {
     const actor = await Actor.create({ name: 'Bluff 4 Test', type: 'character' });

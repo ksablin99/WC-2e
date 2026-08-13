@@ -428,15 +428,6 @@ export const registerSystemSettings = function () {
     type: Boolean
   });
 
-  game.settings.register("warcraftrpg2e", '__onboarding', {
-    name: `Tutorial shown`,
-    hint: 'Basic system usage tutorial already shown. Uncheck to view again after reload.',
-    scope: 'client',
-    default: false,
-    config: true,
-    type: Boolean,
-  });
-
   game.settings.register("warcraftrpg2e", "showFullAttackChatCard", {
     name: "SETTINGS.D35EFullAttackChatCardN",
     hint: "SETTINGS.D35EFullAttackChatCardL",
@@ -763,13 +754,18 @@ export const registerSystemSettings = function () {
     hint: "Controls how the threatened area is shown when a token is selected: none, color threatened tokens, or draw the full threat zone.",
     scope: "world",
     config: true,
-    requiresReload: true,
+    requiresReload: false,
     default: "tokens",
     type: String,
     choices: {
       none: "None",
       tokens: "Color Threatened Tokens",
       area: "Draw Threaten Areas",
+    },
+    onChange: () => {
+      const controlled = globalThis.canvas?.ready ? globalThis.canvas.tokens?.controlled : null;
+      if (controlled?.length === 1) DistanceHelper.drawThreatenedHighlights(controlled[0]);
+      else if (globalThis.canvas?.ready) DistanceHelper.clearThreatHighlights();
     },
   });
 

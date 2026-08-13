@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -34,7 +34,7 @@
           337
         ],
         "section": "Shockwave",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -55,7 +55,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -104,7 +104,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>A powerful wave of force shakes the</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>A 10-foot-wide line runs from your feet along the ground to close range. Each creature in it takes 1d6 force damage per caster level, maximum 10d6; a successful Reflex save negates the damage.</p><p>The wave damages an interposing barrier. If that damage breaks through, the wave continues while range remains; otherwise it stops. It also stops where the ground ends and cannot damage a creature that is not touching the ground.</p><p>The material component is a fragment of shattered rock.</p><p><strong>Automation boundary:</strong> Place the ground line and resolve barrier damage, continuation, ground contact, saves, and damage manually.</p>"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -219,10 +219,10 @@
       "type": "reflexnegates"
     },
     "school": "evo",
-    "shortDescription": "<p>A powerful wave of force shakes the</p>",
+    "shortDescription": "<p>Send a ground-bound line of force through creatures and breakable barriers for up to 10d6 damage.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "A powerful wave of force shakes the",
+    "snip": "Send a ground-bound line of force through creatures and breakable barriers for up to 10d6 damage.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 265-270",
     "specialActions": [],
     "specialId": null,
@@ -265,7 +265,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Place the ground line and resolve barrier damage, continuation, ground contact, saves, and damage manually."
     }
   },
   "type": "spell"

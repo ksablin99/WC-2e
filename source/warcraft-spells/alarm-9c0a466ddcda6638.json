@@ -32,7 +32,7 @@
           275
         ],
         "section": "Alarm",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -103,7 +103,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Wards an area for 2 hours/level.</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;abjuration;\n    <br>\n    <strong>Level:</strong>&nbsp;Bard 1, Ranger 1, Sorcerer 1, Wizard 1;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, F/DF (a tiny bell and a piece of very fine silver wire)<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;close (25 ft. + 5 ft./2 levels)<br>\n    <strong>Area:</strong>&nbsp;20-ft.-radius emanation centered on a point in space<br>\n    \n    \n    <strong>Duration:</strong>&nbsp;2 Hours/Level (D)<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;1<br>\n        <strong>Saving Throw:</strong>&nbsp;None\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\n<i>Alarm</i> sounds a mental or audible alarm each time a creature of Tiny or larger size enters the warded area or touches it. A creature that speaks the password (determined by you at the time of casting) does not set off the <i>alarm</i>. You decide at the time of casting whether the <i>alarm </i>will be mental or audible.\n</p><p><i>Mental Alarm: </i>A mental <i>alarm </i>alerts you (and only you) so long as you remain within 1 mile of the warded area. You note a single mental “ping” that awakens you from normal sleep but does not otherwise disturb concentration. A <i>silence </i>spell has no effect on a mental <i>alarm</i>.\n</p><p><i>Audible Alarm: </i>An audible <i>alarm </i>produces the sound of a hand bell, and anyone within 60 feet of the warded area can hear it clearly. Reduce the distance by 10 feet for each interposing closed door and by 20 feet for each substantial interposing wall.\n</p><p>In quiet conditions, the ringing can be heard faintly as far as 180 feet away. The sound lasts for 1 round. Creatures within a <i>silence </i>spell cannot hear the ringing.\n</p><p>Ethereal or astral creatures do not trigger the <i>alarm</i>.\n</p><p><i>Alarm </i>can be made permanent with a <i>permanency </i>spell.\n</p><p><i>Arcane Focus:</i> A tiny bell and a piece of very fine silver wire\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -216,7 +216,7 @@
       "type": ""
     },
     "school": "abj",
-    "shortDescription": "<p>Wards an area for 2 hours/level.</p>",
+    "shortDescription": "\n\n\n<p>\n<i>Alarm</i> sounds a mental or audible alarm each time a creature of Tiny or larger size enters the warded area or touches it. A creature that speaks the password (determined by you at the time of casting) does not set off the <i>alarm</i>. You decide at the time of casting whether the <i>alarm </i>will be mental or audible.\n</p><p><i>Mental Alarm: </i>A mental <i>alarm </i>alerts you (and only you) so long as you remain within 1 mile of the warded area. You note a single mental “ping” that awakens you from normal sleep but does not otherwise disturb concentration. A <i>silence </i>spell has no effect on a mental <i>alarm</i>.\n</p><p><i>Audible Alarm: </i>An audible <i>alarm </i>produces the sound of a hand bell, and anyone within 60 feet of the warded area can hear it clearly. Reduce the distance by 10 feet for each interposing closed door and by 20 feet for each substantial interposing wall.\n</p><p>In quiet conditions, the ringing can be heard faintly as far as 180 feet away. The sound lasts for 1 round. Creatures within a <i>silence </i>spell cannot hear the ringing.\n</p><p>Ethereal or astral creatures do not trigger the <i>alarm</i>.\n</p><p><i>Alarm </i>can be made permanent with a <i>permanency </i>spell.\n</p><p><i>Arcane Focus:</i> A tiny bell and a piece of very fine silver wire\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
     "snip": "Wards an area for 2 hours/level.",

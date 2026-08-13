@@ -1,3 +1,5 @@
+import { getSystemFlag } from "../utils/system-flags.js";
+
 export class LootSheetActions {
   static QUANTITY_ALL = -1;
 
@@ -11,18 +13,18 @@ export class LootSheetActions {
   static chatMessage(speaker, owner, message, item) {
     if (game.settings.get("warcraftrpg2e", "buyChat")) {
       if (item) {
-        message = `<div class="D35E chat-card item-card" data-actor-id="${owner._id}" data-item-id="${item._id}">
+        message = `<div class="D35E chat-card item-card" data-actor-id="${owner.id}" data-item-id="${item.id}">
                     <header class="card-header flexrow">
                         <img src="${item.img}" title="${item.showName}" width="36" height="36">
                         <h3 class="item-name">${item.showName}</h3>
                     </header>
                     <div class="card-content"><p>${message}</p></div></div>`;
       } else {
-        message = `<div class="D35E chat-card item-card" data-actor-id="${owner._id}">
+        message = `<div class="D35E chat-card item-card" data-actor-id="${owner.id}">
                     <div class="card-content"><p>${message}</p></div></div>`;
       }
       ChatMessage.create({
-        user: game.user._id,
+        user: game.user.id,
         speaker: {
           actor: speaker,
           alias: speaker.name,
@@ -168,7 +170,7 @@ export class LootSheetActions {
   static async dropOrSellItem(speaker, merchant, giver, itemId) {
     //game.D35E.logger.log("Loot Sheet | Drop or sell item")
     let messageKey = "";
-    if (merchant.getFlag("D35E", "lootsheettype") === "Merchant") {
+    if (getSystemFlag(merchant, "lootsheettype") === "Merchant") {
       await this.transaction(giver, giver, merchant, itemId, LootSheetActions.QUANTITY_ALL, true, true);
     } else {
       let moved = await LootSheetActions.moveItem(giver, merchant, itemId);
@@ -180,7 +182,6 @@ export class LootSheetActions {
         game.i18n.format(messageKey, {
           seller: giver.name,
           quantity: moved.quantity,
-          price: cost * moved.quantity,
           item: moved.item.showName,
           container: merchant.name,
         }),
@@ -211,8 +212,8 @@ export class LootSheetActions {
     }
 
     let sellerModifier = isPlayerSelling
-      ? buyer.getFlag("D35E", "priceModifierBuy")
-      : seller.getFlag("D35E", "priceModifier");
+      ? getSystemFlag(buyer, "priceModifierBuy")
+      : getSystemFlag(seller, "priceModifier");
     if (!sellerModifier) sellerModifier = 1.0;
 
     let itemCost = LootSheetActions.getItemCost(sellItem);
@@ -261,7 +262,7 @@ export class LootSheetActions {
       for (const key in conversionRate) {
         conversionRate[key] = Math.round(conversionRate[key]);
       }
-      const DEBUG = true;
+      const DEBUG = false;
       if (DEBUG) game.D35E.logger.log("Loot Sheet | Conversion rates: ");
       if (DEBUG) game.D35E.logger.log(conversionRate);
 
@@ -271,7 +272,7 @@ export class LootSheetActions {
         //game.D35E.logger.log("Rate: " + conversionRate[currency])
         if (conversionRate[currency] < 1) {
           const ratio = conversionRate[currency] ? 1 / conversionRate[currency] : 0;
-          const value = conversionRate[currency] ? Math.min(itemCost, Math.floor(buyerFunds[currency] / ratio)) : 0;
+          const value = conversionRate[currency] ? Math.min(itemCost, Math.floor(buyerFundsAlt[currency] / ratio)) : 0;
           if (DEBUG) game.D35E.logger.log("Loot Sheet | BuyerFunds " + currency + ": " + buyerFunds[currency]);
           if (DEBUG) game.D35E.logger.log("Loot Sheet | Ratio: " + ratio);
           if (DEBUG) game.D35E.logger.log("Loot Sheet | Value: " + value);
@@ -337,8 +338,8 @@ export class LootSheetActions {
       if (DEBUG) game.D35E.logger.log(buyerFunds);
 
       await buyer.update({
-        "data.currency": buyerFunds,
-        "data.altCurrency": buyerFundsAlt,
+        "system.currency": buyerFunds,
+        "system.altCurrency": buyerFundsAlt,
       });
     }
 
@@ -349,8 +350,7 @@ export class LootSheetActions {
         if (conversionRate[currency] === 1) currencyKey = currency;
       }
       sellerFunds[currencyKey] += originalCost;
-      await seller.update({ "data.currency": sellerFunds });
-      await seller.update({ "data.currency": sellerFunds }); // 2x required or it will not be stored? WHY???
+      await seller.update({ "system.currency": sellerFunds });
     }
     let moved = await LootSheetActions.moveItem(seller, buyer, itemId, quantity);
 
@@ -401,7 +401,7 @@ export class LootSheetActions {
 
     let giverUser = null;
     game.users.forEach((u) => {
-      if (u.character && u.character._id === giverId) {
+      if (u.character?.id === giverId) {
         giverUser = u;
       }
     });

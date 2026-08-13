@@ -34,7 +34,7 @@
           281
         ],
         "section": "Bear's Endurance",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -104,7 +104,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Subject gains +4 to Sta for 1 min./</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;transmutation;\n    <br>\n    <strong>Level:</strong>&nbsp;Cleric 2, Druid 2, Ranger 2, Sorcerer 2, Wizard 2;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, F, DF<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;touch<br>\n    \n    <strong>Target:</strong>&nbsp;creature touched<br>\n    \n    <strong>Duration:</strong>&nbsp;1 Minute/Level<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;Will negates (harmless)\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThe affected creature gains greater vitality and stamina. The spell grants the subject a +4 enhancement bonus to Constitution, which adds the usual benefits to hit points, Fortitude saves, Constitution checks, and so forth.\n</p><p>Hit points gained by a temporary increase in Constitution score are not temporary hit points. They go away when the subject’s Constitution drops back to normal. They are not lost first as temporary hit points are.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Touch",
     "duration": {
@@ -219,10 +219,10 @@
       "type": "willnegates"
     },
     "school": "trs",
-    "shortDescription": "<p>Subject gains +4 to Sta for 1 min./</p>",
+    "shortDescription": "\n\n\n<p>\nThe affected creature gains greater vitality and stamina. The spell grants the subject a +4 enhancement bonus to Constitution, which adds the usual benefits to hit points, Fortitude saves, Constitution checks, and so forth.\n</p><p>Hit points gained by a temporary increase in Constitution score are not temporary hit points. They go away when the subject’s Constitution drops back to normal. They are not lost first as temporary hit points are.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Subject gains +4 to Sta for 1 min./",
+    "snip": "Subject gains +4 to Con for 1 min./level.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 267-274",
     "specialActions": [
       {

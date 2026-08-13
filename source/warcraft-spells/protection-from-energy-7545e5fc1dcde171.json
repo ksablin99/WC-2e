@@ -32,7 +32,7 @@
           328
         ],
         "section": "Protection from Energy",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -103,7 +103,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Absorb 12 points/level of</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;abjuration;\n    <br>\n    <strong>Level:</strong>&nbsp;Blackguard 3, Cleric 3, Druid 3, Ranger 2, Sorcerer 3, Wizard 3;\n    <strong>Domain:</strong>&nbsp;Luck 3, Protection 3;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, F, DF<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;touch<br>\n    \n    <strong>Target:</strong>&nbsp;creature touched<br>\n    \n    <strong>Duration:</strong>&nbsp;Special<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;Fortitude negates (harmless)\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\n<i>Protection from energy </i>grants temporary immunity to the type of energy you specify when you cast it (acid, cold, electricity, fire, or sonic). When the spell absorbs 12 points per caster level of energy damage (to a maximum of 120 points at 10th level), it is discharged.\n</p><p><i>Note: Protection from energy </i>overlaps (and does not stack with) <i>resist energy.</i> If a character is warded by <i>protection from energy </i>and <i>resist energy, </i>the <i>protection </i>spell absorbs damage until its power is exhausted.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Touch",
     "duration": {
@@ -216,10 +216,10 @@
       "type": "fortitudenegates"
     },
     "school": "abj",
-    "shortDescription": "<p>Absorb 12 points/level of</p>",
+    "shortDescription": "\n\n\n<p>\n<i>Protection from energy </i>grants temporary immunity to the type of energy you specify when you cast it (acid, cold, electricity, fire, or sonic). When the spell absorbs 12 points per caster level of energy damage (to a maximum of 120 points at 10th level), it is discharged.\n</p><p><i>Note: Protection from energy </i>overlaps (and does not stack with) <i>resist energy.</i> If a character is warded by <i>protection from energy </i>and <i>resist energy, </i>the <i>protection </i>spell absorbs damage until its power is exhausted.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Absorb 12 points/level of",
+    "snip": "Absorb 12 points/level of damage from one kind of energy.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 268-268",
     "specialActions": [
       {
@@ -259,8 +259,8 @@
     "spellbook": "primary",
     "spellDuration": "10 min./level or until discharged",
     "spellDurationData": {
-      "units": "minutePerLevel",
-      "value": 10
+      "units": "spec",
+      "value": null
     },
     "spellEffect": "",
     "spellType": {

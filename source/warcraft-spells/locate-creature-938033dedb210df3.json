@@ -32,7 +32,7 @@
           316
         ],
         "section": "Locate Creature",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -103,7 +103,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Indicates direction to familiar</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;divination;\n    <br>\n    <strong>Level:</strong>&nbsp;Assassin 4, Bard 4, Sorcerer 4, Wizard 4;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, M (a bit of fur from a bloodhound)<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;long (400 ft. + 40 ft./level)<br>\n    <strong>Area:</strong>&nbsp;circle, centered on you, with a radius of 400 ft. + 40 ft./level<br>\n    \n    \n    <strong>Duration:</strong>&nbsp;10 Minute/Level<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;7<br>\n        <strong>Saving Throw:</strong>&nbsp;none\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nYou slowly turn and sense when you are facing in the direction of the creature to be located, provided it is within range. You also know in which direction the creature is moving, if any.\n</p><p>The spell can locate a creature of a specific kind or a specific creature known to you. It cannot find a creature of a certain type. To find a kind of creature, you must have seen such a creature up close (within 30 feet) at least once.\n</p><p>The spell is blocked by even a thin sheet of lead. Running water blocks the spell. It cannot detect objects. It can be fooled by <i>mislead</i>, <i>nondetection</i>, and <i>polymorph </i>spells.\n</p><p><i>Material Component: </i>A bit of fur from a bloodhound.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "",
     "duration": {
@@ -216,10 +216,10 @@
       "type": ""
     },
     "school": "div",
-    "shortDescription": "<p>Indicates direction to familiar</p>",
+    "shortDescription": "\n\n\n<p>\nYou slowly turn and sense when you are facing in the direction of the creature to be located, provided it is within range. You also know in which direction the creature is moving, if any.\n</p><p>The spell can locate a creature of a specific kind or a specific creature known to you. It cannot find a creature of a certain type. To find a kind of creature, you must have seen such a creature up close (within 30 feet) at least once.\n</p><p>The spell is blocked by even a thin sheet of lead. Running water blocks the spell. It cannot detect objects. It can be fooled by <i>mislead</i>, <i>nondetection</i>, and <i>polymorph </i>spells.\n</p><p><i>Material Component: </i>A bit of fur from a bloodhound.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Indicates direction to familiar",
+    "snip": "Indicates direction to familiar creature.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 264-264",
     "specialActions": [
       {

@@ -34,7 +34,7 @@
           301
         ],
         "section": "Endure Elements",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -96,7 +96,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>You can exist comfortably in hot or</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;abjuration;\n    <br>\n    <strong>Level:</strong>&nbsp;Cleric 1, Druid 1, Paladin 1, Ranger 1, Sorcerer 1, Wizard 1;\n    <strong>Domain:</strong>&nbsp;Sun 1;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;touch<br>\n    \n    <strong>Target:</strong>&nbsp;creature touched\n<br>\n    \n    <strong>Duration:</strong>&nbsp;0 undefined<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;Will negates (harmless)\n\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nA creature protected by <i>endure elements </i>suffers no harm from being in a hot or cold environment. It can exist comfortably in conditions between –50 and 140 degrees Fahrenheit without having to make Fortitude saves). The creature’s equipment is likewise protected.\n</p><p><i>Endure elements </i>doesn’t provide any protection from fire or cold damage, nor does it protect against other environmental hazards such as smoke, lack of air, and so forth.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Touch",
     "duration": {
@@ -210,10 +210,10 @@
       "type": "willnegates"
     },
     "school": "abj",
-    "shortDescription": "<p>You can exist comfortably in hot or</p>",
+    "shortDescription": "\n\n\n<p>\nA creature protected by <i>endure elements </i>suffers no harm from being in a hot or cold environment. It can exist comfortably in conditions between –50 and 140 degrees Fahrenheit without having to make Fortitude saves). The creature’s equipment is likewise protected.\n</p><p><i>Endure elements </i>doesn’t provide any protection from fire or cold damage, nor does it protect against other environmental hazards such as smoke, lack of air, and so forth.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "You can exist comfortably in hot or",
+    "snip": "Exist comfortably in hot or cold environments.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 267-274",
     "specialActions": [],
     "specialId": null,

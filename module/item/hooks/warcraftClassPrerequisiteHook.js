@@ -11,7 +11,17 @@ export class WarcraftClassPrerequisiteHook {
       if (userId !== game.userId) return;
       const requirements = getWarcraftItemPrerequisites(item.system);
       if (!requirements.length) return;
-      const result = evaluateWarcraftPrerequisites(requirements, item.parent);
+      const pendingItems = Array.isArray(options?._warcraftPendingItems)
+        ? options._warcraftPendingItems.filter((pending) =>
+            pending.type !== item.type || pending.name !== item.name)
+        : [];
+      const validationActor = pendingItems.length
+        ? {
+            system: item.parent.system,
+            items: [...item.parent.items, ...pendingItems],
+          }
+        : item.parent;
+      const result = evaluateWarcraftPrerequisites(requirements, validationActor);
       if (result.manual.length) {
         ui.notifications.warn(
           `${item.name} needs GM verification: ${result.manual.map((entry) => entry.label).join("; ")}`

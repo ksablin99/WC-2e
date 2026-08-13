@@ -32,7 +32,7 @@
           314
         ],
         "section": "Iron Body",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -101,7 +101,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Transforms your body into living</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;transmutation;\n    <br>\n    <strong>Level:</strong>&nbsp;Sorcerer 8, Wizard 8;\n    <strong>Domain:</strong>&nbsp;Earth 8;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, M/DF (a small piece of iron that was once part of either an iron golem, a hero’s armor, or a war machine), F<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;personal<br>\n    \n    <strong>Target:</strong>&nbsp;you<br>\n    \n    <strong>Duration:</strong>&nbsp;1 Minute/Level (D)<br>\n    \n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThis spell transforms your body into living iron, which grants you several powerful resistances and abilities.\n</p><p>You gain damage reduction 15/adamantine. You are immune to blindness, critical hits, ability score damage, deafness, disease, drowning, electricity, poison, stunning, and all spells or attacks that affect your physiology or respiration, because you have no physiology or respiration while this spell is in effect. You take only half damage from acid and fire of all kinds. However, you also become vulnerable to all special attacks that affect iron golems.\n</p><p>You gain a +6 enhancement bonus to your Strength score, but you take a –6 penalty to Dexterity as well (to a minimum Dexterity score of 1), and your speed is reduced to half normal. You have an arcane spell failure chance of 50% and a –8 armor check penalty, just as if you were clad in full plate armor. You cannot drink (and thus can’t use potions) or play wind instruments.\n</p><p>Your unarmed attacks deal damage equal to a club sized for you (1d4 for Small characters or 1d6 for Medium characters), and you are considered armed when making unarmed attacks.\n</p><p>Your weight increases by a factor of ten, causing you to sink in water like a stone. However, you could survive the crushing pressure and lack of air at the bottom of the ocean—at least until the spell duration expires.\n</p><p><i>Arcane Material Component:</i> A small piece of iron that was once part of either an iron golem, a hero’s armor, or a war machine.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Personal",
     "duration": {
@@ -211,10 +211,10 @@
       "type": ""
     },
     "school": "trs",
-    "shortDescription": "<p>Transforms your body into living</p>",
+    "shortDescription": "\n\n\n<p>\nThis spell transforms your body into living iron, which grants you several powerful resistances and abilities.\n</p><p>You gain damage reduction 15/adamantine. You are immune to blindness, critical hits, ability score damage, deafness, disease, drowning, electricity, poison, stunning, and all spells or attacks that affect your physiology or respiration, because you have no physiology or respiration while this spell is in effect. You take only half damage from acid and fire of all kinds. However, you also become vulnerable to all special attacks that affect iron golems.\n</p><p>You gain a +6 enhancement bonus to your Strength score, but you take a –6 penalty to Dexterity as well (to a minimum Dexterity score of 1), and your speed is reduced to half normal. You have an arcane spell failure chance of 50% and a –8 armor check penalty, just as if you were clad in full plate armor. You cannot drink (and thus can’t use potions) or play wind instruments.\n</p><p>Your unarmed attacks deal damage equal to a club sized for you (1d4 for Small characters or 1d6 for Medium characters), and you are considered armed when making unarmed attacks.\n</p><p>Your weight increases by a factor of ten, causing you to sink in water like a stone. However, you could survive the crushing pressure and lack of air at the bottom of the ocean—at least until the spell duration expires.\n</p><p><i>Arcane Material Component:</i> A small piece of iron that was once part of either an iron golem, a hero’s armor, or a war machine.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Transforms your body into living",
+    "snip": "Your body becomes living iron.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 272-272",
     "specialActions": [],
     "specialId": null,

@@ -34,7 +34,7 @@
           315
         ],
         "section": "Light",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -103,7 +103,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Object shines like a torch.</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;evocation&nbsp;[light];\n    <br>\n    <strong>Level:</strong>&nbsp;Bard 0, Cleric 0, Druid 0, Sorcerer 0, Wizard 0;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, M/DF (a firefly or a piece of phosphorescent moss), F<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;touch<br>\n    \n    <strong>Target:</strong>&nbsp;object touched<br>\n    \n    <strong>Duration:</strong>&nbsp;10 Minute/Level (D)<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;None\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThis spell causes an object to glow like a torch, shedding bright light in a 20-foot radius (and dim light for an additional 20 feet) from the point you touch. The effect is immobile, but it can be cast on a movable object. Light taken into an area of magical <i>darkness</i> does not function.\n</p><p>A light spell (one with the light descriptor) counters and dispels a darkness spell (one with the darkness descriptor) of an equal or lower level.\n</p><p><i>Arcane Material Component: </i>A firefly or a piece of phosphorescent moss.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Touch",
     "duration": {
@@ -217,7 +217,7 @@
       "type": ""
     },
     "school": "evo",
-    "shortDescription": "<p>Object shines like a torch.</p>",
+    "shortDescription": "\n\n\n<p>\nThis spell causes an object to glow like a torch, shedding bright light in a 20-foot radius (and dim light for an additional 20 feet) from the point you touch. The effect is immobile, but it can be cast on a movable object. Light taken into an area of magical <i>darkness</i> does not function.\n</p><p>A light spell (one with the light descriptor) counters and dispels a darkness spell (one with the darkness descriptor) of an equal or lower level.\n</p><p><i>Arcane Material Component: </i>A firefly or a piece of phosphorescent moss.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
     "snip": "Object shines like a torch.",

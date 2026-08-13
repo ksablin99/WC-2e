@@ -32,7 +32,7 @@
           302
         ],
         "section": "Eyebite",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -103,7 +103,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Target becomes panicked, sickened and</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;necromancy&nbsp;[evil];\n    <br>\n    <strong>Level:</strong>&nbsp;Bard 6, Sorcerer 6, Wizard 6;\n    <strong>Domain:</strong>&nbsp;Scalykind 6;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;close (25 ft. + 5 ft./2 levels)<br>\n    \n    <strong>Target:</strong>&nbsp;one living creature<br>\n    \n    <strong>Duration:</strong>&nbsp;See Text<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;11<br>\n        <strong>Saving Throw:</strong>&nbsp;Fortitude negates\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  <p>Each round, you may target a single living creature, striking it with waves of evil power. Depending on the target&rsquo;s HD, this attack has as many as three effects.</p>\n<p>The effects are cumulative and concurrent.</p>\n<p><em><strong>10 HD or More: </strong>Sickened: </em>Sudden pain and fever sweeps over the subject&rsquo;s body. A sickened creature takes a &ndash;2 penalty on attack rolls, weapon damage rolls, saving throws, skill checks, and ability checks. A creature affected by this spell remains sickened for 10 minutes per caster level. The effects cannot be negated by a <em>remove disease </em>or <em>heal </em>spell, but a <em>remove curse </em>is effective.</p>\n<p><em><strong>5-9 HD: </strong>Panicked: </em>The subject becomes panicked for [[1d4]] rounds. Even after the panic ends, the creature remains shaken for 10 minutes per caster level, and it automatically becomes panicked again if it comes within sight of you during that time. This is a fear effect.</p>\n<p><em><strong>4 HD or Less: </strong>Comatose: </em>The subject falls into a catatonic coma for 10 minutes per caster level. During this time, it cannot be awakened by any means short of dispelling the effect. This is not a <em>sleep </em>effect, and thus elves are not immune to it.</p>\n<p>The spell lasts for 1 round per three caster levels. You must spend a move action each round after the first to target a foe.</p>\n<hr />\n</div>\n"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -216,10 +216,10 @@
       "type": "fortitudenegates"
     },
     "school": "nec",
-    "shortDescription": "<p>Target becomes panicked, sickened and</p>",
+    "shortDescription": "<p>Each round, you may target a single living creature, striking it with waves of evil power. Depending on the target&rsquo;s HD, this attack has as many as three effects.</p>\n<p>The effects are cumulative and concurrent.</p>\n<p><em><strong>10 HD or More: </strong>Sickened: </em>Sudden pain and fever sweeps over the subject&rsquo;s body. A sickened creature takes a &ndash;2 penalty on attack rolls, weapon damage rolls, saving throws, skill checks, and ability checks. A creature affected by this spell remains sickened for 10 minutes per caster level. The effects cannot be negated by a <em>remove disease </em>or <em>heal </em>spell, but a <em>remove curse </em>is effective.</p>\n<p><em><strong>5-9 HD: </strong>Panicked: </em>The subject becomes panicked for [[1d4]] rounds. Even after the panic ends, the creature remains shaken for 10 minutes per caster level, and it automatically becomes panicked again if it comes within sight of you during that time. This is a fear effect.</p>\n<p><em><strong>4 HD or Less: </strong>Comatose: </em>The subject falls into a catatonic coma for 10 minutes per caster level. During this time, it cannot be awakened by any means short of dispelling the effect. This is not a <em>sleep </em>effect, and thus elves are not immune to it.</p>\n<p>The spell lasts for 1 round per three caster levels. You must spend a move action each round after the first to target a foe.</p>\n<hr />",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Target becomes panicked, sickened and",
+    "snip": "Target becomes panicked, sickened, and comatose.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 266-266",
     "specialActions": [
       {

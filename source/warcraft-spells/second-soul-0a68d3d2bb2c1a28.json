@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           334
         ],
         "section": "Second Soul",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 10,
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Subject returns to life if slain.</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>If the subject dies while warded, it returns to life in the same place 2d4 rounds later, provided its soul is free and willing. It returns with all hit point and ability damage healed. Normal poisons and diseases end, but magical diseases and curses remain. The state of the remains does not matter, and equipment is unaffected.</p><p>The spell cannot restore a creature killed by a death effect, transformed into undead, dead from old age, or belonging to the construct, elemental, outsider, or undead type. On returning, the subject loses one level permanently; a 1st-level subject instead loses 1 Stamina. A spellcaster also loses half its remaining spell slots, plus any slots lost with the level. The spell is expended when it restores the subject.</p><p>The material components are holy water and diamonds worth at least 20,000 gp.</p><p><strong>Automation boundary:</strong> The GM must track the permanent ward, eligibility, delayed return, resource loss, level or Stamina loss, and material cost; Foundry does not automate resurrection.</p>"
     },
     "display": "Touch",
     "duration": {
@@ -213,10 +213,10 @@
       "type": ""
     },
     "school": "con",
-    "shortDescription": "<p>Subject returns to life if slain.</p>",
+    "shortDescription": "<p>Permanently ward a living creature so it returns to life shortly after its next eligible death.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Subject returns to life if slain.",
+    "snip": "Permanently ward a living creature so it returns to life shortly after its next eligible death.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 268-268",
     "specialActions": [],
     "specialId": null,
@@ -259,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "The GM must track the permanent ward, eligibility, delayed return, resource loss, level or Stamina loss, and material cost; Foundry does not automate resurrection."
     }
   },
   "type": "spell"

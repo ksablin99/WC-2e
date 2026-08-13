@@ -62,6 +62,37 @@ async function dismissOverlays(page) {
   await page.waitForTimeout(150);
 }
 
+async function clickTransientLocator(locator, { timeout = 300, after = 0, waitForAppearance = 0 } = {}) {
+  let visible = await locator.first().isVisible().catch(() => false);
+  if (!visible && waitForAppearance > 0) {
+    visible = await locator.first()
+      .waitFor({ state: 'visible', timeout: waitForAppearance })
+      .then(() => true)
+      .catch(() => false);
+  }
+  if (!visible) return false;
+
+  const deadline = Date.now() + timeout;
+  do {
+    const remaining = Math.max(1, deadline - Date.now());
+    const candidate = locator.first();
+    try {
+      await candidate.waitFor({ state: 'visible', timeout: Math.min(250, remaining) });
+      await candidate.click({ force: true, timeout: Math.min(1_000, remaining) });
+      if (after > 0) await new Promise((resolve) => setTimeout(resolve, after));
+      return true;
+    } catch {
+      // Welcome/tour applications can replace or detach themselves between
+      // discovery and click. Re-resolve the locator until the bounded timeout.
+      if (Date.now() >= deadline) return false;
+      await new Promise((resolve) => setTimeout(resolve, 50));
+    }
+  } while (Date.now() < deadline);
+  return false;
+}
+
+let migrationAppearanceChecked = false;
+
 /**
  * Close system-level popup windows (migration dialogs, welcome screens, onboarding)
  * that Foundry opens automatically and can block UI interactions.
@@ -71,10 +102,12 @@ async function dismissSystemDialogs(page) {
   // 1. Migration dialog — click "I Backed Up, Continue" if it appears
   //    The dialog fires asynchronously after the `ready` hook, so wait up to 3 s.
   const migrateBtn = page.locator('button:has-text("I Backed Up, Continue")');
-  if (await migrateBtn.isVisible({ timeout: 3_000 }).catch(() => false)) {
-    await migrateBtn.click({ force: true });
-    await page.waitForTimeout(600);
-  }
+  await clickTransientLocator(migrateBtn, {
+    timeout: 500,
+    after: 600,
+    waitForAppearance: migrationAppearanceChecked ? 0 : 3_000,
+  });
+  migrationAppearanceChecked = true;
 
   // 2. Close known system popup windows by clicking their close buttons.
   //    These are Foundry-generated popups (welcome screens, tutorial, etc.) that
@@ -91,27 +124,18 @@ async function dismissSystemDialogs(page) {
 
   for (const sel of systemPopupSelectors) {
     const closeBtn = page.locator(`${sel} .header-button.close, ${sel} a.close`).first();
-    if (await closeBtn.isVisible({ timeout: 300 }).catch(() => false)) {
-      await closeBtn.click({ force: true });
-      await page.waitForTimeout(200);
-    }
+    await clickTransientLocator(closeBtn, { timeout: 300, after: 200 });
   }
 
   // D35E OnboardingScreen dismiss — click "I know my way around here" if visible
   const onboardingDismiss = page.getByText('I know my way around here', { exact: false });
-  if (await onboardingDismiss.isVisible({ timeout: 300 }).catch(() => false)) {
-    await onboardingDismiss.click({ force: true });
-    await page.waitForTimeout(200);
-  }
+  await clickTransientLocator(onboardingDismiss, { timeout: 300, after: 200 });
 
   // Foundry v14+ core welcome tour (sidebar complementary panel) — blocks sheets and controls
   const foundryWelcomeTour = page.getByRole('complementary').filter({
     has: page.getByRole('heading', { name: /Welcome to Foundry Virtual Tabletop/i }),
   });
-  if (await foundryWelcomeTour.isVisible({ timeout: 2_000 }).catch(() => false)) {
-    await foundryWelcomeTour.locator('button').first().click({ force: true });
-    await page.waitForTimeout(300);
-  }
+  await clickTransientLocator(foundryWelcomeTour.locator('button'), { timeout: 2_000, after: 300 });
 
   // Fallback for Foundry v14's core tour when the close control has no stable
   // accessible label and the role locator above misses the rendered panel.
@@ -125,7 +149,7 @@ async function dismissSystemDialogs(page) {
       close?.click();
       panel?.remove();
     }
-  });
+  }).catch(() => {});
   await page.waitForTimeout(200);
 
   await page.waitForTimeout(200);

@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           338
         ],
         "section": "Soulstone",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 10,
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>A gem forged from dark magic restores</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>You create a soulstone that lasts until used. When its bearer is reduced to dying or dead status, that creature may consume the stone to return to life automatically with hit points equal to 5% of its normal total.</p><p>The material components are a precious onyx worth 10,000 gp and one soul shard. Casting costs 1,500 XP.</p><p><strong>Automation boundary:</strong> Create and transfer the one-use stone, track its bearer, and resolve death, consumption, restored hit points, XP, and material costs manually.</p>"
     },
     "display": "Personal",
     "duration": {
@@ -208,15 +208,15 @@
       "dc": "0",
       "dcAutoAbility": "",
       "dcAutoType": "",
-      "description": "None",
+      "description": "",
       "originVersion": 97,
       "type": ""
     },
     "school": "con",
-    "shortDescription": "<p>A gem forged from dark magic restores</p>",
+    "shortDescription": "<p>Create a permanent one-use gem that lets its bearer return from dead or dying status at 5% hit points.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "A gem forged from dark magic restores",
+    "snip": "Create a permanent one-use gem that lets its bearer return from dead or dying status at 5% hit points.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 266-266",
     "specialActions": [],
     "specialId": null,
@@ -226,14 +226,14 @@
     "spellDuration": "Special (see below)",
     "spellDurationData": {
       "units": "spec",
-      "value": 1
+      "value": null
     },
     "spellEffect": "",
     "spellType": {
       "_deprecated": true,
       "value": ""
     },
-    "sr": true,
+    "sr": false,
     "subschool": "",
     "summon": [],
     "tags": [],
@@ -259,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Create and transfer the one-use stone, track its bearer, and resolve death, consumption, restored hit points, XP, and material costs manually."
     }
   },
   "type": "spell"

@@ -32,7 +32,7 @@
           316
         ],
         "section": "Locate Object",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -101,7 +101,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Senses direction toward object</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;divination;\n    <br>\n    <strong>Level:</strong>&nbsp;Bard 2, Cleric 3, Sorcerer 2, Wizard 2;\n    <strong>Domain:</strong>&nbsp;Travel 2;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, F/DF (a forked twig)<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;long (400 ft. + 40 ft./level)<br>\n    <strong>Area:</strong>&nbsp;circle, centered on you, with a radius of 400 ft. + 40 ft./level<br>\n    \n    \n    <strong>Duration:</strong>&nbsp;1 Minute/Level<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;3<br>\n        <strong>Saving Throw:</strong>&nbsp;None\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nYou sense the direction of a well-known or clearly visualized object. You can search for general items, in which case you locate the nearest one of its kind if more than one is within range. Attempting to find a certain item requires a specific and accurate mental image; if the image is not close enough to the actual object, the spell fails. You cannot specify a unique item unless you have observed that particular item firsthand (not through divination).\n</p><p>The spell is blocked by even a thin sheet of lead. Creatures cannot be found by this spell. <i>Polymorph any object</i> fools it.\n</p><p><i>Arcane Focus: </i>A forked twig.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Long (400 ft. + 40 ft./level)",
     "duration": {
@@ -212,10 +212,10 @@
       "type": ""
     },
     "school": "div",
-    "shortDescription": "<p>Senses direction toward object</p>",
+    "shortDescription": "\n\n\n<p>\nYou sense the direction of a well-known or clearly visualized object. You can search for general items, in which case you locate the nearest one of its kind if more than one is within range. Attempting to find a certain item requires a specific and accurate mental image; if the image is not close enough to the actual object, the spell fails. You cannot specify a unique item unless you have observed that particular item firsthand (not through divination).\n</p><p>The spell is blocked by even a thin sheet of lead. Creatures cannot be found by this spell. <i>Polymorph any object</i> fools it.\n</p><p><i>Arcane Focus: </i>A forked twig.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Senses direction toward object",
+    "snip": "Senses direction toward object (specific or type).",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 268-268",
     "specialActions": [
       {

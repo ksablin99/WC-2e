@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -36,7 +36,7 @@
           333
         ],
         "section": "Roar",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -57,11 +57,11 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
-      "type": "special"
+      "type": "standard"
     },
     "addedLevel": 0,
     "attack": {
@@ -74,7 +74,7 @@
     "atWill": false,
     "autoscaleAttackParts": "",
     "baseCl": "0",
-    "castTime": "1",
+    "castTime": "1 standard action",
     "changes": [],
     "classSource": "",
     "clOffset": 0,
@@ -106,9 +106,9 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Your great roar gives allies +1 morale</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>All allies within the 50-foot-radius burst centered on you gain a +1 morale bonus on attack rolls and damage rolls for the duration. A druid may cast this spell while in animal form, using the form's natural roar or equivalent sound.</p><p><strong>Automation boundary:</strong> Apply the morale bonuses to allies caught in the burst manually; the spell does not identify allies or create their effects automatically.</p>"
     },
-    "display": "",
+    "display": "Personal",
     "duration": {
       "units": "",
       "value": null
@@ -200,7 +200,7 @@
     "psionic": "",
     "range": {
       "long": null,
-      "units": "medium",
+      "units": "personal",
       "value": null
     },
     "recharge": {
@@ -226,15 +226,15 @@
       "type": ""
     },
     "school": "enc",
-    "shortDescription": "<p>Your great roar gives allies +1 morale</p>",
+    "shortDescription": "<p>All allies in a 50-foot burst gain +1 morale on attack and damage rolls.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Your great roar gives allies +1 morale",
+    "snip": "All allies in a 50-foot burst gain +1 morale on attack and damage rolls.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 268-273",
     "specialActions": [],
     "specialId": null,
     "specialPrepared": false,
-    "spellArea": "All",
+    "spellArea": "All allies within a 50-ft.-radius burst centered on you",
     "spellbook": "primary",
     "spellDuration": "1 round/level",
     "spellDurationData": {
@@ -251,7 +251,7 @@
     "summon": [],
     "tags": [],
     "target": {
-      "value": "All"
+      "value": "All allies within a 50-ft.-radius burst centered on you"
     },
     "types": "force",
     "uniqueId": "",
@@ -272,7 +272,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Apply the morale bonuses to allies caught in the burst manually; the spell does not identify allies or create their effects automatically."
     }
   },
   "type": "spell"

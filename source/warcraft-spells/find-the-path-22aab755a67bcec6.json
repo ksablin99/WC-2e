@@ -34,7 +34,7 @@
           303
         ],
         "section": "Find the Path",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -103,7 +103,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Shows most direct way to a location.</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;divination;\n    <br>\n    <strong>Level:</strong>&nbsp;Bard 6, Cleric 6, Druid 6;\n    <strong>Domain:</strong>&nbsp;Knowledge 6, Travel 6;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, F (a set of divination counters of the sort you favor)<br>\n    \n      <strong>Casting Time:</strong>&nbsp;3 round<br>\n    <strong>Range:</strong>&nbsp;touch<br>\n    \n    <strong>Target:</strong>&nbsp;you or creature touched<br>\n    \n    <strong>Duration:</strong>&nbsp;10 Minute/Level<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;None or Will negates (harmless)\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThe recipient of this spell can find the shortest, most direct physical route to a specified destination, be it the way into or out of a locale. The locale can be outdoors, underground, or even inside a <i>maze </i>spell. <i>Find the path </i>works with respect to locations, not objects or creatures at a locale. The location must be on the same plane as you are at the time of casting.\n</p><p>The spell enables the subject to sense the correct direction that will eventually lead it to its destination, indicating at appropriate times the exact path to follow or physical actions to take. For example, the spell enables the subject to sense trip wires or the proper word to bypass a <i>glyph of warding. </i>The spell ends when the destination is reached or the duration expires, whichever comes first. <i>Find the path </i>can be used to remove the subject and its companions from the effect of a <i>maze </i>spell in a single round.\n</p><p>This divination is keyed to the recipient, not its companions, and its effect does not predict or allow for the actions of creatures (including guardians).\n</p><p><i>Focus: </i>A set of divination counters of the sort you favor.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Personal or touch",
     "duration": {
@@ -218,7 +218,7 @@
       "type": "willnegates"
     },
     "school": "div",
-    "shortDescription": "<p>Shows most direct way to a location.</p>",
+    "shortDescription": "\n\n\n<p>\nThe recipient of this spell can find the shortest, most direct physical route to a specified destination, be it the way into or out of a locale. The locale can be outdoors, underground, or even inside a <i>maze </i>spell. <i>Find the path </i>works with respect to locations, not objects or creatures at a locale. The location must be on the same plane as you are at the time of casting.\n</p><p>The spell enables the subject to sense the correct direction that will eventually lead it to its destination, indicating at appropriate times the exact path to follow or physical actions to take. For example, the spell enables the subject to sense trip wires or the proper word to bypass a <i>glyph of warding. </i>The spell ends when the destination is reached or the duration expires, whichever comes first. <i>Find the path </i>can be used to remove the subject and its companions from the effect of a <i>maze </i>spell in a single round.\n</p><p>This divination is keyed to the recipient, not its companions, and its effect does not predict or allow for the actions of creatures (including guardians).\n</p><p><i>Focus: </i>A set of divination counters of the sort you favor.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
     "snip": "Shows most direct way to a location.",

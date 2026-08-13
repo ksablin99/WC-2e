@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           291
         ],
         "section": "Death and Decay",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>1d4 damage/level (maximum</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>Each round of concentration, living creatures and non-natural structures in the 30-foot-radius emanation take 1d4 negative-energy damage per caster level, maximum 25d4. Living creatures may make a Fortitude save for half. Undead instead regain the same amount of hit points.</p><p>The material component is a dead rose.</p><p><strong>Automation boundary:</strong> Maintain the area and concentration, roll each round, halve successful saves, distinguish valid structures, and convert the effect to healing for undead manually.</p>"
     },
     "display": "Medium (100 ft. + 10 ft./level)",
     "duration": {
@@ -213,10 +213,10 @@
       "type": "fortitudehalf"
     },
     "school": "nec",
-    "shortDescription": "<p>1d4 damage/level (maximum</p>",
+    "shortDescription": "<p>Concentrate on a negative-energy area that damages living creatures and artificial structures while healing undead.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "1d4 damage/level (maximum",
+    "snip": "Concentrate on a negative-energy area that damages living creatures and artificial structures while healing undead.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 266-266",
     "specialActions": [],
     "specialId": null,
@@ -225,8 +225,8 @@
     "spellbook": "primary",
     "spellDuration": "Concentration, up to 1 round/level",
     "spellDurationData": {
-      "units": "roundPerLevel",
-      "value": 1
+      "units": "spec",
+      "value": null
     },
     "spellEffect": "",
     "spellType": {
@@ -259,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Maintain the area and concentration, roll each round, halve successful saves, distinguish valid structures, and convert the effect to healing for undead manually."
     }
   },
   "type": "spell"

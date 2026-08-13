@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           335
         ],
         "section": "Shadow Meld",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Remaining motionless near shadows,</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>While in darkness or shadowy illumination, remain motionless for one full round without moving or taking any action to become invisible. Moving makes you visible immediately; remaining still can activate the effect again while the spell lasts. The spell does not silence you.</p><p>Carried gear becomes invisible with you, except any portion extending more than 10 feet from you. Allies cannot see you without an ability or magic that reveals invisible creatures, though you can see yourself.</p><p><strong>Automation boundary:</strong> The GM must judge illumination and whether the full-round stillness or later movement activates or ends invisibility; apply that state manually.</p>"
     },
     "display": "Personal",
     "duration": {
@@ -213,10 +213,10 @@
       "type": ""
     },
     "school": "ill",
-    "shortDescription": "<p>Remaining motionless near shadows,</p>",
+    "shortDescription": "<p>Become invisible in darkness after remaining completely still for one full round.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Remaining motionless near shadows,",
+    "snip": "Become invisible in darkness after remaining completely still for one full round.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 263-263",
     "specialActions": [],
     "specialId": null,
@@ -259,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "The GM must judge illumination and whether the full-round stillness or later movement activates or ends invisibility; apply that state manually."
     }
   },
   "type": "spell"

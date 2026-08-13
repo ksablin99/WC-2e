@@ -36,7 +36,7 @@
           285
         ],
         "section": "Chain Lightning",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -113,7 +113,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>1d6/level damage; 1 secondary bolt/</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;evocation&nbsp;[electricity];\n    <br>\n    <strong>Level:</strong>&nbsp;Sorcerer 6, Wizard 6;\n    <strong>Domain:</strong>&nbsp;Air 6;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, F (a bit of fur; a piece of amber, glass, or a crystal rod; plus one silver pin for each of your caster levels)<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;long (400 ft. + 40 ft./level)<br>\n    \n    <strong>Target:</strong>&nbsp;one primary target, plus one secondary target/level (each of which must be within 30 ft. of the primary target)<br>\n    \n    <strong>Duration:</strong>&nbsp;Instantaneous<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;Reflex Half\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThis spell creates an electrical discharge that begins as a single stroke commencing from your fingertips. Unlike <i>lightning bolt</i>, <i>chain lightning </i>strikes one object or creature initially, then arcs to other targets.\n</p><p>The bolt deals 1d6 points of electricity damage per caster level (maximum 20d6) to the primary target. After it strikes, lightning can arc to a number of secondary targets equal to your caster level (maximum 20). The secondary bolts each strike one target and deal half as much damage as the primary one did (rounded down).\n</p><p>Each target can attempt a Reflex saving throw for half damage. You choose secondary targets as you like, but they must all be within 30 feet of the primary target, and no target can be struck more than once. You can choose to affect fewer secondary targets than the maximum.\n</p><p><i>Focus: </i>A bit of fur; a piece of amber, glass, or a crystal rod; plus one silver pin for each of your caster levels.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Long (400 ft. + 40 ft./level)",
     "duration": {
@@ -235,10 +235,10 @@
       "type": "reflexhalf"
     },
     "school": "evo",
-    "shortDescription": "<p>1d6/level damage; 1 secondary bolt/</p>",
+    "shortDescription": "\n\n\n<p>\nThis spell creates an electrical discharge that begins as a single stroke commencing from your fingertips. Unlike <i>lightning bolt</i>, <i>chain lightning </i>strikes one object or creature initially, then arcs to other targets.\n</p><p>The bolt deals 1d6 points of electricity damage per caster level (maximum 20d6) to the primary target. After it strikes, lightning can arc to a number of secondary targets equal to your caster level (maximum 20). The secondary bolts each strike one target and deal half as much damage as the primary one did (rounded down).\n</p><p>Each target can attempt a Reflex saving throw for half damage. You choose secondary targets as you like, but they must all be within 30 feet of the primary target, and no target can be struck more than once. You can choose to affect fewer secondary targets than the maximum.\n</p><p><i>Focus: </i>A bit of fur; a piece of amber, glass, or a crystal rod; plus one silver pin for each of your caster levels.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "1d6/level damage; 1 secondary bolt/",
+    "snip": "1d6/level damage; 1 secondary bolt/level each deals half damage.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 265-272",
     "specialActions": [],
     "specialId": null,

@@ -19,7 +19,13 @@
         "category": "General",
         "prerequisite": "Agy 13, Ride 4 ranks.",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "You gain a +2 bonus on all Ride checks. You may take 10 on Ride checks made for mounted combat even while threatened or distracted.",
+          "manual": "Apply the bonus to Ride and allow take 10 for qualifying mounted-combat checks; Foundry does not determine that context automatically.",
+          "normal": "A rider normally cannot take 10 in those circumstances.",
+          "summary": "Gain +2 on Ride checks and take 10 during mounted combat."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": true
       },
@@ -33,7 +39,7 @@
           148
         ],
         "section": "Expert Rider",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +154,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p><strong>Prerequisites:</strong> Agy 13, Ride 4 ranks.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 148) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Prerequisites:</strong> Agy 13, Ride 4 ranks.</p><p><strong>Summary:</strong> Gain +2 on Ride checks and take 10 during mounted combat.</p><p><strong>Benefit:</strong> You gain a +2 bonus on all Ride checks. You may take 10 on Ride checks made for mounted combat even while threatened or distracted.</p><p><strong>Normal:</strong> A rider normally cannot take 10 in those circumstances.</p><p><strong>Warrior bonus feat:</strong> Yes</p><p><strong>Foundry and GM handling:</strong> Apply the bonus to Ride and allow take 10 for qualifying mounted-combat checks; Foundry does not determine that context automatically.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +254,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat; requires Agy 13, Ride 4 ranks..</p>",
+    "shortDescription": "<p>Gain +2 on Ride checks and take 10 during mounted combat.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 148",

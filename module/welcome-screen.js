@@ -23,7 +23,9 @@ export default function renderWelcomeScreen() {
 
         activateListeners(html) {
             super.activateListeners(html);
-            const content = html[0].parentElement;
+            const root = html?.nodeType === 1 ? html : html?.[0] ?? html;
+            const content = root?.parentElement ?? root;
+            if (!content) return;
             this.createTabs(document.documentElement)
             content.querySelectorAll('.show-again').forEach(el => el.addEventListener('change', ev => {
                 let val = "0.0.0";

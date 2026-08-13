@@ -1,0 +1,236 @@
+{
+  "Mark of the Wild": {
+    "summary": "Grant one living creature enhanced natural armor and improved physical abilities.",
+    "rulesHtml": "<p>The target gains a +6 enhancement bonus to natural armor and a +2 bonus to Strength, Agility, and Stamina for the duration.</p><p>The material component is one sprig of silverleaf.</p>",
+    "manualBoundary": "Apply and remove the natural-armor and ability bonuses manually; the spell does not alter actor data automatically."
+  },
+  "Greater Mark of the Wild": {
+    "summary": "Grant one living creature +10 natural armor and +6 to each physical ability.",
+    "rulesHtml": "<p>This functions as <em>mark of the wild</em>, except the target gains a +10 enhancement bonus to natural armor and a +6 bonus to Strength, Agility, and Stamina.</p><p>The material component is one sprig of silverleaf.</p>",
+    "manualBoundary": "Apply and remove the natural-armor and ability bonuses manually; the spell does not alter actor data automatically."
+  },
+  "Lesser Mark of the Wild": {
+    "summary": "Grant one living creature +4 natural armor and +2 to each physical ability.",
+    "rulesHtml": "<p>This functions as <em>mark of the wild</em>, except its enhancement bonus to natural armor is +4. The target still gains +2 to Strength, Agility, and Stamina.</p><p>The material component is one sprig of silverleaf.</p>",
+    "manualBoundary": "Apply and remove the natural-armor and ability bonuses manually; the spell does not alter actor data automatically."
+  },
+  "Medivh's Disjunction": {
+    "summary": "End every magic effect in a burst and risk permanently suppressing magic items, antimagic fields, and artifacts.",
+    "rulesHtml": "<p>All magical effects and magic items in the burst are disjoined except those you carry or touch. Spells and spell-like effects end as though dispelled. Each permanent magic item must succeed on a Will save or become nonmagical; an attended item uses its own Will bonus or its possessor's, whichever is higher.</p><p>You have a 1% chance per caster level to destroy an antimagic field. If the field survives, items inside it are not disjoined. An artifact is affected only on a separate 1% chance per caster level. If an artifact is destroyed, you must succeed on a DC 25 Will save or permanently lose every spellcasting ability; mortal magic, including <em>miracle</em> and <em>wish</em>, cannot restore them. Destroying an artifact also carries a 95% chance of attracting a powerful interested being.</p>",
+    "manualBoundary": "Resolve every effect, item save, percentage roll, artifact consequence, and permanent loss with the GM; the system cannot safely automate this area-wide disjunction."
+  },
+  "Medivh's Mnemonic Enhancer": {
+    "summary": "Prepare up to three extra spell levels for 24 hours or exchange one prepared spell of 3rd level or lower.",
+    "rulesHtml": "<p>Choose one mode when casting.</p><ul><li><strong>Prepare:</strong> Prepare any combination totaling up to three spell levels. A cantrip counts as one-half level. Cast these spells normally; any uncast prepared spells from this effect disappear after 24 hours.</li><li><strong>Swap:</strong> Replace one prepared spell of 3rd level or lower with a different spell of the same level from your spellbook. The original spell is no longer prepared.</li></ul><p>The material components are string and ink made from squid secretion mixed with black dragon blood. The focus is an ivory plaque worth at least 50 gp.</p>",
+    "manualBoundary": "Choose the mode and adjust prepared spells manually; Foundry does not enforce the three-level budget or the 24-hour expiry."
+  },
+  "Moonfire": {
+    "summary": "Deal immediate lunar damage and, on a failed Fortitude save, continuing damage for up to five rounds.",
+    "rulesHtml": "<p>The target immediately takes 1d8 damage +1 per caster level, maximum +10; the saving throw does not reduce this initial damage. On a failed Fortitude save, it also takes 2 damage at the start of each round for a number of rounds equal to your caster level, maximum 5 rounds.</p><p>The material component is one drop of moonwell water.</p>",
+    "manualBoundary": "Roll the initial damage and track the failed-save damage pulses manually; the spell does not schedule later damage.",
+    "headerOverride": { "Saving Throw": "Fortitude (see text)", "Spell Resistance": "Yes" }
+  },
+  "Greater Moonfire": {
+    "summary": "Deal heavy lunar damage and, on a failed Fortitude save, 6 continuing damage for up to ten rounds.",
+    "rulesHtml": "<p>This functions as <em>moonfire</em>, but the target immediately takes 3d8 damage +2 per caster level, maximum +16. On a failed Fortitude save, it also takes 6 damage at the start of each round for a number of rounds equal to your caster level, maximum 10 rounds. The save does not reduce the initial damage.</p><p>The material component is a pebble soaked in moonwell water.</p>",
+    "manualBoundary": "Roll the initial damage and track the failed-save damage pulses manually; the spell does not schedule later damage.",
+    "headerOverride": { "Saving Throw": "Fortitude (see text)", "Spell Resistance": "Yes" }
+  },
+  "Moonglaive": {
+    "summary": "Hurl a force moonglaive that can ricochet through as many as three nearby targets.",
+    "rulesHtml": "<p>You create a force moonglaive and are treated as proficient with it for this spell. Make a ranged attack against the first target. On a hit, make a second ranged attack at -2 against another eligible target. If that hits, make a third ranged attack at -4 against a third target or back against the first. No two targets may be more than 15 feet apart. The glaive disappears after a miss or after the third attack.</p><p>Treat it as a normal moonglaive except that it is made of force: 1d4 damage if Small or 1d6 if Medium, slashing damage, critical 19-20/x2, and a 20-foot range increment.</p>",
+    "manualBoundary": "Create the three attack sequence and select each ricochet target manually; the item does not generate follow-up attacks automatically."
+  },
+  "Ner'zhul's Black Tentacles": {
+    "summary": "Fill a spread with invulnerable tentacles that grapple, crush, and hinder every creature inside.",
+    "rulesHtml": "<p>Every creature in the area makes a grapple check opposed by the tentacles. For each target, treat the tentacles as Large, with base attack bonus equal to your caster level and Strength 19, for a grapple modifier of caster level +8. The tentacles are immune to all damage.</p><p>On your turn each round, tentacles grappling a creature make another grapple check to deal 1d6+4 bludgeoning damage. They keep crushing until the creature escapes or the spell ends. A creature entering the area is attacked immediately, and even an ungrappled creature moves through the area at half speed.</p><p>The material component is a piece of giant octopus or giant squid tentacle.</p>",
+    "manualBoundary": "Place the area and resolve each opposed grapple, escape, movement reduction, and recurring crush manually."
+  },
+  "Orb of Annihilation": {
+    "summary": "Make a ranged touch attack for 4d8 fel damage and splash nearby creatures for 1d8 fel damage.",
+    "rulesHtml": "<p>Make a ranged touch attack with the orb. A creature struck takes 4d8 fel damage. On impact, every other creature within 5 feet takes 1d8 fel damage, with a Reflex save for half.</p><p>Instead of targeting a creature, you may target a grid intersection as with a splash weapon. If an attack against a creature misses, determine the landing intersection using the normal missed splash-weapon rules; the explosion occurs there.</p>",
+    "manualBoundary": "Resolve the touch attack, missed-splash scatter, impact point, and secondary Reflex saves manually."
+  },
+  "Rejuvenation": {
+    "summary": "A living creature heals 2d8 hit points every round while continuing to act normally.",
+    "rulesHtml": "<p>The touched living creature regains 2d8 hit points each round for the spell's duration. It may act, fight, and cast spells normally while healing. The spell closes wounds, fades bruises, and sets broken bones, but does not restore severed limbs or ruined organs.</p>",
+    "manualBoundary": "Apply the 2d8 healing once per round manually; the spell does not schedule recurring healing."
+  },
+  "Roar": {
+    "summary": "All allies in a 50-foot burst gain +1 morale on attack and damage rolls.",
+    "rulesHtml": "<p>All allies within the 50-foot-radius burst centered on you gain a +1 morale bonus on attack rolls and damage rolls for the duration. A druid may cast this spell while in animal form, using the form's natural roar or equivalent sound.</p>",
+    "manualBoundary": "Apply the morale bonuses to allies caught in the burst manually; the spell does not identify allies or create their effects automatically.",
+    "headerOverride": { "Casting Time": "1 standard action", "Range": "Personal", "Area": "All allies within a 50-ft.-radius burst centered on you", "Duration": "1 round/level", "Saving Throw": "None", "Spell Resistance": "Yes (harmless)" }
+  },
+  "Second Soul": {
+    "summary": "Permanently ward a living creature so it returns to life shortly after its next eligible death.",
+    "rulesHtml": "<p>If the subject dies while warded, it returns to life in the same place 2d4 rounds later, provided its soul is free and willing. It returns with all hit point and ability damage healed. Normal poisons and diseases end, but magical diseases and curses remain. The state of the remains does not matter, and equipment is unaffected.</p><p>The spell cannot restore a creature killed by a death effect, transformed into undead, dead from old age, or belonging to the construct, elemental, outsider, or undead type. On returning, the subject loses one level permanently; a 1st-level subject instead loses 1 Stamina. A spellcaster also loses half its remaining spell slots, plus any slots lost with the level. The spell is expended when it restores the subject.</p><p>The material components are holy water and diamonds worth at least 20,000 gp.</p>",
+    "manualBoundary": "The GM must track the permanent ward, eligibility, delayed return, resource loss, level or Stamina loss, and material cost; Foundry does not automate resurrection."
+  },
+  "Serpent Ward": {
+    "summary": "Plant an attackable totem that launches one scaling fire attack each round.",
+    "rulesHtml": "<p>Plant a totem in your space. Once per round it makes one ranged touch attack against an enemy within 30 feet; you choose the target as a free action. The ward has Precise Shot and attacks with your base attack bonus + your Spirit modifier. A hit deals 1d6 fire damage per three caster levels, maximum 5d6.</p><p>The totem has AC 7, hardness 5, and 5 hit points. Destroying it ends the spell.</p>",
+    "manualBoundary": "Create and place the ward, choose its target, resolve its attack each round, and track its defenses and destruction manually."
+  },
+  "Shadow Meld": {
+    "summary": "Become invisible in darkness after remaining completely still for one full round.",
+    "rulesHtml": "<p>While in darkness or shadowy illumination, remain motionless for one full round without moving or taking any action to become invisible. Moving makes you visible immediately; remaining still can activate the effect again while the spell lasts. The spell does not silence you.</p><p>Carried gear becomes invisible with you, except any portion extending more than 10 feet from you. Allies cannot see you without an ability or magic that reveals invisible creatures, though you can see yourself.</p>",
+    "manualBoundary": "The GM must judge illumination and whether the full-round stillness or later movement activates or ends invisibility; apply that state manually."
+  },
+  "Shadow Strike": {
+    "summary": "Charge a wielded slashing weapon to add 10d8 damage and six rounds of 5d8 lingering damage.",
+    "rulesHtml": "<p>Charge one slashing weapon you are wielding. On your next successful melee attack with it, if the weapon deals any damage, the spell adds 10d8 damage and then deals another 5d8 damage each round for 6 rounds.</p><p>If that successful attack deals no damage, including because damage reduction reduces it to 0, the spell discharges without effect. The spell is also lost if you cast another spell or stop wielding the charged weapon before discharge. The charged slashing weapon is the focus.</p>",
+    "manualBoundary": "Track the charged weapon, discharge conditions, spell-resistance check, and six later damage rolls manually."
+  },
+  "Shadow Word Pain": {
+    "summary": "Blind one creature and deal 1d4+1 damage to it each round for three rounds.",
+    "rulesHtml": "<p>On a failed Reflex save, the target is blinded for 3 rounds and takes 1d4+1 damage each round during that time. Spell resistance applies.</p><p>The material component is one dried duskbat wing ground into powder.</p>",
+    "manualBoundary": "Apply blindness and roll the three damage pulses manually; the spell does not schedule them."
+  },
+  "Greater Shadow Word Pain": {
+    "summary": "Blind one creature and deal 3d4+1 damage to it each round for three rounds.",
+    "rulesHtml": "<p>This functions as <em>shadow word pain</em>, except a target that fails its Reflex save takes 3d4+1 damage each round for 3 rounds while blinded. Spell resistance applies.</p><p>The material component is one dried duskbat wing ground into powder.</p>",
+    "manualBoundary": "Apply blindness and roll the three damage pulses manually; the spell does not schedule them."
+  },
+  "Lesser Shadow Word Pain": {
+    "summary": "Blind one creature and deal 1d4+1 damage to it each round for three rounds.",
+    "rulesHtml": "<p>This functions as <em>shadow word pain</em>: on a failed Reflex save, the target is blinded and takes 1d4+1 damage each round for 3 rounds. Spell resistance applies. The printed lesser spell states the same damage as the base spell and gives no further numerical reduction.</p><p>The material component is one dried duskbat wing ground into powder.</p>",
+    "manualBoundary": "Apply blindness and roll the three damage pulses manually; the spell does not schedule them."
+  },
+  "Shockwave": {
+    "summary": "Send a ground-bound line of force through creatures and breakable barriers for up to 10d6 damage.",
+    "rulesHtml": "<p>A 10-foot-wide line runs from your feet along the ground to close range. Each creature in it takes 1d6 force damage per caster level, maximum 10d6; a successful Reflex save negates the damage.</p><p>The wave damages an interposing barrier. If that damage breaks through, the wave continues while range remains; otherwise it stops. It also stops where the ground ends and cannot damage a creature that is not touching the ground.</p><p>The material component is a fragment of shattered rock.</p>",
+    "manualBoundary": "Place the ground line and resolve barrier damage, continuation, ground contact, saves, and damage manually."
+  },
+  "Soulstone": {
+    "summary": "Create a permanent one-use gem that lets its bearer return from dead or dying status at 5% hit points.",
+    "rulesHtml": "<p>You create a soulstone that lasts until used. When its bearer is reduced to dying or dead status, that creature may consume the stone to return to life automatically with hit points equal to 5% of its normal total.</p><p>The material components are a precious onyx worth 10,000 gp and one soul shard. Casting costs 1,500 XP.</p>",
+    "manualBoundary": "Create and transfer the one-use stone, track its bearer, and resolve death, consumption, restored hit points, XP, and material costs manually."
+  },
+  "Spiritual Projection": {
+    "summary": "Project willing travelers through the Twisting Nether while their vulnerable bodies remain suspended on Azeroth.",
+    "rulesHtml": "<p>You and up to one additional willing touched creature per two caster levels must form a linked circle while casting. Your incorporeal spirits, including copies of worn and carried equipment, enter the Twisting Nether while your physical bodies remain on Azeroth in suspended animation. Companions depend on you and must travel with you, except that any traveler may return to its body at any time. If you become unable to lead them, companions left behind are stranded until they can return.</p><p>From the Nether, a traveler may reach another connected plane and form a new physical body and equipment there. Each day, every projected creature makes a Will save with DC equal to the number of days spent under the spell; failure immediately returns it to its original body. A projected form that is slain also returns immediately, then makes a Fortitude save against DC 10 + days projected; failure deals damage to the physical body equal to half its maximum hit points. Destroying the original body kills both forms.</p><p>The journey may continue indefinitely. It ends for a traveler who returns voluntarily, whose projection or physical body is successfully dispelled, or whose physical body is destroyed. The material components are a jacinth worth at least 1,000 gp plus a silver bar worth 5 gp for every affected creature.</p>",
+    "manualBoundary": "The GM must represent projected forms and duplicate equipment, track bodies on another plane, daily saves, planar travel, dispels, damage, separation, and return."
+  },
+  "Starfall": {
+    "summary": "While concentrating, launch two separate 10d6 force missiles each round at creatures, objects, or structures.",
+    "rulesHtml": "<p>For each round you concentrate, choose two creatures, objects, or structures and strike each with one missile for 10d6 force damage; a Reflex save halves a missile's damage. You may choose new targets or repeat targets in later rounds, but the same target cannot receive both missiles in one round. Concentration may continue for up to one round per caster level.</p>",
+    "manualBoundary": "Choose both targets and resolve their separate saves and damage each concentration round manually; the spell does not schedule missiles."
+  },
+  "Stasis Trap": {
+    "summary": "Plant a delayed invisible totem that explodes when an enemy approaches and dazes nearby enemies.",
+    "rulesHtml": "<p>Plant a visible totem. After 1d4 rounds it becomes invisible and active. During the following one round per caster level, the first enemy to come within 10 feet triggers it. The totem explodes; every enemy in a 20-foot-radius burst must succeed on a Will save or become dazed for 1d4 rounds. Spell resistance applies.</p><p>The totem has AC 7, hardness 5, and 5 hit points. Destroying it before it triggers ends the spell.</p>",
+    "manualBoundary": "Place the totem and track its visible delay, invisibility, activation window, proximity trigger, burst, defenses, saves, and daze duration manually."
+  },
+  "Storm Hammer": {
+    "summary": "Hurl a force hammer for scaling damage and daze a damaged target for one round unless it saves.",
+    "rulesHtml": "<p>Make a ranged touch attack. On a hit, the hammer deals 2d6 force damage, plus 2d6 for every three caster levels beyond 3rd; the printed spell states a maximum of 8d6 at caster level 10. A creature that takes damage is dazed for 1 round unless it succeeds on a Fortitude save. The save negates only the daze, not the damage.</p><p>The material component is a tiny metal hammer. The printed component line also includes a focus, but the spell gives no separate focus description.</p>",
+    "manualBoundary": "Resolve the touch attack, printed scaling, spell resistance, damage, and Fortitude save manually; apply dazed only if damage was dealt."
+  },
+  "Summon Undead I": {
+    "summary": "Despoil one suitable corpse to raise a temporary 1st-tier zombie under your control.",
+    "rulesHtml": "<p>Transform one corpse into an eligible undead that appears where designated and acts immediately on your turn. It attacks your enemies to the best of its ability; if you can communicate with it, you may order different targets, restraint, or other actions.</p><p>The 1st-level list allows a zombie made from a humanoid or monstrous humanoid corpse with 1 base Hit Die or fewer. Class Hit Dice do not count for this limit.</p><p>This temporary undead does not count against your undead-control limit and cannot be used for <em>death pact</em> or a similar effect. It cannot summon or conjure creatures or use teleportation or planar travel, and it cannot appear in an environment unable to support it. At the end of the duration it collapses into unusable remains, or vanishes if incorporeal; those remains cannot fuel another summoning, <em>animate dead</em>, <em>create undead</em>, or similar magic. Casting despoils the original corpse. The corpse is the material component.</p>",
+    "manualBoundary": "The GM must validate and consume the corpse, create and control the temporary undead, enforce its prohibited abilities, and remove it and its unusable remains when the spell ends."
+  },
+  "Summon Undead II": {
+    "summary": "Raise one 2nd-tier zombie or 1d3 1st-tier zombies from suitable corpses.",
+    "rulesHtml": "<p>Choose one creature from the 2nd-level list or 1d3 creatures of the same kind from the 1st-level list; every summoned creature requires its own corpse. The 2nd-level list allows a zombie made from a humanoid or monstrous humanoid corpse with 2 base Hit Dice. The 1st-level option uses such a corpse with 1 base Hit Die or fewer. Class Hit Dice do not count for either zombie limit.</p><p>Each undead appears where designated, acts immediately on your turn, attacks your enemies, and accepts other directions if you can communicate. It does not count against your undead-control limit and cannot fuel <em>death pact</em> or similar effects. It cannot summon, conjure, teleport, or travel between planes and must be placed in a supporting environment. When the duration ends, it collapses or vanishes; neither it nor the despoiled corpse can be reused for undead creation or summoning.</p>",
+    "manualBoundary": "Roll the quantity, validate and consume every corpse, create and control the temporary undead, enforce restrictions, and remove all summons and unusable remains manually.",
+    "headerOverride": { "Components": "V, S, M", "Casting Time": "1 round", "Range": "Close (25 ft. + 5 ft./2 levels)", "Duration": "1 round/level (D)", "Saving Throw": "None", "Spell Resistance": "No" }
+  },
+  "Summon Undead III": {
+    "summary": "Raise one 3rd-tier undead, 1d3 2nd-tier zombies, or 1d4+1 1st-tier zombies from suitable corpses.",
+    "rulesHtml": "<p>Choose one creature from the 3rd-level list, 1d3 creatures of the same kind from the 2nd-level list, or 1d4+1 creatures of the same kind from the 1st-level list. One corpse is required per creature.</p><p>The 3rd-level list allows: forsaken from a humanoid of CR 2 or lower; ghoul, skeletal warrior, or wraith from a humanoid or monstrous humanoid of CR 2 or lower; skeletal mage from a humanoid of CR 1 or lower; withered from an aberration, animal, dragon, fey, magical beast, plant, or other monstrous creature of CR 2 or lower; or zombie from a humanoid or monstrous humanoid with 4 or 5 base Hit Dice. The lower zombie lists require 2 base Hit Dice or 1 base Hit Die or fewer. Class Hit Dice do not count for zombie limits.</p><p>Summons act immediately on your turn and obey communicated directions. They do not count against your control limit, cannot fuel <em>death pact</em>, summon or conjure, teleport, or travel between planes, and require a supporting environment. At the end, they collapse or vanish and leave remains unusable for further undead magic; every source corpse is despoiled.</p>",
+    "manualBoundary": "Roll the quantity, validate and consume every corpse, create and control each temporary undead, enforce restrictions, and remove all summons and unusable remains manually.",
+    "headerOverride": { "Components": "V, S, M", "Casting Time": "1 round", "Range": "Close (25 ft. + 5 ft./2 levels)", "Duration": "1 round/level (D)", "Saving Throw": "None", "Spell Resistance": "No" }
+  },
+  "Summon Undead IV": {
+    "summary": "Raise one 4th-tier undead, 1d3 3rd-tier undead of one kind, or 1d4+1 lower-tier undead.",
+    "rulesHtml": "<p>Choose one creature from the 4th-level list, 1d3 creatures of the same kind from the 3rd-level list, or 1d4+1 creatures of the same kind using any combination of lower-level lists. One suitable corpse is required per creature.</p><p>The 4th-level list allows: banshee or shade from a humanoid of CR 1 or lower; forsaken from a humanoid of CR 3; ghoul, skeletal warrior, or wraith from a humanoid or monstrous humanoid of CR 3; skeletal mage from a humanoid of CR 2; withered from an aberration, animal, dragon, fey, magical beast, plant, or other monstrous creature of CR 3; or zombie from a humanoid or monstrous humanoid with 6 or 7 base Hit Dice. Class Hit Dice do not count for zombie limits.</p><p>Summons act immediately on your turn and obey communicated directions. They do not count against your control limit, cannot fuel <em>death pact</em>, summon or conjure, teleport, or travel between planes, and require a supporting environment. At the end, they collapse or vanish and leave remains unusable for further undead magic; every source corpse is despoiled.</p>",
+    "manualBoundary": "Roll the quantity, choose valid lower tiers, validate and consume every corpse, create and control each temporary undead, and remove all summons and unusable remains manually.",
+    "headerOverride": { "Components": "V, S, M", "Casting Time": "1 round", "Range": "Close (25 ft. + 5 ft./2 levels)", "Duration": "1 round/level (D)", "Saving Throw": "None", "Spell Resistance": "No" }
+  },
+  "Summon Undead V": {
+    "summary": "Raise one 5th-tier undead, 1d3 4th-tier undead of one kind, or 1d4+1 lower-tier undead.",
+    "rulesHtml": "<p>Choose one creature from the 5th-level list, 1d3 creatures of the same kind from the 4th-level list, or 1d4+1 creatures of the same kind using any combination of lower-level lists. One suitable corpse is required per creature.</p><p>The 5th-level list allows: banshee or shade from a humanoid of CR 2; crypt fiend from a nerubian of CR 4 or lower; forsaken from a humanoid of CR 4; ghoul, skeletal warrior, or wraith from a humanoid or monstrous humanoid of CR 4; skeletal mage from a humanoid of CR 3; withered from an aberration, animal, dragon, fey, magical beast, plant, or other monstrous creature of CR 4; zombie from a humanoid or monstrous humanoid with 8 base Hit Dice; or ghost from an aberration, animal, giant, humanoid, magical beast, monstrous humanoid, or plant of Charisma 6+ and CR 1 or lower. A summoned ghost has malevolence, horrific appearance, and corrupting gaze. Class Hit Dice do not count for zombie limits.</p><p>Summons act immediately on your turn and obey communicated directions. They do not count against your control limit, cannot fuel <em>death pact</em>, summon or conjure, teleport, or travel between planes, and require a supporting environment. At the end, they collapse or vanish and leave remains unusable for further undead magic; every source corpse is despoiled.</p>",
+    "manualBoundary": "Roll the quantity, choose valid lower tiers, validate and consume every corpse, create and control each temporary undead, and remove all summons and unusable remains manually.",
+    "headerOverride": { "Components": "V, S, M", "Casting Time": "1 round", "Range": "Close (25 ft. + 5 ft./2 levels)", "Duration": "1 round/level (D)", "Saving Throw": "None", "Spell Resistance": "No" }
+  },
+  "Summon Undead VI": {
+    "summary": "Raise one 6th-tier undead, 1d3 5th-tier undead of one kind, or 1d4+1 lower-tier undead.",
+    "rulesHtml": "<p>Choose one creature from the 6th-level list, 1d3 creatures of the same kind from the 5th-level list, or 1d4+1 creatures of the same kind using any combination of lower-level lists. One suitable corpse is required per creature.</p><p>The 6th-level list allows: banshee or shade from a humanoid of CR 3 or 4; crypt fiend from a nerubian of CR 5 or 6; forsaken from a humanoid of CR 5 or 6; ghoul, skeletal warrior, or wraith from a humanoid or monstrous humanoid of CR 5 or 6; skeletal mage from a humanoid of CR 4 or 5; withered from an aberration, animal, dragon, fey, magical beast, plant, or other monstrous creature of CR 5 or 6; zombie from a humanoid or monstrous humanoid with 9 or 10 base Hit Dice; or ghost from an aberration, animal, giant, humanoid, magical beast, monstrous humanoid, or plant of Charisma 6+ and CR 2 or 3. A summoned ghost has malevolence, horrific appearance, and corrupting gaze. Class Hit Dice do not count for zombie limits.</p><p>Summons act immediately on your turn and obey communicated directions. They do not count against your control limit, cannot fuel <em>death pact</em>, summon or conjure, teleport, or travel between planes, and require a supporting environment. At the end, they collapse or vanish and leave remains unusable for further undead magic; every source corpse is despoiled.</p>",
+    "manualBoundary": "Roll the quantity, choose valid lower tiers, validate and consume every corpse, create and control each temporary undead, and remove all summons and unusable remains manually.",
+    "headerOverride": { "Components": "V, S, M", "Casting Time": "1 round", "Range": "Close (25 ft. + 5 ft./2 levels)", "Duration": "1 round/level (D)", "Saving Throw": "None", "Spell Resistance": "No" }
+  },
+  "Summon Undead VII": {
+    "summary": "Raise one 7th-tier undead, 1d3 6th-tier undead of one kind, or 1d4+1 lower-tier undead.",
+    "rulesHtml": "<p>Choose one creature from the 7th-level list, 1d3 creatures of the same kind from the 6th-level list, or 1d4+1 creatures of the same kind using any combination of lower-level lists. One suitable corpse is required per creature.</p><p>The 7th-level list allows: banshee, shade, or ghost from a humanoid of CR 5 for banshee, CR 5 for shade, or an eligible Charisma 6+ creature of CR 4 for ghost; crypt fiend from a nerubian of CR 7 or 8; forsaken from a humanoid of CR 7 or 8; ghoul or wraith from a humanoid or monstrous humanoid of CR 7; skeletal mage from a humanoid of CR 6 or 7; skeletal warrior from a humanoid or monstrous humanoid of CR 7 or 8; or withered from an aberration, animal, dragon, fey, magical beast, plant, or other monstrous creature of CR 7. Eligible ghost base types are aberration, animal, giant, humanoid, magical beast, monstrous humanoid, or plant; a summoned ghost has malevolence, horrific appearance, and corrupting gaze.</p><p>Summons act immediately on your turn and obey communicated directions. They do not count against your control limit, cannot fuel <em>death pact</em>, summon or conjure, teleport, or travel between planes, and require a supporting environment. At the end, they collapse or vanish and leave remains unusable for further undead magic; every source corpse is despoiled.</p>",
+    "manualBoundary": "Roll the quantity, choose valid lower tiers, validate and consume every corpse, create and control each temporary undead, and remove all summons and unusable remains manually.",
+    "headerOverride": { "Components": "V, S, M", "Casting Time": "1 round", "Range": "Close (25 ft. + 5 ft./2 levels)", "Duration": "1 round/level (D)", "Saving Throw": "None", "Spell Resistance": "No" }
+  },
+  "Summon Undead VIII": {
+    "summary": "Raise one 8th-tier undead, 1d3 7th-tier undead of one kind, or 1d4+1 lower-tier undead.",
+    "rulesHtml": "<p>Choose one creature from the 8th-level list, 1d3 creatures of the same kind from the 7th-level list, or 1d4+1 creatures of the same kind using any combination of lower-level lists. One suitable corpse is required per creature.</p><p>The 8th-level list allows: banshee or shade from a humanoid of CR 6 or 7; crypt fiend from a nerubian of CR 9 or 10; forsaken from a humanoid of CR 9 or 10; ghoul, skeletal warrior, or wraith from a humanoid or monstrous humanoid of CR 8 or 9 for ghoul and wraith, or CR 9 or 10 for skeletal warrior; skeletal mage from a humanoid of CR 8 or 9; withered from an aberration, animal, dragon, fey, magical beast, plant, or other monstrous creature of CR 8 or 9; or ghost from an aberration, animal, giant, humanoid, magical beast, monstrous humanoid, or plant of Charisma 6+ and CR 5 or 6. A summoned ghost has malevolence, horrific appearance, and corrupting gaze.</p><p>Summons act immediately on your turn and obey communicated directions. They do not count against your control limit, cannot fuel <em>death pact</em>, summon or conjure, teleport, or travel between planes, and require a supporting environment. At the end, they collapse or vanish and leave remains unusable for further undead magic; every source corpse is despoiled.</p>",
+    "manualBoundary": "Roll the quantity, choose valid lower tiers, validate and consume every corpse, create and control each temporary undead, and remove all summons and unusable remains manually.",
+    "headerOverride": { "Components": "V, S, M", "Casting Time": "1 round", "Range": "Close (25 ft. + 5 ft./2 levels)", "Duration": "1 round/level (D)", "Saving Throw": "None", "Spell Resistance": "No" }
+  },
+  "Summon Undead IX": {
+    "summary": "Raise one 9th-tier undead, 1d3 8th-tier undead of one kind, or 1d4+1 lower-tier undead.",
+    "rulesHtml": "<p>Choose one creature from the 9th-level list, 1d3 creatures of the same kind from the 8th-level list, or 1d4+1 creatures of the same kind using any combination of lower-level lists. One suitable corpse is required per creature.</p><p>The 9th-level list allows: banshee or shade from a humanoid of CR 8; crypt fiend from a nerubian of CR 11 or 12; forsaken from a humanoid of CR 11; ghoul or wraith from a humanoid or monstrous humanoid of CR 10; skeletal mage from a humanoid of CR 10; skeletal warrior from a humanoid or monstrous humanoid of CR 11; withered from an aberration, animal, dragon, fey, magical beast, plant, or other monstrous creature of CR 10; or ghost from an aberration, animal, giant, humanoid, magical beast, monstrous humanoid, or plant of Charisma 6+ and CR 7. A summoned ghost has malevolence, horrific appearance, and corrupting gaze.</p><p>Summons act immediately on your turn and obey communicated directions. They do not count against your control limit, cannot fuel <em>death pact</em>, summon or conjure, teleport, or travel between planes, and require a supporting environment. At the end, they collapse or vanish and leave remains unusable for further undead magic; every source corpse is despoiled.</p>",
+    "manualBoundary": "Roll the quantity, choose valid lower tiers, validate and consume every corpse, create and control each temporary undead, and remove all summons and unusable remains manually.",
+    "headerOverride": { "Components": "V, S, M", "Casting Time": "1 round", "Range": "Close (25 ft. + 5 ft./2 levels)", "Duration": "1 round/level (D)", "Saving Throw": "None", "Spell Resistance": "No" }
+  },
+  "Thorn Shield": {
+    "summary": "Melee attackers take 1d6 piercing damage +1 per caster level whenever they strike the warded creature.",
+    "rulesHtml": "<p>Whenever a creature strikes the subject in melee, the attack deals its normal damage and the attacker simultaneously takes 1d6 piercing damage +1 per caster level. An attacker's spell resistance applies to this retaliatory damage.</p>",
+    "manualBoundary": "Apply the retaliatory damage and spell-resistance check after every qualifying melee hit; no reactive automation is created."
+  },
+  "Thunderclap": {
+    "summary": "Damage creatures around you with sonic force and slow those that take damage for one round.",
+    "rulesHtml": "<p>Every creature other than you in the 20-foot-radius burst takes 1d8 sonic damage per three caster levels, maximum 5d8. A successful Fortitude save negates the effect. A creature that takes damage is also slowed, as though chilled, for 1 full round. Spell resistance applies.</p><p>The material component is a small silver hammer.</p>",
+    "manualBoundary": "Resolve saves, damage, spell resistance, and the one-round slowed condition manually."
+  },
+  "Touch of Life": {
+    "summary": "Restore an eligible dead creature to full life temporarily before it dies again when the spell ends.",
+    "rulesHtml": "<p>Touch a creature that died no more than one round per caster level ago. If its soul is free and willing, it returns immediately at full hit points, vigor, and health, without losing a level, Stamina, or spell slots. Normal poison and disease end, but magical disease and curses remain. Its body must be whole; missing parts remain missing. Equipment is unaffected.</p><p>You may restore a victim of a death effect or a creature that became undead and was then destroyed, but not a construct, elemental, outsider, currently undead creature, or creature dead from old age. When the spell ends, the subject dies immediately as though it had never returned. Time-since-death for later castings or permanent revival continues from the original death, even if the subject dies again during this spell. This temporary return does not prevent later permanent revival.</p><p>The material component is diamonds worth at least 5,000 gp.</p>",
+    "manualBoundary": "The GM must validate the body and soul, preserve the original death time, restore and later kill the actor, and track the material cost; Foundry does not automate temporary resurrection."
+  },
+  "Trueshot Aura": {
+    "summary": "Nearby allies gain +2 on ranged attacks and +4 ranged damage against targets within 30 feet.",
+    "rulesHtml": "<p>You and allies inside the 20-foot aura gain a +2 insight bonus on ranged attack rolls and a +4 insight bonus on ranged damage rolls, but only when the attack's target is within 30 feet of the attacker. A creature gains the bonuses only while it remains in the aura; entering later grants them and leaving removes them.</p>",
+    "manualBoundary": "Track aura membership and each ranged target's distance, then apply the insight bonuses manually."
+  },
+  "Greater Trueshot Aura": {
+    "summary": "Nearby allies gain +3 on ranged attacks and +6 ranged damage against targets within 30 feet.",
+    "rulesHtml": "<p>This functions as <em>trueshot aura</em>, but grants a +3 insight bonus on ranged attack rolls and a +6 insight bonus on ranged damage rolls. The target must be within 30 feet of the attacker, and a creature gains the bonuses only while inside the 20-foot aura.</p>",
+    "manualBoundary": "Track aura membership and each ranged target's distance, then apply the insight bonuses manually.",
+    "headerOverride": { "school": "Transmutation", "Components": "V, S, DF", "Casting Time": "1 standard action", "Range": "Personal", "Area": "20-ft.-radius emanation", "Duration": "1 round/level (D)", "Saving Throw": "None", "Spell Resistance": "Yes (harmless)" }
+  },
+  "Lesser Trueshot Aura": {
+    "summary": "Nearby allies gain +1 on ranged attacks and +2 ranged damage against targets within 30 feet.",
+    "rulesHtml": "<p>This functions as <em>trueshot aura</em>, but grants a +1 insight bonus on ranged attack rolls and a +2 insight bonus on ranged damage rolls. The target must be within 30 feet of the attacker, and a creature gains the bonuses only while inside the 20-foot aura.</p>",
+    "manualBoundary": "Track aura membership and each ranged target's distance, then apply the insight bonuses manually.",
+    "headerOverride": { "school": "Transmutation", "Components": "V, S, DF", "Casting Time": "1 standard action", "Range": "Personal", "Area": "20-ft.-radius emanation", "Duration": "1 round/level (D)", "Saving Throw": "None", "Spell Resistance": "Yes (harmless)" }
+  },
+  "Unholy Frenzy": {
+    "summary": "Grant an extra full-attack strike but deal 1d4 damage to the subject each round.",
+    "rulesHtml": "<p>On a failed Fortitude save, whenever the subject makes a full attack it gains one extra attack with a held weapon at its full base attack bonus and normal modifiers. This is not an extra action, cannot cast another spell or enable another action, and does not stack with similar extra-attack effects such as <em>bloodlust</em> or a speed weapon.</p><p>The subject takes 1d4 damage each round. One successful save negates the entire spell; the subject cannot accept the extra attack while saving against only the damage. <em>Cripple</em> counters and dispels this spell.</p>",
+    "manualBoundary": "Apply the conditional extra attack and recurring self-damage manually, and enforce non-stacking and the counterspell interaction."
+  },
+  "Vampiric Aura": {
+    "summary": "You and nearby allies turn melee damage to living creatures into temporary hit points.",
+    "rulesHtml": "<p>You and allies within the 20-foot aura gain 1 temporary hit point for every point of melee damage dealt to a living creature. From any one victim, an affected attacker cannot gain more temporary hit points than that victim's current hit points +10. These temporary hit points expire after 1 hour.</p><p>A creature gains this benefit only while inside the aura; entering later grants it and leaving removes access to further draining.</p><p>The material component is powdered dreadlord horn.</p>",
+    "manualBoundary": "Track aura membership, living targets, damage dealt to each victim, per-victim caps, and the one-hour temporary-hit-point expiry manually.",
+    "headerOverride": { "school": "Necromancy", "Components": "V, S, M", "Casting Time": "1 standard action", "Range": "Personal", "Effect": "20-ft.-radius emanation", "Duration": "1 round/2 levels", "Saving Throw": "Will negates (harmless)", "Spell Resistance": "Yes (harmless)" }
+  },
+  "War Drums": {
+    "summary": "You and allies within 50 feet gain +2 morale on damage rolls while they remain in the aura.",
+    "rulesHtml": "<p>You and every ally within the 50-foot aura gain a +2 morale bonus on damage rolls. A creature benefits only while within the aura; entering later grants the bonus and leaving removes it.</p>",
+    "manualBoundary": "Track aura membership and apply the morale damage bonus manually."
+  },
+  "Withering Blight": {
+    "summary": "Permanently blight vegetation and ground, spread an Intellect-damaging plague, and empower rebuking over turning.",
+    "rulesHtml": "<p>Normal vegetation in the 30-foot-radius area becomes diseased and stops producing seeds or fruit. Any living creature that touches blighted ground at any time during its turn must make a Fortitude save or contract blight plague; spell resistance applies to this infection. Turning checks made on the ground take a -2 profane penalty, while rebuke-undead checks gain a +2 profane bonus; spell resistance does not affect either modifier.</p><p>Blight plague is a supernatural disease with a 1-minute incubation period that deals 1d4 temporary Intellect damage. It does not end naturally: it continues until the victim reaches Intellect 0 or receives <em>remove disease</em> or similar magic. A humanoid reduced to Intellect 0 by it immediately becomes a zombie.</p><p>The printed component line includes a material component, but the spell gives no material description or cost.</p>",
+    "manualBoundary": "Mark the permanent terrain, test each turn's contact, track supernatural disease and Intellect damage, transform humanoids at 0, and adjust turning or rebuking checks manually."
+  }
+}

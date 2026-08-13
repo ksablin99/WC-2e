@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -34,7 +34,7 @@
           340
         ],
         "section": "Spiritual Projection",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -55,7 +55,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 30,
@@ -104,7 +104,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Projects you and companions</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>You and up to one additional willing touched creature per two caster levels must form a linked circle while casting. Your incorporeal spirits, including copies of worn and carried equipment, enter the Twisting Nether while your physical bodies remain on Azeroth in suspended animation. Companions depend on you and must travel with you, except that any traveler may return to its body at any time. If you become unable to lead them, companions left behind are stranded until they can return.</p><p>From the Nether, a traveler may reach another connected plane and form a new physical body and equipment there. Each day, every projected creature makes a Will save with DC equal to the number of days spent under the spell; failure immediately returns it to its original body. A projected form that is slain also returns immediately, then makes a Fortitude save against DC 10 + days projected; failure deals damage to the physical body equal to half its maximum hit points. Destroying the original body kills both forms.</p><p>The journey may continue indefinitely. It ends for a traveler who returns voluntarily, whose projection or physical body is successfully dispelled, or whose physical body is destroyed. The material components are a jacinth worth at least 1,000 gp plus a silver bar worth 5 gp for every affected creature.</p><p><strong>Automation boundary:</strong> The GM must represent projected forms and duplicate equipment, track bodies on another plane, daily saves, planar travel, dispels, damage, separation, and return.</p>"
     },
     "display": "Touch",
     "duration": {
@@ -219,10 +219,10 @@
       "type": ""
     },
     "school": "nec",
-    "shortDescription": "<p>Projects you and companions</p>",
+    "shortDescription": "<p>Project willing travelers through the Twisting Nether while their vulnerable bodies remain suspended on Azeroth.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Projects you and companions",
+    "snip": "Project willing travelers through the Twisting Nether while their vulnerable bodies remain suspended on Azeroth.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 265-268",
     "specialActions": [],
     "specialId": null,
@@ -265,7 +265,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "The GM must represent projected forms and duplicate equipment, track bodies on another plane, daily saves, planar travel, dispels, damage, separation, and return."
     }
   },
   "type": "spell"

@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           341
         ],
         "section": "Storm Hammer",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>You throw a magical hammer that</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>Make a ranged touch attack. On a hit, the hammer deals 2d6 force damage, plus 2d6 for every three caster levels beyond 3rd; the printed spell states a maximum of 8d6 at caster level 10. A creature that takes damage is dazed for 1 round unless it succeeds on a Fortitude save. The save negates only the daze, not the damage.</p><p>The material component is a tiny metal hammer. The printed component line also includes a focus, but the spell gives no separate focus description.</p><p><strong>Automation boundary:</strong> Resolve the touch attack, printed scaling, spell resistance, damage, and Fortitude save manually; apply dazed only if damage was dealt.</p>"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -213,10 +213,10 @@
       "type": ""
     },
     "school": "con",
-    "shortDescription": "<p>You throw a magical hammer that</p>",
+    "shortDescription": "<p>Hurl a force hammer for scaling damage and daze a damaged target for one round unless it saves.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "You throw a magical hammer that",
+    "snip": "Hurl a force hammer for scaling damage and daze a damaged target for one round unless it saves.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 263-263",
     "specialActions": [],
     "specialId": null,
@@ -259,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Resolve the touch attack, printed scaling, spell resistance, damage, and Fortitude save manually; apply dazed only if damage was dealt."
     }
   },
   "type": "spell"

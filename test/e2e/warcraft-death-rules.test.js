@@ -200,12 +200,19 @@ test("Warcraft constructs are destroyed at 0 HP and do not heal from rest", asyn
       },
     });
 
+    const hitPointsBeforeRest = game.actors.get(actor.id).system.attributes.hp.value;
+    const maximumHitPointsBeforeRest = game.actors.get(actor.id).system.attributes.hp.max;
     await actor.rest(true, false, false);
     const hitPointsAfterRest = game.actors.get(actor.id).system.attributes.hp.value;
     await actor.update({ "system.attributes.hp.value": 0 });
-    const conditions = game.actors.get(actor.id).system.attributes.conditions;
+    const updatedActor = game.actors.get(actor.id);
+    const conditions = updatedActor.system.attributes.conditions;
     return {
+      hitPointsBeforeRest,
+      maximumHitPointsBeforeRest,
       hitPointsAfterRest,
+      hitPointsAfterDamage: updatedActor.system.attributes.hp.value,
+      maximumHitPoints: updatedActor.system.attributes.hp.max,
       disabled: conditions.disabled,
       dying: conditions.dying,
       dead: conditions.dead,
@@ -213,7 +220,11 @@ test("Warcraft constructs are destroyed at 0 HP and do not heal from rest", asyn
   });
 
   expect(result).toEqual({
+    hitPointsBeforeRest: 1,
+    maximumHitPointsBeforeRest: 10,
     hitPointsAfterRest: 1,
+    hitPointsAfterDamage: 0,
+    maximumHitPoints: 30,
     disabled: false,
     dying: false,
     dead: true,

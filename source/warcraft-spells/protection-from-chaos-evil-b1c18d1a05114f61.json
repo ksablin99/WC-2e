@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           327
         ],
         "section": "Protection from Chaos/Evil",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -70,18 +70,18 @@
     "atWill": false,
     "autoscaleAttackParts": "",
     "baseCl": "0",
-    "castTime": "",
+    "castTime": "1 standard action",
     "changes": [],
     "classSource": "",
     "clOffset": 0,
     "combatChanges": [],
     "components": {
-      "divineFocus": 0,
+      "divineFocus": 1,
       "focus": false,
-      "material": false,
-      "somatic": false,
-      "value": "",
-      "verbal": false
+      "material": true,
+      "somatic": true,
+      "value": "V, S, M/DF",
+      "verbal": true
     },
     "conditionals": [],
     "container": "None",
@@ -102,9 +102,9 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>+2 to A</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>This paladin record represents separate chaos and evil versions. The subject gains +2 deflection AC and +2 resistance saves against creatures of the selected alignment. Existing possession and ongoing charm or compulsion control are suppressed, but resume if their own durations outlast this ward.</p><p>Summoned creatures of the selected alignment cannot touch the subject with natural attacks and recoil from contact. This barrier ends against a blocked creature if the subject attacks it or forces the barrier against it; that creature may also overcome the contact protection with spell resistance. The mental-control protection works regardless of alignment. The arcane version uses powdered silver to trace a 3-foot circle.</p><p><strong>Automation boundary:</strong> Choose one alignment version and apply conditional defenses, suppressed control, summoned-creature contact, and spell resistance manually.</p>"
     },
-    "display": "",
+    "display": "Touch",
     "duration": {
       "units": "",
       "value": null
@@ -187,7 +187,7 @@
     "psionic": "",
     "range": {
       "long": null,
-      "units": "medium",
+      "units": "touch",
       "value": null
     },
     "recharge": {
@@ -208,38 +208,37 @@
       "dc": "0",
       "dcAutoAbility": "",
       "dcAutoType": "",
-      "description": "None",
+      "description": "Will negates (harmless)",
       "originVersion": 97,
-      "type": ""
+      "type": "willnegates"
     },
     "school": "abj",
-    "shortDescription": "<p>+2 to A</p>",
+    "shortDescription": "<p>Choose chaos or evil: gain defensive bonuses, suppress mental control, and repel opposed summoned creatures.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "+2 to A",
+    "snip": "Choose chaos or evil: gain defensive bonuses, suppress mental control, and repel opposed summoned creatures.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 274-274",
     "specialActions": [],
     "specialId": null,
     "specialPrepared": false,
     "spellArea": "",
     "spellbook": "primary",
-    "spellDuration": "Instantaneous",
+    "spellDuration": "1 min./level (D)",
     "spellDurationData": {
-      "dismissable": false,
-      "units": "inst",
-      "value": ""
+      "units": "minutePerLevel",
+      "value": 1
     },
     "spellEffect": "",
     "spellType": {
       "_deprecated": true,
       "value": ""
     },
-    "sr": true,
+    "sr": false,
     "subschool": "",
     "summon": [],
     "tags": [],
     "target": {
-      "value": "up to five creatures, no two of which can be more than 15 ft. apart"
+      "value": "Creature touched"
     },
     "types": "lawful",
     "uniqueId": "",
@@ -260,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Choose one alignment version and apply conditional defenses, suppressed control, summoned-creature contact, and spell resistance manually."
     }
   },
   "type": "spell"

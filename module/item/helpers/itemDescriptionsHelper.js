@@ -77,7 +77,7 @@ export class ItemDescriptionsHelper {
         ui.notifications.error(
           game.i18n.format("DICE.WarnAttackRollIncorrect", {
             name: item.name,
-            roll: `${bab} + ${attackBonus} + ${abilityBonus} + ${sizeBonus}`,
+            roll: roll?.formula ?? "",
           })
         );
         return 0;
@@ -106,12 +106,10 @@ export class ItemDescriptionsHelper {
         if (d) {
           try {
             let roll = new Roll35e(d[0].replace("@useAmount", 1), rollData)
-            console.log('YYYY', roll);
             let parsedRoll = await roll.roll();
-            console.log('YYYYYYY', parsedRoll.formula);
             results.push(parsedRoll.formula);
           } catch (e) {
-            console.error('YYYYY', e);
+            console.error(`D35E | Failed to evaluate damage formula for ${item.name}: ${d[0]}`, e);
           }
         }
       }

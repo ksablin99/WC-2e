@@ -32,7 +32,7 @@
           294
         ],
         "section": "Detect Scrying",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -94,7 +94,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>You become aware of scrying</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;divination;\n    <br>\n    <strong>Level:</strong>&nbsp;Bard 4, Sorcerer 4, Wizard 4;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, M (a small piece of mirror and a miniature brass hearing trumpet)<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;40 feet<br>\n    <strong>Area:</strong>&nbsp;40-ft.-radius emanation centered on you\n<br>\n    \n    \n    <strong>Duration:</strong>&nbsp;0 undefined<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;7<br>\n        <strong>Saving Throw:</strong>&nbsp;None\n\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nYou immediately become aware of any attempt to observe you by means of a divination (scrying) spell or effect. The spell’s area radiates from you and moves as you move. You know the location of every magical sensor within the spell’s area.\n</p><p>If the scrying attempt originates within the area, you also know its location; otherwise, you and the scrier immediately make opposed caster level checks (1d20 + caster level). If you at least match the scrier’s result, you get a visual image of the scrier and an accurate sense of his or her direction and distance from you.\n</p><p><i>Material Component: </i>A small piece of mirror and a miniature brass hearing trumpet.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "40 ft.",
     "duration": {
@@ -204,10 +204,10 @@
       "type": ""
     },
     "school": "div",
-    "shortDescription": "<p>You become aware of scrying</p>",
+    "shortDescription": "\n\n\n<p>\nYou immediately become aware of any attempt to observe you by means of a divination (scrying) spell or effect. The spell’s area radiates from you and moves as you move. You know the location of every magical sensor within the spell’s area.\n</p><p>If the scrying attempt originates within the area, you also know its location; otherwise, you and the scrier immediately make opposed caster level checks (1d20 + caster level). If you at least match the scrier’s result, you get a visual image of the scrier and an accurate sense of his or her direction and distance from you.\n</p><p><i>Material Component: </i>A small piece of mirror and a miniature brass hearing trumpet.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "You become aware of scrying",
+    "snip": "Alerts you of magical eavesdropping.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 263-263",
     "specialActions": [
       {

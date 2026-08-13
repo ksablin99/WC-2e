@@ -16,9 +16,13 @@ if (existsSync(envFile)) {
 
 const DATA_DIR = process.env.E2E_DATA_DIR ?? join(tmpdir(), 'foundry-e2e');
 const PORT     = process.env.E2E_PORT ?? '30001';
+const BROWSER_EXECUTABLE = process.env.E2E_BROWSER_PATH;
+const TEST_SCREEN = { width: 1600, height: 1000 };
+const SERVER_STDOUT = process.env.E2E_SERVER_STDOUT === 'ignore' ? 'ignore' : 'pipe';
 // E2E_FOUNDRY_PATH is written by e2e:setup (auto-discovered). Falls back to
 // auto-discovery via foundry-version.js (respects .foundry-version / FOUNDRY_VERSION).
 const { resolveFoundry } = require('./scripts/foundry-version');
+const { buildFoundryWebServerCommand } = require('./scripts/foundry-command');
 const FOUNDRY  = process.env.E2E_FOUNDRY_PATH ?? resolveFoundry(__dirname).mainJsPath;
 
 module.exports = defineConfig({
@@ -26,19 +30,18 @@ module.exports = defineConfig({
   // reuseExistingServer: true locally means you can keep Foundry running between
   // runs for speed; CI always gets a fresh instance.
   webServer: {
-    command: [
-      'node', FOUNDRY,
-      `--dataPath=${DATA_DIR}`,
-      '--world=test-world',
-      `--port=${PORT}`,
-      '--noupdate',
-    ].join(' '),
+    command: buildFoundryWebServerCommand({
+      nodePath: process.execPath,
+      foundryPath: FOUNDRY,
+      dataDir: DATA_DIR,
+      port: PORT,
+    }),
     url:                 `http://localhost:${PORT}/join`,
     // Set E2E_REUSE_SERVER=1 to skip starting Foundry and reuse a running instance
     // (e.g. when you already have pm2 running it for manual testing).
     reuseExistingServer: process.env.E2E_REUSE_SERVER === '1',
     timeout:             90_000,
-    stdout:              'pipe',
+    stdout:              SERVER_STDOUT,
     stderr:              'pipe',
   },
 
@@ -49,6 +52,9 @@ module.exports = defineConfig({
   use: {
     baseURL:      `http://localhost:${PORT}`,
     storageState: join(DATA_DIR, '.auth.json'),
+    viewport:     TEST_SCREEN,
+    screen:       TEST_SCREEN,
+    launchOptions: BROWSER_EXECUTABLE ? { executablePath: BROWSER_EXECUTABLE } : {},
     // Run with --headed or PWHEADED=1 to watch tests in a visible browser.
     headless: process.env.PWHEADED !== '1',
   },

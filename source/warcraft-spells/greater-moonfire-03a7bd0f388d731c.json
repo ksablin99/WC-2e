@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           321
         ],
         "section": "Greater Moonfire",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>As moonfire; 3d8 damage +2/</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>This functions as <em>moonfire</em>, but the target immediately takes 3d8 damage +2 per caster level, maximum +16. On a failed Fortitude save, it also takes 6 damage at the start of each round for a number of rounds equal to your caster level, maximum 10 rounds. The save does not reduce the initial damage.</p><p>The material component is a pebble soaked in moonwell water.</p><p><strong>Automation boundary:</strong> Roll the initial damage and track the failed-save damage pulses manually; the spell does not schedule later damage.</p>"
     },
     "display": "90 feet",
     "duration": {
@@ -187,8 +187,8 @@
     "psionic": "",
     "range": {
       "long": null,
-      "units": "spec",
-      "value": null
+      "units": "ft",
+      "value": 90
     },
     "recharge": {
       "current": 0,
@@ -208,15 +208,15 @@
       "dc": "0",
       "dcAutoAbility": "",
       "dcAutoType": "",
-      "description": "None",
+      "description": "Fortitude (see text)",
       "originVersion": 97,
       "type": ""
     },
     "school": "evo",
-    "shortDescription": "<p>As moonfire; 3d8 damage +2/</p>",
+    "shortDescription": "<p>Deal heavy lunar damage and, on a failed Fortitude save, 6 continuing damage for up to ten rounds.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "As moonfire; 3d8 damage +2/",
+    "snip": "Deal heavy lunar damage and, on a failed Fortitude save, 6 continuing damage for up to ten rounds.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 269-269",
     "specialActions": [],
     "specialId": null,
@@ -226,7 +226,7 @@
     "spellDuration": "Special (see below)",
     "spellDurationData": {
       "units": "spec",
-      "value": 1
+      "value": null
     },
     "spellEffect": "",
     "spellType": {
@@ -259,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Roll the initial damage and track the failed-save damage pulses manually; the spell does not schedule later damage."
     }
   },
   "type": "spell"

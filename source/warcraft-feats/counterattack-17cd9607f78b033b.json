@@ -19,7 +19,12 @@
         "category": "General",
         "prerequisite": "Agy 13, Dodge.",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "Once per round, when the opponent currently designated for your Dodge feat misses you with a melee attack or melee touch attack, you may make an attack of opportunity against it at a -4 penalty. Resolve and apply the two attacks simultaneously. This counterattack uses your normal capacity to make an attack of opportunity; Combat Reflexes does not grant extra Counterattack uses.",
+          "manual": "Track the current Dodge target, the once-per-round trigger, the -4 attack penalty, and attack-of-opportunity availability manually.",
+          "summary": "Answer a missed melee attack from your Dodge target with an immediate strike."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": true
       },
@@ -33,7 +38,7 @@
           144
         ],
         "section": "Counterattack",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +153,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p><strong>Prerequisites:</strong> Agy 13, Dodge.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 144) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Prerequisites:</strong> Agy 13, Dodge.</p><p><strong>Summary:</strong> Answer a missed melee attack from your Dodge target with an immediate strike.</p><p><strong>Benefit:</strong> Once per round, when the opponent currently designated for your Dodge feat misses you with a melee attack or melee touch attack, you may make an attack of opportunity against it at a -4 penalty. Resolve and apply the two attacks simultaneously. This counterattack uses your normal capacity to make an attack of opportunity; Combat Reflexes does not grant extra Counterattack uses.</p><p><strong>Warrior bonus feat:</strong> Yes</p><p><strong>Foundry and GM handling:</strong> Track the current Dodge target, the once-per-round trigger, the -4 attack penalty, and attack-of-opportunity availability manually.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +253,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat; requires Agy 13, Dodge..</p>",
+    "shortDescription": "<p>Answer a missed melee attack from your Dodge target with an immediate strike.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 144",

@@ -34,7 +34,7 @@
           286
         ],
         "section": "Commune with Nature",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -103,7 +103,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>You learn about terrain for</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;divination;\n    <br>\n    <strong>Level:</strong>&nbsp;Druid 5, Ranger 4;\n    <strong>Domain:</strong>&nbsp;Animal 5;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;10 minutes<br>\n    <strong>Range:</strong>&nbsp;personal<br>\n    \n    <strong>Target:</strong>&nbsp;you<br>\n    \n    <strong>Duration:</strong>&nbsp;Instantaneous<br>\n    \n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nYou become one with nature, attaining knowledge of the surrounding territory. You instantly gain knowledge of as many as three facts from among the following subjects: the ground or terrain, plants, minerals, bodies of water, people, general animal population, presence of woodland creatures, presence of powerful unnatural creatures, or even the general state of the natural setting.\n</p><p>In outdoor settings, the spell operates in a radius of 1 mile per caster level. In natural underground settings—caves, caverns, and the like—the radius is limited to 100 feet per caster level. The spell does not function where nature has been replaced by construction or settlement, such as in dungeons and towns.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Personal",
     "duration": {
@@ -217,10 +217,10 @@
       "type": ""
     },
     "school": "div",
-    "shortDescription": "<p>You learn about terrain for</p>",
+    "shortDescription": "\n\n\n<p>\nYou become one with nature, attaining knowledge of the surrounding territory. You instantly gain knowledge of as many as three facts from among the following subjects: the ground or terrain, plants, minerals, bodies of water, people, general animal population, presence of woodland creatures, presence of powerful unnatural creatures, or even the general state of the natural setting.\n</p><p>In outdoor settings, the spell operates in a radius of 1 mile per caster level. In natural underground settings—caves, caverns, and the like—the radius is limited to 100 feet per caster level. The spell does not function where nature has been replaced by construction or settlement, such as in dungeons and towns.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "You learn about terrain for",
+    "snip": "Learn about terrain for 1 mile/level.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 269-270",
     "specialActions": [],
     "specialId": null,

@@ -108,7 +108,7 @@ test('clicking attack icon on sheet produces a chat roll', async ({ page }) => {
   // Verify the message contains D35E attack data
   const result = await page.evaluate(() => {
     const msg     = game.messages.contents.at(-1);
-    const attacks = msg?.flags?.D35E?.chatTemplateData?.attacks ?? [];
+    const attacks = msg?.flags?.warcraftrpg2e?.chatTemplateData?.attacks ?? [];
     return {
       attackCount:      attacks.length,
       firstAttackTotal: attacks[0]?.attack?.total ?? null,
@@ -358,7 +358,7 @@ async function createFighterWithLongswordAndFeat(page, featId) {
 async function getLastChatAttackSummary(page) {
   return page.evaluate(() => {
     const msg = game.messages.contents.at(-1);
-    const attacks = msg?.flags?.D35E?.chatTemplateData?.attacks ?? [];
+    const attacks = msg?.flags?.warcraftrpg2e?.chatTemplateData?.attacks ?? [];
     return {
       firstAttackTotal: attacks[0]?.attack?.total ?? null,
       attackDamageTotals: attacks.map((attack) => attack.damage?.total ?? null),
@@ -423,7 +423,7 @@ test('attack dialog: Power Attack slider reduces attack bonus', async ({ page })
 
   const firstAttackTotal = await page.evaluate(() => {
     const msg = game.messages.contents.at(-1);
-    return msg?.flags?.D35E?.chatTemplateData?.attacks?.[0]?.attack?.total ?? null;
+    return msg?.flags?.warcraftrpg2e?.chatTemplateData?.attacks?.[0]?.attack?.total ?? null;
   });
 
   // With PA 5: 1d20 + 3 → [4, 23]
@@ -464,7 +464,7 @@ test('attack dialog: Flanking checkbox increases attack bonus', async ({ page })
 
   const firstAttackTotal = await page.evaluate(() => {
     const msg = game.messages.contents.at(-1);
-    return msg?.flags?.D35E?.chatTemplateData?.attacks?.[0]?.attack?.total ?? null;
+    return msg?.flags?.warcraftrpg2e?.chatTemplateData?.attacks?.[0]?.attack?.total ?? null;
   });
 
   // With Flanking +2: 1d20 + 10 → [11, 30]

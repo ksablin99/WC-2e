@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -34,7 +34,7 @@
           353
         ],
         "section": "Trueshot Aura",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -55,11 +55,11 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
-      "type": "special"
+      "type": "standard"
     },
     "addedLevel": 0,
     "attack": {
@@ -104,7 +104,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Allies gain +2 bonus on</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>You and allies inside the 20-foot aura gain a +2 insight bonus on ranged attack rolls and a +4 insight bonus on ranged damage rolls, but only when the attack's target is within 30 feet of the attacker. A creature gains the bonuses only while it remains in the aura; entering later grants them and leaving removes them.</p><p><strong>Automation boundary:</strong> Track aura membership and each ranged target's distance, then apply the insight bonuses manually.</p>"
     },
     "display": "Personal",
     "duration": {
@@ -220,10 +220,10 @@
       "type": ""
     },
     "school": "trs",
-    "shortDescription": "<p>Allies gain +2 bonus on</p>",
+    "shortDescription": "<p>Nearby allies gain +2 on ranged attacks and +4 ranged damage against targets within 30 feet.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Allies gain +2 bonus on",
+    "snip": "Nearby allies gain +2 on ranged attacks and +4 ranged damage against targets within 30 feet.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 270-273",
     "specialActions": [],
     "specialId": null,
@@ -266,7 +266,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Track aura membership and each ranged target's distance, then apply the insight bonuses manually."
     }
   },
   "type": "spell"

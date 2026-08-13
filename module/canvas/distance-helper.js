@@ -21,28 +21,28 @@ export class DistanceHelper {
       token.x - distance, //  x coord top left
       token.y - distance, //  y coord top left
       token.w + (2 * distance), // width of token + 2 squares
-      token.w + (2 * distance) // height of token + 2 squares
+      token.h + (2 * distance) // height of token + 2 squares
     );
 
     const originalSquare = new PIXI.Rectangle(
       token.x - originalDistance, //  x coord top left
       token.y - originalDistance, //  y coord top left
       token.w + (2 * originalDistance), // width of token + 2 squares
-      token.w + (2 * originalDistance) // height of token + 2 squares
+      token.h + (2 * originalDistance) // height of token + 2 squares
     );
 
     const originalMinSquare = new PIXI.Rectangle(
       token.x - originalMinDistance, //  x coord top left
       token.y - originalMinDistance, //  y coord top left
       token.w + (2 * originalMinDistance), // width of token + 2 squares
-      token.w + (2 * originalMinDistance) // height of token + 2 squares
+      token.h + (2 * originalMinDistance) // height of token + 2 squares
     );
 
     const minSquare = new PIXI.Rectangle(
       token.x - minDistance, //  x coord top left
       token.y - minDistance, //  y coord top left
       token.w + (2 * minDistance), // width of token + 2 squares
-      token.w + (2 * minDistance) // height of token + 2 squares
+      token.h + (2 * minDistance) // height of token + 2 squares
     );
 
     const debugOverlay = game.settings.get("warcraftrpg2e", "debug-distance-overlay");
@@ -63,7 +63,7 @@ export class DistanceHelper {
         token.x - expandedDistance, //  x coord top left
         token.y - expandedDistance, //  y coord top left
         token.w + (2 * expandedDistance), // width of token + 2 squares
-        token.w + (2 * expandedDistance) // height of token + 2 squares
+        token.h + (2 * expandedDistance) // height of token + 2 squares
       );
       let expandedTokens = canvas.tokens.placeables.filter(
         e => expandedSquare.contains(e.center.x, e.center.y) && e.id !==

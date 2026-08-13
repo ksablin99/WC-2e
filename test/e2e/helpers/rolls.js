@@ -21,7 +21,7 @@ const { dismissOverlays } = require('../helpers');
  * @param {import('@playwright/test').Page} page
  * @param {string} actorId
  * @param {'fort'|'ref'|'will'} saveType
- * @returns {Promise<object|null>} flags.D35E.chatTemplateData from the new message
+ * @returns {Promise<object|null>} flags.warcraftrpg2e.chatTemplateData from the new message
  */
 async function rollSavingThrowViaDialog(page, actorId, saveType) {
   await dismissOverlays(page);
@@ -83,7 +83,7 @@ async function rollSavingThrowViaDialog(page, actorId, saveType) {
 
   return page.evaluate(() => {
     const msg = game.messages.contents.at(-1);
-    return msg?.flags?.D35E?.chatTemplateData ?? null;
+    return msg?.flags?.warcraftrpg2e?.chatTemplateData ?? null;
   });
 }
 
@@ -171,7 +171,7 @@ async function rollSavingThrowViaDialogWithStBonus(page, actorId, saveType, stBo
 
   return page.evaluate(() => {
     const msg = game.messages.contents.at(-1);
-    return msg?.flags?.D35E?.chatTemplateData ?? null;
+    return msg?.flags?.warcraftrpg2e?.chatTemplateData ?? null;
   });
 }
 
@@ -181,7 +181,7 @@ async function rollSavingThrowViaDialogWithStBonus(page, actorId, saveType, stBo
  *
  * @param {import('@playwright/test').Page} page
  * @param {number} prevCount Message count BEFORE the action was triggered.
- * @returns {Promise<object|null>} flags.D35E.chatTemplateData
+ * @returns {Promise<object|null>} flags.warcraftrpg2e.chatTemplateData
  */
 async function waitForChatRoll(page, prevCount) {
   await page.waitForFunction((c) => game.messages.size > c, prevCount, {
@@ -189,7 +189,7 @@ async function waitForChatRoll(page, prevCount) {
   });
   return page.evaluate(() => {
     const msg = game.messages.contents.at(-1);
-    return msg?.flags?.D35E?.chatTemplateData ?? null;
+    return msg?.flags?.warcraftrpg2e?.chatTemplateData ?? null;
   });
 }
 
@@ -244,7 +244,7 @@ async function useItemAndWaitForChat(page, actorId, itemId) {
 
   return page.evaluate(() => {
     const msg = game.messages.contents.at(-1);
-    const chatData = msg?.flags?.D35E?.chatTemplateData ?? null;
+    const chatData = msg?.flags?.warcraftrpg2e?.chatTemplateData ?? null;
     const attacks = chatData?.attacks ?? [];
     return { chatData, attackCount: attacks.length };
   });

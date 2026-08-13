@@ -1,0 +1,262 @@
+{
+  "Avatar": {
+    "summary": "Assume a larger martial form with enhanced physical abilities, armor, and spell resistance, but lose all spellcasting for the duration.",
+    "rulesHtml": "<p>You become one size category larger and cannot cast spells or use spell-completion or spell-activation items for the duration. You gain +4 enhancement Strength, +6 enhancement Stamina, +2 enhancement Agility, +8 enhancement natural armor, spell resistance 10 + caster level, and proficiency with all simple and martial weapons.</p><p>The size increase also grants +4 size Strength, -2 size Agility, and -1 size penalties to attacks and AC. A humanoid enlarged to Large has 10-foot space and reach; speed is unchanged. Worn and carried gear grows with you. Enlarged melee weapons and ammunition fired from enlarged projectile weapons use their larger damage dice, while thrown weapons and items leaving your possession immediately return to normal size. Magic properties do not improve, and magical size increases do not stack.</p><p>If the available space is too small, grow as much as possible and make a Strength check using the increased score to break the enclosure; failure restrains you without causing crushing damage. The material component is adamantine worth at least 500 gp.</p>",
+    "manualBoundary": "Apply size, ability, armor, proficiency, spell-resistance, equipment-damage, and spellcasting restrictions manually; the system does not transform the actor or all carried items as one transaction."
+  },
+  "Banish": {
+    "summary": "A failed Will save renders one creature incorporeal, invisible, and unable to interact with the material world.",
+    "rulesHtml": "<p>On a failed Will save, the target becomes incorporeal, invisible, and intangible for the duration. It cannot interact with the material world. You can still see the target, but cannot affect it with further spells unless you also become incorporeal. Use the normal incorporeal rules for movement and interaction.</p>",
+    "manualBoundary": "Apply and remove the complete incorporeal and invisible state manually."
+  },
+  "Bladestorm": {
+    "summary": "Transform both arms into scaling magic longswords and gain Whirlwind Attack while making full attacks each round.",
+    "rulesHtml": "<p>Both arms become longswords with an enhancement bonus on attacks and damage equal to +1 per three caster levels, maximum +5. You are proficient with them, gain Whirlwind Attack, and take no two-weapon fighting penalties when using the transformed blades.</p><p>You must make a full attack every round or the spell ends. The material components are two nonmagical knives, one per hand; they merge into your arms and are consumed when the effect ends.</p>",
+    "manualBoundary": "Create the two temporary weapons and enforce the full-attack upkeep, feat, and two-weapon exception manually."
+  },
+  "Blazing Column": {
+    "summary": "Create a stationary fire cylinder that burns intensely for three rounds and weakly for three more.",
+    "rulesHtml": "<p>A stationary 20-foot-radius, 60-foot-high cylinder deals 1d6 fire damage per two caster levels each round for rounds 1-3, maximum 5d6. It then deals 1d6 fire damage each round for rounds 4-6. No saving throw applies; spell resistance does.</p><p>The material components are a small amount of brimstone and one drop of the caster's blood or equivalent fluid.</p>",
+    "manualBoundary": "Place the cylinder and roll the appropriate per-round damage manually; the system does not schedule its six damage pulses."
+  },
+  "Blizzard": {
+    "summary": "Concentrate on a distant cylinder of ice and hail that deals cold and slashing damage each round.",
+    "rulesHtml": "<p>Each round of concentration, all creatures in the 20-foot-radius, 40-foot-high cylinder take 1d6 cold damage plus 1d6 slashing damage. The effect lasts up to one round per two caster levels, with a maximum of five rounds. There is no save; spell resistance applies.</p><p>The material components are crushed glass and several drops of water.</p>",
+    "manualBoundary": "Place the area, maintain concentration, and roll both damage types each round manually.",
+    "headerOverride": { "school": "Evocation [Cold]", "Components": "V, S, M", "Casting Time": "1 standard action", "Range": "Long (400 ft. + 40 ft./level)", "Area": "Cylinder (20-ft. radius, 40 ft. high)", "Duration": "Concentration, up to 1 round/2 levels, maximum 5 rounds", "Saving Throw": "None", "Spell Resistance": "Yes" }
+  },
+  "Bloodlust": {
+    "summary": "Accelerate several creatures, granting an extra full-attack strike, combat bonuses, faster movement, and enhanced Strength.",
+    "rulesHtml": "<p>Each affected creature gains one extra attack at its full base attack bonus whenever it makes a full attack. This is not an extra action and does not stack with similar extra-attack effects. It also gains +1 on attack rolls, +1 dodge AC, +1 Reflex, and +2 enhancement Strength.</p><p>Every movement mode increases by 30 feet, to no more than twice its normal speed; this is an enhancement bonus and increases jumping distance normally. Losing the Agility bonus to AC also removes the dodge bonus. <em>Cripple</em> counters and dispels this spell. The material component is a drop of blood mixed with earth.</p>",
+    "manualBoundary": "Apply bonuses, movement caps, and the conditional extra attack manually; no automatic full-attack insertion or counterspell link is created."
+  },
+  "Brilliance Aura": {
+    "summary": "Nearby allied spellcasters may preserve a spell slot by succeeding at a difficult Spellcraft check.",
+    "rulesHtml": "<p>Whenever you or a friendly spellcaster within the 20-foot aura casts a spell, that caster may attempt Spellcraft DC 30 + twice the spell's level. Success casts the spell without expending its slot. A natural d20 result of 5 or lower always fails.</p>",
+    "manualBoundary": "Make the Spellcraft check and restore or preserve the slot manually after each qualifying cast."
+  },
+  "Call of the Spirits": {
+    "summary": "Name one specific future die roll and gain a +5 untyped bonus when that roll occurs.",
+    "rulesHtml": "<p>When casting, identify one specific die roll you expect to make before the spell expires. The first occurrence of that declared roll gains a +5 untyped bonus and discharges the spell. Only one instance may affect you; a later casting replaces the earlier one.</p>",
+    "manualBoundary": "Record the declared roll and apply the one-time untyped bonus manually.",
+    "headerOverride": { "school": "Necromancy", "Components": "V, DF", "Casting Time": "1 standard action", "Range": "Personal", "Target": "You", "Duration": "1 hour/level or until discharged" }
+  },
+  "Cannibalize": {
+    "summary": "Consume one intact anatomical corpse to heal 1d8 hit points per round of concentration.",
+    "rulesHtml": "<p>While concentrating for up to four rounds, you consume flesh from one mostly intact corpse with a true anatomy and recover 1d8 hit points each round, never exceeding your maximum. The spell heals only you. After one use, too little remains for that corpse to be targeted again.</p>",
+    "manualBoundary": "Track concentration, healing pulses, and whether the corpse has already been consumed manually."
+  },
+  "Carrion Swarm": {
+    "summary": "A cone of summoned vermin deals up to 15d6 physical damage, Reflex half.",
+    "rulesHtml": "<p>Vermin surge through the cone and deal 1d6 damage per caster level, maximum 15d6; the damage is nonmagical piercing and bludgeoning. A Reflex save halves it, and spell resistance applies. Incorporeal creatures are unaffected.</p><p>The material component is the body of a small vermin.</p>",
+    "manualBoundary": "The damage roll is documented; apply the mixed physical damage and incorporeal immunity manually.",
+    "automation": {
+      "actionType": "spellsave",
+      "damageParts": [["(min(15, @cl))d6", "Piercing and bludgeoning"]],
+      "measureTemplate": { "type": "cone", "size": 0 }
+    }
+  },
+  "Cripple": {
+    "summary": "Limit a living target to one move or standard action and impose combat, Reflex, jumping, and Strength penalties.",
+    "rulesHtml": "<p>On a failed Will save, the target may take only one move action or one standard action each round. It takes -2 AC, melee attacks, melee damage, and Reflex, and its jumping distances are halved.</p><p>It also takes a Strength penalty of 1d6 + 1 per two caster levels, with the caster-level portion capped at 5; Strength cannot fall below 1. <em>Bloodlust</em> counters and dispels this spell.</p>",
+    "manualBoundary": "Apply the rolled Strength reduction, action restriction, derived penalties, and counterspell interaction manually."
+  },
+  "Dark Metamorphosis": {
+    "summary": "Assume a demonic form with fast healing, damage reduction, physical enhancements, and repeatable annihilation orbs.",
+    "rulesHtml": "<p>For the duration you gain fast healing 3, damage reduction 10/good and silver, +4 enhancement Strength, +4 enhancement Stamina, and +4 enhancement natural armor. Once per round you may cast <em>orb of annihilation</em> as a standard action; doing so is your spellcasting action for that round.</p><p>The material component is a vial of demon blood, which is consumed by drinking it.</p>",
+    "manualBoundary": "Apply the transformation, defenses, bonuses, and once-per-round embedded spell manually."
+  },
+  "Death and Decay": {
+    "summary": "Concentrate on a negative-energy area that damages living creatures and artificial structures while healing undead.",
+    "rulesHtml": "<p>Each round of concentration, living creatures and non-natural structures in the 30-foot-radius emanation take 1d4 negative-energy damage per caster level, maximum 25d4. Living creatures may make a Fortitude save for half. Undead instead regain the same amount of hit points.</p><p>The material component is a dead rose.</p>",
+    "manualBoundary": "Maintain the area and concentration, roll each round, halve successful saves, distinguish valid structures, and convert the effect to healing for undead manually."
+  },
+  "Death Coil": {
+    "summary": "Negative energy deals 2d8 + up to 10 damage to a living target or heals an undead target by the same amount.",
+    "rulesHtml": "<p>The unerring coil deals 2d8 negative-energy damage +1 per caster level, maximum +10, to a living creature; a Will save halves the damage. An undead target instead heals that amount and does not use the living-creature save.</p>",
+    "manualBoundary": "Roll the listed amount, then apply it as saved damage to living creatures or healing to undead manually."
+  },
+  "Greater Death Coil": {
+    "summary": "A stronger death coil deals or heals 3d8 + up to 15 points of negative energy.",
+    "rulesHtml": "<p>This functions as <em>death coil</em>, except the amount is 3d8 +1 per caster level, maximum +15. It damages living creatures (Will half) and heals undead.</p>",
+    "manualBoundary": "Roll the listed amount, then apply it as saved damage to living creatures or healing to undead manually.",
+    "headerOverride": { "school": "Necromancy", "Components": "V, S", "Casting Time": "1 standard action", "Range": "Close (25 ft. + 5 ft./2 levels)", "Target": "One creature", "Duration": "Instantaneous", "Saving Throw": "Will half (see text)", "Spell Resistance": "Yes" }
+  },
+  "Lesser Death Coil": {
+    "summary": "A weaker death coil deals or heals 1d8 + up to 5 points of negative energy.",
+    "rulesHtml": "<p>This functions as <em>death coil</em>, except the amount is 1d8 +1 per caster level, maximum +5. It damages living creatures (Will half) and heals undead.</p>",
+    "manualBoundary": "Roll the listed amount, then apply it as saved damage to living creatures or healing to undead manually.",
+    "headerOverride": { "school": "Necromancy", "Components": "V, S", "Casting Time": "1 standard action", "Range": "Close (25 ft. + 5 ft./2 levels)", "Target": "One creature", "Duration": "Instantaneous", "Saving Throw": "Will half (see text)", "Spell Resistance": "Yes" }
+  },
+  "Death Pact": {
+    "summary": "Destroy a controlled undead and recover hit points equal to its remaining health.",
+    "rulesHtml": "<p>Touch one undead creature you control. On a failed Will save it is reduced to dust, and you regain hit points equal to the hit points it had remaining, up to your maximum. If its save succeeds, it survives and ceases to be under your control.</p>",
+    "manualBoundary": "Verify control, roll the save, destroy or release the undead, and transfer its remaining hit-point value manually."
+  },
+  "Demon Skin": {
+    "summary": "Gain +3 enhancement natural armor and 18 temporary hit points for 30 minutes.",
+    "rulesHtml": "<p>A living layer of demonic hide grants +3 enhancement natural armor and 18 temporary hit points for 30 minutes. The material component is a ground fel-stalker tooth.</p>",
+    "manualBoundary": "Apply and later remove the armor bonus and temporary hit points manually."
+  },
+  "Greater Demon Skin": {
+    "summary": "Gain +6 enhancement natural armor and 32 temporary hit points for 30 minutes.",
+    "rulesHtml": "<p>This functions as <em>demon skin</em>, but grants +6 enhancement natural armor and 32 temporary hit points. The material component is a lock of succubus hair.</p>",
+    "manualBoundary": "Apply and later remove the armor bonus and temporary hit points manually.",
+    "headerOverride": { "school": "Conjuration (Creation)", "Components": "V, S, M", "Casting Time": "1 standard action", "Range": "Personal", "Target": "You", "Duration": "30 minutes" }
+  },
+  "Lesser Demon Skin": {
+    "summary": "Gain +1 enhancement natural armor and 6 temporary hit points for 30 minutes.",
+    "rulesHtml": "<p>This functions as <em>demon skin</em>, but grants +1 enhancement natural armor and 6 temporary hit points. The material component is ground imp wing.</p>",
+    "manualBoundary": "Apply and later remove the armor bonus and temporary hit points manually.",
+    "headerOverride": { "school": "Conjuration (Creation)", "Components": "V, S, M", "Casting Time": "1 standard action", "Range": "Personal", "Target": "You", "Duration": "30 minutes" }
+  },
+  "Detect Chaos/Evil/Good/Law": {
+    "summary": "Choose an alignment and study a cone to learn the presence, number, strength, and location of matching auras.",
+    "rulesHtml": "<p>This combined compendium record represents four separate versions. Choose chaos, evil, good, or law when learning or preparing it. It detects creatures of that alignment, aligned divine casters and faiths, aligned spells, and aligned magic items. A creature of the opposite alignment can be stunned for 1 round if the strongest aura is overwhelming and its source has at least twice the detector's character level.</p><ul><li><strong>Round 1:</strong> Presence or absence of matching auras.</li><li><strong>Round 2:</strong> Number of auras and strength of the strongest.</li><li><strong>Round 3:</strong> Strength and location of each; an unseen aura reveals direction but not exact location.</li></ul><p>Aura strengths are: ordinary aligned creatures - faint through 10 HD, moderate 11-25, strong 26-50, overwhelming 51+; undead - faint through 2 HD, moderate 3-8, strong 9-20, overwhelming 21+; aligned outsiders - faint through 1 HD, moderate 2-4, strong 5-10, overwhelming 11+; aligned divine casters - faint at level 1, moderate 2-4, strong 5-10, overwhelming 11+; aligned spells or items by caster level - faint through 2nd, moderate 3rd-8th, strong 9th-20th, overwhelming 21st+.</p><p>After its source ends, an aura remains dim for 1d6 rounds if faint, 1d6 minutes if moderate, 1d6 x 10 minutes if strong, or 1d6 days if overwhelming. Each round you may turn the cone. Barriers block detection at 1 foot of stone, 1 inch of common metal, a thin lead sheet, or 3 feet of wood or earth. Mundane hazards are not alignment auras, and merely beneficial items are not automatically good.</p>",
+    "manualBoundary": "Choose and record one version, track concentration rounds, compare aura categories, and apply any overwhelming-aura stun manually."
+  },
+  "Drain Life": {
+    "summary": "Concentrate to deal 1 Stamina damage per round and heal 5 hit points per point drained.",
+    "rulesHtml": "<p>Beginning on the casting round, the living target takes 1 Stamina damage each round of concentration, with no save. You regain 5 hit points for each point actually drained, up to your maximum. The spell ends if either participant leaves range or line of sight is blocked by an object at least 5 feet tall and wide. Medium or smaller creatures do not block the link; Large creatures generally do.</p>",
+    "manualBoundary": "Track concentration, line and range, Stamina damage, and resulting healing manually."
+  },
+  "Drain Soul": {
+    "summary": "Deal 1d10 damage per round; if this kills the target, spend XP to create a soul shard.",
+    "rulesHtml": "<p>The living target takes 1d10 damage per round for a number of rounds equal to your caster level; Fortitude halves the damage. If this spell kills the target, you may pay 750 XP while its essence is available to form one soul shard. No XP is paid if the target survives. Creating the shard does not prevent later return to life.</p>",
+    "manualBoundary": "Roll and apply each damage pulse, determine whether this spell caused death, deduct 750 XP only then, and create the soul-shard item manually."
+  },
+  "Entangling Roots": {
+    "summary": "Roots immobilize, constrain spellcasting, and deal 1d4 constriction damage each round until broken or escaped.",
+    "rulesHtml": "<p>On a failed Reflex save, roots immobilize the target, creating plants beneath it if needed. The entangled target takes -2 on attacks, -4 effective Agility, cannot move, and must succeed at Concentration DC 15 to cast a spell.</p><p>Each round it takes 1d4 constriction damage. It may end the spell with a full-round Strength check DC 25 or Escape Artist DC 22. The roots may instead be cut; they have AC 10 and 22 hit points.</p>",
+    "manualBoundary": "Apply entangled state and Agility penalty, roll ongoing damage and casting checks, and track escape attempts or the roots' hit points manually."
+  },
+  "Eye of Kilrogg": {
+    "summary": "Create an invisible remote eye that moves through one-inch openings and transmits your normal vision while you concentrate.",
+    "rulesHtml": "<p>Create an invisible visual sensor at any point you can see. While concentrating, you see through it as if present. It moves 30 feet per round when looking mainly ahead and down, or 10 feet per round when thoroughly inspecting walls and ceiling. It can move in any direction and pass through openings at least 1 inch across, but not solid barriers or planar portals.</p><p>Without concentration the eye becomes inert until you resume. The material component is a small amount of bat fur.</p>",
+    "manualBoundary": "Move a proxy sensor and enforce concentration, visibility, and barrier limits manually."
+  },
+  "Force of Nature": {
+    "summary": "Temporarily transform one healthy living tree into an obedient treant.",
+    "rulesHtml": "<p>A healthy living tree touched becomes a treant and follows your commands for the duration. If the spell is dispelled, it immediately takes root where it stands. If you dismiss it, the treant attempts to return to its original location before taking root.</p>",
+    "manualBoundary": "Create and control the treant actor manually; the system does not transform the tree or return it to its original position."
+  },
+  "Greater Force of Nature": {
+    "summary": "Transform healthy trees into 1d4+1 temporary obedient treants.",
+    "rulesHtml": "<p>This functions as <em>force of nature</em>, except it creates 1d4+1 treants. Each requires a suitable living tree and follows the same dispelling, dismissal, and re-rooting rules.</p>",
+    "manualBoundary": "Roll the number, create and control each treant actor, and track its source tree and re-rooting manually.",
+    "headerOverride": { "school": "Transmutation", "Components": "V, S", "Casting Time": "1 round", "Range": "Touch", "Target": "Trees touched", "Duration": "1 round/level (D)", "Saving Throw": "None", "Spell Resistance": "No" }
+  },
+  "Frost Armor": {
+    "summary": "Grant +4 force armor; creatures striking in melee risk becoming chilled.",
+    "rulesHtml": "<p>The touched creature gains +4 armor AC. It does not stack with another armor bonus and causes no armor check penalty, arcane spell failure, or speed reduction. Because it is force, it protects normally against incorporeal attacks.</p><p>A creature that hits the subject with its body or a non-reach melee weapon is chilled; that attacker may use spell resistance against this secondary effect. The arcane focus is a piece of forged steel; a shaman may instead use a divine totem focus.</p>",
+    "manualBoundary": "Apply the armor bonus and test or apply chilled to each qualifying attacker manually."
+  },
+  "Frostbolt": {
+    "summary": "A ranged touch attack deals up to 10d6 cold damage and may chill the victim for 1d4 rounds.",
+    "rulesHtml": "<p>Make a ranged touch attack. On a hit, the target takes 1d6 cold damage per caster level, maximum 10d6. A damaged creature must make a Fortitude save or become chilled for 1d4 rounds.</p>",
+    "manualBoundary": "Attack and cold damage are automated; roll the chill duration and apply the chilled condition manually after a failed Fortitude save.",
+    "automation": {
+      "actionType": "rsak",
+      "damageParts": [["(min(10, @cl))d6", null, "energy-cold"]],
+      "flags": { "chilledSave": "Fortitude negates; 1d4 rounds; manual" }
+    }
+  },
+  "Healing Rain": {
+    "summary": "While concentrating, heal living allies for 2d6 each round and harm undead by the same amount.",
+    "rulesHtml": "<p>Each round of concentration, every living ally in the 20-foot-radius area regains 2d6 hit points. Undead in the area instead take 2d6 positive-energy damage; their listed Fortitude save halves that damage. Spell resistance applies as listed.</p>",
+    "manualBoundary": "Maintain concentration and apply each healing or undead-damage pulse to all eligible creatures manually."
+  },
+  "Healing Ward": {
+    "summary": "Conjure a destructible totem that heals living allies and harms undead for 1 hit point each round.",
+    "rulesHtml": "<p>A totem appears at your position. Each round, living allies within 20 feet regain 1 hit point, up to maximum, while undead take 1 point of positive-energy damage. The totem has AC 7, hardness 5, and 5 hit points; destroying it ends the spell.</p>",
+    "manualBoundary": "Create the totem, track its defenses and duration, and apply the per-round healing or undead damage manually."
+  },
+  "Holy Word Shield": {
+    "summary": "Give one ally a damage shield with hit points equal to four times caster level.",
+    "rulesHtml": "<p>The shield has hit points equal to 4 x caster level. All hit-point damage the subject would take is deducted from this pool first. Once the pool reaches 0, later damage affects the subject normally. The effect ends after 10 rounds even if shield hit points remain.</p>",
+    "manualBoundary": "Create and decrement the separate shield pool manually; the system does not intercept incoming damage."
+  },
+  "Hooks of Binding": {
+    "summary": "Force chains immobilize a demon or undead of up to 12 HD and block teleportation until it escapes.",
+    "rulesHtml": "<p>On a failed Fortitude save, a demon or undead creature with no more than 12 HD is held in place even while flying or swimming. It cannot move, takes -4 Agility and -2 on attacks, and must make Concentration DC 15 + spell level to cast or lose the slot. The force chains affect incorporeal creatures and prevent teleportation and planar travel.</p><p>Each round, the target may spend a full-round action on Strength or Escape Artist against the spell's save DC; success ends the spell. The arcane material component is one brass chain link.</p>",
+    "manualBoundary": "Apply immobilization and penalties, block travel, and resolve casting and escape checks manually."
+  },
+  "Greater Hooks of Binding": {
+    "summary": "As hooks of binding, but without the 12-HD target limit.",
+    "rulesHtml": "<p>This functions as <em>hooks of binding</em>, including its movement, Agility, attack, concentration, force, and escape rules, but it can affect a demon or undead creature of any Hit Dice.</p>",
+    "manualBoundary": "Apply immobilization and penalties, block travel, and resolve casting and escape checks manually.",
+    "headerOverride": { "school": "Conjuration (Creation) [Force]", "Components": "V, S, M/DF", "Casting Time": "1 standard action", "Range": "Medium (100 ft. + 10 ft./level)", "Target": "One demon or undead creature", "Duration": "1 round/level", "Saving Throw": "Fortitude negates", "Spell Resistance": "Yes" }
+  },
+  "Immolation": {
+    "summary": "Flames surrounding you deal 2d6 fire damage each round to creatures within 5 feet.",
+    "rulesHtml": "<p>Each round, every other creature within 5 feet takes 2d6 fire damage; spell resistance applies separately to each creature. The flames provide bright light for 30 feet and shadowy light for another 30 feet. The material component is a small amount of phosphorus.</p>",
+    "manualBoundary": "Apply each per-round area damage pulse and illumination manually."
+  },
+  "Implant Carrion Beetle": {
+    "summary": "A melee touch implants a larva that may burst out for 1d6 damage and become a temporary uncontrolled beetle.",
+    "rulesHtml": "<p>Make a melee touch attack against a living creature. One round after a hit, the target makes a Fortitude save. On failure, the larva hatches for 1d6 damage and a carrion beetle appears. On its next round it attacks that victim if possible, then attacks your other opponents after the victim dies; it is mindless and accepts no commands. It disappears after one round per caster level.</p><p>The material component is a fragment of carrion-beetle shell.</p>",
+    "manualBoundary": "Resolve the delayed save and damage, create the beetle actor, choose its compulsory targets, and track its duration manually.",
+    "headerOverride": { "school": "Necromancy", "Components": "V, S, M", "Casting Time": "1 standard action", "Range": "Touch", "Target": "One living creature", "Duration": "1 round/level (see text)", "Saving Throw": "Fortitude negates", "Spell Resistance": "Yes" }
+  },
+  "Inner Fire": {
+    "summary": "Gain +3 divine attacks and +4 divine AC for 3 minutes.",
+    "rulesHtml": "<p>You gain a +3 divine bonus on attack rolls and a +4 divine bonus to AC for 3 minutes.</p>",
+    "manualBoundary": "Apply and remove both divine bonuses manually."
+  },
+  "Greater Inner Fire": {
+    "summary": "Gain +4 divine attacks and +5 divine AC for 3 minutes.",
+    "rulesHtml": "<p>This functions as <em>inner fire</em>, but grants +4 divine attack rolls and +5 divine AC.</p>",
+    "manualBoundary": "Apply and remove both divine bonuses manually.",
+    "headerOverride": { "school": "Transmutation [War]", "Components": "V, S", "Casting Time": "1 standard action", "Range": "Personal", "Target": "You", "Duration": "3 minutes" }
+  },
+  "Lesser Inner Fire": {
+    "summary": "Gain +1 divine attacks and +3 divine AC for 3 minutes.",
+    "rulesHtml": "<p>This functions as <em>inner fire</em>, but grants +1 divine attack rolls and +3 divine AC.</p>",
+    "manualBoundary": "Apply and remove both divine bonuses manually.",
+    "headerOverride": { "school": "Transmutation [War]", "Components": "V, S", "Casting Time": "1 standard action", "Range": "Personal", "Target": "You", "Duration": "3 minutes" }
+  },
+  "Lightning Guardians": {
+    "summary": "Three storm globes retaliate for 2d4+2 electricity when an attacker fails Reflex.",
+    "rulesHtml": "<p>Three protective storm spirits surround you for 10 minutes. Whenever a creature attacks you, it must make a Reflex save. On failure it takes 2d4+2 electricity damage; spell resistance applies. The material component is an iron sliver wrapped in copper wire.</p>",
+    "manualBoundary": "Resolve one Reflex save and spell-resistance check per attacker and apply retaliation manually."
+  },
+  "Greater Lightning Guardians": {
+    "summary": "As lightning guardians, but failed Reflex saves take 3d4+3 electricity damage.",
+    "rulesHtml": "<p>This functions as <em>lightning guardians</em>, except an attacker that fails its Reflex save takes 3d4+3 electricity damage.</p>",
+    "manualBoundary": "Resolve one Reflex save and spell-resistance check per attacker and apply retaliation manually.",
+    "headerOverride": { "school": "Conjuration (Summoning)", "Components": "V, S, M", "Casting Time": "1 standard action", "Range": "Personal", "Target": "You", "Duration": "10 minutes", "Saving Throw": "Reflex negates (see text)", "Spell Resistance": "Yes (see text)" }
+  },
+  "Lesser Lightning Guardians": {
+    "summary": "As lightning guardians, but failed Reflex saves take 1d4+1 electricity damage.",
+    "rulesHtml": "<p>This functions as <em>lightning guardians</em>, except an attacker that fails its Reflex save takes 1d4+1 electricity damage.</p>",
+    "manualBoundary": "Resolve one Reflex save and spell-resistance check per attacker and apply retaliation manually.",
+    "headerOverride": { "school": "Conjuration (Summoning)", "Components": "V, S, M", "Casting Time": "1 standard action", "Range": "Personal", "Target": "You", "Duration": "10 minutes", "Saving Throw": "Reflex negates (see text)", "Spell Resistance": "Yes (see text)" }
+  },
+  "Lightning Shield": {
+    "summary": "Electricity around one creature damages all other creatures within 5 feet each round.",
+    "rulesHtml": "<p>Each round, every creature within 5 feet of the subject takes 1d6 electricity damage +1 per five caster levels, maximum +5. The subject is immune to this damage; spell resistance applies to each other creature. The effect gives bright light for 20 feet and shadowy light for another 20 feet. The material component is a copper rod.</p>",
+    "manualBoundary": "Apply each per-round area damage pulse and illumination manually."
+  },
+  "Magic Circle against Evil/Good": {
+    "summary": "Choose evil or good: a mobile 10-foot ward protects allies, or an inward circle helps confine a called creature.",
+    "rulesHtml": "<p>This combined compendium record represents separate evil and good versions. The outward form gives every creature in the 10-foot emanation the matching <em>protection from evil</em> or <em>protection from good</em> effects. Summoned creatures of the opposed alignment cannot enter; spell resistance may overcome only this contact barrier, not the AC, save, or mental-control protections. It does not stack with the corresponding protection spell.</p><p>The inward form confines a called creature of the opposed alignment for up to 24 hours per caster level if its calling spell begins within 1 round. Breaking the powdered circle releases it. Once per day, a creature with spell resistance may test the circle; failure to overcome SR ends the trap. Dimensional travel can escape unless <em>dimensional anchor</em> or <em>greater hooks of binding</em> is established first. The prisoner cannot cross or reach through the circle but may use ranged attacks beyond it.</p><p>A hand-drawn diagram takes 10 minutes and Spellcraft DC 20; the result is secret. Taking 10 takes 10 minutes, while taking 20 takes 3 hours 20 minutes. A successful diagram lets the anchor or hooks be cast during the preceding round, blocks the prisoner's SR and attacks across the boundary, and raises its Charisma escape DC by 5. Any outside disturbance of circle or diagram ends the trap. The arcane component is powdered silver used to trace a 3-foot circle.</p>",
+    "manualBoundary": "Choose alignment and inward or outward form; apply ward bonuses, spell resistance, diagram checks, confinement, escape, and boundary integrity manually."
+  },
+  "Mana Burn": {
+    "summary": "A ranged touch ray removes high-level spell slots and deals 1d4 damage per spell level lost.",
+    "rulesHtml": "<p>Make a ranged touch attack. On a hit, the target loses spell slots totaling 1d4 + 1 spell level per three caster levels, with the caster-level bonus capped at +6. Remove the highest-level available slots first; two 0-level slots count as one spell level. The target takes 1d4 damage for every spell level actually removed. A Will save negates the entire effect, and spell resistance applies.</p>",
+    "manualBoundary": "Roll the drained total, inspect and remove the target's highest available slots, count cantrips in pairs, and roll damage from the actual levels lost manually."
+  },
+  "Protection from Chaos/Evil": {
+    "summary": "Choose chaos or evil: gain defensive bonuses, suppress mental control, and repel opposed summoned creatures.",
+    "rulesHtml": "<p>This paladin record represents separate chaos and evil versions. The subject gains +2 deflection AC and +2 resistance saves against creatures of the selected alignment. Existing possession and ongoing charm or compulsion control are suppressed, but resume if their own durations outlast this ward.</p><p>Summoned creatures of the selected alignment cannot touch the subject with natural attacks and recoil from contact. This barrier ends against a blocked creature if the subject attacks it or forces the barrier against it; that creature may also overcome the contact protection with spell resistance. The mental-control protection works regardless of alignment. The arcane version uses powdered silver to trace a 3-foot circle.</p>",
+    "manualBoundary": "Choose one alignment version and apply conditional defenses, suppressed control, summoned-creature contact, and spell resistance manually.",
+    "headerOverride": { "Components": "V, S, M/DF", "Casting Time": "1 standard action", "Range": "Touch", "Target": "Creature touched", "Duration": "1 min./level (D)", "Saving Throw": "Will negates (harmless)", "Spell Resistance": "No; see text" }
+  },
+  "Protection from Chaos/Evil/Good/Law": {
+    "summary": "Choose one alignment: gain defensive bonuses, suppress mental control, and repel matching summoned creatures.",
+    "rulesHtml": "<p>This healer record represents four separate versions: chaos, evil, good, or law. The subject gains +2 deflection AC and +2 resistance saves against creatures of the selected alignment. Existing possession and ongoing charm or compulsion control are suppressed, but resume if their own durations outlast this ward.</p><p>Summoned creatures of the selected alignment cannot touch the subject with natural attacks and recoil from contact. This barrier ends against a blocked creature if the subject attacks it or forces the barrier against it; that creature may also overcome the contact protection with spell resistance. The mental-control protection works regardless of alignment. The arcane version uses powdered silver to trace a 3-foot circle.</p>",
+    "manualBoundary": "Choose one alignment version and apply conditional defenses, suppressed control, summoned-creature contact, and spell resistance manually.",
+    "headerOverride": { "Components": "V, S, M/DF", "Casting Time": "1 standard action", "Range": "Touch", "Target": "Creature touched", "Duration": "1 min./level (D)", "Saving Throw": "Will negates (harmless)", "Spell Resistance": "No; see text" }
+  }
+}

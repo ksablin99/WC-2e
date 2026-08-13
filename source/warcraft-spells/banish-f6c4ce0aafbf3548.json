@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           280
         ],
         "section": "Banish",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Target becomes incorporeal.</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>On a failed Will save, the target becomes incorporeal, invisible, and intangible for the duration. It cannot interact with the material world. You can still see the target, but cannot affect it with further spells unless you also become incorporeal. Use the normal incorporeal rules for movement and interaction.</p><p><strong>Automation boundary:</strong> Apply and remove the complete incorporeal and invisible state manually.</p>"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -213,10 +213,10 @@
       "type": "willnegates"
     },
     "school": "trs",
-    "shortDescription": "<p>Target becomes incorporeal.</p>",
+    "shortDescription": "<p>A failed Will save renders one creature incorporeal, invisible, and unable to interact with the material world.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Target becomes incorporeal.",
+    "snip": "A failed Will save renders one creature incorporeal, invisible, and unable to interact with the material world.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 265-265",
     "specialActions": [],
     "specialId": null,
@@ -259,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Apply and remove the complete incorporeal and invisible state manually."
     }
   },
   "type": "spell"

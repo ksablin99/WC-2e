@@ -32,7 +32,7 @@
           316
         ],
         "section": "Limited Wish",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -94,7 +94,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Alters reality - within spell limits.</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;miscellaneous;\n    <br>\n    <strong>Level:</strong>&nbsp;Sorcerer 7, Wizard 7;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;touch<br>\n    <strong>Area:</strong>&nbsp;see text\n<br>\n    \n    \n    <strong>Duration:</strong>&nbsp;See Text<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;None; see text\n\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nA <i>limited wish </i>lets you create nearly any type of effect. For example, a <i>limited wish </i>can do any of the following things.\n</p>\n<ul><li>Duplicate any sorcerer/wizard spell of 6th level or lower, provided the spell is not of a school prohibited to you.</li></ul>\n<ul><li>Duplicate any other spell of 5th level or lower, provided the spell is not of a school prohibited to you.</li></ul>\n<ul><li>Duplicate any sorcerer/wizard spell of 5th level or lower, even if it’s of a prohibited school.</li></ul>\n<ul><li>Duplicate any other spell of 4th level or lower, even if it’s of a prohibited school.</li></ul>\n<ul><li>Undo the harmful effects of many spells, such as <i>geas/quest </i>or <i>insanity</i>.</li></ul>\n<ul><li>Produce any other effect whose power level is in line with the above effects, such as a single creature automatically hitting on its next attack or taking a –7 penalty on its next saving throw.</li></ul>\n<p>A duplicated spell allows saving throws and spell resistance as normal (but the save DC is for a 7th-level spell). When a <i>limited wish </i>duplicates a spell that has an XP cost, you must pay that cost or 300 XP, whichever is more. When a <i>limited wish </i>spell duplicates a spell with a material component that costs more than 1,000 gp, you must provide that component.\n</p><p><i>XP Cost: </i>300 XP or more (see above).\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "See text",
     "duration": {
@@ -204,10 +204,10 @@
       "type": ""
     },
     "school": "uni",
-    "shortDescription": "<p>Alters reality - within spell limits.</p>",
+    "shortDescription": "\n\n\n<p>\nA <i>limited wish </i>lets you create nearly any type of effect. For example, a <i>limited wish </i>can do any of the following things.\n</p>\n<ul><li>Duplicate any sorcerer/wizard spell of 6th level or lower, provided the spell is not of a school prohibited to you.</li></ul>\n<ul><li>Duplicate any other spell of 5th level or lower, provided the spell is not of a school prohibited to you.</li></ul>\n<ul><li>Duplicate any sorcerer/wizard spell of 5th level or lower, even if it’s of a prohibited school.</li></ul>\n<ul><li>Duplicate any other spell of 4th level or lower, even if it’s of a prohibited school.</li></ul>\n<ul><li>Undo the harmful effects of many spells, such as <i>geas/quest </i>or <i>insanity</i>.</li></ul>\n<ul><li>Produce any other effect whose power level is in line with the above effects, such as a single creature automatically hitting on its next attack or taking a –7 penalty on its next saving throw.</li></ul>\n<p>A duplicated spell allows saving throws and spell resistance as normal (but the save DC is for a 7th-level spell). When a <i>limited wish </i>duplicates a spell that has an XP cost, you must pay that cost or 300 XP, whichever is more. When a <i>limited wish </i>spell duplicates a spell with a material component that costs more than 1,000 gp, you must provide that component.\n</p><p><i>XP Cost: </i>300 XP or more (see above).\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Alters reality - within spell limits.",
+    "snip": "Alters reality—within spell limits.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 264-264",
     "specialActions": [],
     "specialId": null,

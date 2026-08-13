@@ -52,8 +52,8 @@ test.describe('turn undead roll', () => {
 
     const payload = await page.evaluate(() => {
       const msg = game.messages.contents.at(-1);
-      const template = msg?.flags?.D35E?.template ?? '';
-      const td = msg?.flags?.D35E?.chatTemplateData ?? {};
+      const template = msg?.flags?.warcraftrpg2e?.template ?? '';
+      const td = msg?.flags?.warcraftrpg2e?.chatTemplateData ?? {};
       const maxR = td.maxHDResult;
       const dmg = td.damageHD;
       const content = String(msg?.content ?? '');

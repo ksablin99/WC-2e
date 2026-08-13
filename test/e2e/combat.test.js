@@ -203,7 +203,7 @@ test('rolling initiative for all combatants assigns numeric values to each', asy
 //
 // When an actor with a tracked buff (active + timeline.enabled) has initiative
 // rolled, CombatD35E.addBuffsToCombat creates an extra combatant entry for that
-// buff with flags.D35E.isBuff = true and flags.D35E.buffId = <item id>.
+// buff with flags.warcraftrpg2e.isBuff = true and flags.warcraftrpg2e.buffId = <item id>.
 
 test('rolling initiative for actor with tracked buff creates buff combatant entry', async ({ page }) => {
   // Create actor, then add an active tracked buff item
@@ -237,7 +237,7 @@ test('rolling initiative for actor with tracked buff creates buff combatant entr
   await page.waitForFunction(
     ({ combatId, buffId }) => {
       const combat = game.combats.get(combatId);
-      return combat?.combatants.some(c => c.flags?.D35E?.buffId === buffId) ?? false;
+      return combat?.combatants.some(c => c.flags?.warcraftrpg2e?.buffId === buffId) ?? false;
     },
     { combatId, buffId },
     { timeout: 5_000 }
@@ -245,8 +245,8 @@ test('rolling initiative for actor with tracked buff creates buff combatant entr
 
   const buffCombatantFlags = await page.evaluate(({ combatId, buffId }) => {
     const combat = game.combats.get(combatId);
-    const bc = combat.combatants.find(c => c.flags?.D35E?.buffId === buffId);
-    return bc?.flags?.D35E ?? null;
+    const bc = combat.combatants.find(c => c.flags?.warcraftrpg2e?.buffId === buffId);
+    return bc?.flags?.warcraftrpg2e ?? null;
   }, { combatId, buffId });
 
   expect(buffCombatantFlags).not.toBeNull();
@@ -285,7 +285,7 @@ test('buff combatant initiative is near the actor initiative after roll', async 
   }, { combatId, combatantId });
 
   await page.waitForFunction(
-    ({ combatId, buffId }) => game.combats.get(combatId)?.combatants.some(c => c.flags?.D35E?.buffId === buffId) ?? false,
+    ({ combatId, buffId }) => game.combats.get(combatId)?.combatants.some(c => c.flags?.warcraftrpg2e?.buffId === buffId) ?? false,
     { combatId, buffId },
     { timeout: 5_000 }
   );
@@ -293,7 +293,7 @@ test('buff combatant initiative is near the actor initiative after roll', async 
   const { actorInit, buffInit } = await page.evaluate(({ combatId, combatantId, buffId }) => {
     const combat = game.combats.get(combatId);
     const actorInit = combat.combatants.get(combatantId)?.initiative ?? null;
-    const buffInit  = combat.combatants.find(c => c.flags?.D35E?.buffId === buffId)?.initiative ?? null;
+    const buffInit  = combat.combatants.find(c => c.flags?.warcraftrpg2e?.buffId === buffId)?.initiative ?? null;
     return { actorInit, buffInit };
   }, { combatId, combatantId, buffId });
 
@@ -346,7 +346,7 @@ test('advancing turn with buff combatant processes without console errors', asyn
   await page.waitForFunction(
     (combatId) => {
       const c = game.combats.get(combatId);
-      return c?.combatants.some(x => x.flags?.D35E?.isBuff === true) ?? false;
+      return c?.combatants.some(x => x.flags?.warcraftrpg2e?.isBuff === true) ?? false;
     },
     combatId,
     { timeout: 5_000 }
@@ -646,14 +646,14 @@ test('timed buff with deleteOnExpiry is removed from actor and tracker after its
     // Wait for addBuffsToCombat to create the buff combatant entry
     await new Promise(resolve => {
       const check = () => {
-        if (combat.combatants.some(c => c.flags?.D35E?.buffId === buffId)) resolve();
+        if (combat.combatants.some(c => c.flags?.warcraftrpg2e?.buffId === buffId)) resolve();
         else setTimeout(check, 50);
       };
       check();
     });
 
     // Force actor first so the buff combatant is processed on the first nextTurn()
-    const buffCombatant = combat.combatants.find(c => c.flags?.D35E?.buffId === buffId);
+    const buffCombatant = combat.combatants.find(c => c.flags?.warcraftrpg2e?.buffId === buffId);
     await combat.updateEmbeddedDocuments('Combatant', [
       { _id: combatantId,        initiative: 20 },
       { _id: buffCombatant.id,   initiative: 19.99 },
@@ -682,7 +682,7 @@ test('timed buff with deleteOnExpiry is removed from actor and tracker after its
 
   // Buff combatant entry should also be removed from the tracker
   const buffCombatantGone = await page.evaluate(({ combatId, buffId }) => {
-    return !game.combats.get(combatId)?.combatants.some(c => c.flags?.D35E?.buffId === buffId);
+    return !game.combats.get(combatId)?.combatants.some(c => c.flags?.warcraftrpg2e?.buffId === buffId);
   }, { combatId, buffId });
   expect(buffCombatantGone).toBe(true);
 });
@@ -693,7 +693,7 @@ test('timed buff with deleteOnExpiry is removed from actor and tracker after its
 //
 // When an actor with a buff that has timeline.enabled = false (the default)
 // rolls initiative, addBuffsToCombat must skip that buff.  No combatant entry
-// with flags.D35E.buffId matching the buff should appear in the tracker.
+// with flags.warcraftrpg2e.buffId matching the buff should appear in the tracker.
 
 test('rolling initiative does not add a no-timeline buff to the combat tracker', async ({ page }) => {
   const { actorId, buffId } = await page.evaluate(async () => {
@@ -723,7 +723,7 @@ test('rolling initiative does not add a no-timeline buff to the combat tracker',
   await page.waitForTimeout(800);
 
   const buffInTracker = await page.evaluate(({ combatId, buffId }) => {
-    return game.combats.get(combatId)?.combatants.some(c => c.flags?.D35E?.buffId === buffId) ?? false;
+    return game.combats.get(combatId)?.combatants.some(c => c.flags?.warcraftrpg2e?.buffId === buffId) ?? false;
   }, { combatId, buffId });
 
   expect(buffInTracker).toBe(false);
@@ -772,7 +772,7 @@ test('activating a no-timeline buff during combat does not add it to the tracker
   await page.waitForTimeout(800);
 
   const buffInTracker = await page.evaluate(({ combatId, buffId }) => {
-    return game.combats.get(combatId)?.combatants.some(c => c.flags?.D35E?.buffId === buffId) ?? false;
+    return game.combats.get(combatId)?.combatants.some(c => c.flags?.warcraftrpg2e?.buffId === buffId) ?? false;
   }, { combatId, buffId });
 
   expect(buffInTracker).toBe(false);
@@ -818,13 +818,13 @@ test('activating a timeline-enabled buff during combat adds it to the tracker', 
 
   // Wait for the buff combatant to appear
   await page.waitForFunction(
-    ({ combatId, buffId }) => game.combats.get(combatId)?.combatants.some(c => c.flags?.D35E?.buffId === buffId) ?? false,
+    ({ combatId, buffId }) => game.combats.get(combatId)?.combatants.some(c => c.flags?.warcraftrpg2e?.buffId === buffId) ?? false,
     { combatId, buffId },
     { timeout: 5_000 }
   );
 
   const buffInTracker = await page.evaluate(({ combatId, buffId }) => {
-    return game.combats.get(combatId)?.combatants.some(c => c.flags?.D35E?.buffId === buffId) ?? false;
+    return game.combats.get(combatId)?.combatants.some(c => c.flags?.warcraftrpg2e?.buffId === buffId) ?? false;
   }, { combatId, buffId });
 
   expect(buffInTracker).toBe(true);
@@ -864,13 +864,13 @@ test('buff with perRoundActions creates a chat message when its turn is processe
 
     await new Promise(resolve => {
       const check = () => {
-        if (combat.combatants.some(c => c.flags?.D35E?.buffId === buffId)) resolve();
+        if (combat.combatants.some(c => c.flags?.warcraftrpg2e?.buffId === buffId)) resolve();
         else setTimeout(check, 50);
       };
       check();
     });
 
-    const buffCombatant = combat.combatants.find(c => c.flags?.D35E?.buffId === buffId);
+    const buffCombatant = combat.combatants.find(c => c.flags?.warcraftrpg2e?.buffId === buffId);
     await combat.updateEmbeddedDocuments('Combatant', [
       { _id: combatantId,       initiative: 20 },
       { _id: buffCombatant.id,  initiative: 19.99 },

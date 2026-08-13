@@ -38,7 +38,7 @@ async function waitForChatAfter(page, prevSize) {
 async function getLastChatSkillTotal(page) {
   return page.evaluate(() => {
     const msg = game.messages.contents.at(-1);
-    return msg?.flags?.D35E?.chatTemplateData?.total ?? null;
+    return msg?.flags?.warcraftrpg2e?.chatTemplateData?.total ?? null;
   });
 }
 

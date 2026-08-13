@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           312
         ],
         "section": "Implant Carrion Beetle",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -102,9 +102,9 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Touch attack deals 1d6</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>Make a melee touch attack against a living creature. One round after a hit, the target makes a Fortitude save. On failure, the larva hatches for 1d6 damage and a carrion beetle appears. On its next round it attacks that victim if possible, then attacks your other opponents after the victim dies; it is mindless and accepts no commands. It disappears after one round per caster level.</p><p>The material component is a fragment of carrion-beetle shell.</p><p><strong>Automation boundary:</strong> Resolve the delayed save and damage, create the beetle actor, choose its compulsory targets, and track its duration manually.</p>"
     },
-    "display": "",
+    "display": "Touch",
     "duration": {
       "units": "",
       "value": null
@@ -187,7 +187,7 @@
     "psionic": "",
     "range": {
       "long": null,
-      "units": "medium",
+      "units": "touch",
       "value": null
     },
     "recharge": {
@@ -208,26 +208,25 @@
       "dc": "0",
       "dcAutoAbility": "",
       "dcAutoType": "",
-      "description": "None",
+      "description": "Fortitude negates",
       "originVersion": 97,
-      "type": ""
+      "type": "fortitudenegates"
     },
     "school": "nec",
-    "shortDescription": "<p>Touch attack deals 1d6</p>",
+    "shortDescription": "<p>A melee touch implants a larva that may burst out for 1d6 damage and become a temporary uncontrolled beetle.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Touch attack deals 1d6",
+    "snip": "A melee touch implants a larva that may burst out for 1d6 damage and become a temporary uncontrolled beetle.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 265-265",
     "specialActions": [],
     "specialId": null,
     "specialPrepared": false,
     "spellArea": "",
     "spellbook": "primary",
-    "spellDuration": "Instantaneous",
+    "spellDuration": "1 round/level (see text)",
     "spellDurationData": {
-      "dismissable": false,
-      "units": "inst",
-      "value": ""
+      "units": "seeText",
+      "value": null
     },
     "spellEffect": "",
     "spellType": {
@@ -239,7 +238,7 @@
     "summon": [],
     "tags": [],
     "target": {
-      "value": "up to five creatures, no two of which can be more than 15 ft. apart"
+      "value": "One living creature"
     },
     "types": "force",
     "uniqueId": "",
@@ -260,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Resolve the delayed save and damage, create the beetle actor, choose its compulsory targets, and track its duration manually."
     }
   },
   "type": "spell"

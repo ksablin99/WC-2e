@@ -21,6 +21,7 @@ const { createInterface } = require('readline');
 
 const REPO_ROOT = resolve(__dirname, '..');
 const GITLAB_PROJECT = 'dragonshorn%2FD35E';
+const { ensureManagedDataMarker, removeManagedDataDir } = require('./safe-managed-data-dir');
 
 const args = process.argv.slice(2);
 const force    = args.includes('--force');
@@ -185,7 +186,12 @@ async function main() {
       if (k?.trim() === 'DEV_DATA_DIR' && rest.length) {
         const dataDir = rest.join('=').trim();
         if (existsSync(dataDir)) {
-          rmSync(dataDir, { recursive: true, force: true });
+          ensureManagedDataMarker(dataDir, {
+            repoRoot: currentWt.path,
+            kind: 'dev',
+            expectedWorldId: 'dev-world',
+          });
+          removeManagedDataDir(dataDir, { repoRoot: currentWt.path, kind: 'dev' });
           console.log(`  Removed Foundry data dir: ${dataDir}`);
         }
         break;

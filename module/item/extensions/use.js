@@ -594,7 +594,12 @@ export class ItemUse {
 
     const persistentCombatChanges = allCombatChanges.filter((c) => !c.applyActionsOnlyOnce);
     const onceCombatChanges = allCombatChanges.filter((c) => c.applyActionsOnlyOnce);
-    this.item._addCombatChangesToRollData(persistentCombatChanges, rollData);
+    // Item-field changes feed roll-wide derived values such as CL and attack
+    // count, so they must be available before those values are calculated even
+    // when the item's per-attack bonuses/actions are configured as apply-once.
+    const derivedItemCombatChanges = onceCombatChanges.filter((c) => /^[$&]?item\./.test(c.field));
+    const firstAttackCombatChanges = onceCombatChanges.filter((c) => !derivedItemCombatChanges.includes(c));
+    this.item._addCombatChangesToRollData([...persistentCombatChanges, ...derivedItemCombatChanges], rollData);
 
     if (rollData.isKeen && !foundry.utils.getProperty(this.item.system, "threatRangeExtended")) {
       let baseCrit = foundry.utils.getProperty(this.item.system, "ability.critRange") || 20;
@@ -694,8 +699,8 @@ export class ItemUse {
       Hooks.call("D35E.ItemUse.preRollAllAttacks", this.item, rollData, allAttacks, game.userId);
       for (let atk of allAttacks) {
         const attackRollData = foundry.utils.duplicate(rollData);
-        if (attackId === 0 && onceCombatChanges.length) {
-          this.item._addCombatChangesToRollData(onceCombatChanges, attackRollData);
+        if (attackId === 0 && firstAttackCombatChanges.length) {
+          this.item._addCombatChangesToRollData(firstAttackCombatChanges, attackRollData);
         }
         // Create attack object
         let attack = new ChatAttack(this.item, atk.label, actor, attackRollData, rollData.ammoMaterial, rollData.ammoEnh);
@@ -949,7 +954,7 @@ export class ItemUse {
       }
       const sheetRendered = this.item.parent?.sheet?._element != null;
       if (sheetRendered) this.item.parent.sheet.minimize();
-      const result = await template.drawPreview(event);
+      const result = await template.drawPreview();
       if (sheetRendered) this.item.parent.sheet.maximize();
       if (!result?.result) {
         return { rolled: false, rollData: rollData };
@@ -1006,7 +1011,7 @@ export class ItemUse {
       speaker: ChatMessage.getSpeaker({ actor: actor }),
       rollMode: rollMode,
       sound: CONFIG.sounds.dice,
-      "flags.D35E.noRollRender": true,
+      "flags.warcraftrpg2e.noRollRender": true,
     };
 
     // Post message

@@ -32,7 +32,7 @@
           349
         ],
         "section": "Telepathic Bond",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -103,7 +103,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Allows allies to communicate</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;divination;\n    <br>\n    <strong>Level:</strong>&nbsp;Sorcerer 5, Wizard 5;\n    <strong>Domain:</strong>&nbsp;Community 5;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, M (pieces of eggshell from two different kinds of creatures)<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;close (25 ft. + 5 ft./2 levels)<br>\n    \n    <strong>Target:</strong>&nbsp;you plus one willing creature per three levels, no two of which can be more than 30 ft. apart<br>\n    \n    <strong>Duration:</strong>&nbsp;10 Minute/Level (D)<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;9<br>\n        <strong>Saving Throw:</strong>&nbsp;None\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nYou forge a telepathic bond among yourself and a number of willing creatures, each of which must have an Intelligence score of 3 or higher. Each creature included in the link is linked to all the others. The creatures can communicate telepathically through the bond regardless of language. No special power or influence is established as a result of the bond. Once the bond is formed, it works over any distance (although not from one plane to another).\n</p><p>If desired, you may leave yourself out of the telepathic bond forged. This decision must be made at the time of casting.\n</p><p><i>Telepathic bond </i>can be made permanent with a <i>permanency </i>spell, though it only bonds two creatures per casting of <i>permanency</i>.\n</p><p><i>Material Component: </i>Pieces of eggshell from two different kinds of creatures.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -216,10 +216,10 @@
       "type": ""
     },
     "school": "div",
-    "shortDescription": "<p>Allows allies to communicate</p>",
+    "shortDescription": "\n\n\n<p>\nYou forge a telepathic bond among yourself and a number of willing creatures, each of which must have an Intelligence score of 3 or higher. Each creature included in the link is linked to all the others. The creatures can communicate telepathically through the bond regardless of language. No special power or influence is established as a result of the bond. Once the bond is formed, it works over any distance (although not from one plane to another).\n</p><p>If desired, you may leave yourself out of the telepathic bond forged. This decision must be made at the time of casting.\n</p><p><i>Telepathic bond </i>can be made permanent with a <i>permanency </i>spell, though it only bonds two creatures per casting of <i>permanency</i>.\n</p><p><i>Material Component: </i>Pieces of eggshell from two different kinds of creatures.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Allows allies to communicate",
+    "snip": "Link lets allies communicate.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 264-264",
     "specialActions": [
       {

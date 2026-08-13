@@ -30,7 +30,7 @@
           263
         ],
         "section": "Lesser Geas",
-        "verification": "spell-list-entry"
+        "verification": "srd-mechanics+spell-list-entry"
       }
     }
   },
@@ -76,7 +76,7 @@
       "material": false,
       "somatic": false,
       "value": "",
-      "verbal": false
+      "verbal": true
     },
     "conditionals": [],
     "createdBy": "",
@@ -92,7 +92,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Commands target (must be 7 HD or less).</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;enchantment&nbsp;(compulsion)&nbsp;[language-dependent, mind-affecting];\n    <br>\n    <strong>Level:</strong>&nbsp;Bard 3, Sorcerer 4, Wizard 4;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 round<br>\n    <strong>Range:</strong>&nbsp;close (25 ft. + 5 ft./2 levels)<br>\n    \n    <strong>Target:</strong>&nbsp;one living creature with 7 hd or less\n<br>\n    \n    <strong>Duration:</strong>&nbsp;Special (D)<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;Will negates\n\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nA <i>lesser geas </i>places a magical command on a creature to carry out some service or to refrain from some action or course of activity, as desired by you. The creature must have 7 or fewer Hit Dice and be able to understand you. While a <i>geas </i>cannot compel a creature to kill itself or perform acts that would result in certain death, it can cause almost any other course of activity.\n</p><p>The <i>geased </i>creature must follow the given instructions until the <i>geas </i>is completed, no matter how long it takes.\n</p><p>If the instructions involve some open-ended task that the recipient cannot complete through his own actions the spell remains in effect for a maximum of one day per caster level. A clever recipient can subvert some instructions:\n</p><p>If the subject is prevented from obeying the <i>lesser geas </i>for 24 hours, it takes a –2 penalty to each of its ability scores. Each day, another –2 penalty accumulates, up to a total of –8. No ability score can be reduced to less than 1 by this effect. The ability score penalties are removed 24 hours after the subject resumes obeying the <i>lesser geas.</i>\n</p><p>A <i>lesser geas </i>(and all ability score penalties) can be ended by <i>break enchantment</i>, <i>limited wish</i>, <i>remove curse</i>, <i>miracle</i>, or <i>wish</i>. <i>Dispel magic </i>does not affect a <i>lesser geas</i>.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "",
     "duration": {
@@ -202,10 +202,10 @@
       "type": ""
     },
     "school": "enc",
-    "shortDescription": "<p>Commands target (must be 7 HD or less).</p>",
+    "shortDescription": "\n\n\n<p>\nA <i>lesser geas </i>places a magical command on a creature to carry out some service or to refrain from some action or course of activity, as desired by you. The creature must have 7 or fewer Hit Dice and be able to understand you. While a <i>geas </i>cannot compel a creature to kill itself or perform acts that would result in certain death, it can cause almost any other course of activity.\n</p><p>The <i>geased </i>creature must follow the given instructions until the <i>geas </i>is completed, no matter how long it takes.\n</p><p>If the instructions involve some open-ended task that the recipient cannot complete through his own actions the spell remains in effect for a maximum of one day per caster level. A clever recipient can subvert some instructions:\n</p><p>If the subject is prevented from obeying the <i>lesser geas </i>for 24 hours, it takes a –2 penalty to each of its ability scores. Each day, another –2 penalty accumulates, up to a total of –8. No ability score can be reduced to less than 1 by this effect. The ability score penalties are removed 24 hours after the subject resumes obeying the <i>lesser geas.</i>\n</p><p>A <i>lesser geas </i>(and all ability score penalties) can be ended by <i>break enchantment</i>, <i>limited wish</i>, <i>remove curse</i>, <i>miracle</i>, or <i>wish</i>. <i>Dispel magic </i>does not affect a <i>lesser geas</i>.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Commands target (must be 7 HD or less).",
+    "snip": "Commands subject of 7 HD or less.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 263-263",
     "specialActions": [],
     "specialId": null,

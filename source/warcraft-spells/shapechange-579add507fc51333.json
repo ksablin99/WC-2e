@@ -34,7 +34,7 @@
           336
         ],
         "section": "Shapechange",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -105,7 +105,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Transforms you into any</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;transmutation;\n    <br>\n    <strong>Level:</strong>&nbsp;Druid 9, Sorcerer 9, Wizard 9;\n    <strong>Domain:</strong>&nbsp;Animal 9, Scalykind 9;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, F (a jade circlet worth no less than 1,500 gp, which you must place on your head when casting the spell  (the focus melds into your new form when you change shape ))<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;personal<br>\n    \n    <strong>Target:</strong>&nbsp;you<br>\n    \n    <strong>Duration:</strong>&nbsp;10 Minute/Level (D)<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;17<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThis spell functions like <i>polymorph, </i>except that it enables you to assume the form of any single nonunique creature (of any type) from Fine to Colossal size. The assumed form cannot have more than your caster level in Hit Dice (to a maximum of 25 HD). Unlike <i>polymorph, </i>this spell allows incorporeal or gaseous forms to be assumed.\n</p><p>You gain all extraordinary and supernatural abilities (both attacks and qualities) of the assumed form, but you lose your own supernatural abilities. You also gain the type of the new form in place of your own. The new form does not disorient you. Parts of your body or pieces of equipment that are separated from you do not revert to their original forms.\n</p><p>You can become just about anything you are familiar with. You can change form once each round as a free action. The change takes place either immediately before your regular action or immediately after it, but not during the action. If you use this spell to create a disguise, you get a +10 bonus on your Disguise check.\n</p><p><i>Focus: </i>A jade circlet worth no less than 1,500 gp, which you must place on your head when casting the spell. (The focus melds into your new form when you change shape.)\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Personal",
     "duration": {
@@ -223,10 +223,10 @@
       "type": ""
     },
     "school": "trs",
-    "shortDescription": "<p>Transforms you into any</p>",
+    "shortDescription": "\n\n\n<p>\nThis spell functions like <i>polymorph, </i>except that it enables you to assume the form of any single nonunique creature (of any type) from Fine to Colossal size. The assumed form cannot have more than your caster level in Hit Dice (to a maximum of 25 HD). Unlike <i>polymorph, </i>this spell allows incorporeal or gaseous forms to be assumed.\n</p><p>You gain all extraordinary and supernatural abilities (both attacks and qualities) of the assumed form, but you lose your own supernatural abilities. You also gain the type of the new form in place of your own. The new form does not disorient you. Parts of your body or pieces of equipment that are separated from you do not revert to their original forms.\n</p><p>You can become just about anything you are familiar with. You can change form once each round as a free action. The change takes place either immediately before your regular action or immediately after it, but not during the action. If you use this spell to create a disguise, you get a +10 bonus on your Disguise check.\n</p><p><i>Focus: </i>A jade circlet worth no less than 1,500 gp, which you must place on your head when casting the spell. (The focus melds into your new form when you change shape.)\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Transforms you into any",
+    "snip": "Transforms you into any creature, and change forms once per round.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 269-271",
     "specialActions": [
       {

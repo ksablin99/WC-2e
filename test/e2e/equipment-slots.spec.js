@@ -153,7 +153,7 @@ async function getSlotSource(page, actorId, itemId) {
   return page.evaluate(({ actorId, itemId }) => {
     const actor = game.actors.get(actorId);
     const item  = actor.items.get(itemId);
-    return item?.getFlag('D35E', 'slotSource') ?? null;
+    return item?.getFlag('warcraftrpg2e', 'slotSource') ?? null;
   }, { actorId, itemId });
 }
 
@@ -164,7 +164,7 @@ async function setSlotSource(page, actorId, itemId, slotSource) {
   await page.evaluate(async ({ actorId, itemId, slotSource }) => {
     const actor = game.actors.get(actorId);
     const item  = actor.items.get(itemId);
-    await item.setFlag('D35E', 'slotSource', slotSource);
+    await item.setFlag('warcraftrpg2e', 'slotSource', slotSource);
   }, { actorId, itemId, slotSource });
 }
 
@@ -406,7 +406,7 @@ test('manually unequipping a ring from a provider slot clears slotSource', async
   await page.waitForFunction(({ actorId, itemId }) => {
     const actor = game.actors.get(actorId);
     const item  = actor?.items.get(itemId);
-    return item?.getFlag('D35E', 'slotSource') == null;
+    return item?.getFlag('warcraftrpg2e', 'slotSource') == null;
   }, { actorId, itemId: ringId }, { timeout: 5_000 });
 
   const slotSource = await getSlotSource(page, actorId, ringId);
@@ -452,8 +452,8 @@ test('reducing provider slot grant unequips and clears slotSource for orphaned i
     const r3    = actor?.items.get(ring3Id);
     const r4    = actor?.items.get(ring4Id);
     return !r3?.system.equipped && !r4?.system.equipped &&
-           r3?.getFlag('D35E', 'slotSource') == null &&
-           r4?.getFlag('D35E', 'slotSource') == null;
+           r3?.getFlag('warcraftrpg2e', 'slotSource') == null &&
+           r4?.getFlag('warcraftrpg2e', 'slotSource') == null;
   }, { actorId, ring3Id, ring4Id }, { timeout: 8_000 });
 
   const r3Equipped = await page.evaluate(({ actorId, itemId }) =>

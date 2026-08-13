@@ -33,6 +33,10 @@ const SCENE_NAME = 'Combat Actions E2E Scene';
 test.beforeEach(async ({ page }) => {
   await gotoGame(page);
   await clearWorld(page);
+  // This suite exercises the optional advanced action tracker. Existing test
+  // worlds may persist a user-selected false value even though the current
+  // system default is true, so make the precondition explicit.
+  await page.evaluate(() => game.settings.set('warcraftrpg2e', 'advanced-combat-tracking', true));
   await page.evaluate(async (sceneName) => {
     await Promise.all([...game.combats].map(c => c.delete()));
     await Promise.all([...game.scenes].filter(s => s.name === sceneName).map(s => s.delete()));
@@ -115,7 +119,7 @@ async function waitForFlag(page, combatId, combatantId, flagKey, expected, timeo
     ({ cid, coid, key, val }) => {
       const c = game.combats.get(cid)?.combatants.get(coid);
       if (!c) return false;
-      const v = c.getFlag('D35E', key);
+      const v = c.getFlag('warcraftrpg2e', key);
       // Handle undefined/null as equivalent to false
       const actual = v ?? false;
       return actual === val;
@@ -135,10 +139,10 @@ test('fresh combatant has no action flags set — all icons are active', async (
     const c = game.combats.get(combatId)?.combatants.get(combatantId);
     if (!c) return null;
     return {
-      usedMoveAction:   c.getFlag('D35E', 'usedMoveAction')   ?? null,
-      usedAttackAction: c.getFlag('D35E', 'usedAttackAction') ?? null,
-      usedSwiftAction:  c.getFlag('D35E', 'usedSwiftAction')  ?? null,
-      usedAaoCount:     c.getFlag('D35E', 'usedAaoCount')     ?? null,
+      usedMoveAction:   c.getFlag('warcraftrpg2e', 'usedMoveAction')   ?? null,
+      usedAttackAction: c.getFlag('warcraftrpg2e', 'usedAttackAction') ?? null,
+      usedSwiftAction:  c.getFlag('warcraftrpg2e', 'usedSwiftAction')  ?? null,
+      usedAaoCount:     c.getFlag('warcraftrpg2e', 'usedAaoCount')     ?? null,
     };
   }, { combatId, combatantId });
 
@@ -197,7 +201,7 @@ test('useAction with type "attack" on active turn marks usedAttackAction', async
   await waitForFlag(page, combatId, combatantId, 'usedAttackAction', true);
 
   const flag = await page.evaluate(({ combatId, combatantId }) =>
-    game.combats.get(combatId)?.combatants.get(combatantId)?.getFlag('D35E', 'usedAttackAction'),
+    game.combats.get(combatId)?.combatants.get(combatantId)?.getFlag('warcraftrpg2e', 'usedAttackAction'),
     { combatId, combatantId }
   );
   expect(flag).toBe(true);
@@ -221,7 +225,7 @@ test('useAction with type "standard" on active turn marks usedAttackAction', asy
   await waitForFlag(page, combatId, combatantId, 'usedAttackAction', true);
 
   const flag = await page.evaluate(({ combatId, combatantId }) =>
-    game.combats.get(combatId)?.combatants.get(combatantId)?.getFlag('D35E', 'usedAttackAction'),
+    game.combats.get(combatId)?.combatants.get(combatantId)?.getFlag('warcraftrpg2e', 'usedAttackAction'),
     { combatId, combatantId }
   );
   expect(flag).toBe(true);
@@ -245,7 +249,7 @@ test('useAction with type "swift" marks usedSwiftAction', async ({ page }) => {
   await waitForFlag(page, combatId, combatantId, 'usedSwiftAction', true);
 
   const flag = await page.evaluate(({ combatId, combatantId }) =>
-    game.combats.get(combatId)?.combatants.get(combatantId)?.getFlag('D35E', 'usedSwiftAction'),
+    game.combats.get(combatId)?.combatants.get(combatantId)?.getFlag('warcraftrpg2e', 'usedSwiftAction'),
     { combatId, combatantId }
   );
   expect(flag).toBe(true);
@@ -295,14 +299,14 @@ test('useAction with type "attack" on non-active turn increments usedAaoCount', 
   await page.waitForFunction(
     ({ combatId, combatantId2 }) => {
       const c = game.combats.get(combatId)?.combatants.get(combatantId2);
-      return (c?.getFlag('D35E', 'usedAaoCount') ?? 0) === 1;
+      return (c?.getFlag('warcraftrpg2e', 'usedAaoCount') ?? 0) === 1;
     },
     { combatId, combatantId2 },
     { timeout: 5_000 }
   );
 
   const aaoCount = await page.evaluate(({ combatId, combatantId2 }) =>
-    game.combats.get(combatId)?.combatants.get(combatantId2)?.getFlag('D35E', 'usedAaoCount'),
+    game.combats.get(combatId)?.combatants.get(combatantId2)?.getFlag('warcraftrpg2e', 'usedAaoCount'),
     { combatId, combatantId2 }
   );
   expect(aaoCount).toBe(1);
@@ -317,21 +321,21 @@ test('resetPerRoundCounters() clears all action flags', async ({ page }) => {
   // Set all flags to used values
   await page.evaluate(async ({ combatId, combatantId }) => {
     const c = game.combats.get(combatId).combatants.get(combatantId);
-    await c.setFlag('D35E', 'usedMoveAction',   true);
-    await c.setFlag('D35E', 'usedAttackAction', true);
-    await c.setFlag('D35E', 'usedSwiftAction',  true);
-    await c.setFlag('D35E', 'aaoCount',         1);
-    await c.setFlag('D35E', 'usedAaoCount',     1);
+    await c.setFlag('warcraftrpg2e', 'usedMoveAction',   true);
+    await c.setFlag('warcraftrpg2e', 'usedAttackAction', true);
+    await c.setFlag('warcraftrpg2e', 'usedSwiftAction',  true);
+    await c.setFlag('warcraftrpg2e', 'aaoCount',         1);
+    await c.setFlag('warcraftrpg2e', 'usedAaoCount',     1);
   }, { combatId, combatantId });
 
   // Verify flags are set before reset
   const before = await page.evaluate(({ combatId, combatantId }) => {
     const c = game.combats.get(combatId).combatants.get(combatantId);
     return {
-      move:   c.getFlag('D35E', 'usedMoveAction'),
-      attack: c.getFlag('D35E', 'usedAttackAction'),
-      swift:  c.getFlag('D35E', 'usedSwiftAction'),
-      aao:    c.getFlag('D35E', 'usedAaoCount'),
+      move:   c.getFlag('warcraftrpg2e', 'usedMoveAction'),
+      attack: c.getFlag('warcraftrpg2e', 'usedAttackAction'),
+      swift:  c.getFlag('warcraftrpg2e', 'usedSwiftAction'),
+      aao:    c.getFlag('warcraftrpg2e', 'usedAaoCount'),
     };
   }, { combatId, combatantId });
 
@@ -352,10 +356,10 @@ test('resetPerRoundCounters() clears all action flags', async ({ page }) => {
       const c = game.combats.get(combatId)?.combatants.get(combatantId);
       if (!c) return false;
       return (
-        c.getFlag('D35E', 'usedMoveAction')   === false &&
-        c.getFlag('D35E', 'usedAttackAction') === false &&
-        c.getFlag('D35E', 'usedSwiftAction')  === false &&
-        (c.getFlag('D35E', 'usedAaoCount') ?? -1) === 0
+        c.getFlag('warcraftrpg2e', 'usedMoveAction')   === false &&
+        c.getFlag('warcraftrpg2e', 'usedAttackAction') === false &&
+        c.getFlag('warcraftrpg2e', 'usedSwiftAction')  === false &&
+        (c.getFlag('warcraftrpg2e', 'usedAaoCount') ?? -1) === 0
       );
     },
     { combatId, combatantId },
@@ -365,10 +369,10 @@ test('resetPerRoundCounters() clears all action flags', async ({ page }) => {
   const after = await page.evaluate(({ combatId, combatantId }) => {
     const c = game.combats.get(combatId).combatants.get(combatantId);
     return {
-      move:   c.getFlag('D35E', 'usedMoveAction'),
-      attack: c.getFlag('D35E', 'usedAttackAction'),
-      swift:  c.getFlag('D35E', 'usedSwiftAction'),
-      aao:    c.getFlag('D35E', 'usedAaoCount'),
+      move:   c.getFlag('warcraftrpg2e', 'usedMoveAction'),
+      attack: c.getFlag('warcraftrpg2e', 'usedAttackAction'),
+      swift:  c.getFlag('warcraftrpg2e', 'usedSwiftAction'),
+      aao:    c.getFlag('warcraftrpg2e', 'usedAaoCount'),
     };
   }, { combatId, combatantId });
 
@@ -395,7 +399,7 @@ test('resetPerRoundCounters() resets aaoCount from actor maxAoO', async ({ page 
   await page.waitForFunction(
     ({ combatId, combatantId, expected }) => {
       const c = game.combats.get(combatId)?.combatants.get(combatantId);
-      const v = c?.getFlag('D35E', 'aaoCount');
+      const v = c?.getFlag('warcraftrpg2e', 'aaoCount');
       return v !== undefined && v === expected;
     },
     { combatId, combatantId, expected: expectedAaoCount },
@@ -403,7 +407,7 @@ test('resetPerRoundCounters() resets aaoCount from actor maxAoO', async ({ page 
   );
 
   const aaoCount = await page.evaluate(({ combatId, combatantId }) =>
-    game.combats.get(combatId)?.combatants.get(combatantId)?.getFlag('D35E', 'aaoCount'),
+    game.combats.get(combatId)?.combatants.get(combatantId)?.getFlag('warcraftrpg2e', 'aaoCount'),
     { combatId, combatantId }
   );
   expect(aaoCount).toBe(expectedAaoCount);
@@ -422,11 +426,11 @@ test('nextRound() resets all action flags for all combatants', async ({ page }) 
     await combat.updateEmbeddedDocuments('Combatant', [{ _id: combatantId, initiative: 10 }]);
     await combat.startCombat();
     // Set action flags to "used"
-    await c.setFlag('D35E', 'usedMoveAction',   true);
-    await c.setFlag('D35E', 'usedAttackAction', true);
-    await c.setFlag('D35E', 'usedSwiftAction',  true);
-    await c.setFlag('D35E', 'aaoCount',    1);
-    await c.setFlag('D35E', 'usedAaoCount', 1);
+    await c.setFlag('warcraftrpg2e', 'usedMoveAction',   true);
+    await c.setFlag('warcraftrpg2e', 'usedAttackAction', true);
+    await c.setFlag('warcraftrpg2e', 'usedSwiftAction',  true);
+    await c.setFlag('warcraftrpg2e', 'aaoCount',    1);
+    await c.setFlag('warcraftrpg2e', 'usedAaoCount', 1);
   }, { combatId, combatantId });
 
   // Advance a full round (nextRound calls _resetPerRoundCounter)
@@ -440,10 +444,10 @@ test('nextRound() resets all action flags for all combatants', async ({ page }) 
       const c = game.combats.get(combatId)?.combatants.get(combatantId);
       if (!c) return false;
       return (
-        c.getFlag('D35E', 'usedMoveAction')   === false &&
-        c.getFlag('D35E', 'usedAttackAction') === false &&
-        c.getFlag('D35E', 'usedSwiftAction')  === false &&
-        (c.getFlag('D35E', 'usedAaoCount') ?? -1) === 0
+        c.getFlag('warcraftrpg2e', 'usedMoveAction')   === false &&
+        c.getFlag('warcraftrpg2e', 'usedAttackAction') === false &&
+        c.getFlag('warcraftrpg2e', 'usedSwiftAction')  === false &&
+        (c.getFlag('warcraftrpg2e', 'usedAaoCount') ?? -1) === 0
       );
     },
     { combatId, combatantId },
@@ -453,10 +457,10 @@ test('nextRound() resets all action flags for all combatants', async ({ page }) 
   const flags = await page.evaluate(({ combatId, combatantId }) => {
     const c = game.combats.get(combatId).combatants.get(combatantId);
     return {
-      move:   c.getFlag('D35E', 'usedMoveAction'),
-      attack: c.getFlag('D35E', 'usedAttackAction'),
-      swift:  c.getFlag('D35E', 'usedSwiftAction'),
-      aao:    c.getFlag('D35E', 'usedAaoCount'),
+      move:   c.getFlag('warcraftrpg2e', 'usedMoveAction'),
+      attack: c.getFlag('warcraftrpg2e', 'usedAttackAction'),
+      swift:  c.getFlag('warcraftrpg2e', 'usedSwiftAction'),
+      aao:    c.getFlag('warcraftrpg2e', 'usedAaoCount'),
     };
   }, { combatId, combatantId });
 
@@ -491,14 +495,14 @@ test('moving token more than one grid square marks usedMoveAction', async ({ pag
   await page.waitForFunction(
     ({ combatId, combatantId }) => {
       const c = game.combats.get(combatId)?.combatants.get(combatantId);
-      return c?.getFlag('D35E', 'usedMoveAction') === true;
+      return c?.getFlag('warcraftrpg2e', 'usedMoveAction') === true;
     },
     { combatId, combatantId },
     { timeout: 8_000 }
   );
 
   const flag = await page.evaluate(({ combatId, combatantId }) =>
-    game.combats.get(combatId)?.combatants.get(combatantId)?.getFlag('D35E', 'usedMoveAction'),
+    game.combats.get(combatId)?.combatants.get(combatantId)?.getFlag('warcraftrpg2e', 'usedMoveAction'),
     { combatId, combatantId }
   );
   expect(flag).toBe(true);
@@ -527,7 +531,7 @@ test('moving token exactly one grid square (5-ft step) does NOT mark usedMoveAct
   await page.waitForTimeout(1_000);
 
   const flag = await page.evaluate(({ combatId, combatantId }) =>
-    game.combats.get(combatId)?.combatants.get(combatantId)?.getFlag('D35E', 'usedMoveAction') ?? null,
+    game.combats.get(combatId)?.combatants.get(combatantId)?.getFlag('warcraftrpg2e', 'usedMoveAction') ?? null,
     { combatId, combatantId }
   );
   // Flag should remain null/false (not marked)
@@ -556,7 +560,7 @@ test('moving token diagonally one square does NOT mark usedMoveAction', async ({
   await page.waitForTimeout(1_000);
 
   const flag = await page.evaluate(({ combatId, combatantId }) =>
-    game.combats.get(combatId)?.combatants.get(combatantId)?.getFlag('D35E', 'usedMoveAction') ?? null,
+    game.combats.get(combatId)?.combatants.get(combatantId)?.getFlag('warcraftrpg2e', 'usedMoveAction') ?? null,
     { combatId, combatantId }
   );
   expect(flag == null || flag === false).toBe(true);
@@ -577,7 +581,7 @@ test('move flag is not re-set when usedMoveAction is already true', async ({ pag
   // Pre-set the flag to true
   await page.evaluate(async ({ combatId, combatantId }) => {
     const c = game.combats.get(combatId).combatants.get(combatantId);
-    await c.setFlag('D35E', 'usedMoveAction', true);
+    await c.setFlag('warcraftrpg2e', 'usedMoveAction', true);
   }, { combatId, combatantId });
 
   // Move again — hook should skip because flag is already set
@@ -590,7 +594,7 @@ test('move flag is not re-set when usedMoveAction is already true', async ({ pag
 
   // Flag should still be true (not toggled or double-set)
   const flag = await page.evaluate(({ combatId, combatantId }) =>
-    game.combats.get(combatId)?.combatants.get(combatantId)?.getFlag('D35E', 'usedMoveAction'),
+    game.combats.get(combatId)?.combatants.get(combatantId)?.getFlag('warcraftrpg2e', 'usedMoveAction'),
     { combatId, combatantId }
   );
   expect(flag).toBe(true);
@@ -604,7 +608,7 @@ test('GM can toggle usedMoveAction flag via _onToggleCombatAction', async ({ pag
 
   // Initially false
   const before = await page.evaluate(({ combatId, combatantId }) =>
-    game.combats.get(combatId)?.combatants.get(combatantId)?.getFlag('D35E', 'usedMoveAction') ?? false,
+    game.combats.get(combatId)?.combatants.get(combatantId)?.getFlag('warcraftrpg2e', 'usedMoveAction') ?? false,
     { combatId, combatantId }
   );
   expect(before).toBe(false);
@@ -613,8 +617,8 @@ test('GM can toggle usedMoveAction flag via _onToggleCombatAction', async ({ pag
   await page.evaluate(async ({ combatId, combatantId }) => {
     const combat = game.combats.get(combatId);
     const combatant = combat.combatants.get(combatantId);
-    const current = combatant.getFlag('D35E', 'usedMoveAction') ?? false;
-    await combatant.setFlag('D35E', 'usedMoveAction', !current);
+    const current = combatant.getFlag('warcraftrpg2e', 'usedMoveAction') ?? false;
+    await combatant.setFlag('warcraftrpg2e', 'usedMoveAction', !current);
   }, { combatId, combatantId });
 
   await waitForFlag(page, combatId, combatantId, 'usedMoveAction', true);
@@ -623,14 +627,14 @@ test('GM can toggle usedMoveAction flag via _onToggleCombatAction', async ({ pag
   await page.evaluate(async ({ combatId, combatantId }) => {
     const combat = game.combats.get(combatId);
     const combatant = combat.combatants.get(combatantId);
-    const current = combatant.getFlag('D35E', 'usedMoveAction') ?? false;
-    await combatant.setFlag('D35E', 'usedMoveAction', !current);
+    const current = combatant.getFlag('warcraftrpg2e', 'usedMoveAction') ?? false;
+    await combatant.setFlag('warcraftrpg2e', 'usedMoveAction', !current);
   }, { combatId, combatantId });
 
   await waitForFlag(page, combatId, combatantId, 'usedMoveAction', false);
 
   const after = await page.evaluate(({ combatId, combatantId }) =>
-    game.combats.get(combatId)?.combatants.get(combatantId)?.getFlag('D35E', 'usedMoveAction'),
+    game.combats.get(combatId)?.combatants.get(combatantId)?.getFlag('warcraftrpg2e', 'usedMoveAction'),
     { combatId, combatantId }
   );
   expect(after).toBe(false);
@@ -643,20 +647,20 @@ test('GM AoO toggle cycles: available → exhausted → available', async ({ pag
   // Set up AoO pool: max=1, used=0
   await page.evaluate(async ({ combatId, combatantId }) => {
     const c = game.combats.get(combatId).combatants.get(combatantId);
-    await c.setFlag('D35E', 'aaoCount',     1);
-    await c.setFlag('D35E', 'usedAaoCount', 0);
+    await c.setFlag('warcraftrpg2e', 'aaoCount',     1);
+    await c.setFlag('warcraftrpg2e', 'usedAaoCount', 0);
   }, { combatId, combatantId });
 
   // Simulate the usedAllAao toggle: if used>=max → reset to 0, else set used=max
   // First click: used(0) < max(1) → set used=max(1) → exhausted
   await page.evaluate(async ({ combatId, combatantId }) => {
     const c = game.combats.get(combatId).combatants.get(combatantId);
-    const used = c.getFlag('D35E', 'usedAaoCount') ?? 0;
-    const max  = c.getFlag('D35E', 'aaoCount')     ?? 1;
+    const used = c.getFlag('warcraftrpg2e', 'usedAaoCount') ?? 0;
+    const max  = c.getFlag('warcraftrpg2e', 'aaoCount')     ?? 1;
     if (used >= max) {
-      await c.setFlag('D35E', 'usedAaoCount', 0);
+      await c.setFlag('warcraftrpg2e', 'usedAaoCount', 0);
     } else {
-      await c.setFlag('D35E', 'usedAaoCount', max);
+      await c.setFlag('warcraftrpg2e', 'usedAaoCount', max);
     }
   }, { combatId, combatantId });
 
@@ -678,12 +682,12 @@ test('GM AoO toggle cycles: available → exhausted → available', async ({ pag
   // Second click: used(1) >= max(1) → reset used=0 → available again
   await page.evaluate(async ({ combatId, combatantId }) => {
     const c = game.combats.get(combatId).combatants.get(combatantId);
-    const used = c.getFlag('D35E', 'usedAaoCount') ?? 0;
-    const max  = c.getFlag('D35E', 'aaoCount')     ?? 1;
+    const used = c.getFlag('warcraftrpg2e', 'usedAaoCount') ?? 0;
+    const max  = c.getFlag('warcraftrpg2e', 'aaoCount')     ?? 1;
     if (used >= max) {
-      await c.setFlag('D35E', 'usedAaoCount', 0);
+      await c.setFlag('warcraftrpg2e', 'usedAaoCount', 0);
     } else {
-      await c.setFlag('D35E', 'usedAaoCount', max);
+      await c.setFlag('warcraftrpg2e', 'usedAaoCount', max);
     }
   }, { combatId, combatantId });
 
@@ -710,8 +714,8 @@ test('usedAllAao getter: true when usedAaoCount >= aaoCount', async ({ page }) =
   // Set pool: max=2, used=2
   await page.evaluate(async ({ combatId, combatantId }) => {
     const c = game.combats.get(combatId).combatants.get(combatantId);
-    await c.setFlag('D35E', 'aaoCount',     2);
-    await c.setFlag('D35E', 'usedAaoCount', 2);
+    await c.setFlag('warcraftrpg2e', 'aaoCount',     2);
+    await c.setFlag('warcraftrpg2e', 'usedAaoCount', 2);
   }, { combatId, combatantId });
 
   await page.waitForFunction(
@@ -737,16 +741,16 @@ test('usedAllAao getter: false when usedAaoCount < aaoCount', async ({ page }) =
   // Set pool: max=2, used=1
   await page.evaluate(async ({ combatId, combatantId }) => {
     const c = game.combats.get(combatId).combatants.get(combatantId);
-    await c.setFlag('D35E', 'aaoCount',     2);
-    await c.setFlag('D35E', 'usedAaoCount', 1);
+    await c.setFlag('warcraftrpg2e', 'aaoCount',     2);
+    await c.setFlag('warcraftrpg2e', 'usedAaoCount', 1);
   }, { combatId, combatantId });
 
   await page.waitForFunction(
     ({ combatId, combatantId }) => {
       const c = game.combats.get(combatId)?.combatants.get(combatantId);
       if (!c) return false;
-      const used = c.getFlag('D35E', 'usedAaoCount');
-      const max  = c.getFlag('D35E', 'aaoCount');
+      const used = c.getFlag('warcraftrpg2e', 'usedAaoCount');
+      const max  = c.getFlag('warcraftrpg2e', 'aaoCount');
       return used === 1 && max === 2;
     },
     { combatId, combatantId },
@@ -831,7 +835,7 @@ test('move action icon loses .active class when usedMoveAction flag is set', asy
   // Set the usedMoveAction flag and re-render
   await page.evaluate(async ({ combatId, combatantId }) => {
     const c = game.combats.get(combatId).combatants.get(combatantId);
-    await c.setFlag('D35E', 'usedMoveAction', true);
+    await c.setFlag('warcraftrpg2e', 'usedMoveAction', true);
     await ui.combat.render(true);
   }, { combatId, combatantId });
 
@@ -865,7 +869,7 @@ test('attack action icon loses .active class when usedAttackAction flag is set',
   );
 
   await page.evaluate(async ({ combatId, combatantId }) => {
-    await game.combats.get(combatId).combatants.get(combatantId).setFlag('D35E', 'usedAttackAction', true);
+    await game.combats.get(combatId).combatants.get(combatantId).setFlag('warcraftrpg2e', 'usedAttackAction', true);
     await ui.combat.render(true);
   }, { combatId, combatantId });
 
@@ -897,7 +901,7 @@ test('swift action icon loses .active class when usedSwiftAction flag is set', a
   );
 
   await page.evaluate(async ({ combatId, combatantId }) => {
-    await game.combats.get(combatId).combatants.get(combatantId).setFlag('D35E', 'usedSwiftAction', true);
+    await game.combats.get(combatId).combatants.get(combatantId).setFlag('warcraftrpg2e', 'usedSwiftAction', true);
     await ui.combat.render(true);
   }, { combatId, combatantId });
 
@@ -924,8 +928,8 @@ test('AoO tooltip contains "AoO remaining" text when pool is available', async (
   // Set AoO pool: max=2, used=0
   await page.evaluate(async ({ combatId, combatantId }) => {
     const c = game.combats.get(combatId).combatants.get(combatantId);
-    await c.setFlag('D35E', 'aaoCount',     2);
-    await c.setFlag('D35E', 'usedAaoCount', 0);
+    await c.setFlag('warcraftrpg2e', 'aaoCount',     2);
+    await c.setFlag('warcraftrpg2e', 'usedAaoCount', 0);
   }, { combatId, combatantId });
 
   await page.evaluate(async () => { await ui.combat.render(true); });
@@ -960,8 +964,8 @@ test('AoO tooltip contains "Unavailable" when pool is exhausted', async ({ page 
   // Exhaust the AoO pool: max=1, used=1
   await page.evaluate(async ({ combatId, combatantId }) => {
     const c = game.combats.get(combatId).combatants.get(combatantId);
-    await c.setFlag('D35E', 'aaoCount',     1);
-    await c.setFlag('D35E', 'usedAaoCount', 1);
+    await c.setFlag('warcraftrpg2e', 'aaoCount',     1);
+    await c.setFlag('warcraftrpg2e', 'usedAaoCount', 1);
   }, { combatId, combatantId });
 
   await page.evaluate(async () => { await ui.combat.render(true); });
@@ -1005,8 +1009,8 @@ test('AoO icon loses .active class when pool is exhausted', async ({ page }) => 
   // Exhaust the pool
   await page.evaluate(async ({ combatId, combatantId }) => {
     const c = game.combats.get(combatId).combatants.get(combatantId);
-    await c.setFlag('D35E', 'aaoCount',     1);
-    await c.setFlag('D35E', 'usedAaoCount', 1);
+    await c.setFlag('warcraftrpg2e', 'aaoCount',     1);
+    await c.setFlag('warcraftrpg2e', 'usedAaoCount', 1);
     await ui.combat.render(true);
   }, { combatId, combatantId });
 
@@ -1060,7 +1064,7 @@ test('GM clicking a move-action icon in the tracker toggles the flag', async ({ 
   // Flag should become true
   await page.waitForFunction(
     ({ combatId, combatantId }) =>
-      game.combats.get(combatId)?.combatants.get(combatantId)?.getFlag('D35E', 'usedMoveAction') === true,
+      game.combats.get(combatId)?.combatants.get(combatantId)?.getFlag('warcraftrpg2e', 'usedMoveAction') === true,
     { combatId, combatantId },
     { timeout: 5_000 }
   );

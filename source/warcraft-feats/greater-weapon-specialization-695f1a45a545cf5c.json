@@ -17,9 +17,15 @@
     "warcraftrpg2e": {
       "feat": {
         "category": "General",
-        "prerequisite": "Profi ciency with selected weapon, Greater Weapon Focus with selected weapon, Weapon Focus with selected weapon, Weapon Specialization with selected weapon, warrior level 12th.",
+        "prerequisite": "Proficiency with selected weapon, Greater Weapon Focus with selected weapon, Weapon Focus with selected weapon, Weapon Specialization with selected weapon, warrior level 12th.",
         "repeatable": true,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "Choose one weapon for which you are proficient and already have Weapon Focus, Greater Weapon Focus, and Weapon Specialization. You gain +2 on damage rolls with it, stacking with Weapon Specialization and other damage bonuses. Unarmed strike and grapple may be selected as weapons.",
+          "manual": "Record the selected weapon or attack form and apply the conditional damage bonus manually.",
+          "special": "You may select this feat more than once, choosing a different weapon each time.",
+          "summary": "Gain another +2 damage with a weapon already chosen for Weapon Specialization."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": true
       },
@@ -33,7 +39,7 @@
           149
         ],
         "section": "Greater Weapon Specialization",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +154,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p><strong>Prerequisites:</strong> Profi ciency with selected weapon, Greater Weapon Focus with selected weapon, Weapon Focus with selected weapon, Weapon Specialization with selected weapon, warrior level 12th.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 149) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Prerequisites:</strong> Proficiency with selected weapon, Greater Weapon Focus with selected weapon, Weapon Focus with selected weapon, Weapon Specialization with selected weapon, warrior level 12th.</p><p><strong>Summary:</strong> Gain another +2 damage with a weapon already chosen for Weapon Specialization.</p><p><strong>Benefit:</strong> Choose one weapon for which you are proficient and already have Weapon Focus, Greater Weapon Focus, and Weapon Specialization. You gain +2 on damage rolls with it, stacking with Weapon Specialization and other damage bonuses. Unarmed strike and grapple may be selected as weapons.</p><p><strong>Special:</strong> You may select this feat more than once, choosing a different weapon each time.</p><p><strong>Warrior bonus feat:</strong> Yes</p><p><strong>Foundry and GM handling:</strong> Record the selected weapon or attack form and apply the conditional damage bonus manually.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +254,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat; requires Profi ciency with selected weapon, Greater Weapon Focus with selected weapon, Weapon Focus with selected weapon, Weapon Specialization with selected weapon, warrior level 12th..</p>",
+    "shortDescription": "<p>Gain another +2 damage with a weapon already chosen for Weapon Specialization.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 149",

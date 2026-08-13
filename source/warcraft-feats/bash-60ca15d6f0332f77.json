@@ -19,7 +19,12 @@
         "category": "General",
         "prerequisite": "Str 13, Power Attack, base attack bonus +4.",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "As a full-attack action, make one attack with a bludgeoning weapon. If it hits, roll damage normally but deal none of it; the target instead makes a Fortitude save against DC 10 + the rolled damage. Failure stuns it for 1 round. A creature immune to critical hits cannot be stunned this way. Bash can be attempted no more than once per round and once per character level each day, and the action forfeits bonus or additional attacks granted by feats or other abilities.",
+          "manual": "Declare Bash before attacking. Foundry does not replace the hit's damage, calculate the damage-based save DC, apply stun immunity or duration, or track the per-level daily limit automatically.",
+          "summary": "Trade a bludgeoning hit's damage for a chance to stun the target."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": true
       },
@@ -33,7 +38,7 @@
           142
         ],
         "section": "Bash",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +153,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p><strong>Prerequisites:</strong> Str 13, Power Attack, base attack bonus +4.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 142) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Prerequisites:</strong> Str 13, Power Attack, base attack bonus +4.</p><p><strong>Summary:</strong> Trade a bludgeoning hit&#39;s damage for a chance to stun the target.</p><p><strong>Benefit:</strong> As a full-attack action, make one attack with a bludgeoning weapon. If it hits, roll damage normally but deal none of it; the target instead makes a Fortitude save against DC 10 + the rolled damage. Failure stuns it for 1 round. A creature immune to critical hits cannot be stunned this way. Bash can be attempted no more than once per round and once per character level each day, and the action forfeits bonus or additional attacks granted by feats or other abilities.</p><p><strong>Warrior bonus feat:</strong> Yes</p><p><strong>Foundry and GM handling:</strong> Declare Bash before attacking. Foundry does not replace the hit&#39;s damage, calculate the damage-based save DC, apply stun immunity or duration, or track the per-level daily limit automatically.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +253,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat; requires Str 13, Power Attack, base attack bonus +4..</p>",
+    "shortDescription": "<p>Trade a bludgeoning hit&#39;s damage for a chance to stun the target.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 142",

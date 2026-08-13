@@ -34,7 +34,7 @@
           332
         ],
         "section": "Resistance",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -104,7 +104,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Subject gains +1 on saving throws.</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;abjuration;\n    <br>\n    <strong>Level:</strong>&nbsp;Bard 0, Cleric 0, Druid 0, Paladin 1, Sorcerer 0, Wizard 0;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, M/DF (a miniature cloak), F<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;touch<br>\n    \n    <strong>Target:</strong>&nbsp;creature touched<br>\n    \n    <strong>Duration:</strong>&nbsp;Special<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;Will Negates\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nYou imbue the subject with magical energy that protects it from harm, granting it a +1 resistance bonus on saves.\n</p><p><i>Resistance </i>can be made permanent with a <i>permanency</i> spell.\n</p><p><i>Arcane Material Component: </i>A miniature cloak.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Touch",
     "duration": {
@@ -219,10 +219,10 @@
       "type": "willnegates"
     },
     "school": "abj",
-    "shortDescription": "<p>Subject gains +1 on saving throws.</p>",
+    "shortDescription": "\n\n\n<p>\nYou imbue the subject with magical energy that protects it from harm, granting it a +1 resistance bonus on saves.\n</p><p><i>Resistance </i>can be made permanent with a <i>permanency</i> spell.\n</p><p><i>Arcane Material Component: </i>A miniature cloak.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Subject gains +1 on saving throws.",
+    "snip": "Subject gains +1 on saving throws.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 263-267",
     "specialActions": [
       {

@@ -34,7 +34,7 @@
           351
         ],
         "section": "Tongues",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -96,7 +96,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>You may speak any language.</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;divination;\n    <br>\n    <strong>Level:</strong>&nbsp;Bard 2, Cleric 4, Sorcerer 3, Wizard 3;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, M/DF (a small clay model of a ziggurat, which shatters when the verbal component is pronounced), F<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;touch<br>\n    \n    <strong>Target:</strong>&nbsp;creature touched\n<br>\n    \n    <strong>Duration:</strong>&nbsp;10 Minute/Level<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;5<br>\n        <strong>Saving Throw:</strong>&nbsp;Will negates (harmless)\n\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThis spell grants the creature touched the ability to speak and understand the language of any intelligent creature, whether it is a racial tongue or a regional dialect. The subject can speak only one language at a time, although it may be able to understand several languages. <i>Tongues </i>does not enable the subject to speak with creatures who don’t speak. The subject can make itself understood as far as its voice carries. This spell does not predispose any creature addressed toward the subject in any way.\n</p><p><i>Tongues </i>can be made permanent with a <i>permanency </i>spell.\n</p><p><i>Arcane Material Component: </i>A small clay model of a ziggurat, which shatters when the verbal component is pronounced.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Touch",
     "duration": {
@@ -210,10 +210,10 @@
       "type": "willnegates"
     },
     "school": "div",
-    "shortDescription": "<p>You may speak any language.</p>",
+    "shortDescription": "\n\n\n<p>\nThis spell grants the creature touched the ability to speak and understand the language of any intelligent creature, whether it is a racial tongue or a regional dialect. The subject can speak only one language at a time, although it may be able to understand several languages. <i>Tongues </i>does not enable the subject to speak with creatures who don’t speak. The subject can make itself understood as far as its voice carries. This spell does not predispose any creature addressed toward the subject in any way.\n</p><p><i>Tongues </i>can be made permanent with a <i>permanency </i>spell.\n</p><p><i>Arcane Material Component: </i>A small clay model of a ziggurat, which shatters when the verbal component is pronounced.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "You may speak any language.",
+    "snip": "Speak any language.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 263-268",
     "specialActions": [
       {

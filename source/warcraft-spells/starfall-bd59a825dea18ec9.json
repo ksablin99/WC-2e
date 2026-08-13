@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -36,7 +36,7 @@
           340
         ],
         "section": "Starfall",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -57,7 +57,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -106,7 +106,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>You turn starlight into devastating missiles;</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>For each round you concentrate, choose two creatures, objects, or structures and strike each with one missile for 10d6 force damage; a Reflex save halves a missile's damage. You may choose new targets or repeat targets in later rounds, but the same target cannot receive both missiles in one round. Concentration may continue for up to one round per caster level.</p><p><strong>Automation boundary:</strong> Choose both targets and resolve their separate saves and damage each concentration round manually; the spell does not schedule missiles.</p>"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -226,10 +226,10 @@
       "type": "reflexhalf"
     },
     "school": "evo",
-    "shortDescription": "<p>You turn starlight into devastating missiles;</p>",
+    "shortDescription": "<p>While concentrating, launch two separate 10d6 force missiles each round at creatures, objects, or structures.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "You turn starlight into devastating missiles;",
+    "snip": "While concentrating, launch two separate 10d6 force missiles each round at creatures, objects, or structures.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 265-273",
     "specialActions": [],
     "specialId": null,
@@ -238,8 +238,8 @@
     "spellbook": "primary",
     "spellDuration": "Concentration, up to 1 round/level",
     "spellDurationData": {
-      "units": "roundPerLevel",
-      "value": 1
+      "units": "spec",
+      "value": null
     },
     "spellEffect": "",
     "spellType": {
@@ -272,7 +272,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Choose both targets and resolve their separate saves and damage each concentration round manually; the spell does not schedule missiles."
     }
   },
   "type": "spell"

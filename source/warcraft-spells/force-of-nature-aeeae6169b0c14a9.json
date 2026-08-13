@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -34,7 +34,7 @@
           304
         ],
         "section": "Force of Nature",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -55,7 +55,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -104,7 +104,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>A tree changes into a treant</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>A healthy living tree touched becomes a treant and follows your commands for the duration. If the spell is dispelled, it immediately takes root where it stands. If you dismiss it, the treant attempts to return to its original location before taking root.</p><p><strong>Automation boundary:</strong> Create and control the treant actor manually; the system does not transform the tree or return it to its original position.</p>"
     },
     "display": "Touch",
     "duration": {
@@ -220,10 +220,10 @@
       "type": ""
     },
     "school": "trs",
-    "shortDescription": "<p>A tree changes into a treant</p>",
+    "shortDescription": "<p>Temporarily transform one healthy living tree into an obedient treant.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "A tree changes into a treant",
+    "snip": "Temporarily transform one healthy living tree into an obedient treant.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 269-273",
     "specialActions": [],
     "specialId": null,
@@ -266,7 +266,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Create and control the treant actor manually; the system does not transform the tree or return it to its original position."
     }
   },
   "type": "spell"

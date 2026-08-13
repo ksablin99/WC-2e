@@ -19,7 +19,12 @@
         "category": "General",
         "prerequisite": "Str 13.",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "Before making any attacks for the round, choose a number no greater than your base attack bonus. Until your next turn, subtract that number from AC and add it to all melee weapon damage rolls. Double the damage bonus for a two-handed weapon or a one-handed weapon wielded in two hands. A light weapon gains no damage bonus, except an unarmed strike or natural weapon, though the AC penalty still applies. A double weapon counts as a one-handed weapon and a light weapon unless you attack with only one end as a two-handed weapon.",
+          "manual": "Choose the amount before attacking and apply the timed AC penalty and weapon-dependent damage bonus manually.",
+          "summary": "Trade Armor Class for melee damage, up to your base attack bonus."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": true
       },
@@ -33,7 +38,7 @@
           156
         ],
         "section": "Reckless Attack",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +153,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p><strong>Prerequisites:</strong> Str 13.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 156) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Prerequisites:</strong> Str 13.</p><p><strong>Summary:</strong> Trade Armor Class for melee damage, up to your base attack bonus.</p><p><strong>Benefit:</strong> Before making any attacks for the round, choose a number no greater than your base attack bonus. Until your next turn, subtract that number from AC and add it to all melee weapon damage rolls. Double the damage bonus for a two-handed weapon or a one-handed weapon wielded in two hands. A light weapon gains no damage bonus, except an unarmed strike or natural weapon, though the AC penalty still applies. A double weapon counts as a one-handed weapon and a light weapon unless you attack with only one end as a two-handed weapon.</p><p><strong>Warrior bonus feat:</strong> Yes</p><p><strong>Foundry and GM handling:</strong> Choose the amount before attacking and apply the timed AC penalty and weapon-dependent damage bonus manually.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +253,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat; requires Str 13..</p>",
+    "shortDescription": "<p>Trade Armor Class for melee damage, up to your base attack bonus.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 156",

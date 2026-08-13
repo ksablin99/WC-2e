@@ -41,6 +41,19 @@ describe("Warcraft RPG 2e system schema", () => {
     expect(common.attributes.heroPoints).toEqual({ value: 0, max: 0 });
     expect(common.attributes.shoutUses).toEqual({ value: 0, max: 0 });
     expect(common.details).toMatchObject({ affiliation: "", affiliationRating: 0 });
+    expect(common.customCurrency).toEqual({});
+  });
+
+  test("initializes custom currencies at their actor-schema path", () => {
+    const updater = fs.readFileSync(path.join(root, "module/actor/update/actorUpdater.js"), "utf8");
+    expect(updater).toMatch(/system\.customCurrency\.\$\{currency\[0\]\}/);
+    expect(updater).not.toMatch(/attributes\.customCurrency/);
+  });
+
+  test("writes derived actor flags into the permanent system namespace", () => {
+    const updater = fs.readFileSync(path.join(root, "module/actor/update/actorUpdater.js"), "utf8");
+    expect(updater).toMatch(/flags\.warcraftrpg2e\.\$\{flagKey\}/);
+    expect(updater).not.toMatch(/linkData\([^\n]+flags\.D35E\.\$\{flagKey\}/);
   });
 
   test("defines the Warcraft technological-device item model", () => {

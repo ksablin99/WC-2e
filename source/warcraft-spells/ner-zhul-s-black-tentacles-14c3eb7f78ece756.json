@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "srd-mechanics-with-warcraft-header"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,12 +32,12 @@
           322
         ],
         "section": "Ner'zhul's Black Tentacles",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
   "folder": null,
-  "img": "icons/svg/target.svg",
+  "img": "systems/warcraftrpg2e/icons/spells/named-spells/black-tentacles.png",
   "name": "Ner'zhul's Black Tentacles",
   "ownership": {
     "default": 0
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "other",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -64,7 +64,7 @@
       "parts": []
     },
     "attackBonus": "",
-    "attackCountFormula": "max(min(5,ceil(@cl/2)),1)",
+    "attackCountFormula": "",
     "attackNotes": "",
     "attackParts": [],
     "atWill": false,
@@ -97,12 +97,11 @@
       "alternativeParts": [],
       "parts": []
     },
-    "damageReduction": [],
     "deactivateActions": [],
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Tentacles grapple all</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;conjuration&nbsp;(creation);\n    <br>\n    <strong>Level:</strong>&nbsp;Sorcerer 4, Wizard 4;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, M (a piece of tentacle from a giant octopus or a giant squid)<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;medium (100 ft. + 10 ft./level)<br>\n    <strong>Area:</strong>&nbsp;20-ft.-radius spread<br>\n    \n    \n    <strong>Duration:</strong>&nbsp;1 Round/Level (D)<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;None\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThis spell conjures a field of rubbery black tentacles, each 10 feet long. These waving members seem to spring forth from the earth, floor, or whatever surface is underfoot—including water. They grasp and entwine around creatures that enter the area, holding them fast and crushing them with great strength.\n</p><p>Every creature within the area of the spell must make a grapple check, opposed by the grapple check of the tentacles. Treat the tentacles attacking a particular target as a Large creature with a base attack bonus equal to your caster level and a Strength score of 19. Thus, its grapple check modifier is equal to your caster level +8. The tentacles are immune to all types of damage.\n</p><p>Once the tentacles grapple an opponent, they may make a grapple check each round on your turn to deal 1d6+4 points of bludgeoning damage. The tentacles continue to crush the opponent until the spell ends or the opponent escapes.\n</p><p>Any creature that enters the area of the spell is immediately attacked by the tentacles. Even creatures who aren’t grappling with the tentacles may move through the area at only half normal speed.\n</p><p><i>Material Component: </i>A piece of tentacle from a giant octopus or a giant squid.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Medium (100 ft. + 10 ft./level)",
     "duration": {
@@ -149,7 +148,7 @@
         "value": false
       },
       "focus": "",
-      "value": ""
+      "value": "a piece of tentacle from a giant octopus or a giant squid"
     },
     "maxDamageDice": 0,
     "maxDamageDiceFormula": "",
@@ -158,8 +157,8 @@
       "customTexture": "",
       "overrideColor": false,
       "overrideTexture": false,
-      "size": 0,
-      "type": ""
+      "size": 20,
+      "type": "circle"
     },
     "metamagicFeats": {
       "empowered": false,
@@ -174,9 +173,9 @@
     "nameFromFormula": false,
     "originId": "14c3eb7f78ece756",
     "originPack": "warcraftrpg2e.warcraft-spells",
-    "originVersion": 109,
+    "originVersion": 108,
     "possibleUpdate": false,
-    "powerPointsCost": 1,
+    "powerPointsCost": 0,
     "pr": false,
     "preparation": {
       "autoDeductCharges": true,
@@ -196,7 +195,6 @@
       "formula": ""
     },
     "requiresPsionicFocus": false,
-    "resistances": [],
     "rollTableDraw": {
       "formula": "",
       "id": "",
@@ -213,10 +211,10 @@
       "type": ""
     },
     "school": "con",
-    "shortDescription": "<p>Tentacles grapple all</p>",
+    "shortDescription": "\n\n\n<p>\nThis spell conjures a field of rubbery black tentacles, each 10 feet long. These waving members seem to spring forth from the earth, floor, or whatever surface is underfoot—including water. They grasp and entwine around creatures that enter the area, holding them fast and crushing them with great strength.\n</p><p>Every creature within the area of the spell must make a grapple check, opposed by the grapple check of the tentacles. Treat the tentacles attacking a particular target as a Large creature with a base attack bonus equal to your caster level and a Strength score of 19. Thus, its grapple check modifier is equal to your caster level +8. The tentacles are immune to all types of damage.\n</p><p>Once the tentacles grapple an opponent, they may make a grapple check each round on your turn to deal 1d6+4 points of bludgeoning damage. The tentacles continue to crush the opponent until the spell ends or the opponent escapes.\n</p><p>Any creature that enters the area of the spell is immediately attacked by the tentacles. Even creatures who aren’t grappling with the tentacles may move through the area at only half normal speed.\n</p><p><i>Material Component: </i>A piece of tentacle from a giant octopus or a giant squid.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Tentacles grapple all",
+    "snip": "Tentacles grapple all within 20 ft. spread.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 266-266",
     "specialActions": [],
     "specialId": null,
@@ -234,13 +232,13 @@
       "value": ""
     },
     "sr": false,
-    "subschool": "",
+    "subschool": "creation",
     "summon": [],
     "tags": [],
     "target": {
       "value": "20-ft.-radius spread"
     },
-    "types": "force",
+    "types": "",
     "uniqueId": "",
     "userNonRemovable": false,
     "uses": {
@@ -258,8 +256,8 @@
       "value": 0
     },
     "warcraftManualPolicy": {
-      "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "mode": "srd-baseline",
+      "reason": "The inherited SRD implementation is used with the Warcraft list assignment and spell level."
     }
   },
   "type": "spell"

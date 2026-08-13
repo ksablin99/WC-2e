@@ -391,7 +391,7 @@
             "catalog": {
               "completeListEntry": true,
               "generated": true,
-              "status": "manual-effect-pending-verification"
+              "status": "verified-rules-with-manual-boundary"
             },
             "monsterMagic": {
               "automation": "spell-clone",
@@ -414,7 +414,7 @@
                     291
                   ],
                   "section": "Death Pact",
-                  "verification": "text-extracted-header"
+                  "verification": "private-source-rules-paraphrased+spot-rendered"
                 }
               },
               "uses": 0
@@ -455,7 +455,7 @@
             "twoHandedOnly": false,
             "vsTouchAc": false
           },
-          "actionType": "",
+          "actionType": "special",
           "activateActions": [],
           "activation": {
             "cost": 1,
@@ -504,7 +504,7 @@
           "description": {
             "chat": "",
             "unidentified": "",
-            "value": "<p>Sacrifice an undead minion to regain hit</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p><hr><p><strong>Baron Rivendare spell-like ability:</strong> At will; caster level 22; save DC 18 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+            "value": "<p>Touch one undead creature you control. On a failed Will save it is reduced to dust, and you regain hit points equal to the hit points it had remaining, up to your maximum. If its save succeeds, it survives and ceases to be under your control.</p><p><strong>Automation boundary:</strong> Verify control, roll the save, destroy or release the undead, and transfer its remaining hit-point value manually.</p><hr><p><strong>Baron Rivendare spell-like ability:</strong> At will; caster level 22; save DC 18 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
           },
           "display": "Touch",
           "duration": {
@@ -616,10 +616,10 @@
             "type": "willnegates"
           },
           "school": "nec",
-          "shortDescription": "<p>Sacrifice an undead minion to regain hit</p>",
+          "shortDescription": "<p>Destroy a controlled undead and recover hit points equal to its remaining health.</p>",
           "showInQuickbar": false,
           "slOffset": 0,
-          "snip": "Sacrifice an undead minion to regain hit",
+          "snip": "Destroy a controlled undead and recover hit points equal to its remaining health.",
           "source": "World of Warcraft: Monster Guide, p. 156",
           "specialActions": [],
           "specialId": null,
@@ -662,7 +662,7 @@
           },
           "warcraftManualPolicy": {
             "mode": "manual",
-            "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+            "reason": "Verify control, roll the save, destroy or release the undead, and transfer its remaining hit-point value manually."
           }
         },
         "type": "spell"
@@ -687,7 +687,7 @@
             "catalog": {
               "completeListEntry": true,
               "generated": true,
-              "status": "manual-effect-pending-verification"
+              "status": "verified-rules-with-manual-boundary"
             },
             "monsterMagic": {
               "automation": "spell-clone",
@@ -710,7 +710,7 @@
                     291
                   ],
                   "section": "Death Pact",
-                  "verification": "text-extracted-header"
+                  "verification": "private-source-rules-paraphrased+spot-rendered"
                 }
               },
               "uses": 3
@@ -751,7 +751,7 @@
             "twoHandedOnly": false,
             "vsTouchAc": false
           },
-          "actionType": "",
+          "actionType": "special",
           "activateActions": [],
           "activation": {
             "cost": 1,
@@ -800,7 +800,7 @@
           "description": {
             "chat": "",
             "unidentified": "",
-            "value": "<p>Sacrifice an undead minion to regain hit</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p><hr><p><strong>Baron Rivendare spell-like ability:</strong> 3/day; caster level 22; save DC 23 where applicable. Spell-like abilities have no components and normally use a standard action.</p><p><strong>Source exception:</strong> 30-foot range.</p>"
+            "value": "<p>Touch one undead creature you control. On a failed Will save it is reduced to dust, and you regain hit points equal to the hit points it had remaining, up to your maximum. If its save succeeds, it survives and ceases to be under your control.</p><p><strong>Automation boundary:</strong> Verify control, roll the save, destroy or release the undead, and transfer its remaining hit-point value manually.</p><hr><p><strong>Baron Rivendare spell-like ability:</strong> 3/day; caster level 22; save DC 23 where applicable. Spell-like abilities have no components and normally use a standard action.</p><p><strong>Source exception:</strong> 30-foot range.</p>"
           },
           "display": "Touch",
           "duration": {
@@ -912,10 +912,10 @@
             "type": "willnegates"
           },
           "school": "nec",
-          "shortDescription": "<p>Sacrifice an undead minion to regain hit</p>",
+          "shortDescription": "<p>Destroy a controlled undead and recover hit points equal to its remaining health.</p>",
           "showInQuickbar": false,
           "slOffset": 0,
-          "snip": "Sacrifice an undead minion to regain hit",
+          "snip": "Destroy a controlled undead and recover hit points equal to its remaining health.",
           "source": "World of Warcraft: Monster Guide, p. 156",
           "specialActions": [],
           "specialId": null,
@@ -958,7 +958,7 @@
           },
           "warcraftManualPolicy": {
             "mode": "manual",
-            "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+            "reason": "Verify control, roll the save, destroy or release the undead, and transfer its remaining hit-point value manually."
           }
         },
         "type": "spell"
@@ -983,7 +983,7 @@
             "catalog": {
               "completeListEntry": true,
               "generated": true,
-              "status": "manual-effect-pending-verification"
+              "status": "verified-rules-with-manual-boundary"
             },
             "monsterMagic": {
               "automation": "spell-clone",
@@ -1010,7 +1010,7 @@
                     291
                   ],
                   "section": "Greater Death Coil",
-                  "verification": "text-extracted-header"
+                  "verification": "private-source-rules-paraphrased+spot-rendered"
                 }
               },
               "uses": 3
@@ -1051,7 +1051,7 @@
             "twoHandedOnly": false,
             "vsTouchAc": false
           },
-          "actionType": "",
+          "actionType": "special",
           "activateActions": [],
           "activation": {
             "cost": 1,
@@ -1100,7 +1100,7 @@
           "description": {
             "chat": "",
             "unidentified": "",
-            "value": "<p>Deals 3d8 damage, +1/level</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p><hr><p><strong>Baron Rivendare spell-like ability:</strong> 3/day; caster level 22; save DC 17 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+            "value": "<p>This functions as <em>death coil</em>, except the amount is 3d8 +1 per caster level, maximum +15. It damages living creatures (Will half) and heals undead.</p><p><strong>Automation boundary:</strong> Roll the listed amount, then apply it as saved damage to living creatures or healing to undead manually.</p><hr><p><strong>Baron Rivendare spell-like ability:</strong> 3/day; caster level 22; save DC 17 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
           },
           "display": "Close (25 ft. + 5 ft./2 levels)",
           "duration": {
@@ -1221,10 +1221,10 @@
             "type": "willhalf"
           },
           "school": "nec",
-          "shortDescription": "<p>Deals 3d8 damage, +1/level</p>",
+          "shortDescription": "<p>A stronger death coil deals or heals 3d8 + up to 15 points of negative energy.</p>",
           "showInQuickbar": false,
           "slOffset": 0,
-          "snip": "Deals 3d8 damage, +1/level",
+          "snip": "A stronger death coil deals or heals 3d8 + up to 15 points of negative energy.",
           "source": "World of Warcraft: Monster Guide, p. 156",
           "specialActions": [],
           "specialId": null,
@@ -1267,7 +1267,7 @@
           },
           "warcraftManualPolicy": {
             "mode": "manual",
-            "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+            "reason": "Roll the listed amount, then apply it as saved damage to living creatures or healing to undead manually."
           }
         },
         "type": "spell"

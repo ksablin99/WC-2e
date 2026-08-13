@@ -19,7 +19,12 @@
         "category": "General",
         "prerequisite": "Spt 13, orc or tauren or character level 8+.",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "Once per day as a free action, choose one ability score and gain a +2 sacred bonus to it for 1d6 + your Spirit modifier rounds.",
+          "manual": "Choose the ability, roll and track the duration, apply the sacred bonus, and record the daily use manually.",
+          "summary": "Briefly empower one chosen ability score once per day."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": false
       },
@@ -33,7 +38,7 @@
           148
         ],
         "section": "Follower of the Totem",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +153,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p><strong>Prerequisites:</strong> Spt 13, orc or tauren or character level 8+.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 148) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Prerequisites:</strong> Spt 13, orc or tauren or character level 8+.</p><p><strong>Summary:</strong> Briefly empower one chosen ability score once per day.</p><p><strong>Benefit:</strong> Once per day as a free action, choose one ability score and gain a +2 sacred bonus to it for 1d6 + your Spirit modifier rounds.</p><p><strong>Foundry and GM handling:</strong> Choose the ability, roll and track the duration, apply the sacred bonus, and record the daily use manually.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +253,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat; requires Spt 13, orc or tauren or character level 8+..</p>",
+    "shortDescription": "<p>Briefly empower one chosen ability score once per day.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 148",

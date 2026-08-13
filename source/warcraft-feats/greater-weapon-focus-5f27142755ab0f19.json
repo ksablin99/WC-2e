@@ -17,9 +17,15 @@
     "warcraftrpg2e": {
       "feat": {
         "category": "General",
-        "prerequisite": "Profi ciency with selected weapon, Weapon Focus with selected weapon, warrior level 8th.",
+        "prerequisite": "Proficiency with selected weapon, Weapon Focus with selected weapon, warrior level 8th.",
         "repeatable": true,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "Choose one weapon for which you are proficient and already have Weapon Focus. You gain +1 on attack rolls with it, stacking with Weapon Focus and other attack bonuses. Unarmed strike, grapple, and ray attacks may be selected as weapons.",
+          "manual": "Record the selected weapon or attack form and apply the conditional attack bonus manually.",
+          "special": "You may select this feat more than once, choosing a different weapon each time. It is a prerequisite for Greater Weapon Specialization with that weapon.",
+          "summary": "Gain another +1 on attacks with a weapon already chosen for Weapon Focus."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": true
       },
@@ -33,7 +39,7 @@
           149
         ],
         "section": "Greater Weapon Focus",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +154,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p><strong>Prerequisites:</strong> Profi ciency with selected weapon, Weapon Focus with selected weapon, warrior level 8th.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 149) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Prerequisites:</strong> Proficiency with selected weapon, Weapon Focus with selected weapon, warrior level 8th.</p><p><strong>Summary:</strong> Gain another +1 on attacks with a weapon already chosen for Weapon Focus.</p><p><strong>Benefit:</strong> Choose one weapon for which you are proficient and already have Weapon Focus. You gain +1 on attack rolls with it, stacking with Weapon Focus and other attack bonuses. Unarmed strike, grapple, and ray attacks may be selected as weapons.</p><p><strong>Special:</strong> You may select this feat more than once, choosing a different weapon each time. It is a prerequisite for Greater Weapon Specialization with that weapon.</p><p><strong>Warrior bonus feat:</strong> Yes</p><p><strong>Foundry and GM handling:</strong> Record the selected weapon or attack form and apply the conditional attack bonus manually.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +254,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat; requires Profi ciency with selected weapon, Weapon Focus with selected weapon, warrior level 8th..</p>",
+    "shortDescription": "<p>Gain another +1 on attacks with a weapon already chosen for Weapon Focus.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 149",

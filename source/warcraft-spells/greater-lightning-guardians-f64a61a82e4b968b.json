@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           315
         ],
         "section": "Greater Lightning Guardians",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>As lightning guardians,</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>This functions as <em>lightning guardians</em>, except an attacker that fails its Reflex save takes 3d4+3 electricity damage.</p><p><strong>Automation boundary:</strong> Resolve one Reflex save and spell-resistance check per attacker and apply retaliation manually.</p>"
     },
     "display": "Personal",
     "duration": {
@@ -208,15 +208,15 @@
       "dc": "0",
       "dcAutoAbility": "",
       "dcAutoType": "",
-      "description": "Reflex negates (see below)",
+      "description": "Reflex negates (see text)",
       "originVersion": 97,
       "type": "reflexnegates"
     },
     "school": "con",
-    "shortDescription": "<p>As lightning guardians,</p>",
+    "shortDescription": "<p>As lightning guardians, but failed Reflex saves take 3d4+3 electricity damage.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "As lightning guardians,",
+    "snip": "As lightning guardians, but failed Reflex saves take 3d4+3 electricity damage.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 271-271",
     "specialActions": [],
     "specialId": null,
@@ -259,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Resolve one Reflex save and spell-resistance check per attacker and apply retaliation manually."
     }
   },
   "type": "spell"

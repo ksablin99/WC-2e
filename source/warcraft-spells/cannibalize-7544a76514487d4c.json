@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           284
         ],
         "section": "Cannibalize",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,11 +53,11 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
-      "type": "round"
+      "type": "special"
     },
     "addedLevel": 0,
     "attack": {
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Caster regains hit points by consuming</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>While concentrating for up to four rounds, you consume flesh from one mostly intact corpse with a true anatomy and recover 1d8 hit points each round, never exceeding your maximum. The spell heals only you. After one use, too little remains for that corpse to be targeted again.</p><p><strong>Automation boundary:</strong> Track concentration, healing pulses, and whether the corpse has already been consumed manually.</p>"
     },
     "display": "Personal",
     "duration": {
@@ -213,10 +213,10 @@
       "type": ""
     },
     "school": "nec",
-    "shortDescription": "<p>Caster regains hit points by consuming</p>",
+    "shortDescription": "<p>Consume one intact anatomical corpse to heal 1d8 hit points per round of concentration.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Caster regains hit points by consuming",
+    "snip": "Consume one intact anatomical corpse to heal 1d8 hit points per round of concentration.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 265-265",
     "specialActions": [],
     "specialId": null,
@@ -259,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Track concentration, healing pulses, and whether the corpse has already been consumed manually."
     }
   },
   "type": "spell"

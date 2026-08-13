@@ -32,7 +32,7 @@
           341
         ],
         "section": "Summon Monster VI",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -103,7 +103,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Calls extraplanar creature to</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;conjuration&nbsp;(summoning)&nbsp;[see text for summon monster i];\n    <br>\n    <strong>Level:</strong>&nbsp;Bard 6, Cleric 6, Sorcerer 6, Wizard 6;\n    \n    \n    \n    \n    <br>\n    \n    \n      <strong>Casting Time:</strong>&nbsp;1 round<br>\n    <strong>Range:</strong>&nbsp;touch<br>\n    \n    \n    <strong>Effect:</strong>&nbsp;One or more summoned creatures, no two of which can be more than 30 ft. apart<br>\n    <strong>Duration:</strong>&nbsp;Instantaneous<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;none\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  <p>This spell functions like @Compendium[warcraftrpg2e.spells.eEyDI6q41iGOabdX]{Summon Monster I}<em>, </em>except you can summon one creature from the 6th-level list, 1d3 creatures of the same kind from the 5th-level list, or 1d4+1 creatures of the same kind from a lower-level list.</p>\n<h3><span id=\"Summon_Monster_Tables\" class=\"mw-headline\">Summon Monster Tables</span></h3>\n<p><span class=\"mw-headline\">@Compendium[warcraftrpg2e.summoning-roll-tables.qLwD4yuvOMTUSxsH]{Summon Monster I}</span></p>\n<p><span class=\"mw-headline\">@Compendium[warcraftrpg2e.summoning-roll-tables.eGFaIIrrtY72kLaa]{Summon Monster II}</span></p>\n<p><span class=\"mw-headline\">@Compendium[warcraftrpg2e.summoning-roll-tables.EvlMyU1vcdEFVr6l]{Summon Monster III}</span></p>\n<p><span class=\"mw-headline\">@Compendium[warcraftrpg2e.summoning-roll-tables.0KfoiuB1yPLo0TgW]{Summon Monster IV}</span></p>\n<p><span class=\"mw-headline\">@Compendium[warcraftrpg2e.summoning-roll-tables.66Tf7LkiClo3Cxqh]{Summon Monster V}</span></p>\n<p><span class=\"mw-headline\">@Compendium[warcraftrpg2e.summoning-roll-tables.7wIuIF8UZQ32DsLs]{Summon Monster VI}</span></p>\n</div>\n"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -216,10 +216,10 @@
       "type": ""
     },
     "school": "con",
-    "shortDescription": "<p>Calls extraplanar creature to</p>",
+    "shortDescription": "<p>This spell functions like @Compendium[warcraftrpg2e.spells.eEyDI6q41iGOabdX]{Summon Monster I}<em>, </em>except you can summon one creature from the 6th-level list, 1d3 creatures of the same kind from the 5th-level list, or 1d4+1 creatures of the same kind from a lower-level list.</p>\n<h3><span id=\"Summon_Monster_Tables\" class=\"mw-headline\">Summon Monster Tables</span></h3>\n<p><span class=\"mw-headline\">@Compendium[warcraftrpg2e.summoning-roll-tables.qLwD4yuvOMTUSxsH]{Summon Monster I}</span></p>\n<p><span class=\"mw-headline\">@Compendium[warcraftrpg2e.summoning-roll-tables.eGFaIIrrtY72kLaa]{Summon Monster II}</span></p>\n<p><span class=\"mw-headline\">@Compendium[warcraftrpg2e.summoning-roll-tables.EvlMyU1vcdEFVr6l]{Summon Monster III}</span></p>\n<p><span class=\"mw-headline\">@Compendium[warcraftrpg2e.summoning-roll-tables.0KfoiuB1yPLo0TgW]{Summon Monster IV}</span></p>\n<p><span class=\"mw-headline\">@Compendium[warcraftrpg2e.summoning-roll-tables.66Tf7LkiClo3Cxqh]{Summon Monster V}</span></p>\n<p><span class=\"mw-headline\">@Compendium[warcraftrpg2e.summoning-roll-tables.7wIuIF8UZQ32DsLs]{Summon Monster VI}</span></p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Calls extraplanar creature to",
+    "snip": "Calls extraplanar creature to fight for you.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 266-266",
     "specialActions": [],
     "specialId": null,

@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           317
         ],
         "section": "Magic Circle against Evil/Good",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>As protection spells,</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>This combined compendium record represents separate evil and good versions. The outward form gives every creature in the 10-foot emanation the matching <em>protection from evil</em> or <em>protection from good</em> effects. Summoned creatures of the opposed alignment cannot enter; spell resistance may overcome only this contact barrier, not the AC, save, or mental-control protections. It does not stack with the corresponding protection spell.</p><p>The inward form confines a called creature of the opposed alignment for up to 24 hours per caster level if its calling spell begins within 1 round. Breaking the powdered circle releases it. Once per day, a creature with spell resistance may test the circle; failure to overcome SR ends the trap. Dimensional travel can escape unless <em>dimensional anchor</em> or <em>greater hooks of binding</em> is established first. The prisoner cannot cross or reach through the circle but may use ranged attacks beyond it.</p><p>A hand-drawn diagram takes 10 minutes and Spellcraft DC 20; the result is secret. Taking 10 takes 10 minutes, while taking 20 takes 3 hours 20 minutes. A successful diagram lets the anchor or hooks be cast during the preceding round, blocks the prisoner's SR and attacks across the boundary, and raises its Charisma escape DC by 5. Any outside disturbance of circle or diagram ends the trap. The arcane component is powdered silver used to trace a 3-foot circle.</p><p><strong>Automation boundary:</strong> Choose alignment and inward or outward form; apply ward bonuses, spell resistance, diagram checks, confinement, escape, and boundary integrity manually.</p>"
     },
     "display": "Touch",
     "duration": {
@@ -213,10 +213,10 @@
       "type": "willnegates"
     },
     "school": "abj",
-    "shortDescription": "<p>As protection spells,</p>",
+    "shortDescription": "<p>Choose evil or good: a mobile 10-foot ward protects allies, or an inward circle helps confine a called creature.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "As protection spells,",
+    "snip": "Choose evil or good: a mobile 10-foot ward protects allies, or an inward circle helps confine a called creature.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 268-268",
     "specialActions": [],
     "specialId": null,
@@ -259,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Choose alignment and inward or outward form; apply ward bonuses, spell resistance, diagram checks, confinement, escape, and boundary integrity manually."
     }
   },
   "type": "spell"

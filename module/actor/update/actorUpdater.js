@@ -447,7 +447,13 @@ export class ActorUpdater {
 
   async updateChanges({ updated = null } = {}, options = {}) {
     let updateData = {};
-    let source = foundry.utils.mergeObject(this.actor.toObject(false), foundry.utils.expandObject(updated || {}));
+    const expandedUpdate = foundry.utils.expandObject(updated || {});
+    const flattenedUpdate = foundry.utils.flattenObject(expandedUpdate);
+    const hitPointsWereExplicitlyUpdated = Object.prototype.hasOwnProperty.call(
+      flattenedUpdate,
+      "system.attributes.hp.value"
+    );
+    let source = foundry.utils.mergeObject(this.actor.toObject(false), expandedUpdate);
     source.items = this.actor.items;
 
     let sizeOverride = "";
@@ -1262,7 +1268,11 @@ export class ActorUpdater {
         Math.min(prevValues.mhp, source.system.attributes.hp.value)
       );
     } else {
-      if (updateData["system.attributes.hp.max"]) {
+      if (
+        !hitPointsWereExplicitlyUpdated &&
+        options.preserveCurrentHitPoints !== true &&
+        updateData["system.attributes.hp.max"]
+      ) {
         const hpDiff = updateData["system.attributes.hp.max"] - prevValues.mhp;
         LogHelper.log("HP Diff", prevValues.mhp, hpDiff, updateData["system.attributes.hp.max"]);
         if (hpDiff !== 0) {
@@ -1565,6 +1575,7 @@ export class ActorUpdater {
     const classes = items.filter((obj) => {
       return obj.type === "class";
     });
+    const warcraftCasterAdvancement = allocateWarcraftPrestigeCasterLevels(classes);
 
     const racialHD = classes.filter((o) => foundry.utils.getProperty(o.system, "classType") === "racial");
     const templateHD = classes.filter((o) => foundry.utils.getProperty(o.system, "classType") === "template");
@@ -1732,10 +1743,10 @@ export class ActorUpdater {
     for (let currency of currencyConfig.currency) {
       if (currency[0])
         if (
-          data1.attributes.customCurrency === undefined ||
-          data1.attributes.customCurrency[currency[0]] === undefined
+          data1.customCurrency === undefined ||
+          data1.customCurrency[currency[0]] === undefined
         ) {
-          linkData(source, updateData, `system.attributes.customCurrency.${currency[0]}`, 0);
+          linkData(source, updateData, `system.customCurrency.${currency[0]}`, 0);
         }
     }
 
@@ -2176,7 +2187,7 @@ export class ActorUpdater {
     //Set flags on actor so they are accessible
 
     for (let flagKey of Object.keys(flags)) {
-      linkData(source, updateData, `flags.D35E.${flagKey}`, flags[flagKey]);
+      linkData(source, updateData, `flags.warcraftrpg2e.${flagKey}`, flags[flagKey]);
     }
 
     // Reset class skills
@@ -2228,6 +2239,10 @@ export class ActorUpdater {
       let itemsToAdd = [];
       let itemsToRemove = [];
       for (let i of this.actor.items.values()) {
+        // Only class/race-managed features participate in automatic pruning.
+        // User-selected feats and other compendium items also have unique IDs,
+        // but are intentionally removable and must survive actor refreshes.
+        if (!i.system.userNonRemovable) continue;
         if (!i.system.hasOwnProperty("uniqueId")) continue;
         if (i.system.uniqueId === null) continue;
         if (i.system.uniqueId === "") continue;
@@ -2975,8 +2990,17 @@ export class ActorUpdater {
       } else health_sources.forEach((race) => manual_health(race));
     };
 
-    compute_health(racialHD, race_options);
-    compute_health(classes, cls_options);
+    // Complete bestiary statblocks store their printed Hit Dice pool in
+    // attributes.hp.base. Their racial class remains useful for BAB, saves,
+    // and other derived data, but adding its HP again double-counts that pool.
+    const hasCompleteBestiaryStatblock = foundry.utils.getProperty(
+      source,
+      "flags.warcraftrpg2e.bestiary.completeStatblock"
+    ) === true;
+    if (!hasCompleteBestiaryStatblock) {
+      compute_health(racialHD, race_options);
+      compute_health(classes, cls_options);
+    }
 
     // Add Constitution to HP
     changes.push({
@@ -3780,14 +3804,16 @@ export class ActorUpdater {
     }
 
     // Concentration
-    if (system.skills.coc.rank >= 5) {
+    if (system.skills.coc.rank >= 5 && system.skills.aut != null) {
       changes.push({
         raw: ["2", "skill", "skill.aut", "untyped", 0],
         source: { name: "Skill synergy" },
       });
     }
 
-    if (system.skills.aut.rank >= 5) {
+    // Autohypnosis and Knowledge (Psionics) are optional legacy skills. New
+    // Warcraft actors omit both, while migrated D35E actors may retain them.
+    if (system.skills.aut?.rank >= 5 && system.skills.kps != null) {
       changes.push({
         raw: ["2", "skill", "skill.kps", "untyped", 0],
         source: { name: "Skill synergy" },
@@ -4104,9 +4130,13 @@ export class ActorUpdater {
       srcData.system.abilities.str.damage +
       srcData.system.abilities.str.carryBonus;
     let carryMultiplier = srcData.system.abilities.str.carryMultiplier;
-    const size = srcData.system.traits.actualSize;
-    if (srcData.system.attributes.quadruped) carryMultiplier *= CONFIG.D35E.encumbranceMultipliers.quadruped[size];
-    else carryMultiplier *= CONFIG.D35E.encumbranceMultipliers.normal[size];
+    // actualSize is derived later in this update pipeline, so it is absent on
+    // fresh and some migrated actors. Use stored size until derivation runs.
+    const size = srcData.system.traits.actualSize || srcData.system.traits.size || "med";
+    const sizeMultipliers = srcData.system.attributes.quadruped
+      ? CONFIG.D35E.encumbranceMultipliers.quadruped
+      : CONFIG.D35E.encumbranceMultipliers.normal;
+    carryMultiplier *= sizeMultipliers[size] ?? sizeMultipliers.med ?? 1;
     // Compute carrying capacity using the formula from CONFIG.D35E.carryingCapacityFormula.
     // _preProcessDiceFormula (hooked into Roll35e.parse) handles pow(), floor(), max(), min().
     const str = carryStr > 0 ? carryStr : 0;

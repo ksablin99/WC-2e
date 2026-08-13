@@ -567,7 +567,7 @@
                     282
                   ],
                   "section": "Blasphemy",
-                  "verification": "text-extracted-header"
+                  "verification": "srd-mechanics+text-extracted-header"
                 }
               },
               "uses": 0
@@ -658,7 +658,7 @@
           "description": {
             "chat": "",
             "unidentified": "",
-            "value": "<p>Kills, paralyzes, weakens or dazes</p><hr><p><strong>Doomguard spell-like ability:</strong> At will; caster level 18; save DC 23 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+            "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;evocation&nbsp;[evil, sonic];\n    <br>\n    <strong>Level:</strong>&nbsp;Cleric 7;\n    <strong>Domain:</strong>&nbsp;Evil 7;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;40 feet<br>\n    <strong>Area:</strong>&nbsp;nonevil creatures in a 40-ft.-radius spread centered on you<br>\n    \n    \n    <strong>Duration:</strong>&nbsp;Instantaneous<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;13<br>\n        <strong>Saving Throw:</strong>&nbsp;Will Negates\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nAny nonevil creature within the area of a <i>blasphemy </i>spell suffers the following ill effects.\n</p>\n\n<p>The effects are cumulative and concurrent.\n</p><p>No saving throw is allowed against these effects.\n</p><p><i>Dazed: </i>The creature can take no actions for 1 round, though it defends itself normally.\n</p><p><i>Weakened: </i>The creature’s Strength score decreases by 2d6 points for 2d4 rounds.\n</p><p><i>Paralyzed: </i>The creature is paralyzed and helpless for 1d10 minutes.\n</p><p><i>Killed: </i>Living creatures die. Undead creatures are destroyed.\n</p><p>Furthermore, if you are on your home plane when you cast this spell, nonevil extraplanar creatures within the area are instantly banished back to their home planes. Creatures so banished cannot return for at least 24 hours. This effect takes place regardless of whether the creatures hear the <i>blasphemy. </i>The banishment effect allows a Will save (at a –4 penalty) to negate.\n</p><p>Creatures whose Hit Dice exceed your caster level are unaffected by <i>blasphemy.</i>\n</p>\n<hr/>\n\n\n\n</div>\n<hr><p><strong>Doomguard spell-like ability:</strong> At will; caster level 18; save DC 23 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
           },
           "display": "40 ft.",
           "duration": {
@@ -777,10 +777,10 @@
             "type": "willnegates"
           },
           "school": "evo",
-          "shortDescription": "<p>Kills, paralyzes, weakens or dazes</p>",
+          "shortDescription": "\n\n\n<p>\nAny nonevil creature within the area of a <i>blasphemy </i>spell suffers the following ill effects.\n</p>\n\n<p>The effects are cumulative and concurrent.\n</p><p>No saving throw is allowed against these effects.\n</p><p><i>Dazed: </i>The creature can take no actions for 1 round, though it defends itself normally.\n</p><p><i>Weakened: </i>The creature’s Strength score decreases by 2d6 points for 2d4 rounds.\n</p><p><i>Paralyzed: </i>The creature is paralyzed and helpless for 1d10 minutes.\n</p><p><i>Killed: </i>Living creatures die. Undead creatures are destroyed.\n</p><p>Furthermore, if you are on your home plane when you cast this spell, nonevil extraplanar creatures within the area are instantly banished back to their home planes. Creatures so banished cannot return for at least 24 hours. This effect takes place regardless of whether the creatures hear the <i>blasphemy. </i>The banishment effect allows a Will save (at a –4 penalty) to negate.\n</p><p>Creatures whose Hit Dice exceed your caster level are unaffected by <i>blasphemy.</i>\n</p>\n<hr/>\n\n\n",
           "showInQuickbar": false,
           "slOffset": 0,
-          "snip": "Kills, paralyzes, weakens or dazes",
+          "snip": "Kills, paralyzes, weakens, or dazes nonevil subjects.",
           "source": "World of Warcraft: Monster Guide, p. 37",
           "specialActions": [
             {
@@ -896,7 +896,7 @@
                     298
                   ],
                   "section": "Dominate Monster",
-                  "verification": "text-extracted-header"
+                  "verification": "srd-mechanics+text-extracted-header"
                 }
               },
               "uses": 0
@@ -987,7 +987,7 @@
           "description": {
             "chat": "",
             "unidentified": "",
-            "value": "<p>As dominate person, but any</p><hr><p><strong>Doomguard spell-like ability:</strong> At will; caster level 18; save DC 25 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+            "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;enchantment&nbsp;(compulsion)&nbsp;[mind-affecting];\n    <br>\n    <strong>Level:</strong>&nbsp;Sorcerer 9, Wizard 9;\n    <strong>Domain:</strong>&nbsp;Charm 9;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 round<br>\n    <strong>Range:</strong>&nbsp;close (25 ft. + 5 ft./2 levels)<br>\n    \n    <strong>Target:</strong>&nbsp;one creature<br>\n    \n    \n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;17<br>\n        <strong>Saving Throw:</strong>&nbsp;Will negates\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nYou can control the actions of any creature through a telepathic link that you establish with the subject’s mind.\n</p><p>If you and the subject have a common language, you can generally force the subject to perform as you desire, within the limits of its abilities. If no common language exists, you can communicate only basic commands, such as “Come here,” “Go there,” “Fight,” and “Stand still.” You know what the subject is experiencing, but you do not receive direct sensory input from it, nor can it communicate with you telepathically.\n</p><p>Once you have given a <i>dominated </i>creature a command, it continues to attempt to carry out that command to the exclusion of all other activities except those necessary for day-to-day survival (such as sleeping, eating, and so forth). Because of this limited range of activity, a Sense Motive check against DC 15 (rather than DC 25) can determine that the subject’s behavior is being influenced by an enchantment effect (see the Sense Motive skill description).\n</p><p>Changing your instructions or giving a <i>dominated </i>creature a new command is the equivalent of redirecting a spell, so it is a move action.\n</p><p>By concentrating fully on the spell (a standard action), you can receive full sensory input as interpreted by the mind of the subject, though it still can’t communicate with you. You can’t actually see through the subject’s eyes, so it’s not as good as being there yourself, but you still get a good idea of what’s going on.\n</p><p>Subjects resist this control, and any subject forced to take actions against its nature receives a new saving throw with a +2 bonus. Obviously self-destructive orders are not carried out. Once control is established, the range at which it can be exercised is unlimited, as long as you and the subject are on the same plane. You need not see the subject to control it.\n</p><p>If you don’t spend at least 1 round concentrating on the spell each day, the subject receives a new saving throw to throw off the domination.\n</p><p><i>Protection from evil </i>or a similar spell can prevent you from exercising control or using the telepathic link while the subject is so warded, but such an effect neither prevents the establishment of domination nor dispels it.\n</p>\n<hr/>\n\n\n\n</div>\n<hr><p><strong>Doomguard spell-like ability:</strong> At will; caster level 18; save DC 25 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
           },
           "display": "Close (25 ft. + 5 ft./2 levels)",
           "duration": {
@@ -1101,10 +1101,10 @@
             "type": "willnegates"
           },
           "school": "enc",
-          "shortDescription": "<p>As dominate person, but any</p>",
+          "shortDescription": "\n\n\n<p>\nYou can control the actions of any creature through a telepathic link that you establish with the subject’s mind.\n</p><p>If you and the subject have a common language, you can generally force the subject to perform as you desire, within the limits of its abilities. If no common language exists, you can communicate only basic commands, such as “Come here,” “Go there,” “Fight,” and “Stand still.” You know what the subject is experiencing, but you do not receive direct sensory input from it, nor can it communicate with you telepathically.\n</p><p>Once you have given a <i>dominated </i>creature a command, it continues to attempt to carry out that command to the exclusion of all other activities except those necessary for day-to-day survival (such as sleeping, eating, and so forth). Because of this limited range of activity, a Sense Motive check against DC 15 (rather than DC 25) can determine that the subject’s behavior is being influenced by an enchantment effect (see the Sense Motive skill description).\n</p><p>Changing your instructions or giving a <i>dominated </i>creature a new command is the equivalent of redirecting a spell, so it is a move action.\n</p><p>By concentrating fully on the spell (a standard action), you can receive full sensory input as interpreted by the mind of the subject, though it still can’t communicate with you. You can’t actually see through the subject’s eyes, so it’s not as good as being there yourself, but you still get a good idea of what’s going on.\n</p><p>Subjects resist this control, and any subject forced to take actions against its nature receives a new saving throw with a +2 bonus. Obviously self-destructive orders are not carried out. Once control is established, the range at which it can be exercised is unlimited, as long as you and the subject are on the same plane. You need not see the subject to control it.\n</p><p>If you don’t spend at least 1 round concentrating on the spell each day, the subject receives a new saving throw to throw off the domination.\n</p><p><i>Protection from evil </i>or a similar spell can prevent you from exercising control or using the telepathic link while the subject is so warded, but such an effect neither prevents the establishment of domination nor dispels it.\n</p>\n<hr/>\n\n\n",
           "showInQuickbar": false,
           "slOffset": 0,
-          "snip": "As dominate person, but any",
+          "snip": "As dominate person, but any creature.",
           "source": "World of Warcraft: Monster Guide, p. 37",
           "specialActions": [],
           "specialId": null,
@@ -1172,7 +1172,7 @@
             "catalog": {
               "completeListEntry": true,
               "generated": true,
-              "status": "manual-effect-pending-verification"
+              "status": "srd-mechanics-with-warcraft-header"
             },
             "monsterMagic": {
               "automation": "spell-clone",
@@ -1197,7 +1197,7 @@
                     298
                   ],
                   "section": "Greater Dispel Magic",
-                  "verification": "text-extracted-header"
+                  "verification": "srd-mechanics+text-extracted-header"
                 }
               },
               "uses": 0
@@ -1238,7 +1238,7 @@
             "twoHandedOnly": false,
             "vsTouchAc": false
           },
-          "actionType": "",
+          "actionType": "other",
           "activateActions": [],
           "activation": {
             "cost": 1,
@@ -1249,8 +1249,8 @@
             "parts": []
           },
           "attackBonus": "",
-          "attackCountFormula": "max(min(5,ceil(@cl/2)),1)",
-          "attackNotes": "",
+          "attackCountFormula": "",
+          "attackNotes": "Target creature or everyone in area are affected by the dispel magic effect. Each active magical effect are subjected to a dispel. Effect notes will contain some prerolled checks.",
           "attackParts": [],
           "atWill": true,
           "autoscaleAttackParts": "",
@@ -1273,6 +1273,7 @@
           "containerWeightless": false,
           "contextNotes": [],
           "createdBy": "",
+          "creationChanges": [],
           "critConfirmBonus": "",
           "customAttributes": {},
           "customAttributesLocked": false,
@@ -1287,14 +1288,14 @@
           "description": {
             "chat": "",
             "unidentified": "",
-            "value": "<p>As dispel magic, but +20 on</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p><hr><p><strong>Doomguard spell-like ability:</strong> At will; caster level 18; save DC 22 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+            "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;abjuration;\n    <br>\n    <strong>Level:</strong>&nbsp;Bard 5, Cleric 6, Druid 6, Sorcerer 6, Wizard 6;\n    <strong>Domain:</strong>&nbsp;Liberation 6;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;medium (100 ft. + 10 ft./level)<br>\n    <strong>Area:</strong>&nbsp;one spellcaster, creature, or object; or 20-ft.-radius burst<br>\n    <strong>Target:</strong>&nbsp;one spellcaster, creature, or object; or 20-ft.-radius burst<br>\n    \n    <strong>Duration:</strong>&nbsp;Instantaneous<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;None\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nYou can use <i>dispel magic </i>to end ongoing spells that have been cast on a creature or object, to temporarily suppress the magical abilities of a magic item, to end ongoing spells (or at least their effects) within an area, or to counter another spellcaster’s spell. A dispelled spell ends as if its duration had expired. Some spells, as detailed in their descriptions, can’t be defeated by <i>dispel magic</i>. <i>Dispel magic </i>can dispel (but not counter) spell-like effects just as it does spells.\n</p><p><i>Note: </i>The effect of a spell with an instantaneous duration can’t be dispelled, because the magical effect is already over before the <i>dispel magic </i>can take effect.\n</p><p>You choose to use <i>dispel magic </i>in one of three ways: a targeted dispel, an area dispel, or a counterspell:\n</p><p><i>Targeted Dispel: </i>One object, creature, or spell is the target of the <i>dispel magic </i>spell. You make a dispel check (1d20 + your caster level, maximum +20) against the spell or against each ongoing spell currently in effect on the object or creature. The DC for this dispel check is 11 + the spell’s caster level. If you succeed on a particular check, that spell is dispelled; if you fail, that spell remains in effect.\n</p><p>If you target an object or creature that is the effect of an ongoing spell (such as a monster summoned by <i>monster summoning</i>), you make a dispel check to end the spell that conjured the object or creature.\n</p><p>If the object that you target is a magic item, you make a dispel check against the item’s caster level. If you succeed, all the item’s magical properties are suppressed for 1d4 rounds, after which the item recovers on its own. A suppressed item becomes nonmagical for the duration of the effect. An interdimensional interface (such as a <i>bag of holding</i>) is temporarily closed. A magic item’s physical properties are unchanged: A suppressed magic sword is still a sword (a masterwork sword, in fact). Artifacts and deities are unaffected by mortal magic such as this.\n</p><p>You automatically succeed on your dispel check against any spell that you cast yourself.\n</p><p><i>Area Dispel: </i>When <i>dispel magic </i>is used in this way, the spell affects everything within a 20-foot radius.\n</p><p>For each creature within the area that is the subject of one or more spells, you make a dispel check against the spell with the highest caster level. If that check fails, you make dispel checks against progressively weaker spells until you dispel one spell (which discharges the <i>dispel magic </i>spell so far as that target is concerned) or until you fail all your checks. The creature’s magic items are not affected.\n</p><p>For each object within the area that is the target of one or more spells, you make dispel checks as with creatures. Magic items are not affected by an area dispel.\n</p><p>For each ongoing area or effect spell whose point of origin is within the area of the <i>dispel magic </i>spell, you can make a dispel check to dispel the spell.\n</p><p>For each ongoing spell whose area overlaps that of the <i>dispel magic </i>spell, you can make a dispel check to end the effect, but only within the overlapping area.\n</p><p>If an object or creature that is the effect of an ongoing spell (such as a monster summoned by <i>monster summoning</i>) is in the area, you can make a dispel check to end the spell that conjured that object or creature (returning it whence it came) in addition to attempting to dispel spells targeting the creature or object.\n</p><p>You may choose to automatically succeed on dispel checks against any spell that you have cast.\n</p><p><i>Counterspell: </i>When <i>dispel magic </i>is used in this way, the spell targets a spellcaster and is cast as a counterspell. Unlike a true counterspell, however, <i>dispel magic </i>may not work; you must make a dispel check to counter the other spellcaster’s spell.\n</p><p>Additionally, <i>greater dispel magic </i>has a chance to dispel any effect that <i>remove curse </i>can remove, even if <i>dispel magic </i>can’t dispel that effect.\n</p>\n<hr/>\n\n\n\n</div>\n<hr><p><strong>Doomguard spell-like ability:</strong> At will; caster level 18; save DC 22 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
           },
           "display": "Close (25 ft. + 5 ft./2 levels)",
           "duration": {
             "units": "",
             "value": null
           },
-          "effectNotes": "",
+          "effectNotes": "Dispel prerolled: [[1d20+min(20,@cl)]] [[1d20+min(20,@cl)]] [[1d20+min(20,@cl)]] [[1d20+min(20,@cl)]] [[1d20+min(20,@cl)]]\nNeed to be equal or higher than 11 + caster level of target.",
           "epic": "",
           "favorite": false,
           "formula": "",
@@ -1347,8 +1348,8 @@
             "customTexture": "",
             "overrideColor": false,
             "overrideTexture": false,
-            "size": 0,
-            "type": ""
+            "size": "20",
+            "type": "circle"
           },
           "metamagicFeats": {
             "empowered": false,
@@ -1364,8 +1365,9 @@
           "originId": "b6ec75199f2656de",
           "originPack": "warcraftrpg2e.warcraft-spells",
           "originVersion": 109,
+          "perRoundActions": [],
           "possibleUpdate": false,
-          "powerPointsCost": 1,
+          "powerPointsCost": 0,
           "pr": false,
           "preparation": {
             "autoDeductCharges": true,
@@ -1385,6 +1387,7 @@
             "enabled": false,
             "formula": ""
           },
+          "requirements": [],
           "requiresPsionicFocus": false,
           "resistances": [],
           "rollTableDraw": {
@@ -1403,15 +1406,15 @@
             "type": ""
           },
           "school": "abj",
-          "shortDescription": "<p>As dispel magic, but +20 on</p>",
+          "shortDescription": "\n\n\n<p>\nYou can use <i>dispel magic </i>to end ongoing spells that have been cast on a creature or object, to temporarily suppress the magical abilities of a magic item, to end ongoing spells (or at least their effects) within an area, or to counter another spellcaster’s spell. A dispelled spell ends as if its duration had expired. Some spells, as detailed in their descriptions, can’t be defeated by <i>dispel magic</i>. <i>Dispel magic </i>can dispel (but not counter) spell-like effects just as it does spells.\n</p><p><i>Note: </i>The effect of a spell with an instantaneous duration can’t be dispelled, because the magical effect is already over before the <i>dispel magic </i>can take effect.\n</p><p>You choose to use <i>dispel magic </i>in one of three ways: a targeted dispel, an area dispel, or a counterspell:\n</p><p><i>Targeted Dispel: </i>One object, creature, or spell is the target of the <i>dispel magic </i>spell. You make a dispel check (1d20 + your caster level, maximum +20) against the spell or against each ongoing spell currently in effect on the object or creature. The DC for this dispel check is 11 + the spell’s caster level. If you succeed on a particular check, that spell is dispelled; if you fail, that spell remains in effect.\n</p><p>If you target an object or creature that is the effect of an ongoing spell (such as a monster summoned by <i>monster summoning</i>), you make a dispel check to end the spell that conjured the object or creature.\n</p><p>If the object that you target is a magic item, you make a dispel check against the item’s caster level. If you succeed, all the item’s magical properties are suppressed for 1d4 rounds, after which the item recovers on its own. A suppressed item becomes nonmagical for the duration of the effect. An interdimensional interface (such as a <i>bag of holding</i>) is temporarily closed. A magic item’s physical properties are unchanged: A suppressed magic sword is still a sword (a masterwork sword, in fact). Artifacts and deities are unaffected by mortal magic such as this.\n</p><p>You automatically succeed on your dispel check against any spell that you cast yourself.\n</p><p><i>Area Dispel: </i>When <i>dispel magic </i>is used in this way, the spell affects everything within a 20-foot radius.\n</p><p>For each creature within the area that is the subject of one or more spells, you make a dispel check against the spell with the highest caster level. If that check fails, you make dispel checks against progressively weaker spells until you dispel one spell (which discharges the <i>dispel magic </i>spell so far as that target is concerned) or until you fail all your checks. The creature’s magic items are not affected.\n</p><p>For each object within the area that is the target of one or more spells, you make dispel checks as with creatures. Magic items are not affected by an area dispel.\n</p><p>For each ongoing area or effect spell whose point of origin is within the area of the <i>dispel magic </i>spell, you can make a dispel check to dispel the spell.\n</p><p>For each ongoing spell whose area overlaps that of the <i>dispel magic </i>spell, you can make a dispel check to end the effect, but only within the overlapping area.\n</p><p>If an object or creature that is the effect of an ongoing spell (such as a monster summoned by <i>monster summoning</i>) is in the area, you can make a dispel check to end the spell that conjured that object or creature (returning it whence it came) in addition to attempting to dispel spells targeting the creature or object.\n</p><p>You may choose to automatically succeed on dispel checks against any spell that you have cast.\n</p><p><i>Counterspell: </i>When <i>dispel magic </i>is used in this way, the spell targets a spellcaster and is cast as a counterspell. Unlike a true counterspell, however, <i>dispel magic </i>may not work; you must make a dispel check to counter the other spellcaster’s spell.\n</p><p>Additionally, <i>greater dispel magic </i>has a chance to dispel any effect that <i>remove curse </i>can remove, even if <i>dispel magic </i>can’t dispel that effect.\n</p>\n<hr/>\n\n\n",
           "showInQuickbar": false,
           "slOffset": 0,
-          "snip": "As dispel magic, but +20 on",
+          "snip": "As dispel magic, but +20 on check.",
           "source": "World of Warcraft: Monster Guide, p. 37",
           "specialActions": [],
           "specialId": null,
           "specialPrepared": false,
-          "spellArea": "",
+          "spellArea": "one spellcaster, creature, or object; or 20-ft.-radius burst",
           "spellbook": "spelllike",
           "spellDuration": "Instantaneous",
           "spellDurationData": {
@@ -1430,7 +1433,7 @@
           "target": {
             "value": "Ray"
           },
-          "types": "force",
+          "types": "",
           "uniqueId": "",
           "userNonRemovable": false,
           "uses": {
@@ -1448,8 +1451,8 @@
             "value": 0
           },
           "warcraftManualPolicy": {
-            "mode": "manual",
-            "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+            "mode": "srd-baseline-with-manual-boundary",
+            "reason": "SRD mechanics are retained, but Warcraft-specific creatures, forms, slot manipulation, or persistent cross-actor state require GM adjudication."
           }
         },
         "type": "spell"
@@ -1562,7 +1565,7 @@
                     329
                   ],
                   "section": "Rain of Fire",
-                  "verification": "text-extracted-header"
+                  "verification": "srd-mechanics+text-extracted-header"
                 }
               },
               "uses": 0
@@ -1644,7 +1647,7 @@
           "description": {
             "chat": "",
             "unidentified": "",
-            "value": "<p>3d6 bludgeoning and 2d6 fi re damage,</p><hr><p><strong>Doomguard spell-like ability:</strong> At will; caster level 18; save DC 21 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+            "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;evocation&nbsp;[fire];\n    <br>\n    \n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 round<br>\n    \n    <strong>Area:</strong>&nbsp;2-mile-radius emanation\n<br>\n    \n    \n    <strong>Duration:</strong>&nbsp;0 undefined<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;Reflex negates (see text)\n\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n<p>This spell summons a swirling thunderstorm that rains fire rather than raindrops down on the character and everything within a two-mile radius of him or her. Everything caught unprotected or unsheltered in the flaming deluge takes 1 point of fire damage each round. A successful Reflex save results in no damage, but the save must be repeated each round. Unless the ground is exceedingly damp, all vegetation is eventually blackened and destroyed, leaving behind a barren wasteland similar to the aftermath of a grass or forest fire. The fiery storm is stationary and persists even if the caster leaves.\n</p>\n<hr/>\n\n\n\n</div>\n<hr><p><strong>Doomguard spell-like ability:</strong> At will; caster level 18; save DC 21 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
           },
           "display": "Medium (100 ft. + 10 ft./level)",
           "duration": {
@@ -1764,7 +1767,7 @@
             "type": ""
           },
           "school": "evo",
-          "shortDescription": "<p>3d6 bludgeoning and 2d6 fi re damage,</p>",
+          "shortDescription": "\n\n<p>This spell summons a swirling thunderstorm that rains fire rather than raindrops down on the character and everything within a two-mile radius of him or her. Everything caught unprotected or unsheltered in the flaming deluge takes 1 point of fire damage each round. A successful Reflex save results in no damage, but the save must be repeated each round. Unless the ground is exceedingly damp, all vegetation is eventually blackened and destroyed, leaving behind a barren wasteland similar to the aftermath of a grass or forest fire. The fiery storm is stationary and persists even if the caster leaves.\n</p>\n<hr/>\n\n\n",
           "showInQuickbar": false,
           "slOffset": 0,
           "snip": "3d6 bludgeoning and 2d6 fi re damage,",
@@ -1835,7 +1838,7 @@
             "catalog": {
               "completeListEntry": true,
               "generated": true,
-              "status": "manual-effect-pending-verification"
+              "status": "verified-rules-with-manual-boundary"
             },
             "monsterMagic": {
               "automation": "spell-clone",
@@ -1860,7 +1863,7 @@
                     336
                   ],
                   "section": "Shadow Strike",
-                  "verification": "text-extracted-header"
+                  "verification": "private-source-rules-paraphrased+spot-rendered"
                 }
               },
               "uses": 0
@@ -1901,7 +1904,7 @@
             "twoHandedOnly": false,
             "vsTouchAc": false
           },
-          "actionType": "",
+          "actionType": "special",
           "activateActions": [],
           "activation": {
             "cost": 1,
@@ -1950,7 +1953,7 @@
           "description": {
             "chat": "",
             "unidentified": "",
-            "value": "<p>Melee attack deals an extra 10d8</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p><hr><p><strong>Doomguard spell-like ability:</strong> At will; caster level 18; save DC 22 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+            "value": "<p>Charge one slashing weapon you are wielding. On your next successful melee attack with it, if the weapon deals any damage, the spell adds 10d8 damage and then deals another 5d8 damage each round for 6 rounds.</p><p>If that successful attack deals no damage, including because damage reduction reduces it to 0, the spell discharges without effect. The spell is also lost if you cast another spell or stop wielding the charged weapon before discharge. The charged slashing weapon is the focus.</p><p><strong>Automation boundary:</strong> Track the charged weapon, discharge conditions, spell-resistance check, and six later damage rolls manually.</p><hr><p><strong>Doomguard spell-like ability:</strong> At will; caster level 18; save DC 22 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
           },
           "display": "Touch",
           "duration": {
@@ -2062,10 +2065,10 @@
             "type": ""
           },
           "school": "trs",
-          "shortDescription": "<p>Melee attack deals an extra 10d8</p>",
+          "shortDescription": "<p>Charge a wielded slashing weapon to add 10d8 damage and six rounds of 5d8 lingering damage.</p>",
           "showInQuickbar": false,
           "slOffset": 0,
-          "snip": "Melee attack deals an extra 10d8",
+          "snip": "Charge a wielded slashing weapon to add 10d8 damage and six rounds of 5d8 lingering damage.",
           "source": "World of Warcraft: Monster Guide, p. 37",
           "specialActions": [],
           "specialId": null,
@@ -2108,7 +2111,7 @@
           },
           "warcraftManualPolicy": {
             "mode": "manual",
-            "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+            "reason": "Track the charged weapon, discharge conditions, spell-resistance check, and six later damage rolls manually."
           }
         },
         "type": "spell"
@@ -2156,7 +2159,7 @@
                     353
                   ],
                   "section": "Unholy Aura",
-                  "verification": "text-extracted-header"
+                  "verification": "srd-mechanics+text-extracted-header"
                 }
               },
               "uses": 0
@@ -2245,7 +2248,7 @@
           "description": {
             "chat": "",
             "unidentified": "",
-            "value": "<p>+4 to AC, +4 resistance and SR 25</p><hr><p><strong>Doomguard spell-like ability:</strong> At will; caster level 18; save DC 24 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+            "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;abjuration&nbsp;[evil];\n    <br>\n    <strong>Level:</strong>&nbsp;Cleric 8;\n    <strong>Domain:</strong>&nbsp;Evil 8;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, F (a tiny reliquary containing some sacred relic, such as a piece of parchment from an unholy text  the reliquary costs at least 500 gp)<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;20 feet<br>\n    \n    <strong>Target:</strong>&nbsp;one creature/level in a 20-ft.-radius burst centered on you<br>\n    \n    <strong>Duration:</strong>&nbsp;1 Round/Level (D)<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;See text\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nA malevolent darkness surrounds the subjects, protecting them from attacks, granting them resistance to spells cast by good creatures, and weakening good creatures when they strike the subjects. This abjuration has four effects.\n</p><p>First, each warded creature gains a +4 deflection bonus to AC and a +4 resistance bonus on saves. Unlike the effect of <i>protection from good</i>, this benefit applies against all attacks, not just against attacks by good creatures.\n</p><p>Second, a warded creature gains spell resistance 25 against good spells and spells cast by good creatures.\n</p><p>Third, the abjuration blocks possession and mental influence, just as <i>protection from good</i> does.\n</p><p>Finally, if a good creature succeeds on a melee attack against a warded creature, the offending attacker takes 1d6 points of temporary Strength damage (Fortitude negates).\n</p><p><i>Focus:</i> A tiny reliquary containing some sacred relic, such as a piece of parchment from an unholy text. The reliquary costs at least 500 gp.\n</p>\n<hr/>\n\n\n\n</div>\n<hr><p><strong>Doomguard spell-like ability:</strong> At will; caster level 18; save DC 24 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
           },
           "display": "20 ft.",
           "duration": {
@@ -2356,10 +2359,10 @@
             "type": ""
           },
           "school": "abj",
-          "shortDescription": "<p>+4 to AC, +4 resistance and SR 25</p>",
+          "shortDescription": "\n\n\n<p>\nA malevolent darkness surrounds the subjects, protecting them from attacks, granting them resistance to spells cast by good creatures, and weakening good creatures when they strike the subjects. This abjuration has four effects.\n</p><p>First, each warded creature gains a +4 deflection bonus to AC and a +4 resistance bonus on saves. Unlike the effect of <i>protection from good</i>, this benefit applies against all attacks, not just against attacks by good creatures.\n</p><p>Second, a warded creature gains spell resistance 25 against good spells and spells cast by good creatures.\n</p><p>Third, the abjuration blocks possession and mental influence, just as <i>protection from good</i> does.\n</p><p>Finally, if a good creature succeeds on a melee attack against a warded creature, the offending attacker takes 1d6 points of temporary Strength damage (Fortitude negates).\n</p><p><i>Focus:</i> A tiny reliquary containing some sacred relic, such as a piece of parchment from an unholy text. The reliquary costs at least 500 gp.\n</p>\n<hr/>\n\n\n",
           "showInQuickbar": false,
           "slOffset": 0,
-          "snip": "+4 to AC, +4 resistance and SR 25",
+          "snip": "+4 to AC, +4 resistance, and SR 25 against good spells.",
           "source": "World of Warcraft: Monster Guide, p. 37",
           "specialActions": [],
           "specialId": null,

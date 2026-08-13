@@ -19,7 +19,13 @@
         "category": "Metamagic",
         "prerequisite": "Block Spell, Iron Will, Magic Energy Control, Mirror Spell, Reflect Spell, caster level 9th.",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "After you successfully counter a spell, you may expend an additional spell slot whose level is at least the countered spell's level. Choose a legal new target within the spell's range; for a multi-target spell, choose every target. The spell then resolves normally against those targets using the original caster's statistics.",
+          "manual": "Foundry does not link counterspell success to retargeting or spend the extra slot. The player or GM must confirm the counter, expend a qualifying slot in addition to any resource used to counter, validate all new targets and range, and resolve the original spell with the original caster's values.",
+          "normal": "A successfully countered spell is ordinarily negated rather than redirected.",
+          "summary": "Redirect a spell you have successfully countered to legal targets of your choice."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": false
       },
@@ -33,7 +39,7 @@
           146
         ],
         "section": "Deflect Spell",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +154,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> Metamagic.</p><p><strong>Prerequisites:</strong> Block Spell, Iron Will, Magic Energy Control, Mirror Spell, Reflect Spell, caster level 9th.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 146) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> Metamagic feat</p><p><strong>Prerequisites:</strong> Block Spell, Iron Will, Magic Energy Control, Mirror Spell, Reflect Spell, caster level 9th.</p><p><strong>Summary:</strong> Redirect a spell you have successfully countered to legal targets of your choice.</p><p><strong>Benefit:</strong> After you successfully counter a spell, you may expend an additional spell slot whose level is at least the countered spell&#39;s level. Choose a legal new target within the spell&#39;s range; for a multi-target spell, choose every target. The spell then resolves normally against those targets using the original caster&#39;s statistics.</p><p><strong>Normal:</strong> A successfully countered spell is ordinarily negated rather than redirected.</p><p><strong>Foundry and GM handling:</strong> Foundry does not link counterspell success to retargeting or spend the extra slot. The player or GM must confirm the counter, expend a qualifying slot in addition to any resource used to counter, validate all new targets and range, and resolve the original spell with the original caster&#39;s values.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +254,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>Metamagic feat; requires Block Spell, Iron Will, Magic Energy Control, Mirror Spell, Reflect Spell, caster level 9th..</p>",
+    "shortDescription": "<p>Redirect a spell you have successfully countered to legal targets of your choice.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 146",

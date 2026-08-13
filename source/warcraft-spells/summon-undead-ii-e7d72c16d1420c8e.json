@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -34,7 +34,7 @@
           346
         ],
         "section": "Summon Undead II",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -55,11 +55,11 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
-      "type": "standard"
+      "type": "round"
     },
     "addedLevel": 0,
     "attack": {
@@ -72,7 +72,7 @@
     "atWill": false,
     "autoscaleAttackParts": "",
     "baseCl": "0",
-    "castTime": "",
+    "castTime": "1 round",
     "changes": [],
     "classSource": "",
     "clOffset": 0,
@@ -80,10 +80,10 @@
     "components": {
       "divineFocus": 0,
       "focus": false,
-      "material": false,
-      "somatic": false,
-      "value": "",
-      "verbal": false
+      "material": true,
+      "somatic": true,
+      "value": "V, S, M",
+      "verbal": true
     },
     "conditionals": [],
     "container": "None",
@@ -104,9 +104,9 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Turns a corpse into an undead</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>Choose one creature from the 2nd-level list or 1d3 creatures of the same kind from the 1st-level list; every summoned creature requires its own corpse. The 2nd-level list allows a zombie made from a humanoid or monstrous humanoid corpse with 2 base Hit Dice. The 1st-level option uses such a corpse with 1 base Hit Die or fewer. Class Hit Dice do not count for either zombie limit.</p><p>Each undead appears where designated, acts immediately on your turn, attacks your enemies, and accepts other directions if you can communicate. It does not count against your undead-control limit and cannot fuel <em>death pact</em> or similar effects. It cannot summon, conjure, teleport, or travel between planes and must be placed in a supporting environment. When the duration ends, it collapses or vanishes; neither it nor the despoiled corpse can be reused for undead creation or summoning.</p><p><strong>Automation boundary:</strong> Roll the quantity, validate and consume every corpse, create and control the temporary undead, enforce restrictions, and remove all summons and unusable remains manually.</p>"
     },
-    "display": "",
+    "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
       "units": "",
       "value": null
@@ -193,7 +193,7 @@
     "psionic": "",
     "range": {
       "long": null,
-      "units": "medium",
+      "units": "close",
       "value": null
     },
     "recharge": {
@@ -219,28 +219,27 @@
       "type": ""
     },
     "school": "nec",
-    "shortDescription": "<p>Turns a corpse into an undead</p>",
+    "shortDescription": "<p>Raise one 2nd-tier zombie or 1d3 1st-tier zombies from suitable corpses.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Turns a corpse into an undead",
+    "snip": "Raise one 2nd-tier zombie or 1d3 1st-tier zombies from suitable corpses.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 265-269",
     "specialActions": [],
     "specialId": null,
     "specialPrepared": false,
     "spellArea": "",
     "spellbook": "primary",
-    "spellDuration": "Instantaneous",
+    "spellDuration": "1 round/level (D)",
     "spellDurationData": {
-      "dismissable": false,
-      "units": "inst",
-      "value": ""
+      "units": "roundPerLevel",
+      "value": 1
     },
     "spellEffect": "",
     "spellType": {
       "_deprecated": true,
       "value": ""
     },
-    "sr": true,
+    "sr": false,
     "subschool": "",
     "summon": [],
     "tags": [],
@@ -266,7 +265,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Roll the quantity, validate and consume every corpse, create and control the temporary undead, enforce restrictions, and remove all summons and unusable remains manually."
     }
   },
   "type": "spell"

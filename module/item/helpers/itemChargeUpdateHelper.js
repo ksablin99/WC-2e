@@ -51,7 +51,8 @@ export class ItemChargeUpdateHelper {
     if (actorRollData == null) {
       if (item.actor != null) rollData = item.actor.getRollData();
       if (actorData !== null) {
-        rollData = foundry.utils.mergeObject(rollData, actorsystem, { inplace: false });
+        const actorSystem = actorData.system ?? actorData;
+        rollData = foundry.utils.mergeObject(rollData, actorSystem, { inplace: false });
       }
     } else {
       rollData = actorRollData;

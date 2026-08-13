@@ -110,7 +110,7 @@ export class DicePF {
             sound: a === 0 ? CONFIG.sounds.dice : null,
             speaker: speaker,
             content: await foundry.applications.handlebars.renderTemplate(chatTemplate, rollData),
-            "flags.D35E.noRollRender": true,
+            "flags.warcraftrpg2e.noRollRender": true,
           };
           // Handle different roll modes
           switch (rollMode) {
@@ -617,4 +617,3 @@ export const _preProcessDiceFormula = function _preProcessDiceFormula(formula, d
 // Roll35e.parse() can call it without creating a circular ES module import.
 // (dice.js imports Roll35e from roll.js; roll.js must NOT import from dice.js)
 Roll35e._preProcess = _preProcessDiceFormula;
-

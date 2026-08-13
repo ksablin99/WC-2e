@@ -212,12 +212,12 @@ export class CompendiumBrowser extends Application {
         return cur;
       }, []);
 
-      result.item.assocations = {
+      result.item.associations = {
         class: (foundry.utils.getProperty(item.system, "featType") === "classFeat"
-          ? foundry.utils.getProperty(item.system, "assocations.classes") || []
+          ? foundry.utils.getProperty(item.system, "associations.classes") || []
           : []
         ).reduce((cur, o) => {
-          if (!this.extraFilters["assocations.class"].includes(o[0])) this.extraFilters["assocations.class"].push(o[0]);
+          if (!this.extraFilters.associations.class.includes(o[0])) this.extraFilters.associations.class.push(o[0]);
           cur.push(o[0]);
           return cur;
         }, []),
@@ -662,7 +662,7 @@ export class CompendiumBrowser extends Application {
           }),
       },
       {
-        path: "assocations.class",
+        path: "associations.class",
         label: game.i18n.localize("D35E.ClassPlural"),
         items: this.extraFilters.associations["class"]
           .reduce((cur, o) => {

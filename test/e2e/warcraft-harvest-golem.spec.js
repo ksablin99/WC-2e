@@ -53,6 +53,7 @@ test("Harvest Golem imports with the printed statistics and renders corrected sh
         max: actor.system.attributes.hp.max,
       },
       initiative: actor.system.attributes.init.total,
+      itemNames: actor.items.map((item) => item.name),
       saves: Object.fromEntries(Object.entries(actor.system.attributes.savingThrows)
         .map(([key, save]) => [key, save.total])),
       senses: {
@@ -87,6 +88,13 @@ test("Harvest Golem imports with the printed statistics and renders corrected sh
     hd: 7,
     hp: { value: 58, max: 58 },
     initiative: 2,
+    itemNames: expect.arrayContaining([
+      "Backstab (Ex)",
+      "Keen Claws (Ex)",
+      "Immunity to Magic (Su)",
+      "Lifeless Mien (Ex)",
+      "Construct Traits",
+    ]),
     saves: { fort: 2, ref: 4, will: 3 },
     senses: { darkvision: 60, lowLight: true },
     skillRanks: { allowed: 0, used: 0 },
@@ -98,7 +106,7 @@ test("Harvest Golem imports with the printed statistics and renders corrected sh
   const sheet = page.locator(`#${sheetId}`);
 
   await sheet.locator('nav.sheet-navigation [data-tab="attacks"]').click({ force: true });
-  const clawRow = sheet.locator('li.item[data-item-id="wcHvgClaw0000001"]');
+  const clawRow = sheet.locator('li.item[data-item-id="wcHvgClaw0000001"]:visible').first();
   await expect(clawRow).toBeVisible();
   const clawText = (await clawRow.textContent()).replace(/\s+/g, " ");
   expect(clawText).toContain("+12");
@@ -109,8 +117,17 @@ test("Harvest Golem imports with the printed statistics and renders corrected sh
   await expect(stealthValue).toHaveValue("+10");
 
   await sheet.locator('nav.sheet-navigation [data-tab="feats"]').click({ force: true });
-  for (const name of ["Backstab (Ex)", "Keen Claws (Ex)", "Immunity to Magic (Su)", "Lifeless Mien (Ex)", "Construct Traits"]) {
-    await expect(sheet.getByText(name, { exact: true })).toBeVisible();
+  await sheet.locator("nav.sheet-navigation.feats > a", { hasText: /^Traits$/ }).click({ force: true });
+  for (const [itemId, name] of [
+    ["wcHvgBackstab001", "Backstab (Ex)"],
+    ["wcHvgKeenClaw001", "Keen Claws (Ex)"],
+    ["wcHvgMagicImmune", "Immunity to Magic (Su)"],
+    ["wcHvgLifeless001", "Lifeless Mien (Ex)"],
+    ["wcHvgTraits00001", "Construct Traits"],
+  ]) {
+    const featureRow = sheet.locator(`li.item[data-item-id="${itemId}"]:visible`).first();
+    await expect(featureRow).toBeVisible();
+    await expect(featureRow).toContainText(name);
   }
 });
 

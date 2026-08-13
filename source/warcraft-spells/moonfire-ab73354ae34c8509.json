@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -34,7 +34,7 @@
           321
         ],
         "section": "Moonfire",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -55,7 +55,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -104,7 +104,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Lunar light burns your enemies; 1d8</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>The target immediately takes 1d8 damage +1 per caster level, maximum +10; the saving throw does not reduce this initial damage. On a failed Fortitude save, it also takes 2 damage at the start of each round for a number of rounds equal to your caster level, maximum 5 rounds.</p><p>The material component is one drop of moonwell water.</p><p><strong>Automation boundary:</strong> Roll the initial damage and track the failed-save damage pulses manually; the spell does not schedule later damage.</p>"
     },
     "display": "90 feet",
     "duration": {
@@ -194,8 +194,8 @@
     "psionic": "",
     "range": {
       "long": null,
-      "units": "spec",
-      "value": null
+      "units": "ft",
+      "value": 90
     },
     "recharge": {
       "current": 0,
@@ -215,15 +215,15 @@
       "dc": "0",
       "dcAutoAbility": "",
       "dcAutoType": "",
-      "description": "None",
+      "description": "Fortitude (see text)",
       "originVersion": 97,
       "type": ""
     },
     "school": "evo",
-    "shortDescription": "<p>Lunar light burns your enemies; 1d8</p>",
+    "shortDescription": "<p>Deal immediate lunar damage and, on a failed Fortitude save, continuing damage for up to five rounds.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Lunar light burns your enemies; 1d8",
+    "snip": "Deal immediate lunar damage and, on a failed Fortitude save, continuing damage for up to five rounds.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 269-273",
     "specialActions": [],
     "specialId": null,
@@ -233,7 +233,7 @@
     "spellDuration": "Special (see below)",
     "spellDurationData": {
       "units": "spec",
-      "value": 1
+      "value": null
     },
     "spellEffect": "",
     "spellType": {
@@ -266,7 +266,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Roll the initial damage and track the failed-save damage pulses manually; the spell does not schedule later damage."
     }
   },
   "type": "spell"

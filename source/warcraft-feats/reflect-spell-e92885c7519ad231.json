@@ -19,7 +19,13 @@
         "category": "Metamagic",
         "prerequisite": "Block Spell, Iron Will, Magic Energy Control, Mirror Spell, caster level 7th.",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "After you successfully counter a spell, you may expend an additional spell slot whose level is at least the countered spell's level to reflect it. The original caster becomes the target if that caster is a legal target; otherwise the reflection attempt fails. A reflected spell resolves normally using the original caster's statistics.",
+          "manual": "Foundry does not link counterspell success to reflection or spend the extra slot. The player or GM must confirm the counter, expend a qualifying slot in addition to any countering resource, verify that the caster is a legal target, and resolve the original spell with the original caster's values.",
+          "normal": "A successfully countered spell is ordinarily negated rather than returned to its caster.",
+          "summary": "Turn a successfully countered spell back on its original caster."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": false
       },
@@ -33,7 +39,7 @@
           156
         ],
         "section": "Reflect Spell",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +154,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> Metamagic.</p><p><strong>Prerequisites:</strong> Block Spell, Iron Will, Magic Energy Control, Mirror Spell, caster level 7th.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 156) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> Metamagic feat</p><p><strong>Prerequisites:</strong> Block Spell, Iron Will, Magic Energy Control, Mirror Spell, caster level 7th.</p><p><strong>Summary:</strong> Turn a successfully countered spell back on its original caster.</p><p><strong>Benefit:</strong> After you successfully counter a spell, you may expend an additional spell slot whose level is at least the countered spell&#39;s level to reflect it. The original caster becomes the target if that caster is a legal target; otherwise the reflection attempt fails. A reflected spell resolves normally using the original caster&#39;s statistics.</p><p><strong>Normal:</strong> A successfully countered spell is ordinarily negated rather than returned to its caster.</p><p><strong>Foundry and GM handling:</strong> Foundry does not link counterspell success to reflection or spend the extra slot. The player or GM must confirm the counter, expend a qualifying slot in addition to any countering resource, verify that the caster is a legal target, and resolve the original spell with the original caster&#39;s values.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +254,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>Metamagic feat; requires Block Spell, Iron Will, Magic Energy Control, Mirror Spell, caster level 7th..</p>",
+    "shortDescription": "<p>Turn a successfully countered spell back on its original caster.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 156",

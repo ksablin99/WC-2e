@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -34,7 +34,7 @@
           281
         ],
         "section": "Bladestorm",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -55,7 +55,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -104,7 +104,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Your arms become magical longswords.</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>Both arms become longswords with an enhancement bonus on attacks and damage equal to +1 per three caster levels, maximum +5. You are proficient with them, gain Whirlwind Attack, and take no two-weapon fighting penalties when using the transformed blades.</p><p>You must make a full attack every round or the spell ends. The material components are two nonmagical knives, one per hand; they merge into your arms and are consumed when the effect ends.</p><p><strong>Automation boundary:</strong> Create the two temporary weapons and enforce the full-attack upkeep, feat, and two-weapon exception manually.</p>"
     },
     "display": "Personal",
     "duration": {
@@ -220,10 +220,10 @@
       "type": ""
     },
     "school": "trs",
-    "shortDescription": "<p>Your arms become magical longswords.</p>",
+    "shortDescription": "<p>Transform both arms into scaling magic longswords and gain Whirlwind Attack while making full attacks each round.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Your arms become magical longswords.",
+    "snip": "Transform both arms into scaling magic longswords and gain Whirlwind Attack while making full attacks each round.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 265-273",
     "specialActions": [],
     "specialId": null,
@@ -240,7 +240,7 @@
       "_deprecated": true,
       "value": ""
     },
-    "sr": true,
+    "sr": false,
     "subschool": "",
     "summon": [],
     "tags": [],
@@ -266,7 +266,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Create the two temporary weapons and enforce the full-attack upkeep, feat, and two-weapon exception manually."
     }
   },
   "type": "spell"

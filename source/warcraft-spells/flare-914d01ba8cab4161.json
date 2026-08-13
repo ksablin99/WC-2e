@@ -32,7 +32,7 @@
           304
         ],
         "section": "Flare",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -103,7 +103,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Dazzles one creature (-1 penalty on attack</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;evocation&nbsp;[light];\n    <br>\n    <strong>Level:</strong>&nbsp;Bard 0, Druid 0, Sorcerer 0, Wizard 0;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;close (25 ft. + 5 ft./2 levels)<br>\n    \n    \n    <strong>Effect:</strong>&nbsp;Burst of light<br>\n    <strong>Duration:</strong>&nbsp;Instantaneous<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;Fortitude Negates\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThis cantrip creates a burst of light. If you cause the light to burst directly in front of a single creature, that creature is dazzled for 1 minute unless it makes a successful Fortitude save. Sightless creatures, as well as creatures already dazzled, are not affected by <i>flare</i>.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -216,10 +216,10 @@
       "type": "fortitudenegates"
     },
     "school": "evo",
-    "shortDescription": "<p>Dazzles one creature (-1 penalty on attack</p>",
+    "shortDescription": "\n\n\n<p>\nThis cantrip creates a burst of light. If you cause the light to burst directly in front of a single creature, that creature is dazzled for 1 minute unless it makes a successful Fortitude save. Sightless creatures, as well as creatures already dazzled, are not affected by <i>flare</i>.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Dazzles one creature (-1 penalty on attack",
+    "snip": "Dazzles one creature (-1 on attack rolls).",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 270-270",
     "specialActions": [
       {

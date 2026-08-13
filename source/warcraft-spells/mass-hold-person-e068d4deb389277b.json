@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "srd-mechanics-with-warcraft-header"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,12 +32,12 @@
           310
         ],
         "section": "Mass Hold Person",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
   "folder": null,
-  "img": "icons/svg/target.svg",
+  "img": "systems/warcraftrpg2e/icons/spells/named-spells/hold-person.png",
   "name": "Mass Hold Person",
   "ownership": {
     "default": 0
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "other",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -64,7 +64,7 @@
       "parts": []
     },
     "attackBonus": "",
-    "attackCountFormula": "max(min(5,ceil(@cl/2)),1)",
+    "attackCountFormula": "",
     "attackNotes": "",
     "attackParts": [],
     "atWill": false,
@@ -88,6 +88,7 @@
     "containerWeightless": false,
     "contextNotes": [],
     "createdBy": "",
+    "creationChanges": [],
     "critConfirmBonus": "",
     "customAttributes": {},
     "customAttributesLocked": false,
@@ -102,7 +103,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>As hold person, but all within 30 ft.</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;enchantment&nbsp;(compulsion)&nbsp;[mind-affecting];\n    <br>\n    <strong>Level:</strong>&nbsp;Sorcerer 7, Wizard 7;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, F/DF (a small, straight piece of iron)<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;medium (100 ft. + 10 ft./level)<br>\n    \n    <strong>Target:</strong>&nbsp;one or more humanoid creatures, no two of which can be more than 30 ft. apart<br>\n    \n    <strong>Duration:</strong>&nbsp;See Text (D)<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;13<br>\n        <strong>Saving Throw:</strong>&nbsp;Will Negates\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThe subject becomes paralyzed and freezes in place. It is aware and breathes normally but cannot take any actions, even speech. Each round on its turn, the subject may attempt a new saving throw to end the effect. (This is a full-round action that does not provoke attacks of opportunity.)\n</p><p>A winged creature who is paralyzed cannot flap its wings and falls. A swimmer can’t swim and may drown.\n</p><p><i>Arcane Focus: </i>A small, straight piece of iron.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "20 ft.",
     "duration": {
@@ -148,7 +149,7 @@
         "_deprecated": true,
         "value": false
       },
-      "focus": "",
+      "focus": "a small, straight piece of iron",
       "value": ""
     },
     "maxDamageDice": 0,
@@ -174,9 +175,10 @@
     "nameFromFormula": false,
     "originId": "e068d4deb389277b",
     "originPack": "warcraftrpg2e.warcraft-spells",
-    "originVersion": 109,
+    "originVersion": 108,
+    "perRoundActions": [],
     "possibleUpdate": false,
-    "powerPointsCost": 1,
+    "powerPointsCost": 13,
     "pr": false,
     "preparation": {
       "autoDeductCharges": true,
@@ -195,6 +197,7 @@
       "enabled": false,
       "formula": ""
     },
+    "requirements": [],
     "requiresPsionicFocus": false,
     "resistances": [],
     "rollTableDraw": {
@@ -213,12 +216,20 @@
       "type": ""
     },
     "school": "enc",
-    "shortDescription": "<p>As hold person, but all within 30 ft.</p>",
+    "shortDescription": "\n\n\n<p>\nThe subject becomes paralyzed and freezes in place. It is aware and breathes normally but cannot take any actions, even speech. Each round on its turn, the subject may attempt a new saving throw to end the effect. (This is a full-round action that does not provoke attacks of opportunity.)\n</p><p>A winged creature who is paralyzed cannot flap its wings and falls. A swimmer can’t swim and may drown.\n</p><p><i>Arcane Focus: </i>A small, straight piece of iron.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "As hold person, but all within 30 ft.",
+    "snip": "As hold person, but all within 30 ft.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 264-264",
-    "specialActions": [],
+    "specialActions": [
+      {
+        "action": "Create unique \"Held\" from \"warcraftrpg2e.commonbuffs\" on target;Set buff \"Held\" field data.level to max(1,(@cl)) on target;Activate buff \"Held\" on target",
+        "condition": "",
+        "img": "icons/svg/item-bag.svg",
+        "name": "Held",
+        "range": ""
+      }
+    ],
     "specialId": null,
     "specialPrepared": false,
     "spellArea": "",
@@ -234,7 +245,7 @@
       "value": ""
     },
     "sr": true,
-    "subschool": "",
+    "subschool": "compulsion",
     "summon": [],
     "tags": [],
     "target": {
@@ -258,8 +269,8 @@
       "value": 0
     },
     "warcraftManualPolicy": {
-      "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "mode": "srd-baseline",
+      "reason": "The inherited SRD implementation is used with the Warcraft list assignment and spell level."
     }
   },
   "type": "spell"

@@ -19,7 +19,12 @@
         "category": "General",
         "prerequisite": "Caster level 1.",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "When you use a wand to cast a spell that deals hit point damage, add +1 damage for each damage die rolled.",
+          "manual": "Foundry does not identify qualifying wand casts or scale the bonus by their damage dice automatically.",
+          "summary": "Damage spells cast from wands deal +1 damage per die."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": false
       },
@@ -33,7 +38,7 @@
           161
         ],
         "section": "Wand Specialization",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +153,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p><strong>Prerequisites:</strong> Caster level 1.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 161) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Prerequisites:</strong> Caster level 1.</p><p><strong>Summary:</strong> Damage spells cast from wands deal +1 damage per die.</p><p><strong>Benefit:</strong> When you use a wand to cast a spell that deals hit point damage, add +1 damage for each damage die rolled.</p><p><strong>Foundry and GM handling:</strong> Foundry does not identify qualifying wand casts or scale the bonus by their damage dice automatically.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +253,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat; requires Caster level 1..</p>",
+    "shortDescription": "<p>Damage spells cast from wands deal +1 damage per die.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 161",

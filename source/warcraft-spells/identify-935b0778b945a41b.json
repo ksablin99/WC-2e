@@ -34,7 +34,7 @@
           312
         ],
         "section": "Identify",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -96,7 +96,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Determines properties of magic item.</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;divination;\n    <br>\n    <strong>Level:</strong>&nbsp;Bard 1, Sorcerer 1, Wizard 1;\n    <strong>Domain:</strong>&nbsp;Magic 2;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, M/DF (a pearl of at least 100 gp value, crushed and stirred into wine with an owl feather; the infusion must be drunk prior to spellcasting), F<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 hour<br>\n    <strong>Range:</strong>&nbsp;touch<br>\n    \n    <strong>Target:</strong>&nbsp;one touched object\n<br>\n    \n    <strong>Duration:</strong>&nbsp;Instantaneous<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;None\n\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThe spell determines all magic properties of a single magic item, including how to activate those functions (if appropriate), and how many charges are left (if any).\n</p><p><i>Identify </i>does not function when used on an artifact.\n</p><p><i>Arcane Material Component: </i>A pearl of at least 100 gp value, crushed and stirred into wine with an owl feather; the infusion must be drunk prior to spellcasting.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Touch",
     "duration": {
@@ -210,7 +210,7 @@
       "type": ""
     },
     "school": "div",
-    "shortDescription": "<p>Determines properties of magic item.</p>",
+    "shortDescription": "\n\n\n<p>\nThe spell determines all magic properties of a single magic item, including how to activate those functions (if appropriate), and how many charges are left (if any).\n</p><p><i>Identify </i>does not function when used on an artifact.\n</p><p><i>Arcane Material Component: </i>A pearl of at least 100 gp value, crushed and stirred into wine with an owl feather; the infusion must be drunk prior to spellcasting.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
     "snip": "Determines properties of magic item.",

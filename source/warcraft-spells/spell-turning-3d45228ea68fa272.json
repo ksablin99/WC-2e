@@ -32,7 +32,7 @@
           339
         ],
         "section": "Spell Turning",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -103,7 +103,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Reflects 1d4+6 spell levels back at</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;abjuration;\n    <br>\n    <strong>Level:</strong>&nbsp;Sorcerer 7, Wizard 7;\n    <strong>Domain:</strong>&nbsp;Luck 7, Magic 7;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, M/DF (a small silver mirror), F<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;personal<br>\n    \n    <strong>Target:</strong>&nbsp;you<br>\n    \n    <strong>Duration:</strong>&nbsp;1 Minute/Level<br>\n    \n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nSpells and spell-like effects targeted on you are turned back upon the original caster. The abjuration turns only spells that have you as a target. Effect and area spells are not affected. <i>Spell turning </i>also fails to stop touch range spells.\n</p><p>From seven to ten (1d4+6) spell levels are affected by the turning. The exact number is rolled secretly.\n</p><p>When you are targeted by a spell of higher level than the amount of spell turning you have left, that spell is partially turned. The subtract the amount of spell turning left from the spell level of the incoming spell, then divide the result by the spell level of the incoming spell to see what fraction of the effect gets through. For damaging spells, you and the caster each take a fraction of the damage. For nondamaging spells, each of you has a proportional chance to be affected.\n</p><p>If you and a spellcasting attacker are both warded by <i>spell turning </i>effects in operation, a resonating field is created.\n</p><p>Roll randomly to determine the result.\n</p>\n\n<p><i>Arcane Material Component: </i>A small silver mirror.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Personal",
     "duration": {
@@ -216,10 +216,10 @@
       "type": ""
     },
     "school": "abj",
-    "shortDescription": "<p>Reflects 1d4+6 spell levels back at</p>",
+    "shortDescription": "\n\n\n<p>\nSpells and spell-like effects targeted on you are turned back upon the original caster. The abjuration turns only spells that have you as a target. Effect and area spells are not affected. <i>Spell turning </i>also fails to stop touch range spells.\n</p><p>From seven to ten (1d4+6) spell levels are affected by the turning. The exact number is rolled secretly.\n</p><p>When you are targeted by a spell of higher level than the amount of spell turning you have left, that spell is partially turned. The subtract the amount of spell turning left from the spell level of the incoming spell, then divide the result by the spell level of the incoming spell to see what fraction of the effect gets through. For damaging spells, you and the caster each take a fraction of the damage. For nondamaging spells, each of you has a proportional chance to be affected.\n</p><p>If you and a spellcasting attacker are both warded by <i>spell turning </i>effects in operation, a resonating field is created.\n</p><p>Roll randomly to determine the result.\n</p>\n\n<p><i>Arcane Material Component: </i>A small silver mirror.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Reflects 1d4+6 spell levels back at",
+    "snip": "Reflect 1d4+6 spell levels back at caster.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 264-264",
     "specialActions": [
       {

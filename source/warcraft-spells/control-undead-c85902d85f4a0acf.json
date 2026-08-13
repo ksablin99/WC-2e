@@ -32,7 +32,7 @@
           288
         ],
         "section": "Control Undead",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -94,7 +94,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Undead don't attack you while</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;necromancy;\n    <br>\n    <strong>Level:</strong>&nbsp;Sorcerer 7, Wizard 7;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, M (a small piece of bone and a small piece of raw meat)<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;close (25 ft. + 5 ft./2 levels)<br>\n    \n    <strong>Target:</strong>&nbsp;up to 2 hd/level of undead creatures, no two of which can be more than 30 ft. apart\n<br>\n    \n    <strong>Duration:</strong>&nbsp;1 Minute/Level<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;Will negates\n\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThis spell enables you to command undead creatures for a short period of time. You command them by voice and they understand you, no matter what language you speak. Even if vocal communication is impossible the controlled undead do not attack you. At the end of the spell, the subjects revert to their normal behavior.\n</p><p>Intelligent undead creatures remember that you controlled them.\n</p><p><i>Material Component: </i>A small piece of bone and a small piece of raw meat.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -204,10 +204,10 @@
       "type": "willnegates"
     },
     "school": "nec",
-    "shortDescription": "<p>Undead don't attack you while</p>",
+    "shortDescription": "\n\n\n<p>\nThis spell enables you to command undead creatures for a short period of time. You command them by voice and they understand you, no matter what language you speak. Even if vocal communication is impossible the controlled undead do not attack you. At the end of the spell, the subjects revert to their normal behavior.\n</p><p>Intelligent undead creatures remember that you controlled them.\n</p><p><i>Material Component: </i>A small piece of bone and a small piece of raw meat.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Undead don't attack you while",
+    "snip": "Undead don’t attack you while under your command.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 266-266",
     "specialActions": [],
     "specialId": null,

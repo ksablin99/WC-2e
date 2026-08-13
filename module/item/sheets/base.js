@@ -1601,7 +1601,7 @@ export class ItemSheetPF extends foundry.appv1.sheets.ItemSheet {
     event.dataTransfer.setData(
       "text/plain",
       JSON.stringify({
-        type: pack.entity,
+        type: pack.documentName,
         pack: pack.collection,
         id: li.getAttribute("data-item-id"),
       })

@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -34,7 +34,7 @@
           346
         ],
         "section": "Summon Undead I",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -55,7 +55,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -104,7 +104,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Turns corpse into an undead</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>Transform one corpse into an eligible undead that appears where designated and acts immediately on your turn. It attacks your enemies to the best of its ability; if you can communicate with it, you may order different targets, restraint, or other actions.</p><p>The 1st-level list allows a zombie made from a humanoid or monstrous humanoid corpse with 1 base Hit Die or fewer. Class Hit Dice do not count for this limit.</p><p>This temporary undead does not count against your undead-control limit and cannot be used for <em>death pact</em> or a similar effect. It cannot summon or conjure creatures or use teleportation or planar travel, and it cannot appear in an environment unable to support it. At the end of the duration it collapses into unusable remains, or vanishes if incorporeal; those remains cannot fuel another summoning, <em>animate dead</em>, <em>create undead</em>, or similar magic. Casting despoils the original corpse. The corpse is the material component.</p><p><strong>Automation boundary:</strong> The GM must validate and consume the corpse, create and control the temporary undead, enforce its prohibited abilities, and remove it and its unusable remains when the spell ends.</p>"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -219,10 +219,10 @@
       "type": ""
     },
     "school": "nec",
-    "shortDescription": "<p>Turns corpse into an undead</p>",
+    "shortDescription": "<p>Despoil one suitable corpse to raise a temporary 1st-tier zombie under your control.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Turns corpse into an undead",
+    "snip": "Despoil one suitable corpse to raise a temporary 1st-tier zombie under your control.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 265-269",
     "specialActions": [],
     "specialId": null,
@@ -265,7 +265,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "The GM must validate and consume the corpse, create and control the temporary undead, enforce its prohibited abilities, and remove it and its unusable remains when the spell ends."
     }
   },
   "type": "spell"

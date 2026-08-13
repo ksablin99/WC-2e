@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -34,7 +34,7 @@
           318
         ],
         "section": "Mana Burn",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -55,7 +55,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -104,7 +104,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Target loses spell slots and takes damage.</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>Make a ranged touch attack. On a hit, the target loses spell slots totaling 1d4 + 1 spell level per three caster levels, with the caster-level bonus capped at +6. Remove the highest-level available slots first; two 0-level slots count as one spell level. The target takes 1d4 damage for every spell level actually removed. A Will save negates the entire effect, and spell resistance applies.</p><p><strong>Automation boundary:</strong> Roll the drained total, inspect and remove the target's highest available slots, count cantrips in pairs, and roll damage from the actual levels lost manually.</p>"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -219,10 +219,10 @@
       "type": "willnegates"
     },
     "school": "trs",
-    "shortDescription": "<p>Target loses spell slots and takes damage.</p>",
+    "shortDescription": "<p>A ranged touch ray removes high-level spell slots and deals 1d4 damage per spell level lost.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Target loses spell slots and takes damage.",
+    "snip": "A ranged touch ray removes high-level spell slots and deals 1d4 damage per spell level lost.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 265-269",
     "specialActions": [],
     "specialId": null,
@@ -265,7 +265,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Roll the drained total, inspect and remove the target's highest available slots, count cantrips in pairs, and roll damage from the actual levels lost manually."
     }
   },
   "type": "spell"

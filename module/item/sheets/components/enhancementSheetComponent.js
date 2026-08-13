@@ -231,7 +231,7 @@ export class EnhancementSheetComponent extends ItemSheetComponent {
     let item = await this.sheet.item.enhancements.getEnhancementItem(itemId);
     // Quick Attack
     if (a.classList.contains("item-attack")) {
-      await this.sheet.item.enhancements.useEnhancementItem(item);
+      await this.sheet.item.enhancements.useEnhancementItem(item, event);
     }
   }
 

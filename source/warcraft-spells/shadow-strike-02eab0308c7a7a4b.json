@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -34,7 +34,7 @@
           336
         ],
         "section": "Shadow Strike",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -55,7 +55,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -104,7 +104,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Melee attack deals an extra 10d8</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>Charge one slashing weapon you are wielding. On your next successful melee attack with it, if the weapon deals any damage, the spell adds 10d8 damage and then deals another 5d8 damage each round for 6 rounds.</p><p>If that successful attack deals no damage, including because damage reduction reduces it to 0, the spell discharges without effect. The spell is also lost if you cast another spell or stop wielding the charged weapon before discharge. The charged slashing weapon is the focus.</p><p><strong>Automation boundary:</strong> Track the charged weapon, discharge conditions, spell-resistance check, and six later damage rolls manually.</p>"
     },
     "display": "Touch",
     "duration": {
@@ -215,10 +215,10 @@
       "type": ""
     },
     "school": "trs",
-    "shortDescription": "<p>Melee attack deals an extra 10d8</p>",
+    "shortDescription": "<p>Charge a wielded slashing weapon to add 10d8 damage and six rounds of 5d8 lingering damage.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Melee attack deals an extra 10d8",
+    "snip": "Charge a wielded slashing weapon to add 10d8 damage and six rounds of 5d8 lingering damage.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 265-265",
     "specialActions": [],
     "specialId": null,
@@ -261,7 +261,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Track the charged weapon, discharge conditions, spell-resistance check, and six later damage rolls manually."
     }
   },
   "type": "spell"

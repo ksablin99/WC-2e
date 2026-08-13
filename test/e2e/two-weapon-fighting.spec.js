@@ -141,10 +141,10 @@ async function rollWithMode(page, actorId, attackItemId, twfMode) {
       while (Date.now() - t0 < 8000) {
         const msgs = game.messages.contents.slice(msgsBefore);
         const atk  = msgs.find(
-          (m) => String(m.flags?.D35E?.template || '').includes('attack-roll'),
+          (m) => String(m.flags?.warcraftrpg2e?.template || '').includes('attack-roll'),
         );
         if (atk) {
-          const total = atk.flags?.D35E?.chatTemplateData?.attacks?.[0]?.attack?.total;
+          const total = atk.flags?.warcraftrpg2e?.chatTemplateData?.attacks?.[0]?.attack?.total;
           if (typeof total === 'number') return total;
         }
         await new Promise((r) => setTimeout(r, 100));

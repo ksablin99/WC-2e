@@ -69,7 +69,7 @@ test('consumable rsak: &item.baseCl combat change bumps CL-driven attack count (
       }
 
       const msg = game.messages.contents.at(-1);
-      const attacks = msg?.flags?.D35E?.chatTemplateData?.attacks ?? [];
+      const attacks = msg?.flags?.warcraftrpg2e?.chatTemplateData?.attacks ?? [];
       return {
         wasRolled: useResult?.wasRolled ?? false,
         newMessages: game.messages.size - before,

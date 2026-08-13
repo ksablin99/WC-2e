@@ -34,7 +34,7 @@
           308
         ],
         "section": "Heal",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -111,7 +111,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Cures 10 points/level of damage, all</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;conjuration&nbsp;(healing);\n    <br>\n    <strong>Level:</strong>&nbsp;Cleric 6, Druid 7;\n    <strong>Domain:</strong>&nbsp;Healing 6;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;touch<br>\n    \n    <strong>Target:</strong>&nbsp;creature touched<br>\n    \n    <strong>Duration:</strong>&nbsp;Instantaneous<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;11<br>\n        <strong>Saving Throw:</strong>&nbsp;Will Negates\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\n<i>Heal </i>enables you to channel positive energy into a creature to wipe away injury and afflictions. It immediately ends any and all of the following adverse conditions affecting the Target: ability damage, blinded, <i>confused, </i>dazed, dazzled, deafened, diseased, exhausted, fatigued, <i>feebleminded, </i>insanity, nauseated, sickened, stunned, and poisoned. It also cures 10 hit points of damage per level of the caster, to a maximum of 150 points at 15th level.\n</p><p><i>Heal </i>does not remove negative levels, restore permanently drained levels, or restore permanently drained ability score points.\n</p><p>If used against an undead creature, <i>heal </i>instead acts like <i>harm</i>.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Touch",
     "duration": {
@@ -229,10 +229,10 @@
       "type": "willnegates"
     },
     "school": "con",
-    "shortDescription": "<p>Cures 10 points/level of damage, all</p>",
+    "shortDescription": "\n\n\n<p>\n<i>Heal </i>enables you to channel positive energy into a creature to wipe away injury and afflictions. It immediately ends any and all of the following adverse conditions affecting the Target: ability damage, blinded, <i>confused, </i>dazed, dazzled, deafened, diseased, exhausted, fatigued, <i>feebleminded, </i>insanity, nauseated, sickened, stunned, and poisoned. It also cures 10 hit points of damage per level of the caster, to a maximum of 150 points at 15th level.\n</p><p><i>Heal </i>does not remove negative levels, restore permanently drained levels, or restore permanently drained ability score points.\n</p><p>If used against an undead creature, <i>heal </i>instead acts like <i>harm</i>.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Cures 10 points/level of damage, all",
+    "snip": "Cures 10 points/level of damage, all diseases and mental conditions.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 270-272",
     "specialActions": [
       {

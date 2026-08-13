@@ -80,7 +80,7 @@ export class ActorSheetPFCharacter extends ActorSheetPF {
     event.preventDefault();
     const itemId = event.currentTarget.closest(".item").dataset.itemId;
     const item = this.actor.items.get(itemId);
-    return item.update({"data.preparation.prepared": !item.system.preparation.prepared});
+    return item.update({"system.preparation.prepared": !item.system.preparation.prepared});
   }
 
   /* -------------------------------------------- */
@@ -98,6 +98,6 @@ export class ActorSheetPFCharacter extends ActorSheetPF {
       curr[c] -= (change * t.each);
       curr[t.into] += change;
     }
-    return this.actor.update({"data.currency": curr});
+    return this.actor.update({"system.currency": curr});
   }
 }

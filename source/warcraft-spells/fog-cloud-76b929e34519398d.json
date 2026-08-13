@@ -34,7 +34,7 @@
           304
         ],
         "section": "Fog Cloud",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Fog obscures vision.</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;conjuration&nbsp;(creation);\n    <br>\n    <strong>Level:</strong>&nbsp;Druid 2, Sorcerer 2, Wizard 2;\n    <strong>Domain:</strong>&nbsp;Water 2, Weather 2;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;medium (100 ft. + 10 ft./level)<br>\n    \n    \n    <strong>Effect:</strong>&nbsp;Fog spreads in 20-ft. radius, 20 ft. high<br>\n    <strong>Duration:</strong>&nbsp;10 Minute/Level<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;None\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nA bank of fog billows out from the point you designate. The fog obscures all sight, including darkvision, beyond 5 feet. A creature within 5 feet has concealment (attacks have a 20% miss chance). Creatures farther away have total concealment (50% miss chance, and the attacker can’t use sight to locate the target).\n</p><p>A moderate wind (11+ mph) disperses the fog in 4 rounds; a strong wind (21+ mph) disperses the fog in 1 round.\n</p><p>The spell does not function underwater.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Medium (100 ft. + 10 ft. level)",
     "duration": {
@@ -217,7 +217,7 @@
       "type": ""
     },
     "school": "con",
-    "shortDescription": "<p>Fog obscures vision.</p>",
+    "shortDescription": "\n\n\n<p>\nA bank of fog billows out from the point you designate. The fog obscures all sight, including darkvision, beyond 5 feet. A creature within 5 feet has concealment (attacks have a 20% miss chance). Creatures farther away have total concealment (50% miss chance, and the attacker can’t use sight to locate the target).\n</p><p>A moderate wind (11+ mph) disperses the fog in 4 rounds; a strong wind (21+ mph) disperses the fog in 1 round.\n</p><p>The spell does not function underwater.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
     "snip": "Fog obscures vision.",

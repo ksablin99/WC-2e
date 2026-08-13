@@ -57,11 +57,11 @@ test.describe('grapple roll (CMB)', () => {
 
     const payload = await page.evaluate(() => {
       const msg = game.messages.contents.at(-1);
-      const template = msg?.flags?.D35E?.template ?? '';
-      const td = msg?.flags?.D35E?.chatTemplateData ?? {};
+      const template = msg?.flags?.warcraftrpg2e?.template ?? '';
+      const td = msg?.flags?.warcraftrpg2e?.chatTemplateData ?? {};
       // Custom grapple cards use createCustomChatMessage; rolls are not stored on
       // ChatMessage.rolls (only used for Dice So Nice). The evaluated roll lives
-      // on flags.D35E.chatTemplateData.roll.
+      // on flags.warcraftrpg2e.chatTemplateData.roll.
       const roll = td.roll ?? null;
       return {
         template,
@@ -119,7 +119,7 @@ test.describe('grapple roll (CMB)', () => {
 
     const breakdown = await page.evaluate(() => {
       const msg = game.messages.contents.at(-1);
-      const roll = msg?.flags?.D35E?.chatTemplateData?.roll ?? null;
+      const roll = msg?.flags?.warcraftrpg2e?.chatTemplateData?.roll ?? null;
       const formula = String(roll?.formula ?? '');
       return {
         formula,

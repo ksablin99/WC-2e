@@ -1,3 +1,5 @@
+import { getSystemFlag } from "../utils/system-flags.js";
+
 export class ActiveEffectD35E extends ActiveEffect {
     static #buildSyncOptions(options) {
       const d35e = { ...(options?.D35E ?? {}), skipActiveEffectSync: true };
@@ -72,6 +74,6 @@ export class ActiveEffectD35E extends ActiveEffect {
 
     get isTemporary() {
       const duration = this?.duration?.seconds ?? (this?.duration?.rounds || this?.duration?.turns) ?? 0;
-      return duration > 0 || this.statuses?.size > 0 || this.getFlag("core", "statusId") || this.getFlag("D35E", "show");
+      return duration > 0 || this.statuses?.size > 0 || this.getFlag("core", "statusId") || getSystemFlag(this, "show");
     }
   }

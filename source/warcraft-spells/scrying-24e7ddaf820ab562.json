@@ -34,7 +34,7 @@
           333
         ],
         "section": "Scrying",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -96,7 +96,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Spies on target from a distance.</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;divination&nbsp;(scrying);\n    <br>\n    <strong>Level:</strong>&nbsp;Bard 3, Cleric 5, Druid 4, Sorcerer 4, Wizard 4;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, M/DF (the eye of a hawk, an eagle, or a roc, plus nitric acid, copper, and zinc), F (a natural pool of water)<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 hour<br>\n    <strong>Range:</strong>&nbsp;touch<br>\n    \n    \n    <strong>Effect:</strong>&nbsp;Magical sensor\n<br>\n    <strong>Duration:</strong>&nbsp;1 Minute/Level<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;Will negates\n\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nYou can see and hear some creature, which may be at any distance. If the subject succeeds on a Will save, the scrying attempt simply fails. The difficulty of the save depends on how well you know the subject and what sort of physical connection (if any) you have to that creature. Furthermore, if the subject is on another plane, it gets a +5 bonus on its Will save.\n</p>\n\n<p>If the save fails, you can see and hear the subject and the subject’s immediate surroundings (approximately 10 feet in all directions of the subject). If the subject moves, the sensor follows at a speed of up to 150 feet.\n</p><p>As with all divination (scrying) spells, the sensor has your full visual acuity, including any magical effects. In addition, the following spells have a 5% chance per caster level of operating through the sensor: <i>detect chaos</i>, <i>detect evil</i>, <i>detect good</i>, <i>detect law</i>, <i>detect magic</i>, and <i>message</i>.\n</p><p>If the save succeeds, you can’t attempt to scry on that subject again for at least 24 hours.\n</p><p><i>Arcane Material Component: </i>The eye of a hawk, an eagle, or a roc, plus nitric acid, copper, and zinc.\n</p><p><i>Wizard, Sorcerer, or Bard Focus: </i>A mirror of finely wrought and highly polished silver costing not less than 1,000 gp. The mirror must be at least 2 feet by 4 feet.\n</p><p><i>Cleric Focus: </i>A holy water font costing not less than 100 gp.\n</p><p><i>Druid Focus: </i>A natural pool of water.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "See text",
     "duration": {
@@ -210,10 +210,10 @@
       "type": "willnegates"
     },
     "school": "div",
-    "shortDescription": "<p>Spies on target from a distance.</p>",
+    "shortDescription": "\n\n\n<p>\nYou can see and hear some creature, which may be at any distance. If the subject succeeds on a Will save, the scrying attempt simply fails. The difficulty of the save depends on how well you know the subject and what sort of physical connection (if any) you have to that creature. Furthermore, if the subject is on another plane, it gets a +5 bonus on its Will save.\n</p>\n\n<p>If the save fails, you can see and hear the subject and the subject’s immediate surroundings (approximately 10 feet in all directions of the subject). If the subject moves, the sensor follows at a speed of up to 150 feet.\n</p><p>As with all divination (scrying) spells, the sensor has your full visual acuity, including any magical effects. In addition, the following spells have a 5% chance per caster level of operating through the sensor: <i>detect chaos</i>, <i>detect evil</i>, <i>detect good</i>, <i>detect law</i>, <i>detect magic</i>, and <i>message</i>.\n</p><p>If the save succeeds, you can’t attempt to scry on that subject again for at least 24 hours.\n</p><p><i>Arcane Material Component: </i>The eye of a hawk, an eagle, or a roc, plus nitric acid, copper, and zinc.\n</p><p><i>Wizard, Sorcerer, or Bard Focus: </i>A mirror of finely wrought and highly polished silver costing not less than 1,000 gp. The mirror must be at least 2 feet by 4 feet.\n</p><p><i>Cleric Focus: </i>A holy water font costing not less than 100 gp.\n</p><p><i>Druid Focus: </i>A natural pool of water.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Spies on target from a distance.",
+    "snip": "Spies on subject from a distance.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 264-268",
     "specialActions": [],
     "specialId": null,

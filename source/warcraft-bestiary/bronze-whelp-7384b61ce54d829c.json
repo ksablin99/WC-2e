@@ -1023,7 +1023,7 @@
             "catalog": {
               "completeListEntry": true,
               "generated": true,
-              "status": "manual-effect-pending-verification"
+              "status": "verified-rules-with-manual-boundary"
             },
             "monsterMagic": {
               "automation": "spell-clone",
@@ -1048,7 +1048,7 @@
                     315
                   ],
                   "section": "Lesser Lightning Guardians",
-                  "verification": "text-extracted-header"
+                  "verification": "private-source-rules-paraphrased+spot-rendered"
                 }
               },
               "uses": 3
@@ -1089,7 +1089,7 @@
             "twoHandedOnly": false,
             "vsTouchAc": false
           },
-          "actionType": "",
+          "actionType": "special",
           "activateActions": [],
           "activation": {
             "cost": 1,
@@ -1138,7 +1138,7 @@
           "description": {
             "chat": "",
             "unidentified": "",
-            "value": "<p>As lightning</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p><hr><p><strong>Bronze Whelp spell-like ability:</strong> 3/day; caster level 9; save DC 13 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+            "value": "<p>This functions as <em>lightning guardians</em>, except an attacker that fails its Reflex save takes 1d4+1 electricity damage.</p><p><strong>Automation boundary:</strong> Resolve one Reflex save and spell-resistance check per attacker and apply retaliation manually.</p><hr><p><strong>Bronze Whelp spell-like ability:</strong> 3/day; caster level 9; save DC 13 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
           },
           "display": "Personal",
           "duration": {
@@ -1250,15 +1250,15 @@
             "dc": "13",
             "dcAutoAbility": "",
             "dcAutoType": "",
-            "description": "Reflex negates (see below)",
+            "description": "Reflex negates (see text)",
             "originVersion": 97,
             "type": "reflexnegates"
           },
           "school": "con",
-          "shortDescription": "<p>As lightning</p>",
+          "shortDescription": "<p>As lightning guardians, but failed Reflex saves take 1d4+1 electricity damage.</p>",
           "showInQuickbar": false,
           "slOffset": 0,
-          "snip": "As lightning",
+          "snip": "As lightning guardians, but failed Reflex saves take 1d4+1 electricity damage.",
           "source": "World of Warcraft: Monster Guide, p. 42",
           "specialActions": [],
           "specialId": null,
@@ -1301,7 +1301,7 @@
           },
           "warcraftManualPolicy": {
             "mode": "manual",
-            "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+            "reason": "Resolve one Reflex save and spell-resistance check per attacker and apply retaliation manually."
           }
         },
         "type": "spell"
@@ -1326,7 +1326,7 @@
             "catalog": {
               "completeListEntry": true,
               "generated": true,
-              "status": "manual-effect-pending-verification"
+              "status": "verified-rules-with-manual-boundary"
             },
             "monsterMagic": {
               "automation": "spell-clone",
@@ -1349,7 +1349,7 @@
                     316
                   ],
                   "section": "Lightning Shield",
-                  "verification": "text-extracted-header"
+                  "verification": "private-source-rules-paraphrased+spot-rendered"
                 }
               },
               "uses": 2
@@ -1390,7 +1390,7 @@
             "twoHandedOnly": false,
             "vsTouchAc": false
           },
-          "actionType": "",
+          "actionType": "special",
           "activateActions": [],
           "activation": {
             "cost": 1,
@@ -1439,7 +1439,7 @@
           "description": {
             "chat": "",
             "unidentified": "",
-            "value": "<p>Electricity covers the subject,</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p><hr><p><strong>Bronze Whelp spell-like ability:</strong> 2/day; caster level 9; save DC 16 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+            "value": "<p>Each round, every creature within 5 feet of the subject takes 1d6 electricity damage +1 per five caster levels, maximum +5. The subject is immune to this damage; spell resistance applies to each other creature. The effect gives bright light for 20 feet and shadowy light for another 20 feet. The material component is a copper rod.</p><p><strong>Automation boundary:</strong> Apply each per-round area damage pulse and illumination manually.</p><hr><p><strong>Bronze Whelp spell-like ability:</strong> 2/day; caster level 9; save DC 16 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
           },
           "display": "Close (25 ft. + 5 ft./2 levels)",
           "duration": {
@@ -1551,10 +1551,10 @@
             "type": ""
           },
           "school": "evo",
-          "shortDescription": "<p>Electricity covers the subject,</p>",
+          "shortDescription": "<p>Electricity around one creature damages all other creatures within 5 feet each round.</p>",
           "showInQuickbar": false,
           "slOffset": 0,
-          "snip": "Electricity covers the subject,",
+          "snip": "Electricity around one creature damages all other creatures within 5 feet each round.",
           "source": "World of Warcraft: Monster Guide, p. 42",
           "specialActions": [],
           "specialId": null,
@@ -1597,7 +1597,7 @@
           },
           "warcraftManualPolicy": {
             "mode": "manual",
-            "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+            "reason": "Apply each per-round area damage pulse and illumination manually."
           }
         },
         "type": "spell"
@@ -1647,7 +1647,7 @@
                     296
                   ],
                   "section": "Discern Location",
-                  "verification": "text-extracted-header"
+                  "verification": "srd-mechanics+text-extracted-header"
                 }
               },
               "uses": 1
@@ -1736,7 +1736,7 @@
           "description": {
             "chat": "",
             "unidentified": "",
-            "value": "<p>Reveals exact location of creature</p><hr><p><strong>Bronze Whelp spell-like ability:</strong> 1/day; caster level 9; save DC 20 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+            "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;divination;\n    <br>\n    <strong>Level:</strong>&nbsp;Cleric 8, Sorcerer 8, Wizard 8;\n    <strong>Domain:</strong>&nbsp;Knowledge 8;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, F, DF<br>\n    \n      <strong>Casting Time:</strong>&nbsp;10 minutes<br>\n    <strong>Range:</strong>&nbsp;unlimited<br>\n    \n    <strong>Target:</strong>&nbsp;one creature or object<br>\n    \n    <strong>Duration:</strong>&nbsp;Instantaneous<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;None\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nA <i>discern location </i>spell is among the most powerful means of locating creatures or objects. Nothing short of a <i>mind blank </i>spell or the direct intervention of a deity keeps you from learning the exact location of a single individual or object. <i>Discern location </i>circumvents normal means of protection from scrying or location. The spell reveals the name of the creature or object’s location (place, name, business name, building name, or the like), community, county (or similar political division), country, continent, and the plane of existence where the target lies.\n</p><p>To find a creature with the spell, you must have seen the creature or have some item that once belonged to it. To find an object, you must have touched it at least once.\n</p>\n<hr/>\n\n\n\n</div>\n<hr><p><strong>Bronze Whelp spell-like ability:</strong> 1/day; caster level 9; save DC 20 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
           },
           "display": "Unlimited",
           "duration": {
@@ -1852,10 +1852,10 @@
             "type": ""
           },
           "school": "div",
-          "shortDescription": "<p>Reveals exact location of creature</p>",
+          "shortDescription": "\n\n\n<p>\nA <i>discern location </i>spell is among the most powerful means of locating creatures or objects. Nothing short of a <i>mind blank </i>spell or the direct intervention of a deity keeps you from learning the exact location of a single individual or object. <i>Discern location </i>circumvents normal means of protection from scrying or location. The spell reveals the name of the creature or object’s location (place, name, business name, building name, or the like), community, county (or similar political division), country, continent, and the plane of existence where the target lies.\n</p><p>To find a creature with the spell, you must have seen the creature or have some item that once belonged to it. To find an object, you must have touched it at least once.\n</p>\n<hr/>\n\n\n",
           "showInQuickbar": false,
           "slOffset": 0,
-          "snip": "Reveals exact location of creature",
+          "snip": "Reveals exact location of creature or object.",
           "source": "World of Warcraft: Monster Guide, p. 42",
           "specialActions": [],
           "specialId": null,

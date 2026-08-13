@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           353
         ],
         "section": "Unholy Frenzy",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Subject gains the strength and speed</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>On a failed Fortitude save, whenever the subject makes a full attack it gains one extra attack with a held weapon at its full base attack bonus and normal modifiers. This is not an extra action, cannot cast another spell or enable another action, and does not stack with similar extra-attack effects such as <em>bloodlust</em> or a speed weapon.</p><p>The subject takes 1d4 damage each round. One successful save negates the entire spell; the subject cannot accept the extra attack while saving against only the damage. <em>Cripple</em> counters and dispels this spell.</p><p><strong>Automation boundary:</strong> Apply the conditional extra attack and recurring self-damage manually, and enforce non-stacking and the counterspell interaction.</p>"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -213,10 +213,10 @@
       "type": "fortitudenegates"
     },
     "school": "nec",
-    "shortDescription": "<p>Subject gains the strength and speed</p>",
+    "shortDescription": "<p>Grant an extra full-attack strike but deal 1d4 damage to the subject each round.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Subject gains the strength and speed",
+    "snip": "Grant an extra full-attack strike but deal 1d4 damage to the subject each round.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 265-265",
     "specialActions": [],
     "specialId": null,
@@ -225,8 +225,8 @@
     "spellbook": "primary",
     "spellDuration": "1 round, +1 round/2 levels",
     "spellDurationData": {
-      "units": "round",
-      "value": 1
+      "units": "spec",
+      "value": null
     },
     "spellEffect": "",
     "spellType": {
@@ -259,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Apply the conditional extra attack and recurring self-damage manually, and enforce non-stacking and the counterspell interaction."
     }
   },
   "type": "spell"

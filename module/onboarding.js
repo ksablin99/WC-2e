@@ -27,7 +27,9 @@ export default function renderOnboardingScreen() {
 
         activateListeners(html) {
             super.activateListeners(html);
-            const content = html[0].parentElement;
+            const root = html?.nodeType === 1 ? html : html?.[0] ?? html;
+            const content = root?.parentElement ?? root;
+            if (!content) return;
             content.querySelectorAll('.show-again').forEach(el => el.addEventListener('click', async ev => {
                 await game.settings.set(title, "__onboarding", true);
                 this.close()

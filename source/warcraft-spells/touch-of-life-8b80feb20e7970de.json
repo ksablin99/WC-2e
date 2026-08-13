@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           351
         ],
         "section": "Touch of Life",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Caster brings creature briefly back</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>Touch a creature that died no more than one round per caster level ago. If its soul is free and willing, it returns immediately at full hit points, vigor, and health, without losing a level, Stamina, or spell slots. Normal poison and disease end, but magical disease and curses remain. Its body must be whole; missing parts remain missing. Equipment is unaffected.</p><p>You may restore a victim of a death effect or a creature that became undead and was then destroyed, but not a construct, elemental, outsider, currently undead creature, or creature dead from old age. When the spell ends, the subject dies immediately as though it had never returned. Time-since-death for later castings or permanent revival continues from the original death, even if the subject dies again during this spell. This temporary return does not prevent later permanent revival.</p><p>The material component is diamonds worth at least 5,000 gp.</p><p><strong>Automation boundary:</strong> The GM must validate the body and soul, preserve the original death time, restore and later kill the actor, and track the material cost; Foundry does not automate temporary resurrection.</p>"
     },
     "display": "Touch",
     "duration": {
@@ -213,10 +213,10 @@
       "type": ""
     },
     "school": "con",
-    "shortDescription": "<p>Caster brings creature briefly back</p>",
+    "shortDescription": "<p>Restore an eligible dead creature to full life temporarily before it dies again when the spell ends.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Caster brings creature briefly back",
+    "snip": "Restore an eligible dead creature to full life temporarily before it dies again when the spell ends.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 268-268",
     "specialActions": [],
     "specialId": null,
@@ -259,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "The GM must validate the body and soul, preserve the original death time, restore and later kill the actor, and track the material cost; Foundry does not automate temporary resurrection."
     }
   },
   "type": "spell"

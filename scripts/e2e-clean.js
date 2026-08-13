@@ -6,12 +6,13 @@
 
 'use strict';
 
-const { existsSync, rmSync, unlinkSync, readFileSync } = require('fs');
+const { existsSync, unlinkSync, readFileSync } = require('fs');
 const { resolve, join } = require('path');
 const { tmpdir } = require('os');
 const crypto = require('crypto');
 
 const REPO_ROOT = resolve(__dirname, '..');
+const { removeManagedDataDir } = require('./safe-managed-data-dir');
 const envFile   = resolve(REPO_ROOT, '.e2e-env');
 
 // Default data dir uses the same hash logic as e2e/setup.js
@@ -34,17 +35,20 @@ if (existsSync(envFile)) {
 }
 
 if (existsSync(dataDir)) {
-  rmSync(dataDir, { recursive: true, force: true });
+  removeManagedDataDir(dataDir, { repoRoot: REPO_ROOT, kind: 'e2e' });
   console.log(`[e2e:clean] Removed ${dataDir}`);
 } else {
   console.log(`[e2e:clean] Nothing to remove (${dataDir} does not exist)`);
 }
 
 if (releaseExtractDir && existsSync(releaseExtractDir)) {
-  rmSync(releaseExtractDir, { recursive: true, force: true });
+  removeManagedDataDir(releaseExtractDir, { repoRoot: REPO_ROOT, kind: 'release-extract' });
   console.log(`[e2e:clean] Removed release extract dir ${releaseExtractDir}`);
 }
 
+if (releaseZip && resolve(releaseZip) !== resolve(REPO_ROOT, 'D35E-release-e2e.zip')) {
+  throw new Error(`[e2e:clean] Refusing unexpected release zip path: ${releaseZip}`);
+}
 if (releaseZip && existsSync(releaseZip)) {
   unlinkSync(releaseZip);
   console.log(`[e2e:clean] Removed release zip ${releaseZip}`);

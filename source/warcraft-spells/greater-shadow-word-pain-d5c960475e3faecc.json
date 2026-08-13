@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           336
         ],
         "section": "Greater Shadow Word Pain",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>As shadow word pain,</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>This functions as <em>shadow word pain</em>, except a target that fails its Reflex save takes 3d4+1 damage each round for 3 rounds while blinded. Spell resistance applies.</p><p>The material component is one dried duskbat wing ground into powder.</p><p><strong>Automation boundary:</strong> Apply blindness and roll the three damage pulses manually; the spell does not schedule them.</p>"
     },
     "display": "90 feet",
     "duration": {
@@ -187,8 +187,8 @@
     "psionic": "",
     "range": {
       "long": null,
-      "units": "spec",
-      "value": null
+      "units": "ft",
+      "value": 90
     },
     "recharge": {
       "current": 0,
@@ -213,10 +213,10 @@
       "type": "reflexnegates"
     },
     "school": "con",
-    "shortDescription": "<p>As shadow word pain,</p>",
+    "shortDescription": "<p>Blind one creature and deal 3d4+1 damage to it each round for three rounds.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "As shadow word pain,",
+    "snip": "Blind one creature and deal 3d4+1 damage to it each round for three rounds.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 270-270",
     "specialActions": [],
     "specialId": null,
@@ -259,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Apply blindness and roll the three damage pulses manually; the spell does not schedule them."
     }
   },
   "type": "spell"

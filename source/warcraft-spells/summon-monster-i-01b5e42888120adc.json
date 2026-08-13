@@ -32,7 +32,7 @@
           341
         ],
         "section": "Summon Monster I",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -103,7 +103,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Calls extraplanar creature to</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;conjuration&nbsp;(summoning)&nbsp;[see text];\n    <br>\n    <strong>Level:</strong>&nbsp;Bard 1, Blackguard 1, Cleric 1, Sorcerer 1, Wizard 1;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, F/DF (a tiny bag and a small (not necessarily lit) candle)<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 round<br>\n    <strong>Range:</strong>&nbsp;close (25 ft. + 5 ft./2 levels)<br>\n    \n    \n    <strong>Effect:</strong>&nbsp;One summoned creature<br>\n    <strong>Duration:</strong>&nbsp;1 Round/Level (D)<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;None\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  <p>This spell summons an extraplanar creature (typically an outsider, elemental, or magical beast native to another plane). It appears where you designate and acts immediately, on your turn. It attacks your opponents to the best of its ability. If you can communicate with the creature, you can direct it not to attack, to attack particular enemies, or to perform other actions.</p>\n<p>The spell conjures one of the creatures from the 1st-level list on the accompanying Summon Monster table. You choose which kind of creature to summon, and you can change that choice each time you cast the spell.</p>\n<p>A summoned monster cannot summon or otherwise conjure another creature, nor can it use any teleportation or planar travel abilities. Creatures cannot be summoned into an environment that cannot support them.</p>\n<p>When you use a summoning spell to summon an air, chaotic, earth, evil, fire, good, lawful, or water creature, it is a spell of that type.</p>\n<p><em>Arcane Focus: </em>A tiny bag and a small (not necessarily lit) candle.</p>\n<h3><span id=\"Summon_Monster_Tables\" class=\"mw-headline\">Summon Monster Tables</span></h3>\n<p><span class=\"mw-headline\">@Compendium[warcraftrpg2e.summoning-roll-tables.qLwD4yuvOMTUSxsH]{Summon Monster I}</span></p>\n</div>\n"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -216,10 +216,10 @@
       "type": ""
     },
     "school": "con",
-    "shortDescription": "<p>Calls extraplanar creature to</p>",
+    "shortDescription": "<p>This spell summons an extraplanar creature (typically an outsider, elemental, or magical beast native to another plane). It appears where you designate and acts immediately, on your turn. It attacks your opponents to the best of its ability. If you can communicate with the creature, you can direct it not to attack, to attack particular enemies, or to perform other actions.</p>\n<p>The spell conjures one of the creatures from the 1st-level list on the accompanying Summon Monster table. You choose which kind of creature to summon, and you can change that choice each time you cast the spell.</p>\n<p>A summoned monster cannot summon or otherwise conjure another creature, nor can it use any teleportation or planar travel abilities. Creatures cannot be summoned into an environment that cannot support them.</p>\n<p>When you use a summoning spell to summon an air, chaotic, earth, evil, fire, good, lawful, or water creature, it is a spell of that type.</p>\n<p><em>Arcane Focus: </em>A tiny bag and a small (not necessarily lit) candle.</p>\n<h3><span id=\"Summon_Monster_Tables\" class=\"mw-headline\">Summon Monster Tables</span></h3>\n<p><span class=\"mw-headline\">@Compendium[warcraftrpg2e.summoning-roll-tables.qLwD4yuvOMTUSxsH]{Summon Monster I}</span></p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Calls extraplanar creature to",
+    "snip": "Calls extraplanar creature to fight for you.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 266-266",
     "specialActions": [],
     "specialId": null,

@@ -19,7 +19,12 @@
         "category": "General",
         "prerequisite": "Spt 13",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "As a move action, study one creature within 30 feet. You gain a +4 bonus on attack rolls and damage rolls against that creature until the start of your next turn.",
+          "manual": "Select the studied target and apply the short-lived attack and damage bonuses manually.",
+          "summary": "Study a nearby opponent to gain +4 on attacks and damage against it briefly."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": true
       },
@@ -33,7 +38,7 @@
           144
         ],
         "section": "Careful Strike",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +153,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p><strong>Prerequisites:</strong> Spt 13</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 144) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Prerequisites:</strong> Spt 13</p><p><strong>Summary:</strong> Study a nearby opponent to gain +4 on attacks and damage against it briefly.</p><p><strong>Benefit:</strong> As a move action, study one creature within 30 feet. You gain a +4 bonus on attack rolls and damage rolls against that creature until the start of your next turn.</p><p><strong>Warrior bonus feat:</strong> Yes</p><p><strong>Foundry and GM handling:</strong> Select the studied target and apply the short-lived attack and damage bonuses manually.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +253,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat; requires Spt 13.</p>",
+    "shortDescription": "<p>Study a nearby opponent to gain +4 on attacks and damage against it briefly.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 144",

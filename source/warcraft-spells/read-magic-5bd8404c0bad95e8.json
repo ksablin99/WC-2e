@@ -34,7 +34,7 @@
           329
         ],
         "section": "Read Magic",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -105,7 +105,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>You may read scrolls and spellbooks.</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;divination;\n    <br>\n    <strong>Level:</strong>&nbsp;Bard 0, Cleric 0, Druid 0, Paladin 1, Ranger 1, Sorcerer 0, Wizard 0;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, F (a clear crystal or mineral prism)<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;personal<br>\n    \n    <strong>Target:</strong>&nbsp;you<br>\n    \n    <strong>Duration:</strong>&nbsp;10 Minute/Level<br>\n    \n  </p>\n  <h2>Description</h2>\n  <p>By means of <em>read magic, </em>you can decipher magical inscriptions on objects&mdash;books, scrolls, weapons, and the like&mdash;that would otherwise be unintelligible. This deciphering does not normally invoke the magic contained in the writing, although it may do so in the case of a cursed scroll. Furthermore, once the spell is cast and you have read the magical inscription, you are thereafter able to read that particular writing without recourse to the use of <em>read magic. </em>You can read at the rate of one page (250 words) per minute.</p>\n<p>The spell allows you to identify a <em>glyph of warding</em> with a DC 13 Spellcraft check, a <em>greater glyph of warding</em> with a DC 16 Spellcraft check, or any <em>symbol</em> spell with a Spellcraft check (DC 10 + spell level).</p>\n<p><em>Read magic </em>can be made permanent with a <em>permanency</em> spell.</p>\n<p><em>Focus: </em>A clear crystal or mineral prism.</p>\n<hr />\n</div>\n"
     },
     "display": "Personal",
     "duration": {
@@ -222,10 +222,10 @@
       "type": ""
     },
     "school": "div",
-    "shortDescription": "<p>You may read scrolls and spellbooks.</p>",
+    "shortDescription": "<p>By means of <em>read magic, </em>you can decipher magical inscriptions on objects&mdash;books, scrolls, weapons, and the like&mdash;that would otherwise be unintelligible. This deciphering does not normally invoke the magic contained in the writing, although it may do so in the case of a cursed scroll. Furthermore, once the spell is cast and you have read the magical inscription, you are thereafter able to read that particular writing without recourse to the use of <em>read magic. </em>You can read at the rate of one page (250 words) per minute.</p>\n<p>The spell allows you to identify a <em>glyph of warding</em> with a DC 13 Spellcraft check, a <em>greater glyph of warding</em> with a DC 16 Spellcraft check, or any <em>symbol</em> spell with a Spellcraft check (DC 10 + spell level).</p>\n<p><em>Read magic </em>can be made permanent with a <em>permanency</em> spell.</p>\n<p><em>Focus: </em>A clear crystal or mineral prism.</p>\n<hr />",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "You may read scrolls and spellbooks.",
+    "snip": "Read scrolls and spellbooks.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 263-267",
     "specialActions": [
       {

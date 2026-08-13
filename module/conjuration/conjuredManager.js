@@ -4,6 +4,12 @@ import { Roll35e } from "../roll.js";
 import { applySummonDurationBuffFromTemplate } from "../actor/chat/summonDurationBuff.js";
 import { ItemSpellHelper } from "../item/helpers/itemSpellHelper.js";
 import { ItemUse } from "../item/extensions/use.js";
+import { getSystemFlag, systemFlagPath } from "../utils/system-flags.js";
+import {
+  enforceWarcraftCasterLevelMinimum,
+  getWarcraftSpellcastingAdjustments,
+  normalizeWarcraftRuleName,
+} from "../actor/helpers/warcraftSpellcastingHelper.js";
 
 const FLAG_SCOPE = "warcraftrpg2e";
 const FLAG_PATH = `flags.${FLAG_SCOPE}.conjured`;
@@ -12,7 +18,11 @@ const KIND_WEAPON = "weapon";
 const ACTION_TYPE_SUMMON_WEAPON = "summonWeapon";
 const BEHAVIOR_SPIRITUAL = "spiritual";
 const BEHAVIOR_DANCING = "dancing";
-const DANCING_FLAG_PATH = "flags.D35E.dancingWeapon";
+const DANCING_FLAG_PATH = systemFlagPath("dancingWeapon");
+
+function getDancingState(item) {
+  return getSystemFlag(item, "dancingWeapon") ?? {};
+}
 
 function getActorTokenDocuments(actor) {
   if (!actor?.id) return [];
@@ -78,6 +88,44 @@ function resolveFormulaValue(value, rollData, { empty = "" } = {}) {
   const text = String(value).trim();
   if (!text.length) return empty;
   return Roll35e.replaceFormulaData(text, rollData, { missing: "0" });
+}
+
+function getUnassignedSpellCasterLevel(item, ownerActor, rollData) {
+  const learnedClasses = new Set(
+    (item.system?.learnedAt?.class ?? [])
+      .map((entry) => normalizeWarcraftRuleName(Array.isArray(entry) ? entry[0] : entry?.name))
+      .filter(Boolean)
+  );
+  if (!learnedClasses.size) return 0;
+
+  const matches = [];
+  const seenClassIds = new Set();
+  for (const classSystem of Object.values(ownerActor.system?.classes ?? {})) {
+    if (!classSystem?.id || seenClassIds.has(classSystem.id)) continue;
+    if (!learnedClasses.has(normalizeWarcraftRuleName(classSystem.name))) continue;
+    seenClassIds.add(classSystem.id);
+    matches.push(classSystem);
+  }
+  // An unassigned spell is only unambiguous when exactly one owned casting
+  // class appears on its class list. Otherwise the spellbook must choose CL.
+  if (matches.length !== 1) return 0;
+
+  const classSystem = matches[0];
+  const baseLevel = classSystem.halfCasterLevel
+    ? Math.floor((Number(classSystem.level) || 0) / 2)
+    : Number(classSystem.level) || 0;
+  const warcraftAdjustment = getWarcraftSpellcastingAdjustments(item.system, classSystem, {
+    parentClass: classSystem.name,
+    learnedPath: item.system?.warcraftLearnedPath,
+  });
+  const casterLevel =
+    baseLevel +
+    (Number(classSystem.warcraftCasterLevelBonus) || 0) +
+    (Number(item.system?.clOffset) || 0) +
+    (Number(rollData.featClBonus) || 0) +
+    warcraftAdjustment.casterLevel -
+    (Number(ownerActor.system?.attributes?.energyDrain) || 0);
+  return enforceWarcraftCasterLevelMinimum(casterLevel, warcraftAdjustment);
 }
 
 function cloneAttackTemplate() {
@@ -150,7 +198,7 @@ export class ConjuredManager {
       let tokenData = await monster.getTokenDocument({
         actorData: {
           ownership: { [userId]: CONST.DOCUMENT_OWNERSHIP_LEVELS.OWNER },
-          flags: { D35E: { allowPlayerMovement: true } },
+          flags: { warcraftrpg2e: { allowPlayerMovement: true } },
         },
       });
       let internalSpawnPoint = {
@@ -241,6 +289,15 @@ export class ConjuredManager {
     rollData.item = foundry.utils.duplicate(item.getRollData());
     if (item.type === "spell") {
       ItemSpellHelper.adjustSpellCL(item, item.system, rollData);
+      if (!(Number(rollData.cl) > 0)) {
+        const inferredCasterLevel = getUnassignedSpellCasterLevel(item, ownerActor, rollData);
+        if (inferredCasterLevel > 0) {
+          rollData.cl = inferredCasterLevel;
+          rollData.spellPenetration =
+            inferredCasterLevel +
+            (new Roll35e(rollData.featSpellPenetrationBonus || "0", rollData).evaluateSync().total || 0);
+        }
+      }
     }
     if (parent?.getRollData) {
       rollData.parent = foundry.utils.duplicate(parent.getRollData());
@@ -313,7 +370,7 @@ export class ConjuredManager {
       img: img ?? item.img,
       system,
       flags: {
-        D35E: {
+        warcraftrpg2e: {
           conjuredAttack: {
             sourceItemId: item.id ?? null,
             sourceItemName: item.name,
@@ -328,7 +385,7 @@ export class ConjuredManager {
     let tokenData = await actor.getTokenDocument({
       actorData: {
         ownership: { [userId]: CONST.DOCUMENT_OWNERSHIP_LEVELS.OWNER },
-        flags: { D35E: { allowPlayerMovement: true } },
+        flags: { warcraftrpg2e: { allowPlayerMovement: true } },
       },
     });
     const internalSpawnPoint = { x, y };
@@ -434,7 +491,7 @@ export class ConjuredManager {
       return false;
     }
 
-    const dancingState = foundry.utils.getProperty(sourceWeapon, DANCING_FLAG_PATH) ?? {};
+    const dancingState = getDancingState(sourceWeapon);
     if ((Number(dancingState.cooldownRounds) || 0) > 0) {
       ui.notifications.warn(`${sourceWeapon.name} cannot dance again for ${dancingState.cooldownRounds} more rounds.`);
       return false;
@@ -476,8 +533,8 @@ export class ConjuredManager {
     return true;
   }
 
-  static async #endDancingWeapon(sourceWeapon, { applyCooldown = false } = {}) {
-    const state = foundry.utils.getProperty(sourceWeapon, DANCING_FLAG_PATH) ?? {};
+  static async #endDancingWeapon(sourceWeapon, { applyCooldown = false, cooldownTicksThisTurn = false } = {}) {
+    const state = getDancingState(sourceWeapon);
     const conjuredActor = state.activeActorId ? game.actors.get(state.activeActorId) : null;
     if (conjuredActor) {
       await this.cleanupConjuredActor(conjuredActor);
@@ -490,7 +547,9 @@ export class ConjuredManager {
       [DANCING_FLAG_PATH]: {
         activeActorId: null,
         activeTokenId: null,
-        cooldownRounds: applyCooldown ? cooldownRounds + 1 : 0, // Offset by 1 to account for the current round
+        // Automatic expiry is immediately followed by this turn hook's
+        // cooldown decrement, so only that path needs a one-tick offset.
+        cooldownRounds: applyCooldown ? cooldownRounds + (cooldownTicksThisTurn ? 1 : 0) : 0,
         roundsRemaining: 0,
         returnEquipped: !!state.returnEquipped,
       },
@@ -541,7 +600,7 @@ export class ConjuredManager {
     const owner = conjured?.ownerActorId ? game.actors.get(conjured.ownerActorId) : null;
     const sourceWeapon = owner?.items?.get(conjured.sourceItemId);
     if (!sourceWeapon) return;
-    const state = foundry.utils.getProperty(sourceWeapon, DANCING_FLAG_PATH) ?? {};
+    const state = getDancingState(sourceWeapon);
     if (state.activeActorId === actor.id) {
       await sourceWeapon.update({
         "system.equipped": !!state.returnEquipped,
@@ -592,7 +651,7 @@ export class ConjuredManager {
 
     const combatant = combat.combatant;
     const ownerActor = combatant?.actor;
-    if (!ownerActor || combatant.flags?.D35E?.isBuff) return;
+    if (!ownerActor || getSystemFlag(combatant, "isBuff")) return;
 
     for (const actor of game.actors.filter((candidate) => candidate.getFlag(FLAG_SCOPE, "conjured.ownerActorId") === ownerActor.id)) {
       const conjured = actor.getFlag(FLAG_SCOPE, "conjured");
@@ -602,17 +661,31 @@ export class ConjuredManager {
         const sourceWeapon = ownerActor.items.get(conjured.sourceItemId);
         if (!sourceWeapon) continue;
         if (roundsRemaining <= 0) {
-          if (sourceWeapon) await this.#endDancingWeapon(sourceWeapon, { applyCooldown: true });
+          if (sourceWeapon) {
+            await this.#endDancingWeapon(sourceWeapon, {
+              applyCooldown: true,
+              cooldownTicksThisTurn: true,
+            });
+          }
           continue;
         }
         await actor.setFlag(FLAG_SCOPE, "conjured.state.roundsRemaining", roundsRemaining);
         await sourceWeapon.update({ [`${DANCING_FLAG_PATH}.roundsRemaining`]: roundsRemaining });
       } else if (conjured.behaviorId === BEHAVIOR_SPIRITUAL) {
+        // Spiritual Weapon attacks once whenever its owner's turn begins. The
+        // initial summon already attacks immediately, so retain the recorded
+        // round guard in case the combat hook is emitted more than once for
+        // the same turn transition.
+        const currentRound = Number(combat.round) || 0;
+        const lastAttackRound = Number(conjured.state?.lastAttackRound) || 0;
+        if (currentRound > lastAttackRound) {
+          await this.#performWeaponAttack(actor);
+        }
       }
     }
 
-    for (const item of ownerActor.items.filter((candidate) => foundry.utils.getProperty(candidate, `${DANCING_FLAG_PATH}.cooldownRounds`) > 0)) {
-      const cooldownRounds = Number(foundry.utils.getProperty(item, `${DANCING_FLAG_PATH}.cooldownRounds`)) || 0;
+    for (const item of ownerActor.items.filter((candidate) => (Number(getDancingState(candidate).cooldownRounds) || 0) > 0)) {
+      const cooldownRounds = Number(getDancingState(item).cooldownRounds) || 0;
       await item.update({ [`${DANCING_FLAG_PATH}.cooldownRounds`]: Math.max(0, cooldownRounds - 1) });
     }
   }

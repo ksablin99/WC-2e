@@ -32,7 +32,7 @@
           287
         ],
         "section": "Cone of Cold",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -105,7 +105,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>1d6/level cold damage.</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;evocation&nbsp;[cold];\n    <br>\n    <strong>Level:</strong>&nbsp;Sorcerer 5, Wizard 5;\n    <strong>Domain:</strong>&nbsp;Water 6;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, M/DF (a very small crystal or glass cone), F<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;60 feet<br>\n    <strong>Area:</strong>&nbsp;cone-shaped burst<br>\n    \n    \n    <strong>Duration:</strong>&nbsp;Instantaneous<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;Reflex half\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\n<i>Cone of cold </i>creates an area of extreme cold, originating at your hand and extending outward in a cone. It drains heat, dealing 1d6 points of cold damage per caster level (maximum 15d6).\n</p><p><i>Arcane Material Component: </i>A very small crystal or glass cone.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "60 ft.",
     "duration": {
@@ -215,7 +215,7 @@
       "type": "reflexhalf"
     },
     "school": "evo",
-    "shortDescription": "<p>1d6/level cold damage.</p>",
+    "shortDescription": "\n\n\n<p>\n<i>Cone of cold </i>creates an area of extreme cold, originating at your hand and extending outward in a cone. It drains heat, dealing 1d6 points of cold damage per caster level (maximum 15d6).\n</p><p><i>Arcane Material Component: </i>A very small crystal or glass cone.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
     "snip": "1d6/level cold damage.",

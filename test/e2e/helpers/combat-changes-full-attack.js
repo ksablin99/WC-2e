@@ -68,7 +68,7 @@ async function openAttackDialog(page, sheetId, attackId) {
 async function getLastChatAttackSummary(page) {
   return page.evaluate(() => {
     const msg = game.messages.contents.at(-1);
-    const attacks = msg?.flags?.D35E?.chatTemplateData?.attacks ?? [];
+    const attacks = msg?.flags?.warcraftrpg2e?.chatTemplateData?.attacks ?? [];
     return {
       attackCount: attacks.length,
       attackTotals: attacks.map((attack) => attack.attack?.total ?? null),

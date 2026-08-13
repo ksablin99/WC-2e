@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -34,7 +34,7 @@
           357
         ],
         "section": "Withering Blight",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -55,7 +55,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -104,7 +104,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Blighted area kills plants and</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>Normal vegetation in the 30-foot-radius area becomes diseased and stops producing seeds or fruit. Any living creature that touches blighted ground at any time during its turn must make a Fortitude save or contract blight plague; spell resistance applies to this infection. Turning checks made on the ground take a -2 profane penalty, while rebuke-undead checks gain a +2 profane bonus; spell resistance does not affect either modifier.</p><p>Blight plague is a supernatural disease with a 1-minute incubation period that deals 1d4 temporary Intellect damage. It does not end naturally: it continues until the victim reaches Intellect 0 or receives <em>remove disease</em> or similar magic. A humanoid reduced to Intellect 0 by it immediately becomes a zombie.</p><p>The printed component line includes a material component, but the spell gives no material description or cost.</p><p><strong>Automation boundary:</strong> Mark the permanent terrain, test each turn's contact, track supernatural disease and Intellect damage, transform humanoids at 0, and adjust turning or rebuking checks manually.</p>"
     },
     "display": "Touch",
     "duration": {
@@ -220,10 +220,10 @@
       "type": ""
     },
     "school": "trs",
-    "shortDescription": "<p>Blighted area kills plants and</p>",
+    "shortDescription": "<p>Permanently blight vegetation and ground, spread an Intellect-damaging plague, and empower rebuking over turning.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Blighted area kills plants and",
+    "snip": "Permanently blight vegetation and ground, spread an Intellect-damaging plague, and empower rebuking over turning.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 266-272",
     "specialActions": [],
     "specialId": null,
@@ -266,7 +266,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Mark the permanent terrain, test each turn's contact, track supernatural disease and Intellect damage, transform humanoids at 0, and adjust turning or rebuking checks manually."
     }
   },
   "type": "spell"

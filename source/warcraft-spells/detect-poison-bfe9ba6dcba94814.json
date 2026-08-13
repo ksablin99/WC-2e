@@ -34,7 +34,7 @@
           294
         ],
         "section": "Detect Poison",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -105,7 +105,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Detects poison in one creature or</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;divination;\n    <br>\n    <strong>Level:</strong>&nbsp;Assassin 1, Cleric 0, Druid 0, Paladin 1, Ranger 1, Sorcerer 0, Wizard 0;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;close (25 ft. + 5 ft./2 levels)<br>\n    <strong>Area:</strong>&nbsp;one creature, one object, or a 5-ft. cube<br>\n    <strong>Target:</strong>&nbsp;one creature, one object, or a 5-ft. cube<br>\n    \n    <strong>Duration:</strong>&nbsp;Instantaneous<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;None\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  <p>You determine whether a creature, object, or area has been poisoned or is poisonous. You can determine the exact type of poison with a DC 20 Wisdom check. A character with the Craft (alchemy) skill may try a DC 20 Craft (alchemy) check if the Wisdom check fails, or may try the Craft (alchemy) check prior to the Wisdom check.</p>\n<p>The spell can penetrate barriers, but 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt blocks it.</p>\n<hr />\n</div>\n"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -222,10 +222,10 @@
       "type": ""
     },
     "school": "div",
-    "shortDescription": "<p>Detects poison in one creature or</p>",
+    "shortDescription": "<p>You determine whether a creature, object, or area has been poisoned or is poisonous. You can determine the exact type of poison with a DC 20 Wisdom check. A character with the Craft (alchemy) skill may try a DC 20 Craft (alchemy) check if the Wisdom check fails, or may try the Craft (alchemy) check prior to the Wisdom check.</p>\n<p>The spell can penetrate barriers, but 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt blocks it.</p>\n<hr />",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Detects poison in one creature or",
+    "snip": "Detects poison in one creature or small object.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 267-274",
     "specialActions": [],
     "specialId": null,

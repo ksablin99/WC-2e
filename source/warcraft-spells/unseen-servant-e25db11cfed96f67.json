@@ -30,7 +30,7 @@
           266
         ],
         "section": "Unseen Servant",
-        "verification": "spell-list-entry"
+        "verification": "srd-mechanics+spell-list-entry"
       }
     }
   },
@@ -73,10 +73,10 @@
     "components": {
       "divineFocus": 0,
       "focus": false,
-      "material": false,
-      "somatic": false,
+      "material": true,
+      "somatic": true,
       "value": "",
-      "verbal": false
+      "verbal": true
     },
     "conditionals": [],
     "createdBy": "",
@@ -92,7 +92,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Invisible force obeys your</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;conjuration&nbsp;(creation);\n    <br>\n    <strong>Level:</strong>&nbsp;Bard 1, Sorcerer 1, Wizard 1;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, M (a piece of string and a bit of wood)<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;close (25 ft. + 5 ft./2 levels)<br>\n    \n    \n    <strong>Effect:</strong>&nbsp;One invisible, mindless, shapeless servant\n<br>\n    <strong>Duration:</strong>&nbsp;1 Hours/Level<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;None\n\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nAn <i>unseen servant </i>is an invisible, mindless, shapeless force that performs simple tasks at your command. It can run and fetch things, open unstuck doors, and hold chairs, as well as clean and mend. The servant can perform only one activity at a time, but it repeats the same activity over and over again if told to do so as long as you remain within range. It can open only normal doors, drawers, lids, and the like. It has an effective Strength score of 2 (so it can lift 20 pounds or drag 100 pounds). It can trigger traps and such, but it can exert only 20 pounds of force, which is not enough to activate certain pressure plates and other devices. It can’t perform any task that requires a skill check with a DC higher than 10 or that requires a check using a skill that can’t be used untrained. Its speed is 15 feet.\n</p><p>The servant cannot attack in any way; it is never allowed an attack roll. It cannot be killed, but it dissipates if it takes 6 points of damage from area attacks. (It gets no saves against attacks.) If you attempt to send it beyond the spell’s range (measured from your current position), the servant ceases to exist.\n</p><p><i>Material Component: </i>A piece of string and a bit of wood.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "",
     "duration": {
@@ -202,10 +202,10 @@
       "type": ""
     },
     "school": "con",
-    "shortDescription": "<p>Invisible force obeys your</p>",
+    "shortDescription": "\n\n\n<p>\nAn <i>unseen servant </i>is an invisible, mindless, shapeless force that performs simple tasks at your command. It can run and fetch things, open unstuck doors, and hold chairs, as well as clean and mend. The servant can perform only one activity at a time, but it repeats the same activity over and over again if told to do so as long as you remain within range. It can open only normal doors, drawers, lids, and the like. It has an effective Strength score of 2 (so it can lift 20 pounds or drag 100 pounds). It can trigger traps and such, but it can exert only 20 pounds of force, which is not enough to activate certain pressure plates and other devices. It can’t perform any task that requires a skill check with a DC higher than 10 or that requires a check using a skill that can’t be used untrained. Its speed is 15 feet.\n</p><p>The servant cannot attack in any way; it is never allowed an attack roll. It cannot be killed, but it dissipates if it takes 6 points of damage from area attacks. (It gets no saves against attacks.) If you attempt to send it beyond the spell’s range (measured from your current position), the servant ceases to exist.\n</p><p><i>Material Component: </i>A piece of string and a bit of wood.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Invisible force obeys your",
+    "snip": "Invisible force obeys your commands.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 266-266",
     "specialActions": [],
     "specialId": null,

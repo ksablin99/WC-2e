@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -34,7 +34,7 @@
           291
         ],
         "section": "Death Coil",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -55,7 +55,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -104,7 +104,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Deals 2d8 damage, +1/level (max +10)</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>The unerring coil deals 2d8 negative-energy damage +1 per caster level, maximum +10, to a living creature; a Will save halves the damage. An undead target instead heals that amount and does not use the living-creature save.</p><p><strong>Automation boundary:</strong> Roll the listed amount, then apply it as saved damage to living creatures or healing to undead manually.</p>"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -219,10 +219,10 @@
       "type": "willhalf"
     },
     "school": "nec",
-    "shortDescription": "<p>Deals 2d8 damage, +1/level (max +10)</p>",
+    "shortDescription": "<p>Negative energy deals 2d8 + up to 10 damage to a living target or heals an undead target by the same amount.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Deals 2d8 damage, +1/level (max +10)",
+    "snip": "Negative energy deals 2d8 + up to 10 damage to a living target or heals an undead target by the same amount.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 265-269",
     "specialActions": [],
     "specialId": null,
@@ -265,7 +265,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Roll the listed amount, then apply it as saved damage to living creatures or healing to undead manually."
     }
   },
   "type": "spell"

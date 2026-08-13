@@ -19,7 +19,13 @@
         "category": "Technology",
         "prerequisite": "",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "Gain +2 on Craft (technological device) checks made to build firearms and increase your Technological Limit by 2 for firearm construction. You also gain a +1 competence bonus on attack rolls made with firearms you built yourself.",
+          "manual": "Foundry records the feat but does not classify construction projects or remember a firearm's builder. Apply the Craft and Technological Limit adjustments to firearm projects manually, and apply the competence attack bonus only after confirming that the user built that firearm.",
+          "special": "A tinker may select Firearm Knack as a bonus tinker feat.",
+          "summary": "You are especially capable at constructing firearms and using firearms you personally built."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": true,
         "warriorBonus": false
       },
@@ -33,7 +39,7 @@
           148
         ],
         "section": "Firearm Knack",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +154,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> Technology.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 148) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> Technology feat</p><p><strong>Summary:</strong> You are especially capable at constructing firearms and using firearms you personally built.</p><p><strong>Benefit:</strong> Gain +2 on Craft (technological device) checks made to build firearms and increase your Technological Limit by 2 for firearm construction. You also gain a +1 competence bonus on attack rolls made with firearms you built yourself.</p><p><strong>Special:</strong> A tinker may select Firearm Knack as a bonus tinker feat.</p><p><strong>Tinker bonus feat:</strong> Yes</p><p><strong>Foundry and GM handling:</strong> Foundry records the feat but does not classify construction projects or remember a firearm&#39;s builder. Apply the Craft and Technological Limit adjustments to firearm projects manually, and apply the competence attack bonus only after confirming that the user built that firearm.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +254,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>Technology feat.</p>",
+    "shortDescription": "<p>You are especially capable at constructing firearms and using firearms you personally built.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 148",

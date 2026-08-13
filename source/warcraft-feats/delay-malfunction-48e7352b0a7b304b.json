@@ -19,7 +19,13 @@
         "category": "Technology",
         "prerequisite": "",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "When a device malfunctions, attempt a Craft (technological device) check against DC 15 + the device's Malfunction Rating. Success lets the device operate normally for 1d3 rounds. A natural 20 on the check prevents the malfunction completely. This feat can be used only once for any particular malfunction.",
+          "manual": "The book assigns no action type to this response. Foundry records the feat but does not detect a malfunction, enforce its timing or one-use limit, roll its duration, or clear the malfunction on a natural 20; the GM must adjudicate and track those steps.",
+          "special": "A tinker may select Delay Malfunction as a bonus tinker feat.",
+          "summary": "Keep a malfunctioning device running briefly, with a chance to avert the malfunction entirely."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": true,
         "warriorBonus": false
       },
@@ -33,7 +39,7 @@
           146
         ],
         "section": "Delay Malfunction",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +154,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> Technology.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 146) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> Technology feat</p><p><strong>Summary:</strong> Keep a malfunctioning device running briefly, with a chance to avert the malfunction entirely.</p><p><strong>Benefit:</strong> When a device malfunctions, attempt a Craft (technological device) check against DC 15 + the device&#39;s Malfunction Rating. Success lets the device operate normally for 1d3 rounds. A natural 20 on the check prevents the malfunction completely. This feat can be used only once for any particular malfunction.</p><p><strong>Special:</strong> A tinker may select Delay Malfunction as a bonus tinker feat.</p><p><strong>Tinker bonus feat:</strong> Yes</p><p><strong>Foundry and GM handling:</strong> The book assigns no action type to this response. Foundry records the feat but does not detect a malfunction, enforce its timing or one-use limit, roll its duration, or clear the malfunction on a natural 20; the GM must adjudicate and track those steps.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +254,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>Technology feat.</p>",
+    "shortDescription": "<p>Keep a malfunctioning device running briefly, with a chance to avert the malfunction entirely.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 146",

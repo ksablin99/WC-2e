@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "srd-mechanics-with-warcraft-header"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -34,12 +34,12 @@
           334
         ],
         "section": "Greater Scrying",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
   "folder": null,
-  "img": "icons/svg/target.svg",
+  "img": "systems/warcraftrpg2e/icons/spells/school/div.png",
   "name": "Greater Scrying",
   "ownership": {
     "default": 0
@@ -55,8 +55,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
-    "activateActions": [],
+    "actionType": "other",
     "activation": {
       "cost": 1,
       "type": "standard"
@@ -66,17 +65,15 @@
       "parts": []
     },
     "attackBonus": "",
-    "attackCountFormula": "max(min(5,ceil(@cl/2)),1)",
+    "attackCountFormula": "",
     "attackNotes": "",
     "attackParts": [],
     "atWill": false,
     "autoscaleAttackParts": "",
     "baseCl": "0",
     "castTime": "1 standard action",
-    "changes": [],
     "classSource": "",
     "clOffset": 0,
-    "combatChanges": [],
     "components": {
       "divineFocus": 0,
       "focus": false,
@@ -86,9 +83,6 @@
       "verbal": true
     },
     "conditionals": [],
-    "container": "None",
-    "containerWeightless": false,
-    "contextNotes": [],
     "createdBy": "",
     "critConfirmBonus": "",
     "customAttributes": {},
@@ -99,12 +93,10 @@
       "alternativeParts": [],
       "parts": []
     },
-    "damageReduction": [],
-    "deactivateActions": [],
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>As scrying, but faster and longer.</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;divination&nbsp;(scrying);\n    <br>\n    <strong>Level:</strong>&nbsp;Bard 6, Cleric 7, Druid 7, Sorcerer 7, Wizard 7;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;touch<br>\n    \n    \n    <strong>Effect:</strong>&nbsp;Magical sensor\n<br>\n    <strong>Duration:</strong>&nbsp;1 Hours/Level<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;Will negates\n\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nYou can see and hear some creature, which may be at any distance. If the subject succeeds on a Will save, the scrying attempt simply fails. The difficulty of the save depends on how well you know the subject and what sort of physical connection (if any) you have to that creature. Furthermore, if the subject is on another plane, it gets a +5 bonus on its Will save.\n</p>\n\n<p>If the save fails, you can see and hear the subject and the subject’s immediate surroundings (approximately 10 feet in all directions of the subject). If the subject moves, the sensor follows at a speed of up to 150 feet.\n</p><p>As with all divination (scrying) spells, the sensor has your full visual acuity, including any magical effects. In addition, all of the following spells function reliably through the sensor: <i>detect chaos</i>, <i>detect evil</i>, <i>detect good</i>, <i>detect law</i>, <i>detect magic</i>, <i>message</i>, <i>read magic</i>, and <i>tongues</i>.\n</p><p>If the save succeeds, you can’t attempt to scry on that subject again for at least 24 hours.\n</p><p><i>Arcane Material Component: </i>The eye of a hawk, an eagle, or a roc, plus nitric acid, copper, and zinc.\n</p><p><i>Wizard, Sorcerer, or Bard Focus: </i>A mirror of finely wrought and highly polished silver costing not less than 1,000 gp. The mirror must be at least 2 feet by 4 feet.\n</p><p><i>Cleric Focus: </i>A holy water font costing not less than 100 gp.\n</p><p><i>Druid Focus: </i>A natural pool of water.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "",
     "duration": {
@@ -154,8 +146,8 @@
         "_deprecated": true,
         "value": false
       },
-      "focus": "",
-      "value": ""
+      "focus": "a natural pool of water",
+      "value": "the eye of a hawk, an eagle, or a roc, plus nitric acid, copper, and zinc"
     },
     "maxDamageDice": 0,
     "maxDamageDiceFormula": "",
@@ -182,7 +174,7 @@
     "originPack": "warcraftrpg2e.warcraft-spells",
     "originVersion": 109,
     "possibleUpdate": false,
-    "powerPointsCost": 1,
+    "powerPointsCost": 0,
     "pr": false,
     "preparation": {
       "autoDeductCharges": true,
@@ -193,7 +185,7 @@
     "psionic": "",
     "range": {
       "long": null,
-      "units": "medium",
+      "units": "touch",
       "value": null
     },
     "recharge": {
@@ -202,7 +194,6 @@
       "formula": ""
     },
     "requiresPsionicFocus": false,
-    "resistances": [],
     "rollTableDraw": {
       "formula": "",
       "id": "",
@@ -214,15 +205,15 @@
       "dc": "0",
       "dcAutoAbility": "",
       "dcAutoType": "",
-      "description": "None",
+      "description": "Will negates\n",
       "originVersion": 97,
       "type": ""
     },
     "school": "div",
-    "shortDescription": "<p>As scrying, but faster and longer.</p>",
+    "shortDescription": "\n\n\n<p>\nYou can see and hear some creature, which may be at any distance. If the subject succeeds on a Will save, the scrying attempt simply fails. The difficulty of the save depends on how well you know the subject and what sort of physical connection (if any) you have to that creature. Furthermore, if the subject is on another plane, it gets a +5 bonus on its Will save.\n</p>\n\n<p>If the save fails, you can see and hear the subject and the subject’s immediate surroundings (approximately 10 feet in all directions of the subject). If the subject moves, the sensor follows at a speed of up to 150 feet.\n</p><p>As with all divination (scrying) spells, the sensor has your full visual acuity, including any magical effects. In addition, all of the following spells function reliably through the sensor: <i>detect chaos</i>, <i>detect evil</i>, <i>detect good</i>, <i>detect law</i>, <i>detect magic</i>, <i>message</i>, <i>read magic</i>, and <i>tongues</i>.\n</p><p>If the save succeeds, you can’t attempt to scry on that subject again for at least 24 hours.\n</p><p><i>Arcane Material Component: </i>The eye of a hawk, an eagle, or a roc, plus nitric acid, copper, and zinc.\n</p><p><i>Wizard, Sorcerer, or Bard Focus: </i>A mirror of finely wrought and highly polished silver costing not less than 1,000 gp. The mirror must be at least 2 feet by 4 feet.\n</p><p><i>Cleric Focus: </i>A holy water font costing not less than 100 gp.\n</p><p><i>Druid Focus: </i>A natural pool of water.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "As scrying, but faster and longer.",
+    "snip": "As scrying, but faster and longer.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 264-268",
     "specialActions": [],
     "specialId": null,
@@ -234,19 +225,19 @@
       "units": "hourPerLevel",
       "value": 1
     },
-    "spellEffect": "",
+    "spellEffect": "Magical sensor\n",
     "spellType": {
       "_deprecated": true,
       "value": ""
     },
     "sr": true,
-    "subschool": "",
+    "subschool": "scrying",
     "summon": [],
     "tags": [],
     "target": {
-      "value": "up to five creatures, no two of which can be more than 15 ft. apart"
+      "value": ""
     },
-    "types": "force",
+    "types": "",
     "uniqueId": "",
     "userNonRemovable": false,
     "uses": {
@@ -264,8 +255,8 @@
       "value": 0
     },
     "warcraftManualPolicy": {
-      "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "mode": "srd-baseline",
+      "reason": "The inherited SRD implementation is used with the Warcraft list assignment and spell level."
     }
   },
   "type": "spell"

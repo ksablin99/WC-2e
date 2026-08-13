@@ -153,12 +153,47 @@ test('clicking an ability name on the character sheet posts the ability check', 
   const { actorId, mods } = await createActorWithAbilities(page, { str: 16 }, 'Sheet Ability Click Test');
   const sheetId = await openSheet(page, actorId);
   const messagesBefore = await page.evaluate(() => game.messages.size);
+  const pageErrors = [];
+  const invalidFlagScopeErrors = [];
+
+  // Install listeners after setup so failures are attributable to the sheet
+  // click and ensuing ChatMessage render, not unrelated world initialization.
+  page.on('pageerror', (error) => pageErrors.push(error.stack ?? error.message));
+  page.on('console', (message) => {
+    if (message.type() !== 'error') return;
+    const text = message.text();
+    if (/invalid.{0,40}(flag )?scope|flag scope.{0,40}(invalid|D35E)|scope.{0,40}D35E/i.test(text)) {
+      invalidFlagScopeErrors.push(text);
+    }
+  });
 
   await page.locator(`#${sheetId} [data-ability="str"] .ability-name`).first().click();
   await page.waitForFunction((count) => game.messages.size > count, messagesBefore, { timeout: 8_000 });
 
-  const total = await page.evaluate(() => game.messages.contents.at(-1)?.rolls?.[0]?.total ?? null);
-  expect(total).not.toBeNull();
-  expect(total).toBeGreaterThanOrEqual(1 + mods.str);
-  expect(total).toBeLessThanOrEqual(20 + mods.str);
+  const message = await page.evaluate(() => {
+    const chatMessage = game.messages.contents.at(-1);
+    return {
+      id: chatMessage?.id ?? null,
+      total: chatMessage?.rolls?.[0]?.total ?? null,
+      hasLegacyScope: Object.hasOwn(chatMessage?.flags ?? {}, 'D35E'),
+    };
+  });
+  expect(message.id).not.toBeNull();
+  expect(message.total).not.toBeNull();
+  expect(message.total).toBeGreaterThanOrEqual(1 + mods.str);
+  expect(message.total).toBeLessThanOrEqual(20 + mods.str);
+  expect(message.hasLegacyScope).toBe(false);
+
+  // A ChatMessage document alone is insufficient: the original regression
+  // created the document but crashed while rendering it into the sidebar.
+  // Foundry v14 chat templates use `.chat-log`; the old `#chat-log` id no
+  // longer exists (templates/sidebar/tabs/chat/log.hbs).
+  const renderedMessage = page.locator(`.chat-log [data-message-id="${message.id}"]`).first();
+  await expect(renderedMessage).toBeVisible({ timeout: 8_000 });
+  await expect(renderedMessage.locator('.D35E.chat-card')).toBeVisible();
+  await expect(renderedMessage).toContainText('Strength Ability Test');
+  await expect(renderedMessage.locator('.dice-total')).toHaveText(String(message.total));
+
+  expect(pageErrors, 'Ability-check chat rendering emitted a page error').toEqual([]);
+  expect(invalidFlagScopeErrors, 'Ability-check chat rendering used an invalid flag scope').toEqual([]);
 });

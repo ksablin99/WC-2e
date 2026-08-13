@@ -19,7 +19,12 @@
         "category": "General",
         "prerequisite": "Shield Proficiency, base attack bonus +2.",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "While wielding a shield larger than a buckler, one ally within 5 feet gains +1 AC. The bonus is a shield bonus if that ally is not using a shield, or a circumstance bonus if the ally is using one. Multiple uses of Defend do not stack, and you keep your own shield bonus while protecting the ally.",
+          "manual": "Choose the protected ally and track adjacency and shield use manually; apply the correctly typed AC bonus as a temporary effect.",
+          "summary": "Extend part of your shield's protection to an adjacent ally."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": true
       },
@@ -33,7 +38,7 @@
           146
         ],
         "section": "Defend",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +153,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p><strong>Prerequisites:</strong> Shield Proficiency, base attack bonus +2.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 146) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Prerequisites:</strong> Shield Proficiency, base attack bonus +2.</p><p><strong>Summary:</strong> Extend part of your shield&#39;s protection to an adjacent ally.</p><p><strong>Benefit:</strong> While wielding a shield larger than a buckler, one ally within 5 feet gains +1 AC. The bonus is a shield bonus if that ally is not using a shield, or a circumstance bonus if the ally is using one. Multiple uses of Defend do not stack, and you keep your own shield bonus while protecting the ally.</p><p><strong>Warrior bonus feat:</strong> Yes</p><p><strong>Foundry and GM handling:</strong> Choose the protected ally and track adjacency and shield use manually; apply the correctly typed AC bonus as a temporary effect.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +253,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat; requires Shield Proficiency, base attack bonus +2..</p>",
+    "shortDescription": "<p>Extend part of your shield&#39;s protection to an adjacent ally.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 146",

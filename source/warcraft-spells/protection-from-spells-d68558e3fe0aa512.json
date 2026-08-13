@@ -32,7 +32,7 @@
           328
         ],
         "section": "Protection from Spells",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -101,7 +101,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Confers +8 resistance bonus.</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;abjuration;\n    <br>\n    <strong>Level:</strong>&nbsp;Sorcerer 8, Wizard 8;\n    <strong>Domain:</strong>&nbsp;Magic 8;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, M (a diamond of at least 500 gp value, which must be crushed and sprinkled over the targets), F (one 1,000 gp diamond per creature to be granted the protection  each subject must carry one such gem for the duration of the spell  if a subject loses the gem, the spell ceases to affect him)<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;touch<br>\n    \n    <strong>Target:</strong>&nbsp;up to one creature touched per four levels<br>\n    \n    <strong>Duration:</strong>&nbsp;10 Minute/Level<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;15<br>\n        <strong>Saving Throw:</strong>&nbsp;Will negates (harmless)\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  <p>The subject gains a +8 resistance bonus on saving throws against spells and spell-like abilities (but not against supernatural and extraordinary abilities).</p>\n<p><em>Material Component: </em>A diamond of at least 500 gp value, which must be crushed and sprinkled over the targets.</p>\n<p><em>Focus: </em>One 1,000 gp diamond per creature to be granted the protection. Each subject must carry one such gem for the duration of the spell. If a subject loses the gem, the spell ceases to affect him.</p>\n<hr />\n</div>\n"
     },
     "display": "Touch",
     "duration": {
@@ -211,10 +211,10 @@
       "type": "willnegates"
     },
     "school": "abj",
-    "shortDescription": "<p>Confers +8 resistance bonus.</p>",
+    "shortDescription": "<p>The subject gains a +8 resistance bonus on saving throws against spells and spell-like abilities (but not against supernatural and extraordinary abilities).</p>\n<p><em>Material Component: </em>A diamond of at least 500 gp value, which must be crushed and sprinkled over the targets.</p>\n<p><em>Focus: </em>One 1,000 gp diamond per creature to be granted the protection. Each subject must carry one such gem for the duration of the spell. If a subject loses the gem, the spell ceases to affect him.</p>\n<hr />",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Confers +8 resistance bonus.",
+    "snip": "Confers +8 resistance bonus.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 264-264",
     "specialActions": [
       {

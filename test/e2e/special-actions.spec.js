@@ -130,11 +130,11 @@ test('attack roll with > special-action conditions does not crash and filters co
   );
 
   // 6. Inspect the last chat message for special actions.
-  //    flags.D35E.chatTemplateData.attacks is an array of serialized ChatAttack
+  //    flags.warcraftrpg2e.chatTemplateData.attacks is an array of serialized ChatAttack
   //    objects; each has a .special array with { label, ... } entries.
   const chatPayload = await page.evaluate(() => {
     const msg = game.messages.contents.at(-1);
-    const attacks = msg?.flags?.D35E?.chatTemplateData?.attacks ?? [];
+    const attacks = msg?.flags?.warcraftrpg2e?.chatTemplateData?.attacks ?? [];
     const specials = attacks.flatMap(a => (a.special ?? []).map(s => s.label));
     return { specials };
   });

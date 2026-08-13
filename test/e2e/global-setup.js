@@ -30,11 +30,16 @@ module.exports = async function globalSetup() {
   const dataDir = process.env.E2E_DATA_DIR;
   const port    = process.env.E2E_PORT ?? '30001';
   const baseUrl = `http://localhost:${port}`;
+  const browserExecutable = process.env.E2E_BROWSER_PATH;
+  const screen = { width: 1600, height: 1000 };
 
   console.log('[global-setup] Logging in as GM…');
 
-  const browser = await chromium.launch({ headless: true });
-  const page    = await browser.newPage();
+  const browser = await chromium.launch({
+    headless: true,
+    ...(browserExecutable ? { executablePath: browserExecutable } : {}),
+  });
+  const page = await browser.newPage({ viewport: screen, screen });
 
   const browserErrors = [];
   page.on('console', msg => {
@@ -57,14 +62,14 @@ module.exports = async function globalSetup() {
 
   if (browserErrors.length) console.error('[global-setup] Browser errors:\n', browserErrors.join('\n'));
 
-  // Verify D35E initialized — isCIEnvironment is registered in the init hook.
-  if (!await page.evaluate(() => game.settings?.settings?.has('D35E.isCIEnvironment'))) {
-    throw new Error('D35E init hook did not complete — isCIEnvironment not registered. Check browser console for module load errors.');
+  // Verify the active system initialized; isCIEnvironment is registered in its init hook.
+  if (!await page.evaluate(() => game.settings?.settings?.has(`${game.system.id}.isCIEnvironment`))) {
+    throw new Error('System init hook did not complete — isCIEnvironment not registered. Check browser console for module load errors.');
   }
 
   // Persist isCIEnvironment=true so dialogs are suppressed in every test session.
   await page.evaluate(async () => {
-    await game.settings.set('warcraftrpg2e', 'isCIEnvironment', true);
+    await game.settings.set(game.system.id, 'isCIEnvironment', true);
   });
 
   const authPath = join(dataDir, '.auth.json');

@@ -34,7 +34,7 @@
           335
         ],
         "section": "Sending",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -96,7 +96,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Transmits a short message over a great</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;evocation;\n    <br>\n    <strong>Level:</strong>&nbsp;Cleric 4, Sorcerer 5, Wizard 5;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, M/DF (a short piece of fine copper wire), F<br>\n    \n      <strong>Casting Time:</strong>&nbsp;10 minutes<br>\n    <strong>Range:</strong>&nbsp;touch<br>\n    \n    <strong>Target:</strong>&nbsp;one creature\n<br>\n    \n    <strong>Duration:</strong>&nbsp;See Text<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;None\n\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nYou contact a particular creature with which you are familiar and send a short message of twenty-five words or less to the subject. The subject recognizes you if it knows you. It can answer in like manner immediately. A creature with an Intelligence score as low as 1 can understand the <i>sending, </i>though the subject’s ability to react is limited as normal by its Intelligence score. Even if the <i>sending </i>is received, the subject is not obligated to act upon it in any manner.\n</p><p>If the creature in question is not on the same plane of existence as you are, there is a 5% chance that the <i>sending </i>does not arrive. (Local conditions on other planes may worsen this chance considerably.)\n</p><p><i>Arcane Material Component: </i>A short piece of fine copper wire.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "See text",
     "duration": {
@@ -210,10 +210,10 @@
       "type": ""
     },
     "school": "evo",
-    "shortDescription": "<p>Transmits a short message over a great</p>",
+    "shortDescription": "\n\n\n<p>\nYou contact a particular creature with which you are familiar and send a short message of twenty-five words or less to the subject. The subject recognizes you if it knows you. It can answer in like manner immediately. A creature with an Intelligence score as low as 1 can understand the <i>sending, </i>though the subject’s ability to react is limited as normal by its Intelligence score. Even if the <i>sending </i>is received, the subject is not obligated to act upon it in any manner.\n</p><p>If the creature in question is not on the same plane of existence as you are, there is a 5% chance that the <i>sending </i>does not arrive. (Local conditions on other planes may worsen this chance considerably.)\n</p><p><i>Arcane Material Component: </i>A short piece of fine copper wire.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Transmits a short message over a great",
+    "snip": "Delivers short message anywhere, instantly.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 264-268",
     "specialActions": [],
     "specialId": null,

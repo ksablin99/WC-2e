@@ -34,7 +34,7 @@
           298
         ],
         "section": "Dominate Animal",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -105,7 +105,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Subject animal obeys silent</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;enchantment&nbsp;(compulsion)&nbsp;[mind-affecting];\n    <br>\n    <strong>Level:</strong>&nbsp;Druid 3;\n    <strong>Domain:</strong>&nbsp;Animal 3;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 round<br>\n    <strong>Range:</strong>&nbsp;close (25 ft. + 5 ft./2 levels)<br>\n    \n    <strong>Target:</strong>&nbsp;one animal<br>\n    \n    <strong>Duration:</strong>&nbsp;1 Round/Level<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;5<br>\n        <strong>Saving Throw:</strong>&nbsp;Will negates\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nYou can enchant an animal and direct it with simple commands such as “Attack,” “Run,” and “Fetch.” Suicidal or self-destructive commands (including an order to attack a creature two or more size categories larger than the <i>dominated </i>animal) are simply ignored.\n</p><p><i>Dominate animal </i>establishes a mental link between you and the subject creature. The animal can be directed by silent mental command as long as it remains in range. You need not see the creature to control it. You do not receive direct sensory input from the creature, but you know what it is experiencing. Because you are directing the animal with your own intelligence, it may be able to undertake actions normally beyond its own comprehension. You need not concentrate exclusively on controlling the creature unless you are trying to direct it to do something it normally couldn’t do. Changing your instructions or giving a <i>dominated </i>creature a new command is the equivalent of redirecting a spell, so it is a move action.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -223,10 +223,10 @@
       "type": "willnegates"
     },
     "school": "enc",
-    "shortDescription": "<p>Subject animal obeys silent</p>",
+    "shortDescription": "\n\n\n<p>\nYou can enchant an animal and direct it with simple commands such as “Attack,” “Run,” and “Fetch.” Suicidal or self-destructive commands (including an order to attack a creature two or more size categories larger than the <i>dominated </i>animal) are simply ignored.\n</p><p><i>Dominate animal </i>establishes a mental link between you and the subject creature. The animal can be directed by silent mental command as long as it remains in range. You need not see the creature to control it. You do not receive direct sensory input from the creature, but you know what it is experiencing. Because you are directing the animal with your own intelligence, it may be able to undertake actions normally beyond its own comprehension. You need not concentrate exclusively on controlling the creature unless you are trying to direct it to do something it normally couldn’t do. Changing your instructions or giving a <i>dominated </i>creature a new command is the equivalent of redirecting a spell, so it is a move action.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Subject animal obeys silent",
+    "snip": "Subject animal obeys silent mental commands.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 269-271",
     "specialActions": [],
     "specialId": null,

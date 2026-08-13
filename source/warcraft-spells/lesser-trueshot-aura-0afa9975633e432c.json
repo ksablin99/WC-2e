@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           353
         ],
         "section": "Lesser Trueshot Aura",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -76,11 +76,11 @@
     "clOffset": 0,
     "combatChanges": [],
     "components": {
-      "divineFocus": 0,
-      "focus": true,
+      "divineFocus": 1,
+      "focus": false,
       "material": false,
       "somatic": true,
-      "value": "V, S, F",
+      "value": "V, S, DF",
       "verbal": true
     },
     "conditionals": [],
@@ -102,9 +102,9 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>As trueshot aura, targets gain</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>This functions as <em>trueshot aura</em>, but grants a +1 insight bonus on ranged attack rolls and a +2 insight bonus on ranged damage rolls. The target must be within 30 feet of the attacker, and a creature gains the bonuses only while inside the 20-foot aura.</p><p><strong>Automation boundary:</strong> Track aura membership and each ranged target's distance, then apply the insight bonuses manually.</p>"
     },
-    "display": "20 ft.",
+    "display": "Personal",
     "duration": {
       "units": "",
       "value": null
@@ -187,8 +187,8 @@
     "psionic": "",
     "range": {
       "long": null,
-      "units": "ft",
-      "value": 20
+      "units": "personal",
+      "value": null
     },
     "recharge": {
       "current": 0,
@@ -213,21 +213,20 @@
       "type": ""
     },
     "school": "trs",
-    "shortDescription": "<p>As trueshot aura, targets gain</p>",
+    "shortDescription": "<p>Nearby allies gain +1 on ranged attacks and +2 ranged damage against targets within 30 feet.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "As trueshot aura, targets gain",
+    "snip": "Nearby allies gain +1 on ranged attacks and +2 ranged damage against targets within 30 feet.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 269-269",
     "specialActions": [],
     "specialId": null,
     "specialPrepared": false,
-    "spellArea": "",
+    "spellArea": "20-ft.-radius emanation",
     "spellbook": "primary",
-    "spellDuration": "Instantaneous",
+    "spellDuration": "1 round/level (D)",
     "spellDurationData": {
-      "dismissable": false,
-      "units": "inst",
-      "value": ""
+      "units": "roundPerLevel",
+      "value": 1
     },
     "spellEffect": "",
     "spellType": {
@@ -239,7 +238,7 @@
     "summon": [],
     "tags": [],
     "target": {
-      "value": "One creature/level in a 20-ft.-radius burst centered on the"
+      "value": "20-ft.-radius emanation"
     },
     "types": "force",
     "uniqueId": "",
@@ -260,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Track aura membership and each ranged target's distance, then apply the insight bonuses manually."
     }
   },
   "type": "spell"

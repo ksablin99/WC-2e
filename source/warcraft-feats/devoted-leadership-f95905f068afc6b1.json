@@ -19,7 +19,12 @@
         "category": "General",
         "prerequisite": "Cha 13, Spt 13, Leadership.",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "Your followers within 30 feet gain a +1 morale bonus on Fortitude, Reflex, and Will saves.",
+          "manual": "Foundry does not identify Leadership followers or maintain this range-dependent aura automatically.",
+          "summary": "Nearby followers gain +1 on all saving throws."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": false
       },
@@ -33,7 +38,7 @@
           147
         ],
         "section": "Devoted Leadership",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +153,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p><strong>Prerequisites:</strong> Cha 13, Spt 13, Leadership.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 147) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Prerequisites:</strong> Cha 13, Spt 13, Leadership.</p><p><strong>Summary:</strong> Nearby followers gain +1 on all saving throws.</p><p><strong>Benefit:</strong> Your followers within 30 feet gain a +1 morale bonus on Fortitude, Reflex, and Will saves.</p><p><strong>Foundry and GM handling:</strong> Foundry does not identify Leadership followers or maintain this range-dependent aura automatically.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +253,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat; requires Cha 13, Spt 13, Leadership..</p>",
+    "shortDescription": "<p>Nearby followers gain +1 on all saving throws.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 147",

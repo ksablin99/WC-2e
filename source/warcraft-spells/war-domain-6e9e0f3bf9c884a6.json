@@ -272,14 +272,14 @@
         },
         "level4": {
           "id": "ecaeb89de4f24b54",
-          "img": "icons/svg/target.svg",
+          "img": "systems/warcraftrpg2e/icons/spells/named-spells/magic-weapon-greater.png",
           "level": 4,
           "name": "Greater Magic Weapon",
           "pack": "warcraftrpg2e.warcraft-spells"
         },
         "level5": {
           "id": "e2906b0e406e46ce",
-          "img": "icons/svg/target.svg",
+          "img": "systems/warcraftrpg2e/icons/spells/school/enc.png",
           "level": 5,
           "name": "Greater Heroism",
           "pack": "warcraftrpg2e.warcraft-spells"
@@ -300,7 +300,7 @@
         },
         "level8": {
           "id": "fa3dd33218f4726e",
-          "img": "icons/svg/target.svg",
+          "img": "systems/warcraftrpg2e/icons/spells/named-spells/inflict-wounds-mass.png",
           "level": 8,
           "name": "Mass Inflict Critical Wounds",
           "pack": "warcraftrpg2e.warcraft-spells"

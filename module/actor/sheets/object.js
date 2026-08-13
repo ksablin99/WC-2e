@@ -100,6 +100,6 @@ export class ActorSheetObject extends ActorSheetPF {
     if (!formula) return;
     const hp = (await new Roll35e(formula).roll()).total;
     AudioHelper.play({ src: CONFIG.sounds.dice });
-    this.actor.update({ "data.attributes.hp.value": hp, "data.attributes.hp.max": hp });
+    await this.actor.update({ "system.attributes.hp.value": hp, "system.attributes.hp.max": hp });
   }
 }

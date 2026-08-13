@@ -34,7 +34,7 @@
           322
         ],
         "section": "Nondetection",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -105,7 +105,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Hides subject from divination,</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;abjuration;\n    <br>\n    <strong>Level:</strong>&nbsp;Assassin 3, Ranger 4, Sorcerer 3, Wizard 3;\n    <strong>Domain:</strong>&nbsp;Trickery 3;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, M (a pinch of diamond dust worth 50 gp)<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;touch<br>\n    \n    <strong>Target:</strong>&nbsp;creature or object touched<br>\n    \n    <strong>Duration:</strong>&nbsp;1 Hours/Level<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;5<br>\n        <strong>Saving Throw:</strong>&nbsp;Will Negates\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThe warded creature or object becomes difficult to detect by divination spells such as <i>clairaudience/clairvoyance, locate object, </i>and <i>detect </i>spells. <i>Nondetection </i>also prevents location by such magic items as <i>crystal balls</i>. If a divination is attempted against the warded creature or item, the caster of the divination must succeed on a caster level check (1d20 + caster level) against a DC of 11 + the caster level of the spellcaster who cast <i>nondetection</i>. If you cast <i>nondetection </i>on yourself or on an item currently in your possession, the DC is 15 + your caster level.\n</p><p>If cast on a creature, <i>nondetection </i>wards the creature’s gear as well as the creature itself.\n</p><p><i>Material Component: </i>A pinch of diamond dust worth 50 gp.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Touch",
     "duration": {
@@ -222,10 +222,10 @@
       "type": "willnegates"
     },
     "school": "abj",
-    "shortDescription": "<p>Hides subject from divination,</p>",
+    "shortDescription": "\n\n\n<p>\nThe warded creature or object becomes difficult to detect by divination spells such as <i>clairaudience/clairvoyance, locate object, </i>and <i>detect </i>spells. <i>Nondetection </i>also prevents location by such magic items as <i>crystal balls</i>. If a divination is attempted against the warded creature or item, the caster of the divination must succeed on a caster level check (1d20 + caster level) against a DC of 11 + the caster level of the spellcaster who cast <i>nondetection</i>. If you cast <i>nondetection </i>on yourself or on an item currently in your possession, the DC is 15 + your caster level.\n</p><p>If cast on a creature, <i>nondetection </i>wards the creature’s gear as well as the creature itself.\n</p><p><i>Material Component: </i>A pinch of diamond dust worth 50 gp.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Hides subject from divination,",
+    "snip": "Hides subject from divination, scrying.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 263-270",
     "specialActions": [
       {

@@ -19,7 +19,12 @@
         "category": "General",
         "prerequisite": "Leadership, Point Blank Shot.",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "When your followers coordinate ranged attacks against the same target at the same time, each participating follower gains +1 damage for every other participating follower. If every participant uses the same weapon type, total the successful attacks' damage before applying damage reduction.",
+          "manual": "The GM must determine which followers and attacks are simultaneous, add the group-based damage, and combine damage before reduction when applicable.",
+          "summary": "Followers deal more ranged damage when coordinating against one target."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": false
       },
@@ -33,7 +38,7 @@
           154
         ],
         "section": "Precision Leadership",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +153,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p><strong>Prerequisites:</strong> Leadership, Point Blank Shot.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 154) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Prerequisites:</strong> Leadership, Point Blank Shot.</p><p><strong>Summary:</strong> Followers deal more ranged damage when coordinating against one target.</p><p><strong>Benefit:</strong> When your followers coordinate ranged attacks against the same target at the same time, each participating follower gains +1 damage for every other participating follower. If every participant uses the same weapon type, total the successful attacks&#39; damage before applying damage reduction.</p><p><strong>Foundry and GM handling:</strong> The GM must determine which followers and attacks are simultaneous, add the group-based damage, and combine damage before reduction when applicable.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +253,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat; requires Leadership, Point Blank Shot..</p>",
+    "shortDescription": "<p>Followers deal more ranged damage when coordinating against one target.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 154",

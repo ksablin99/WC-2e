@@ -32,7 +32,7 @@
           337
         ],
         "section": "Silence",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -103,7 +103,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>A hushed area prevents conversation and</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;illusion&nbsp;(glamer);\n    <br>\n    <strong>Level:</strong>&nbsp;Bard 2, Cleric 2;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;long (400 ft. + 40 ft./level)<br>\n    <strong>Area:</strong>&nbsp;20-ft.-radius emanation centered on a creature, object, or point in space<br>\n    \n    \n    <strong>Duration:</strong>&nbsp;1 Minute/Level (D)<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;3<br>\n        <strong>Saving Throw:</strong>&nbsp;Will negates; see text or none (object)\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nUpon the casting of this spell, complete silence prevails in the affected area. All sound is stopped: Conversation is impossible, spells with verbal components cannot be cast, and no noise whatsoever issues from, enters, or passes through the area. The spell can be cast on a point in space, but the effect is stationary unless cast on a mobile object. The spell can be centered on a creature, and the effect then radiates from the creature and moves as it moves. An unwilling creature can attempt a Will save to negate the spell and can use spell resistance, if any. Items in a creature’s possession or magic items that emit sound receive the benefits of saves and spell resistance, but unattended objects and points in space do not. This spell provides a defense against sonic or language-based attacks.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Long (400 ft. + 40 ft./level)",
     "duration": {
@@ -216,10 +216,10 @@
       "type": ""
     },
     "school": "ill",
-    "shortDescription": "<p>A hushed area prevents conversation and</p>",
+    "shortDescription": "\n\n\n<p>\nUpon the casting of this spell, complete silence prevails in the affected area. All sound is stopped: Conversation is impossible, spells with verbal components cannot be cast, and no noise whatsoever issues from, enters, or passes through the area. The spell can be cast on a point in space, but the effect is stationary unless cast on a mobile object. The spell can be centered on a creature, and the effect then radiates from the creature and moves as it moves. An unwilling creature can attempt a Will save to negate the spell and can use spell resistance, if any. Items in a creature’s possession or magic items that emit sound receive the benefits of saves and spell resistance, but unattended objects and points in space do not. This spell provides a defense against sonic or language-based attacks.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "A hushed area prevents conversation and",
+    "snip": "Negates sound in 20-ft. radius.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 267-267",
     "specialActions": [],
     "specialId": null,

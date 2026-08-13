@@ -32,7 +32,7 @@
           275
         ],
         "section": "Acid Fog",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -106,7 +106,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Fog deals 2d6 acid damage/round.</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;conjuration&nbsp;(creation)&nbsp;[acid];\n    <br>\n    <strong>Level:</strong>&nbsp;Sorcerer 6, Wizard 6;\n    <strong>Domain:</strong>&nbsp;Water 7;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, M/DF (a pinch of dried, powdered peas combined with powdered animal hoof), F<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;medium (100 ft. + 10 ft./level)<br>\n    \n    \n    <strong>Effect:</strong>&nbsp;Fog spreads in 20-ft. radius, 20 ft. high<br>\n    <strong>Duration:</strong>&nbsp;1 Round/Level<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;None\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\n<i>Acid fog </i>creates a billowing mass of misty vapors similar to that produced by a <i>solid fog</i> spell. In addition to slowing creatures down and obscuring sight, this spell’s vapors are highly acidic. Each round on your turn, starting when you cast the spell, the fog deals 2d6 points of acid damage to each creature and object within it.\n</p><p><i>Arcane Material Component:</i> A pinch of dried, powdered peas combined with powdered animal hoof.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Medium (100 ft. + 10 ft./level)",
     "duration": {
@@ -216,10 +216,10 @@
       "type": ""
     },
     "school": "con",
-    "shortDescription": "<p>Fog deals 2d6 acid damage/round.</p>",
+    "shortDescription": "\n\n\n<p>\n<i>Acid fog </i>creates a billowing mass of misty vapors similar to that produced by a <i>solid fog</i> spell. In addition to slowing creatures down and obscuring sight, this spell’s vapors are highly acidic. Each round on your turn, starting when you cast the spell, the fog deals 2d6 points of acid damage to each creature and object within it.\n</p><p><i>Arcane Material Component:</i> A pinch of dried, powdered peas combined with powdered animal hoof.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Fog deals 2d6 acid damage/round.",
+    "snip": "Fog deals acid damage.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 266-266",
     "specialActions": [],
     "specialId": null,

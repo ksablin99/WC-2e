@@ -17,9 +17,14 @@
     "warcraftrpg2e": {
       "feat": {
         "category": "General",
-        "prerequisite": "Agy 13, Exotic Weapon Profi ciency (fi rearms).",
+        "prerequisite": "Agility 13, Exotic Weapon Proficiency (firearms).",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "A firearm that normally takes a move action to reload can be reloaded as a free action; one that normally takes a standard action can be reloaded as a move action. If its normal reload time is longer than 1 round, halve that time.",
+          "manual": "Foundry does not automatically revise each firearm's reload action or multi-round timing.",
+          "summary": "Reload firearms one action category faster."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": true
       },
@@ -33,7 +38,7 @@
           152
         ],
         "section": "Lightning Reload",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +153,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p><strong>Prerequisites:</strong> Agy 13, Exotic Weapon Profi ciency (fi rearms).</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 152) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Prerequisites:</strong> Agility 13, Exotic Weapon Proficiency (firearms).</p><p><strong>Summary:</strong> Reload firearms one action category faster.</p><p><strong>Benefit:</strong> A firearm that normally takes a move action to reload can be reloaded as a free action; one that normally takes a standard action can be reloaded as a move action. If its normal reload time is longer than 1 round, halve that time.</p><p><strong>Warrior bonus feat:</strong> Yes</p><p><strong>Foundry and GM handling:</strong> Foundry does not automatically revise each firearm&#39;s reload action or multi-round timing.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +253,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat; requires Agy 13, Exotic Weapon Profi ciency (fi rearms)..</p>",
+    "shortDescription": "<p>Reload firearms one action category faster.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 152",

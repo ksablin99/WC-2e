@@ -225,12 +225,14 @@ export class IntelligentItemHelper {
    * @returns {object}
    */
   static getResultFlags(result) {
-    return foundry.utils.getProperty(result, "flags.D35E") ?? {};
+    return foundry.utils.getProperty(result, "flags.warcraftrpg2e")
+      ?? foundry.utils.getProperty(result, "flags.D35E")
+      ?? {};
   }
 
   /**
    * Apply a capabilities row to intelligent system data (partial update object).
-   * @param {object} flags  from TableResult.flags.D35E
+   * @param {object} flags  from TableResult.flags.warcraftrpg2e (or legacy flags.D35E)
    * @returns {object}  flat paths under system.intelligent
    */
   static capabilitiesToUpdate(flags) {

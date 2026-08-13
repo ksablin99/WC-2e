@@ -19,7 +19,12 @@
         "category": "General",
         "prerequisite": "",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "You require only half the normal time to prepare spells and gain a +1 bonus on Will saves. A high elf with this feat no longer suffers the game effects of magic addiction, though the addiction remains detectable; that high elf prepares spells in the normal amount of time rather than half time.",
+          "manual": "The Will bonus, preparation time, high-elf exception, and detectable-but-suppressed addiction state must be applied or noted manually.",
+          "summary": "Prepare spells in half the usual time and gain +1 on Will saves."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": false
       },
@@ -33,7 +38,7 @@
           152
         ],
         "section": "Magic Energy Control",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +153,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 152) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Summary:</strong> Prepare spells in half the usual time and gain +1 on Will saves.</p><p><strong>Benefit:</strong> You require only half the normal time to prepare spells and gain a +1 bonus on Will saves. A high elf with this feat no longer suffers the game effects of magic addiction, though the addiction remains detectable; that high elf prepares spells in the normal amount of time rather than half time.</p><p><strong>Foundry and GM handling:</strong> The Will bonus, preparation time, high-elf exception, and detectable-but-suppressed addiction state must be applied or noted manually.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +253,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat.</p>",
+    "shortDescription": "<p>Prepare spells in half the usual time and gain +1 on Will saves.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 152",

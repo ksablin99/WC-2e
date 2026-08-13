@@ -32,7 +32,7 @@
           289
         ],
         "section": "Create Undead",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -94,7 +94,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Creates crypt fi ends, ghouls,</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;necromancy&nbsp;[evil];\n    <br>\n    <strong>Level:</strong>&nbsp;Cleric 6, Sorcerer 6, Wizard 6;\n    <strong>Domain:</strong>&nbsp;Death 6, Evil 6;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, M (a clay pot filled with grave dirt and another filled with brackish water  the spell must be cast on a dead body  you must place a black onyx gem worth at least 50 gp per hd of the undead to be created into the mouth or eye socket of each corpse  the magic of the spell turns these gems into worthless shells)<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 hour<br>\n    <strong>Range:</strong>&nbsp;close (25 ft. + 5 ft./2 levels)<br>\n    \n    <strong>Target:</strong>&nbsp;one corpse\n<br>\n    \n    <strong>Duration:</strong>&nbsp;Instantaneous<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;None\n\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nA much more potent spell than <i>animate dead</i>, this evil spell allows you to create more powerful sorts of undead: ghouls, ghasts, mummies, and mohrgs. The type or types of undead you can create is based on your caster level, as shown on the table below.\n</p>\n\n<p>You may create less powerful undead than your level would allow if you choose. Created undead are not automatically under the control of their animator. If you are capable of commanding undead, you may attempt to command the undead creature as it forms.\n</p><p>This spell must be cast at night.\n</p><p><i>Material Component: </i>A clay pot filled with grave dirt and another filled with brackish water. The spell must be cast on a dead body. You must place a black onyx gem worth at least 50 gp per HD of the undead to be created into the mouth or eye socket of each corpse. The magic of the spell turns these gems into worthless shells.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -204,10 +204,10 @@
       "type": ""
     },
     "school": "nec",
-    "shortDescription": "<p>Creates crypt fi ends, ghouls,</p>",
+    "shortDescription": "\n\n\n<p>\nA much more potent spell than <i>animate dead</i>, this evil spell allows you to create more powerful sorts of undead: ghouls, ghasts, mummies, and mohrgs. The type or types of undead you can create is based on your caster level, as shown on the table below.\n</p>\n\n<p>You may create less powerful undead than your level would allow if you choose. Created undead are not automatically under the control of their animator. If you are capable of commanding undead, you may attempt to command the undead creature as it forms.\n</p><p>This spell must be cast at night.\n</p><p><i>Material Component: </i>A clay pot filled with grave dirt and another filled with brackish water. The spell must be cast on a dead body. You must place a black onyx gem worth at least 50 gp per HD of the undead to be created into the mouth or eye socket of each corpse. The magic of the spell turns these gems into worthless shells.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Creates crypt fi ends, ghouls,",
+    "snip": "Creates ghouls, ghasts, mummies, or mohrgs.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 266-266",
     "specialActions": [],
     "specialId": null,

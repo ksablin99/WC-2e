@@ -32,7 +32,7 @@
           313
         ],
         "section": "Inflict Light Wounds",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -106,7 +106,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Touch deals 1d8 damage +1/</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;necromancy;\n    <br>\n    <strong>Level:</strong>&nbsp;Blackguard 1, Cleric 1;\n    <strong>Domain:</strong>&nbsp;Destruction 1;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;touch<br>\n    \n    <strong>Target:</strong>&nbsp;creature touched<br>\n    \n    <strong>Duration:</strong>&nbsp;Instantaneous<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;Will half\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nWhen laying your hand upon a creature, you channel negative energy that deals 1d8 points of damage +1 point per caster level (maximum +5).\n</p><p>Since undead are powered by negative energy, this spell cures such a creature of a like amount of damage, rather than harming it.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Touch",
     "duration": {
@@ -216,10 +216,10 @@
       "type": "willhalf"
     },
     "school": "nec",
-    "shortDescription": "<p>Touch deals 1d8 damage +1/</p>",
+    "shortDescription": "\n\n\n<p>\nWhen laying your hand upon a creature, you channel negative energy that deals 1d8 points of damage +1 point per caster level (maximum +5).\n</p><p>Since undead are powered by negative energy, this spell cures such a creature of a like amount of damage, rather than harming it.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Touch deals 1d8 damage +1/",
+    "snip": "Touch deals 1d8 damage +1/level (max +5).",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 267-267",
     "specialActions": [],
     "specialId": null,

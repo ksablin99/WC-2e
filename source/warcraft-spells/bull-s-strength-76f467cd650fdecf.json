@@ -34,7 +34,7 @@
           283
         ],
         "section": "Bull's Strength",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -104,7 +104,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Subject gains +4 to Str for 1 min./level.</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;transmutation;\n    <br>\n    <strong>Level:</strong>&nbsp;Blackguard 2, Cleric 2, Druid 2, Paladin 2, Sorcerer 2, Wizard 2;\n    <strong>Domain:</strong>&nbsp;Strength 2;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, M/DF (a few hairs, or a pinch of dung, from a bull), F<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;touch<br>\n    \n    <strong>Target:</strong>&nbsp;creature touched<br>\n    \n    <strong>Duration:</strong>&nbsp;1 Minute/Level<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;Will negates (harmless)\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThe subject becomes stronger. The spell grants a +4 enhancement bonus to Strength, adding the usual benefits to melee attack rolls, melee damage rolls, and other uses of the Strength modifier.\n</p><p><i>Arcane Material Component: </i>A few hairs, or a pinch of dung, from a bull.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Touch",
     "duration": {
@@ -219,7 +219,7 @@
       "type": "willnegates"
     },
     "school": "trs",
-    "shortDescription": "<p>Subject gains +4 to Str for 1 min./level.</p>",
+    "shortDescription": "\n\n\n<p>\nThe subject becomes stronger. The spell grants a +4 enhancement bonus to Strength, adding the usual benefits to melee attack rolls, melee damage rolls, and other uses of the Strength modifier.\n</p><p><i>Arcane Material Component: </i>A few hairs, or a pinch of dung, from a bull.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
     "snip": "Subject gains +4 to Str for 1 min./level.",

@@ -118,15 +118,15 @@ export class CompendiumBrowser extends Application {
         };
       }
 
-      result.item.tags = (foundry.utils.getProperty(item.data, "data.tags") || []).reduce((cur, o) => {
+      result.item.tags = (foundry.utils.getProperty(item.system, "tags") || []).reduce((cur, o) => {
         if (!this.extraFilters["tags"].includes(o[0])) this.extraFilters["tags"].push(o[0]);
         cur.push(o[0]);
         return cur;
       }, []);
 
-      result.item.assocations = {
-        "class": (foundry.utils.getProperty(item.data, "data.featType") === "classFeat" ? foundry.utils.getProperty(item.data, "data.assocations.classes") || [] : []).reduce((cur, o) => {
-          if (!this.extraFilters["assocations.class"].includes(o[0])) this.extraFilters["assocations.class"].push(o[0]);
+      result.item.associations = {
+        "class": (foundry.utils.getProperty(item.system, "featType") === "classFeat" ? foundry.utils.getProperty(item.system, "associations.classes") || [] : []).reduce((cur, o) => {
+          if (!this.extraFilters.associations.class.includes(o[0])) this.extraFilters.associations.class.push(o[0]);
           cur.push(o[0]);
           return cur;
         }, []),
@@ -139,7 +139,7 @@ export class CompendiumBrowser extends Application {
         this.extraFilters = {};
       }
 
-      result.item.weaponProps = Object.entries(foundry.utils.getProperty(item.data, "data.properties") || []).reduce((cur, o) => {
+      result.item.weaponProps = Object.entries(foundry.utils.getProperty(item.system, "properties") || []).reduce((cur, o) => {
         if (o[1]) cur.push(o[0]);
         return cur;
       }, []);
@@ -154,7 +154,7 @@ export class CompendiumBrowser extends Application {
           "learnedAt.subDomain": [],
           "learnedAt.elementalSchool": [],
           "learnedAt.bloodline": [],
-          "data.subschool": [],
+          "system.subschool": [],
           "spellTypes": [],
         };
       }
@@ -163,54 +163,54 @@ export class CompendiumBrowser extends Application {
 
       // Add class/domain/etc filters
       result.item.learnedAt = {
-        "class": (foundry.utils.getProperty(item.data, "data.learnedAt.class") || []).reduce((cur, o) => {
+        "class": (foundry.utils.getProperty(item.system, "learnedAt.class") || []).reduce((cur, o) => {
           if (!this.extraFilters["learnedAt.class"].includes(o[0])) this.extraFilters["learnedAt.class"].push(o[0]);
           if (!result.item.allSpellLevels.includes(o[1])) result.item.allSpellLevels.push(o[1]);
           cur.push(o[0]);
           return cur;
         }, []),
-        "domain": (foundry.utils.getProperty(item.data, "data.learnedAt.domain") || []).reduce((cur, o) => {
+        "domain": (foundry.utils.getProperty(item.system, "learnedAt.domain") || []).reduce((cur, o) => {
           if (!this.extraFilters["learnedAt.domain"].includes(o[0])) this.extraFilters["learnedAt.domain"].push(o[0]);
           if (!result.item.allSpellLevels.includes(o[1])) result.item.allSpellLevels.push(o[1]);
           cur.push(o[0]);
           return cur;
         }, []),
-        "subDomain": (foundry.utils.getProperty(item.data, "data.learnedAt.subDomain") || []).reduce((cur, o) => {
+        "subDomain": (foundry.utils.getProperty(item.system, "learnedAt.subDomain") || []).reduce((cur, o) => {
           if (!this.extraFilters["learnedAt.subDomain"].includes(o[0])) this.extraFilters["learnedAt.subDomain"].push(o[0]);
           if (!result.item.allSpellLevels.includes(o[1])) result.item.allSpellLevels.push(o[1]);
           cur.push(o[0]);
           return cur;
         }, []),
-        "elementalSchool": (foundry.utils.getProperty(item.data, "data.learnedAt.elementalSchool") || []).reduce((cur, o) => {
+        "elementalSchool": (foundry.utils.getProperty(item.system, "learnedAt.elementalSchool") || []).reduce((cur, o) => {
           if (!this.extraFilters["learnedAt.elementalSchool"].includes(o[0])) this.extraFilters["learnedAt.elementalSchool"].push(o[0]);
           if (!result.item.allSpellLevels.includes(o[1])) result.item.allSpellLevels.push(o[1]);
           cur.push(o[0]);
           return cur;
         }, []),
-        "bloodline": (foundry.utils.getProperty(item.data, "data.learnedAt.bloodline") || []).reduce((cur, o) => {
+        "bloodline": (foundry.utils.getProperty(item.system, "learnedAt.bloodline") || []).reduce((cur, o) => {
           if (!this.extraFilters["learnedAt.bloodline"].includes(o[0])) this.extraFilters["learnedAt.bloodline"].push(o[0]);
           if (!result.item.allSpellLevels.includes(o[1])) result.item.allSpellLevels.push(o[1]);
           cur.push(o[0]);
           return cur;
         }, []),
         "spellLevel": {
-          "class": (foundry.utils.getProperty(item.data, "data.learnedAt.class") || []).reduce((cur, o) => {
+          "class": (foundry.utils.getProperty(item.system, "learnedAt.class") || []).reduce((cur, o) => {
             cur[o[0]] = o[1];
             return cur;
           }, {}),
-          "domain": (foundry.utils.getProperty(item.data, "data.learnedAt.domain") || []).reduce((cur, o) => {
+          "domain": (foundry.utils.getProperty(item.system, "learnedAt.domain") || []).reduce((cur, o) => {
             cur[o[0]] = o[1];
             return cur;
           }, {}),
-          "subDomain": (foundry.utils.getProperty(item.data, "data.learnedAt.subDomain") || []).reduce((cur, o) => {
+          "subDomain": (foundry.utils.getProperty(item.system, "learnedAt.subDomain") || []).reduce((cur, o) => {
             cur[o[0]] = o[1];
             return cur;
           }, {}),
-          "elementalSchool": (foundry.utils.getProperty(item.data, "data.learnedAt.elementalSchool") || []).reduce((cur, o) => {
+          "elementalSchool": (foundry.utils.getProperty(item.system, "learnedAt.elementalSchool") || []).reduce((cur, o) => {
             cur[o[0]] = o[1];
             return cur;
           }, {}),
-          "bloodline": (foundry.utils.getProperty(item.data, "data.learnedAt.bloodline") || []).reduce((cur, o) => {
+          "bloodline": (foundry.utils.getProperty(item.system, "learnedAt.bloodline") || []).reduce((cur, o) => {
             cur[o[0]] = o[1];
             return cur;
           }, {}),
@@ -219,12 +219,12 @@ export class CompendiumBrowser extends Application {
 
       // Add subschools
       {
-        const subschool = foundry.utils.getProperty(item.data, "data.subschool");
-        if (subschool && !this.extraFilters["data.subschool"].includes(subschool)) this.extraFilters["data.subschool"].push(subschool);
+        const subschool = foundry.utils.getProperty(item.system, "subschool");
+        if (subschool && !this.extraFilters["system.subschool"].includes(subschool)) this.extraFilters["system.subschool"].push(subschool);
       }
       // Add spell types
       {
-        const spellTypes = foundry.utils.getProperty(item.data, "data.types") ? foundry.utils.getProperty(item.data, "data.types").split(CONFIG.D35E.re.traitSeparator) : []
+        const spellTypes = foundry.utils.getProperty(item.system, "types") ? foundry.utils.getProperty(item.system, "types").split(CONFIG.D35E.re.traitSeparator) : []
         result.item.spellTypes = spellTypes;
         for (let st of spellTypes) {
           if (!this.extraFilters["spellTypes"].includes(st)) this.extraFilters["spellTypes"].push(st);
@@ -236,14 +236,14 @@ export class CompendiumBrowser extends Application {
     if (this.type === "bestiary") {
       if (!this.extraFilters) {
         this.extraFilters = {
-          "data.details.cr": [],
+          "system.details.cr": [],
         };
       }
 
       // Add CR filters
       if (item.type === "npc") {
-        const cr = foundry.utils.getProperty(item.data, "data.details.cr");
-        if (cr && !this.extraFilters["data.details.cr"].includes(cr)) this.extraFilters["data.details.cr"].push(cr);
+        const cr = foundry.utils.getProperty(item.system, "details.cr");
+        if (cr && !this.extraFilters["system.details.cr"].includes(cr)) this.extraFilters["system.details.cr"].push(cr);
       }
     }
 
@@ -278,7 +278,7 @@ export class CompendiumBrowser extends Application {
       {
         path: "data.subschool",
         label: game.i18n.localize("D35E.SubSchool"),
-        items: this.extraFilters["data.subschool"].reduce((cur, o) => {
+        items: this.extraFilters["system.subschool"].reduce((cur, o) => {
           cur.push({ key: o, name: o });
           return cur;
         }, []).sort((a, b) => {
@@ -465,7 +465,7 @@ export class CompendiumBrowser extends Application {
       {
         path: "data.details.cr",
         label: "CR",
-        items: this.extraFilters["data.details.cr"].sort().reduce((cur, o) => {
+        items: this.extraFilters["system.details.cr"].sort().reduce((cur, o) => {
           cur.push({ key: o, name: CR.fromNumber(o) });
           return cur;
         }, []),
@@ -504,7 +504,7 @@ export class CompendiumBrowser extends Application {
         }),
       },
       {
-        path: "assocations.class",
+        path: "associations.class",
         label: game.i18n.localize("D35E.ClassPlural"),
         items: this.extraFilters.associations["class"].reduce((cur, o) => {
           cur.push({ key: o, name: o });
@@ -586,7 +586,7 @@ export class CompendiumBrowser extends Application {
 
     // Set the transfer data
     event.dataTransfer.setData("text/plain", JSON.stringify({
-      type: pack.entity,
+      type: pack.documentName,
       pack: pack.collection,
       id: li.getAttribute("data-entry-id")
     }));

@@ -17,6 +17,19 @@ const FIGHTER_CLASS_ID = 'sgwZt7dg1ZHXQlrW';
 const RACIALFEATURES_PACK = 'warcraftrpg2e.racialfeatures';
 const ELF_HIGH_ID = 'z5p39RR9V7lNlTK0';
 
+async function createReadyScene(page, sceneData) {
+  const sceneId = await page.evaluate(async (data) => {
+    const scene = await Scene.create(data);
+    return scene.id;
+  }, { ...sceneData, active: true });
+  await page.waitForFunction(
+    (id) => canvas.ready && canvas.scene?.id === id && PIXI.UPDATE_PRIORITY.OBJECTS !== undefined,
+    sceneId,
+    { timeout: 15_000 },
+  );
+  return sceneId;
+}
+
 test.beforeEach(async ({ page }) => {
   await gotoGame(page);
   await clearWorld(page);
@@ -25,14 +38,14 @@ test.beforeEach(async ({ page }) => {
 });
 
 test('ephemeral compendium summon sets banished state and may linger for GM cleanup', async ({ page }) => {
-  const result = await page.evaluate(async ({ summonPack, summonId }) => {
-    const scene = await Scene.create({
+  const sceneId = await createReadyScene(page, {
       name: 'Conjured Summon Scene',
-      active: true,
       width: 1000,
       height: 1000,
       grid: { size: 100 },
-    });
+  });
+  const result = await page.evaluate(async ({ summonPack, summonId, sceneId }) => {
+    const scene = game.scenes.get(sceneId);
     const caster = await Actor.create({ name: 'Summoner', type: 'character' });
     await scene.createEmbeddedDocuments('Token', [{
       name: caster.name,
@@ -53,7 +66,7 @@ test('ephemeral compendium summon sets banished state and may linger for GM clea
       totalMonster: 1,
     });
 
-    const tokenId = monster.getFlag('D35E', 'conjured.tokenIds')[0];
+    const tokenId = monster.getFlag('warcraftrpg2e', 'conjured.tokenIds')[0];
     await monster.update({ 'system.attributes.conditions.banished': true });
     await new Promise((resolve) => setTimeout(resolve, 250));
 
@@ -62,7 +75,7 @@ test('ephemeral compendium summon sets banished state and may linger for GM clea
       tokenExists: !!scene.tokens.get(tokenId),
       banished: game.actors.get(monster.id)?.system?.attributes?.conditions?.banished === true,
     };
-  }, { summonPack: SUMMON_PACK, summonId: WATER_MEPHIT_ID });
+  }, { summonPack: SUMMON_PACK, summonId: WATER_MEPHIT_ID, sceneId });
 
   expect(result.actorExists).toBe(true);
   expect(result.tokenExists).toBe(true);
@@ -70,8 +83,14 @@ test('ephemeral compendium summon sets banished state and may linger for GM clea
 });
 
 test('Spiritual Weapon summonWeapon creates conjured actor and attacks again on owner turn', async ({ page }) => {
+  const sceneId = await createReadyScene(page, {
+    name: 'Spiritual Weapon Scene',
+    width: 1200,
+    height: 1200,
+    grid: { size: 100 },
+  });
   const result = await page.evaluate(async ({
-    spellsPack, spiritualWeaponId, classesPack, clericClassId, racialfeaturesPack, elfHighId,
+    spellsPack, spiritualWeaponId, classesPack, clericClassId, racialfeaturesPack, elfHighId, sceneId,
   }) => {
     const waitFor = async (predicate, timeout = 10_000) => {
       const started = Date.now();
@@ -90,13 +109,7 @@ test('Spiritual Weapon summonWeapon creates conjured actor and attacks again on 
       return acc;
     }, {});
 
-    const scene = await Scene.create({
-      name: 'Spiritual Weapon Scene',
-      active: true,
-      width: 1200,
-      height: 1200,
-      grid: { size: 100 },
-    });
+    const scene = game.scenes.get(sceneId);
 
     const caster = await Actor.create({ name: 'Cleric Caster', type: 'character' });
     await game.actors.get(caster.id).update({
@@ -162,14 +175,21 @@ test('Spiritual Weapon summonWeapon creates conjured actor and attacks again on 
     await game.D35E.conjured.createSummonedWeapon(caster.items.get(ownedSpell.id), caster);
     await new Promise((resolve) => setTimeout(resolve, 500));
 
-    const conjuredActor = game.actors.find((actor) => actor.getFlag('D35E', 'conjured.behaviorId') === 'spiritual');
+    const conjuredActor = game.actors.find((actor) => actor.getFlag('warcraftrpg2e', 'conjured.behaviorId') === 'spiritual');
     const attackItem = conjuredActor?.items?.find((item) => item.type === 'attack');
-    const tokenCreated = !!canvas.scene?.tokens?.get((conjuredActor?.getFlag('D35E', 'conjured.tokenIds') ?? [])[0]);
+    const tokenCreated = !!canvas.scene?.tokens?.get((conjuredActor?.getFlag('warcraftrpg2e', 'conjured.tokenIds') ?? [])[0]);
     const afterCreateMessages = game.messages.size;
 
-    await combat.nextTurn();
-    await combat.nextTurn();
-    await new Promise((resolve) => setTimeout(resolve, 500));
+    // Initiative order is random. Advance until the caster's first turn in a
+    // later round instead of assuming that exactly two turns returns to the
+    // caster (it only returns to whichever combatant happened to start).
+    const initialRound = combat.round;
+    for (let steps = 0; steps < 6; steps++) {
+      await combat.nextTurn();
+      await new Promise((resolve) => setTimeout(resolve, 100));
+      if (combat.round > initialRound && combat.combatant?.actor?.id === caster.id) break;
+    }
+    await waitFor(() => game.messages.size > afterCreateMessages, 5_000);
 
     const casterActor = game.actors.get(caster.id);
     return {
@@ -177,7 +197,7 @@ test('Spiritual Weapon summonWeapon creates conjured actor and attacks again on 
       tokenCreated,
       immediateAttackPosted: afterCreateMessages > beforeMessages,
       repeatAttackPosted: game.messages.size > afterCreateMessages,
-      ownerActorId: conjuredActor?.getFlag('D35E', 'conjured.ownerActorId') ?? null,
+      ownerActorId: conjuredActor?.getFlag('warcraftrpg2e', 'conjured.ownerActorId') ?? null,
       copiedClassItems: conjuredActor?.items?.filter((item) => item.type === 'class').length ?? 0,
       copiedRaceItems: conjuredActor?.items?.filter((item) => item.type === 'race').length ?? 0,
       ownerAbilities,
@@ -186,6 +206,7 @@ test('Spiritual Weapon summonWeapon creates conjured actor and attacks again on 
       attackItemAttackBonus: attackItem?.system?.attackBonus ?? null,
       attackItemAttackAbility: attackItem?.system?.ability?.attack ?? null,
       attackItemDamage: attackItem?.system?.damage?.parts?.[0]?.[0] ?? null,
+      conjuredCasterLevel: conjuredActor?.getFlag('warcraftrpg2e', 'conjured.state.cl') ?? null,
       casterBab: casterActor?.system?.attributes?.bab?.total ?? null,
     };
   }, {
@@ -195,6 +216,7 @@ test('Spiritual Weapon summonWeapon creates conjured actor and attacks again on 
     clericClassId: CLERIC_CLASS_ID,
     racialfeaturesPack: RACIALFEATURES_PACK,
     elfHighId: ELF_HIGH_ID,
+    sceneId,
   });
 
   expect(result.actorCreated).toBe(true);
@@ -208,12 +230,20 @@ test('Spiritual Weapon summonWeapon creates conjured actor and attacks again on 
   expect(result.attackItemActionType).toBe('msak');
   expect(result.attackItemAttackAbility).toBe('wis');
   expect(result.attackItemAttackBonus).toBe(String(result.casterBab));
-  expect(result.attackItemDamage).toMatch(/1d8 \+ \d+/);
+  expect(result.conjuredCasterLevel).toBe(10);
+  expect(result.attackItemDamage).not.toContain('@cl');
+  expect(result.attackItemDamage).toContain(String(result.conjuredCasterLevel));
 });
 
 test('Dancing summonWeapon enhancement resolves @parent weapon data and follows owner', async ({ page }) => {
+  const sceneId = await createReadyScene(page, {
+    name: 'Dancing Weapon Scene',
+    width: 1200,
+    height: 1200,
+    grid: { size: 100 },
+  });
   const result = await page.evaluate(async ({
-    weaponsPack, longswordId, enhancementsPack, dancingEnhancementId, classesPack, fighterClassId, racialfeaturesPack, elfHighId,
+    weaponsPack, longswordId, enhancementsPack, dancingEnhancementId, classesPack, fighterClassId, racialfeaturesPack, elfHighId, sceneId,
   }) => {
     const waitFor = async (predicate, timeout = 10_000) => {
       const started = Date.now();
@@ -232,13 +262,7 @@ test('Dancing summonWeapon enhancement resolves @parent weapon data and follows 
       return acc;
     }, {});
 
-    const scene = await Scene.create({
-      name: 'Dancing Weapon Scene',
-      active: true,
-      width: 1200,
-      height: 1200,
-      grid: { size: 100 },
-    });
+    const scene = game.scenes.get(sceneId);
 
     const fighter = await Actor.create({ name: 'Dancing Fighter', type: 'character' });
     await game.actors.get(fighter.id).update({
@@ -298,8 +322,8 @@ test('Dancing summonWeapon enhancement resolves @parent weapon data and follows 
     await game.D35E.conjured.createSummonedWeapon(enhancementItem, fighter);
     await new Promise((resolve) => setTimeout(resolve, 500));
 
-    const conjuredActor = game.actors.find((actor) => actor.getFlag('D35E', 'conjured.behaviorId') === 'dancing');
-    const conjuredTokenId = conjuredActor?.getFlag('D35E', 'conjured.tokenIds')?.[0];
+    const conjuredActor = game.actors.find((actor) => actor.getFlag('warcraftrpg2e', 'conjured.behaviorId') === 'dancing');
+    const conjuredTokenId = conjuredActor?.getFlag('warcraftrpg2e', 'conjured.tokenIds')?.[0];
     const firstToken = canvas.scene?.tokens?.get(conjuredTokenId);
     const attackItem = conjuredActor?.items?.find((item) => item.type === 'attack');
 
@@ -314,7 +338,7 @@ test('Dancing summonWeapon enhancement resolves @parent weapon data and follows 
     await new Promise((resolve) => setTimeout(resolve, 300));
 
     const finalWeapon = fighter.items.get(sourceWeapon.id);
-    const state = finalWeapon.getFlag('D35E', 'dancingWeapon') ?? {};
+    const state = finalWeapon.getFlag('warcraftrpg2e', 'dancingWeapon') ?? {};
 
     return {
       actorCreated: !!conjuredActor,
@@ -350,6 +374,7 @@ test('Dancing summonWeapon enhancement resolves @parent weapon data and follows 
     fighterClassId: FIGHTER_CLASS_ID,
     racialfeaturesPack: RACIALFEATURES_PACK,
     elfHighId: ELF_HIGH_ID,
+    sceneId,
   });
 
   expect(result.actorCreated).toBe(true);

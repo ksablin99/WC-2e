@@ -36,7 +36,7 @@
           290
         ],
         "section": "Cure Moderate Wounds",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -83,9 +83,9 @@
       "divineFocus": 0,
       "focus": false,
       "material": false,
-      "somatic": false,
+      "somatic": true,
       "value": "",
-      "verbal": false
+      "verbal": true
     },
     "conditionals": [],
     "container": "None",
@@ -110,7 +110,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Cures 2d8 damage</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;conjuration&nbsp;(healing);\n    <br>\n    <strong>Level:</strong>&nbsp;Bard 2, Blackguard 2, Cleric 2, Druid 3, Paladin 3, Ranger 3;\n    <strong>Domain:</strong>&nbsp;Healing 2;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;touch<br>\n    \n    <strong>Target:</strong>&nbsp;creature touched<br>\n    \n    <strong>Duration:</strong>&nbsp;Instantaneous<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;Will half (harmless); see text\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nWhen laying your hand upon a living creature, you channel positive energy that cures 2d8 points of damage +1 point per caster level (maximum +10).\n</p><p>Since undead are powered by negative energy, this spell deals damage to them instead of curing their wounds. An undead creature can apply spell resistance, and can attempt a Will save to take half damage.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "",
     "duration": {
@@ -229,10 +229,10 @@
       "type": ""
     },
     "school": "con",
-    "shortDescription": "<p>Cures 2d8 damage</p>",
+    "shortDescription": "\n\n\n<p>\nWhen laying your hand upon a living creature, you channel positive energy that cures 2d8 points of damage +1 point per caster level (maximum +10).\n</p><p>Since undead are powered by negative energy, this spell deals damage to them instead of curing their wounds. An undead creature can apply spell resistance, and can attempt a Will save to take half damage.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Cures 2d8 damage",
+    "snip": "Cures 2d8 damage +1/level (max +10).",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 267-274",
     "specialActions": [],
     "specialId": null,

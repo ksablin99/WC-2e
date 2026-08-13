@@ -32,7 +32,7 @@
           286
         ],
         "section": "Circle of Death",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -103,7 +103,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Kills 1d4 HD/level of living</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;necromancy&nbsp;[death];\n    <br>\n    <strong>Level:</strong>&nbsp;Sorcerer 6, Wizard 6;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, M (the powder of a crushed black pearl with a minimum value of 500 gp)<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;medium (100 ft. + 10 ft./level)<br>\n    <strong>Area:</strong>&nbsp;several living creatures within a 40-ft.-radius burst<br>\n    \n    \n    <strong>Duration:</strong>&nbsp;Instantaneous<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;11<br>\n        <strong>Saving Throw:</strong>&nbsp;Fortitude Negates\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nA <i>circle of death </i>snuffs out the life force of living creatures, killing them instantly.\n</p><p>The spell slays 1d4 HD worth of living creatures per caster level (maximum 20d4). Creatures with the fewest HD are affected first; among creatures with equal HD, those who are closest to the burst’s point of origin are affected first. No creature of 9 or more HD can be affected, and Hit Dice that are not sufficient to affect a creature are wasted.\n</p><p><i>Material Component: </i>The powder of a crushed black pearl with a minimum value of 500 gp.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Medium (100 ft. + 10 ft./level)",
     "duration": {
@@ -216,10 +216,10 @@
       "type": "fortitudenegates"
     },
     "school": "nec",
-    "shortDescription": "<p>Kills 1d4 HD/level of living</p>",
+    "shortDescription": "\n\n\n<p>\nA <i>circle of death </i>snuffs out the life force of living creatures, killing them instantly.\n</p><p>The spell slays 1d4 HD worth of living creatures per caster level (maximum 20d4). Creatures with the fewest HD are affected first; among creatures with equal HD, those who are closest to the burst’s point of origin are affected first. No creature of 9 or more HD can be affected, and Hit Dice that are not sufficient to affect a creature are wasted.\n</p><p><i>Material Component: </i>The powder of a crushed black pearl with a minimum value of 500 gp.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Kills 1d4 HD/level of living",
+    "snip": "Kills 1d4/level HD of creatures.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 271-271",
     "specialActions": [],
     "specialId": null,

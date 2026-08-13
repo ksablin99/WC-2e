@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           323
         ],
         "section": "Orb of Annihilation",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Touch attack deals 4d8 damage,</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>Make a ranged touch attack with the orb. A creature struck takes 4d8 fel damage. On impact, every other creature within 5 feet takes 1d8 fel damage, with a Reflex save for half.</p><p>Instead of targeting a creature, you may target a grid intersection as with a splash weapon. If an attack against a creature misses, determine the landing intersection using the normal missed splash-weapon rules; the explosion occurs there.</p><p><strong>Automation boundary:</strong> Resolve the touch attack, missed-splash scatter, impact point, and secondary Reflex saves manually.</p>"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -213,10 +213,10 @@
       "type": ""
     },
     "school": "evo",
-    "shortDescription": "<p>Touch attack deals 4d8 damage,</p>",
+    "shortDescription": "<p>Make a ranged touch attack for 4d8 fel damage and splash nearby creatures for 1d8 fel damage.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Touch attack deals 4d8 damage,",
+    "snip": "Make a ranged touch attack for 4d8 fel damage and splash nearby creatures for 1d8 fel damage.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 266-266",
     "specialActions": [],
     "specialId": null,
@@ -259,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Resolve the touch attack, missed-splash scatter, impact point, and secondary Reflex saves manually."
     }
   },
   "type": "spell"

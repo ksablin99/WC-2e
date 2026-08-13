@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           315
         ],
         "section": "Lightning Guardians",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Globes of electricity damage</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>Three protective storm spirits surround you for 10 minutes. Whenever a creature attacks you, it must make a Reflex save. On failure it takes 2d4+2 electricity damage; spell resistance applies. The material component is an iron sliver wrapped in copper wire.</p><p><strong>Automation boundary:</strong> Resolve one Reflex save and spell-resistance check per attacker and apply retaliation manually.</p>"
     },
     "display": "Personal",
     "duration": {
@@ -213,10 +213,10 @@
       "type": "reflexnegates"
     },
     "school": "con",
-    "shortDescription": "<p>Globes of electricity damage</p>",
+    "shortDescription": "<p>Three storm globes retaliate for 2d4+2 electricity when an attacker fails Reflex.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Globes of electricity damage",
+    "snip": "Three storm globes retaliate for 2d4+2 electricity when an attacker fails Reflex.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 270-270",
     "specialActions": [],
     "specialId": null,
@@ -259,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Resolve one Reflex save and spell-resistance check per attacker and apply retaliation manually."
     }
   },
   "type": "spell"

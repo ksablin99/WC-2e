@@ -34,6 +34,11 @@ const { spawnSync } = require('child_process');
 const crypto = require('crypto');
 
 const REPO_ROOT = resolve(__dirname, '..');
+const {
+  ensureManagedDataMarker,
+  removeManagedDataDir,
+  writeManagedDataMarker,
+} = require('./safe-managed-data-dir');
 const hash = crypto.createHash('sha1').update(REPO_ROOT).digest('hex').slice(0, 8);
 
 // ── 1. Build release zip ───────────────────────────────────────────────────────
@@ -59,9 +64,11 @@ if (buildResult.status !== 0) {
 const extractDir = join(tmpdir(), `d35e-release-extract-${hash}`);
 
 if (existsSync(extractDir)) {
-  rmSync(extractDir, { recursive: true, force: true });
+  ensureManagedDataMarker(extractDir, { repoRoot: REPO_ROOT, kind: 'release-extract' });
+  removeManagedDataDir(extractDir, { repoRoot: REPO_ROOT, kind: 'release-extract' });
 }
 mkdirSync(extractDir, { recursive: true });
+writeManagedDataMarker(extractDir, { repoRoot: REPO_ROOT, kind: 'release-extract' });
 
 console.log(`[e2e:release-setup] Extracting ${zipPath} to ${extractDir}...`);
 

@@ -18,6 +18,7 @@ import {
   warcraftEquipmentRules,
 } from "../helpers/warcraftEquipment.js";
 import { checkMalfunction, technologyUsePenalty } from "../helpers/warcraftTechnology.js";
+import { setSystemFlag } from "../../utils/system-flags.js";
 
 function rootElement(html) {
   return html?.nodeType === 1 ? html : html?.[0] ?? html;
@@ -37,7 +38,7 @@ async function markCombatAction(actor, action) {
   if (!combatant || game.combat?.combatant?.id !== combatant.id) return;
   if (/full-round/i.test(action)) return combatant.useFullAttackAction?.();
   if (/standard/i.test(action)) return combatant.useAction?.({ type: "standard" });
-  if (/move/i.test(action)) return combatant.setFlag?.("D35E", "usedMoveAction", true);
+  if (/move/i.test(action)) return setSystemFlag(combatant, "usedMoveAction", true);
 }
 
 function rangedAttackTotal(actor) {

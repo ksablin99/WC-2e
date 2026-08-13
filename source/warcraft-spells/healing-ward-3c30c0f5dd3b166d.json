@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           309
         ],
         "section": "Healing Ward",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Totem's positive energy heals allies,</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>A totem appears at your position. Each round, living allies within 20 feet regain 1 hit point, up to maximum, while undead take 1 point of positive-energy damage. The totem has AC 7, hardness 5, and 5 hit points; destroying it ends the spell.</p><p><strong>Automation boundary:</strong> Create the totem, track its defenses and duration, and apply the per-round healing or undead damage manually.</p>"
     },
     "display": "0 ft.",
     "duration": {
@@ -213,10 +213,10 @@
       "type": "fortitudehalf"
     },
     "school": "con",
-    "shortDescription": "<p>Totem's positive energy heals allies,</p>",
+    "shortDescription": "<p>Conjure a destructible totem that heals living allies and harms undead for 1 hit point each round.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Totem's positive energy heals allies,",
+    "snip": "Conjure a destructible totem that heals living allies and harms undead for 1 hit point each round.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 270-270",
     "specialActions": [],
     "specialId": null,
@@ -259,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Create the totem, track its defenses and duration, and apply the per-round healing or undead damage manually."
     }
   },
   "type": "spell"

@@ -452,7 +452,7 @@
                     290
                   ],
                   "section": "Cure Light Wounds",
-                  "verification": "text-extracted-header"
+                  "verification": "srd-mechanics+text-extracted-header"
                 }
               },
               "uses": 3
@@ -546,7 +546,7 @@
           "description": {
             "chat": "",
             "unidentified": "",
-            "value": "<p>Cures 1d8 damage +1/</p><hr><p><strong>Green Whelp spell-like ability:</strong> 3/day; caster level 9; save DC 13 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+            "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;conjuration&nbsp;(healing);\n    <br>\n    <strong>Level:</strong>&nbsp;Bard 1, Blackguard 1, Cleric 1, Druid 1, Paladin 1, Ranger 2;\n    <strong>Domain:</strong>&nbsp;Healing 1;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;touch<br>\n    \n    <strong>Target:</strong>&nbsp;creature touched<br>\n    \n    <strong>Duration:</strong>&nbsp;Instantaneous<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;Will half (harmless); see text\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nWhen laying your hand upon a living creature, you channel positive energy that cures 1d8 points of damage +1 point per caster level (maximum +5).\n</p><p>Since undead are powered by negative energy, this spell deals damage to them instead of curing their wounds. An undead creature can apply spell resistance, and can attempt a Will save to take half damage.\n</p>\n<hr/>\n\n\n\n</div>\n<hr><p><strong>Green Whelp spell-like ability:</strong> 3/day; caster level 9; save DC 13 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
           },
           "display": "Touch",
           "duration": {
@@ -666,10 +666,10 @@
             "type": "willhalf"
           },
           "school": "con",
-          "shortDescription": "<p>Cures 1d8 damage +1/</p>",
+          "shortDescription": "\n\n\n<p>\nWhen laying your hand upon a living creature, you channel positive energy that cures 1d8 points of damage +1 point per caster level (maximum +5).\n</p><p>Since undead are powered by negative energy, this spell deals damage to them instead of curing their wounds. An undead creature can apply spell resistance, and can attempt a Will save to take half damage.\n</p>\n<hr/>\n\n\n",
           "showInQuickbar": false,
           "slOffset": 0,
-          "snip": "Cures 1d8 damage +1/",
+          "snip": "Cures 1d8 damage +1/level (max +5).",
           "source": "World of Warcraft: Monster Guide, p. 44",
           "specialActions": [],
           "specialId": null,
@@ -737,7 +737,7 @@
             "catalog": {
               "completeListEntry": true,
               "generated": true,
-              "status": "manual-effect-pending-verification"
+              "status": "verified-rules-with-manual-boundary"
             },
             "monsterMagic": {
               "automation": "spell-clone",
@@ -762,7 +762,7 @@
                     300
                   ],
                   "section": "Entangling Roots",
-                  "verification": "text-extracted-header"
+                  "verification": "private-source-rules-paraphrased+spot-rendered"
                 }
               },
               "uses": 3
@@ -803,7 +803,7 @@
             "twoHandedOnly": false,
             "vsTouchAc": false
           },
-          "actionType": "",
+          "actionType": "special",
           "activateActions": [],
           "activation": {
             "cost": 1,
@@ -852,7 +852,7 @@
           "description": {
             "chat": "",
             "unidentified": "",
-            "value": "<p>Grass and weeds entangle</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p><hr><p><strong>Green Whelp spell-like ability:</strong> 3/day; caster level 9; save DC 15 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+            "value": "<p>On a failed Reflex save, roots immobilize the target, creating plants beneath it if needed. The entangled target takes -2 on attacks, -4 effective Agility, cannot move, and must succeed at Concentration DC 15 to cast a spell.</p><p>Each round it takes 1d4 constriction damage. It may end the spell with a full-round Strength check DC 25 or Escape Artist DC 22. The roots may instead be cut; they have AC 10 and 22 hit points.</p><p><strong>Automation boundary:</strong> Apply entangled state and Agility penalty, roll ongoing damage and casting checks, and track escape attempts or the roots' hit points manually.</p><hr><p><strong>Green Whelp spell-like ability:</strong> 3/day; caster level 9; save DC 15 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
           },
           "display": "Medium (100 ft. + 10 ft./level)",
           "duration": {
@@ -969,10 +969,10 @@
             "type": "reflexnegates"
           },
           "school": "trs",
-          "shortDescription": "<p>Grass and weeds entangle</p>",
+          "shortDescription": "<p>Roots immobilize, constrain spellcasting, and deal 1d4 constriction damage each round until broken or escaped.</p>",
           "showInQuickbar": false,
           "slOffset": 0,
-          "snip": "Grass and weeds entangle",
+          "snip": "Roots immobilize, constrain spellcasting, and deal 1d4 constriction damage each round until broken or escaped.",
           "source": "World of Warcraft: Monster Guide, p. 44",
           "specialActions": [],
           "specialId": null,
@@ -1015,7 +1015,7 @@
           },
           "warcraftManualPolicy": {
             "mode": "manual",
-            "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+            "reason": "Apply entangled state and Agility penalty, roll ongoing damage and casting checks, and track escape attempts or the roots' hit points manually."
           }
         },
         "type": "spell"
@@ -1040,7 +1040,7 @@
             "catalog": {
               "completeListEntry": true,
               "generated": true,
-              "status": "manual-effect-pending-verification"
+              "status": "verified-rules-with-manual-boundary"
             },
             "monsterMagic": {
               "automation": "spell-clone",
@@ -1067,7 +1067,7 @@
                     333
                   ],
                   "section": "Roar",
-                  "verification": "text-extracted-header"
+                  "verification": "private-source-rules-paraphrased+spot-rendered"
                 }
               },
               "uses": 3
@@ -1108,7 +1108,7 @@
             "twoHandedOnly": false,
             "vsTouchAc": false
           },
-          "actionType": "",
+          "actionType": "special",
           "activateActions": [],
           "activation": {
             "cost": 1,
@@ -1157,9 +1157,9 @@
           "description": {
             "chat": "",
             "unidentified": "",
-            "value": "<p>Your great roar gives allies +1 morale</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p><hr><p><strong>Green Whelp spell-like ability:</strong> 3/day; caster level 9; save DC 13 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+            "value": "<p>All allies within the 50-foot-radius burst centered on you gain a +1 morale bonus on attack rolls and damage rolls for the duration. A druid may cast this spell while in animal form, using the form's natural roar or equivalent sound.</p><p><strong>Automation boundary:</strong> Apply the morale bonuses to allies caught in the burst manually; the spell does not identify allies or create their effects automatically.</p><hr><p><strong>Green Whelp spell-like ability:</strong> 3/day; caster level 9; save DC 13 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
           },
-          "display": "",
+          "display": "Personal",
           "duration": {
             "units": "",
             "value": null
@@ -1252,7 +1252,7 @@
           "psionic": "",
           "range": {
             "long": null,
-            "units": "medium",
+            "units": "personal",
             "value": null
           },
           "recharge": {
@@ -1278,15 +1278,15 @@
             "type": ""
           },
           "school": "enc",
-          "shortDescription": "<p>Your great roar gives allies +1 morale</p>",
+          "shortDescription": "<p>All allies in a 50-foot burst gain +1 morale on attack and damage rolls.</p>",
           "showInQuickbar": false,
           "slOffset": 0,
-          "snip": "Your great roar gives allies +1 morale",
+          "snip": "All allies in a 50-foot burst gain +1 morale on attack and damage rolls.",
           "source": "World of Warcraft: Monster Guide, p. 44",
           "specialActions": [],
           "specialId": null,
           "specialPrepared": true,
-          "spellArea": "All",
+          "spellArea": "All allies within a 50-ft.-radius burst centered on you",
           "spellbook": "spelllike",
           "spellDuration": "1 round/level",
           "spellDurationData": {
@@ -1303,7 +1303,7 @@
           "summon": [],
           "tags": [],
           "target": {
-            "value": "All"
+            "value": "All allies within a 50-ft.-radius burst centered on you"
           },
           "types": "force",
           "uniqueId": "",
@@ -1324,7 +1324,7 @@
           },
           "warcraftManualPolicy": {
             "mode": "manual",
-            "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+            "reason": "Apply the morale bonuses to allies caught in the burst manually; the spell does not identify allies or create their effects automatically."
           }
         },
         "type": "spell"
@@ -1374,7 +1374,7 @@
                     285
                   ],
                   "section": "Charm Animal",
-                  "verification": "text-extracted-header"
+                  "verification": "srd-mechanics+text-extracted-header"
                 }
               },
               "uses": 2
@@ -1465,7 +1465,7 @@
           "description": {
             "chat": "",
             "unidentified": "",
-            "value": "<p>Makes one animal your friend.</p><hr><p><strong>Green Whelp spell-like ability:</strong> 2/day; caster level 9; save DC 13 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+            "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;enchantment&nbsp;(charm)&nbsp;[mind-affecting];\n    <br>\n    <strong>Level:</strong>&nbsp;Druid 1, Ranger 1;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;close (25 ft. + 5 ft./2 levels)<br>\n    \n    <strong>Target:</strong>&nbsp;one animal<br>\n    \n    <strong>Duration:</strong>&nbsp;1 Hours/Level<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;1<br>\n        <strong>Saving Throw:</strong>&nbsp;Will Negates\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThis charm makes an animal regard you as its trusted friend and ally (treat the target’s attitude as friendly). If the animal is currently being threatened or attacked by you or your allies, however, it receives a +5 bonus on its saving throw.\n</p><p>The spell does not enable you to control the <i>charmed</i> animal as if it were an automaton, but it perceives your words and actions in the most favorable way. You can try to give the subject orders, but you must win an opposed Charisma check to convince it to do anything it wouldn’t ordinarily do. (Retries are not allowed.) An affected animal never obeys suicidal or obviously harmful orders, but it might be convinced that something very dangerous is worth doing. Any act by you or your apparent allies that threatens the <i>charmed</i> animal breaks the spell. You must speak the animal's language to communicate your commands, or else be good at pantomiming.\n</p>\n<hr/>\n\n\n\n</div>\n<hr><p><strong>Green Whelp spell-like ability:</strong> 2/day; caster level 9; save DC 13 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
           },
           "display": "",
           "duration": {
@@ -1584,7 +1584,7 @@
             "type": "willnegates"
           },
           "school": "enc",
-          "shortDescription": "<p>Makes one animal your friend.</p>",
+          "shortDescription": "\n\n\n<p>\nThis charm makes an animal regard you as its trusted friend and ally (treat the target’s attitude as friendly). If the animal is currently being threatened or attacked by you or your allies, however, it receives a +5 bonus on its saving throw.\n</p><p>The spell does not enable you to control the <i>charmed</i> animal as if it were an automaton, but it perceives your words and actions in the most favorable way. You can try to give the subject orders, but you must win an opposed Charisma check to convince it to do anything it wouldn’t ordinarily do. (Retries are not allowed.) An affected animal never obeys suicidal or obviously harmful orders, but it might be convinced that something very dangerous is worth doing. Any act by you or your apparent allies that threatens the <i>charmed</i> animal breaks the spell. You must speak the animal's language to communicate your commands, or else be good at pantomiming.\n</p>\n<hr/>\n\n\n",
           "showInQuickbar": false,
           "slOffset": 0,
           "snip": "Makes one animal your friend.",
@@ -1680,7 +1680,7 @@
                     286
                   ],
                   "section": "Commune with Nature",
-                  "verification": "text-extracted-header"
+                  "verification": "srd-mechanics+text-extracted-header"
                 }
               },
               "uses": 1
@@ -1769,7 +1769,7 @@
           "description": {
             "chat": "",
             "unidentified": "",
-            "value": "<p>You learn about terrain for</p><hr><p><strong>Green Whelp spell-like ability:</strong> 1/day; caster level 9; save DC 17 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+            "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;divination;\n    <br>\n    <strong>Level:</strong>&nbsp;Druid 5, Ranger 4;\n    <strong>Domain:</strong>&nbsp;Animal 5;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;10 minutes<br>\n    <strong>Range:</strong>&nbsp;personal<br>\n    \n    <strong>Target:</strong>&nbsp;you<br>\n    \n    <strong>Duration:</strong>&nbsp;Instantaneous<br>\n    \n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nYou become one with nature, attaining knowledge of the surrounding territory. You instantly gain knowledge of as many as three facts from among the following subjects: the ground or terrain, plants, minerals, bodies of water, people, general animal population, presence of woodland creatures, presence of powerful unnatural creatures, or even the general state of the natural setting.\n</p><p>In outdoor settings, the spell operates in a radius of 1 mile per caster level. In natural underground settings—caves, caverns, and the like—the radius is limited to 100 feet per caster level. The spell does not function where nature has been replaced by construction or settlement, such as in dungeons and towns.\n</p>\n<hr/>\n\n\n\n</div>\n<hr><p><strong>Green Whelp spell-like ability:</strong> 1/day; caster level 9; save DC 17 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
           },
           "display": "Personal",
           "duration": {
@@ -1884,10 +1884,10 @@
             "type": ""
           },
           "school": "div",
-          "shortDescription": "<p>You learn about terrain for</p>",
+          "shortDescription": "\n\n\n<p>\nYou become one with nature, attaining knowledge of the surrounding territory. You instantly gain knowledge of as many as three facts from among the following subjects: the ground or terrain, plants, minerals, bodies of water, people, general animal population, presence of woodland creatures, presence of powerful unnatural creatures, or even the general state of the natural setting.\n</p><p>In outdoor settings, the spell operates in a radius of 1 mile per caster level. In natural underground settings—caves, caverns, and the like—the radius is limited to 100 feet per caster level. The spell does not function where nature has been replaced by construction or settlement, such as in dungeons and towns.\n</p>\n<hr/>\n\n\n",
           "showInQuickbar": false,
           "slOffset": 0,
-          "snip": "You learn about terrain for",
+          "snip": "Learn about terrain for 1 mile/level.",
           "source": "World of Warcraft: Monster Guide, p. 44",
           "specialActions": [],
           "specialId": null,

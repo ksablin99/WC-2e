@@ -742,8 +742,8 @@ const _migrateActorTraits = function(actor, updateData) {
     "dr": dt,
     "di": dt,
     "dv": dt,
-    "ci": invertObject(CONFIG.D35E.conditionTypes),
-    "languages": invertObject(CONFIG.D35E.languages)
+    "ci": foundry.utils.invertObject(CONFIG.D35E.conditionTypes),
+    "languages": foundry.utils.invertObject(CONFIG.D35E.languages)
   };
   for ( let [t, choices] of Object.entries(map) ) {
     const trait = actor.data.traits[t];
@@ -1438,7 +1438,7 @@ const _migrateContainer = function(ent, updateData) {
 const _migrateCastTime = function(item, updateData) {
   const value = foundry.utils.getProperty(item.data, "time.value");
   if ( !value ) return;
-  const ATS = invertObject(CONFIG.D35E.abilityActivationTypes);
+  const ATS = foundry.utils.invertObject(CONFIG.D35E.abilityActivationTypes);
   let match = value.match(/([\d]+\s)?([\w\s]+)/);
   if ( !match ) return;
   let type = ATS[match[2]] || "none";
@@ -1476,7 +1476,7 @@ const _migrateDamage = function(item, updateData) {
  * @private
  */
 const _migrateDuration = function(item, updateData) {
-  const TIME = invertObject(CONFIG.D35E.timePeriods);
+  const TIME = foundry.utils.invertObject(CONFIG.D35E.timePeriods);
   const dur = item.data.duration;
   if ( dur && dur.value && !dur.units ) {
     let match = dur.value.match(/([\d]+\s)?([\w\s]+)/);
@@ -1698,7 +1698,7 @@ const _migrateWeaponProperties = function(item, updateData) {
   // Map weapon property strings to boolean flags
   const props = item.data.properties;
   if ( props.value ) {
-    const labels = invertObject(CONFIG.D35E.weaponProperties);
+    const labels = foundry.utils.invertObject(CONFIG.D35E.weaponProperties);
     for (let k of props.value.split(",").map(p => p.trim())) {
       if (labels[k]) updateData[`data.properties.${labels[k]}`] = true;
     }

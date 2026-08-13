@@ -36,7 +36,7 @@
           284
         ],
         "section": "Burning Hands",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -113,7 +113,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>1d4/level fi re damage (max 5d4).</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;evocation&nbsp;[fire];\n    <br>\n    <strong>Level:</strong>&nbsp;Sorcerer 1, Wizard 1;\n    <strong>Domain:</strong>&nbsp;Fire 1;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;15 feet<br>\n    <strong>Area:</strong>&nbsp;cone-shaped burst<br>\n    \n    \n    <strong>Duration:</strong>&nbsp;Instantaneous<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;Reflex half\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nA cone of searing flame shoots from your fingertips. Any creature in the area of the flames takes 1d4 points of fire damage per caster level (maximum 5d4). Flammable materials burn if the flames touch them. A character can extinguish burning items as a full-round action.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "15 ft.",
     "duration": {
@@ -235,10 +235,10 @@
       "type": "reflexhalf"
     },
     "school": "evo",
-    "shortDescription": "<p>1d4/level fi re damage (max 5d4).</p>",
+    "shortDescription": "\n\n\n<p>\nA cone of searing flame shoots from your fingertips. Any creature in the area of the flames takes 1d4 points of fire damage per caster level (maximum 5d4). Flammable materials burn if the flames touch them. A character can extinguish burning items as a full-round action.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "1d4/level fi re damage (max 5d4).",
+    "snip": "1d4/level fire damage (max 5d4).",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 265-272",
     "specialActions": [],
     "specialId": null,

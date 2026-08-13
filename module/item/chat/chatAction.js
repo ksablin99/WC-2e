@@ -112,7 +112,7 @@ export class ItemChatAction {
       );
     } else if (action === "applyHealing") {
       const value = button.dataset.value;
-      ActorDamageHelper.applyDamage(event, roll, null, null, null, null, null, value, null, null, null, null, false, true);
+      ActorDamageHelper.applyDamage(event, null, null, null, null, null, null, value, null, null, null, null, false, true);
     }
 
     // Roll saving throw

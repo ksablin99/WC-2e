@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "srd-mechanics-with-warcraft-header"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,12 +32,12 @@
           319
         ],
         "section": "Medivh's Disjunction",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
   "folder": null,
-  "img": "icons/svg/target.svg",
+  "img": "systems/warcraftrpg2e/icons/spells/named-spells/mages-disjunction.png",
   "name": "Medivh's Disjunction",
   "ownership": {
     "default": 0
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "other",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -64,7 +64,7 @@
       "parts": []
     },
     "attackBonus": "",
-    "attackCountFormula": "max(min(5,ceil(@cl/2)),1)",
+    "attackCountFormula": "",
     "attackNotes": "",
     "attackParts": [],
     "atWill": false,
@@ -88,6 +88,7 @@
     "containerWeightless": false,
     "contextNotes": [],
     "createdBy": "",
+    "creationChanges": [],
     "critConfirmBonus": "",
     "customAttributes": {},
     "customAttributesLocked": false,
@@ -102,7 +103,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Dispels magic, disenchants</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;abjuration;\n    <br>\n    <strong>Level:</strong>&nbsp;Sorcerer 9, Wizard 9;\n    <strong>Domain:</strong>&nbsp;Magic 9;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;close (25 ft. + 5 ft./2 levels)<br>\n    <strong>Area:</strong>&nbsp;all magical effects and magic items within a 40-ft.-radius burst<br>\n    \n    \n    <strong>Duration:</strong>&nbsp;Instantaneous<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;17<br>\n        <strong>Saving Throw:</strong>&nbsp;Will negates (object)\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nAll magical effects and magic items within the radius of the spell, except for those that you carry or touch, are disjoined. That is, spells and spell-like effects are separated into their individual components (ending the effect as a <i>dispel magic </i>spell does), and each permanent magic item must make a successful Will save or be turned into a normal item. An item in a creature’s possession uses its own Will save bonus or its possessor’s Will save bonus, whichever is higher.\n</p><p>You also have a 1% chance per caster level of destroying an <i>antimagic field. </i>If the <i>antimagic field </i>survives the <i>disjunction, </i>no items within it are disjoined.\n</p><p>Even artifacts are subject to <i>disjunction, </i>though there is only a 1% chance per caster level of actually affecting such powerful items. Additionally, if an artifact is destroyed, you must make a DC 25 Will save or permanently lose all spellcasting abilities. (These abilities cannot be recovered by mortal magic, not even <i>miracle </i>or <i>wish</i>.)\n</p><p><i>Note: </i>Destroying artifacts is a dangerous business, and it is 95% likely to attract the attention of some powerful being who has an interest in or connection with the device.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -158,8 +159,8 @@
       "customTexture": "",
       "overrideColor": false,
       "overrideTexture": false,
-      "size": 0,
-      "type": ""
+      "size": "40",
+      "type": "circle"
     },
     "metamagicFeats": {
       "empowered": false,
@@ -175,8 +176,9 @@
     "originId": "a45e2f01118e2fae",
     "originPack": "warcraftrpg2e.warcraft-spells",
     "originVersion": 109,
+    "perRoundActions": [],
     "possibleUpdate": false,
-    "powerPointsCost": 1,
+    "powerPointsCost": 17,
     "pr": false,
     "preparation": {
       "autoDeductCharges": true,
@@ -195,6 +197,7 @@
       "enabled": false,
       "formula": ""
     },
+    "requirements": [],
     "requiresPsionicFocus": false,
     "resistances": [],
     "rollTableDraw": {
@@ -213,10 +216,10 @@
       "type": "willnegates"
     },
     "school": "abj",
-    "shortDescription": "<p>Dispels magic, disenchants</p>",
+    "shortDescription": "\n\n\n<p>\nAll magical effects and magic items within the radius of the spell, except for those that you carry or touch, are disjoined. That is, spells and spell-like effects are separated into their individual components (ending the effect as a <i>dispel magic </i>spell does), and each permanent magic item must make a successful Will save or be turned into a normal item. An item in a creature’s possession uses its own Will save bonus or its possessor’s Will save bonus, whichever is higher.\n</p><p>You also have a 1% chance per caster level of destroying an <i>antimagic field. </i>If the <i>antimagic field </i>survives the <i>disjunction, </i>no items within it are disjoined.\n</p><p>Even artifacts are subject to <i>disjunction, </i>though there is only a 1% chance per caster level of actually affecting such powerful items. Additionally, if an artifact is destroyed, you must make a DC 25 Will save or permanently lose all spellcasting abilities. (These abilities cannot be recovered by mortal magic, not even <i>miracle </i>or <i>wish</i>.)\n</p><p><i>Note: </i>Destroying artifacts is a dangerous business, and it is 95% likely to attract the attention of some powerful being who has an interest in or connection with the device.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Dispels magic, disenchants",
+    "snip": "Dispels magic, disenchants magic items.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 265-265",
     "specialActions": [],
     "specialId": null,
@@ -240,7 +243,7 @@
     "target": {
       "value": "All magical effects and magic items within a 40-ft.-radius burst"
     },
-    "types": "force",
+    "types": "",
     "uniqueId": "",
     "userNonRemovable": false,
     "uses": {
@@ -258,8 +261,8 @@
       "value": 0
     },
     "warcraftManualPolicy": {
-      "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "mode": "srd-baseline-with-manual-boundary",
+      "reason": "SRD mechanics are retained, but Warcraft-specific creatures, forms, slot manipulation, or persistent cross-actor state require GM adjudication."
     }
   },
   "type": "spell"

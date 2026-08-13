@@ -32,7 +32,7 @@
           350
         ],
         "section": "Time Stop",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -103,7 +103,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>You act freely for 1d4+1 rounds.</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;transmutation;\n    <br>\n    <strong>Level:</strong>&nbsp;Sorcerer 9, Wizard 9;\n    <strong>Domain:</strong>&nbsp;Trickery 9;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;personal<br>\n    \n    <strong>Target:</strong>&nbsp;you<br>\n    \n    <strong>Duration:</strong>&nbsp;See Text<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;17<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThis spell seems to make time cease to flow for everyone but you. In fact, you speed up so greatly that all other creatures seem frozen, though they are actually still moving at their normal speeds. You are free to act for 1d4+1 rounds of apparent time. Normal and magical fire, cold, gas, and the like can still harm you. While the <i>time stop </i>is in effect, other creatures are invulnerable to your attacks and spells; you cannot target such creatures with any attack or spell. A spell that affects an area and has a duration longer than the remaining duration of the <i>time stop</i> have their normal effects on other creatures once the <i>time stop </i>ends. Most spellcasters use the additional time to improve their defenses, summon allies, or flee from combat.\n</p><p>You cannot move or harm items held, carried, or worn by a creature stuck in normal time, but you can affect any item that is not in another creature’s possession.\n</p><p>You are undetectable while <i>time stop </i>lasts. You cannot enter an area protected by an <i>antimagic field </i>while under the effect of <i>time stop.</i>\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Personal",
     "duration": {
@@ -216,7 +216,7 @@
       "type": ""
     },
     "school": "trs",
-    "shortDescription": "<p>You act freely for 1d4+1 rounds.</p>",
+    "shortDescription": "\n\n\n<p>\nThis spell seems to make time cease to flow for everyone but you. In fact, you speed up so greatly that all other creatures seem frozen, though they are actually still moving at their normal speeds. You are free to act for 1d4+1 rounds of apparent time. Normal and magical fire, cold, gas, and the like can still harm you. While the <i>time stop </i>is in effect, other creatures are invulnerable to your attacks and spells; you cannot target such creatures with any attack or spell. A spell that affects an area and has a duration longer than the remaining duration of the <i>time stop</i> have their normal effects on other creatures once the <i>time stop </i>ends. Most spellcasters use the additional time to improve their defenses, summon allies, or flee from combat.\n</p><p>You cannot move or harm items held, carried, or worn by a creature stuck in normal time, but you can affect any item that is not in another creature’s possession.\n</p><p>You are undetectable while <i>time stop </i>lasts. You cannot enter an area protected by an <i>antimagic field </i>while under the effect of <i>time stop.</i>\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
     "snip": "You act freely for 1d4+1 rounds.",

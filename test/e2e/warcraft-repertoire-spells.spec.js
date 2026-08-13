@@ -130,7 +130,7 @@ test("ability-keyed pools combine slots, substitute upward, and keep repertoires
       "system.attributes.spells.warcraftPools.int.spells.spell1.value": 0,
       "system.attributes.spells.warcraftPools.int.spells.spell2.value": 1,
     });
-    const [primarySpell, secondarySpell] = await actor.createEmbeddedDocuments("Item", [
+    const createdSpells = await actor.createEmbeddedDocuments("Item", [
       {
         name: "Primary Repertoire Spell",
         type: "spell",
@@ -142,6 +142,8 @@ test("ability-keyed pools combine slots, substitute upward, and keep repertoires
         system: { spellbook: "secondary", level: 1, preparation: { mode: "prepared", prepared: false } },
       },
     ]);
+    const primarySpell = createdSpells.find((spell) => spell.name === "Primary Repertoire Spell");
+    const secondarySpell = createdSpells.find((spell) => spell.name === "Secondary Repertoire Spell");
     const before = foundry.utils.duplicate(actor.system.attributes.spells.warcraftPools.int);
     await actor.items.get(primarySpell.id).use({ skipDialog: true });
     const after = foundry.utils.duplicate(actor.system.attributes.spells.warcraftPools.int);
@@ -175,6 +177,10 @@ test("level-zero Arcanist path slots and Healer domain slots remain restricted a
         classPaths: { enabled: true, default: "mage", choices: [{ id: "mage", name: "Mage" }] },
         pathLevels: { mage: 1 },
         currentPath: "mage",
+        hasSpecialSlot: true,
+        specialSlotLevel0: true,
+        warcraftPathBonusSlot: true,
+        spellcastingPreparationMode: "repertoire",
       },
     }]);
     await actor.update({
@@ -184,7 +190,7 @@ test("level-zero Arcanist path slots and Healer domain slots remain restricted a
       "system.attributes.spells.spellbooks.primary.specialSlotLevel0": true,
       "system.attributes.spells.spellbooks.primary.preparationMode": "repertoire",
     });
-    const [pathSpell, generalSpell, domainSpell] = await actor.createEmbeddedDocuments("Item", [
+    const createdSpells = await actor.createEmbeddedDocuments("Item", [
       {
         name: "Mage Cantrip",
         type: "spell",
@@ -209,6 +215,9 @@ test("level-zero Arcanist path slots and Healer domain slots remain restricted a
         system: { spellbook: "primary", level: 1, isDomainSpell: true, preparation: { mode: "prepared" } },
       },
     ]);
+    const pathSpell = createdSpells.find((spell) => spell.name === "Mage Cantrip");
+    const generalSpell = createdSpells.find((spell) => spell.name === "General Cantrip");
+    const domainSpell = createdSpells.find((spell) => spell.name === "Domain Spell");
     const eventFor = (id, level = 0) => ({
       preventDefault() {},
       currentTarget: {
@@ -225,12 +234,25 @@ test("level-zero Arcanist path slots and Healer domain slots remain restricted a
     await actor.sheet._onSpellPrepareSpecialUses(eventFor(pathSpell.id));
     const specialId = actor.system.attributes.spells.spellbooks.primary.specialSlots.level0;
     const special = actor.items.get(specialId);
-    await special.use({ skipDialog: true });
-    const afterCast = actor.items.get(specialId).system.preparation.preparedAmount;
+    if (special) await special.use({ skipDialog: true });
+    const afterCast = actor.items.get(specialId)?.system.preparation.preparedAmount ?? null;
     await actor.rest(false, true, false);
-    const afterRest = actor.items.get(specialId).system.preparation.preparedAmount;
+    const afterRest = actor.items.get(specialId)?.system.preparation.preparedAmount ?? null;
 
-    await actor.update({ "system.attributes.spells.spellbooks.primary.warcraftPathBonusSlot": false });
+    await actor.createEmbeddedDocuments("Item", [{
+      name: "Healer",
+      type: "class",
+      system: {
+        classType: "base",
+        levels: 1,
+        hasSpecialSlot: true,
+        spellcastingPreparationMode: "repertoire",
+      },
+    }]);
+    await actor.update({
+      "system.attributes.spells.spellbooks.primary.class": "healer",
+      "system.attributes.spells.spellbooks.primary.warcraftPathBonusSlot": false,
+    });
     await actor.sheet._onSpellPrepareSpecialUses(eventFor(generalSpell.id, 1));
     const rejectedNonDomain = actor.system.attributes.spells.spellbooks.primary.specialSlots.level1 || "";
     await actor.sheet._onSpellPrepareSpecialUses(eventFor(domainSpell.id, 1));

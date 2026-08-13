@@ -32,7 +32,7 @@
           310
         ],
         "section": "Holy Sword",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -94,7 +94,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Weapon becomes +5, deals +2d6</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;evocation&nbsp;[good];\n    <br>\n    <strong>Level:</strong>&nbsp;Paladin 4;\n    <strong>Domain:</strong>&nbsp;Glory 5;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;touch<br>\n    \n    <strong>Target:</strong>&nbsp;melee weapon touched\n<br>\n    \n    <strong>Duration:</strong>&nbsp;1 Round/Level<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;None\n\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThis spell allows you to channel holy power into your sword, or any other melee weapon you choose. The weapon acts as a <i>+5 holy weapon </i>(+5 enhancement bonus on attack and damage rolls, extra 2d6 damage against evil opponents). It also emits a <i>magic circle against evil</i> effect (as the spell). If the <i>magic circle </i>ends, the sword creates a new one on your turn as a free action. The spell is automatically canceled 1 round after the weapon leaves your hand. You cannot have more than one <i>holy sword </i>at a time.\n</p><p>If this spell is cast on a magic weapon, the powers of the spell supersede any that the weapon normally has, rendering the normal enhancement bonus and powers of the weapon inoperative for the duration of the spell. This spell is not cumulative with <i>bless weapon</i> or any other spell that might modify the weapon in any way.\n</p><p>This spell does not work on artifacts.\n</p><p><i>Note: </i>A masterwork weapon’s bonus to attack does not stack with an enhancement bonus to attack.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "",
     "duration": {
@@ -204,10 +204,10 @@
       "type": ""
     },
     "school": "evo",
-    "shortDescription": "<p>Weapon becomes +5, deals +2d6</p>",
+    "shortDescription": "\n\n\n<p>\nThis spell allows you to channel holy power into your sword, or any other melee weapon you choose. The weapon acts as a <i>+5 holy weapon </i>(+5 enhancement bonus on attack and damage rolls, extra 2d6 damage against evil opponents). It also emits a <i>magic circle against evil</i> effect (as the spell). If the <i>magic circle </i>ends, the sword creates a new one on your turn as a free action. The spell is automatically canceled 1 round after the weapon leaves your hand. You cannot have more than one <i>holy sword </i>at a time.\n</p><p>If this spell is cast on a magic weapon, the powers of the spell supersede any that the weapon normally has, rendering the normal enhancement bonus and powers of the weapon inoperative for the duration of the spell. This spell is not cumulative with <i>bless weapon</i> or any other spell that might modify the weapon in any way.\n</p><p>This spell does not work on artifacts.\n</p><p><i>Note: </i>A masterwork weapon’s bonus to attack does not stack with an enhancement bonus to attack.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Weapon becomes +5, deals +2d6",
+    "snip": "Weapon becomes +5, deals +2d6 damage against evil.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 274-274",
     "specialActions": [],
     "specialId": null,

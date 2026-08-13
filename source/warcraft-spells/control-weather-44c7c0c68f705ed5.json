@@ -34,7 +34,7 @@
           288
         ],
         "section": "Control Weather",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -103,7 +103,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Changes weather in local area.</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;transmutation;\n    <br>\n    <strong>Level:</strong>&nbsp;Cleric 7, Druid 7, Sorcerer 7, Wizard 7;\n    <strong>Domain:</strong>&nbsp;Air 7, Weather 7;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;10 minutes<br>\n    <strong>Range:</strong>&nbsp;2 miles<br>\n    <strong>Area:</strong>&nbsp;2-mile-radius circle, centered on you; see text<br>\n    \n    \n    <strong>Duration:</strong>&nbsp;See Text<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;None\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nYou change the weather in the local area. It takes 10 minutes to cast the spell and an additional 10 minutes for the effects to manifest.<i> </i>You can call forth weather appropriate to the climate and season of the area you are in.\n</p>\n\n<p>You control the general tendencies of the weather, such as the direction and intensity of the wind. You cannot control specific applications of the weather—where lightning strikes, for example, or the exact path of a tornado. When you select a certain weather condition to occur, the weather assumes that condition 10 minutes later (changing gradually, not abruptly). The weather continues as you left it for the duration, or until you use a standard action to designate a new kind of weather (which fully manifests itself 10 minutes later). Contradictory conditions are not possible simultaneously.\n</p><p><i>Control weather </i>can do away with atmospheric phenomena (naturally occurring or otherwise) as well as create them.\n</p><p>A druid casting this spell doubles the duration and affects a circle with a 3-mile radius.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "2 miles",
     "duration": {
@@ -218,7 +218,7 @@
       "type": ""
     },
     "school": "trs",
-    "shortDescription": "<p>Changes weather in local area.</p>",
+    "shortDescription": "\n\n\n<p>\nYou change the weather in the local area. It takes 10 minutes to cast the spell and an additional 10 minutes for the effects to manifest.<i> </i>You can call forth weather appropriate to the climate and season of the area you are in.\n</p>\n\n<p>You control the general tendencies of the weather, such as the direction and intensity of the wind. You cannot control specific applications of the weather—where lightning strikes, for example, or the exact path of a tornado. When you select a certain weather condition to occur, the weather assumes that condition 10 minutes later (changing gradually, not abruptly). The weather continues as you left it for the duration, or until you use a standard action to designate a new kind of weather (which fully manifests itself 10 minutes later). Contradictory conditions are not possible simultaneously.\n</p><p><i>Control weather </i>can do away with atmospheric phenomena (naturally occurring or otherwise) as well as create them.\n</p><p>A druid casting this spell doubles the duration and affects a circle with a 3-mile radius.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
     "snip": "Changes weather in local area.",

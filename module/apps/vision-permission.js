@@ -1,3 +1,5 @@
+import { getSystemFlag, setSystemFlag } from "../utils/system-flags.js";
+
 // Add Vision Permission sheet to ActorDirectory context options
 Hooks.on("getActorDirectoryEntryContext", function sharedVision(html, menuItems) {
   menuItems.push({
@@ -50,13 +52,13 @@ export class VisionPermissionSheet extends FormApplication {
     }
   
     async _updateObject(event, formData) {
-      await this.object.setFlag("D35E", "visionPermission", formData);
+      await setSystemFlag(this.object, "visionPermission", formData);
       game.socket.emit("system.warcraftrpg2e", { eventType: "redrawCanvas" });
     }
   
     async getData() {
       let data = super.getData();
-      data = foundry.utils.mergeObject(data, this.object.getFlag("D35E", "visionPermission"));
+      data = foundry.utils.mergeObject(data, getSystemFlag(this.object, "visionPermission") ?? {});
       data.users = data.users || {};
   
       data.defaultLevels = [
@@ -93,11 +95,11 @@ export class VisionPermissionSheet extends FormApplication {
     if (token.actor.testUserPermission(game.user, "OWNER")) return true;
   
     if ( (token.actor.isInvisible() && !token.actor.testUserPermission(game.user, "OWNER"))) return false;
-    const visionFlag = token.actor.getFlag("D35E", "visionPermission");
-    if (!visionFlag || !visionFlag.users[game.user.id]) return false;
-    if (visionFlag.users[game.user.id].level === "yes") return true;
-    if (visionFlag.users[game.user.id].level === "default" && visionFlag.default === "yes") return true;
+    const visionFlag = getSystemFlag(token.actor, "visionPermission");
+    const userVision = visionFlag?.users?.[game.user.id];
+    if (!userVision) return false;
+    if (userVision.level === "yes") return true;
+    if (userVision.level === "default" && visionFlag.default === "yes") return true;
   
     return false;
   };
-  

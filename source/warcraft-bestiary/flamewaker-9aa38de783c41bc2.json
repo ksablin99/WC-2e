@@ -303,7 +303,7 @@
             "catalog": {
               "completeListEntry": true,
               "generated": true,
-              "status": "manual-effect-pending-verification"
+              "status": "verified-rules-with-manual-boundary"
             },
             "monsterMagic": {
               "automation": "spell-clone",
@@ -326,7 +326,7 @@
                     282
                   ],
                   "section": "Blazing Column",
-                  "verification": "text-extracted-header"
+                  "verification": "private-source-rules-paraphrased+spot-rendered"
                 }
               },
               "uses": 3
@@ -367,7 +367,7 @@
             "twoHandedOnly": false,
             "vsTouchAc": false
           },
-          "actionType": "",
+          "actionType": "special",
           "activateActions": [],
           "activation": {
             "cost": 1,
@@ -416,7 +416,7 @@
           "description": {
             "chat": "",
             "unidentified": "",
-            "value": "<p>1d6 damage/level for 3 rounds; 1d6</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p><hr><p><strong>Flamewaker spell-like ability:</strong> 3/day; caster level 12; save DC 18 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+            "value": "<p>A stationary 20-foot-radius, 60-foot-high cylinder deals 1d6 fire damage per two caster levels each round for rounds 1-3, maximum 5d6. It then deals 1d6 fire damage each round for rounds 4-6. No saving throw applies; spell resistance does.</p><p>The material components are a small amount of brimstone and one drop of the caster's blood or equivalent fluid.</p><p><strong>Automation boundary:</strong> Place the cylinder and roll the appropriate per-round damage manually; the system does not schedule its six damage pulses.</p><hr><p><strong>Flamewaker spell-like ability:</strong> 3/day; caster level 12; save DC 18 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
           },
           "display": "Medium (100 ft. + 10 ft./level)",
           "duration": {
@@ -528,10 +528,10 @@
             "type": ""
           },
           "school": "evo",
-          "shortDescription": "<p>1d6 damage/level for 3 rounds; 1d6</p>",
+          "shortDescription": "<p>Create a stationary fire cylinder that burns intensely for three rounds and weakly for three more.</p>",
           "showInQuickbar": false,
           "slOffset": 0,
-          "snip": "1d6 damage/level for 3 rounds; 1d6",
+          "snip": "Create a stationary fire cylinder that burns intensely for three rounds and weakly for three more.",
           "source": "World of Warcraft: Monster Guide, p. 73",
           "specialActions": [],
           "specialId": null,
@@ -574,7 +574,7 @@
           },
           "warcraftManualPolicy": {
             "mode": "manual",
-            "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+            "reason": "Place the cylinder and roll the appropriate per-round damage manually; the system does not schedule its six damage pulses."
           }
         },
         "type": "spell"
@@ -599,7 +599,7 @@
             "catalog": {
               "completeListEntry": true,
               "generated": true,
-              "status": "manual-effect-pending-verification"
+              "status": "verified-rules-with-manual-boundary"
             },
             "monsterMagic": {
               "automation": "spell-clone",
@@ -622,7 +622,7 @@
                     336
                   ],
                   "section": "Greater Shadow Word Pain",
-                  "verification": "text-extracted-header"
+                  "verification": "private-source-rules-paraphrased+spot-rendered"
                 }
               },
               "uses": 3
@@ -663,7 +663,7 @@
             "twoHandedOnly": false,
             "vsTouchAc": false
           },
-          "actionType": "",
+          "actionType": "special",
           "activateActions": [],
           "activation": {
             "cost": 1,
@@ -712,7 +712,7 @@
           "description": {
             "chat": "",
             "unidentified": "",
-            "value": "<p>As shadow word pain,</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p><hr><p><strong>Flamewaker spell-like ability:</strong> 3/day; caster level 12; save DC 20 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+            "value": "<p>This functions as <em>shadow word pain</em>, except a target that fails its Reflex save takes 3d4+1 damage each round for 3 rounds while blinded. Spell resistance applies.</p><p>The material component is one dried duskbat wing ground into powder.</p><p><strong>Automation boundary:</strong> Apply blindness and roll the three damage pulses manually; the spell does not schedule them.</p><hr><p><strong>Flamewaker spell-like ability:</strong> 3/day; caster level 12; save DC 20 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
           },
           "display": "90 feet",
           "duration": {
@@ -798,8 +798,8 @@
           "psionic": "",
           "range": {
             "long": null,
-            "units": "spec",
-            "value": null
+            "units": "ft",
+            "value": 90
           },
           "recharge": {
             "current": 0,
@@ -824,10 +824,10 @@
             "type": "reflexnegates"
           },
           "school": "con",
-          "shortDescription": "<p>As shadow word pain,</p>",
+          "shortDescription": "<p>Blind one creature and deal 3d4+1 damage to it each round for three rounds.</p>",
           "showInQuickbar": false,
           "slOffset": 0,
-          "snip": "As shadow word pain,",
+          "snip": "Blind one creature and deal 3d4+1 damage to it each round for three rounds.",
           "source": "World of Warcraft: Monster Guide, p. 73",
           "specialActions": [],
           "specialId": null,
@@ -870,7 +870,7 @@
           },
           "warcraftManualPolicy": {
             "mode": "manual",
-            "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+            "reason": "Apply blindness and roll the three damage pulses manually; the spell does not schedule them."
           }
         },
         "type": "spell"
@@ -918,7 +918,7 @@
                     298
                   ],
                   "section": "Dominate Monster",
-                  "verification": "text-extracted-header"
+                  "verification": "srd-mechanics+text-extracted-header"
                 }
               },
               "uses": 1
@@ -1009,7 +1009,7 @@
           "description": {
             "chat": "",
             "unidentified": "",
-            "value": "<p>As dominate person, but any</p><hr><p><strong>Flamewaker spell-like ability:</strong> 1/day; caster level 12; save DC 23 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+            "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;enchantment&nbsp;(compulsion)&nbsp;[mind-affecting];\n    <br>\n    <strong>Level:</strong>&nbsp;Sorcerer 9, Wizard 9;\n    <strong>Domain:</strong>&nbsp;Charm 9;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 round<br>\n    <strong>Range:</strong>&nbsp;close (25 ft. + 5 ft./2 levels)<br>\n    \n    <strong>Target:</strong>&nbsp;one creature<br>\n    \n    \n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;17<br>\n        <strong>Saving Throw:</strong>&nbsp;Will negates\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nYou can control the actions of any creature through a telepathic link that you establish with the subject’s mind.\n</p><p>If you and the subject have a common language, you can generally force the subject to perform as you desire, within the limits of its abilities. If no common language exists, you can communicate only basic commands, such as “Come here,” “Go there,” “Fight,” and “Stand still.” You know what the subject is experiencing, but you do not receive direct sensory input from it, nor can it communicate with you telepathically.\n</p><p>Once you have given a <i>dominated </i>creature a command, it continues to attempt to carry out that command to the exclusion of all other activities except those necessary for day-to-day survival (such as sleeping, eating, and so forth). Because of this limited range of activity, a Sense Motive check against DC 15 (rather than DC 25) can determine that the subject’s behavior is being influenced by an enchantment effect (see the Sense Motive skill description).\n</p><p>Changing your instructions or giving a <i>dominated </i>creature a new command is the equivalent of redirecting a spell, so it is a move action.\n</p><p>By concentrating fully on the spell (a standard action), you can receive full sensory input as interpreted by the mind of the subject, though it still can’t communicate with you. You can’t actually see through the subject’s eyes, so it’s not as good as being there yourself, but you still get a good idea of what’s going on.\n</p><p>Subjects resist this control, and any subject forced to take actions against its nature receives a new saving throw with a +2 bonus. Obviously self-destructive orders are not carried out. Once control is established, the range at which it can be exercised is unlimited, as long as you and the subject are on the same plane. You need not see the subject to control it.\n</p><p>If you don’t spend at least 1 round concentrating on the spell each day, the subject receives a new saving throw to throw off the domination.\n</p><p><i>Protection from evil </i>or a similar spell can prevent you from exercising control or using the telepathic link while the subject is so warded, but such an effect neither prevents the establishment of domination nor dispels it.\n</p>\n<hr/>\n\n\n\n</div>\n<hr><p><strong>Flamewaker spell-like ability:</strong> 1/day; caster level 12; save DC 23 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
           },
           "display": "Close (25 ft. + 5 ft./2 levels)",
           "duration": {
@@ -1123,10 +1123,10 @@
             "type": "willnegates"
           },
           "school": "enc",
-          "shortDescription": "<p>As dominate person, but any</p>",
+          "shortDescription": "\n\n\n<p>\nYou can control the actions of any creature through a telepathic link that you establish with the subject’s mind.\n</p><p>If you and the subject have a common language, you can generally force the subject to perform as you desire, within the limits of its abilities. If no common language exists, you can communicate only basic commands, such as “Come here,” “Go there,” “Fight,” and “Stand still.” You know what the subject is experiencing, but you do not receive direct sensory input from it, nor can it communicate with you telepathically.\n</p><p>Once you have given a <i>dominated </i>creature a command, it continues to attempt to carry out that command to the exclusion of all other activities except those necessary for day-to-day survival (such as sleeping, eating, and so forth). Because of this limited range of activity, a Sense Motive check against DC 15 (rather than DC 25) can determine that the subject’s behavior is being influenced by an enchantment effect (see the Sense Motive skill description).\n</p><p>Changing your instructions or giving a <i>dominated </i>creature a new command is the equivalent of redirecting a spell, so it is a move action.\n</p><p>By concentrating fully on the spell (a standard action), you can receive full sensory input as interpreted by the mind of the subject, though it still can’t communicate with you. You can’t actually see through the subject’s eyes, so it’s not as good as being there yourself, but you still get a good idea of what’s going on.\n</p><p>Subjects resist this control, and any subject forced to take actions against its nature receives a new saving throw with a +2 bonus. Obviously self-destructive orders are not carried out. Once control is established, the range at which it can be exercised is unlimited, as long as you and the subject are on the same plane. You need not see the subject to control it.\n</p><p>If you don’t spend at least 1 round concentrating on the spell each day, the subject receives a new saving throw to throw off the domination.\n</p><p><i>Protection from evil </i>or a similar spell can prevent you from exercising control or using the telepathic link while the subject is so warded, but such an effect neither prevents the establishment of domination nor dispels it.\n</p>\n<hr/>\n\n\n",
           "showInQuickbar": false,
           "slOffset": 0,
-          "snip": "As dominate person, but any",
+          "snip": "As dominate person, but any creature.",
           "source": "World of Warcraft: Monster Guide, p. 73",
           "specialActions": [],
           "specialId": null,
@@ -1217,7 +1217,7 @@
                     303
                   ],
                   "section": "Fire Storm",
-                  "verification": "text-extracted-header"
+                  "verification": "srd-mechanics+text-extracted-header"
                 }
               },
               "uses": 1
@@ -1314,7 +1314,7 @@
           "description": {
             "chat": "",
             "unidentified": "",
-            "value": "<p>Deals 1d6/level fi re damage.</p><hr><p><strong>Flamewaker spell-like ability:</strong> 1/day; caster level 12; save DC 22 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+            "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;evocation&nbsp;[fire];\n    <br>\n    <strong>Level:</strong>&nbsp;Cleric 8, Druid 7;\n    <strong>Domain:</strong>&nbsp;Fire 7;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 round<br>\n    <strong>Range:</strong>&nbsp;medium (100 ft. + 10 ft./level)<br>\n    <strong>Area:</strong>&nbsp;two 10-ft. cubes per level (s)<br>\n    \n    \n    <strong>Duration:</strong>&nbsp;Instantaneous<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;13<br>\n        <strong>Saving Throw:</strong>&nbsp;Reflex half\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nWhen a <i>fire storm </i>spell is cast, the whole area is shot through with sheets of roaring flame. The raging flames do not harm natural vegetation, ground cover, and any plant creatures in the area that you wish to exclude from damage. Any other creature within the area takes 1d6 points of fire damage per caster level (maximum 20d6).\n</p>\n<hr/>\n\n\n\n</div>\n<hr><p><strong>Flamewaker spell-like ability:</strong> 1/day; caster level 12; save DC 22 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
           },
           "display": "Medium (100 ft. + 10 ft./level)",
           "duration": {
@@ -1428,10 +1428,10 @@
             "type": "reflexhalf"
           },
           "school": "evo",
-          "shortDescription": "<p>Deals 1d6/level fi re damage.</p>",
+          "shortDescription": "\n\n\n<p>\nWhen a <i>fire storm </i>spell is cast, the whole area is shot through with sheets of roaring flame. The raging flames do not harm natural vegetation, ground cover, and any plant creatures in the area that you wish to exclude from damage. Any other creature within the area takes 1d6 points of fire damage per caster level (maximum 20d6).\n</p>\n<hr/>\n\n\n",
           "showInQuickbar": false,
           "slOffset": 0,
-          "snip": "Deals 1d6/level fi re damage.",
+          "snip": "Deals 1d6/level fire damage.",
           "source": "World of Warcraft: Monster Guide, p. 73",
           "specialActions": [],
           "specialId": null,

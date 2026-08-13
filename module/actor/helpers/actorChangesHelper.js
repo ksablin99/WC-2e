@@ -1,10 +1,11 @@
 import { ItemActiveHelper } from "../../item/helpers/itemActiveHelper.js";
+import { getSystemFlag } from "../../utils/system-flags.js";
 
 export class ActorChangesHelper {
 
     static hasChangeFlag(actor, flagKey) {
         if (!actor) return false;
-        if (actor.getFlag("D35E", flagKey)) return true;
+        if (getSystemFlag(actor, flagKey)) return true;
         return actor.items.some((item) =>
             ItemActiveHelper.isActive(item) && foundry.utils.getProperty(item.system, `changeFlags.${flagKey}`) === true
         );

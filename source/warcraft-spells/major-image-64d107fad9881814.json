@@ -32,7 +32,7 @@
           318
         ],
         "section": "Major Image",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -103,7 +103,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>As silent image, plus sound, smell and</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;illusion&nbsp;(figment);\n    <br>\n    <strong>Level:</strong>&nbsp;Bard 3, Sorcerer 3, Wizard 3;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, F (a bit of fleece)<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;long (400 ft. + 40 ft./level)<br>\n    \n    \n    <strong>Effect:</strong>&nbsp;Visual figment that cannot extend beyond four 10-ft. cubes + one 10-ft. cube/level (S)<br>\n    <strong>Duration:</strong>&nbsp;Special<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;5<br>\n        <strong>Saving Throw:</strong>&nbsp;Will Negates\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThis spell creates the visual illusion of an object, creature, or force, as visualized by you. While concentrating, you can move the image within the range. Sound, smell, and thermal illusions are included in the spell effect.\n</p><p>The image disappears when struck by an opponent unless you cause the illusion to react appropriately.\n</p><p><i>Focus: </i>A bit of fleece.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -216,10 +216,10 @@
       "type": "willnegates"
     },
     "school": "ill",
-    "shortDescription": "<p>As silent image, plus sound, smell and</p>",
+    "shortDescription": "\n\n\n<p>\nThis spell creates the visual illusion of an object, creature, or force, as visualized by you. While concentrating, you can move the image within the range. Sound, smell, and thermal illusions are included in the spell effect.\n</p><p>The image disappears when struck by an opponent unless you cause the illusion to react appropriately.\n</p><p><i>Focus: </i>A bit of fleece.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "As silent image, plus sound, smell and",
+    "snip": "As silent image, plus sound, smell and thermal effects.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 263-263",
     "specialActions": [],
     "specialId": null,

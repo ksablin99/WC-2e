@@ -19,7 +19,13 @@
         "category": "General",
         "prerequisite": "Agy 13, Dodge, Point Blank Shot, Precise Shot, base attack bonus +4.",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "Making a ranged attack while threatened does not provoke attacks of opportunity.",
+          "manual": "Foundry does not adjudicate attacks of opportunity, so the GM must suppress the normal provocation.",
+          "normal": "A ranged attack normally provokes attacks of opportunity from creatures that threaten the attacker.",
+          "summary": "Use ranged weapons in melee without provoking attacks of opportunity."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": true
       },
@@ -33,7 +39,7 @@
           144
         ],
         "section": "Close Shot",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +154,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p><strong>Prerequisites:</strong> Agy 13, Dodge, Point Blank Shot, Precise Shot, base attack bonus +4.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 144) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Prerequisites:</strong> Agy 13, Dodge, Point Blank Shot, Precise Shot, base attack bonus +4.</p><p><strong>Summary:</strong> Use ranged weapons in melee without provoking attacks of opportunity.</p><p><strong>Benefit:</strong> Making a ranged attack while threatened does not provoke attacks of opportunity.</p><p><strong>Normal:</strong> A ranged attack normally provokes attacks of opportunity from creatures that threaten the attacker.</p><p><strong>Warrior bonus feat:</strong> Yes</p><p><strong>Foundry and GM handling:</strong> Foundry does not adjudicate attacks of opportunity, so the GM must suppress the normal provocation.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +254,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat; requires Agy 13, Dodge, Point Blank Shot, Precise Shot, base attack bonus +4..</p>",
+    "shortDescription": "<p>Use ranged weapons in melee without provoking attacks of opportunity.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 144",

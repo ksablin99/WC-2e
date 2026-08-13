@@ -19,7 +19,12 @@
         "category": "General",
         "prerequisite": "",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "When you charge, gain +2 on damage rolls and you may use one shout feat you know without spending a daily shout use; that shout lasts 1 round. If you spend a hero point on the charge, instead gain +4 on both attack and damage rolls, take no charge penalty to AC, and let the free shout use its normal duration.",
+          "manual": "Declare the charge, chosen shout, and any hero-point expenditure; apply the temporary bonuses, AC exception, shout duration, and free-use accounting manually.",
+          "summary": "Charge with extra damage and a free shout; a hero point greatly improves the charge."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": true
       },
@@ -33,7 +38,7 @@
           149
         ],
         "section": "Furious Charge",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +153,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 149) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Summary:</strong> Charge with extra damage and a free shout; a hero point greatly improves the charge.</p><p><strong>Benefit:</strong> When you charge, gain +2 on damage rolls and you may use one shout feat you know without spending a daily shout use; that shout lasts 1 round. If you spend a hero point on the charge, instead gain +4 on both attack and damage rolls, take no charge penalty to AC, and let the free shout use its normal duration.</p><p><strong>Warrior bonus feat:</strong> Yes</p><p><strong>Foundry and GM handling:</strong> Declare the charge, chosen shout, and any hero-point expenditure; apply the temporary bonuses, AC exception, shout duration, and free-use accounting manually.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +253,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat.</p>",
+    "shortDescription": "<p>Charge with extra damage and a free shout; a hero point greatly improves the charge.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 149",

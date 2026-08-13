@@ -32,7 +32,7 @@
           338
         ],
         "section": "Speak with Animals",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -103,7 +103,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>You can communicate with</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;divination;\n    <br>\n    <strong>Level:</strong>&nbsp;Bard 3, Druid 1, Ranger 1;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;personal<br>\n    \n    <strong>Target:</strong>&nbsp;you<br>\n    \n    <strong>Duration:</strong>&nbsp;1 Minute/Level<br>\n    \n  </p>\n  <h2>Description</h2>\n  <p>You can comprehend and communicate with animals. You are able to ask questions of and receive answers from animals, although the spell doesn&rsquo;t make them any more friendly or cooperative than normal. Furthermore, wary and cunning animals are likely to be terse and evasive, while the more stupid ones make inane comments. If an animal is friendly toward you, it may do some favor or service for you.</p>\n<hr />\n</div>\n"
     },
     "display": "Personal",
     "duration": {
@@ -216,10 +216,10 @@
       "type": ""
     },
     "school": "div",
-    "shortDescription": "<p>You can communicate with</p>",
+    "shortDescription": "<p>You can comprehend and communicate with animals. You are able to ask questions of and receive answers from animals, although the spell doesn&rsquo;t make them any more friendly or cooperative than normal. Furthermore, wary and cunning animals are likely to be terse and evasive, while the more stupid ones make inane comments. If an animal is friendly toward you, it may do some favor or service for you.</p>\n<hr />",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "You can communicate with",
+    "snip": "You can communicate with animals.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 268-268",
     "specialActions": [],
     "specialId": null,

@@ -19,7 +19,14 @@
         "category": "General",
         "prerequisite": "One shout feat.",
         "repeatable": true,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "automation": "The actor's Shout Uses resource automatically adds two daily uses for each Mighty Lungs feat item.",
+          "benefit": "Your daily number of shout uses increases by 2.",
+          "manual": "No manual adjustment is normally needed when each selected copy exists as a separate feat item; exceptional imported or renamed records require GM correction.",
+          "special": "You may select this feat more than once; its benefits stack.",
+          "summary": "Gain two additional uses of the shared shout pool each day."
+        },
+        "status": "verified-rules-supported-automation",
         "tinkerBonus": false,
         "warriorBonus": false
       },
@@ -33,7 +40,7 @@
           153
         ],
         "section": "Mighty Lungs",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +155,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p><strong>Prerequisites:</strong> One shout feat.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 153) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Prerequisites:</strong> One shout feat.</p><p><strong>Summary:</strong> Gain two additional uses of the shared shout pool each day.</p><p><strong>Benefit:</strong> Your daily number of shout uses increases by 2.</p><p><strong>Special:</strong> You may select this feat more than once; its benefits stack.</p><p><strong>Supported automation:</strong> The actor&#39;s Shout Uses resource automatically adds two daily uses for each Mighty Lungs feat item.</p><p><strong>Foundry and GM handling:</strong> No manual adjustment is normally needed when each selected copy exists as a separate feat item; exceptional imported or renamed records require GM correction.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +255,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat; requires One shout feat..</p>",
+    "shortDescription": "<p>Gain two additional uses of the shared shout pool each day.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 153",

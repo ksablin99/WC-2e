@@ -71,7 +71,7 @@ async function addSpell(page, actorId, spellId) {
 async function getLastMessageProps(page) {
   return page.evaluate(() => {
     const msg = game.messages.contents.at(-1);
-    const tplData = msg?.flags?.D35E?.chatTemplateData;
+    const tplData = msg?.flags?.warcraftrpg2e?.chatTemplateData;
     if (!tplData) return [];
     // properties is an array of { header, value: string[] } groups
     return (tplData.properties ?? []).flatMap(g => g.value ?? []);

@@ -1,3 +1,5 @@
+import { getSystemFlag, unsetSystemFlag } from "../../utils/system-flags.js";
+
 export class ItemEquipHook {
   /**
    * Check whether an actor's slot is at or over capacity for the given equipment item.
@@ -88,14 +90,14 @@ export class ItemEquipHook {
    */
   static async _clearProviderSlotData(actor, providerName) {
     const affected = actor.items.filter(i => {
-      const src = i.getFlag("D35E", "slotSource");
+      const src = getSystemFlag(i, "slotSource");
       return src === providerName || (src && src.startsWith(providerName + ":"));
     });
     for (const item of affected) {
       if (item.system.equipped) {
         await item.update({ "system.equipped": false }, { _forceUnequip: true });
       }
-      await item.unsetFlag("D35E", "slotSource");
+      await unsetSystemFlag(item, "slotSource");
     }
   }
 
@@ -105,7 +107,7 @@ export class ItemEquipHook {
   static async _unequipProviderItems(actor, providerName) {
     const toUnequip = actor.items.filter(i => {
       if (i.type !== "equipment" || !i.system.equipped) return false;
-      const src = i.getFlag("D35E", "slotSource");
+      const src = getSystemFlag(i, "slotSource");
       return src === providerName || (src && src.startsWith(providerName + ":"));
     });
     for (const item of toUnequip) {
@@ -118,7 +120,7 @@ export class ItemEquipHook {
   static async _reequipProviderItems(actor, providerName) {
     const toReequip = actor.items.filter(i => {
       if (i.type !== "equipment" || i.system.equipped) return false;
-      const src = i.getFlag("D35E", "slotSource");
+      const src = getSystemFlag(i, "slotSource");
       return src === providerName || (src && src.startsWith(providerName + ":"));
     });
     for (const item of toReequip) {
@@ -297,7 +299,7 @@ export class ItemEquipHook {
       // from its position. (Provider-cascade unequips use _forceUnequip and are
       // already returned above — this only runs for user-initiated unequips.)
       if (updateData.system?.equipped === false) {
-        data.unsetFlag("D35E", "slotSource").catch(err =>
+        Promise.resolve(unsetSystemFlag(data, "slotSource")).catch(err =>
           console.error("D35E | Error clearing slotSource on manual unequip:", err)
         );
       }

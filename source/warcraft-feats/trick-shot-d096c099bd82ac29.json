@@ -19,7 +19,12 @@
         "category": "General",
         "prerequisite": "Point Blank Shot, Precise Shot.",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "When a target is within 10 feet of a solid, reasonably smooth surface, you may ricochet a ranged attack from that surface and ignore the target's cover bonus to AC. The attack takes a -2 penalty on both its attack and damage rolls. An imperfect surface may still be usable at the GM's discretion. You may attempt this against full cover by guessing the target's location, but the target still has total concealment. A character proficient with a moonglaive ignores Trick Shot's attack and damage penalties when using one.",
+          "manual": "The GM adjudicates geometry and surface quality; apply cover, concealment, moonglaive, attack, and damage adjustments manually.",
+          "summary": "Ricochet a ranged attack from a solid surface to bypass cover at -2 attack and damage."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": true
       },
@@ -33,7 +38,7 @@
           160
         ],
         "section": "Trick Shot",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +153,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p><strong>Prerequisites:</strong> Point Blank Shot, Precise Shot.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 160) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Prerequisites:</strong> Point Blank Shot, Precise Shot.</p><p><strong>Summary:</strong> Ricochet a ranged attack from a solid surface to bypass cover at -2 attack and damage.</p><p><strong>Benefit:</strong> When a target is within 10 feet of a solid, reasonably smooth surface, you may ricochet a ranged attack from that surface and ignore the target&#39;s cover bonus to AC. The attack takes a -2 penalty on both its attack and damage rolls. An imperfect surface may still be usable at the GM&#39;s discretion. You may attempt this against full cover by guessing the target&#39;s location, but the target still has total concealment. A character proficient with a moonglaive ignores Trick Shot&#39;s attack and damage penalties when using one.</p><p><strong>Warrior bonus feat:</strong> Yes</p><p><strong>Foundry and GM handling:</strong> The GM adjudicates geometry and surface quality; apply cover, concealment, moonglaive, attack, and damage adjustments manually.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +253,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat; requires Point Blank Shot, Precise Shot..</p>",
+    "shortDescription": "<p>Ricochet a ranged attack from a solid surface to bypass cover at -2 attack and damage.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 160",

@@ -32,6 +32,12 @@ const { tmpdir, platform } = require('os');
 
 const REPO_ROOT = resolve(__dirname, '..');
 const { resolveFoundry, resolveWorldTemplate, readEnvFileKey } = require('./foundry-version');
+const {
+  assertSafeManagedDataDir,
+  ensureManagedDataMarker,
+  removeManagedDataDir,
+  writeManagedDataMarker,
+} = require('./safe-managed-data-dir');
 
 // Read existing .dev-env so that re-running dev:setup in a worktree (without
 // env vars set) preserves the worktree-specific data dir and port that were
@@ -73,6 +79,12 @@ const wtMeta   = readWtMeta();
 // Priority: explicit env var → .dev-env → .wt-meta → hardcoded default
 const DATA_DIR = process.env.DEV_DATA_DIR ?? savedEnv.DEV_DATA_DIR ?? wtMeta.DEV_DATA_DIR ?? join(tmpdir(), 'foundry-dev');
 const PORT     = process.env.DEV_PORT     ?? savedEnv.DEV_PORT     ?? wtMeta.DEV_PORT     ?? '30000';
+assertSafeManagedDataDir(DATA_DIR, { repoRoot: REPO_ROOT, kind: 'dev' });
+ensureManagedDataMarker(DATA_DIR, {
+  repoRoot: REPO_ROOT,
+  kind: 'dev',
+  expectedWorldId: 'dev-world',
+});
 
 if (wtMeta.DEV_DATA_DIR && !savedEnv.DEV_DATA_DIR && !process.env.DEV_DATA_DIR) {
   console.log('[dev:setup] .dev-env missing or corrupt — recovered settings from .wt-meta.');
@@ -109,7 +121,7 @@ const storedVersion = savedEnv.DEV_FOUNDRY_VERSION ?? null;
 if (resolvedVersion && storedVersion && storedVersion !== resolvedVersion) {
   console.log(`[dev:setup] Foundry version changed (${storedVersion} → ${resolvedVersion}) — auto-cleaning...`);
   if (existsSync(DATA_DIR)) {
-    rmSync(DATA_DIR, { recursive: true, force: true });
+    removeManagedDataDir(DATA_DIR, { repoRoot: REPO_ROOT, kind: 'dev' });
     console.log(`[dev:setup] Removed stale data dir: ${DATA_DIR}`);
   }
   console.log('[dev:setup] Repacking from source/ (Foundry migrates packs on version change)...');
@@ -137,6 +149,7 @@ for (const sub of [
 ]) {
   mkdirSync(join(DATA_DIR, sub), { recursive: true });
 }
+writeManagedDataMarker(DATA_DIR, { repoRoot: REPO_ROOT, kind: 'dev' });
 
 // ── 2. Create junction / symlink: Data/systems/warcraftrpg2e → REPO_ROOT ──────────────
 //

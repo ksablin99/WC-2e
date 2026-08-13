@@ -19,7 +19,14 @@
         "category": "Technology",
         "prerequisite": "Craft (any) 6 ranks.",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "This applies only when at least three assistants each have 1 or more rank in the same Craft skill you are using. Every qualifying assistant who succeeds on the check to aid your Craft check contributes +4 instead of +2.",
+          "manual": "Foundry records the feat but does not inspect assistants or assemble their aid bonuses. The GM must verify team size, matching Craft skill ranks, and each aid result, then apply +4 only for each successful qualifying assistant.",
+          "normal": "A successful check to assist another character ordinarily contributes +2.",
+          "special": "A tinker may select Crafty Leader as a bonus tinker feat.",
+          "summary": "A sufficiently large team provides unusually effective help on your Craft work."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": true,
         "warriorBonus": false
       },
@@ -33,7 +40,7 @@
           146
         ],
         "section": "Crafty Leader",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +155,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> Technology.</p><p><strong>Prerequisites:</strong> Craft (any) 6 ranks.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 146) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> Technology feat</p><p><strong>Prerequisites:</strong> Craft (any) 6 ranks.</p><p><strong>Summary:</strong> A sufficiently large team provides unusually effective help on your Craft work.</p><p><strong>Benefit:</strong> This applies only when at least three assistants each have 1 or more rank in the same Craft skill you are using. Every qualifying assistant who succeeds on the check to aid your Craft check contributes +4 instead of +2.</p><p><strong>Normal:</strong> A successful check to assist another character ordinarily contributes +2.</p><p><strong>Special:</strong> A tinker may select Crafty Leader as a bonus tinker feat.</p><p><strong>Tinker bonus feat:</strong> Yes</p><p><strong>Foundry and GM handling:</strong> Foundry records the feat but does not inspect assistants or assemble their aid bonuses. The GM must verify team size, matching Craft skill ranks, and each aid result, then apply +4 only for each successful qualifying assistant.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +255,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>Technology feat; requires Craft (any) 6 ranks..</p>",
+    "shortDescription": "<p>A sufficiently large team provides unusually effective help on your Craft work.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 146",

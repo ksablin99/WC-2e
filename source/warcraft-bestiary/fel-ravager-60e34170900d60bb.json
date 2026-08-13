@@ -1098,7 +1098,7 @@
             "catalog": {
               "completeListEntry": true,
               "generated": true,
-              "status": "manual-effect-pending-verification"
+              "status": "srd-mechanics-with-warcraft-header"
             },
             "monsterMagic": {
               "automation": "spell-clone",
@@ -1123,7 +1123,7 @@
                     298
                   ],
                   "section": "Greater Dispel Magic",
-                  "verification": "text-extracted-header"
+                  "verification": "srd-mechanics+text-extracted-header"
                 }
               },
               "uses": 0
@@ -1164,7 +1164,7 @@
             "twoHandedOnly": false,
             "vsTouchAc": false
           },
-          "actionType": "",
+          "actionType": "other",
           "activateActions": [],
           "activation": {
             "cost": 1,
@@ -1175,8 +1175,8 @@
             "parts": []
           },
           "attackBonus": "",
-          "attackCountFormula": "max(min(5,ceil(@cl/2)),1)",
-          "attackNotes": "",
+          "attackCountFormula": "",
+          "attackNotes": "Target creature or everyone in area are affected by the dispel magic effect. Each active magical effect are subjected to a dispel. Effect notes will contain some prerolled checks.",
           "attackParts": [],
           "atWill": true,
           "autoscaleAttackParts": "",
@@ -1199,6 +1199,7 @@
           "containerWeightless": false,
           "contextNotes": [],
           "createdBy": "",
+          "creationChanges": [],
           "critConfirmBonus": "",
           "customAttributes": {},
           "customAttributesLocked": false,
@@ -1213,14 +1214,14 @@
           "description": {
             "chat": "",
             "unidentified": "",
-            "value": "<p>As dispel magic, but +20 on</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p><hr><p><strong>Fel Ravager spell-like ability:</strong> At will; caster level 14; save DC 17 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+            "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;abjuration;\n    <br>\n    <strong>Level:</strong>&nbsp;Bard 5, Cleric 6, Druid 6, Sorcerer 6, Wizard 6;\n    <strong>Domain:</strong>&nbsp;Liberation 6;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;medium (100 ft. + 10 ft./level)<br>\n    <strong>Area:</strong>&nbsp;one spellcaster, creature, or object; or 20-ft.-radius burst<br>\n    <strong>Target:</strong>&nbsp;one spellcaster, creature, or object; or 20-ft.-radius burst<br>\n    \n    <strong>Duration:</strong>&nbsp;Instantaneous<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;None\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nYou can use <i>dispel magic </i>to end ongoing spells that have been cast on a creature or object, to temporarily suppress the magical abilities of a magic item, to end ongoing spells (or at least their effects) within an area, or to counter another spellcaster’s spell. A dispelled spell ends as if its duration had expired. Some spells, as detailed in their descriptions, can’t be defeated by <i>dispel magic</i>. <i>Dispel magic </i>can dispel (but not counter) spell-like effects just as it does spells.\n</p><p><i>Note: </i>The effect of a spell with an instantaneous duration can’t be dispelled, because the magical effect is already over before the <i>dispel magic </i>can take effect.\n</p><p>You choose to use <i>dispel magic </i>in one of three ways: a targeted dispel, an area dispel, or a counterspell:\n</p><p><i>Targeted Dispel: </i>One object, creature, or spell is the target of the <i>dispel magic </i>spell. You make a dispel check (1d20 + your caster level, maximum +20) against the spell or against each ongoing spell currently in effect on the object or creature. The DC for this dispel check is 11 + the spell’s caster level. If you succeed on a particular check, that spell is dispelled; if you fail, that spell remains in effect.\n</p><p>If you target an object or creature that is the effect of an ongoing spell (such as a monster summoned by <i>monster summoning</i>), you make a dispel check to end the spell that conjured the object or creature.\n</p><p>If the object that you target is a magic item, you make a dispel check against the item’s caster level. If you succeed, all the item’s magical properties are suppressed for 1d4 rounds, after which the item recovers on its own. A suppressed item becomes nonmagical for the duration of the effect. An interdimensional interface (such as a <i>bag of holding</i>) is temporarily closed. A magic item’s physical properties are unchanged: A suppressed magic sword is still a sword (a masterwork sword, in fact). Artifacts and deities are unaffected by mortal magic such as this.\n</p><p>You automatically succeed on your dispel check against any spell that you cast yourself.\n</p><p><i>Area Dispel: </i>When <i>dispel magic </i>is used in this way, the spell affects everything within a 20-foot radius.\n</p><p>For each creature within the area that is the subject of one or more spells, you make a dispel check against the spell with the highest caster level. If that check fails, you make dispel checks against progressively weaker spells until you dispel one spell (which discharges the <i>dispel magic </i>spell so far as that target is concerned) or until you fail all your checks. The creature’s magic items are not affected.\n</p><p>For each object within the area that is the target of one or more spells, you make dispel checks as with creatures. Magic items are not affected by an area dispel.\n</p><p>For each ongoing area or effect spell whose point of origin is within the area of the <i>dispel magic </i>spell, you can make a dispel check to dispel the spell.\n</p><p>For each ongoing spell whose area overlaps that of the <i>dispel magic </i>spell, you can make a dispel check to end the effect, but only within the overlapping area.\n</p><p>If an object or creature that is the effect of an ongoing spell (such as a monster summoned by <i>monster summoning</i>) is in the area, you can make a dispel check to end the spell that conjured that object or creature (returning it whence it came) in addition to attempting to dispel spells targeting the creature or object.\n</p><p>You may choose to automatically succeed on dispel checks against any spell that you have cast.\n</p><p><i>Counterspell: </i>When <i>dispel magic </i>is used in this way, the spell targets a spellcaster and is cast as a counterspell. Unlike a true counterspell, however, <i>dispel magic </i>may not work; you must make a dispel check to counter the other spellcaster’s spell.\n</p><p>Additionally, <i>greater dispel magic </i>has a chance to dispel any effect that <i>remove curse </i>can remove, even if <i>dispel magic </i>can’t dispel that effect.\n</p>\n<hr/>\n\n\n\n</div>\n<hr><p><strong>Fel Ravager spell-like ability:</strong> At will; caster level 14; save DC 17 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
           },
           "display": "Close (25 ft. + 5 ft./2 levels)",
           "duration": {
             "units": "",
             "value": null
           },
-          "effectNotes": "",
+          "effectNotes": "Dispel prerolled: [[1d20+min(20,@cl)]] [[1d20+min(20,@cl)]] [[1d20+min(20,@cl)]] [[1d20+min(20,@cl)]] [[1d20+min(20,@cl)]]\nNeed to be equal or higher than 11 + caster level of target.",
           "epic": "",
           "favorite": false,
           "formula": "",
@@ -1273,8 +1274,8 @@
             "customTexture": "",
             "overrideColor": false,
             "overrideTexture": false,
-            "size": 0,
-            "type": ""
+            "size": "20",
+            "type": "circle"
           },
           "metamagicFeats": {
             "empowered": false,
@@ -1290,8 +1291,9 @@
           "originId": "b6ec75199f2656de",
           "originPack": "warcraftrpg2e.warcraft-spells",
           "originVersion": 109,
+          "perRoundActions": [],
           "possibleUpdate": false,
-          "powerPointsCost": 1,
+          "powerPointsCost": 0,
           "pr": false,
           "preparation": {
             "autoDeductCharges": true,
@@ -1311,6 +1313,7 @@
             "enabled": false,
             "formula": ""
           },
+          "requirements": [],
           "requiresPsionicFocus": false,
           "resistances": [],
           "rollTableDraw": {
@@ -1329,15 +1332,15 @@
             "type": ""
           },
           "school": "abj",
-          "shortDescription": "<p>As dispel magic, but +20 on</p>",
+          "shortDescription": "\n\n\n<p>\nYou can use <i>dispel magic </i>to end ongoing spells that have been cast on a creature or object, to temporarily suppress the magical abilities of a magic item, to end ongoing spells (or at least their effects) within an area, or to counter another spellcaster’s spell. A dispelled spell ends as if its duration had expired. Some spells, as detailed in their descriptions, can’t be defeated by <i>dispel magic</i>. <i>Dispel magic </i>can dispel (but not counter) spell-like effects just as it does spells.\n</p><p><i>Note: </i>The effect of a spell with an instantaneous duration can’t be dispelled, because the magical effect is already over before the <i>dispel magic </i>can take effect.\n</p><p>You choose to use <i>dispel magic </i>in one of three ways: a targeted dispel, an area dispel, or a counterspell:\n</p><p><i>Targeted Dispel: </i>One object, creature, or spell is the target of the <i>dispel magic </i>spell. You make a dispel check (1d20 + your caster level, maximum +20) against the spell or against each ongoing spell currently in effect on the object or creature. The DC for this dispel check is 11 + the spell’s caster level. If you succeed on a particular check, that spell is dispelled; if you fail, that spell remains in effect.\n</p><p>If you target an object or creature that is the effect of an ongoing spell (such as a monster summoned by <i>monster summoning</i>), you make a dispel check to end the spell that conjured the object or creature.\n</p><p>If the object that you target is a magic item, you make a dispel check against the item’s caster level. If you succeed, all the item’s magical properties are suppressed for 1d4 rounds, after which the item recovers on its own. A suppressed item becomes nonmagical for the duration of the effect. An interdimensional interface (such as a <i>bag of holding</i>) is temporarily closed. A magic item’s physical properties are unchanged: A suppressed magic sword is still a sword (a masterwork sword, in fact). Artifacts and deities are unaffected by mortal magic such as this.\n</p><p>You automatically succeed on your dispel check against any spell that you cast yourself.\n</p><p><i>Area Dispel: </i>When <i>dispel magic </i>is used in this way, the spell affects everything within a 20-foot radius.\n</p><p>For each creature within the area that is the subject of one or more spells, you make a dispel check against the spell with the highest caster level. If that check fails, you make dispel checks against progressively weaker spells until you dispel one spell (which discharges the <i>dispel magic </i>spell so far as that target is concerned) or until you fail all your checks. The creature’s magic items are not affected.\n</p><p>For each object within the area that is the target of one or more spells, you make dispel checks as with creatures. Magic items are not affected by an area dispel.\n</p><p>For each ongoing area or effect spell whose point of origin is within the area of the <i>dispel magic </i>spell, you can make a dispel check to dispel the spell.\n</p><p>For each ongoing spell whose area overlaps that of the <i>dispel magic </i>spell, you can make a dispel check to end the effect, but only within the overlapping area.\n</p><p>If an object or creature that is the effect of an ongoing spell (such as a monster summoned by <i>monster summoning</i>) is in the area, you can make a dispel check to end the spell that conjured that object or creature (returning it whence it came) in addition to attempting to dispel spells targeting the creature or object.\n</p><p>You may choose to automatically succeed on dispel checks against any spell that you have cast.\n</p><p><i>Counterspell: </i>When <i>dispel magic </i>is used in this way, the spell targets a spellcaster and is cast as a counterspell. Unlike a true counterspell, however, <i>dispel magic </i>may not work; you must make a dispel check to counter the other spellcaster’s spell.\n</p><p>Additionally, <i>greater dispel magic </i>has a chance to dispel any effect that <i>remove curse </i>can remove, even if <i>dispel magic </i>can’t dispel that effect.\n</p>\n<hr/>\n\n\n",
           "showInQuickbar": false,
           "slOffset": 0,
-          "snip": "As dispel magic, but +20 on",
+          "snip": "As dispel magic, but +20 on check.",
           "source": "World of Warcraft: Monster Guide, p. 70",
           "specialActions": [],
           "specialId": null,
           "specialPrepared": false,
-          "spellArea": "",
+          "spellArea": "one spellcaster, creature, or object; or 20-ft.-radius burst",
           "spellbook": "spelllike",
           "spellDuration": "Instantaneous",
           "spellDurationData": {
@@ -1356,7 +1359,7 @@
           "target": {
             "value": "Ray"
           },
-          "types": "force",
+          "types": "",
           "uniqueId": "",
           "userNonRemovable": false,
           "uses": {
@@ -1374,8 +1377,8 @@
             "value": 0
           },
           "warcraftManualPolicy": {
-            "mode": "manual",
-            "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+            "mode": "srd-baseline-with-manual-boundary",
+            "reason": "SRD mechanics are retained, but Warcraft-specific creatures, forms, slot manipulation, or persistent cross-actor state require GM adjudication."
           }
         },
         "type": "spell"
@@ -1425,7 +1428,7 @@
                     329
                   ],
                   "section": "Read Magic",
-                  "verification": "text-extracted-header"
+                  "verification": "srd-mechanics+text-extracted-header"
                 }
               },
               "uses": 0
@@ -1516,7 +1519,7 @@
           "description": {
             "chat": "",
             "unidentified": "",
-            "value": "<p>You may read scrolls and spellbooks.</p><hr><p><strong>Fel Ravager spell-like ability:</strong> At will; caster level 14; save DC 11 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+            "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;divination;\n    <br>\n    <strong>Level:</strong>&nbsp;Bard 0, Cleric 0, Druid 0, Paladin 1, Ranger 1, Sorcerer 0, Wizard 0;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, F (a clear crystal or mineral prism)<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;personal<br>\n    \n    <strong>Target:</strong>&nbsp;you<br>\n    \n    <strong>Duration:</strong>&nbsp;10 Minute/Level<br>\n    \n  </p>\n  <h2>Description</h2>\n  <p>By means of <em>read magic, </em>you can decipher magical inscriptions on objects&mdash;books, scrolls, weapons, and the like&mdash;that would otherwise be unintelligible. This deciphering does not normally invoke the magic contained in the writing, although it may do so in the case of a cursed scroll. Furthermore, once the spell is cast and you have read the magical inscription, you are thereafter able to read that particular writing without recourse to the use of <em>read magic. </em>You can read at the rate of one page (250 words) per minute.</p>\n<p>The spell allows you to identify a <em>glyph of warding</em> with a DC 13 Spellcraft check, a <em>greater glyph of warding</em> with a DC 16 Spellcraft check, or any <em>symbol</em> spell with a Spellcraft check (DC 10 + spell level).</p>\n<p><em>Read magic </em>can be made permanent with a <em>permanency</em> spell.</p>\n<p><em>Focus: </em>A clear crystal or mineral prism.</p>\n<hr />\n</div>\n<hr><p><strong>Fel Ravager spell-like ability:</strong> At will; caster level 14; save DC 11 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
           },
           "display": "Personal",
           "duration": {
@@ -1634,10 +1637,10 @@
             "type": ""
           },
           "school": "div",
-          "shortDescription": "<p>You may read scrolls and spellbooks.</p>",
+          "shortDescription": "<p>By means of <em>read magic, </em>you can decipher magical inscriptions on objects&mdash;books, scrolls, weapons, and the like&mdash;that would otherwise be unintelligible. This deciphering does not normally invoke the magic contained in the writing, although it may do so in the case of a cursed scroll. Furthermore, once the spell is cast and you have read the magical inscription, you are thereafter able to read that particular writing without recourse to the use of <em>read magic. </em>You can read at the rate of one page (250 words) per minute.</p>\n<p>The spell allows you to identify a <em>glyph of warding</em> with a DC 13 Spellcraft check, a <em>greater glyph of warding</em> with a DC 16 Spellcraft check, or any <em>symbol</em> spell with a Spellcraft check (DC 10 + spell level).</p>\n<p><em>Read magic </em>can be made permanent with a <em>permanency</em> spell.</p>\n<p><em>Focus: </em>A clear crystal or mineral prism.</p>\n<hr />",
           "showInQuickbar": false,
           "slOffset": 0,
-          "snip": "You may read scrolls and spellbooks.",
+          "snip": "Read scrolls and spellbooks.",
           "source": "World of Warcraft: Monster Guide, p. 70",
           "specialActions": [
             {
@@ -1799,7 +1802,7 @@
                     285
                   ],
                   "section": "Cause Fear",
-                  "verification": "text-extracted-header"
+                  "verification": "srd-mechanics+text-extracted-header"
                 }
               },
               "uses": 1
@@ -1890,7 +1893,7 @@
           "description": {
             "chat": "",
             "unidentified": "",
-            "value": "<p>One creature of 5 HD or less fl ees for</p><hr><p><strong>Fel Ravager spell-like ability:</strong> 1/day; caster level 14; save DC 12 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
+            "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;necromancy&nbsp;[fear, mind-affecting];\n    <br>\n    <strong>Level:</strong>&nbsp;Bard 1, Blackguard 1, Cleric 1, Sorcerer 1, Wizard 1;\n    <strong>Domain:</strong>&nbsp;Death 1;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;close (25 ft. + 5 ft./2 levels)<br>\n    \n    <strong>Target:</strong>&nbsp;one living creature with 5 or fewer hd<br>\n    \n    <strong>Duration:</strong>&nbsp;See Text<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;Will partial\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThe affected creature becomes frightened. If the subject succeeds on a Will save, it is shaken for 1 round. Creatures with 6 or more Hit Dice are immune to this effect.\n</p><p><i>Cause fear </i>counters and dispels <i>remove fear</i>.\n</p>\n<hr/>\n\n\n\n</div>\n<hr><p><strong>Fel Ravager spell-like ability:</strong> 1/day; caster level 14; save DC 12 where applicable. Spell-like abilities have no components and normally use a standard action.</p>"
           },
           "display": "Close (25 ft. + 5 ft./2 levels)",
           "duration": {
@@ -2008,10 +2011,10 @@
             "type": ""
           },
           "school": "nec",
-          "shortDescription": "<p>One creature of 5 HD or less fl ees for</p>",
+          "shortDescription": "\n\n\n<p>\nThe affected creature becomes frightened. If the subject succeeds on a Will save, it is shaken for 1 round. Creatures with 6 or more Hit Dice are immune to this effect.\n</p><p><i>Cause fear </i>counters and dispels <i>remove fear</i>.\n</p>\n<hr/>\n\n\n",
           "showInQuickbar": false,
           "slOffset": 0,
-          "snip": "One creature of 5 HD or less fl ees for",
+          "snip": "One creature of 5 HD or less flees for 1d4 rounds.",
           "source": "World of Warcraft: Monster Guide, p. 70",
           "specialActions": [
             {

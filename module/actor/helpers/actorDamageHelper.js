@@ -275,7 +275,7 @@ export class ActorDamageHelper {
                     speaker: ChatMessage.getSpeaker({ actor: a.data }),
                     rollMode: finalAc.rollMode || "gmroll",
                     sound: CONFIG.sounds.dice,
-                    "flags.D35E.noRollRender": true,
+                    "flags.warcraftrpg2e.noRollRender": true,
                 };
                 let chatTemplateData = {
                     name: a.name,

@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           293
         ],
         "section": "Detect Chaos/Evil/Good/Law",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Reveals creatures,</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>This combined compendium record represents four separate versions. Choose chaos, evil, good, or law when learning or preparing it. It detects creatures of that alignment, aligned divine casters and faiths, aligned spells, and aligned magic items. A creature of the opposite alignment can be stunned for 1 round if the strongest aura is overwhelming and its source has at least twice the detector's character level.</p><ul><li><strong>Round 1:</strong> Presence or absence of matching auras.</li><li><strong>Round 2:</strong> Number of auras and strength of the strongest.</li><li><strong>Round 3:</strong> Strength and location of each; an unseen aura reveals direction but not exact location.</li></ul><p>Aura strengths are: ordinary aligned creatures - faint through 10 HD, moderate 11-25, strong 26-50, overwhelming 51+; undead - faint through 2 HD, moderate 3-8, strong 9-20, overwhelming 21+; aligned outsiders - faint through 1 HD, moderate 2-4, strong 5-10, overwhelming 11+; aligned divine casters - faint at level 1, moderate 2-4, strong 5-10, overwhelming 11+; aligned spells or items by caster level - faint through 2nd, moderate 3rd-8th, strong 9th-20th, overwhelming 21st+.</p><p>After its source ends, an aura remains dim for 1d6 rounds if faint, 1d6 minutes if moderate, 1d6 x 10 minutes if strong, or 1d6 days if overwhelming. Each round you may turn the cone. Barriers block detection at 1 foot of stone, 1 inch of common metal, a thin lead sheet, or 3 feet of wood or earth. Mundane hazards are not alignment auras, and merely beneficial items are not automatically good.</p><p><strong>Automation boundary:</strong> Choose and record one version, track concentration rounds, compare aura categories, and apply any overwhelming-aura stun manually.</p>"
     },
     "display": "60 ft.",
     "duration": {
@@ -213,10 +213,10 @@
       "type": ""
     },
     "school": "div",
-    "shortDescription": "<p>Reveals creatures,</p>",
+    "shortDescription": "<p>Choose an alignment and study a cone to learn the presence, number, strength, and location of matching auras.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Reveals creatures,",
+    "snip": "Choose an alignment and study a cone to learn the presence, number, strength, and location of matching auras.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 267-267",
     "specialActions": [],
     "specialId": null,
@@ -226,7 +226,7 @@
     "spellDuration": "Concentration, up to 10 min./ level (D)",
     "spellDurationData": {
       "units": "spec",
-      "value": 1
+      "value": null
     },
     "spellEffect": "",
     "spellType": {
@@ -259,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Choose and record one version, track concentration rounds, compare aura categories, and apply any overwhelming-aura stun manually."
     }
   },
   "type": "spell"

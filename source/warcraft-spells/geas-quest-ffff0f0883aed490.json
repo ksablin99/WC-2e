@@ -32,7 +32,7 @@
           268
         ],
         "section": "Geas/Quest",
-        "verification": "spell-list-entry"
+        "verification": "srd-mechanics+spell-list-entry"
       }
     }
   },
@@ -81,7 +81,7 @@
       "material": false,
       "somatic": false,
       "value": "",
-      "verbal": false
+      "verbal": true
     },
     "conditionals": [],
     "container": "None",
@@ -101,7 +101,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>As lesser geas, plus it affects any</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;enchantment&nbsp;(compulsion)&nbsp;[language-dependent, mind-affecting];\n    <br>\n    <strong>Level:</strong>&nbsp;Bard 6, Cleric 6, Sorcerer 6, Wizard 6;\n    <strong>Domain:</strong>&nbsp;Charm 6, Nobility 6;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V<br>\n    \n      <strong>Casting Time:</strong>&nbsp;10 minutes<br>\n    <strong>Range:</strong>&nbsp;close (25 ft. + 5 ft./2 levels)<br>\n    \n    <strong>Target:</strong>&nbsp;one living creature<br>\n    \n    <strong>Duration:</strong>&nbsp;Special (D)<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;None\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nA <i>geas </i>places a magical command on a creature to carry out some service or to refrain from some action or course of activity, as desired by you. The creature must be able to understand you. While a <i>geas </i>cannot compel a creature to kill itself or perform acts that would result in certain death, it can cause almost any other course of activity.\n</p><p>The <i>geased </i>creature must follow the given instructions until the <i>geas</i> is completed, no matter how long it takes.\n</p><p>If the instructions involve some open-ended task that the recipient cannot complete through his own actions the spell remains in effect for a maximum of one day per caster level. A clever recipient can subvert some instructions:\n</p><p>If the subject is prevented from obeying the <i>geas </i>for 24 hours, the subject takes 3d6 points of damage each day it does not attempt to follow the <i>geas/quest</i>. Additionally, each day it must make a Fortitude saving throw or become sickened. These effects end 24 hours after the creature attempts to resume the <i>geas/quest</i>.\n</p><p>A <i>remove curse </i>spell ends a <i>geas/quest </i>spell only if its caster level is at least two higher than your caster level. <i>Break enchantment </i>does not end a <i>geas/quest</i>, but <i>limited wish</i>, <i>miracle</i>, and <i>wish </i>do.\n</p><p>Bards, sorcerers, and wizards usually refer to this spell as <i>geas, </i>while clerics call the same spell <i>quest</i>.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "",
     "duration": {
@@ -215,10 +215,10 @@
       "type": ""
     },
     "school": "enc",
-    "shortDescription": "<p>As lesser geas, plus it affects any</p>",
+    "shortDescription": "\n\n\n<p>\nA <i>geas </i>places a magical command on a creature to carry out some service or to refrain from some action or course of activity, as desired by you. The creature must be able to understand you. While a <i>geas </i>cannot compel a creature to kill itself or perform acts that would result in certain death, it can cause almost any other course of activity.\n</p><p>The <i>geased </i>creature must follow the given instructions until the <i>geas</i> is completed, no matter how long it takes.\n</p><p>If the instructions involve some open-ended task that the recipient cannot complete through his own actions the spell remains in effect for a maximum of one day per caster level. A clever recipient can subvert some instructions:\n</p><p>If the subject is prevented from obeying the <i>geas </i>for 24 hours, the subject takes 3d6 points of damage each day it does not attempt to follow the <i>geas/quest</i>. Additionally, each day it must make a Fortitude saving throw or become sickened. These effects end 24 hours after the creature attempts to resume the <i>geas/quest</i>.\n</p><p>A <i>remove curse </i>spell ends a <i>geas/quest </i>spell only if its caster level is at least two higher than your caster level. <i>Break enchantment </i>does not end a <i>geas/quest</i>, but <i>limited wish</i>, <i>miracle</i>, and <i>wish </i>do.\n</p><p>Bards, sorcerers, and wizards usually refer to this spell as <i>geas, </i>while clerics call the same spell <i>quest</i>.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "As lesser geas, plus it affects any",
+    "snip": "As lesser geas, plus it affects any creature.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 264-268",
     "specialActions": [],
     "specialId": null,

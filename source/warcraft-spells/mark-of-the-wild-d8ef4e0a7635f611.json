@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -34,7 +34,7 @@
           319
         ],
         "section": "Mark of the Wild",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -55,7 +55,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -104,7 +104,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Subject gains +6 natural</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>The target gains a +6 enhancement bonus to natural armor and a +2 bonus to Strength, Agility, and Stamina for the duration.</p><p>The material component is one sprig of silverleaf.</p><p><strong>Automation boundary:</strong> Apply and remove the natural-armor and ability bonuses manually; the spell does not alter actor data automatically.</p>"
     },
     "display": "30 ft.",
     "duration": {
@@ -220,10 +220,10 @@
       "type": "willnegates"
     },
     "school": "trs",
-    "shortDescription": "<p>Subject gains +6 natural</p>",
+    "shortDescription": "<p>Grant one living creature enhanced natural armor and improved physical abilities.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Subject gains +6 natural",
+    "snip": "Grant one living creature enhanced natural armor and improved physical abilities.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 269-273",
     "specialActions": [],
     "specialId": null,
@@ -266,7 +266,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Apply and remove the natural-armor and ability bonuses manually; the spell does not alter actor data automatically."
     }
   },
   "type": "spell"

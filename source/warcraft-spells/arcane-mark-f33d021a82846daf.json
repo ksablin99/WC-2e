@@ -32,7 +32,7 @@
           278
         ],
         "section": "Arcane Mark",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Inscribes a personal rune (visible or</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;miscellaneous;\n    <br>\n    <strong>Level:</strong>&nbsp;Sorcerer 0, Wizard 0;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;0 feet<br>\n    \n    \n    <strong>Effect:</strong>&nbsp;One personal rune or mark, all of which must fit within 1 sq. ft.<br>\n    <strong>Duration:</strong>&nbsp;Permanent<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;None\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThis spell allows you to inscribe your personal rune or mark, which can consist of no more than six characters. The writing can be visible or invisible. An <i>arcane mark </i>spell enables you to etch the rune upon any substance without harm to the material upon which it is placed. If an invisible mark is made, a <i>detect magic</i> spell causes it to glow and be visible, though not necessarily understandable.\n</p><p><i>See invisibility</i>, <i>true seeing</i>, a <i>gem of seeing</i>, or a <i>robe of eyes</i> likewise allows the user to see an invisible <i>arcane mark. </i>A <i>read magic</i> spell reveals the words, if any. The mark cannot be dispelled, but it can be removed by the caster or by an <i>erase</i> spell.\n</p><p>If an <i>arcane mark</i> is placed on a living being, normal wear gradually causes the effect to fade in about a month.\n</p><p><i>Arcane mark</i> must be cast on an object prior to casting <i>instant summons</i> on the same object (see that spell description for details).\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "0 ft.",
     "duration": {
@@ -213,10 +213,10 @@
       "type": ""
     },
     "school": "uni",
-    "shortDescription": "<p>Inscribes a personal rune (visible or</p>",
+    "shortDescription": "\n\n\n<p>\nThis spell allows you to inscribe your personal rune or mark, which can consist of no more than six characters. The writing can be visible or invisible. An <i>arcane mark </i>spell enables you to etch the rune upon any substance without harm to the material upon which it is placed. If an invisible mark is made, a <i>detect magic</i> spell causes it to glow and be visible, though not necessarily understandable.\n</p><p><i>See invisibility</i>, <i>true seeing</i>, a <i>gem of seeing</i>, or a <i>robe of eyes</i> likewise allows the user to see an invisible <i>arcane mark. </i>A <i>read magic</i> spell reveals the words, if any. The mark cannot be dispelled, but it can be removed by the caster or by an <i>erase</i> spell.\n</p><p>If an <i>arcane mark</i> is placed on a living being, normal wear gradually causes the effect to fade in about a month.\n</p><p><i>Arcane mark</i> must be cast on an object prior to casting <i>instant summons</i> on the same object (see that spell description for details).\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Inscribes a personal rune (visible or",
+    "snip": "Inscribes a personal rune (visible or invisible).",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 263-263",
     "specialActions": [],
     "specialId": null,

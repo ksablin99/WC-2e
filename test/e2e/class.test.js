@@ -151,7 +151,18 @@ test('Fighter lv5: class features appear on character sheet', async ({ page }) =
 
   // Click the Features tab nav link (data-tab="feats") to make class abilities visible
   await sheetLocator.locator('nav [data-tab="feats"]').click();
-  await page.waitForTimeout(300);
+  // The sheet intentionally separates the Class row from its automatically
+  // granted Class Features. Use the rendered "All" section so both groups are
+  // visible without assuming their numeric data-tab ids.
+  const allTab = sheetLocator.locator('nav[data-group="feats"] [data-tab]')
+    .filter({ hasText: /^All$/ })
+    .first();
+  await expect(allTab).toBeVisible();
+  const allTabId = await allTab.getAttribute('data-tab');
+  expect(allTabId, 'All-features section should have a tab id').toBeTruthy();
+  await allTab.click();
+  const classSection = sheetLocator.locator(`.feats-body > [data-group="feats"][data-tab="${allTabId}"]`);
+  await expect(classSection).toBeVisible();
 
   // ── 3. Assert class abilities visible in the sheet ────────────────────────
   const expectedFeatures = [
@@ -168,13 +179,13 @@ test('Fighter lv5: class features appear on character sheet', async ({ page }) =
 
   for (const featureName of expectedFeatures) {
     await expect(
-      sheetLocator.locator(`.item-name:has-text("${featureName}")`).first(),
+      classSection.locator(`.item-name:has-text("${featureName}")`).first(),
       `"${featureName}" should be visible on the Fighter sheet`
     ).toBeVisible();
   }
 
   // ── 4. Assert Bonus Feat appears at least 3 times (levels 1, 2, 4) ────────
-  const bonusFeatRows = sheetLocator.locator('.item-name:has-text("Bonus Feat (Fighter)")');
+  const bonusFeatRows = classSection.locator('.item-name:has-text("Bonus Feat (Fighter)")');
   const bonusFeatCount = await bonusFeatRows.count();
   expect(bonusFeatCount, 'Fighter lv5 should have at least 3 Bonus Feat rows').toBeGreaterThanOrEqual(3);
 });

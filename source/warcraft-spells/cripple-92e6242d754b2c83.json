@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           289
         ],
         "section": "Cripple",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Target suffers penalties on attacks, damage,</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>On a failed Will save, the target may take only one move action or one standard action each round. It takes -2 AC, melee attacks, melee damage, and Reflex, and its jumping distances are halved.</p><p>It also takes a Strength penalty of 1d6 + 1 per two caster levels, with the caster-level portion capped at 5; Strength cannot fall below 1. <em>Bloodlust</em> counters and dispels this spell.</p><p><strong>Automation boundary:</strong> Apply the rolled Strength reduction, action restriction, derived penalties, and counterspell interaction manually.</p>"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -213,10 +213,10 @@
       "type": "willnegates"
     },
     "school": "trs",
-    "shortDescription": "<p>Target suffers penalties on attacks, damage,</p>",
+    "shortDescription": "<p>Limit a living target to one move or standard action and impose combat, Reflex, jumping, and Strength penalties.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Target suffers penalties on attacks, damage,",
+    "snip": "Limit a living target to one move or standard action and impose combat, Reflex, jumping, and Strength penalties.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 265-265",
     "specialActions": [],
     "specialId": null,
@@ -259,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Apply the rolled Strength reduction, action restriction, derived penalties, and counterspell interaction manually."
     }
   },
   "type": "spell"

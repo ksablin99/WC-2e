@@ -19,7 +19,12 @@
         "category": "Metamagic",
         "prerequisite": "Iron Will, Magic Energy Control, caster level 5th.",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "When you are a spell's target, make a Spellcraft check against DC 15 + that spell's level as a free action. No readied action is required. Success identifies the spell and lets you immediately attempt to counter it using the normal counterspell rules.",
+          "manual": "Foundry records the feat but does not interrupt another caster automatically. The player or GM must confirm that the user is a target, roll the Spellcraft check, identify the spell on success, choose a legal counterspell method, and expend or resolve that method normally.",
+          "summary": "Interrupt a spell aimed specifically at you and proceed directly to a counterspell attempt."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": false
       },
@@ -33,7 +38,7 @@
           143
         ],
         "section": "Block Spell",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +153,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> Metamagic.</p><p><strong>Prerequisites:</strong> Iron Will, Magic Energy Control, caster level 5th.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 143) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> Metamagic feat</p><p><strong>Prerequisites:</strong> Iron Will, Magic Energy Control, caster level 5th.</p><p><strong>Summary:</strong> Interrupt a spell aimed specifically at you and proceed directly to a counterspell attempt.</p><p><strong>Benefit:</strong> When you are a spell&#39;s target, make a Spellcraft check against DC 15 + that spell&#39;s level as a free action. No readied action is required. Success identifies the spell and lets you immediately attempt to counter it using the normal counterspell rules.</p><p><strong>Foundry and GM handling:</strong> Foundry records the feat but does not interrupt another caster automatically. The player or GM must confirm that the user is a target, roll the Spellcraft check, identify the spell on success, choose a legal counterspell method, and expend or resolve that method normally.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +253,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>Metamagic feat; requires Iron Will, Magic Energy Control, caster level 5th..</p>",
+    "shortDescription": "<p>Interrupt a spell aimed specifically at you and proceed directly to a counterspell attempt.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 143",

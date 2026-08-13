@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           302
         ],
         "section": "Eye of Kilrogg",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 10,
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Invisible, fl oating eye moves 30 ft./</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>Create an invisible visual sensor at any point you can see. While concentrating, you see through it as if present. It moves 30 feet per round when looking mainly ahead and down, or 10 feet per round when thoroughly inspecting walls and ceiling. It can move in any direction and pass through openings at least 1 inch across, but not solid barriers or planar portals.</p><p>Without concentration the eye becomes inert until you resume. The material component is a small amount of bat fur.</p><p><strong>Automation boundary:</strong> Move a proxy sensor and enforce concentration, visibility, and barrier limits manually.</p>"
     },
     "display": "Unlimited",
     "duration": {
@@ -213,10 +213,10 @@
       "type": ""
     },
     "school": "div",
-    "shortDescription": "<p>Invisible, fl oating eye moves 30 ft./</p>",
+    "shortDescription": "<p>Create an invisible remote eye that moves through one-inch openings and transmits your normal vision while you concentrate.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Invisible, fl oating eye moves 30 ft./",
+    "snip": "Create an invisible remote eye that moves through one-inch openings and transmits your normal vision while you concentrate.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 266-266",
     "specialActions": [],
     "specialId": null,
@@ -259,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Move a proxy sensor and enforce concentration, visibility, and barrier limits manually."
     }
   },
   "type": "spell"

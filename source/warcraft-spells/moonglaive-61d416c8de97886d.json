@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -34,7 +34,7 @@
           321
         ],
         "section": "Moonglaive",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -55,7 +55,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -104,7 +104,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>You fl ing a conjured moonglaive at</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>You create a force moonglaive and are treated as proficient with it for this spell. Make a ranged attack against the first target. On a hit, make a second ranged attack at -2 against another eligible target. If that hits, make a third ranged attack at -4 against a third target or back against the first. No two targets may be more than 15 feet apart. The glaive disappears after a miss or after the third attack.</p><p>Treat it as a normal moonglaive except that it is made of force: 1d4 damage if Small or 1d6 if Medium, slashing damage, critical 19-20/x2, and a 20-foot range increment.</p><p><strong>Automation boundary:</strong> Create the three attack sequence and select each ricochet target manually; the item does not generate follow-up attacks automatically.</p>"
     },
     "display": "See text",
     "duration": {
@@ -219,10 +219,10 @@
       "type": ""
     },
     "school": "con",
-    "shortDescription": "<p>You fl ing a conjured moonglaive at</p>",
+    "shortDescription": "<p>Hurl a force moonglaive that can ricochet through as many as three nearby targets.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "You fl ing a conjured moonglaive at",
+    "snip": "Hurl a force moonglaive that can ricochet through as many as three nearby targets.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 263-269",
     "specialActions": [],
     "specialId": null,
@@ -265,7 +265,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Create the three attack sequence and select each ricochet target manually; the item does not generate follow-up attacks automatically."
     }
   },
   "type": "spell"

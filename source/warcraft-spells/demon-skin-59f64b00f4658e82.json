@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           292
         ],
         "section": "Demon Skin",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>The caster creates a layer of dense</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>A living layer of demonic hide grants +3 enhancement natural armor and 18 temporary hit points for 30 minutes. The material component is a ground fel-stalker tooth.</p><p><strong>Automation boundary:</strong> Apply and later remove the armor bonus and temporary hit points manually.</p>"
     },
     "display": "Personal",
     "duration": {
@@ -208,15 +208,15 @@
       "dc": "0",
       "dcAutoAbility": "",
       "dcAutoType": "",
-      "description": "None",
+      "description": "",
       "originVersion": 97,
       "type": ""
     },
     "school": "con",
-    "shortDescription": "<p>The caster creates a layer of dense</p>",
+    "shortDescription": "<p>Gain +3 enhancement natural armor and 18 temporary hit points for 30 minutes.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "The caster creates a layer of dense",
+    "snip": "Gain +3 enhancement natural armor and 18 temporary hit points for 30 minutes.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 266-266",
     "specialActions": [],
     "specialId": null,
@@ -233,7 +233,7 @@
       "_deprecated": true,
       "value": ""
     },
-    "sr": true,
+    "sr": false,
     "subschool": "",
     "summon": [],
     "tags": [],
@@ -259,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Apply and later remove the armor bonus and temporary hit points manually."
     }
   },
   "type": "spell"

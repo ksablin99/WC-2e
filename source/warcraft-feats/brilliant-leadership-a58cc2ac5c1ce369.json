@@ -19,7 +19,12 @@
         "category": "Metamagic",
         "prerequisite": "Leadership, able to cast 3rd-level spells.",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "Each day, every follower of yours who can cast spells gains one extra spell slot. Its level may be any level no higher than two below the highest spell level you can cast.",
+          "manual": "Foundry does not determine followers or grant their daily slots from their leader. The GM must identify qualifying followers, determine the leader's highest castable spell level, choose each extra slot's permitted level, and remove or refresh those slots with the daily preparation cycle.",
+          "summary": "Your spellcasting followers receive an additional spell slot each day."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": false
       },
@@ -33,7 +38,7 @@
           143
         ],
         "section": "Brilliant Leadership",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +153,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> Metamagic.</p><p><strong>Prerequisites:</strong> Leadership, able to cast 3rd-level spells.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 143) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> Metamagic feat</p><p><strong>Prerequisites:</strong> Leadership, able to cast 3rd-level spells.</p><p><strong>Summary:</strong> Your spellcasting followers receive an additional spell slot each day.</p><p><strong>Benefit:</strong> Each day, every follower of yours who can cast spells gains one extra spell slot. Its level may be any level no higher than two below the highest spell level you can cast.</p><p><strong>Foundry and GM handling:</strong> Foundry does not determine followers or grant their daily slots from their leader. The GM must identify qualifying followers, determine the leader&#39;s highest castable spell level, choose each extra slot&#39;s permitted level, and remove or refresh those slots with the daily preparation cycle.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +253,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>Metamagic feat; requires Leadership, able to cast 3rd-level spells..</p>",
+    "shortDescription": "<p>Your spellcasting followers receive an additional spell slot each day.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 143",

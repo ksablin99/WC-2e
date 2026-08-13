@@ -109,7 +109,7 @@ test.describe('skill roll: situational bonus field (sk-bonus)', () => {
 
     const total1 = await page.evaluate(() => {
       const msg = game.messages.contents.at(-1);
-      return msg?.flags?.D35E?.chatTemplateData?.total ?? null;
+      return msg?.flags?.warcraftrpg2e?.chatTemplateData?.total ?? null;
     });
 
     const count1 = await page.evaluate(() => game.messages.size);
@@ -118,7 +118,7 @@ test.describe('skill roll: situational bonus field (sk-bonus)', () => {
 
     const total2 = await page.evaluate(() => {
       const msg = game.messages.contents.at(-1);
-      return msg?.flags?.D35E?.chatTemplateData?.total ?? null;
+      return msg?.flags?.warcraftrpg2e?.chatTemplateData?.total ?? null;
     });
 
     expect(total1).not.toBeNull();
@@ -173,9 +173,9 @@ test.describe('skill roll: situational bonus field (sk-bonus)', () => {
 
     const breakdown = await page.evaluate((id) => {
       const msg = game.messages.contents.at(-1);
-      const total = msg?.flags?.D35E?.chatTemplateData?.total ?? null;
+      const total = msg?.flags?.warcraftrpg2e?.chatTemplateData?.total ?? null;
       const roll =
-        msg?.rolls?.[0] || msg?.flags?.D35E?.chatTemplateData?.roll || null;
+        msg?.rolls?.[0] || msg?.flags?.warcraftrpg2e?.chatTemplateData?.roll || null;
       let d20 = null;
       for (const term of roll?.terms || []) {
         if (term.faces !== 20 || !term.results?.length) continue;

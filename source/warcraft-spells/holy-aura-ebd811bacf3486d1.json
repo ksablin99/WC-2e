@@ -32,7 +32,7 @@
           310
         ],
         "section": "Holy Aura",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -103,7 +103,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>+4 to AC, +4 resistance and SR 25</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;abjuration&nbsp;[good];\n    <br>\n    <strong>Level:</strong>&nbsp;Cleric 8;\n    <strong>Domain:</strong>&nbsp;Good 8;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, F (a tiny reliquary containing some sacred relic  the reliquary costs at least 500 gp)<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;20 feet<br>\n    \n    <strong>Target:</strong>&nbsp;one creature/level in a 20-ft.-radius burst centered on you<br>\n    \n    <strong>Duration:</strong>&nbsp;1 Round/Level (D)<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;15<br>\n        <strong>Saving Throw:</strong>&nbsp;Fortitude Negates\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nA brilliant divine radiance surrounds the subjects, protecting them from attacks, granting them resistance to spells cast by evil creatures, and causing evil creatures to become blinded when they strike the subjects. This abjuration has four effects.\n</p><p>First, each warded creature gains a +4 deflection bonus to AC and a +4 resistance bonus on saves. Unlike <i>protection from evil</i>, this benefit applies against all attacks, not just against attacks by evil creatures.\n</p><p>Second, each warded creature gains spell resistance 25 against evil spells and spells cast by evil creatures.\n</p><p>Third, the abjuration blocks possession and mental influence, just as <i>protection from evil </i>does.\n</p><p>Finally, if an evil creature succeeds on a melee attack against a warded creature, the offending attacker is blinded (Fortitude save negates, as <i>blindness/deafness</i>, but against <i>holy aura’s </i>save DC).\n</p><p><i>Focus: </i>A tiny reliquary containing some sacred relic. The reliquary costs at least 500 gp.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "20 ft.",
     "duration": {
@@ -216,10 +216,10 @@
       "type": ""
     },
     "school": "abj",
-    "shortDescription": "<p>+4 to AC, +4 resistance and SR 25</p>",
+    "shortDescription": "\n\n\n<p>\nA brilliant divine radiance surrounds the subjects, protecting them from attacks, granting them resistance to spells cast by evil creatures, and causing evil creatures to become blinded when they strike the subjects. This abjuration has four effects.\n</p><p>First, each warded creature gains a +4 deflection bonus to AC and a +4 resistance bonus on saves. Unlike <i>protection from evil</i>, this benefit applies against all attacks, not just against attacks by evil creatures.\n</p><p>Second, each warded creature gains spell resistance 25 against evil spells and spells cast by evil creatures.\n</p><p>Third, the abjuration blocks possession and mental influence, just as <i>protection from evil </i>does.\n</p><p>Finally, if an evil creature succeeds on a melee attack against a warded creature, the offending attacker is blinded (Fortitude save negates, as <i>blindness/deafness</i>, but against <i>holy aura’s </i>save DC).\n</p><p><i>Focus: </i>A tiny reliquary containing some sacred relic. The reliquary costs at least 500 gp.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "+4 to AC, +4 resistance and SR 25",
+    "snip": "+4 to AC, +4 resistance, and SR 25 against evil spells.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 270-270",
     "specialActions": [
       {

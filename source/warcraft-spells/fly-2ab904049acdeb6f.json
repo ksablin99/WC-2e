@@ -32,7 +32,7 @@
           304
         ],
         "section": "Fly",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Subject fl ies at speed of 60 ft.</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;transmutation;\n    <br>\n    <strong>Level:</strong>&nbsp;Sorcerer 3, Wizard 3;\n    <strong>Domain:</strong>&nbsp;Travel 3;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, F/DF (a wing feather from any bird)<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;touch<br>\n    \n    <strong>Target:</strong>&nbsp;creature touched<br>\n    \n    <strong>Duration:</strong>&nbsp;1 Minute/Level<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;5<br>\n        <strong>Saving Throw:</strong>&nbsp;Will negates (harmless)\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThe subject can fly at a speed of 60 feet (or 40 feet if it wears medium or heavy armor, or if it carries a medium or heavy load). It can ascend at half speed and descend at double speed, and its maneuverability is good. Using a <i>fly </i>spell requires only as much concentration as walking, so the subject can attack or cast spells normally. The subject of a <i>fly </i>spell can charge but not run, and it cannot carry aloft more weight than its maximum load, plus any armor it wears.\n</p><p>Should the spell duration expire while the subject is still aloft, the magic fails slowly. The subject floats downward 60 feet per round for 1d6 rounds. If it reaches the ground in that amount of time, it lands safely. If not, it falls the rest of the distance, taking 1d6 points of damage per 10 feet of fall. Since dispelling a spell effectively ends it, the subject also descends in this way if the <i>fly </i>spell is dispelled, but not if it is negated by an <i>antimagic field</i>.\n</p><p><i>Arcane Focus: </i>A wing feather from any bird.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Touch",
     "duration": {
@@ -214,10 +214,10 @@
       "type": "willnegates"
     },
     "school": "trs",
-    "shortDescription": "<p>Subject fl ies at speed of 60 ft.</p>",
+    "shortDescription": "\n\n\n<p>\nThe subject can fly at a speed of 60 feet (or 40 feet if it wears medium or heavy armor, or if it carries a medium or heavy load). It can ascend at half speed and descend at double speed, and its maneuverability is good. Using a <i>fly </i>spell requires only as much concentration as walking, so the subject can attack or cast spells normally. The subject of a <i>fly </i>spell can charge but not run, and it cannot carry aloft more weight than its maximum load, plus any armor it wears.\n</p><p>Should the spell duration expire while the subject is still aloft, the magic fails slowly. The subject floats downward 60 feet per round for 1d6 rounds. If it reaches the ground in that amount of time, it lands safely. If not, it falls the rest of the distance, taking 1d6 points of damage per 10 feet of fall. Since dispelling a spell effectively ends it, the subject also descends in this way if the <i>fly </i>spell is dispelled, but not if it is negated by an <i>antimagic field</i>.\n</p><p><i>Arcane Focus: </i>A wing feather from any bird.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Subject fl ies at speed of 60 ft.",
+    "snip": "Subject flies at speed of 60 ft.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 265-265",
     "specialActions": [
       {

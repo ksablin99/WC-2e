@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           299
         ],
         "section": "Drain Life",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Target takes Stamina damage, you regain</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>Beginning on the casting round, the living target takes 1 Stamina damage each round of concentration, with no save. You regain 5 hit points for each point actually drained, up to your maximum. The spell ends if either participant leaves range or line of sight is blocked by an object at least 5 feet tall and wide. Medium or smaller creatures do not block the link; Large creatures generally do.</p><p><strong>Automation boundary:</strong> Track concentration, line and range, Stamina damage, and resulting healing manually.</p>"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -213,10 +213,10 @@
       "type": ""
     },
     "school": "nec",
-    "shortDescription": "<p>Target takes Stamina damage, you regain</p>",
+    "shortDescription": "<p>Concentrate to deal 1 Stamina damage per round and heal 5 hit points per point drained.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Target takes Stamina damage, you regain",
+    "snip": "Concentrate to deal 1 Stamina damage per round and heal 5 hit points per point drained.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 266-266",
     "specialActions": [],
     "specialId": null,
@@ -225,8 +225,8 @@
     "spellbook": "primary",
     "spellDuration": "Concentration, up to 1 round/level (D)",
     "spellDurationData": {
-      "units": "roundPerLevel",
-      "value": 1
+      "units": "spec",
+      "value": null
     },
     "spellEffect": "",
     "spellType": {
@@ -259,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Track concentration, line and range, Stamina damage, and resulting healing manually."
     }
   },
   "type": "spell"

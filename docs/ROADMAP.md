@@ -1,8 +1,8 @@
 # Warcraft RPG 2e Foundry conversion roadmap
 
-Last updated: 2026-08-12
-Prepared release: 3.2.0
-Current phase: Offline Sol Ultra implementation complete; live Foundry validation deferred by user
+Last updated: 2026-08-13
+Current released baseline: 3.3.0
+Current phase: Full local Foundry v14 regression validation complete; fresh/update installation and human visual validation remain
 
 ## Status rules
 
@@ -90,7 +90,7 @@ Current phase: Offline Sol Ultra implementation complete; live Foundry validatio
 - [x] Preserve all level-0 lists and every printed level 1-9 list distribution.
 - [x] Link all nine domains to one spell at each level 1-9 and encode their granted powers/access rules.
 - [x] Extract 337 structured Warcraft spell headers safely, including four page/column-boundary headers; classify five SRD-compatible list-only fallbacks explicitly.
-- [x] Reuse verified SRD mechanics for unchanged effects, keep purpose-built Warcraft implementations, and attach manual policy to every spell.
+- [x] Provide usable in-system rules text for all 342 spells: 249 inherit complete matching SRD mechanics, 88 Warcraft-only records contain verified paraphrased rules with explicit manual boundaries, and five retain purpose-built implementations. No catalogue/reference-only placeholders remain.
 - [x] Support ordinary attacks, saves, spell resistance, damage/healing, durations, buffs, and templates where data is reliable.
 - [x] Document complex dispel/counterspell, summon/control, polymorph/form, Mana Shield/Burn, and persistent-effect boundaries instead of inventing behavior.
 - [ ] Exhaustive automation for every summon, form, companion, and cross-actor persistent spell. **Deferred:** low reliability without richer scene/target context.
@@ -106,6 +106,7 @@ Current phase: Offline Sol Ultra implementation complete; live Foundry validatio
 - [x] Implement the shared Shout Uses pool, rest recovery, range, duration, targets, saves, and timed effects.
 - [x] Implement the printed Hero Point extra-shout option with doubled applicable range/duration.
 - [x] Add Hero Point resource/recovery and supported +20 check, attack, save, AC, save-DC, stabilization, double-damage, called-shot, and out-of-turn action flows.
+- [x] Provide usable in-system rules text for all 141 feats, including 53 verified Warcraft-only feat records with explicit Foundry/GM handling. No handbook-only placeholders remain.
 - [x] Keep narrative alteration and trigger/adjudication-dependent feat outcomes manual by design.
 - [ ] Live Foundry v14 combat-lifecycle validation for Hero Point and shout dialogs/effects.
 
@@ -142,6 +143,7 @@ Current phase: Offline Sol Ultra implementation complete; live Foundry validatio
 - [x] Validate selections and provide a final creation summary without silently granting planned racial levels.
 - [x] Present paths, racial levels, Hero Points, shouts, spell repertoire, eligibility feedback, and technology consistently on relevant sheets/dialogs.
 - [x] Add clear validation/error feedback and preserve ordinary D35E controls needed by the inherited engine.
+- [x] Validate representative live Foundry v14 character-builder selection, point-buy, final creation, and ability-roll flows in the isolated local test environment.
 - [ ] Complete visual/accessibility audit of every player, NPC, loot, minion, and item sheet in live Foundry v14.
 - [ ] Live creation of every supported race/class/path combination and live advancement verification.
 
@@ -165,9 +167,11 @@ Current phase: Offline Sol Ultra implementation complete; live Foundry validatio
 - [x] Add Jest coverage for pure logic and offline content/build contracts.
 - [x] Add Playwright specifications for Foundry-facing creation, progression, races, spellcasting, resources, equipment, technology, death rules, and bestiary behavior.
 - [x] Make release builds deterministic: generate, validate, repack, verify, test, restore pinned redistributable D35E icons, and inspect the install archive.
-- [ ] Run full Foundry v14 Playwright suite. **Deferred by user:** no local Foundry v14 runtime/license is available.
+- [x] Set up a licensed Foundry v14 runtime with an isolated, guarded test-data root that does not touch the user's normal Foundry worlds, systems, or configuration.
+- [x] Pass 59 targeted Foundry v14 Playwright regressions covering creation, point-buy, ability rolls, death rules, Harvest Golem, racial progression, repertoire, firearms, technology, Hero Points, and shouts.
+- [x] Complete the full 762-test Foundry v14 Playwright suite and repair runtime/API/UI regressions: 753 applicable tests passed, 9 v13-only cases skipped as expected, and 0 failed in the isolated local test environment.
 - [ ] Test fresh installation and update installation in a real Foundry v14 instance.
-- [ ] Publish a new release after live validation. No publish authorized in this work pass.
+- [x] Publish v3.3.0 after the complete local Foundry v14 validation pass.
 
 ## Phase 11 - Complete bestiary conversion (final implementation phase)
 
@@ -192,11 +196,10 @@ Current phase: Offline Sol Ultra implementation complete; live Foundry validatio
 
 These are the only gates preventing a fully verified release:
 
-- [ ] Install or connect a licensed Foundry v14 runtime.
-- [ ] Run the authored Playwright suite and repair any runtime/API/UI failures.
+- [x] Complete the full authored Foundry v14 Playwright suite without regressions (753 applicable passed, 9 v13-only skipped, 0 failed).
 - [ ] Perform fresh-install and update-install checks from the GitHub manifest.
 - [ ] Perform a brief human visual/usability pass in Foundry.
-- [ ] Publish and verify a new GitHub release when the user authorizes it.
+- [x] Publish and verify the user-authorized v3.3.0 GitHub release.
 
 ## Deferred or optional scope
 
@@ -215,3 +218,4 @@ These are the only gates preventing a fully verified release:
 | 2026-08-12 | Foundation | Warcraft identity, release pipeline, initial rule frameworks, and detailed Harvest Golem reference. | 209 Jest tests; GitHub Linux release build; manifest/ZIP checked. | 3.1.2 |
 | 2026-08-12 | Sol High bulk pass | Ten races, nine base classes, ten prestige classes, initial spell/feat/equipment catalogues, four materials, ten journals, provenance and deterministic generators. | 228 Jest tests; 7 Warcraft packs/966 top-level records; 46 packs rebuilt. | Not released |
 | 2026-08-12 | Sol Ultra implementation | Completed core death/healing/migrations, racial levels, six paths, prestige prerequisites/advancement, repertoire/slot lifecycle, feat/Hero/shout systems, firearms/explosives, technology, guided creation, and final 152-entry bestiary with monster magic. Corrected spell extraction to 342 spells/504 assignments including all cantrips. | 353/353 Jest tests; 8 Warcraft packs/1,239 top-level records; all 47 packs rebuilt and 22,164 LevelDB keys byte-verified; localization, syntax, JSON, and release archive (4,643 entries, no PDFs/source/tests) passed. Foundry v14 e2e deferred by user/environment. | Not released |
+| 2026-08-13 | Foundry v14 remediation and rules-text completion | Restored builder, point-buy, actor-roll, progression, spellcasting, combat, equipment, and bestiary runtime paths; completed usable rules text for all 141 feats and 342 spells with explicit automation boundaries. | 420/420 Jest tests plus 66/66 Foundry-v14 dice integration tests; full Foundry v14 suite: 753 applicable passed, 9 v13-only skipped, 0 failed; all 47 packs/22,164 LevelDB keys synchronized; zero feat/spell handbook-only placeholders. | 3.3.0 |

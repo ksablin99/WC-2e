@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -36,7 +36,7 @@
           311
         ],
         "section": "Hooks of Binding",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -57,7 +57,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -106,7 +106,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Immobilizes a demon or undead</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>On a failed Fortitude save, a demon or undead creature with no more than 12 HD is held in place even while flying or swimming. It cannot move, takes -4 Agility and -2 on attacks, and must make Concentration DC 15 + spell level to cast or lose the slot. The force chains affect incorporeal creatures and prevent teleportation and planar travel.</p><p>Each round, the target may spend a full-round action on Strength or Escape Artist against the spell's save DC; success ends the spell. The arcane material component is one brass chain link.</p><p><strong>Automation boundary:</strong> Apply immobilization and penalties, block travel, and resolve casting and escape checks manually.</p>"
     },
     "display": "Medium (100 ft. + 10 ft./level)",
     "duration": {
@@ -225,10 +225,10 @@
       "type": "fortitudenegates"
     },
     "school": "con",
-    "shortDescription": "<p>Immobilizes a demon or undead</p>",
+    "shortDescription": "<p>Force chains immobilize a demon or undead of up to 12 HD and block teleportation until it escapes.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Immobilizes a demon or undead",
+    "snip": "Force chains immobilize a demon or undead of up to 12 HD and block teleportation until it escapes.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 266-274",
     "specialActions": [],
     "specialId": null,
@@ -271,7 +271,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Apply immobilization and penalties, block travel, and resolve casting and escape checks manually."
     }
   },
   "type": "spell"

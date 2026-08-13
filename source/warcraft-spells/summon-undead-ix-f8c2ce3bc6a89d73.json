@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -34,7 +34,7 @@
           349
         ],
         "section": "Summon Undead IX",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -55,11 +55,11 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
-      "type": "standard"
+      "type": "round"
     },
     "addedLevel": 0,
     "attack": {
@@ -72,7 +72,7 @@
     "atWill": false,
     "autoscaleAttackParts": "",
     "baseCl": "0",
-    "castTime": "1 standard action",
+    "castTime": "1 round",
     "changes": [],
     "classSource": "",
     "clOffset": 0,
@@ -104,7 +104,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Turns a corpse into an undead</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>Choose one creature from the 9th-level list, 1d3 creatures of the same kind from the 8th-level list, or 1d4+1 creatures of the same kind using any combination of lower-level lists. One suitable corpse is required per creature.</p><p>The 9th-level list allows: banshee or shade from a humanoid of CR 8; crypt fiend from a nerubian of CR 11 or 12; forsaken from a humanoid of CR 11; ghoul or wraith from a humanoid or monstrous humanoid of CR 10; skeletal mage from a humanoid of CR 10; skeletal warrior from a humanoid or monstrous humanoid of CR 11; withered from an aberration, animal, dragon, fey, magical beast, plant, or other monstrous creature of CR 10; or ghost from an aberration, animal, giant, humanoid, magical beast, monstrous humanoid, or plant of Charisma 6+ and CR 7. A summoned ghost has malevolence, horrific appearance, and corrupting gaze.</p><p>Summons act immediately on your turn and obey communicated directions. They do not count against your control limit, cannot fuel <em>death pact</em>, summon or conjure, teleport, or travel between planes, and require a supporting environment. At the end, they collapse or vanish and leave remains unusable for further undead magic; every source corpse is despoiled.</p><p><strong>Automation boundary:</strong> Roll the quantity, choose valid lower tiers, validate and consume every corpse, create and control each temporary undead, and remove all summons and unusable remains manually.</p>"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -219,28 +219,27 @@
       "type": ""
     },
     "school": "nec",
-    "shortDescription": "<p>Turns a corpse into an undead</p>",
+    "shortDescription": "<p>Raise one 9th-tier undead, 1d3 8th-tier undead of one kind, or 1d4+1 lower-tier undead.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Turns a corpse into an undead",
+    "snip": "Raise one 9th-tier undead, 1d3 8th-tier undead of one kind, or 1d4+1 lower-tier undead.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 266-270",
     "specialActions": [],
     "specialId": null,
     "specialPrepared": false,
     "spellArea": "",
     "spellbook": "primary",
-    "spellDuration": "Instantaneous",
+    "spellDuration": "1 round/level (D)",
     "spellDurationData": {
-      "dismissable": false,
-      "units": "inst",
-      "value": ""
+      "units": "roundPerLevel",
+      "value": 1
     },
     "spellEffect": "1-ft.-diameter/level sphere, centered around creatures or",
     "spellType": {
       "_deprecated": true,
       "value": ""
     },
-    "sr": true,
+    "sr": false,
     "subschool": "",
     "summon": [],
     "tags": [],
@@ -266,7 +265,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Roll the quantity, choose valid lower tiers, validate and consume every corpse, create and control each temporary undead, and remove all summons and unusable remains manually."
     }
   },
   "type": "spell"

@@ -15,10 +15,13 @@
   "effects": [],
   "flags": {
     "warcraftrpg2e": {
+      "automation": {
+        "chilledSave": "Fortitude negates; 1d4 rounds; manual"
+      },
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +35,7 @@
           306
         ],
         "section": "Frostbolt",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +56,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "rsak",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -95,14 +98,20 @@
     "customTag": "",
     "damage": {
       "alternativeParts": [],
-      "parts": []
+      "parts": [
+        [
+          "(min(10, @cl))d6",
+          null,
+          "energy-cold"
+        ]
+      ]
     },
     "damageReduction": [],
     "deactivateActions": [],
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Ranged touch attack deals 5d6 damage and</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>Make a ranged touch attack. On a hit, the target takes 1d6 cold damage per caster level, maximum 10d6. A damaged creature must make a Fortitude save or become chilled for 1d4 rounds.</p><p><strong>Automation boundary:</strong> Attack and cold damage are automated; roll the chill duration and apply the chilled condition manually after a failed Fortitude save.</p>"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -213,10 +222,10 @@
       "type": "fortitudenegates"
     },
     "school": "evo",
-    "shortDescription": "<p>Ranged touch attack deals 5d6 damage and</p>",
+    "shortDescription": "<p>A ranged touch attack deals up to 10d6 cold damage and may chill the victim for 1d4 rounds.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Ranged touch attack deals 5d6 damage and",
+    "snip": "A ranged touch attack deals up to 10d6 cold damage and may chill the victim for 1d4 rounds.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 265-265",
     "specialActions": [],
     "specialId": null,
@@ -258,8 +267,8 @@
       "value": 0
     },
     "warcraftManualPolicy": {
-      "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "mode": "verified-vertical-slice",
+      "reason": "Attack and cold damage are automated; roll the chill duration and apply the chilled condition manually after a failed Fortitude save."
     }
   },
   "type": "spell"

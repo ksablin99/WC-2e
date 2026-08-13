@@ -32,7 +32,7 @@
           328
         ],
         "section": "Purify Food and Drink",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -94,7 +94,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Purifies 1 cu. ft./level of food</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;transmutation;\n    <br>\n    <strong>Level:</strong>&nbsp;Cleric 0, Druid 0;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;10 feet<br>\n    \n    <strong>Target:</strong>&nbsp;1 cu. ft./level of contaminated food and water\n<br>\n    \n    <strong>Duration:</strong>&nbsp;Instantaneous<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;Will negates (object)\n\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThis spell makes spoiled, rotten, poisonous, or otherwise contaminated food and water pure and suitable for eating and drinking. This spell does not prevent subsequent natural decay or spoilage. Unholy water and similar food and drink of significance is spoiled by <i>purify food and drink, </i>but the spell has no effect on creatures of any type nor upon magic potions.\n</p><p><i>Note: </i>Water weighs about 8 pounds per gallon. One cubic foot of water contains roughly 8 gallons and weighs about 60 pounds.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "",
     "duration": {
@@ -204,10 +204,10 @@
       "type": ""
     },
     "school": "trs",
-    "shortDescription": "<p>Purifies 1 cu. ft./level of food</p>",
+    "shortDescription": "\n\n\n<p>\nThis spell makes spoiled, rotten, poisonous, or otherwise contaminated food and water pure and suitable for eating and drinking. This spell does not prevent subsequent natural decay or spoilage. Unholy water and similar food and drink of significance is spoiled by <i>purify food and drink, </i>but the spell has no effect on creatures of any type nor upon magic potions.\n</p><p><i>Note: </i>Water weighs about 8 pounds per gallon. One cubic foot of water contains roughly 8 gallons and weighs about 60 pounds.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Purifies 1 cu. ft./level of food",
+    "snip": "Purifies 1 cu. ft./level of food or water.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 267-267",
     "specialActions": [],
     "specialId": null,

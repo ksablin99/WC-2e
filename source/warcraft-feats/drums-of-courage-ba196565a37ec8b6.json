@@ -19,7 +19,12 @@
         "category": "General",
         "prerequisite": "Perform (percussion instruments) 5 ranks.",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "Using a good-quality drum, make a DC 20 Perform (percussion instruments) check. On success, allies within 30 feet who can hear you gain a +2 morale bonus on attack rolls, weapon damage rolls, and saves against charm and fear. The bonuses last while an ally continues to hear the performance and for 5 rounds afterward. Starting the performance is a standard action; maintaining it requires concentration and another standard action each round.",
+          "manual": "Roll the performance check and track hearing, concentration, range, the per-round action, and the 5-round aftereffect manually.",
+          "summary": "A successful drum performance bolsters nearby allies in battle."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": false
       },
@@ -33,7 +38,7 @@
           147
         ],
         "section": "Drums of Courage",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +153,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p><strong>Prerequisites:</strong> Perform (percussion instruments) 5 ranks.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 147) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Prerequisites:</strong> Perform (percussion instruments) 5 ranks.</p><p><strong>Summary:</strong> A successful drum performance bolsters nearby allies in battle.</p><p><strong>Benefit:</strong> Using a good-quality drum, make a DC 20 Perform (percussion instruments) check. On success, allies within 30 feet who can hear you gain a +2 morale bonus on attack rolls, weapon damage rolls, and saves against charm and fear. The bonuses last while an ally continues to hear the performance and for 5 rounds afterward. Starting the performance is a standard action; maintaining it requires concentration and another standard action each round.</p><p><strong>Foundry and GM handling:</strong> Roll the performance check and track hearing, concentration, range, the per-round action, and the 5-round aftereffect manually.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +253,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat; requires Perform (percussion instruments) 5 ranks..</p>",
+    "shortDescription": "<p>A successful drum performance bolsters nearby allies in battle.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 147",

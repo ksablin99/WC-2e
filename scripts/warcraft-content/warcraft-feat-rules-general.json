@@ -1,0 +1,218 @@
+{
+  "Bash": {
+    "summary": "Trade a bludgeoning hit's damage for a chance to stun the target.",
+    "benefit": "As a full-attack action, make one attack with a bludgeoning weapon. If it hits, roll damage normally but deal none of it; the target instead makes a Fortitude save against DC 10 + the rolled damage. Failure stuns it for 1 round. A creature immune to critical hits cannot be stunned this way. Bash can be attempted no more than once per round and once per character level each day, and the action forfeits bonus or additional attacks granted by feats or other abilities.",
+    "manual": "Declare Bash before attacking. Foundry does not replace the hit's damage, calculate the damage-based save DC, apply stun immunity or duration, or track the per-level daily limit automatically."
+  },
+  "Battle Language": {
+    "summary": "Send aid-another signals to a trained ally up to 30 feet away.",
+    "benefit": "You may aid another from up to 30 feet away when the recipient also has Battle Language. Sending the signal requires a DC 15 Bluff check. A character with at least 5 ranks in Knowledge (military tactics) gains a +2 synergy bonus on checks to send or intercept Battle Language communications.",
+    "normal": "Aid another normally works only within melee reach.",
+    "manual": "Choose the recipient and roll Bluff manually; the GM resolves whether the signal can be perceived or intercepted and applies the appropriate aid-another benefit."
+  },
+  "Bloodletter": {
+    "summary": "A melee critical hit leaves a wound that continues to bleed.",
+    "benefit": "When you confirm a critical hit with a melee weapon, the target takes 2 points of damage on the following round and another 2 points each round thereafter. Magical healing or a successful DC 15 Heal check ends the bleeding. Creatures immune to critical hits are immune to this effect.",
+    "manual": "Foundry does not automatically create, repeat, or remove this bleeding damage; track its rounds and ending condition manually."
+  },
+  "Careful Strike": {
+    "summary": "Study a nearby opponent to gain +4 on attacks and damage against it briefly.",
+    "benefit": "As a move action, study one creature within 30 feet. You gain a +4 bonus on attack rolls and damage rolls against that creature until the start of your next turn.",
+    "manual": "Select the studied target and apply the short-lived attack and damage bonuses manually."
+  },
+  "Close Shot": {
+    "summary": "Use ranged weapons in melee without provoking attacks of opportunity.",
+    "benefit": "Making a ranged attack while threatened does not provoke attacks of opportunity.",
+    "normal": "A ranged attack normally provokes attacks of opportunity from creatures that threaten the attacker.",
+    "manual": "Foundry does not adjudicate attacks of opportunity, so the GM must suppress the normal provocation."
+  },
+  "Counterattack": {
+    "summary": "Answer a missed melee attack from your Dodge target with an immediate strike.",
+    "benefit": "Once per round, when the opponent currently designated for your Dodge feat misses you with a melee attack or melee touch attack, you may make an attack of opportunity against it at a -4 penalty. Resolve and apply the two attacks simultaneously. This counterattack uses your normal capacity to make an attack of opportunity; Combat Reflexes does not grant extra Counterattack uses.",
+    "manual": "Track the current Dodge target, the once-per-round trigger, the -4 attack penalty, and attack-of-opportunity availability manually."
+  },
+  "Defend": {
+    "summary": "Extend part of your shield's protection to an adjacent ally.",
+    "benefit": "While wielding a shield larger than a buckler, one ally within 5 feet gains +1 AC. The bonus is a shield bonus if that ally is not using a shield, or a circumstance bonus if the ally is using one. Multiple uses of Defend do not stack, and you keep your own shield bonus while protecting the ally.",
+    "manual": "Choose the protected ally and track adjacency and shield use manually; apply the correctly typed AC bonus as a temporary effect."
+  },
+  "Devoted Leadership": {
+    "summary": "Nearby followers gain +1 on all saving throws.",
+    "benefit": "Your followers within 30 feet gain a +1 morale bonus on Fortitude, Reflex, and Will saves.",
+    "manual": "Foundry does not identify Leadership followers or maintain this range-dependent aura automatically."
+  },
+  "Drums of Courage": {
+    "summary": "A successful drum performance bolsters nearby allies in battle.",
+    "benefit": "Using a good-quality drum, make a DC 20 Perform (percussion instruments) check. On success, allies within 30 feet who can hear you gain a +2 morale bonus on attack rolls, weapon damage rolls, and saves against charm and fear. The bonuses last while an ally continues to hear the performance and for 5 rounds afterward. Starting the performance is a standard action; maintaining it requires concentration and another standard action each round.",
+    "manual": "Roll the performance check and track hearing, concentration, range, the per-round action, and the 5-round aftereffect manually."
+  },
+  "Enduring Leadership": {
+    "summary": "Once per day, inspire followers to act faster and endure rage without fatigue.",
+    "benefit": "Once per day as a free action, inspire your followers for 1 + your Charisma modifier rounds (minimum 1 round). Each affected follower gains a +4 morale bonus on initiative checks and a +10-foot enhancement bonus to its fastest movement mode. An affected follower who rages is not fatigued when that rage ends.",
+    "manual": "Choose the followers and track the daily use, duration, fastest movement mode, and rage-fatigue exception manually."
+  },
+  "Expert Rider": {
+    "summary": "Gain +2 on Ride checks and take 10 during mounted combat.",
+    "benefit": "You gain a +2 bonus on all Ride checks. You may take 10 on Ride checks made for mounted combat even while threatened or distracted.",
+    "normal": "A rider normally cannot take 10 in those circumstances.",
+    "manual": "Apply the bonus to Ride and allow take 10 for qualifying mounted-combat checks; Foundry does not determine that context automatically."
+  },
+  "Follower of the Totem": {
+    "summary": "Briefly empower one chosen ability score once per day.",
+    "benefit": "Once per day as a free action, choose one ability score and gain a +2 sacred bonus to it for 1d6 + your Spirit modifier rounds.",
+    "manual": "Choose the ability, roll and track the duration, apply the sacred bonus, and record the daily use manually."
+  },
+  "Furious Charge": {
+    "summary": "Charge with extra damage and a free shout; a hero point greatly improves the charge.",
+    "benefit": "When you charge, gain +2 on damage rolls and you may use one shout feat you know without spending a daily shout use; that shout lasts 1 round. If you spend a hero point on the charge, instead gain +4 on both attack and damage rolls, take no charge penalty to AC, and let the free shout use its normal duration.",
+    "manual": "Declare the charge, chosen shout, and any hero-point expenditure; apply the temporary bonuses, AC exception, shout duration, and free-use accounting manually."
+  },
+  "Greater Spell Focus": {
+    "summary": "Increase the saving throw DC of spells from one focused school by 1 more.",
+    "benefit": "Choose a school of magic for which you already have Spell Focus. The save DC of your spells from that school increases by 1; this stacks with Spell Focus.",
+    "special": "You may select this feat more than once, choosing a different school each time. It cannot be selected twice for the same school.",
+    "manual": "Record the selected school and apply the conditional save DC bonus manually."
+  },
+  "Greater Weapon Focus": {
+    "summary": "Gain another +1 on attacks with a weapon already chosen for Weapon Focus.",
+    "benefit": "Choose one weapon for which you are proficient and already have Weapon Focus. You gain +1 on attack rolls with it, stacking with Weapon Focus and other attack bonuses. Unarmed strike, grapple, and ray attacks may be selected as weapons.",
+    "special": "You may select this feat more than once, choosing a different weapon each time. It is a prerequisite for Greater Weapon Specialization with that weapon.",
+    "manual": "Record the selected weapon or attack form and apply the conditional attack bonus manually."
+  },
+  "Greater Weapon Specialization": {
+    "summary": "Gain another +2 damage with a weapon already chosen for Weapon Specialization.",
+    "benefit": "Choose one weapon for which you are proficient and already have Weapon Focus, Greater Weapon Focus, and Weapon Specialization. You gain +2 on damage rolls with it, stacking with Weapon Specialization and other damage bonuses. Unarmed strike and grapple may be selected as weapons.",
+    "special": "You may select this feat more than once, choosing a different weapon each time.",
+    "manual": "Record the selected weapon or attack form and apply the conditional damage bonus manually."
+  },
+  "Improved Critical": {
+    "summary": "Double the threat range of one proficient weapon.",
+    "benefit": "Choose one weapon with which you are proficient. Its critical threat range is doubled.",
+    "special": "You may select this feat more than once, choosing a different weapon each time. Its effect does not stack with any other effect that expands a weapon's threat range.",
+    "manual": "Record the selected weapon and adjust its threat range manually; do not combine this increase with another threat-range increase."
+  },
+  "Lightning Reload": {
+    "summary": "Reload firearms one action category faster.",
+    "benefit": "A firearm that normally takes a move action to reload can be reloaded as a free action; one that normally takes a standard action can be reloaded as a move action. If its normal reload time is longer than 1 round, halve that time.",
+    "manual": "Foundry does not automatically revise each firearm's reload action or multi-round timing."
+  },
+  "Magic Energy Control": {
+    "summary": "Prepare spells in half the usual time and gain +1 on Will saves.",
+    "benefit": "You require only half the normal time to prepare spells and gain a +1 bonus on Will saves. A high elf with this feat no longer suffers the game effects of magic addiction, though the addiction remains detectable; that high elf prepares spells in the normal amount of time rather than half time.",
+    "manual": "The Will bonus, preparation time, high-elf exception, and detectable-but-suppressed addiction state must be applied or noted manually."
+  },
+  "Martial Weapon Proficiency": {
+    "summary": "Become proficient with one selected martial weapon.",
+    "benefit": "Choose one martial weapon. You make attacks with that weapon without the nonproficiency penalty.",
+    "normal": "A character attacking with a martial weapon without proficiency takes a -4 penalty on attack rolls. Barbarians, paladins, and warriors are proficient with all martial weapons from their class training.",
+    "special": "You may select this feat more than once, choosing a different martial weapon each time.",
+    "manual": "Record the selected weapon; Foundry does not bind this generic feat record to a weapon choice automatically."
+  },
+  "Mighty Lungs": {
+    "summary": "Gain two additional uses of the shared shout pool each day.",
+    "benefit": "Your daily number of shout uses increases by 2.",
+    "special": "You may select this feat more than once; its benefits stack.",
+    "automation": "The actor's Shout Uses resource automatically adds two daily uses for each Mighty Lungs feat item.",
+    "manual": "No manual adjustment is normally needed when each selected copy exists as a separate feat item; exceptional imported or renamed records require GM correction."
+  },
+  "Pistol Whip": {
+    "summary": "Use a firearm as a proficient improvised melee weapon without damaging it.",
+    "benefit": "You may use a firearm with which you are proficient as an improvised melee weapon without applying the firearm's normal damage and without damaging the firearm. A light firearm deals 1d3 damage if Small or 1d4 if Medium; a one-handed firearm deals 1d4 if Small or 1d6 if Medium; a two-handed firearm deals 1d6 if Small or 1d8 if Medium.",
+    "normal": "A character may normally strike with a firearm as an improvised weapon, but applies nonproficiency penalties and the firearm takes the same amount of damage it deals.",
+    "manual": "Create or roll the improvised melee attack with the size-appropriate damage and suppress damage to the firearm manually."
+  },
+  "Precision Leadership": {
+    "summary": "Followers deal more ranged damage when coordinating against one target.",
+    "benefit": "When your followers coordinate ranged attacks against the same target at the same time, each participating follower gains +1 damage for every other participating follower. If every participant uses the same weapon type, total the successful attacks' damage before applying damage reduction.",
+    "manual": "The GM must determine which followers and attacks are simultaneous, add the group-based damage, and combine damage before reduction when applicable."
+  },
+  "Pulverize": {
+    "summary": "A critical hit with a tauren totem also batters creatures near the target.",
+    "benefit": "When you score a critical hit with a tauren totem, every creature adjacent to the struck target takes bludgeoning damage equal to 1d6 + half your Strength bonus.",
+    "manual": "Identify adjacent creatures and roll and apply the secondary area damage manually."
+  },
+  "Punishing Blow": {
+    "summary": "Deal +1d6 damage with one weapon against a flanked or vulnerable target.",
+    "benefit": "Choose one proficient melee weapon. Attacks with it deal +1d6 damage when the target is denied its Agility bonus to AC or is flanked. This extra damage is not multiplied on a critical hit and stacks with a rogue's backstab damage.",
+    "special": "You may select this feat more than once, choosing a different weapon each time.",
+    "manual": "Record the selected weapon and add the damage only when the target qualifies; Foundry does not bind this record to a weapon or target state automatically."
+  },
+  "Rapid Reload": {
+    "summary": "Reload one chosen crossbow type faster.",
+    "benefit": "Choose hand crossbow, light crossbow, or heavy crossbow. Reloading the selected hand or light crossbow becomes a free action, while reloading the selected heavy crossbow becomes a move action. Reloading still provokes attacks of opportunity. With a selected hand or light crossbow, you may fire as many times in a full attack as your attack routine permits.",
+    "normal": "Reloading a hand or light crossbow is normally a move action; reloading a heavy crossbow is normally a full-round action.",
+    "special": "You may select this feat more than once, choosing a different crossbow type each time.",
+    "manual": "Record the selected crossbow type and adjudicate reload actions, provocation, and full-attack availability manually."
+  },
+  "Reckless Attack": {
+    "summary": "Trade Armor Class for melee damage, up to your base attack bonus.",
+    "benefit": "Before making any attacks for the round, choose a number no greater than your base attack bonus. Until your next turn, subtract that number from AC and add it to all melee weapon damage rolls. Double the damage bonus for a two-handed weapon or a one-handed weapon wielded in two hands. A light weapon gains no damage bonus, except an unarmed strike or natural weapon, though the AC penalty still applies. A double weapon counts as a one-handed weapon and a light weapon unless you attack with only one end as a two-handed weapon.",
+    "manual": "Choose the amount before attacking and apply the timed AC penalty and weapon-dependent damage bonus manually."
+  },
+  "Ride Bareback": {
+    "summary": "Ignore the bareback riding penalty and gain +1 on Ride checks.",
+    "benefit": "You do not take the normal -5 penalty for riding bareback, and you gain a +1 bonus on all Ride checks.",
+    "manual": "Apply the Ride bonus and suppress the situational bareback penalty manually."
+  },
+  "Skill Focus": {
+    "summary": "Gain +3 on checks with one chosen skill.",
+    "benefit": "Choose one skill. You gain a +3 unnamed bonus on all checks using that skill.",
+    "special": "You may select this feat more than once, choosing a different skill each time.",
+    "manual": "Record the selected skill and apply its bonus manually."
+  },
+  "Skilled": {
+    "summary": "Gain +2 on checks with each of two chosen trained skills.",
+    "benefit": "Choose two skills in which you have at least 1 rank. You gain a +2 unnamed bonus on checks with each selected skill.",
+    "special": "You may select this feat more than once, but every selection must name two skills not chosen by an earlier selection.",
+    "manual": "Record both selected skills and apply their bonuses manually."
+  },
+  "Sniper Shot": {
+    "summary": "Spend a full round to extend a ranged weapon's increment and deal +1d6 damage.",
+    "benefit": "As a full-round action, make one attack with a ranged weapon. For that attack, multiply the weapon's range increment by 1.5 and add +1d6 damage on a hit. The extra damage is not multiplied on a critical hit.",
+    "manual": "Declare the full-round shot and calculate its temporary range increment and extra damage manually."
+  },
+  "Spell Focus": {
+    "summary": "Increase by 1 the saving throw DC of spells from one chosen school.",
+    "benefit": "Choose one school of magic. The save DC of your spells from that school increases by 1.",
+    "special": "You may select this feat more than once, choosing a different school each time.",
+    "manual": "Record the selected school and apply the conditional save DC bonus manually."
+  },
+  "Storm Bolt": {
+    "summary": "Use Bash through a ranged bludgeoning attack and gain one extra Bash use per day.",
+    "benefit": "You may use Bash with a ranged bludgeoning weapon. Each Storm Bolt attempt counts as one of your daily Bash attempts. Having this feat increases your maximum number of Bash attempts by 1 per day.",
+    "manual": "Resolve the ranged attack, damage-based Bash save, stun, and the adjusted shared daily limit manually."
+  },
+  "Thunderous Blow": {
+    "summary": "Once per day, a declared melee hit erupts as a thunderclap centered on the target.",
+    "benefit": "Once per day, before making a normal melee attack, declare Thunderous Blow. If the attack hits, produce a thunderclap effect centered on the target, using your character level as caster level and save DC 10 + half your character level + your Charisma modifier. A miss still expends the daily use.",
+    "special": "You may select this feat more than once; each additional selection grants one more use per day.",
+    "manual": "Declare and expend the use before rolling, then resolve the thunderclap spell's area, save, and effects manually."
+  },
+  "Trick Shot": {
+    "summary": "Ricochet a ranged attack from a solid surface to bypass cover at -2 attack and damage.",
+    "benefit": "When a target is within 10 feet of a solid, reasonably smooth surface, you may ricochet a ranged attack from that surface and ignore the target's cover bonus to AC. The attack takes a -2 penalty on both its attack and damage rolls. An imperfect surface may still be usable at the GM's discretion. You may attempt this against full cover by guessing the target's location, but the target still has total concealment. A character proficient with a moonglaive ignores Trick Shot's attack and damage penalties when using one.",
+    "manual": "The GM adjudicates geometry and surface quality; apply cover, concealment, moonglaive, attack, and damage adjustments manually."
+  },
+  "Wand Specialization": {
+    "summary": "Damage spells cast from wands deal +1 damage per die.",
+    "benefit": "When you use a wand to cast a spell that deals hit point damage, add +1 damage for each damage die rolled.",
+    "manual": "Foundry does not identify qualifying wand casts or scale the bonus by their damage dice automatically."
+  },
+  "War Stomp": {
+    "summary": "Stomp the ground to knock down smaller creatures within 10 feet.",
+    "benefit": "As a standard action, stomp or strike the ground. Creatures smaller than you within 10 feet must succeed on a Balance check against DC 10 + your Strength modifier or fall prone. If you are a tauren, this affects every non-tauren creature of Medium size or smaller within the area.",
+    "manual": "Determine affected creatures by size and race, roll their Balance checks, and apply prone manually."
+  },
+  "Weapon Focus": {
+    "summary": "Gain +1 on attacks with one chosen weapon or attack form.",
+    "benefit": "Choose one weapon with which you are proficient. You gain +1 on all attack rolls with it. Unarmed strike, grapple, and ray attacks may be selected as weapons.",
+    "special": "You may select this feat more than once, choosing a different weapon or attack form each time.",
+    "manual": "Record the selection and apply the conditional attack bonus manually."
+  },
+  "Weapon Specialization": {
+    "summary": "Gain +2 damage with one weapon already chosen for Weapon Focus.",
+    "benefit": "Choose one weapon with which you are proficient and for which you already have Weapon Focus. You gain +2 on damage rolls with it. Unarmed strike and grapple may be selected as weapons.",
+    "special": "You may select this feat more than once, choosing a different weapon or attack form each time.",
+    "manual": "Record the selection and apply the conditional damage bonus manually."
+  }
+}

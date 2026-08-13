@@ -19,7 +19,13 @@
         "category": "Technology",
         "prerequisite": "Agy 13.",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "Gain +2 on Craft (technological device) checks to build Tiny, Diminutive, or Fine devices, and increase your Technological Limit by 2 for those projects. You may conceal such a device or disguise it as another object. Finding a concealed or disguised device requires a Spot check, while determining its function requires a Use Technological Device check; both DCs equal 10 + your ranks in Craft (technological device).",
+          "manual": "Foundry records the feat but does not classify device size, apply the contextual construction modifiers, or generate concealment records. Record whether the device is hidden or disguised; the GM must resolve the Spot and Use Technological Device checks using the creator's Craft ranks, adjudicating any later rank change because the feat does not specify when that value is fixed.",
+          "special": "A tinker may select Small Device Knack as a bonus tinker feat.",
+          "summary": "Build exceptionally small devices and optionally hide or disguise their purpose."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": true,
         "warriorBonus": false
       },
@@ -33,7 +39,7 @@
           157
         ],
         "section": "Small Device Knack",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +154,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> Technology.</p><p><strong>Prerequisites:</strong> Agy 13.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 157) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> Technology feat</p><p><strong>Prerequisites:</strong> Agy 13.</p><p><strong>Summary:</strong> Build exceptionally small devices and optionally hide or disguise their purpose.</p><p><strong>Benefit:</strong> Gain +2 on Craft (technological device) checks to build Tiny, Diminutive, or Fine devices, and increase your Technological Limit by 2 for those projects. You may conceal such a device or disguise it as another object. Finding a concealed or disguised device requires a Spot check, while determining its function requires a Use Technological Device check; both DCs equal 10 + your ranks in Craft (technological device).</p><p><strong>Special:</strong> A tinker may select Small Device Knack as a bonus tinker feat.</p><p><strong>Tinker bonus feat:</strong> Yes</p><p><strong>Foundry and GM handling:</strong> Foundry records the feat but does not classify device size, apply the contextual construction modifiers, or generate concealment records. Record whether the device is hidden or disguised; the GM must resolve the Spot and Use Technological Device checks using the creator&#39;s Craft ranks, adjudicating any later rank change because the feat does not specify when that value is fixed.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +254,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>Technology feat; requires Agy 13..</p>",
+    "shortDescription": "<p>Build exceptionally small devices and optionally hide or disguise their purpose.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 157",

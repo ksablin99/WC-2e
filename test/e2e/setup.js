@@ -11,6 +11,8 @@
  *   E2E_PORT          Port for Foundry
  *                     (default: 30001–30999, derived from REPO_ROOT hash — unique per worktree)
  *   E2E_FOUNDRY_PATH  Path to Foundry main.js (skips version-based discovery)
+ *   E2E_BROWSER_PATH  Optional browser executable used by Playwright
+ *   E2E_SERVER_STDOUT Set to "ignore" to suppress verbose Foundry startup logs
  *   E2E_SYSTEM_DIR    Override the system source directory for step 4
  *                     (default: REPO_ROOT — set by e2e:release-setup to an extracted zip dir)
  *   E2E_LICENSE_PATH  Path to a Foundry license.json file
@@ -31,6 +33,12 @@ const crypto = require('crypto');
 
 const REPO_ROOT = resolve(__dirname, '../..');
 const { resolveFoundry, resolveWorldTemplate, readEnvFileKey } = require('../../scripts/foundry-version');
+const {
+  assertSafeManagedDataDir,
+  ensureManagedDataMarker,
+  removeManagedDataDir,
+  writeManagedDataMarker,
+} = require('../../scripts/safe-managed-data-dir');
 
 // Derive a short hash from the repo root path so each worktree gets its own
 // isolated data dir and port without needing env vars.
@@ -38,6 +46,12 @@ const hash = crypto.createHash('sha1').update(REPO_ROOT).digest('hex').slice(0, 
 
 const DATA_DIR = process.env.E2E_DATA_DIR ?? join(tmpdir(), `foundry-e2e-${hash}`);
 const PORT     = process.env.E2E_PORT     ?? String(30001 + (parseInt(hash, 16) % 999));
+assertSafeManagedDataDir(DATA_DIR, { repoRoot: REPO_ROOT, kind: 'e2e' });
+ensureManagedDataMarker(DATA_DIR, {
+  repoRoot: REPO_ROOT,
+  kind: 'e2e',
+  expectedWorldId: 'test-world',
+});
 
 // ── Resolve Foundry version and path ─────────────────────────────────────────
 //
@@ -61,11 +75,13 @@ if (process.env.E2E_FOUNDRY_PATH) {
 
 const envFile        = resolve(REPO_ROOT, '.e2e-env');
 const storedVersion  = readEnvFileKey(envFile, 'E2E_FOUNDRY_VERSION');
+const browserPath    = process.env.E2E_BROWSER_PATH ?? readEnvFileKey(envFile, 'E2E_BROWSER_PATH');
+const serverStdout   = process.env.E2E_SERVER_STDOUT ?? readEnvFileKey(envFile, 'E2E_SERVER_STDOUT');
 
 if (resolvedVersion && storedVersion && storedVersion !== resolvedVersion) {
   console.log(`[e2e:setup] Foundry version changed (${storedVersion} → ${resolvedVersion}) — auto-cleaning...`);
   if (existsSync(DATA_DIR)) {
-    rmSync(DATA_DIR, { recursive: true, force: true });
+    removeManagedDataDir(DATA_DIR, { repoRoot: REPO_ROOT, kind: 'e2e' });
     console.log(`[e2e:setup] Removed stale data dir: ${DATA_DIR}`);
   }
   if (existsSync(envFile)) {
@@ -97,6 +113,7 @@ for (const sub of [
 ]) {
   mkdirSync(join(DATA_DIR, sub), { recursive: true });
 }
+writeManagedDataMarker(DATA_DIR, { repoRoot: REPO_ROOT, kind: 'e2e' });
 
 // ── 2. Write options.json from template ───────────────────────────────────────
 
@@ -182,9 +199,11 @@ if (existsSync(lockPath)) {
 // ── 7. Write .e2e-env so playwright.config.js can read the paths ───────────────
 
 const versionLine = resolvedVersion ? `E2E_FOUNDRY_VERSION=${resolvedVersion}\n` : '';
+const browserLine = browserPath ? `E2E_BROWSER_PATH=${browserPath}\n` : '';
+const serverStdoutLine = serverStdout ? `E2E_SERVER_STDOUT=${serverStdout}\n` : '';
 writeFileSync(
   envFile,
-  `E2E_DATA_DIR=${DATA_DIR}\nE2E_PORT=${PORT}\nE2E_FOUNDRY_PATH=${FOUNDRY_PATH}\n${versionLine}`
+  `E2E_DATA_DIR=${DATA_DIR}\nE2E_PORT=${PORT}\nE2E_FOUNDRY_PATH=${FOUNDRY_PATH}\n${versionLine}${browserLine}${serverStdoutLine}`
 );
 
 console.log('[e2e:setup] Done.');

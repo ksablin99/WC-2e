@@ -19,7 +19,12 @@
         "category": "General",
         "prerequisite": "Base attack bonus +3.",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "When you confirm a critical hit with a melee weapon, the target takes 2 points of damage on the following round and another 2 points each round thereafter. Magical healing or a successful DC 15 Heal check ends the bleeding. Creatures immune to critical hits are immune to this effect.",
+          "manual": "Foundry does not automatically create, repeat, or remove this bleeding damage; track its rounds and ending condition manually.",
+          "summary": "A melee critical hit leaves a wound that continues to bleed."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": true
       },
@@ -33,7 +38,7 @@
           143
         ],
         "section": "Bloodletter",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +153,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p><strong>Prerequisites:</strong> Base attack bonus +3.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 143) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Prerequisites:</strong> Base attack bonus +3.</p><p><strong>Summary:</strong> A melee critical hit leaves a wound that continues to bleed.</p><p><strong>Benefit:</strong> When you confirm a critical hit with a melee weapon, the target takes 2 points of damage on the following round and another 2 points each round thereafter. Magical healing or a successful DC 15 Heal check ends the bleeding. Creatures immune to critical hits are immune to this effect.</p><p><strong>Warrior bonus feat:</strong> Yes</p><p><strong>Foundry and GM handling:</strong> Foundry does not automatically create, repeat, or remove this bleeding damage; track its rounds and ending condition manually.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +253,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat; requires Base attack bonus +3..</p>",
+    "shortDescription": "<p>A melee critical hit leaves a wound that continues to bleed.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 143",

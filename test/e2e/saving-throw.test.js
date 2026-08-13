@@ -6,7 +6,7 @@
  * D35E saving throw flow:
  *   1. actor.rollSavingThrow(type) always opens a Dialog (no skipDialog path).
  *   2. User clicks the "Roll" button.
- *   3. createCustomChatMessage posts a chat message with flags.D35E.chatTemplateData.
+ *   3. createCustomChatMessage posts a chat message with flags.warcraftrpg2e.chatTemplateData.
  *   4. chatTemplateData.total is the final roll total (1d20 + save bonus).
  *
  * Covers:

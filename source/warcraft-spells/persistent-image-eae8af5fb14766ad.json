@@ -32,7 +32,7 @@
           324
         ],
         "section": "Persistent Image",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -103,7 +103,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>As major image, but no concentration</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;illusion&nbsp;(figment);\n    <br>\n    <strong>Level:</strong>&nbsp;Bard 5, Sorcerer 5, Wizard 5;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, M (a bit of fleece and several grains of sand)<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;long (400 ft. + 40 ft./level)<br>\n    \n    \n    <strong>Effect:</strong>&nbsp;Visual figment that cannot extend beyond four 10-ft. cubes + one 10-ft. cube/level (S)<br>\n    <strong>Duration:</strong>&nbsp;1 Minute/Level (D)<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;9<br>\n        <strong>Saving Throw:</strong>&nbsp;Will disbelief (if interacted with)\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThis spell creates the visual illusion of an object, creature, or force, as visualized by you. The figment includes visual, auditory, olfactory, and thermal components, and the figment follows a script determined by you. The figment follows that script without your having to concentrate on it. The illusion can include intelligible speech if you wish. You can move the image within the limits of the size of the effect.\n</p><p><i>Material Component: </i>A bit of fleece and several grains of sand.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Medium (100 ft. + 10 ft./level)",
     "duration": {
@@ -216,10 +216,10 @@
       "type": ""
     },
     "school": "ill",
-    "shortDescription": "<p>As major image, but no concentration</p>",
+    "shortDescription": "\n\n\n<p>\nThis spell creates the visual illusion of an object, creature, or force, as visualized by you. The figment includes visual, auditory, olfactory, and thermal components, and the figment follows a script determined by you. The figment follows that script without your having to concentrate on it. The illusion can include intelligible speech if you wish. You can move the image within the limits of the size of the effect.\n</p><p><i>Material Component: </i>A bit of fleece and several grains of sand.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "As major image, but no concentration",
+    "snip": "As major image, but no concentration required.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 264-264",
     "specialActions": [],
     "specialId": null,

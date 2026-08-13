@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -36,7 +36,7 @@
           311
         ],
         "section": "Holy Word Shield",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -57,7 +57,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -106,7 +106,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>You protect an ally from</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>The shield has hit points equal to 4 x caster level. All hit-point damage the subject would take is deducted from this pool first. Once the pool reaches 0, later damage affects the subject normally. The effect ends after 10 rounds even if shield hit points remain.</p><p><strong>Automation boundary:</strong> Create and decrement the separate shield pool manually; the system does not intercept incoming damage.</p>"
     },
     "display": "40 feet",
     "duration": {
@@ -200,8 +200,8 @@
     "psionic": "",
     "range": {
       "long": null,
-      "units": "spec",
-      "value": null
+      "units": "ft",
+      "value": 40
     },
     "recharge": {
       "current": 0,
@@ -226,10 +226,10 @@
       "type": "willnegates"
     },
     "school": "con",
-    "shortDescription": "<p>You protect an ally from</p>",
+    "shortDescription": "<p>Give one ally a damage shield with hit points equal to four times caster level.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "You protect an ally from",
+    "snip": "Give one ally a damage shield with hit points equal to four times caster level.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 269-274",
     "specialActions": [],
     "specialId": null,
@@ -272,7 +272,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Create and decrement the separate shield pool manually; the system does not intercept incoming damage."
     }
   },
   "type": "spell"

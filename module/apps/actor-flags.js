@@ -1,3 +1,5 @@
+import { getSystemFlag, setSystemFlag, unsetSystemFlag } from "../utils/system-flags.js";
+
 export class ActorSheetFlags extends DocumentSheet {
   static get defaultOptions() {
     const options = super.defaultOptions;
@@ -47,7 +49,7 @@ export class ActorSheetFlags extends DocumentSheet {
       flag.type = v.type.name;
       flag.isCheckbox = v.type === Boolean;
       flag.isSelect = v.hasOwnProperty('choices');
-      flag.value = this.entity.getFlag("D35E", k);
+      flag.value = getSystemFlag(this.entity, k);
       flags[v.section][k] = flag;
     }
     return flags;
@@ -59,18 +61,16 @@ export class ActorSheetFlags extends DocumentSheet {
    * Update the Actor using the configured flags
    * Remove/unset any flags which are no longer configured
    */
-  _updateObject(event, formData) {
+  async _updateObject(event, formData) {
     const actor = this.object;
 
     // Iterate over the flags which may be configured
-    const updateData = {};
     for ( let [k, v] of Object.entries(CONFIG.D35E.characterFlags) ) {
-      if ( [undefined, null, "", false].includes(formData[k]) ) updateData[`-=${k}`] = null;
-      else if ( (v.type === Number) && (formData[k] === 0) ) updateData[`-=${k}`] = null;
-      else updateData[k] = formData[k];
+      const shouldUnset = [undefined, null, "", false].includes(formData[k])
+        || ((v.type === Number) && (formData[k] === 0));
+      if (shouldUnset) await unsetSystemFlag(actor, k);
+      else await setSystemFlag(actor, k, formData[k]);
     }
-
-    // Set the new flags in bulk
-    actor.update({'flags.D35E': updateData});
+    return actor;
   }
 }

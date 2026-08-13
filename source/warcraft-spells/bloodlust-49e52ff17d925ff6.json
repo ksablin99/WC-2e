@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -36,7 +36,7 @@
           283
         ],
         "section": "Bloodlust",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -57,7 +57,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -106,7 +106,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Subject gains extra attack and +4 Str.</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>Each affected creature gains one extra attack at its full base attack bonus whenever it makes a full attack. This is not an extra action and does not stack with similar extra-attack effects. It also gains +1 on attack rolls, +1 dodge AC, +1 Reflex, and +2 enhancement Strength.</p><p>Every movement mode increases by 30 feet, to no more than twice its normal speed; this is an enhancement bonus and increases jumping distance normally. Losing the Agility bonus to AC also removes the dodge bonus. <em>Cripple</em> counters and dispels this spell. The material component is a drop of blood mixed with earth.</p><p><strong>Automation boundary:</strong> Apply bonuses, movement caps, and the conditional extra attack manually; no automatic full-attack insertion or counterspell link is created.</p>"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -226,10 +226,10 @@
       "type": "fortitudenegates"
     },
     "school": "trs",
-    "shortDescription": "<p>Subject gains extra attack and +4 Str.</p>",
+    "shortDescription": "<p>Accelerate several creatures, granting an extra full-attack strike, combat bonuses, faster movement, and enhanced Strength.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Subject gains extra attack and +4 Str.",
+    "snip": "Accelerate several creatures, granting an extra full-attack strike, combat bonuses, faster movement, and enhanced Strength.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 265-273",
     "specialActions": [],
     "specialId": null,
@@ -272,7 +272,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Apply bonuses, movement caps, and the conditional extra attack manually; no automatic full-attack insertion or counterspell link is created."
     }
   },
   "type": "spell"

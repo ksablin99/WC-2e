@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -36,7 +36,7 @@
           280
         ],
         "section": "Avatar",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -57,7 +57,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -106,7 +106,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>You gain combat ability and lose spellcasting</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>You become one size category larger and cannot cast spells or use spell-completion or spell-activation items for the duration. You gain +4 enhancement Strength, +6 enhancement Stamina, +2 enhancement Agility, +8 enhancement natural armor, spell resistance 10 + caster level, and proficiency with all simple and martial weapons.</p><p>The size increase also grants +4 size Strength, -2 size Agility, and -1 size penalties to attacks and AC. A humanoid enlarged to Large has 10-foot space and reach; speed is unchanged. Worn and carried gear grows with you. Enlarged melee weapons and ammunition fired from enlarged projectile weapons use their larger damage dice, while thrown weapons and items leaving your possession immediately return to normal size. Magic properties do not improve, and magical size increases do not stack.</p><p>If the available space is too small, grow as much as possible and make a Strength check using the increased score to break the enclosure; failure restrains you without causing crushing damage. The material component is adamantine worth at least 500 gp.</p><p><strong>Automation boundary:</strong> Apply size, ability, armor, proficiency, spell-resistance, equipment-damage, and spellcasting restrictions manually; the system does not transform the actor or all carried items as one transaction.</p>"
     },
     "display": "Personal",
     "duration": {
@@ -221,15 +221,15 @@
       "dc": "0",
       "dcAutoAbility": "",
       "dcAutoType": "",
-      "description": "None",
+      "description": "",
       "originVersion": 97,
       "type": ""
     },
     "school": "trs",
-    "shortDescription": "<p>You gain combat ability and lose spellcasting</p>",
+    "shortDescription": "<p>Assume a larger martial form with enhanced physical abilities, armor, and spell resistance, but lose all spellcasting for the duration.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "You gain combat ability and lose spellcasting",
+    "snip": "Assume a larger martial form with enhanced physical abilities, armor, and spell resistance, but lose all spellcasting for the duration.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 265-273",
     "specialActions": [],
     "specialId": null,
@@ -246,7 +246,7 @@
       "_deprecated": true,
       "value": ""
     },
-    "sr": true,
+    "sr": false,
     "subschool": "",
     "summon": [],
     "tags": [],
@@ -272,7 +272,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Apply size, ability, armor, proficiency, spell-resistance, equipment-damage, and spellcasting restrictions manually; the system does not transform the actor or all carried items as one transaction."
     }
   },
   "type": "spell"

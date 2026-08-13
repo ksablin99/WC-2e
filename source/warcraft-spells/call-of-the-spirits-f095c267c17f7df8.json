@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -34,7 +34,7 @@
           284
         ],
         "section": "Call of the Spirits",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -55,7 +55,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -72,18 +72,18 @@
     "atWill": false,
     "autoscaleAttackParts": "",
     "baseCl": "0",
-    "castTime": "",
+    "castTime": "1 standard action",
     "changes": [],
     "classSource": "",
     "clOffset": 0,
     "combatChanges": [],
     "components": {
-      "divineFocus": 0,
+      "divineFocus": 1,
       "focus": false,
       "material": false,
       "somatic": false,
-      "value": "",
-      "verbal": false
+      "value": "V, DF",
+      "verbal": true
     },
     "conditionals": [],
     "container": "None",
@@ -104,9 +104,9 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>You gain a +5 bonus on one</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>When casting, identify one specific die roll you expect to make before the spell expires. The first occurrence of that declared roll gains a +5 untyped bonus and discharges the spell. Only one instance may affect you; a later casting replaces the earlier one.</p><p><strong>Automation boundary:</strong> Record the declared roll and apply the one-time untyped bonus manually.</p>"
     },
-    "display": "",
+    "display": "Personal",
     "duration": {
       "units": "",
       "value": null
@@ -194,7 +194,7 @@
     "psionic": "",
     "range": {
       "long": null,
-      "units": "medium",
+      "units": "personal",
       "value": null
     },
     "recharge": {
@@ -215,38 +215,37 @@
       "dc": "0",
       "dcAutoAbility": "",
       "dcAutoType": "",
-      "description": "None",
+      "description": "",
       "originVersion": 97,
       "type": ""
     },
     "school": "nec",
-    "shortDescription": "<p>You gain a +5 bonus on one</p>",
+    "shortDescription": "<p>Name one specific future die roll and gain a +5 untyped bonus when that roll occurs.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "You gain a +5 bonus on one",
+    "snip": "Name one specific future die roll and gain a +5 untyped bonus when that roll occurs.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 270-273",
     "specialActions": [],
     "specialId": null,
     "specialPrepared": false,
     "spellArea": "",
     "spellbook": "primary",
-    "spellDuration": "Instantaneous",
+    "spellDuration": "1 hour/level or until discharged",
     "spellDurationData": {
-      "dismissable": false,
-      "units": "inst",
-      "value": ""
+      "units": "spec",
+      "value": null
     },
     "spellEffect": "",
     "spellType": {
       "_deprecated": true,
       "value": ""
     },
-    "sr": true,
+    "sr": false,
     "subschool": "",
     "summon": [],
     "tags": [],
     "target": {
-      "value": "up to five creatures, no two of which can be more than 15 ft. apart"
+      "value": "You"
     },
     "types": "force",
     "uniqueId": "",
@@ -267,7 +266,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Record the declared roll and apply the one-time untyped bonus manually."
     }
   },
   "type": "spell"

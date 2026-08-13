@@ -34,7 +34,7 @@
           309
         ],
         "section": "Hold Animal",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -105,7 +105,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Paralyzes one animal for 1 round/</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;enchantment&nbsp;(compulsion)&nbsp;[mind-affecting];\n    <br>\n    <strong>Level:</strong>&nbsp;Druid 2, Ranger 2;\n    <strong>Domain:</strong>&nbsp;Animal 2;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;medium (100 ft. + 10 ft./level)<br>\n    \n    <strong>Target:</strong>&nbsp;one animal<br>\n    \n    <strong>Duration:</strong>&nbsp;See Text (D)<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;3<br>\n        <strong>Saving Throw:</strong>&nbsp;Will Negates\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThe subject becomes paralyzed and freezes in place. It is aware and breathes normally but cannot take any actions, even speech. Each round on its turn, the subject may attempt a new saving throw to end the effect. (This is a full-round action that does not provoke attacks of opportunity.)\n</p><p>A winged creature who is paralyzed cannot flap its wings and falls. A swimmer can’t swim and may drown.\n</p><p><i>Arcane Focus: </i>A small, straight piece of iron.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "",
     "duration": {
@@ -223,10 +223,10 @@
       "type": "willnegates"
     },
     "school": "enc",
-    "shortDescription": "<p>Paralyzes one animal for 1 round/</p>",
+    "shortDescription": "\n\n\n<p>\nThe subject becomes paralyzed and freezes in place. It is aware and breathes normally but cannot take any actions, even speech. Each round on its turn, the subject may attempt a new saving throw to end the effect. (This is a full-round action that does not provoke attacks of opportunity.)\n</p><p>A winged creature who is paralyzed cannot flap its wings and falls. A swimmer can’t swim and may drown.\n</p><p><i>Arcane Focus: </i>A small, straight piece of iron.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Paralyzes one animal for 1 round/",
+    "snip": "Paralyzes one animal for 1 round/level.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 269-271",
     "specialActions": [
       {

@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -34,7 +34,7 @@
           350
         ],
         "section": "Thunderclap",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -55,7 +55,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -104,7 +104,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Nearby creatures take damage and are</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>Every creature other than you in the 20-foot-radius burst takes 1d8 sonic damage per three caster levels, maximum 5d8. A successful Fortitude save negates the effect. A creature that takes damage is also slowed, as though chilled, for 1 full round. Spell resistance applies.</p><p>The material component is a small silver hammer.</p><p><strong>Automation boundary:</strong> Resolve saves, damage, spell resistance, and the one-round slowed condition manually.</p>"
     },
     "display": "Personal",
     "duration": {
@@ -219,10 +219,10 @@
       "type": "fortitudenegates"
     },
     "school": "evo",
-    "shortDescription": "<p>Nearby creatures take damage and are</p>",
+    "shortDescription": "<p>Damage creatures around you with sonic force and slow those that take damage for one round.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Nearby creatures take damage and are",
+    "snip": "Damage creatures around you with sonic force and slow those that take damage for one round.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 265-269",
     "specialActions": [],
     "specialId": null,
@@ -265,7 +265,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Resolve saves, damage, spell resistance, and the one-round slowed condition manually."
     }
   },
   "type": "spell"

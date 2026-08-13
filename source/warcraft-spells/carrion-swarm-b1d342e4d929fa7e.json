@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           285
         ],
         "section": "Carrion Swarm",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "spellsave",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -95,14 +95,19 @@
     "customTag": "",
     "damage": {
       "alternativeParts": [],
-      "parts": []
+      "parts": [
+        [
+          "(min(15, @cl))d6",
+          "Piercing and bludgeoning"
+        ]
+      ]
     },
     "damageReduction": [],
     "deactivateActions": [],
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>A swarm of vermin attacks creatures;</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>Vermin surge through the cone and deal 1d6 damage per caster level, maximum 15d6; the damage is nonmagical piercing and bludgeoning. A Reflex save halves it, and spell resistance applies. Incorporeal creatures are unaffected.</p><p>The material component is the body of a small vermin.</p><p><strong>Automation boundary:</strong> The damage roll is documented; apply the mixed physical damage and incorporeal immunity manually.</p>"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -159,7 +164,7 @@
       "overrideColor": false,
       "overrideTexture": false,
       "size": 0,
-      "type": ""
+      "type": "cone"
     },
     "metamagicFeats": {
       "empowered": false,
@@ -213,10 +218,10 @@
       "type": "reflexhalf"
     },
     "school": "con",
-    "shortDescription": "<p>A swarm of vermin attacks creatures;</p>",
+    "shortDescription": "<p>A cone of summoned vermin deals up to 15d6 physical damage, Reflex half.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "A swarm of vermin attacks creatures;",
+    "snip": "A cone of summoned vermin deals up to 15d6 physical damage, Reflex half.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 266-266",
     "specialActions": [],
     "specialId": null,
@@ -258,8 +263,8 @@
       "value": 0
     },
     "warcraftManualPolicy": {
-      "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "mode": "verified-vertical-slice",
+      "reason": "The damage roll is documented; apply the mixed physical damage and incorporeal immunity manually."
     }
   },
   "type": "spell"

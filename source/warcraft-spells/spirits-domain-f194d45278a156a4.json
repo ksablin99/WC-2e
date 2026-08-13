@@ -291,7 +291,7 @@
         },
         "level6": {
           "id": "93d514c331e1451e",
-          "img": "icons/svg/target.svg",
+          "img": "systems/warcraftrpg2e/icons/spells/named-spells/bears-endurance.png",
           "level": 6,
           "name": "Mass Bear's Endurance",
           "pack": "warcraftrpg2e.warcraft-spells"

@@ -137,7 +137,7 @@ test('persistent all itemType featDamageBonus applies without optional checkbox'
 
   const { attackDamageTotals } = await page.evaluate(() => {
     const msg = game.messages.contents.at(-1);
-    const attacks = msg?.flags?.D35E?.chatTemplateData?.attacks ?? [];
+    const attacks = msg?.flags?.warcraftrpg2e?.chatTemplateData?.attacks ?? [];
     return {
       attackDamageTotals: attacks.map((attack) => attack.damage?.total ?? null),
     };

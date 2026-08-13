@@ -19,7 +19,13 @@
         "category": "General",
         "prerequisite": "",
         "repeatable": true,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "Choose one skill. You gain a +3 unnamed bonus on all checks using that skill.",
+          "manual": "Record the selected skill and apply its bonus manually.",
+          "special": "You may select this feat more than once, choosing a different skill each time.",
+          "summary": "Gain +3 on checks with one chosen skill."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": false
       },
@@ -33,7 +39,7 @@
           157
         ],
         "section": "Skill Focus",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +154,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 157) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Summary:</strong> Gain +3 on checks with one chosen skill.</p><p><strong>Benefit:</strong> Choose one skill. You gain a +3 unnamed bonus on all checks using that skill.</p><p><strong>Special:</strong> You may select this feat more than once, choosing a different skill each time.</p><p><strong>Foundry and GM handling:</strong> Record the selected skill and apply its bonus manually.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +254,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat.</p>",
+    "shortDescription": "<p>Gain +3 on checks with one chosen skill.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 157",

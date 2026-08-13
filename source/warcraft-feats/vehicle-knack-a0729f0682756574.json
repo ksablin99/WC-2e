@@ -19,7 +19,13 @@
         "category": "Technology",
         "prerequisite": "",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "Gain +2 on Craft (technological device) checks to build vehicles and on Use Technological Device checks to use them. Increase your Technological Limit by 2 for vehicle construction.",
+          "manual": "Foundry records the feat but does not classify a project or operated device as a vehicle. The player or GM must apply the contextual skill bonuses and the construction-only Technological Limit increase when the object qualifies.",
+          "special": "A tinker may select Vehicle Knack as a bonus tinker feat.",
+          "summary": "Gain expertise in both constructing and operating vehicles."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": true,
         "warriorBonus": false
       },
@@ -33,7 +39,7 @@
           161
         ],
         "section": "Vehicle Knack",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +154,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> Technology.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 161) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> Technology feat</p><p><strong>Summary:</strong> Gain expertise in both constructing and operating vehicles.</p><p><strong>Benefit:</strong> Gain +2 on Craft (technological device) checks to build vehicles and on Use Technological Device checks to use them. Increase your Technological Limit by 2 for vehicle construction.</p><p><strong>Special:</strong> A tinker may select Vehicle Knack as a bonus tinker feat.</p><p><strong>Tinker bonus feat:</strong> Yes</p><p><strong>Foundry and GM handling:</strong> Foundry records the feat but does not classify a project or operated device as a vehicle. The player or GM must apply the contextual skill bonuses and the construction-only Technological Limit increase when the object qualifies.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +254,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>Technology feat.</p>",
+    "shortDescription": "<p>Gain expertise in both constructing and operating vehicles.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 161",

@@ -34,7 +34,7 @@
           277
         ],
         "section": "Antilife Shell",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -105,7 +105,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>A hemispherical energy fi eld</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;abjuration;\n    <br>\n    <strong>Level:</strong>&nbsp;Cleric 6, Druid 6;\n    <strong>Domain:</strong>&nbsp;Animal 6;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, F, DF<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 round<br>\n    <strong>Range:</strong>&nbsp;10 feet<br>\n    <strong>Area:</strong>&nbsp;10-ft.-radius emanation, centered on you<br>\n    \n    \n    <strong>Duration:</strong>&nbsp;10 Minute/Level (D)<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;11<br>\n        <strong>Saving Throw:</strong>&nbsp;None\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nYou bring into being a mobile, hemispherical energy field that prevents the entrance of most types of living creatures.\n</p><p>The effect hedges out animals, aberrations, dragons, fey, giants, humanoids, magical beasts, monstrous humanoids, oozes, plants, and vermin, but not constructs, elementals, outsiders, or undead.\n</p><p>This spell may be used only defensively, not aggressively. Forcing an abjuration barrier against creatures that the spell keeps at bay collapses the barrier.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "10 ft.",
     "duration": {
@@ -222,10 +222,10 @@
       "type": ""
     },
     "school": "abj",
-    "shortDescription": "<p>A hemispherical energy fi eld</p>",
+    "shortDescription": "\n\n\n<p>\nYou bring into being a mobile, hemispherical energy field that prevents the entrance of most types of living creatures.\n</p><p>The effect hedges out animals, aberrations, dragons, fey, giants, humanoids, magical beasts, monstrous humanoids, oozes, plants, and vermin, but not constructs, elementals, outsiders, or undead.\n</p><p>This spell may be used only defensively, not aggressively. Forcing an abjuration barrier against creatures that the spell keeps at bay collapses the barrier.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "A hemispherical energy fi eld",
+    "snip": "10-ft.-radius field hedges out living creatures.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 271-272",
     "specialActions": [],
     "specialId": null,

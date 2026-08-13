@@ -34,7 +34,7 @@
           288
         ],
         "section": "Control Plants",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -96,7 +96,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Control actions of one or more</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;transmutation;\n    <br>\n    <strong>Level:</strong>&nbsp;Druid 8;\n    <strong>Domain:</strong>&nbsp;Plant 8;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, F, DF<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;close (25 ft. + 5 ft./2 levels)<br>\n    \n    <strong>Target:</strong>&nbsp;up to 2 hd/level of plant creatures, no two of which can be more than 30 ft. apart\n<br>\n    \n    <strong>Duration:</strong>&nbsp;1 Minute/Level<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;Will negates\n\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;no<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThis spell enables you to control the actions of one or more plant creatures for a short period of time. You command the creatures by voice and they understand you, no matter what language you speak. Even if vocal communication is impossible the controlled plants do not attack you. At the end of the spell, the subjects revert to their normal behavior.\n</p><p>Suicidal or self-destructive commands are simply ignored.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -211,10 +211,10 @@
       "type": "willnegates"
     },
     "school": "trs",
-    "shortDescription": "<p>Control actions of one or more</p>",
+    "shortDescription": "\n\n\n<p>\nThis spell enables you to control the actions of one or more plant creatures for a short period of time. You command the creatures by voice and they understand you, no matter what language you speak. Even if vocal communication is impossible the controlled plants do not attack you. At the end of the spell, the subjects revert to their normal behavior.\n</p><p>Suicidal or self-destructive commands are simply ignored.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Control actions of one or more",
+    "snip": "Control actions of one or more plant creatures.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 269-273",
     "specialActions": [],
     "specialId": null,

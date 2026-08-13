@@ -61,6 +61,38 @@ test("feat document validation blocks prerequisites, duplicates, and conflicts",
   expect(result).toEqual({ blocked: 0, first: 1, duplicate: 0, conflicting: 0 });
 });
 
+test("actor refresh preserves manual unique-ID feats and prunes obsolete automatic features", async ({ page }) => {
+  const result = await page.evaluate(async () => {
+    const actor = await Actor.create({ name: "Warcraft Feature Ownership", type: "character" });
+    const createdFeats = await actor.createEmbeddedDocuments("Item", [
+      {
+        name: "Manual Unique-ID Feat",
+        type: "feat",
+        system: { featType: "feat", uniqueId: "e2e-manual-feat", userNonRemovable: false },
+      },
+      {
+        name: "Obsolete Automatic Feature",
+        type: "feat",
+        system: { featType: "classFeat", uniqueId: "e2e-obsolete-auto", userNonRemovable: true },
+      },
+    ], { stopUpdates: true, _warcraftBypassFeatValidation: true });
+    const manual = createdFeats.find((feat) => feat.name === "Manual Unique-ID Feat");
+    const automatic = createdFeats.find((feat) => feat.name === "Obsolete Automatic Feature");
+
+    const before = { manual: actor.items.has(manual.id), automatic: actor.items.has(automatic.id) };
+    await actor.refresh();
+    return {
+      before,
+      after: { manual: actor.items.has(manual.id), automatic: actor.items.has(automatic.id) },
+    };
+  });
+
+  expect(result).toEqual({
+    before: { manual: true, automatic: true },
+    after: { manual: true, automatic: false },
+  });
+});
+
 test("Hero Point sheet control arms a declared option before the roll", async ({ page }) => {
   const actorId = await page.evaluate(async () => {
     const actor = await Actor.create({
@@ -122,7 +154,7 @@ test("Battle Shout spends the shared pool and creates the timed morale buff", as
 test("firearm sheet reload consumes one ball and one ounce of gunpowder", async ({ page }) => {
   const ids = await page.evaluate(async () => {
     const actor = await Actor.create({ name: "Warcraft Gunner", type: "character" });
-    const [weapon, ammunition, powder] = await actor.createEmbeddedDocuments("Item", [
+    const createdItems = await actor.createEmbeddedDocuments("Item", [
       {
         name: "Test Flintlock Pistol",
         type: "weapon",
@@ -134,6 +166,9 @@ test("firearm sheet reload consumes one ball and one ounce of gunpowder", async 
       { name: "Pistol Balls (10)", type: "loot", system: { quantity: 1, price: 5, weight: 3 } },
       { name: "Gunpowder Horn (2 lb.)", type: "loot", system: { quantity: 1, price: 35, weight: 2 } },
     ]);
+    const weapon = createdItems.find((item) => item.name === "Test Flintlock Pistol");
+    const ammunition = createdItems.find((item) => item.name === "Pistol Balls (10)");
+    const powder = createdItems.find((item) => item.name === "Gunpowder Horn (2 lb.)");
     return { actorId: actor.id, weaponId: weapon.id, ammunitionId: ammunition.id, powderId: powder.id };
   });
   const sheetId = await openEmbeddedItemSheet(page, ids.actorId, ids.weaponId);
@@ -193,20 +228,40 @@ test("technology sheet exposes design, operation, construction, and vehicle cont
   await expect(sheet.locator('[data-warcraft-tech-action="begin-upgrade"]')).toBeVisible();
 });
 
-test("new character sheet opens the guided builder and advances after race and class selection", async ({ page }) => {
+test("guided builder completes a non-default first-level character and persists its history", async ({ page }, testInfo) => {
+  const pageErrors = [];
+  const consoleErrors = [];
+  page.on("pageerror", (error) => pageErrors.push(error.stack ?? error.message));
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
+
   const actorId = await page.evaluate(async () => (await Actor.create({ name: "Warcraft Recruit", type: "character" })).id);
   const sheetId = await openSheet(page, actorId);
-  await page.locator(`#${sheetId} [data-warcraft-character-builder]`).click({ force: true });
+  await page.locator(`#${sheetId} [data-warcraft-character-builder]`).click();
   const builder = page.locator("#warcraft-character-creation");
-  await expect(builder).toBeVisible();
+  try {
+    await expect(builder).toBeVisible({ timeout: 30_000 });
+  } catch (error) {
+    const browserErrors = [
+      ...pageErrors.map((message) => `[pageerror] ${message}`),
+      ...consoleErrors.map((message) => `[console.error] ${message}`),
+    ];
+    await testInfo.attach("builder-open-browser-errors", {
+      body: browserErrors.length ? browserErrors.join("\n\n") : "No browser errors captured.",
+      contentType: "text/plain",
+    });
+    throw new Error(`Character builder did not become visible within 30 seconds. Browser errors:\n${browserErrors.join("\n\n") || "(none)"}`, { cause: error });
+  }
   await expect.poll(() => builder.locator('select[name="raceId"] option').count()).toBeGreaterThan(1);
   await expect.poll(() => builder.locator('select[name="classId"] option').count()).toBeGreaterThan(1);
   await expect.poll(() => builder.locator('select[name="raceId"] option:not([value=""])').count()).toBeGreaterThan(1);
   await expect.poll(() => builder.locator('select[name="classId"] option:not([value=""])').count()).toBeGreaterThan(1);
 
-  // Use non-default choices so a rerender reset cannot look like success.
-  const raceId = await builder.locator('select[name="raceId"] option:not([value=""])').last().getAttribute("value");
-  await builder.locator('select[name="raceId"]').selectOption(raceId);
+  // Use stable, non-default choices so a rerender reset cannot look like success.
+  await builder.locator('select[name="raceId"]').selectOption({ label: "Orc" });
+  const raceId = await builder.locator('select[name="raceId"]').inputValue();
+  expect(raceId).not.toBe("");
   await expect.poll(() => page.evaluate(() => {
     const applications = [
       ...Object.values(ui.windows ?? {}),
@@ -216,8 +271,9 @@ test("new character sheet opens the guided builder and advances after race and c
   })).toBe(raceId);
   await expect(builder.locator('select[name="raceId"]')).toHaveValue(raceId);
   await expect(builder.locator('select[name="classId"]')).toHaveValue("");
-  const classId = await builder.locator('select[name="classId"] option:not([value=""])').last().getAttribute("value");
-  await builder.locator('select[name="classId"]').selectOption(classId);
+  await builder.locator('select[name="classId"]').selectOption({ label: "Warrior" });
+  const classId = await builder.locator('select[name="classId"]').inputValue();
+  expect(classId).not.toBe("");
   await expect.poll(() => page.evaluate(() => {
     const applications = [
       ...Object.values(ui.windows ?? {}),
@@ -228,15 +284,132 @@ test("new character sheet opens the guided builder and advances after race and c
   })).toEqual({ raceId, classId });
   await expect(builder.locator('select[name="classId"]')).toHaveValue(classId);
   await expect(builder.locator('select[name="raceId"]')).toHaveValue(raceId);
+  await builder.locator('input[name="gender"]').fill("Male");
+  await builder.locator('input[name="deity"]').fill("The Ancestors");
+  await builder.locator('input[name="affiliation"]').fill("Orgrimmar");
+  await builder.locator('input[name="affiliationRating"]').fill("2");
   await builder.locator('[data-warcraft-creation-action="next"]').click({ force: true });
+
   await expect(builder.locator('input[name="abilities.str"]')).toHaveValue("10");
-  await builder.locator('[data-warcraft-creation-action="ability"][data-ability="str"][data-delta="1"]').click({ force: true });
+  for (const expected of ["11", "12", "13"]) {
+    await builder.locator('[data-warcraft-creation-action="ability"][data-ability="str"][data-delta="1"]').click({ force: true });
+    await expect(builder.locator('input[name="abilities.str"]')).toHaveValue(expected);
+  }
   await expect.poll(() => page.evaluate(() => {
     const applications = [
       ...Object.values(ui.windows ?? {}),
       ...Array.from(foundry.applications.instances?.values?.() ?? []),
     ];
     return applications.find((app) => app.id === "warcraft-character-creation")?.plan?.abilities?.str ?? null;
-  })).toBe(11);
-  await expect(builder.locator('input[name="abilities.str"]')).toHaveValue("11");
+  })).toBe(13);
+  await builder.locator('[data-warcraft-creation-action="next"]').click({ force: true });
+
+  const climb = builder.locator('input[name="skills.clm"]');
+  await expect(climb).toBeVisible();
+  await climb.fill("1");
+  await builder.locator('[data-warcraft-creation-action="next"]').click({ force: true });
+
+  const feat = builder.locator("#feat-list li").filter({ hasText: "Blind-Fight" }).locator('input[name="featIds"]');
+  await expect(feat).toHaveCount(1);
+  const featId = await feat.getAttribute("value");
+  await feat.check({ force: true });
+  await expect(feat).toBeChecked();
+  await builder.locator('[data-warcraft-creation-action="next"]').click({ force: true });
+
+  const equipment = builder.locator("#equipment-list li").filter({ hasText: "Backpack" }).locator('input[name="equipmentIds"]');
+  await expect(equipment).toHaveCount(1);
+  const equipmentId = await equipment.getAttribute("value");
+  await equipment.check({ force: true });
+  await expect(equipment).toBeChecked();
+  await builder.locator('[data-warcraft-creation-action="next"]').click({ force: true });
+
+  await expect(builder).toContainText("Orc");
+  await expect(builder).toContainText("Warrior");
+  await expect(builder).toContainText("STR 13");
+  const complete = builder.locator('[data-warcraft-creation-action="complete"]');
+  await expect(complete).toBeEnabled();
+  await complete.click({ force: true });
+
+  try {
+    await expect(builder).toBeHidden({ timeout: 15_000 });
+  } catch (error) {
+    await testInfo.attach("builder-page-errors", {
+      body: pageErrors.length ? pageErrors.join("\n\n") : "No page errors captured.",
+      contentType: "text/plain",
+    });
+    throw new Error(`Character builder did not close after Create character. Page errors:\n${pageErrors.join("\n\n") || "(none)"}`, { cause: error });
+  }
+
+  await expect.poll(() => page.evaluate(({ actorId, raceId, classId, featId, equipmentId }) => {
+    const actor = game.actors.get(actorId);
+    const race = actor.items.find((item) => item.type === "race" && item.name === "Orc");
+    const characterClass = actor.items.find((item) => item.type === "class" && item.name === "Warrior");
+    const feat = actor.items.find((item) => item.type === "feat" && item.name === "Blind-Fight");
+    const equipment = actor.items.find((item) => item.name === "Backpack");
+    const history = actor.system.details.levelUpData?.[0];
+    return {
+      completed: actor.flags.warcraftrpg2e?.creation?.completed ?? false,
+      identity: {
+        gender: actor.system.details.gender,
+        deity: actor.system.details.deity,
+        affiliation: actor.system.details.affiliation,
+        affiliationRating: actor.system.details.affiliationRating,
+      },
+      abilities: Object.fromEntries(["str", "dex", "con", "int", "wis", "cha"].map((key) => [key, actor.system.abilities[key].value])),
+      climbPoints: actor.system.skills.clm.points,
+      race: race ? { name: race.name, originPack: race.system.originPack, originId: race.system.originId === raceId } : null,
+      characterClass: characterClass ? {
+        name: characterClass.name,
+        levels: characterClass.system.levels,
+        originPack: characterClass.system.originPack,
+        originId: characterClass.system.originId === classId,
+      } : null,
+      feat: feat ? { name: feat.name, originPack: feat.system.originPack, originId: feat.system.originId === featId } : null,
+      equipment: equipment ? { name: equipment.name, originPack: equipment.system.originPack, originId: equipment.system.originId === equipmentId } : null,
+      currency: {
+        pp: actor.system.currency.pp,
+        gp: actor.system.currency.gp,
+        sp: actor.system.currency.sp,
+        cp: actor.system.currency.cp,
+      },
+      history: history ? {
+        count: actor.system.details.levelUpData.length,
+        level: history.level,
+        className: history.class,
+        classMatches: history.classId === characterClass?.id,
+        path: history.path ?? null,
+        hp: history.hp,
+        climb: history.skills?.clm ?? null,
+        hasFeat: history.hasFeat,
+        hasAbility: history.hasAbility,
+      } : null,
+    };
+  }, { actorId, raceId, classId, featId, equipmentId }), { timeout: 15_000 }).toEqual({
+    completed: true,
+    identity: { gender: "Male", deity: "The Ancestors", affiliation: "Orgrimmar", affiliationRating: 2 },
+    abilities: { str: 13, dex: 10, con: 10, int: 10, wis: 10, cha: 10 },
+    climbPoints: 1,
+    race: { name: "Orc", originPack: "warcraftrpg2e.warcraft-races", originId: true },
+    characterClass: { name: "Warrior", levels: 1, originPack: "warcraftrpg2e.warcraft-classes", originId: true },
+    feat: { name: "Blind-Fight", originPack: "warcraftrpg2e.warcraft-feats", originId: true },
+    equipment: { name: "Backpack", originPack: "warcraftrpg2e.warcraft-equipment", originId: true },
+    currency: { pp: 0, gp: 98, sp: 0, cp: 0 },
+    history: {
+      count: 1,
+      level: 1,
+      className: "Warrior",
+      classMatches: true,
+      path: null,
+      hp: 10,
+      climb: { points: 1, rank: 1, cls: true, subskills: {} },
+      hasFeat: true,
+      hasAbility: false,
+    },
+  });
+
+  await testInfo.attach("builder-page-errors", {
+    body: pageErrors.length ? pageErrors.join("\n\n") : "No page errors captured.",
+    contentType: "text/plain",
+  });
+  expect(pageErrors, "Character builder emitted unexpected page errors").toEqual([]);
 });

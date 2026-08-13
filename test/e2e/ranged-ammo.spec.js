@@ -499,7 +499,7 @@ test('ammoDamageParts single replace: replaces weapon base damage formula', asyn
     const msg = game.messages.contents.at(-1);
     if (!msg) return { error: 'no message', damageTotal: -1 };
 
-    const chatTD  = msg.flags?.D35E?.chatTemplateData ?? {};
+    const chatTD  = msg.flags?.warcraftrpg2e?.chatTemplateData ?? {};
     const firstAtk = (chatTD.attacks ?? [])[0];
     return {
       damageTotal: firstAtk?.damage?.total ?? -1,
@@ -577,7 +577,7 @@ test('ammoDamageParts type-override: keeps weapon dice when replace formula is e
     const msg = game.messages.contents.at(-1);
     if (!msg) return { error: 'no message', damageTotal: -1 };
 
-    const chatTD  = msg.flags?.D35E?.chatTemplateData ?? {};
+    const chatTD  = msg.flags?.warcraftrpg2e?.chatTemplateData ?? {};
     const firstAtk = (chatTD.attacks ?? [])[0];
     return {
       damageTotal: firstAtk?.damage?.total ?? -1,
@@ -659,7 +659,7 @@ test('ammoDamageParts multiple replace: replaces all weapon damage parts', async
     const msg = game.messages.contents.at(-1);
     if (!msg) return { error: 'no message', damageTotal: -1 };
 
-    const chatTD  = msg.flags?.D35E?.chatTemplateData ?? {};
+    const chatTD  = msg.flags?.warcraftrpg2e?.chatTemplateData ?? {};
     const firstAtk = (chatTD.attacks ?? [])[0];
     return {
       damageTotal: firstAtk?.damage?.total ?? -1,
@@ -737,7 +737,7 @@ test('ammoDamageParts add mode: stacks on top of weapon damage', async ({ page }
     const msg = game.messages.contents.at(-1);
     if (!msg) return { error: 'no message', damageTotal: -1 };
 
-    const chatTD  = msg.flags?.D35E?.chatTemplateData ?? {};
+    const chatTD  = msg.flags?.warcraftrpg2e?.chatTemplateData ?? {};
     const firstAtk = (chatTD.attacks ?? [])[0];
     return {
       damageTotal: firstAtk?.damage?.total ?? -1,
@@ -829,7 +829,7 @@ test('ammo bonusAmmoAttack: attack tooltip contains ammo bonus source', async ({
     const msg = game.messages.contents.at(-1);
     if (!msg) return { error: 'no chat message', attackTooltip: '', newMessages: 0 };
 
-    const chatTD   = msg.flags?.D35E?.chatTemplateData ?? {};
+    const chatTD   = msg.flags?.warcraftrpg2e?.chatTemplateData ?? {};
     const attacks  = chatTD.attacks ?? [];
     const firstAtk = attacks[0];
 
@@ -925,7 +925,7 @@ test('ammo bonusAmmoDamage: flat bonus raises damage total and appears in toolti
     const msg = game.messages.contents.at(-1);
     if (!msg) return { error: 'no chat message', damageTotal: -1, damageTooltip: '', newMessages: 0 };
 
-    const chatTD   = msg.flags?.D35E?.chatTemplateData ?? {};
+    const chatTD   = msg.flags?.warcraftrpg2e?.chatTemplateData ?? {};
     const attacks  = chatTD.attacks ?? [];
     const firstAtk = attacks[0];
 

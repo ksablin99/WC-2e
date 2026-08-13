@@ -108,7 +108,7 @@ test('ammo bonusAmmoAttackNote is included in the attack chat card', async ({ pa
     const msg = game.messages.contents.at(-1);
     if (!msg) return { error: 'no chat message created', extraText: '' };
 
-    const chatTD = msg.flags?.D35E?.chatTemplateData ?? {};
+    const chatTD = msg.flags?.warcraftrpg2e?.chatTemplateData ?? {};
     return {
       extraText:   chatTD.extraText   ?? '',
       msgContent:  msg.content        ?? '',
@@ -213,7 +213,7 @@ test('attack without ammo selected does not inject ammo note into chat card', as
     }
 
     const msg = game.messages.contents.at(-1);
-    const chatTD = msg?.flags?.D35E?.chatTemplateData ?? {};
+    const chatTD = msg?.flags?.warcraftrpg2e?.chatTemplateData ?? {};
     return {
       extraText:  chatTD.extraText ?? '',
       msgContent: msg?.content ?? '',

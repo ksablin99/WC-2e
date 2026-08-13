@@ -19,7 +19,13 @@
         "category": "General",
         "prerequisite": "",
         "repeatable": true,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "Choose one school of magic. The save DC of your spells from that school increases by 1.",
+          "manual": "Record the selected school and apply the conditional save DC bonus manually.",
+          "special": "You may select this feat more than once, choosing a different school each time.",
+          "summary": "Increase by 1 the saving throw DC of spells from one chosen school."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": false
       },
@@ -33,7 +39,7 @@
           158
         ],
         "section": "Spell Focus",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +154,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 158) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Summary:</strong> Increase by 1 the saving throw DC of spells from one chosen school.</p><p><strong>Benefit:</strong> Choose one school of magic. The save DC of your spells from that school increases by 1.</p><p><strong>Special:</strong> You may select this feat more than once, choosing a different school each time.</p><p><strong>Foundry and GM handling:</strong> Record the selected school and apply the conditional save DC bonus manually.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +254,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat.</p>",
+    "shortDescription": "<p>Increase by 1 the saving throw DC of spells from one chosen school.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 158",

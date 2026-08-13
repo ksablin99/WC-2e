@@ -64,6 +64,28 @@ async function sampleEncumbranceMatrix(page, baseSpeed) {
   }, baseSpeed);
 }
 
+test('missing derived actualSize still produces finite encumbrance thresholds', async ({ page }) => {
+  const result = await page.evaluate(async () => {
+    const actor = await Actor.create({ name: 'Fresh Encumbrance Actor', type: 'character' });
+    await actor.update({
+      'system.traits.actualSize': null,
+      'system.traits.size': 'med',
+      'system.abilities.str.value': 10,
+    });
+
+    const fresh = game.actors.get(actor.id);
+    return {
+      actualSize: fresh.system.traits.actualSize,
+      levels: fresh.system.attributes.encumbrance.levels,
+    };
+  });
+
+  expect(result.actualSize).toBe('med');
+  expect(Number.isFinite(result.levels.light)).toBe(true);
+  expect(Number.isFinite(result.levels.medium)).toBe(true);
+  expect(Number.isFinite(result.levels.heavy)).toBe(true);
+});
+
 test('SRD encumbrance speed matrix for base 30 ft (light/medium/heavy/overloaded)', async ({ page }) => {
   const result = await sampleEncumbranceMatrix(page, 30);
 

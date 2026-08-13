@@ -19,7 +19,13 @@
         "category": "General",
         "prerequisite": "Strength 15, Bash, Power Attack, base attack bonus +4.",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "Once per day, before making a normal melee attack, declare Thunderous Blow. If the attack hits, produce a thunderclap effect centered on the target, using your character level as caster level and save DC 10 + half your character level + your Charisma modifier. A miss still expends the daily use.",
+          "manual": "Declare and expend the use before rolling, then resolve the thunderclap spell's area, save, and effects manually.",
+          "special": "You may select this feat more than once; each additional selection grants one more use per day.",
+          "summary": "Once per day, a declared melee hit erupts as a thunderclap centered on the target."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": true
       },
@@ -33,7 +39,7 @@
           158
         ],
         "section": "Thunderous Blow",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +154,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p><strong>Prerequisites:</strong> Strength 15, Bash, Power Attack, base attack bonus +4.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 158) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Prerequisites:</strong> Strength 15, Bash, Power Attack, base attack bonus +4.</p><p><strong>Summary:</strong> Once per day, a declared melee hit erupts as a thunderclap centered on the target.</p><p><strong>Benefit:</strong> Once per day, before making a normal melee attack, declare Thunderous Blow. If the attack hits, produce a thunderclap effect centered on the target, using your character level as caster level and save DC 10 + half your character level + your Charisma modifier. A miss still expends the daily use.</p><p><strong>Special:</strong> You may select this feat more than once; each additional selection grants one more use per day.</p><p><strong>Warrior bonus feat:</strong> Yes</p><p><strong>Foundry and GM handling:</strong> Declare and expend the use before rolling, then resolve the thunderclap spell&#39;s area, save, and effects manually.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +254,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat; requires Strength 15, Bash, Power Attack, base attack bonus +4..</p>",
+    "shortDescription": "<p>Once per day, a declared melee hit erupts as a thunderclap centered on the target.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 158",

@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           290
         ],
         "section": "Dark Metamorphosis",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Caster gains potent defenses</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>For the duration you gain fast healing 3, damage reduction 10/good and silver, +4 enhancement Strength, +4 enhancement Stamina, and +4 enhancement natural armor. Once per round you may cast <em>orb of annihilation</em> as a standard action; doing so is your spellcasting action for that round.</p><p>The material component is a vial of demon blood, which is consumed by drinking it.</p><p><strong>Automation boundary:</strong> Apply the transformation, defenses, bonuses, and once-per-round embedded spell manually.</p>"
     },
     "display": "Personal",
     "duration": {
@@ -208,15 +208,15 @@
       "dc": "0",
       "dcAutoAbility": "",
       "dcAutoType": "",
-      "description": "None",
+      "description": "",
       "originVersion": 97,
       "type": ""
     },
     "school": "trs",
-    "shortDescription": "<p>Caster gains potent defenses</p>",
+    "shortDescription": "<p>Assume a demonic form with fast healing, damage reduction, physical enhancements, and repeatable annihilation orbs.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Caster gains potent defenses",
+    "snip": "Assume a demonic form with fast healing, damage reduction, physical enhancements, and repeatable annihilation orbs.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 266-266",
     "specialActions": [],
     "specialId": null,
@@ -233,7 +233,7 @@
       "_deprecated": true,
       "value": ""
     },
-    "sr": true,
+    "sr": false,
     "subschool": "",
     "summon": [],
     "tags": [],
@@ -259,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Apply the transformation, defenses, bonuses, and once-per-round embedded spell manually."
     }
   },
   "type": "spell"

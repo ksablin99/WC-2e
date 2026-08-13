@@ -19,7 +19,13 @@
         "category": "General",
         "prerequisite": "Proficient with weapon, base attack bonus +8.",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "Choose one weapon with which you are proficient. Its critical threat range is doubled.",
+          "manual": "Record the selected weapon and adjust its threat range manually; do not combine this increase with another threat-range increase.",
+          "special": "You may select this feat more than once, choosing a different weapon each time. Its effect does not stack with any other effect that expands a weapon's threat range.",
+          "summary": "Double the threat range of one proficient weapon."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": true
       },
@@ -33,7 +39,7 @@
           150
         ],
         "section": "Improved Critical",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +154,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p><strong>Prerequisites:</strong> Proficient with weapon, base attack bonus +8.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 150) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Prerequisites:</strong> Proficient with weapon, base attack bonus +8.</p><p><strong>Summary:</strong> Double the threat range of one proficient weapon.</p><p><strong>Benefit:</strong> Choose one weapon with which you are proficient. Its critical threat range is doubled.</p><p><strong>Special:</strong> You may select this feat more than once, choosing a different weapon each time. Its effect does not stack with any other effect that expands a weapon&#39;s threat range.</p><p><strong>Warrior bonus feat:</strong> Yes</p><p><strong>Foundry and GM handling:</strong> Record the selected weapon and adjust its threat range manually; do not combine this increase with another threat-range increase.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +254,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat; requires Proficient with weapon, base attack bonus +8..</p>",
+    "shortDescription": "<p>Double the threat range of one proficient weapon.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 150",

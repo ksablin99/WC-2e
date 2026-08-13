@@ -153,7 +153,7 @@ test('GL#1682 loot sheet template renders currency inputs with system.* names', 
     await game.actors.get(actor.id).update({
       'system.currency.gp': 25,
       flags: {
-        D35E:  { lootsheettype: 'Loot' },
+        warcraftrpg2e: { lootsheettype: 'Loot' },
         core:  { sheetClass: 'warcraftrpg2e.ActorSheetPFNPCLoot' },
       },
     });

@@ -34,7 +34,7 @@
           303
         ],
         "section": "Finger of Death",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -107,7 +107,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Kills one target.</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;necromancy&nbsp;[death];\n    <br>\n    <strong>Level:</strong>&nbsp;Druid 8, Sorcerer 7, Wizard 7;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;close (25 ft. + 5 ft./2 levels)<br>\n    \n    <strong>Target:</strong>&nbsp;one living creature<br>\n    \n    <strong>Duration:</strong>&nbsp;Instantaneous<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;Fortitude partial\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nYou can slay any one living creature within range. The target is entitled to a Fortitude saving throw to survive the attack. If the save is successful, the creature instead takes 3d6 points of damage +1 point per caster level (maximum +25).\n</p><p>The subject might die from damage even if it succeeds on its saving throw.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -222,10 +222,10 @@
       "type": "fortitudepartial"
     },
     "school": "nec",
-    "shortDescription": "<p>Kills one target.</p>",
+    "shortDescription": "\n\n\n<p>\nYou can slay any one living creature within range. The target is entitled to a Fortitude saving throw to survive the attack. If the save is successful, the creature instead takes 3d6 points of damage +1 point per caster level (maximum +25).\n</p><p>The subject might die from damage even if it succeeds on its saving throw.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Kills one target.",
+    "snip": "Kills one subject.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 266-272",
     "specialActions": [],
     "specialId": null,

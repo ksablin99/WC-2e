@@ -22,7 +22,7 @@ export class ItemEnhancements extends ItemExtension {
     } else return itemData;
   }
 
-  async useEnhancementItem(item) {
+  async useEnhancementItem(item, event = null) {
     let chargeCost = item.system?.uses?.chargesPerUse !== undefined ? item.system.uses.chargesPerUse : item.chargeCost;
     let chargesLeft = item.system?.uses?.value || 0;
     if (foundry.utils.getProperty(this.item.system, "enhancements.uses.commonPool")) {
@@ -52,7 +52,11 @@ export class ItemEnhancements extends ItemExtension {
     item.conjuredSourceWeaponId = this.item.id;
     item.parentItem = this.item;
 
-    let roll = await item.use({ ev: event, skipDialog: event.shiftKey, temporaryItem: true }, this.item.actor, true);
+    let roll = await item.use(
+      { ev: event, skipDialog: event?.shiftKey ?? false, temporaryItem: true },
+      this.item.actor,
+      true
+    );
     if (roll.wasRolled) {
       if (foundry.utils.getProperty(this.item.system, "enhancements.uses.commonPool")) {
         let updateData = {};

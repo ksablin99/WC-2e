@@ -17,9 +17,16 @@
     "warcraftrpg2e": {
       "feat": {
         "category": "General",
-        "prerequisite": "Weapon Profi ciency (crossbow type chosen).",
+        "prerequisite": "Weapon Proficiency (selected crossbow type).",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "Choose hand crossbow, light crossbow, or heavy crossbow. Reloading the selected hand or light crossbow becomes a free action, while reloading the selected heavy crossbow becomes a move action. Reloading still provokes attacks of opportunity. With a selected hand or light crossbow, you may fire as many times in a full attack as your attack routine permits.",
+          "manual": "Record the selected crossbow type and adjudicate reload actions, provocation, and full-attack availability manually.",
+          "normal": "Reloading a hand or light crossbow is normally a move action; reloading a heavy crossbow is normally a full-round action.",
+          "special": "You may select this feat more than once, choosing a different crossbow type each time.",
+          "summary": "Reload one chosen crossbow type faster."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": true
       },
@@ -33,7 +40,7 @@
           155
         ],
         "section": "Rapid Reload",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +155,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p><strong>Prerequisites:</strong> Weapon Profi ciency (crossbow type chosen).</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 155) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Prerequisites:</strong> Weapon Proficiency (selected crossbow type).</p><p><strong>Summary:</strong> Reload one chosen crossbow type faster.</p><p><strong>Benefit:</strong> Choose hand crossbow, light crossbow, or heavy crossbow. Reloading the selected hand or light crossbow becomes a free action, while reloading the selected heavy crossbow becomes a move action. Reloading still provokes attacks of opportunity. With a selected hand or light crossbow, you may fire as many times in a full attack as your attack routine permits.</p><p><strong>Normal:</strong> Reloading a hand or light crossbow is normally a move action; reloading a heavy crossbow is normally a full-round action.</p><p><strong>Special:</strong> You may select this feat more than once, choosing a different crossbow type each time.</p><p><strong>Warrior bonus feat:</strong> Yes</p><p><strong>Foundry and GM handling:</strong> Record the selected crossbow type and adjudicate reload actions, provocation, and full-attack availability manually.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +255,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat; requires Weapon Profi ciency (crossbow type chosen)..</p>",
+    "shortDescription": "<p>Reload one chosen crossbow type faster.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 155",

@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "srd-mechanics-with-warcraft-header"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,12 +32,12 @@
           323
         ],
         "section": "Mass Owl's Wisdom",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
   "folder": null,
-  "img": "icons/svg/target.svg",
+  "img": "systems/warcraftrpg2e/icons/spells/school/trs.png",
   "name": "Mass Owl's Wisdom",
   "ownership": {
     "default": 0
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -64,7 +64,7 @@
       "parts": []
     },
     "attackBonus": "",
-    "attackCountFormula": "max(min(5,ceil(@cl/2)),1)",
+    "attackCountFormula": "",
     "attackNotes": "",
     "attackParts": [],
     "atWill": false,
@@ -74,7 +74,6 @@
     "changes": [],
     "classSource": "",
     "clOffset": 0,
-    "combatChanges": [],
     "components": {
       "divineFocus": 1,
       "focus": false,
@@ -97,12 +96,11 @@
       "alternativeParts": [],
       "parts": []
     },
-    "damageReduction": [],
     "deactivateActions": [],
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>As owl's wisdom, affects one</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;transmutation;\n    <br>\n    <strong>Level:</strong>&nbsp;Cleric 6, Druid 6, Sorcerer 6, Wizard 6;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, M (a few feathers, or a pinch of droppings, from an owl)<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;close (25 ft. + 5 ft./2 levels)<br>\n    \n    <strong>Target:</strong>&nbsp;one creature/level, no two of which can be more than 30 ft. apart<br>\n    \n    <strong>Duration:</strong>&nbsp;1 Minute/Level<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;11<br>\n        <strong>Saving Throw:</strong>&nbsp;Will negates (harmless)\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThe transmuted creatures becomes wiser. The spell grants a +4 enhancement bonus to Wisdom, adding the usual benefit to Wisdom-related skills. Clerics, druids, paladins, and rangers (and other Wisdom-based spellcasters) who receive <i>owl’s wisdom </i>do not gain any additional bonus spells for the increased Wisdom, but the save DCs for their spells increase.\n</p><p><i>Arcane Material Component: </i>A few feathers, or a pinch of droppings, from an owl.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Touch",
     "duration": {
@@ -149,7 +147,7 @@
         "value": false
       },
       "focus": "",
-      "value": ""
+      "value": "a few feathers, or a pinch of droppings, from an owl"
     },
     "maxDamageDice": 0,
     "maxDamageDiceFormula": "",
@@ -176,7 +174,7 @@
     "originPack": "warcraftrpg2e.warcraft-spells",
     "originVersion": 109,
     "possibleUpdate": false,
-    "powerPointsCost": 1,
+    "powerPointsCost": 11,
     "pr": false,
     "preparation": {
       "autoDeductCharges": true,
@@ -196,7 +194,6 @@
       "formula": ""
     },
     "requiresPsionicFocus": false,
-    "resistances": [],
     "rollTableDraw": {
       "formula": "",
       "id": "",
@@ -213,12 +210,19 @@
       "type": "willnegates"
     },
     "school": "trs",
-    "shortDescription": "<p>As owl's wisdom, affects one</p>",
+    "shortDescription": "\n\n\n<p>\nThe transmuted creatures becomes wiser. The spell grants a +4 enhancement bonus to Wisdom, adding the usual benefit to Wisdom-related skills. Clerics, druids, paladins, and rangers (and other Wisdom-based spellcasters) who receive <i>owl’s wisdom </i>do not gain any additional bonus spells for the increased Wisdom, but the save DCs for their spells increase.\n</p><p><i>Arcane Material Component: </i>A few feathers, or a pinch of droppings, from an owl.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "As owl's wisdom, affects one",
+    "snip": "As owl’s wisdom, affects one subject/ level.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 268-268",
-    "specialActions": [],
+    "specialActions": [
+      {
+        "action": "Create unique \"Owl's Wisdom\" from warcraftrpg2e.commonbuffs on target;Activate buff \"Owl's Wisdom\" on target; Set buff \"Owl's Wisdom\" field data.level to max(3,(@cl)) on target;",
+        "condition": "",
+        "img": "systems/warcraftrpg2e/icons/buffs/owl-wisdom.png",
+        "name": "Owl's Wisdom"
+      }
+    ],
     "specialId": null,
     "specialPrepared": false,
     "spellArea": "",
@@ -240,7 +244,7 @@
     "target": {
       "value": "One creature/level, no two of which can be more than 30 ft. apart"
     },
-    "types": "force",
+    "types": "",
     "uniqueId": "",
     "userNonRemovable": false,
     "uses": {
@@ -258,8 +262,8 @@
       "value": 0
     },
     "warcraftManualPolicy": {
-      "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "mode": "srd-baseline",
+      "reason": "The inherited SRD implementation is used with the Warcraft list assignment and spell level."
     }
   },
   "type": "spell"

@@ -1,3 +1,5 @@
+import { getSystemFlag, SYSTEM_FLAG_SCOPE, unsetSystemFlag } from "../../utils/system-flags.js";
+
 /**
  * When items are placed in containers, actorUpdater unequips them and mirrors the
  * container's carried state. When they return to root, nothing restores carried
@@ -45,8 +47,8 @@ export class ItemContainerHook {
 
   static _mergeFlagEquippedBeforeContainer(updateData) {
     updateData.flags = updateData.flags || {};
-    updateData.flags.D35E = updateData.flags.D35E || {};
-    updateData.flags.D35E[ItemContainerHook.FLAG_EQUIPPED_BEFORE_CONTAINER] = true;
+    updateData.flags[SYSTEM_FLAG_SCOPE] = updateData.flags[SYSTEM_FLAG_SCOPE] || {};
+    updateData.flags[SYSTEM_FLAG_SCOPE][ItemContainerHook.FLAG_EQUIPPED_BEFORE_CONTAINER] = true;
   }
 
   static _mergeCarriedTrue(updateData) {
@@ -91,7 +93,7 @@ export class ItemContainerHook {
       if (newC === undefined) return;
       if (ItemContainerHook._normContainerId(newC) !== "none") return;
       if (!["weapon", "equipment"].includes(item.type)) return;
-      if (!item.getFlag("D35E", ItemContainerHook.FLAG_EQUIPPED_BEFORE_CONTAINER)) return;
+      if (!getSystemFlag(item, ItemContainerHook.FLAG_EQUIPPED_BEFORE_CONTAINER)) return;
 
       const actorId = item.parent.id;
       const itemId = item.id;
@@ -114,7 +116,7 @@ export class ItemContainerHook {
     if (!actor) return;
     const item = actor.items.get(itemId);
     if (!item) return;
-    if (!item.getFlag("D35E", ItemContainerHook.FLAG_EQUIPPED_BEFORE_CONTAINER)) return;
+    if (!getSystemFlag(item, ItemContainerHook.FLAG_EQUIPPED_BEFORE_CONTAINER)) return;
 
     const itemName = item.name;
     const title = game.i18n.localize("D35E.ContainerReequipTitle");
@@ -131,7 +133,7 @@ export class ItemContainerHook {
         rejectClose: false,
       });
     } finally {
-      await item.unsetFlag("D35E", ItemContainerHook.FLAG_EQUIPPED_BEFORE_CONTAINER).catch(() => { });
+      await Promise.resolve(unsetSystemFlag(item, ItemContainerHook.FLAG_EQUIPPED_BEFORE_CONTAINER)).catch(() => { });
     }
 
     if (!confirmed) return;

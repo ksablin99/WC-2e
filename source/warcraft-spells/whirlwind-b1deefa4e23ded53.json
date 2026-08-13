@@ -34,7 +34,7 @@
           356
         ],
         "section": "Whirlwind",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -96,7 +96,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Cyclone deals damage and can pick</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;evocation&nbsp;[air];\n    <br>\n    <strong>Level:</strong>&nbsp;Druid 8;\n    <strong>Domain:</strong>&nbsp;Air 8, Weather 8;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, F, DF<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;long (400 ft. + 40 ft./level)<br>\n    \n    \n    <strong>Effect:</strong>&nbsp;Cyclone 10 ft. wide at base, 30 ft. wide at top, and 30 ft. tall\n<br>\n    <strong>Duration:</strong>&nbsp;1 Round/Level (D)<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;Reflex negates; see text\n\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThis spell creates a powerful cyclone of raging wind that moves through the air, along the ground, or over water at a speed of 60 feet per round. You can concentrate on controlling the cyclone’s every movement or specify a simple program. Directing the cyclone’s movement or changing its programmed movement is a standard action for you. The cyclone always moves during your turn. If the cyclone exceeds the spell’s range, it moves in a random, uncontrolled fashion for 1d3 rounds and then dissipates. (You can’t regain control of the cyclone, even if comes back within range.)\n</p><p>Any Large or smaller creature that comes in contact with the spell effect must succeed on a Reflex save or take 3d6 points of damage. A Medium or smaller creature that fails its first save must succeed on a second one or be picked up bodily by the cyclone and held suspended in its powerful winds, taking 1d8 points of damage each round on your turn with no save allowed. You may direct the cyclone to eject any carried creatures whenever you wish, depositing the hapless souls wherever the cyclone happens to be when they are released.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Long (400 ft. + 40 ft./level)",
     "duration": {
@@ -211,10 +211,10 @@
       "type": "reflexnegates"
     },
     "school": "evo",
-    "shortDescription": "<p>Cyclone deals damage and can pick</p>",
+    "shortDescription": "\n\n\n<p>\nThis spell creates a powerful cyclone of raging wind that moves through the air, along the ground, or over water at a speed of 60 feet per round. You can concentrate on controlling the cyclone’s every movement or specify a simple program. Directing the cyclone’s movement or changing its programmed movement is a standard action for you. The cyclone always moves during your turn. If the cyclone exceeds the spell’s range, it moves in a random, uncontrolled fashion for 1d3 rounds and then dissipates. (You can’t regain control of the cyclone, even if comes back within range.)\n</p><p>Any Large or smaller creature that comes in contact with the spell effect must succeed on a Reflex save or take 3d6 points of damage. A Medium or smaller creature that fails its first save must succeed on a second one or be picked up bodily by the cyclone and held suspended in its powerful winds, taking 1d8 points of damage each round on your turn with no save allowed. You may direct the cyclone to eject any carried creatures whenever you wish, depositing the hapless souls wherever the cyclone happens to be when they are released.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Cyclone deals damage and can pick",
+    "snip": "Cyclone deals damage and can pick up creatures.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 271-273",
     "specialActions": [],
     "specialId": null,

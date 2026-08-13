@@ -34,7 +34,7 @@
           281
         ],
         "section": "Banishment",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -96,7 +96,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Banishes 2 HD/level of extraplanar</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;abjuration;\n    <br>\n    <strong>Level:</strong>&nbsp;Cleric 6, Sorcerer 7, Wizard 7;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, F (any item that is distasteful to the subject (optional, see above))<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;close (25 ft. + 5 ft./2 levels)<br>\n    \n    <strong>Target:</strong>&nbsp;one or more extraplanar creatures, no two of which can be more than 30 ft. apart\n<br>\n    \n    <strong>Duration:</strong>&nbsp;Instantaneous<br>\n    \n        <strong>Saving Throw:</strong>&nbsp;Will negates\n\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nA <i>banishment </i>spell is a more powerful version of the <i>dismissal </i>spell. It enables you to force extraplanar creatures out of your home plane. As many as 2 Hit Dice of creatures per caster level can be banished.\n</p><p>You can improve the spell’s chance of success by presenting at least one object or substance that the target hates, fears, or otherwise opposes. For each such object or substance, you gain a +1 bonus on your caster level check to overcome the target’s spell resistance (if any), the saving throw DC increases by 2.\n</p><p>Certain rare items might work twice as well as a normal item for the purpose of the bonuses (each providing a +2 bonus on the caster level check against spell resistance and increasing the save DC by 4).\n</p><p><i>Arcane Focus: </i>Any item that is distasteful to the subject (optional, see above).\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -210,10 +210,10 @@
       "type": "willnegates"
     },
     "school": "abj",
-    "shortDescription": "<p>Banishes 2 HD/level of extraplanar</p>",
+    "shortDescription": "\n\n\n<p>\nA <i>banishment </i>spell is a more powerful version of the <i>dismissal </i>spell. It enables you to force extraplanar creatures out of your home plane. As many as 2 Hit Dice of creatures per caster level can be banished.\n</p><p>You can improve the spell’s chance of success by presenting at least one object or substance that the target hates, fears, or otherwise opposes. For each such object or substance, you gain a +1 bonus on your caster level check to overcome the target’s spell resistance (if any), the saving throw DC increases by 2.\n</p><p>Certain rare items might work twice as well as a normal item for the purpose of the bonuses (each providing a +2 bonus on the caster level check against spell resistance and increasing the save DC by 4).\n</p><p><i>Arcane Focus: </i>Any item that is distasteful to the subject (optional, see above).\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Banishes 2 HD/level of extraplanar",
+    "snip": "Banishes 2 HD/level of extraplanar creatures.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 264-268",
     "specialActions": [],
     "specialId": null,

@@ -32,7 +32,7 @@
           326
         ],
         "section": "Polar Ray",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -109,7 +109,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Ranged touch attack deals 1d6/level cold</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;evocation&nbsp;[cold];\n    <br>\n    <strong>Level:</strong>&nbsp;Sorcerer 8, Wizard 8;\n    \n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, F (a small, white ceramic cone or prism)<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;close (25 ft. + 5 ft./2 levels)<br>\n    \n    \n    <strong>Effect:</strong>&nbsp;Ray<br>\n    <strong>Duration:</strong>&nbsp;Instantaneous<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;15<br>\n        <strong>Saving Throw:</strong>&nbsp;None\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nA blue-white ray of freezing air and ice springs from your hand. You must succeed on a ranged touch attack with the ray to deal damage to a target. The ray deals 1d6 points of cold damage per caster level (maximum 25d6).\n</p><p><i>Focus: </i>A small, white ceramic cone or prism.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -222,10 +222,10 @@
       "type": ""
     },
     "school": "evo",
-    "shortDescription": "<p>Ranged touch attack deals 1d6/level cold</p>",
+    "shortDescription": "\n\n\n<p>\nA blue-white ray of freezing air and ice springs from your hand. You must succeed on a ranged touch attack with the ray to deal damage to a target. The ray deals 1d6 points of cold damage per caster level (maximum 25d6).\n</p><p><i>Focus: </i>A small, white ceramic cone or prism.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Ranged touch attack deals 1d6/level cold",
+    "snip": "Ranged touch attack deals 1d6/level cold damage.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 265-265",
     "specialActions": [],
     "specialId": null,

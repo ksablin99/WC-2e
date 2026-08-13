@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           330
         ],
         "section": "Rejuvenation",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Subject regains 2d8 hit points per</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>The touched living creature regains 2d8 hit points each round for the spell's duration. It may act, fight, and cast spells normally while healing. The spell closes wounds, fades bruises, and sets broken bones, but does not restore severed limbs or ruined organs.</p><p><strong>Automation boundary:</strong> Apply the 2d8 healing once per round manually; the spell does not schedule recurring healing.</p>"
     },
     "display": "Touch",
     "duration": {
@@ -213,10 +213,10 @@
       "type": "fortitudenegates"
     },
     "school": "con",
-    "shortDescription": "<p>Subject regains 2d8 hit points per</p>",
+    "shortDescription": "<p>A living creature heals 2d8 hit points every round while continuing to act normally.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Subject regains 2d8 hit points per",
+    "snip": "A living creature heals 2d8 hit points every round while continuing to act normally.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 268-268",
     "specialActions": [],
     "specialId": null,
@@ -259,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Apply the 2d8 healing once per round manually; the spell does not schedule recurring healing."
     }
   },
   "type": "spell"

@@ -19,7 +19,13 @@
         "category": "Technology",
         "prerequisite": "Craft 8 ranks.",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "You may construct an item with raw materials worth only one-tenth of its market price. Increase that item's Craft check DC by 10.",
+          "manual": "Foundry records the feat but does not recalculate project cost or Craft DC. The player or GM must opt into the feat for a specific project, charge one-tenth market value in materials, and add 10 to its construction DC.",
+          "special": "A tinker may select Scavenge Materials as a bonus tinker feat.",
+          "summary": "Trade a harder construction check for a steep reduction in raw-material cost."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": true,
         "warriorBonus": false
       },
@@ -33,7 +39,7 @@
           156
         ],
         "section": "Scavenge Materials",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +154,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> Technology.</p><p><strong>Prerequisites:</strong> Craft 8 ranks.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 156) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> Technology feat</p><p><strong>Prerequisites:</strong> Craft 8 ranks.</p><p><strong>Summary:</strong> Trade a harder construction check for a steep reduction in raw-material cost.</p><p><strong>Benefit:</strong> You may construct an item with raw materials worth only one-tenth of its market price. Increase that item&#39;s Craft check DC by 10.</p><p><strong>Special:</strong> A tinker may select Scavenge Materials as a bonus tinker feat.</p><p><strong>Tinker bonus feat:</strong> Yes</p><p><strong>Foundry and GM handling:</strong> Foundry records the feat but does not recalculate project cost or Craft DC. The player or GM must opt into the feat for a specific project, charge one-tenth market value in materials, and add 10 to its construction DC.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +254,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>Technology feat; requires Craft 8 ranks..</p>",
+    "shortDescription": "<p>Trade a harder construction check for a steep reduction in raw-material cost.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 156",

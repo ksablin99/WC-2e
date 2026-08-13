@@ -19,7 +19,13 @@
         "category": "Technology",
         "prerequisite": "",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "Gain +2 on Craft (technological device) checks to build catapults, cannons, mortars, or other siege weapons; gain +2 on Disable Device checks to sabotage such weapons; and increase your Technological Limit by 2 when building siege weapons.",
+          "manual": "Foundry records the feat but does not classify a project or sabotage target as a siege weapon. The player or GM must apply the appropriate check bonus and construction-only Technological Limit increase when the object qualifies.",
+          "special": "A tinker may select Siege Weapon Knack as a bonus tinker feat.",
+          "summary": "Gain expertise in constructing and sabotaging siege weapons."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": true,
         "warriorBonus": false
       },
@@ -33,7 +39,7 @@
           157
         ],
         "section": "Siege Weapon Knack",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +154,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> Technology.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 157) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> Technology feat</p><p><strong>Summary:</strong> Gain expertise in constructing and sabotaging siege weapons.</p><p><strong>Benefit:</strong> Gain +2 on Craft (technological device) checks to build catapults, cannons, mortars, or other siege weapons; gain +2 on Disable Device checks to sabotage such weapons; and increase your Technological Limit by 2 when building siege weapons.</p><p><strong>Special:</strong> A tinker may select Siege Weapon Knack as a bonus tinker feat.</p><p><strong>Tinker bonus feat:</strong> Yes</p><p><strong>Foundry and GM handling:</strong> Foundry records the feat but does not classify a project or sabotage target as a siege weapon. The player or GM must apply the appropriate check bonus and construction-only Technological Limit increase when the object qualifies.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +254,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>Technology feat.</p>",
+    "shortDescription": "<p>Gain expertise in constructing and sabotaging siege weapons.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 157",

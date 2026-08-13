@@ -98,7 +98,7 @@ test('NPC attack item.use() posts a chat message', async ({ page }) => {
 
 // ── 3. Chat template data present with actor info ────────────────────────────
 
-test('NPC attack chat message has D35E chatTemplateData', async ({ page }) => {
+test('NPC attack chat message has system chatTemplateData', async ({ page }) => {
   const { actorId, atkId } = await createNpcWithAttack(page, { attackName: 'Claws' });
 
   const msgsBefore = await page.evaluate(() => game.messages.size);

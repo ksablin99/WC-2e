@@ -1,5 +1,6 @@
 import "./apps/vision-permission.js";
 import { ActorMinionsHelper } from "./actor/helpers/actorMinionsHelper.js";
+import { getSystemFlag } from "./utils/system-flags.js";
 
 
 export async function PatchCore() {
@@ -42,7 +43,7 @@ export async function PatchCore() {
   Object.defineProperty(ActiveEffect.prototype, "isTemporary", {
     get: function () {
       const duration = this.duration.seconds ?? (this.duration.rounds || this.duration.turns) ?? 0;
-      return duration > 0 || this.getFlag("core", "statusId") || this.getFlag("D35E", "show");
+      return duration > 0 || this.getFlag("core", "statusId") || getSystemFlag(this, "show");
     },
   });
 
@@ -56,4 +57,3 @@ export async function PatchCore() {
 
   import("./lib/intro.js");
 }
-

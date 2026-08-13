@@ -375,6 +375,20 @@ describe("Warcraft content pack integrity", () => {
       activation: { type: "free" },
       metamagic: { enabled: true },
     });
+
+    const cumulativeAdvancements = {
+      "Tauren Strength": { target: "str", levels: [1, 3] },
+      "Forsaken Racial Advancement": { target: "str", levels: [1, 2, 3] },
+      "High Elf Agility": { target: "dex", levels: [1, 2] },
+      "Jungle Troll Stamina": { target: "con", levels: [1, 3] },
+    };
+    for (const [name, { target, levels }] of Object.entries(cumulativeAdvancements)) {
+      const feature = findDocument("warcraft-races", name, "feat");
+      expect(feature.system.associations.classes.map(([, level]) => level)).toEqual(levels);
+      expect(feature.system.changes).toContainEqual(expect.arrayContaining(["1", "ability", target, "untyped"]));
+    }
+    expect(findDocument("warcraft-races", "Forsaken Racial Advancement", "feat").system.changes)
+      .toContainEqual(expect.arrayContaining(["1", "ac", "nac", "untyped"]));
   });
 
   test("configures Warrior as mundane and Arcanist as a Mage-path repertoire caster", () => {
@@ -489,7 +503,7 @@ describe("Warcraft content pack integrity", () => {
       const feat = byName[entry.name];
       expect(feat.type).toBe("feat");
       expect(feat.flags.warcraftrpg2e.feat.category).toBe(entry.category);
-      expect(feat.flags.warcraftrpg2e.feat.status).toMatch(/srd-mechanics|manual-effect|automated-effect|trigger-manual/);
+      expect(feat.flags.warcraftrpg2e.feat.status).toMatch(/srd-mechanics|verified-rules|manual-effect|automated-effect|trigger-manual/);
       expect(feat.system.uniqueId).toMatch(/^wc-feat-/);
       expectProvenance(feat);
     }
@@ -501,6 +515,44 @@ describe("Warcraft content pack integrity", () => {
     expect(byName["Weapon Focus"].flags.warcraftrpg2e.feat.repeatable).toBe(true);
     expect(byName["War Stomp"].flags.warcraftrpg2e.feat.prerequisite).toMatch(/tauren or size Large/i);
     expect(byName["Spell Mastery"].flags.warcraftrpg2e.feat.prerequisite).toMatch(/Arcanist level 1/i);
+  });
+
+  test("preserves complete verified rules and explicit manual boundaries for every Warcraft-only feat", () => {
+    const feats = loadSourcePack("warcraft-feats").documents.map(({ document }) => document);
+    const generalRules = readJson("scripts/warcraft-content/warcraft-feat-rules-general.json");
+    const extraRules = readJson("scripts/warcraft-content/warcraft-feat-rules-extra.json");
+    const expectedRules = { ...generalRules, ...extraRules };
+    const verified = feats.filter((feat) => feat.flags?.warcraftrpg2e?.feat?.status.startsWith("verified-rules-"));
+
+    expect(Object.keys(generalRules)).toHaveLength(39);
+    expect(Object.keys(extraRules)).toHaveLength(14);
+    expect(Object.keys(expectedRules)).toHaveLength(53);
+    expect(verified).toHaveLength(53);
+    expect(feats.filter((feat) => feat.flags?.warcraftrpg2e?.feat?.status === "manual-effect-pending-verification"))
+      .toHaveLength(0);
+
+    for (const feat of verified) {
+      const expected = expectedRules[feat.name];
+      expect(expected).toMatchObject({
+        summary: expect.any(String), benefit: expect.any(String), manual: expect.any(String),
+      });
+      expect(feat.flags.warcraftrpg2e.source.verification).toBe("text+render");
+      expect(feat.flags.warcraftrpg2e.feat.rules).toEqual(expected);
+      expect(feat.system.shortDescription).toContain(expected.summary.replace(/'/g, "&#39;"));
+      expect(feat.system.description.value).toMatch(/<strong>Benefit:<\/strong>/);
+      expect(feat.system.description.value).toMatch(/<strong>Foundry and GM handling:<\/strong>/);
+      expect(feat.system.description.value).not.toMatch(/resolve (?:its )?complete benefit from the private core rulebook/i);
+    }
+
+    const byName = Object.fromEntries(feats.map((feat) => [feat.name, feat]));
+    expect(byName.Bash.system.description.value).toMatch(/Fortitude save against DC 10 \+ the rolled damage/i);
+    expect(byName.Bash.system.description.value).toMatch(/once per character level each day/i);
+    expect(byName["Mirror Spell"].system.description.value).toMatch(/2 x the original spell&#39;s level \+ 1/i);
+    expect(byName["Emergency Repair"].system.description.value).toMatch(/DC 20 \+ twice its Malfunction Rating/i);
+    expect(byName["Mighty Lungs"].flags.warcraftrpg2e.feat.status).toBe("verified-rules-supported-automation");
+    expect(byName["Mighty Lungs"].flags.warcraftrpg2e.feat.rules.automation).toMatch(/automatically adds two daily uses/i);
+    expect(byName["Greater Weapon Focus"].flags.warcraftrpg2e.feat.prerequisite).not.toMatch(/Profi ciency/);
+    expect(byName["Lightning Reload"].flags.warcraftrpg2e.feat.prerequisite).not.toMatch(/fi rearms/);
   });
 
   test("structures all shout metadata for the shared actor resource", () => {
@@ -613,6 +665,57 @@ describe("Warcraft content pack integrity", () => {
       .toBe("srd-baseline-with-manual-boundary");
     expect(findDocument("warcraft-spells", "Mana Burn", "spell").system.warcraftManualPolicy.mode)
       .toBe("manual");
+  });
+
+  test("inherits complete SRD mechanics for prefix/suffix family spell names", () => {
+    for (const name of [
+      "Greater Dispel Magic", "Greater Invisibility", "Greater Magic Weapon",
+      "Greater Restoration", "Mass Bear's Endurance", "Mass Hold Monster",
+      "Medivh's Disjunction", "Medivh's Mnemonic Enhancer", "Ner'zhul's Black Tentacles",
+    ]) {
+      const spell = findDocument("warcraft-spells", name, "spell");
+      expect(spell.flags.warcraftrpg2e.catalog.status).toBe("srd-mechanics-with-warcraft-header");
+      expect(spell.system.warcraftManualPolicy.mode).toMatch(/^srd-baseline/);
+      expect(spell.system.description.value).not.toMatch(/Catalogue record only/i);
+      expect(spell.system.description.value.length).toBeGreaterThan(300);
+    }
+  });
+
+  test("provides verified complete rules and explicit automation boundaries for every Warcraft-only spell", () => {
+    const documents = loadSourcePack("warcraft-spells").documents
+      .map(({ document }) => document)
+      .filter((document) => document.type === "spell");
+    const pending = documents.filter((document) =>
+      document.flags?.warcraftrpg2e?.catalog?.status === "manual-effect-pending-verification");
+    expect(pending).toHaveLength(0);
+
+    const verified = documents.filter((document) =>
+      document.flags?.warcraftrpg2e?.catalog?.status === "verified-rules-with-manual-boundary");
+    expect(verified.length).toBeGreaterThan(80);
+    for (const spell of verified) {
+      expect(spell.flags.warcraftrpg2e.source.verification)
+        .toBe("private-source-rules-paraphrased+spot-rendered");
+      expect(spell.system.description.value).not.toMatch(/Catalogue record only|complete effect from the private rulebook/i);
+      expect(spell.system.description.value).toMatch(/<strong>Automation boundary:<\/strong>/);
+      expect(spell.system.description.value.length).toBeGreaterThan(160);
+      expect(spell.system.shortDescription).not.toMatch(/See the private core rulebook/i);
+      expect(spell.system.warcraftManualPolicy).toMatchObject({
+        mode: expect.stringMatching(/^(?:manual|verified-vertical-slice)$/),
+        reason: expect.any(String),
+      });
+    }
+
+    expect(findDocument("warcraft-spells", "Frostbolt", "spell").system).toMatchObject({
+      actionType: "rsak",
+      damage: { parts: [["(min(10, @cl))d6", null, "energy-cold"]] },
+    });
+    expect(findDocument("warcraft-spells", "Greater Hooks of Binding", "spell").system).toMatchObject({
+      activation: { cost: 1, type: "standard" },
+      range: { units: "medium" },
+      spellDurationData: { units: "roundPerLevel" },
+      save: { type: "fortitudenegates" },
+      sr: true,
+    });
   });
 
   test("links all nine healer domains to nine Warcraft spell records apiece", () => {

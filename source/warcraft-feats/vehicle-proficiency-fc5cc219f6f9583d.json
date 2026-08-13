@@ -19,7 +19,14 @@
         "category": "Technology",
         "prerequisite": "",
         "repeatable": true,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "Choose land vehicles, water vehicles, or air vehicles when taking this feat. You may operate vehicles of the chosen type by making the required Use Technological Device check.",
+          "manual": "Foundry records the feat but does not prompt for or enforce its specialty. Record each chosen specialty separately; the player or GM must determine the vehicle's type and apply the -4 penalty whenever no matching proficiency is present.",
+          "normal": "Operating a vehicle without proficiency in its type imposes a -4 penalty on the Use Technological Device check.",
+          "special": "This feat may be taken more than once, but each selection must cover a different vehicle specialty. A tinker may select Vehicle Proficiency as a bonus tinker feat.",
+          "summary": "Become trained with one vehicle environment: land, water, or air."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": true,
         "warriorBonus": false
       },
@@ -33,7 +40,7 @@
           161
         ],
         "section": "Vehicle Proficiency",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +155,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> Technology.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 161) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> Technology feat</p><p><strong>Summary:</strong> Become trained with one vehicle environment: land, water, or air.</p><p><strong>Benefit:</strong> Choose land vehicles, water vehicles, or air vehicles when taking this feat. You may operate vehicles of the chosen type by making the required Use Technological Device check.</p><p><strong>Normal:</strong> Operating a vehicle without proficiency in its type imposes a -4 penalty on the Use Technological Device check.</p><p><strong>Special:</strong> This feat may be taken more than once, but each selection must cover a different vehicle specialty. A tinker may select Vehicle Proficiency as a bonus tinker feat.</p><p><strong>Tinker bonus feat:</strong> Yes</p><p><strong>Foundry and GM handling:</strong> Foundry records the feat but does not prompt for or enforce its specialty. Record each chosen specialty separately; the player or GM must determine the vehicle&#39;s type and apply the -4 penalty whenever no matching proficiency is present.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +255,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>Technology feat.</p>",
+    "shortDescription": "<p>Become trained with one vehicle environment: land, water, or air.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 161",

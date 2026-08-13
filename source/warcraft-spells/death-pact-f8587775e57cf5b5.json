@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           291
         ],
         "section": "Death Pact",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Sacrifice an undead minion to regain hit</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>Touch one undead creature you control. On a failed Will save it is reduced to dust, and you regain hit points equal to the hit points it had remaining, up to your maximum. If its save succeeds, it survives and ceases to be under your control.</p><p><strong>Automation boundary:</strong> Verify control, roll the save, destroy or release the undead, and transfer its remaining hit-point value manually.</p>"
     },
     "display": "Touch",
     "duration": {
@@ -213,10 +213,10 @@
       "type": "willnegates"
     },
     "school": "nec",
-    "shortDescription": "<p>Sacrifice an undead minion to regain hit</p>",
+    "shortDescription": "<p>Destroy a controlled undead and recover hit points equal to its remaining health.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Sacrifice an undead minion to regain hit",
+    "snip": "Destroy a controlled undead and recover hit points equal to its remaining health.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 266-266",
     "specialActions": [],
     "specialId": null,
@@ -259,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Verify control, roll the save, destroy or release the undead, and transfer its remaining hit-point value manually."
     }
   },
   "type": "spell"

@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           313
         ],
         "section": "Greater Inner Fire",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>You gain +4 bonus on attack</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>This functions as <em>inner fire</em>, but grants +4 divine attack rolls and +5 divine AC.</p><p><strong>Automation boundary:</strong> Apply and remove both divine bonuses manually.</p>"
     },
     "display": "Personal",
     "duration": {
@@ -208,15 +208,15 @@
       "dc": "0",
       "dcAutoAbility": "",
       "dcAutoType": "",
-      "description": "None",
+      "description": "",
       "originVersion": 97,
       "type": ""
     },
     "school": "trs",
-    "shortDescription": "<p>You gain +4 bonus on attack</p>",
+    "shortDescription": "<p>Gain +4 divine attacks and +5 divine AC for 3 minutes.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "You gain +4 bonus on attack",
+    "snip": "Gain +4 divine attacks and +5 divine AC for 3 minutes.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 268-268",
     "specialActions": [],
     "specialId": null,
@@ -233,7 +233,7 @@
       "_deprecated": true,
       "value": ""
     },
-    "sr": true,
+    "sr": false,
     "subschool": "",
     "summon": [],
     "tags": [],
@@ -259,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Apply and remove both divine bonuses manually."
     }
   },
   "type": "spell"

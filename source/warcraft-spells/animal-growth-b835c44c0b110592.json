@@ -34,7 +34,7 @@
           276
         ],
         "section": "Animal Growth",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -105,7 +105,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>One animal/two levels doubles</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;transmutation;\n    <br>\n    <strong>Level:</strong>&nbsp;Druid 5, Ranger 4, Sorcerer 5, Wizard 5;\n    <strong>Domain:</strong>&nbsp;Scalykind 5;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;medium (100 ft. + 10 ft./level)<br>\n    \n    <strong>Target:</strong>&nbsp;up to one animal (gargantuan or smaller) per two levels, no two of which can be more than 30 ft. apart<br>\n    \n    <strong>Duration:</strong>&nbsp;1 Minute/Level<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;9<br>\n        <strong>Saving Throw:</strong>&nbsp;Fortitude negates\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nA number of animals grow to twice their normal size and eight times their normal weight. This alteration changes each animal’s size category to the next largest, grants it a +8 size bonus to Strength and a +4 size bonus to Constitution (and thus an extra 2 hit points per HD), and imposes a –2 size penalty to Dexterity. The creature’s existing natural armor bonus increases by 2. The size change also affects the animal’s modifier to AC and attack rolls and its base damage. The animal’s space and reach change as appropriate to the new size, but its speed does not change.\n</p><p>The spell also grants each subject damage reduction 10/magic and a +4 resistance bonus on saving throws. If insufficient room is available for the desired growth, the creature attains the maximum possible size and may make a Strength check (using its increased Strength) to burst any enclosures in the process. If it fails, it is constrained without harm by the materials enclosing it— the spell cannot be used to crush a creature by increasing its size.\n</p><p>All equipment worn or carried by an animal is similarly enlarged by the spell, though this change has no effect on the magical properties of any such equipment.\n</p><p>Any enlarged item that leaves the enlarged creature’s possession instantly returns to its normal size.\n</p><p>The spell gives no means of command or influence over the enlarged animals.\n</p><p>Multiple magical effects that increase size do not stack.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Medium (100 ft. + 10 ft./level)",
     "duration": {
@@ -223,10 +223,10 @@
       "type": "fortitudenegates"
     },
     "school": "trs",
-    "shortDescription": "<p>One animal/two levels doubles</p>",
+    "shortDescription": "\n\n\n<p>\nA number of animals grow to twice their normal size and eight times their normal weight. This alteration changes each animal’s size category to the next largest, grants it a +8 size bonus to Strength and a +4 size bonus to Constitution (and thus an extra 2 hit points per HD), and imposes a –2 size penalty to Dexterity. The creature’s existing natural armor bonus increases by 2. The size change also affects the animal’s modifier to AC and attack rolls and its base damage. The animal’s space and reach change as appropriate to the new size, but its speed does not change.\n</p><p>The spell also grants each subject damage reduction 10/magic and a +4 resistance bonus on saving throws. If insufficient room is available for the desired growth, the creature attains the maximum possible size and may make a Strength check (using its increased Strength) to burst any enclosures in the process. If it fails, it is constrained without harm by the materials enclosing it— the spell cannot be used to crush a creature by increasing its size.\n</p><p>All equipment worn or carried by an animal is similarly enlarged by the spell, though this change has no effect on the magical properties of any such equipment.\n</p><p>Any enlarged item that leaves the enlarged creature’s possession instantly returns to its normal size.\n</p><p>The spell gives no means of command or influence over the enlarged animals.\n</p><p>Multiple magical effects that increase size do not stack.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "One animal/two levels doubles",
+    "snip": "One animal/two levels doubles in size.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 269-271",
     "specialActions": [
       {

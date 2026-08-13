@@ -511,7 +511,6 @@ export class Item35E extends ItemBase35E {
       await super.update(updated, options);
       return;
     }
-    game.D35E.logger.log("Is true/false", updated, foundry.utils.getProperty(this.system, "active"));
     let expandedData = foundry.utils.expandObject(updated);
     const srcData = foundry.utils.mergeObject(this.toObject(), expandedData);
 
@@ -535,8 +534,6 @@ export class Item35E extends ItemBase35E {
       expandedData.system?.containerId !== undefined
     )
       needsUpdate = true;
-
-    game.D35E.logger.log("Should be true/false, is true true", updated, foundry.utils.getProperty(this.system, "active"));
 
     for (var key in expandedData?.system?.customAttributes) {
       if (updated[`system.customAttributes.${key}`] === null) continue;
@@ -573,12 +570,12 @@ export class Item35E extends ItemBase35E {
       srcData.firstChangeTargetName = updated["firstChangeTarget"].split(":")[1];
       delete updated["firstChangeTarget"];
     }
-    if (updated["data.nameFromFormula"] || foundry.utils.getProperty(this.system, "nameFromFormula")) {
+    if (updated["system.nameFromFormula"] || foundry.utils.getProperty(this.system, "nameFromFormula")) {
       const srcDataWithRolls = this.getRollData(srcData);
       srcDataWithRolls.firstChangeTargetName = srcData.firstChangeTargetName;
       updated["name"] =
         Item35E._fillTemplate(
-          updated["data.nameFormula"] || foundry.utils.getProperty(this.system, "nameFormula"),
+          updated["system.nameFormula"] || foundry.utils.getProperty(this.system, "nameFormula"),
           srcDataWithRolls
         ) || updated["name"];
     }
@@ -1859,10 +1856,10 @@ export class Item35E extends ItemBase35E {
       disabled: this.type === "aura" ? false : !foundry.utils.getProperty(this.system, "active"),
     };
     if (this.type === "buff")
-      createData["flags.D35E.show"] =
+      createData["flags.warcraftrpg2e.show"] =
         !foundry.utils.getProperty(this.system, "hideFromToken") && !game.settings.get("warcraftrpg2e", "hideTokenConditions");
     if (this.type === "aura")
-      createData["flags.D35E.show"] =
+      createData["flags.warcraftrpg2e.show"] =
         !foundry.utils.getProperty(this.system, "hideFromToken") && !game.settings.get("warcraftrpg2e", "hideTokenConditions");
     return createData;
   }
@@ -1882,13 +1879,13 @@ export class Item35E extends ItemBase35E {
     // Handle different roll modes
     switch (chatData.rollMode) {
       case "gmroll":
-        chatData["whisper"] = game.users.contents.filter((u) => u.isGM).map((u) => u._id);
+        chatData["whisper"] = game.users.contents.filter((u) => u.isGM).map((u) => u.id);
         break;
       case "selfroll":
         chatData["whisper"] = [game.user.id];
         break;
       case "blindroll":
-        chatData["whisper"] = game.users.contents.filter((u) => u.isGM).map((u) => u._id);
+        chatData["whisper"] = game.users.contents.filter((u) => u.isGM).map((u) => u.id);
         chatData["blind"] = true;
     }
 

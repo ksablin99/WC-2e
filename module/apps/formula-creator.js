@@ -98,7 +98,6 @@ export function buildFormulaRollData(sheet, context = "actor,item", extras = {})
   // @powerAttackBonus) that the engine injects during roll resolution but that
   // aren't part of the static actor/item rollData.  The values supplied here are
   // preview defaults so the Test button produces meaningful output.
-  console.debug("D35E | formula-creator: building rollData with context", { context, base: rollData, extras });
   if (extras && typeof extras === "object") Object.assign(rollData, extras);
 
   return rollData;

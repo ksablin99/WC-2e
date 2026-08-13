@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -34,7 +34,7 @@
           309
         ],
         "section": "Healing Rain",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -55,7 +55,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -104,7 +104,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>A shower of positive energy heals</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>Each round of concentration, every living ally in the 20-foot-radius area regains 2d6 hit points. Undead in the area instead take 2d6 positive-energy damage; their listed Fortitude save halves that damage. Spell resistance applies as listed.</p><p><strong>Automation boundary:</strong> Maintain concentration and apply each healing or undead-damage pulse to all eligible creatures manually.</p>"
     },
     "display": "20 ft.",
     "duration": {
@@ -220,10 +220,10 @@
       "type": "fortitudehalf"
     },
     "school": "con",
-    "shortDescription": "<p>A shower of positive energy heals</p>",
+    "shortDescription": "<p>While concentrating, heal living allies for 2d6 each round and harm undead by the same amount.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "A shower of positive energy heals",
+    "snip": "While concentrating, heal living allies for 2d6 each round and harm undead by the same amount.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 270-272",
     "specialActions": [],
     "specialId": null,
@@ -232,8 +232,8 @@
     "spellbook": "primary",
     "spellDuration": "Concentration, up to 1 round/2 levels",
     "spellDurationData": {
-      "units": "round",
-      "value": 1
+      "units": "spec",
+      "value": null
     },
     "spellEffect": "",
     "spellType": {
@@ -266,7 +266,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Maintain concentration and apply each healing or undead-damage pulse to all eligible creatures manually."
     }
   },
   "type": "spell"

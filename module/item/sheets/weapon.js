@@ -5,6 +5,7 @@ import { IntelligentItemPowersSheetComponent } from "./components/intelligentIte
 import { ItemEnhancementHelper } from "../helpers/itemEnhancementHelper.js";
 import { ConjuredManager } from "../../conjuration/conjuredManager.js";
 import { createTag } from "../../lib.js";
+import { getSystemFlag, systemFlagPath } from "../../utils/system-flags.js";
 
 export class WeaponSheet35E extends ItemSheetPF {
   constructor(...args) {
@@ -38,7 +39,7 @@ export class WeaponSheet35E extends ItemSheetPF {
         dancingRounds: enhSystem.summonWeapon?.dancingRounds ?? 4,
         cooldownRounds: enhSystem.summonWeapon?.cooldownRounds ?? 4,
       };
-      sheetData.dancingState = foundry.utils.getProperty(this.item, "flags.D35E.dancingWeapon") ?? {};
+      sheetData.dancingState = getSystemFlag(this.item, "dancingWeapon") ?? {};
     } else {
       sheetData.dancingEnhancement = null;
       sheetData.dancingState = null;
@@ -81,6 +82,6 @@ export class WeaponSheet35E extends ItemSheetPF {
   }
 
   async _onDancingResetCooldown() {
-    await this.item.update({ "flags.D35E.dancingWeapon.cooldownRounds": 0 });
+    await this.item.update({ [systemFlagPath("dancingWeapon.cooldownRounds")]: 0 });
   }
 }

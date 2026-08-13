@@ -6,11 +6,12 @@
 
 'use strict';
 
-const { existsSync, rmSync, unlinkSync, readFileSync } = require('fs');
+const { existsSync, unlinkSync, readFileSync } = require('fs');
 const { resolve, join } = require('path');
 const { tmpdir } = require('os');
 
 const REPO_ROOT = resolve(__dirname, '..');
+const { removeManagedDataDir } = require('./safe-managed-data-dir');
 const envFile   = resolve(REPO_ROOT, '.dev-env');
 
 let dataDir = process.env.DEV_DATA_DIR ?? join(tmpdir(), 'foundry-dev');
@@ -27,7 +28,7 @@ if (existsSync(envFile)) {
 }
 
 if (existsSync(dataDir)) {
-  rmSync(dataDir, { recursive: true, force: true });
+  removeManagedDataDir(dataDir, { repoRoot: REPO_ROOT, kind: 'dev' });
   console.log(`[dev:clean] Removed ${dataDir}`);
 } else {
   console.log(`[dev:clean] Nothing to remove (${dataDir} does not exist)`);

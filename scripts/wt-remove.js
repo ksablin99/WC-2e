@@ -18,6 +18,7 @@ const { existsSync, lstatSync, readFileSync, rmSync, unlinkSync } = require('fs'
 const { resolve, join } = require('path');
 
 const REPO_ROOT = resolve(__dirname, '..');
+const { ensureManagedDataMarker, removeManagedDataDir } = require('./safe-managed-data-dir');
 
 function run(cmd, opts = {}) {
   return execSync(cmd, { encoding: 'utf8', cwd: REPO_ROOT, ...opts }).trim();
@@ -95,7 +96,12 @@ if (existsSync(devEnvPath)) {
     }
   }
   if (dataDir && existsSync(dataDir)) {
-    rmSync(dataDir, { recursive: true, force: true });
+    ensureManagedDataMarker(dataDir, {
+      repoRoot: wtPath,
+      kind: 'dev',
+      expectedWorldId: 'dev-world',
+    });
+    removeManagedDataDir(dataDir, { repoRoot: wtPath, kind: 'dev' });
     console.log(`[wt:remove] Removed Foundry data dir: ${dataDir}`);
   }
 }

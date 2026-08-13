@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           335
         ],
         "section": "Serpent Ward",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Totem releases fi reballs at targets</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>Plant a totem in your space. Once per round it makes one ranged touch attack against an enemy within 30 feet; you choose the target as a free action. The ward has Precise Shot and attacks with your base attack bonus + your Spirit modifier. A hit deals 1d6 fire damage per three caster levels, maximum 5d6.</p><p>The totem has AC 7, hardness 5, and 5 hit points. Destroying it ends the spell.</p><p><strong>Automation boundary:</strong> Create and place the ward, choose its target, resolve its attack each round, and track its defenses and destruction manually.</p>"
     },
     "display": "0 ft.",
     "duration": {
@@ -213,10 +213,10 @@
       "type": ""
     },
     "school": "con",
-    "shortDescription": "<p>Totem releases fi reballs at targets</p>",
+    "shortDescription": "<p>Plant an attackable totem that launches one scaling fire attack each round.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Totem releases fi reballs at targets",
+    "snip": "Plant an attackable totem that launches one scaling fire attack each round.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 270-270",
     "specialActions": [],
     "specialId": null,
@@ -259,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Create and place the ward, choose its target, resolve its attack each round, and track its defenses and destruction manually."
     }
   },
   "type": "spell"

@@ -34,7 +34,7 @@
           305
         ],
         "section": "Freedom of Movement",
-        "verification": "text-extracted-header"
+        "verification": "srd-mechanics+text-extracted-header"
       }
     }
   },
@@ -105,7 +105,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Subject moves normally</p>"
+      "value": "<div class=\"spell-description\">\n  <p>\n      <strong>School:</strong>&nbsp;abjuration;\n    <br>\n    <strong>Level:</strong>&nbsp;Assassin 4, Bard 4, Blackguard 4, Cleric 4, Druid 4, Ranger 4;\n    <strong>Domain:</strong>&nbsp;Liberation 4, Luck 4;\n    \n    \n    \n    <br>\n    <strong>Components:</strong>&nbsp;V, S, M (a leather thong, bound around the arm or a similar appendage), F, DF<br>\n    \n      <strong>Casting Time:</strong>&nbsp;1 standard action<br>\n    <strong>Range:</strong>&nbsp;touch<br>\n    \n    <strong>Target:</strong>&nbsp;you or creature touched<br>\n    \n    <strong>Duration:</strong>&nbsp;10 Minute/Level<br>\n    <strong>Power Points/Spell Points Cost:</strong>&nbsp;7<br>\n        <strong>Saving Throw:</strong>&nbsp;Will negates (harmless)\n        <br>\n        <strong>Spell Resistance:</strong>&nbsp;yes<br>\n  </p>\n  <h2>Description</h2>\n  \n\n\n<p>\nThis spell enables you or a creature you touch to move and attack normally for the duration of the spell, even under the influence of magic that usually impedes movement, such as paralysis, <i>solid fog</i>, <i>slow</i>, and <i>web</i>. The subject automatically succeeds on any grapple check made to resist a grapple attempt, as well as on grapple checks or Escape Artist checks made to escape a grapple or a pin.\n</p><p>The spell also allows the subject to move and attack normally while underwater, even with slashing weapons such as axes and swords or with bludgeoning weapons such as flails, hammers, and maces, provided that the weapon is wielded in the hand rather than hurled. The <i>freedom of movement</i> spell does not, however, allow water breathing.\n</p><p><i>Material Component:</i> A leather thong, bound around the arm or a similar appendage.\n</p>\n<hr/>\n\n\n\n</div>\n"
     },
     "display": "Personal or touch",
     "duration": {
@@ -222,10 +222,10 @@
       "type": "willnegates"
     },
     "school": "abj",
-    "shortDescription": "<p>Subject moves normally</p>",
+    "shortDescription": "\n\n\n<p>\nThis spell enables you or a creature you touch to move and attack normally for the duration of the spell, even under the influence of magic that usually impedes movement, such as paralysis, <i>solid fog</i>, <i>slow</i>, and <i>web</i>. The subject automatically succeeds on any grapple check made to resist a grapple attempt, as well as on grapple checks or Escape Artist checks made to escape a grapple or a pin.\n</p><p>The spell also allows the subject to move and attack normally while underwater, even with slashing weapons such as axes and swords or with bludgeoning weapons such as flails, hammers, and maces, provided that the weapon is wielded in the hand rather than hurled. The <i>freedom of movement</i> spell does not, however, allow water breathing.\n</p><p><i>Material Component:</i> A leather thong, bound around the arm or a similar appendage.\n</p>\n<hr/>\n\n\n",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Subject moves normally",
+    "snip": "Subject moves normally despite impediments.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 270-274",
     "specialActions": [
       {

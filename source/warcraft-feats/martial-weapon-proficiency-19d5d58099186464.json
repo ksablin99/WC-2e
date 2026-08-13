@@ -19,7 +19,14 @@
         "category": "General",
         "prerequisite": "",
         "repeatable": true,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "Choose one martial weapon. You make attacks with that weapon without the nonproficiency penalty.",
+          "manual": "Record the selected weapon; Foundry does not bind this generic feat record to a weapon choice automatically.",
+          "normal": "A character attacking with a martial weapon without proficiency takes a -4 penalty on attack rolls. Barbarians, paladins, and warriors are proficient with all martial weapons from their class training.",
+          "special": "You may select this feat more than once, choosing a different martial weapon each time.",
+          "summary": "Become proficient with one selected martial weapon."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": false
       },
@@ -33,7 +40,7 @@
           153
         ],
         "section": "Martial Weapon Proficiency",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +155,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 153) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Summary:</strong> Become proficient with one selected martial weapon.</p><p><strong>Benefit:</strong> Choose one martial weapon. You make attacks with that weapon without the nonproficiency penalty.</p><p><strong>Normal:</strong> A character attacking with a martial weapon without proficiency takes a -4 penalty on attack rolls. Barbarians, paladins, and warriors are proficient with all martial weapons from their class training.</p><p><strong>Special:</strong> You may select this feat more than once, choosing a different martial weapon each time.</p><p><strong>Foundry and GM handling:</strong> Record the selected weapon; Foundry does not bind this generic feat record to a weapon choice automatically.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +255,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat.</p>",
+    "shortDescription": "<p>Become proficient with one selected martial weapon.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 153",

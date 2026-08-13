@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -36,7 +36,7 @@
           291
         ],
         "section": "Greater Death Coil",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -57,7 +57,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -106,7 +106,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Deals 3d8 damage, +1/level</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>This functions as <em>death coil</em>, except the amount is 3d8 +1 per caster level, maximum +15. It damages living creatures (Will half) and heals undead.</p><p><strong>Automation boundary:</strong> Roll the listed amount, then apply it as saved damage to living creatures or healing to undead manually.</p>"
     },
     "display": "Close (25 ft. + 5 ft./2 levels)",
     "duration": {
@@ -226,10 +226,10 @@
       "type": "willhalf"
     },
     "school": "nec",
-    "shortDescription": "<p>Deals 3d8 damage, +1/level</p>",
+    "shortDescription": "<p>A stronger death coil deals or heals 3d8 + up to 15 points of negative energy.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Deals 3d8 damage, +1/level",
+    "snip": "A stronger death coil deals or heals 3d8 + up to 15 points of negative energy.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 266-271",
     "specialActions": [],
     "specialId": null,
@@ -272,7 +272,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Roll the listed amount, then apply it as saved damage to living creatures or healing to undead manually."
     }
   },
   "type": "spell"

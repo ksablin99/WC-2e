@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           282
         ],
         "section": "Blizzard",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -70,7 +70,7 @@
     "atWill": false,
     "autoscaleAttackParts": "",
     "baseCl": "0",
-    "castTime": "",
+    "castTime": "1 standard action",
     "changes": [],
     "classSource": "",
     "clOffset": 0,
@@ -78,10 +78,10 @@
     "components": {
       "divineFocus": 0,
       "focus": false,
-      "material": false,
-      "somatic": false,
-      "value": "",
-      "verbal": false
+      "material": true,
+      "somatic": true,
+      "value": "V, S, M",
+      "verbal": true
     },
     "conditionals": [],
     "container": "None",
@@ -102,9 +102,9 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Sleet, snow and hail batter your foes; 1d6</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>Each round of concentration, all creatures in the 20-foot-radius, 40-foot-high cylinder take 1d6 cold damage plus 1d6 slashing damage. The effect lasts up to one round per two caster levels, with a maximum of five rounds. There is no save; spell resistance applies.</p><p>The material components are crushed glass and several drops of water.</p><p><strong>Automation boundary:</strong> Place the area, maintain concentration, and roll both damage types each round manually.</p>"
     },
-    "display": "",
+    "display": "Long (400 ft. + 40 ft./level)",
     "duration": {
       "units": "",
       "value": null
@@ -187,7 +187,7 @@
     "psionic": "",
     "range": {
       "long": null,
-      "units": "medium",
+      "units": "long",
       "value": null
     },
     "recharge": {
@@ -213,21 +213,20 @@
       "type": ""
     },
     "school": "evo",
-    "shortDescription": "<p>Sleet, snow and hail batter your foes; 1d6</p>",
+    "shortDescription": "<p>Concentrate on a distant cylinder of ice and hail that deals cold and slashing damage each round.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Sleet, snow and hail batter your foes; 1d6",
+    "snip": "Concentrate on a distant cylinder of ice and hail that deals cold and slashing damage each round.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 265-265",
     "specialActions": [],
     "specialId": null,
     "specialPrepared": false,
-    "spellArea": "",
+    "spellArea": "Cylinder (20-ft. radius, 40 ft. high)",
     "spellbook": "primary",
-    "spellDuration": "Instantaneous",
+    "spellDuration": "Concentration, up to 1 round/2 levels, maximum 5 rounds",
     "spellDurationData": {
-      "dismissable": false,
-      "units": "inst",
-      "value": ""
+      "units": "spec",
+      "value": null
     },
     "spellEffect": "",
     "spellType": {
@@ -239,7 +238,7 @@
     "summon": [],
     "tags": [],
     "target": {
-      "value": "up to five creatures, no two of which can be more than 15 ft. apart"
+      "value": "Cylinder (20-ft. radius, 40 ft. high)"
     },
     "types": "cold",
     "uniqueId": "",
@@ -260,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Place the area, maintain concentration, and roll both damage types each round manually."
     }
   },
   "type": "spell"

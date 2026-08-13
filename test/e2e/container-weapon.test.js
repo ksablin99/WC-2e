@@ -117,7 +117,7 @@ async function expectReequipDismissedState(page, { actorId, weaponId }) {
     return {
       equipped: w.system.equipped,
       carried: w.system.carried,
-      flag: w.getFlag('D35E', 'equippedBeforeContainer'),
+      flag: w.getFlag('warcraftrpg2e', 'equippedBeforeContainer'),
     };
   }, { actorId, weaponId });
 
@@ -177,7 +177,7 @@ test('removing equipped weapon from container prompts re-equip; Yes restores att
       await new Promise((r) => setTimeout(r, 100));
     }
     const msg = game.messages.contents.at(-1);
-    const attacks = msg?.flags?.D35E?.chatTemplateData?.attacks ?? [];
+    const attacks = msg?.flags?.warcraftrpg2e?.chatTemplateData?.attacks ?? [];
     return {
       wasRolled: useResult?.wasRolled ?? false,
       attackCount: attacks.length,

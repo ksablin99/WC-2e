@@ -4,6 +4,7 @@ import {ItemSheetPF} from "./base.js";
 import {LinkedItemsSheetComponent} from "./components/linkedItemsSheetComponent.js";
 import {ItemEquipHook} from "../hooks/itemEquipHook.js";
 import { IntelligentItemPowersSheetComponent } from "./components/intelligentItemPowersSheetComponent.js";
+import { getSystemFlag, setSystemFlag } from "../../utils/system-flags.js";
 
 export class EquipmentSheet35E extends ItemSheetPF {
     constructor(...args) {
@@ -41,7 +42,7 @@ export class EquipmentSheet35E extends ItemSheetPF {
 
         // Compute slot positions when item is equipped and has multiple possible positions
         const slotKey = ItemEquipHook.getEffectiveSlot(this.item);
-        sheetData.currentSlotSource = this.item.getFlag("D35E", "slotSource") ?? "";
+        sheetData.currentSlotSource = getSystemFlag(this.item, "slotSource") ?? "";
         if (slotKey && this.item.parent && this.item.system.equipped) {
             const actor = this.item.parent;
             const defaultCapacity = CONFIG.D35E.defaultSlotCapacities?.[slotKey] ?? 1;
@@ -72,7 +73,7 @@ export class EquipmentSheet35E extends ItemSheetPF {
                         if (it.id === this.item.id) return false;
                         if (it.type !== "equipment" || !it.system.equipped) return false;
                         if (ItemEquipHook.getEffectiveSlot(it) !== slotKey) return false;
-                        const src = it.getFlag("D35E", "slotSource") ?? "";
+                        const src = getSystemFlag(it, "slotSource") ?? "";
                         if (posProvider === null) {
                             // Default position — match explicit index or floating-to-first
                             if (posIndex === 0) return !src || src === "" || src === ":0";
@@ -113,7 +114,7 @@ export class EquipmentSheet35E extends ItemSheetPF {
         if (!this.options.editable) return;
 
         root.querySelector(".slot-source-select")?.addEventListener("change", async (event) => {
-            await this.item.setFlag("D35E", "slotSource", event.target.value);
+            await setSystemFlag(this.item, "slotSource", event.target.value);
         });
     }
 }

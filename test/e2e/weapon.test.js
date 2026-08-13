@@ -185,9 +185,9 @@ test('using the attack item produces a roll with expected attack bonus', async (
       await new Promise(r => setTimeout(r, 100));
     }
 
-    // D35E stores attack results in flags.D35E.chatTemplateData.attacks[].attack.total
+    // The system stores attack results in flags.warcraftrpg2e.chatTemplateData.attacks[].attack.total
     const msg = game.messages.contents.at(-1);
-    const attacks = msg?.flags?.D35E?.chatTemplateData?.attacks ?? [];
+    const attacks = msg?.flags?.warcraftrpg2e?.chatTemplateData?.attacks ?? [];
     const firstAttackTotal = attacks[0]?.attack?.total ?? null;
 
     return {

@@ -300,14 +300,14 @@
         },
         "level8": {
           "id": "e43008bd17b363e2",
-          "img": "icons/svg/target.svg",
+          "img": "systems/warcraftrpg2e/icons/spells/named-spells/cure-wounds-mass.png",
           "level": 8,
           "name": "Mass Cure Critical Wounds",
           "pack": "warcraftrpg2e.warcraft-spells"
         },
         "level9": {
           "id": "54c202d0c41fb238",
-          "img": "icons/svg/target.svg",
+          "img": "systems/warcraftrpg2e/icons/spells/named-spells/heal.png",
           "level": 9,
           "name": "Mass Heal",
           "pack": "warcraftrpg2e.warcraft-spells"

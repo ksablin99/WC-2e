@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           353
         ],
         "section": "Vampiric Aura",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -70,7 +70,7 @@
     "atWill": false,
     "autoscaleAttackParts": "",
     "baseCl": "0",
-    "castTime": "",
+    "castTime": "1 standard action",
     "changes": [],
     "classSource": "",
     "clOffset": 0,
@@ -78,10 +78,10 @@
     "components": {
       "divineFocus": 0,
       "focus": false,
-      "material": false,
-      "somatic": false,
-      "value": "",
-      "verbal": false
+      "material": true,
+      "somatic": true,
+      "value": "V, S, M",
+      "verbal": true
     },
     "conditionals": [],
     "container": "None",
@@ -102,9 +102,9 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>You and your allies regain life when</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>You and allies within the 20-foot aura gain 1 temporary hit point for every point of melee damage dealt to a living creature. From any one victim, an affected attacker cannot gain more temporary hit points than that victim's current hit points +10. These temporary hit points expire after 1 hour.</p><p>A creature gains this benefit only while inside the aura; entering later grants it and leaving removes access to further draining.</p><p>The material component is powdered dreadlord horn.</p><p><strong>Automation boundary:</strong> Track aura membership, living targets, damage dealt to each victim, per-victim caps, and the one-hour temporary-hit-point expiry manually.</p>"
     },
-    "display": "",
+    "display": "Personal",
     "duration": {
       "units": "",
       "value": null
@@ -187,7 +187,7 @@
     "psionic": "",
     "range": {
       "long": null,
-      "units": "medium",
+      "units": "personal",
       "value": null
     },
     "recharge": {
@@ -208,28 +208,27 @@
       "dc": "0",
       "dcAutoAbility": "",
       "dcAutoType": "",
-      "description": "None",
+      "description": "Will negates (harmless)",
       "originVersion": 97,
-      "type": ""
+      "type": "willnegates"
     },
     "school": "nec",
-    "shortDescription": "<p>You and your allies regain life when</p>",
+    "shortDescription": "<p>You and nearby allies turn melee damage to living creatures into temporary hit points.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "You and your allies regain life when",
+    "snip": "You and nearby allies turn melee damage to living creatures into temporary hit points.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 266-266",
     "specialActions": [],
     "specialId": null,
     "specialPrepared": false,
     "spellArea": "",
     "spellbook": "primary",
-    "spellDuration": "Instantaneous",
+    "spellDuration": "1 round/2 levels",
     "spellDurationData": {
-      "dismissable": false,
-      "units": "inst",
-      "value": ""
+      "units": "spec",
+      "value": null
     },
-    "spellEffect": "",
+    "spellEffect": "20-ft.-radius emanation",
     "spellType": {
       "_deprecated": true,
       "value": ""
@@ -239,7 +238,7 @@
     "summon": [],
     "tags": [],
     "target": {
-      "value": "up to five creatures, no two of which can be more than 15 ft. apart"
+      "value": "20-ft.-radius emanation"
     },
     "types": "force",
     "uniqueId": "",
@@ -260,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Track aura membership, living targets, damage dealt to each victim, per-victim caps, and the one-hour temporary-hit-point expiry manually."
     }
   },
   "type": "spell"

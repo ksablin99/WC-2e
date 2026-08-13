@@ -156,13 +156,13 @@ async function runFullAttackWithMinDice(page, config) {
       const msgsBefore = game.messages.size;
       const filterAttackMsgs = () => {
         const slice = game.messages.contents.slice(msgsBefore);
-        return slice.filter((m) => String(m.flags?.D35E?.template || '').includes('attack-roll'));
+        return slice.filter((m) => String(m.flags?.warcraftrpg2e?.template || '').includes('attack-roll'));
       };
       /** Wait until each expected attack card has a finalized numeric damage total (async rolls). */
       const attackRollsComplete = (attackMsgs) => {
         if (attackMsgs.length < swingCount) return false;
         return attackMsgs.every((m) => {
-          const t = m.flags?.D35E?.chatTemplateData?.attacks?.[0]?.damage?.total;
+          const t = m.flags?.warcraftrpg2e?.chatTemplateData?.attacks?.[0]?.damage?.total;
           return typeof t === 'number';
         });
       };
@@ -184,8 +184,8 @@ async function runFullAttackWithMinDice(page, config) {
       // Preserve append order — Foundry message ids are not chronological; do not sort by id.
 
       const rows = attackMsgs.map((m) => ({
-        itemName: m.flags?.D35E?.chatTemplateData?.item?.name ?? '',
-        total: m.flags?.D35E?.chatTemplateData?.attacks?.[0]?.damage?.total ?? null,
+        itemName: m.flags?.warcraftrpg2e?.chatTemplateData?.item?.name ?? '',
+        total: m.flags?.warcraftrpg2e?.chatTemplateData?.attacks?.[0]?.damage?.total ?? null,
       }));
 
       const totals = rows.map((r) => r.total);
@@ -407,12 +407,12 @@ async function runSummonNpcFullAttack(page, docId) {
       const msgsBefore = game.messages.size;
       const filterAttackMsgs = () => {
         const slice = game.messages.contents.slice(msgsBefore);
-        return slice.filter((m) => String(m.flags?.D35E?.template || '').includes('attack-roll'));
+        return slice.filter((m) => String(m.flags?.warcraftrpg2e?.template || '').includes('attack-roll'));
       };
       const attackRollsComplete = (attackMsgs) => {
         if (attackMsgs.length < swings) return false;
         return attackMsgs.every((m) => {
-          const t = m.flags?.D35E?.chatTemplateData?.attacks?.[0]?.damage?.total;
+          const t = m.flags?.warcraftrpg2e?.chatTemplateData?.attacks?.[0]?.damage?.total;
           return typeof t === 'number';
         });
       };
@@ -432,7 +432,7 @@ async function runSummonNpcFullAttack(page, docId) {
 
       const attackMsgs = filterAttackMsgs();
       const damageTotals = attackMsgs.map(
-        (m) => m.flags?.D35E?.chatTemplateData?.attacks?.[0]?.damage?.total ?? null,
+        (m) => m.flags?.warcraftrpg2e?.chatTemplateData?.attacks?.[0]?.damage?.total ?? null,
       );
 
       return {
@@ -523,12 +523,12 @@ async function runBestiaryMonsterFullAttack(page, { docId, addFeatId = null, rem
       const msgsBefore = game.messages.size;
       const filterAttackMsgs = () => {
         const slice = game.messages.contents.slice(msgsBefore);
-        return slice.filter((m) => String(m.flags?.D35E?.template || '').includes('attack-roll'));
+        return slice.filter((m) => String(m.flags?.warcraftrpg2e?.template || '').includes('attack-roll'));
       };
       const attackRollsComplete = (attackMsgs) => {
         if (attackMsgs.length < swings) return false;
         return attackMsgs.every((m) => {
-          const swing = m.flags?.D35E?.chatTemplateData?.attacks?.[0];
+          const swing = m.flags?.warcraftrpg2e?.chatTemplateData?.attacks?.[0];
           return typeof swing?.damage?.total === 'number' && typeof (swing?.attack?.total ?? swing?.total) === 'number';
         });
       };
@@ -546,10 +546,10 @@ async function runBestiaryMonsterFullAttack(page, { docId, addFeatId = null, rem
       }
 
       const rows = filterAttackMsgs().map((m) => {
-        const swing = m.flags?.D35E?.chatTemplateData?.attacks?.[0] ?? {};
+        const swing = m.flags?.warcraftrpg2e?.chatTemplateData?.attacks?.[0] ?? {};
         const li = document.querySelector(`#chat-log .message[data-message-id="${m.id}"]`);
         return {
-          itemName: m.flags?.D35E?.chatTemplateData?.item?.name ?? '',
+          itemName: m.flags?.warcraftrpg2e?.chatTemplateData?.item?.name ?? '',
           attackTotal: swing?.attack?.total ?? swing?.total ?? null,
           damageTotal: swing?.damage?.total ?? null,
           ...(debug
@@ -557,7 +557,7 @@ async function runBestiaryMonsterFullAttack(page, { docId, addFeatId = null, rem
                 attackTooltip: swing?.attack?.tooltip ?? '',
                 damageTooltip: swing?.damage?.tooltip ?? '',
                 chatHtml: li?.outerHTML ?? '',
-                messageFlags: foundry.utils.duplicate(m.flags?.D35E ?? {}),
+                messageFlags: foundry.utils.duplicate(m.flags?.warcraftrpg2e ?? {}),
               }
             : {}),
         };
@@ -679,10 +679,10 @@ async function runBestiaryMonsterAttackViaDialog(page, { docId, attackName, remo
 
   const chat = await page.evaluate((debug) => {
     const msg = game.messages.contents.at(-1);
-    const swing = msg?.flags?.D35E?.chatTemplateData?.attacks?.[0] ?? {};
+    const swing = msg?.flags?.warcraftrpg2e?.chatTemplateData?.attacks?.[0] ?? {};
     const li = document.querySelector(`#chat-log .message[data-message-id="${msg?.id}"]`);
     return {
-      itemName: msg?.flags?.D35E?.chatTemplateData?.item?.name ?? '',
+      itemName: msg?.flags?.warcraftrpg2e?.chatTemplateData?.item?.name ?? '',
       attackTotal: swing?.attack?.total ?? swing?.total ?? null,
       attackTooltip: swing?.attack?.tooltip ?? '',
       damageTotal: swing?.damage?.total ?? null,
@@ -690,7 +690,7 @@ async function runBestiaryMonsterAttackViaDialog(page, { docId, attackName, remo
         ? {
             damageTooltip: swing?.damage?.tooltip ?? '',
             chatHtml: li?.outerHTML ?? '',
-            messageFlags: foundry.utils.duplicate(msg?.flags?.D35E ?? {}),
+            messageFlags: foundry.utils.duplicate(msg?.flags?.warcraftrpg2e ?? {}),
           }
         : {}),
     };

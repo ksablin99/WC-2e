@@ -19,7 +19,13 @@
         "category": "General",
         "prerequisite": "Proficiency with selected weapon, base attack bonus +1.",
         "repeatable": true,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "Choose one weapon with which you are proficient. You gain +1 on all attack rolls with it. Unarmed strike, grapple, and ray attacks may be selected as weapons.",
+          "manual": "Record the selection and apply the conditional attack bonus manually.",
+          "special": "You may select this feat more than once, choosing a different weapon or attack form each time.",
+          "summary": "Gain +1 on attacks with one chosen weapon or attack form."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": true
       },
@@ -33,7 +39,7 @@
           161
         ],
         "section": "Weapon Focus",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +154,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p><strong>Prerequisites:</strong> Proficiency with selected weapon, base attack bonus +1.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 161) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Prerequisites:</strong> Proficiency with selected weapon, base attack bonus +1.</p><p><strong>Summary:</strong> Gain +1 on attacks with one chosen weapon or attack form.</p><p><strong>Benefit:</strong> Choose one weapon with which you are proficient. You gain +1 on all attack rolls with it. Unarmed strike, grapple, and ray attacks may be selected as weapons.</p><p><strong>Special:</strong> You may select this feat more than once, choosing a different weapon or attack form each time.</p><p><strong>Warrior bonus feat:</strong> Yes</p><p><strong>Foundry and GM handling:</strong> Record the selection and apply the conditional attack bonus manually.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +254,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat; requires Proficiency with selected weapon, base attack bonus +1..</p>",
+    "shortDescription": "<p>Gain +1 on attacks with one chosen weapon or attack form.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 161",

@@ -19,7 +19,12 @@
         "category": "General",
         "prerequisite": "Endurance, Leadership.",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "Once per day as a free action, inspire your followers for 1 + your Charisma modifier rounds (minimum 1 round). Each affected follower gains a +4 morale bonus on initiative checks and a +10-foot enhancement bonus to its fastest movement mode. An affected follower who rages is not fatigued when that rage ends.",
+          "manual": "Choose the followers and track the daily use, duration, fastest movement mode, and rage-fatigue exception manually.",
+          "summary": "Once per day, inspire followers to act faster and endure rage without fatigue."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": false
       },
@@ -33,7 +38,7 @@
           147
         ],
         "section": "Enduring Leadership",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +153,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> General.</p><p><strong>Prerequisites:</strong> Endurance, Leadership.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 147) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> General feat</p><p><strong>Prerequisites:</strong> Endurance, Leadership.</p><p><strong>Summary:</strong> Once per day, inspire followers to act faster and endure rage without fatigue.</p><p><strong>Benefit:</strong> Once per day as a free action, inspire your followers for 1 + your Charisma modifier rounds (minimum 1 round). Each affected follower gains a +4 morale bonus on initiative checks and a +10-foot enhancement bonus to its fastest movement mode. An affected follower who rages is not fatigued when that rage ends.</p><p><strong>Foundry and GM handling:</strong> Choose the followers and track the daily use, duration, fastest movement mode, and rage-fatigue exception manually.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +253,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>General feat; requires Endurance, Leadership..</p>",
+    "shortDescription": "<p>Once per day, inspire followers to act faster and endure rage without fatigue.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 147",

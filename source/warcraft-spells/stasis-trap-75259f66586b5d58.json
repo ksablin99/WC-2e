@@ -18,7 +18,7 @@
       "catalog": {
         "completeListEntry": true,
         "generated": true,
-        "status": "manual-effect-pending-verification"
+        "status": "verified-rules-with-manual-boundary"
       },
       "source": {
         "book": "World of Warcraft: The Roleplaying Game, Second Edition",
@@ -32,7 +32,7 @@
           340
         ],
         "section": "Stasis Trap",
-        "verification": "text-extracted-header"
+        "verification": "private-source-rules-paraphrased+spot-rendered"
       }
     }
   },
@@ -53,7 +53,7 @@
       "twoHandedOnly": false,
       "vsTouchAc": false
     },
-    "actionType": "",
+    "actionType": "special",
     "activateActions": [],
     "activation": {
       "cost": 1,
@@ -102,7 +102,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p>Totem explodes and dazes creatures.</p><p><strong>Automation:</strong> Catalogue record only; adjudicate from the private rulebook until a verified action is linked.</p>"
+      "value": "<p>Plant a visible totem. After 1d4 rounds it becomes invisible and active. During the following one round per caster level, the first enemy to come within 10 feet triggers it. The totem explodes; every enemy in a 20-foot-radius burst must succeed on a Will save or become dazed for 1d4 rounds. Spell resistance applies.</p><p>The totem has AC 7, hardness 5, and 5 hit points. Destroying it before it triggers ends the spell.</p><p><strong>Automation boundary:</strong> Place the totem and track its visible delay, invisibility, activation window, proximity trigger, burst, defenses, saves, and daze duration manually.</p>"
     },
     "display": "20 ft.",
     "duration": {
@@ -213,10 +213,10 @@
       "type": "willnegates"
     },
     "school": "con",
-    "shortDescription": "<p>Totem explodes and dazes creatures.</p>",
+    "shortDescription": "<p>Plant a delayed invisible totem that explodes when an enemy approaches and dazes nearby enemies.</p>",
     "showInQuickbar": false,
     "slOffset": 0,
-    "snip": "Totem explodes and dazes creatures.",
+    "snip": "Plant a delayed invisible totem that explodes when an enemy approaches and dazes nearby enemies.",
     "source": "World of Warcraft RPG, 2nd Edition, spell lists pp. 270-270",
     "specialActions": [],
     "specialId": null,
@@ -259,7 +259,7 @@
     },
     "warcraftManualPolicy": {
       "mode": "manual",
-      "reason": "No verified executable effect is available; resolve the complete effect from the private rulebook."
+      "reason": "Place the totem and track its visible delay, invisibility, activation window, proximity trigger, burst, defenses, saves, and daze duration manually."
     }
   },
   "type": "spell"

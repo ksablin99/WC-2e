@@ -19,7 +19,12 @@
         "category": "Metamagic",
         "prerequisite": "Iron Will, Magic Energy Control, caster level 3rd.",
         "repeatable": false,
-        "status": "manual-effect-pending-verification",
+        "rules": {
+          "benefit": "A mirrored spell produces two copies that resolve at the same time but separately. The copies may share targets or use different legal targets. Preparing or casting it requires a spell slot whose level equals 2 x the original spell's level + 1.",
+          "manual": "Foundry records the feat but does not calculate or expend the unusual slot cost, create a second spell resolution, or validate separate target sets. The player or GM must confirm an adequate slot and resolve both copies independently.",
+          "summary": "Cast two simultaneous, independently resolved copies of one spell."
+        },
+        "status": "verified-rules-manual-adjudication",
         "tinkerBonus": false,
         "warriorBonus": false
       },
@@ -33,7 +38,7 @@
           153
         ],
         "section": "Mirror Spell",
-        "verification": "text+catalogue-table"
+        "verification": "text+render"
       }
     }
   },
@@ -148,7 +153,7 @@
     "description": {
       "chat": "",
       "unidentified": "",
-      "value": "<p><strong>Category:</strong> Metamagic.</p><p><strong>Prerequisites:</strong> Iron Will, Magic Energy Control, caster level 3rd.</p><p>This catalogue record identifies the feat and its requirements. Resolve its complete benefit from the private core rulebook (printed p. 153) until a verified automation record replaces this note.</p>"
+      "value": "<p><strong>Category:</strong> Metamagic feat</p><p><strong>Prerequisites:</strong> Iron Will, Magic Energy Control, caster level 3rd.</p><p><strong>Summary:</strong> Cast two simultaneous, independently resolved copies of one spell.</p><p><strong>Benefit:</strong> A mirrored spell produces two copies that resolve at the same time but separately. The copies may share targets or use different legal targets. Preparing or casting it requires a spell slot whose level equals 2 x the original spell&#39;s level + 1.</p><p><strong>Foundry and GM handling:</strong> Foundry records the feat but does not calculate or expend the unusual slot cost, create a second spell resolution, or validate separate target sets. The player or GM must confirm an adequate slot and resolve both copies independently.</p>"
     },
     "duration": {
       "units": "",
@@ -248,7 +253,7 @@
       "tremorsense": 0,
       "truesight": 0
     },
-    "shortDescription": "<p>Metamagic feat; requires Iron Will, Magic Energy Control, caster level 3rd..</p>",
+    "shortDescription": "<p>Cast two simultaneous, independently resolved copies of one spell.</p>",
     "showInQuickbar": false,
     "sizeOverride": "",
     "source": "World of Warcraft RPG, 2nd Edition, p. 153",
